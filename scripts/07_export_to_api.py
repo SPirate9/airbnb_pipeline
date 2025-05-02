@@ -11,11 +11,34 @@ properties = {
     "password": "saad",
     "driver": "org.postgresql.Driver"
 }
-
-df_predictions = spark.read.parquet("gold/predictions/")
-df_predictions.write.jdbc(
+df_predictions_price = spark.read.parquet("gold/predictions_price/")
+df_predictions_price.write.jdbc(
     url=jdbc_url,
-    table="listing_predictions",
+    table="listing_predictions_price",
+    mode="overwrite",
+    properties=properties
+)
+
+df_predictions_reserved = spark.read.parquet("gold/predictions_reserved/")
+df_predictions_reserved.write.jdbc(
+    url=jdbc_url,
+    table="listing_predictions_reserved",
+    mode="overwrite",
+    properties=properties
+)
+
+df_predictions_rating = spark.read.parquet("gold/predictions_rating/")
+df_predictions_rating.write.jdbc(
+    url=jdbc_url,
+    table="listing_predictions_rating",
+    mode="overwrite",
+    properties=properties
+)
+
+df_predictions_sentiment = spark.read.parquet("gold/predictions_sentiment/")
+df_predictions_sentiment.write.jdbc(
+    url=jdbc_url,
+    table="listing_predictions_sentiment",
     mode="overwrite",
     properties=properties
 )

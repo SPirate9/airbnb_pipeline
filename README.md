@@ -52,10 +52,66 @@ python 05_transform_clean.py
 ```
 
 ### **7. Modélisation Machine Learning**
-Le script `06_ml_model.py` :
-- Charge les données depuis la table Hive `silver_joined`.
-- Entraîne un modèle de régression linéaire pour prédire les prix des annonces.
-- Sauvegarde les prédictions dans le répertoire `gold/predictions/`.
+Le script `06_ml_model.py` effectue plusieurs prédictions en utilisant différents modèles de machine learning. Les données sont chargées depuis la table Hive `silver_joined`, et les résultats sont sauvegardés dans le répertoire `gold/`.
+
+#### **1. Prédiction du prix des annonces**
+- **Objectif :** Prédire le prix (`price`) des annonces en fonction de leurs caractéristiques.
+- **Modèles testés :**
+  - Régression linéaire (`LinearRegression`)
+  - Arbre de décision (`DecisionTreeRegressor`)
+  - Forêt aléatoire (`RandomForestRegressor`)
+- **Processus :**
+  - Les modèles sont entraînés sur les données, et le modèle avec le plus faible RMSE (Root Mean Squared Error) est sélectionné.
+- **Résultat :**
+  - Les prédictions du meilleur modèle sont sauvegardées dans `gold/predictions_price/`.
+
+#### **2. Prédiction de la probabilité de réservation**
+- **Objectif :** Prédire si une annonce sera réservée ou non (`reserved`).
+- **Modèle utilisé :**
+  - Régression logistique (`LogisticRegression`)
+- **Processus :**
+  - Une colonne binaire `reserved` est créée (1 si `reviews_per_month > 0`, sinon 0).
+  - Le modèle est entraîné pour prédire cette colonne en fonction des caractéristiques de l'annonce.
+- **Résultat :**
+  - Les prédictions sont sauvegardées dans `gold/predictions_reserved/`.
+
+#### **3. Prédiction des notes des avis**
+- **Objectif :** Prédire la note moyenne des avis (`review_scores_rating`) des annonces.
+- **Modèle utilisé :**
+  - Arbre de décision (`DecisionTreeRegressor`)
+- **Processus :**
+  - Le modèle est entraîné pour prédire les notes des avis en fonction des caractéristiques de l'annonce.
+- **Résultat :**
+  - Les prédictions sont sauvegardées dans `gold/predictions_rating/`.
+
+#### **4. Analyse des sentiments des commentaires**
+- **Objectif :** Analyser les sentiments des commentaires (`comments`) pour déterminer s'ils sont positifs ou négatifs.
+- **Modèle utilisé :**
+  - Naive Bayes (`NaiveBayes`)
+- **Processus :**
+  - Une colonne binaire `sentiment` est créée (1 si `review_scores_rating > 8`, sinon 0).
+  - Les étapes suivantes sont appliquées :
+    1. **Tokenization :** Les commentaires sont divisés en mots.
+    2. **Suppression des mots inutiles :** Les mots comme "le", "et", "de" sont supprimés.
+    3. **Vectorisation :** Les mots sont convertis en vecteurs numériques.
+    4. **Classification :** Le modèle Naive Bayes est entraîné pour prédire les sentiments.
+- **Résultat :**
+  - Les prédictions sont sauvegardées dans `gold/predictions_sentiment/`.
+
+#### **5. Résumé des données**
+- **Objectif :** Sauvegarder les données jointes et nettoyées pour des analyses ultérieures.
+- **Processus :**
+  - Les données de la table Hive `silver_joined` sont sauvegardées dans `gold/listing_summary/`.
+
+---
+
+### **Exemple de structure des fichiers Gold**
+Après l'exécution du script, les prédictions et les données enrichies sont sauvegardées dans les répertoires suivants :
+- `gold/predictions_price/` : Prédictions des prix des annonces.
+- `gold/predictions_reserved/` : Prédictions de la probabilité de réservation.
+- `gold/predictions_rating/` : Prédictions des notes des avis.
+- `gold/predictions_sentiment/` : Résultats de l'analyse des sentiments.
+- `gold/listing_summary/` : Données jointes et nettoyées pour des analyses ultérieures.
 
 ```bash
 python 06_ml_model.py
@@ -63,8 +119,16 @@ python 06_ml_model.py
 
 ### **8. Export des données vers la base de données**
 Le script `07_export_to_api.py` :
-- Exporte les prédictions depuis `gold/predictions/` vers la table PostgreSQL `listing_predictions`.
-- Exporte les données résumées depuis `gold/listing_summary/` vers la table PostgreSQL `listing_summary`.
+- Exporte les prédictions depuis le répertoire `gold/` vers des tables PostgreSQL :
+  - `listing_predictions_price` : Prédictions des prix des annonces.
+  - `listing_predictions_reserved` : Prédictions de la probabilité de réservation.
+  - `listing_predictions_rating` : Prédictions des notes des avis.
+  - `listing_predictions_sentiment` : Résultats de l'analyse des sentiments.
+- Exporte également les données résumées depuis `gold/listing_summary/` vers la table PostgreSQL `listing_summary`.
+
+Une fois les données exportées dans PostgreSQL, elles peuvent être utilisées pour des analyses avancées dans Power BI. Une connexion est établie entre Power BI et PostgreSQL pour visualiser et explorer les données exportées.
+
+De plus, les scripts SQL pour créer les tables nécessaires dans PostgreSQL sont disponibles dans le dossier `sql/`.
 
 ```bash
 python 07_export_to_api.py
@@ -80,40 +144,40 @@ pip install -r requirements.txt
 ```
 
 ---
-
 ## **Structure du projet**
 
 ```plaintext
 airbnb_pipeline/
 ├── bin/
-│   └── inject_reviews.sh
+│   └── inject_reviews.sh                # Script Bash pour simuler un flux de données des avis
 ├── data/
-│   ├── listings.csv
-│   ├── reviews.csv
-│   ├── reviews_chunks/
-│   └── reviews_stream/
-├── bronze/
-│   ├── listings/
-│   └── reviews/
-├── silver/
-│   └── joined/
-├── gold/
-│   ├── predictions/
-│   └── listing_summary/
-├── scripts/
-│   ├── 01_load_listings_to_db.py
-│   ├── 02_ingest_listings_from_db.py
-│   ├── 03_prepare_reviews_chunks.py
-│   ├── 04_stream_reviews.py
-│   ├── 05_transform_clean.py
-│   ├── 06_ml_model.py
-│   └── 07_export_to_api.py
-└── requirements.txt
+│   ├── listings.csv                     # Fichier source des annonces Airbnb
+│   ├── reviews.csv                      # Fichier source des avis Airbnb
+│   ├── reviews_chunks/                  # Répertoire contenant les morceaux d'avis découpés
+│   └── reviews_stream/                  # Répertoire simulant un flux de données des avis
+├── bronze/                              # Zone Bronze : Données brutes
+│   ├── listings/                        # Données des annonces au format Parquet
+│   └── reviews/                         # Données des avis au format Parquet
+├── silver/                              # Zone Silver : Données nettoyées et jointes
+│   └── joined/                          # Données jointes des annonces et des avis
+├── gold/                                # Zone Gold : Données prêtes pour l'analyse et les prédictions
+│   ├── predictions_price/               # Prédictions des prix des annonces
+│   ├── predictions_reserved/            # Prédictions de la probabilité de réservation
+│   ├── predictions_rating/              # Prédictions des notes des avis
+│   ├── predictions_sentiment/           # Résultats de l'analyse des sentiments
+│   └── listing_summary/                 # Résumé des données jointes
+├── scripts/                             # Scripts Python pour chaque étape de la pipeline
+│   ├── 01_load_listings_to_db.py        # Charger les annonces dans PostgreSQL
+│   ├── 02_ingest_listings_from_db.py    # Ingestion des annonces dans la zone Bronze
+│   ├── 03_prepare_reviews_chunks.py     # Découper les avis en morceaux pour le streaming
+│   ├── 04_stream_reviews.py             # Traiter les avis en mode streaming
+│   ├── 05_transform_clean.py            # Nettoyer et joindre les données
+│   ├── 06_ml_model.py                   # Modélisation Machine Learning
+│   └── 07_export_to_api.py              # Exporter les données vers PostgreSQL
+└── requirements.txt                     # Liste des dépendances Python
 ```
 
 ---
 
 ## **Notes**
 - Assurez-vous que PostgreSQL, Hive et PySpark sont correctement configurés avant d'exécuter les scripts.
-- Les chemins des fichiers et répertoires doivent être ajustés en fonction de votre environnement.
-

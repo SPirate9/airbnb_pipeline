@@ -1,2 +1,4 @@
 v1
-{"path":"file:///Users/saad/Documents/efrei/airbnb_pipeline/bronze/reviews/year=2025/month=5/day=2/part-00000-639dd159-1753-4501-98ba-44c3c44a0aad.c000.snappy.parquet","size":200099,"isDir":false,"modificationTime":1746175115664,"blockReplication":1,"blockSize":33554432,"action":"add"}
+{"path":"file:///Users/saad/Documents/efrei/airbnb_pipeline/bronze/reviews/year=2025/month=5/day=2/part-00000-9577e013-e221-4afd-b31b-8069826e635a.c000.snappy.parquet","size":70927,"isDir":false,"modificationTime":1746184838357,"blockReplication":1,"blockSize":33554432,"action":"add"}
+{"path":"file:///Users/saad/Documents/efrei/airbnb_pipeline/bronze/reviews/year=2025/month=5/day=2/part-00001-fc63cced-2062-4069-b219-ab0eae60dfbe.c000.snappy.parquet","size":72900,"isDir":false,"modificationTime":1746184838336,"blockReplication":1,"blockSize":33554432,"action":"add"}
+{"path":"file:///Users/saad/Documents/efrei/airbnb_pipeline/bronze/reviews/year=2025/month=5/day=2/part-00002-e00d41df-5ab3-4367-8205-92d75877cd8f.c000.snappy.parquet","size":71371,"isDir":false,"modificationTime":1746184838339,"blockReplication":1,"blockSize":33554432,"action":"add"}
