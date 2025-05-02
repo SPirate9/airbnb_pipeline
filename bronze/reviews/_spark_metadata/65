@@ -1,2 +1,2 @@
 v1
-{"path":"file:///Users/saad/Documents/efrei/airbnb_pipeline/bronze/reviews/part-00000-9648ca6f-3a4b-4d6e-b226-f9ea522e0b1a-c000.snappy.parquet","size":212345,"isDir":false,"modificationTime":1746126695660,"blockReplication":1,"blockSize":33554432,"action":"add"}
+{"path":"file:///Users/saad/Documents/efrei/airbnb_pipeline/bronze/reviews/year=2025/month=5/day=2/part-00000-79091036-6f4c-416d-be25-8c8cbae3c2e2.c000.snappy.parquet","size":212641,"isDir":false,"modificationTime":1746175178663,"blockReplication":1,"blockSize":33554432,"action":"add"}
