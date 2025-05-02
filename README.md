@@ -33,6 +33,7 @@ Le script Bash `inject_reviews.sh` copie progressivement les fichiers découpés
 ```bash
 bash inject_reviews.sh
 ```
+[Regardez la vidéo de simulation du streaming](https://drive.google.com/file/d/1GUI3CaHCAl0RsaW7Ijx7vynJE0YydLE3/view?usp=sharing)
 
 ### **5. Traitement en streaming des avis**
 Le script `04_stream_reviews.py` lit les fichiers dans `data/reviews_stream/` en mode streaming, ajoute des colonnes de partition (`année`, `mois`, `jour`), et écrit les données dans le répertoire `bronze/reviews/`.
@@ -40,6 +41,7 @@ Le script `04_stream_reviews.py` lit les fichiers dans `data/reviews_stream/` en
 ```bash
 python 04_stream_reviews.py
 ```
+[Regardez la vidéo de simulation du streaming](https://drive.google.com/file/d/1RITeTYhvpEI6Xbuwk3Z_4ya3Ohn4vKze/view?usp=sharing)
 
 ### **6. Nettoyage et jointure des données**
 Le script `05_transform_clean.py` :
