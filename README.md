@@ -67,6 +67,8 @@ Le script `06_ml_model.py` effectue plusieurs prédictions en utilisant différe
 - **Résultat :**
   - Les prédictions du meilleur modèle sont sauvegardées dans `gold/predictions_price/`.
 
+![Prédictions des prix](./assets/images/predictions_price.png)
+
 #### **2. Prédiction de la probabilité de réservation**
 - **Objectif :** Prédire si une annonce sera réservée ou non (`reserved`).
 - **Modèle utilisé :**
@@ -77,6 +79,8 @@ Le script `06_ml_model.py` effectue plusieurs prédictions en utilisant différe
 - **Résultat :**
   - Les prédictions sont sauvegardées dans `gold/predictions_reserved/`.
 
+![Prédictions de réservation](./assets/images/predictions_reserved.png)
+
 #### **3. Prédiction des notes des avis**
 - **Objectif :** Prédire la note moyenne des avis (`review_scores_rating`) des annonces.
 - **Modèle utilisé :**
@@ -85,6 +89,8 @@ Le script `06_ml_model.py` effectue plusieurs prédictions en utilisant différe
   - Le modèle est entraîné pour prédire les notes des avis en fonction des caractéristiques de l'annonce.
 - **Résultat :**
   - Les prédictions sont sauvegardées dans `gold/predictions_rating/`.
+
+![Prédictions des notes](./assets/images/predictions_rating.png)
 
 #### **4. Analyse des sentiments des commentaires**
 - **Objectif :** Analyser les sentiments des commentaires (`comments`) pour déterminer s'ils sont positifs ou négatifs.
@@ -99,6 +105,8 @@ Le script `06_ml_model.py` effectue plusieurs prédictions en utilisant différe
     4. **Classification :** Le modèle Naive Bayes est entraîné pour prédire les sentiments.
 - **Résultat :**
   - Les prédictions sont sauvegardées dans `gold/predictions_sentiment/`.
+
+![Analyse des sentiments](./assets/images/predictions_sentiment.png)
 
 #### **5. Résumé des données**
 - **Objectif :** Sauvegarder les données jointes et nettoyées pour des analyses ultérieures.
@@ -127,6 +135,8 @@ Le script `07_export_to_api.py` :
   - `listing_predictions_rating` : Prédictions des notes des avis.
   - `listing_predictions_sentiment` : Résultats de l'analyse des sentiments.
 - Exporte également les données résumées depuis `gold/listing_summary/` vers la table PostgreSQL `listing_summary`.
+
+![Export des données vers PostgreSQL](./assets/images/export_to_postgresql.png)
 
 Une fois les données exportées dans PostgreSQL, elles peuvent être utilisées pour des analyses avancées dans Power BI. Une connexion est établie entre Power BI et PostgreSQL pour visualiser et explorer les données exportées.
 
