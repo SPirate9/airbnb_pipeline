@@ -88,9 +88,9 @@ Le script `05_transform_clean.py` :
 - Effectue une jointure interne (`inner join`) sur la colonne `listing_id` entre les deux ensembles de données.
 - Stocke les données jointes dans une table Hive `silver_joined`.
 
-```python
 Exemple de code utilisé pour sauvegarder les données jointes dans la table Hive `silver_joined` :
 
+```python
 df_joined.write.mode("overwrite").saveAsTable("silver_joined")
 ```
 
