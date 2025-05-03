@@ -49,7 +49,7 @@ for name, model in models_price.items():
 
 # Sauvegarder les prédictions du meilleur modèle
 predictions_price = best_model_price.transform(test_price)
-predictions_price.select("room_type", "price", "prediction") \
+predictions_price.select("listing_id","room_type", "price", "prediction") \
     .write.mode("overwrite") \
     .parquet("gold/predictions_price")
 
@@ -74,7 +74,7 @@ evaluator_reserved = MulticlassClassificationEvaluator(labelCol="reserved", pred
 accuracy_reserved = evaluator_reserved.evaluate(predictions_reserved)
 print(f"Reservation Prediction Accuracy: {accuracy_reserved}")
 
-predictions_reserved.select("room_type", "price", "reserved", "prediction") \
+predictions_reserved.select("listing_id","room_type", "price", "reserved", "prediction") \
     .write.mode("overwrite") \
     .parquet("gold/predictions_reserved")
 
@@ -97,7 +97,7 @@ evaluator_rating = RegressionEvaluator(labelCol="review_scores_rating", predicti
 rmse_rating = evaluator_rating.evaluate(predictions_rating)
 print(f"Review Scores Prediction RMSE: {rmse_rating}")
 
-predictions_rating.select("room_type", "review_scores_rating", "prediction") \
+predictions_rating.select("listing_id","room_type", "review_scores_rating", "prediction") \
     .write.mode("overwrite") \
     .parquet("gold/predictions_rating")
 
@@ -118,7 +118,7 @@ evaluator_sentiment = MulticlassClassificationEvaluator(labelCol="sentiment", pr
 accuracy_sentiment = evaluator_sentiment.evaluate(predictions_sentiment)
 print(f"Sentiment Analysis Accuracy: {accuracy_sentiment}")
 
-predictions_sentiment.select("comments", "sentiment", "prediction") \
+predictions_sentiment.select("listing_id","comments", "sentiment", "prediction") \
     .write.mode("overwrite") \
     .parquet("gold/predictions_sentiment")
 

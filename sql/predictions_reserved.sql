@@ -5,7 +5,7 @@
 -- Dumped from database version 17.4 (Postgres.app)
 -- Dumped by pg_dump version 17.0
 
--- Started on 2025-05-02 16:31:51 CEST
+-- Started on 2025-05-03 13:15:22 CEST
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -24,11 +24,12 @@ SET default_tablespace = '';
 SET default_table_access_method = heap;
 
 --
--- TOC entry 219 (class 1259 OID 3556326)
+-- TOC entry 219 (class 1259 OID 3556398)
 -- Name: listing_predictions_reserved; Type: TABLE; Schema: public; Owner: saad
 --
 
 CREATE TABLE public.listing_predictions_reserved (
+    listing_id integer,
     room_type text,
     price double precision,
     reserved integer,
@@ -39,16772 +40,16772 @@ CREATE TABLE public.listing_predictions_reserved (
 ALTER TABLE public.listing_predictions_reserved OWNER TO saad;
 
 --
--- TOC entry 3676 (class 0 OID 3556326)
+-- TOC entry 3676 (class 0 OID 3556398)
 -- Dependencies: 219
 -- Data for Name: listing_predictions_reserved; Type: TABLE DATA; Schema: public; Owner: saad
 --
 
-COPY public.listing_predictions_reserved (room_type, price, reserved, prediction) FROM stdin;
-Private room	109	1	1
-Entire home/apt	360	1	1
-Entire home/apt	360	1	1
-Entire home/apt	360	1	1
-Private room	40	1	1
-Private room	40	1	1
-Private room	40	1	1
-Private room	40	1	1
-Private room	40	1	1
-Private room	40	1	1
-Private room	40	1	1
-Private room	40	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	137	1	1
-Entire home/apt	137	1	1
-Entire home/apt	137	1	1
-Entire home/apt	137	1	1
-Entire home/apt	137	1	1
-Entire home/apt	137	1	1
-Entire home/apt	137	1	1
-Entire home/apt	137	1	1
-Entire home/apt	215	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	82	1	1
-Private room	82	1	1
-Private room	82	1	1
-Private room	82	1	1
-Private room	82	1	1
-Private room	82	1	1
-Entire home/apt	48	1	1
-Entire home/apt	48	1	1
-Entire home/apt	48	1	1
-Entire home/apt	48	1	1
-Entire home/apt	48	1	1
-Entire home/apt	48	1	1
-Entire home/apt	48	1	1
-Entire home/apt	48	1	1
-Entire home/apt	48	1	1
-Entire home/apt	48	1	1
-Entire home/apt	48	1	1
-Entire home/apt	48	1	1
-Entire home/apt	48	1	1
-Entire home/apt	48	1	1
-Entire home/apt	48	1	1
-Entire home/apt	48	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Entire home/apt	310	1	1
-Entire home/apt	310	1	1
-Entire home/apt	310	1	1
-Entire home/apt	310	1	1
-Entire home/apt	310	1	1
-Private room	60	1	1
-Private room	60	1	1
-Entire home/apt	90	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Entire home/apt	90	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Entire home/apt	90	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Entire home/apt	90	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Entire home/apt	90	1	1
-Private room	60	1	1
-Private room	60	1	1
-Entire home/apt	85	1	1
-Private room	60	1	1
-Private room	99	1	1
-Entire home/apt	107	1	1
-Entire home/apt	107	1	1
-Private room	99	1	1
-Entire home/apt	107	1	1
-Private room	99	1	1
-Private room	99	1	1
-Entire home/apt	186	1	1
-Private room	99	1	1
-Entire home/apt	186	1	1
-Private room	99	1	1
-Entire home/apt	186	1	1
-Private room	99	1	1
-Entire home/apt	89	1	1
-Private room	99	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Private room	99	1	1
-Entire home/apt	89	1	1
-Private room	99	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Private room	99	1	1
-Entire home/apt	89	1	1
-Private room	99	1	1
-Entire home/apt	89	1	1
-Private room	99	1	1
-Entire home/apt	89	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	109	1	1
-Private room	109	1	1
-Entire home/apt	310	1	1
-Entire home/apt	310	1	1
-Entire home/apt	310	1	1
-Entire home/apt	310	1	1
-Private room	40	1	1
-Private room	40	1	1
-Private room	40	1	1
-Private room	40	1	1
-Entire home/apt	145	1	1
-Entire home/apt	186	1	1
-Entire home/apt	186	1	1
-Entire home/apt	186	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	107	1	1
-Entire home/apt	107	1	1
-Entire home/apt	107	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	199	1	1
-Entire home/apt	199	1	1
-Entire home/apt	199	1	1
-Entire home/apt	199	1	1
-Entire home/apt	199	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Entire home/apt	114	1	1
-Entire home/apt	114	1	1
-Entire home/apt	114	1	1
-Entire home/apt	114	1	1
-Entire home/apt	114	1	1
-Entire home/apt	114	1	1
-Entire home/apt	114	1	1
-Entire home/apt	114	1	1
-Entire home/apt	114	1	1
-Entire home/apt	114	1	1
-Entire home/apt	114	1	1
-Entire home/apt	114	1	1
-Entire home/apt	114	1	1
-Entire home/apt	114	1	1
-Entire home/apt	114	1	1
-Private room	100	1	1
-Private room	100	1	1
-Private room	100	1	1
-Private room	100	1	1
-Private room	100	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Entire home/apt	99	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Entire home/apt	220	1	1
-Entire home/apt	220	1	1
-Entire home/apt	220	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Private room	97	1	1
-Private room	97	1	1
-Private room	97	1	1
-Private room	97	1	1
-Entire home/apt	250	1	1
-Entire home/apt	250	1	1
-Entire home/apt	86	1	1
-Entire home/apt	86	1	1
-Entire home/apt	86	1	1
-Entire home/apt	86	1	1
-Entire home/apt	86	1	1
-Entire home/apt	86	1	1
-Entire home/apt	86	1	1
-Entire home/apt	86	1	1
-Entire home/apt	86	1	1
-Entire home/apt	86	1	1
-Entire home/apt	86	1	1
-Entire home/apt	86	1	1
-Entire home/apt	86	1	1
-Entire home/apt	86	1	1
-Entire home/apt	86	1	1
-Entire home/apt	86	1	1
-Entire home/apt	86	1	1
-Entire home/apt	86	1	1
-Entire home/apt	86	1	1
-Entire home/apt	86	1	1
-Entire home/apt	86	1	1
-Entire home/apt	86	1	1
-Entire home/apt	86	1	1
-Entire home/apt	86	1	1
-Entire home/apt	86	1	1
-Entire home/apt	86	1	1
-Entire home/apt	86	1	1
-Entire home/apt	86	1	1
-Entire home/apt	86	1	1
-Entire home/apt	86	1	1
-Entire home/apt	86	1	1
-Entire home/apt	86	1	1
-Entire home/apt	86	1	1
-Entire home/apt	86	1	1
-Entire home/apt	86	1	1
-Entire home/apt	86	1	1
-Entire home/apt	86	1	1
-Entire home/apt	86	1	1
-Entire home/apt	86	1	1
-Entire home/apt	86	1	1
-Entire home/apt	86	1	1
-Entire home/apt	86	1	1
-Entire home/apt	86	1	1
-Entire home/apt	86	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	147	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	89	1	1
-Entire home/apt	99	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	99	1	1
-Entire home/apt	89	1	1
-Entire home/apt	99	1	1
-Entire home/apt	89	1	1
-Entire home/apt	99	1	1
-Entire home/apt	89	1	1
-Entire home/apt	99	1	1
-Entire home/apt	89	1	1
-Entire home/apt	99	1	1
-Entire home/apt	89	1	1
-Entire home/apt	99	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	107	1	1
-Entire home/apt	107	1	1
-Entire home/apt	199	1	1
-Entire home/apt	199	1	1
-Entire home/apt	199	1	1
-Entire home/apt	199	1	1
-Entire home/apt	199	1	1
-Entire home/apt	199	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	75	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Entire home/apt	125	1	1
-Entire home/apt	165	1	1
-Entire home/apt	165	1	1
-Private room	60	1	1
-Private room	60	1	1
-Entire home/apt	86	1	1
-Entire home/apt	86	1	1
-Entire home/apt	86	1	1
-Entire home/apt	86	1	1
-Entire home/apt	86	1	1
-Entire home/apt	86	1	1
-Entire home/apt	86	1	1
-Entire home/apt	86	1	1
-Entire home/apt	86	1	1
-Entire home/apt	86	1	1
-Entire home/apt	86	1	1
-Entire home/apt	86	1	1
-Entire home/apt	86	1	1
-Entire home/apt	86	1	1
-Entire home/apt	86	1	1
-Entire home/apt	86	1	1
-Entire home/apt	147	1	1
-Entire home/apt	147	1	1
-Entire home/apt	147	1	1
-Entire home/apt	147	1	1
-Entire home/apt	147	1	1
-Entire home/apt	147	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Entire home/apt	199	1	1
-Entire home/apt	199	1	1
-Entire home/apt	199	1	1
-Entire home/apt	199	1	1
-Entire home/apt	199	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	59	1	1
-Entire home/apt	220	1	1
-Private room	97	1	1
-Private room	97	1	1
-Private room	97	1	1
-Private room	97	1	1
-Private room	97	1	1
-Private room	97	1	1
-Private room	97	1	1
-Private room	97	1	1
-Private room	97	1	1
-Private room	97	1	1
-Entire home/apt	250	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Entire home/apt	92	1	1
-Entire home/apt	92	1	1
-Entire home/apt	92	1	1
-Entire home/apt	92	1	1
-Entire home/apt	92	1	1
-Entire home/apt	92	1	1
-Entire home/apt	92	1	1
-Entire home/apt	92	1	1
-Entire home/apt	114	1	1
-Entire home/apt	114	1	1
-Entire home/apt	114	1	1
-Entire home/apt	114	1	1
-Entire home/apt	114	1	1
-Entire home/apt	114	1	1
-Entire home/apt	114	1	1
-Private room	100	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	89	1	1
-Entire home/apt	99	1	1
-Entire home/apt	89	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	280	1	1
-Entire home/apt	280	1	1
-Entire home/apt	280	1	1
-Entire home/apt	280	1	1
-Entire home/apt	280	1	1
-Entire home/apt	140	1	1
-Entire home/apt	140	1	1
-Entire home/apt	140	1	1
-Entire home/apt	140	1	1
-Entire home/apt	140	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Private room	65	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Private room	88	1	1
-Private room	88	1	1
-Private room	88	1	1
-Private room	88	1	1
-Private room	88	1	1
-Private room	88	1	1
-Entire home/apt	82	1	1
-Entire home/apt	82	1	1
-Entire home/apt	82	1	1
-Entire home/apt	82	1	1
-Entire home/apt	82	1	1
-Entire home/apt	82	1	1
-Entire home/apt	82	1	1
-Entire home/apt	82	1	1
-Entire home/apt	82	1	1
-Entire home/apt	82	1	1
-Entire home/apt	82	1	1
-Entire home/apt	82	1	1
-Entire home/apt	82	1	1
-Entire home/apt	82	1	1
-Entire home/apt	82	1	1
-Entire home/apt	82	1	1
-Entire home/apt	82	1	1
-Entire home/apt	82	1	1
-Entire home/apt	82	1	1
-Entire home/apt	82	1	1
-Entire home/apt	82	1	1
-Entire home/apt	82	1	1
-Entire home/apt	82	1	1
-Entire home/apt	82	1	1
-Entire home/apt	82	1	1
-Entire home/apt	82	1	1
-Entire home/apt	82	1	1
-Entire home/apt	82	1	1
-Entire home/apt	82	1	1
-Entire home/apt	82	1	1
-Entire home/apt	135	1	1
-Entire home/apt	117	1	1
-Entire home/apt	117	1	1
-Entire home/apt	117	1	1
-Entire home/apt	117	1	1
-Private room	225	1	1
-Private room	225	1	1
-Private room	225	1	1
-Private room	225	1	1
-Private room	225	1	1
-Private room	225	1	1
-Private room	225	1	1
-Private room	225	1	1
-Private room	225	1	1
-Private room	225	1	1
-Private room	225	1	1
-Private room	225	1	1
-Private room	225	1	1
-Private room	225	1	1
-Private room	225	1	1
-Private room	225	1	1
-Private room	225	1	1
-Private room	225	1	1
-Private room	225	1	1
-Private room	225	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Private room	70	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Entire home/apt	92	1	1
-Private room	110	1	1
-Private room	110	1	1
-Private room	110	1	1
-Private room	110	1	1
-Private room	110	1	1
-Private room	110	1	1
-Private room	110	1	1
-Private room	110	1	1
-Private room	110	1	1
-Private room	110	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	122	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Private room	88	1	1
-Private room	88	1	1
-Private room	88	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	250	1	1
-Entire home/apt	250	1	1
-Entire home/apt	250	1	1
-Private room	100	1	1
-Private room	100	1	1
-Private room	100	1	1
-Private room	100	1	1
-Private room	100	1	1
-Entire home/apt	115	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Private room	70	1	1
-Entire home/apt	145	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Entire home/apt	76	1	1
-Entire home/apt	145	1	1
-Entire home/apt	76	1	1
-Entire home/apt	145	1	1
-Entire home/apt	76	1	1
-Entire home/apt	145	1	1
-Entire home/apt	76	1	1
-Entire home/apt	145	1	1
-Entire home/apt	76	1	1
-Entire home/apt	76	1	1
-Entire home/apt	145	1	1
-Entire home/apt	76	1	1
-Private room	65	1	1
-Entire home/apt	76	1	1
-Private room	65	1	1
-Entire home/apt	76	1	1
-Private room	65	1	1
-Entire home/apt	76	1	1
-Private room	65	1	1
-Entire home/apt	76	1	1
-Private room	75	1	1
-Entire home/apt	76	1	1
-Private room	75	1	1
-Entire home/apt	150	1	1
-Private room	75	1	1
-Entire home/apt	150	1	1
-Private room	75	1	1
-Entire home/apt	150	1	1
-Private room	75	1	1
-Entire home/apt	150	1	1
-Private room	75	1	1
-Entire home/apt	150	1	1
-Private room	75	1	1
-Entire home/apt	80	1	1
-Private room	75	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Private room	75	1	1
-Entire home/apt	99	1	1
-Private room	75	1	1
-Entire home/apt	99	1	1
-Private room	75	1	1
-Entire home/apt	99	1	1
-Private room	75	1	1
-Entire home/apt	99	1	1
-Private room	75	1	1
-Entire home/apt	159	1	1
-Private room	75	1	1
-Entire home/apt	159	1	1
-Private room	75	1	1
-Entire home/apt	89	1	1
-Entire home/apt	117	1	1
-Entire home/apt	89	1	1
-Entire home/apt	117	1	1
-Entire home/apt	110	1	1
-Entire home/apt	89	1	1
-Entire home/apt	110	1	1
-Entire home/apt	89	1	1
-Entire home/apt	110	1	1
-Entire home/apt	89	1	1
-Entire home/apt	110	1	1
-Entire home/apt	89	1	1
-Private room	70	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Private room	70	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Entire home/apt	275	1	1
-Entire home/apt	275	1	1
-Entire home/apt	275	1	1
-Entire home/apt	275	1	1
-Entire home/apt	275	1	1
-Entire home/apt	275	1	1
-Private room	46	1	1
-Private room	46	1	1
-Private room	46	1	1
-Private room	46	1	1
-Private room	46	1	1
-Private room	46	1	1
-Private room	46	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Private room	51	1	1
-Private room	51	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	93	1	1
-Entire home/apt	93	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	135	1	1
-Entire home/apt	154	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Private room	79	1	1
-Entire home/apt	450	1	1
-Entire home/apt	450	1	1
-Entire home/apt	450	1	1
-Entire home/apt	450	1	1
-Entire home/apt	450	1	1
-Entire home/apt	450	1	1
-Entire home/apt	450	1	1
-Entire home/apt	450	1	1
-Entire home/apt	450	1	1
-Entire home/apt	450	1	1
-Entire home/apt	196	1	1
-Entire home/apt	196	1	1
-Entire home/apt	196	1	1
-Private room	99	1	1
-Private room	99	1	1
-Entire home/apt	115	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	88	1	1
-Private room	88	1	1
-Private room	88	1	1
-Private room	88	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Private room	64	1	1
-Private room	64	1	1
-Private room	64	1	1
-Private room	64	1	1
-Private room	64	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Entire home/apt	76	1	1
-Entire home/apt	76	1	1
-Entire home/apt	76	1	1
-Entire home/apt	76	1	1
-Entire home/apt	76	1	1
-Entire home/apt	76	1	1
-Entire home/apt	76	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	159	1	1
-Entire home/apt	159	1	1
-Entire home/apt	159	1	1
-Entire home/apt	159	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	169	1	1
-Entire home/apt	169	1	1
-Entire home/apt	169	1	1
-Entire home/apt	169	1	1
-Entire home/apt	169	1	1
-Entire home/apt	169	1	1
-Entire home/apt	169	1	1
-Entire home/apt	169	1	1
-Private room	65	1	1
-Private room	65	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	200	1	1
-Entire home/apt	200	1	1
-Entire home/apt	200	1	1
-Entire home/apt	200	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Entire home/apt	135	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	88	1	1
-Private room	88	1	1
-Private room	88	1	1
-Private room	64	1	1
-Private room	64	1	1
-Private room	64	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	87	1	1
-Entire home/apt	170	1	1
-Entire home/apt	170	1	1
-Entire home/apt	170	1	1
-Entire home/apt	170	1	1
-Entire home/apt	170	1	1
-Entire home/apt	170	1	1
-Entire home/apt	170	1	1
-Entire home/apt	200	1	1
-Private room	82	1	1
-Entire home/apt	200	1	1
-Entire home/apt	200	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	82	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	82	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	82	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Entire home/apt	48	1	1
-Private room	90	1	1
-Private room	90	1	1
-Entire home/apt	48	1	1
-Private room	90	1	1
-Private room	90	1	1
-Entire home/apt	48	1	1
-Entire home/apt	275	1	1
-Entire home/apt	48	1	1
-Entire home/apt	275	1	1
-Entire home/apt	48	1	1
-Entire home/apt	149	1	1
-Entire home/apt	48	1	1
-Entire home/apt	149	1	1
-Entire home/apt	48	1	1
-Entire home/apt	149	1	1
-Entire home/apt	48	1	1
-Entire home/apt	149	1	1
-Entire home/apt	48	1	1
-Private room	70	1	1
-Entire home/apt	48	1	1
-Private room	70	1	1
-Entire home/apt	48	1	1
-Entire home/apt	120	1	1
-Entire home/apt	48	1	1
-Entire home/apt	120	1	1
-Entire home/apt	48	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	48	1	1
-Entire home/apt	120	1	1
-Entire home/apt	48	1	1
-Entire home/apt	120	1	1
-Entire home/apt	48	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	115	1	1
-Entire home/apt	48	1	1
-Entire home/apt	115	1	1
-Entire home/apt	48	1	1
-Entire home/apt	125	1	1
-Entire home/apt	48	1	1
-Entire home/apt	125	1	1
-Entire home/apt	48	1	1
-Entire home/apt	93	1	1
-Entire home/apt	48	1	1
-Entire home/apt	95	1	1
-Entire home/apt	48	1	1
-Entire home/apt	95	1	1
-Entire home/apt	48	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	48	1	1
-Entire home/apt	95	1	1
-Entire home/apt	48	1	1
-Entire home/apt	95	1	1
-Entire home/apt	48	1	1
-Entire home/apt	95	1	1
-Entire home/apt	48	1	1
-Entire home/apt	95	1	1
-Entire home/apt	48	1	1
-Entire home/apt	95	1	1
-Entire home/apt	48	1	1
-Entire home/apt	95	1	1
-Entire home/apt	48	1	1
-Entire home/apt	95	1	1
-Entire home/apt	48	1	1
-Entire home/apt	205	1	1
-Entire home/apt	48	1	1
-Entire home/apt	205	1	1
-Entire home/apt	48	1	1
-Entire home/apt	79	1	1
-Entire home/apt	48	1	1
-Entire home/apt	79	1	1
-Entire home/apt	48	1	1
-Entire home/apt	79	1	1
-Entire home/apt	48	1	1
-Entire home/apt	79	1	1
-Entire home/apt	48	1	1
-Entire home/apt	48	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	165	1	1
-Entire home/apt	165	1	1
-Entire home/apt	165	1	1
-Entire home/apt	165	1	1
-Entire home/apt	165	1	1
-Entire home/apt	165	1	1
-Entire home/apt	165	1	1
-Entire home/apt	165	1	1
-Entire home/apt	165	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	95	1	1
-Entire home/apt	186	1	1
-Entire home/apt	186	1	1
-Entire home/apt	186	1	1
-Entire home/apt	137	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	159	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	218	1	1
-Entire home/apt	218	1	1
-Entire home/apt	218	1	1
-Entire home/apt	218	1	1
-Entire home/apt	218	1	1
-Entire home/apt	218	1	1
-Entire home/apt	218	1	1
-Entire home/apt	97	1	1
-Entire home/apt	97	1	1
-Entire home/apt	97	1	1
-Entire home/apt	97	1	1
-Entire home/apt	225	1	1
-Entire home/apt	225	1	1
-Entire home/apt	225	1	1
-Entire home/apt	225	1	1
-Entire home/apt	225	1	1
-Entire home/apt	225	1	1
-Entire home/apt	225	1	1
-Entire home/apt	225	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	196	1	1
-Entire home/apt	196	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Entire home/apt	175	1	1
-Entire home/apt	119	1	1
-Entire home/apt	119	1	1
-Entire home/apt	119	1	1
-Entire home/apt	119	1	1
-Entire home/apt	119	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Private room	150	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Private room	52	1	1
-Private room	52	1	1
-Private room	52	1	1
-Private room	52	1	1
-Private room	52	1	1
-Private room	52	1	1
-Private room	100	1	1
-Private room	100	1	1
-Private room	100	1	1
-Private room	100	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	61	1	1
-Private room	61	1	1
-Private room	69	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	137	1	1
-Entire home/apt	137	1	1
-Entire home/apt	137	1	1
-Entire home/apt	137	1	1
-Entire home/apt	137	1	1
-Entire home/apt	137	1	1
-Entire home/apt	137	1	1
-Entire home/apt	137	1	1
-Entire home/apt	137	1	1
-Entire home/apt	119	1	1
-Entire home/apt	119	1	1
-Entire home/apt	165	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	275	1	1
-Entire home/apt	275	1	1
-Entire home/apt	275	1	1
-Entire home/apt	275	1	1
-Entire home/apt	275	1	1
-Entire home/apt	275	1	1
-Entire home/apt	275	1	1
-Entire home/apt	275	1	1
-Entire home/apt	275	1	1
-Entire home/apt	275	1	1
-Entire home/apt	275	1	1
-Entire home/apt	275	1	1
-Entire home/apt	275	1	1
-Entire home/apt	275	1	1
-Entire home/apt	275	1	1
-Entire home/apt	275	1	1
-Entire home/apt	275	1	1
-Entire home/apt	220	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Private room	60	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	187	1	1
-Entire home/apt	147	1	1
-Entire home/apt	147	1	1
-Entire home/apt	147	1	1
-Entire home/apt	147	1	1
-Entire home/apt	147	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Entire home/apt	92	1	1
-Entire home/apt	92	1	1
-Entire home/apt	92	1	1
-Entire home/apt	92	1	1
-Entire home/apt	92	1	1
-Entire home/apt	92	1	1
-Entire home/apt	92	1	1
-Private room	110	1	1
-Private room	110	1	1
-Private room	110	1	1
-Private room	110	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	280	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	122	1	1
-Entire home/apt	122	1	1
-Entire home/apt	122	1	1
-Private room	100	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	196	1	1
-Entire home/apt	196	1	1
-Entire home/apt	159	1	1
-Entire home/apt	159	1	1
-Entire home/apt	159	1	1
-Entire home/apt	218	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	300	1	1
-Entire home/apt	135	1	1
-Entire home/apt	97	1	1
-Entire home/apt	97	1	1
-Entire home/apt	97	1	1
-Entire home/apt	97	1	1
-Entire home/apt	225	1	1
-Entire home/apt	225	1	1
-Entire home/apt	225	1	1
-Entire home/apt	225	1	1
-Entire home/apt	225	1	1
-Entire home/apt	225	1	1
-Entire home/apt	225	1	1
-Entire home/apt	225	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	200	1	1
-Entire home/apt	200	1	1
-Entire home/apt	200	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	51	1	1
-Private room	51	1	1
-Private room	51	1	1
-Private room	51	1	1
-Private room	51	1	1
-Private room	51	1	1
-Private room	51	1	1
-Private room	51	1	1
-Private room	51	1	1
-Private room	51	1	1
-Private room	51	1	1
-Private room	51	1	1
-Private room	51	1	1
-Private room	45	1	1
-Private room	45	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	93	1	1
-Entire home/apt	93	1	1
-Entire home/apt	93	1	1
-Entire home/apt	93	1	1
-Entire home/apt	93	1	1
-Entire home/apt	93	1	1
-Entire home/apt	93	1	1
-Entire home/apt	93	1	1
-Entire home/apt	93	1	1
-Entire home/apt	93	1	1
-Entire home/apt	93	1	1
-Entire home/apt	93	1	1
-Entire home/apt	165	1	1
-Entire home/apt	165	1	1
-Entire home/apt	165	1	1
-Entire home/apt	165	1	1
-Entire home/apt	165	1	1
-Entire home/apt	165	1	1
-Entire home/apt	165	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	70	1	1
-Entire home/apt	70	1	1
-Entire home/apt	70	1	1
-Entire home/apt	70	1	1
-Entire home/apt	70	1	1
-Entire home/apt	70	1	1
-Entire home/apt	70	1	1
-Entire home/apt	70	1	1
-Entire home/apt	70	1	1
-Entire home/apt	70	1	1
-Entire home/apt	70	1	1
-Entire home/apt	70	1	1
-Entire home/apt	70	1	1
-Entire home/apt	70	1	1
-Entire home/apt	70	1	1
-Entire home/apt	70	1	1
-Entire home/apt	70	1	1
-Entire home/apt	70	1	1
-Entire home/apt	375	1	1
-Entire home/apt	375	1	1
-Entire home/apt	375	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Entire home/apt	84	1	1
-Entire home/apt	84	1	1
-Entire home/apt	84	1	1
-Entire home/apt	84	1	1
-Entire home/apt	84	1	1
-Entire home/apt	84	1	1
-Entire home/apt	84	1	1
-Entire home/apt	84	1	1
-Entire home/apt	84	1	1
-Entire home/apt	84	1	1
-Entire home/apt	84	1	1
-Entire home/apt	84	1	1
-Entire home/apt	84	1	1
-Entire home/apt	84	1	1
-Entire home/apt	84	1	1
-Entire home/apt	84	1	1
-Entire home/apt	84	1	1
-Entire home/apt	84	1	1
-Entire home/apt	84	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	70	1	1
-Entire home/apt	550	1	1
-Private room	85	1	1
-Private room	85	1	1
-Private room	85	1	1
-Private room	85	1	1
-Private room	85	1	1
-Private room	85	1	1
-Private room	85	1	1
-Private room	100	1	1
-Private room	85	1	1
-Private room	100	1	1
-Private room	85	1	1
-Private room	100	1	1
-Private room	85	1	1
-Private room	100	1	1
-Private room	85	1	1
-Private room	100	1	1
-Private room	85	1	1
-Private room	100	1	1
-Entire home/apt	435	1	1
-Private room	100	1	1
-Entire home/apt	435	1	1
-Entire home/apt	108	1	1
-Private room	100	1	1
-Entire home/apt	108	1	1
-Private room	100	1	1
-Entire home/apt	108	1	1
-Private room	100	1	1
-Entire home/apt	108	1	1
-Private room	100	1	1
-Entire home/apt	108	1	1
-Entire home/apt	115	1	1
-Entire home/apt	108	1	1
-Entire home/apt	115	1	1
-Entire home/apt	108	1	1
-Entire home/apt	115	1	1
-Entire home/apt	108	1	1
-Entire home/apt	115	1	1
-Entire home/apt	108	1	1
-Entire home/apt	110	1	1
-Entire home/apt	150	1	1
-Entire home/apt	110	1	1
-Entire home/apt	150	1	1
-Entire home/apt	110	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	99	1	1
-Entire home/apt	150	1	1
-Entire home/apt	99	1	1
-Entire home/apt	150	1	1
-Entire home/apt	99	1	1
-Private room	88	1	1
-Entire home/apt	99	1	1
-Private room	88	1	1
-Entire home/apt	99	1	1
-Private room	88	1	1
-Entire home/apt	99	1	1
-Private room	88	1	1
-Entire home/apt	99	1	1
-Private room	88	1	1
-Entire home/apt	99	1	1
-Private room	88	1	1
-Entire home/apt	99	1	1
-Entire home/apt	82	1	1
-Entire home/apt	99	1	1
-Entire home/apt	82	1	1
-Entire home/apt	99	1	1
-Entire home/apt	82	1	1
-Entire home/apt	99	1	1
-Entire home/apt	82	1	1
-Entire home/apt	99	1	1
-Entire home/apt	82	1	1
-Entire home/apt	99	1	1
-Entire home/apt	82	1	1
-Entire home/apt	99	1	1
-Entire home/apt	82	1	1
-Entire home/apt	99	1	1
-Entire home/apt	82	1	1
-Entire home/apt	99	1	1
-Entire home/apt	82	1	1
-Entire home/apt	99	1	1
-Entire home/apt	82	1	1
-Entire home/apt	99	1	1
-Entire home/apt	82	1	1
-Entire home/apt	99	1	1
-Entire home/apt	135	1	1
-Entire home/apt	99	1	1
-Entire home/apt	117	1	1
-Entire home/apt	99	1	1
-Entire home/apt	117	1	1
-Entire home/apt	117	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	99	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	99	1	1
-Entire home/apt	110	1	1
-Entire home/apt	99	1	1
-Entire home/apt	110	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	110	1	1
-Private room	69	1	1
-Entire home/apt	110	1	1
-Private room	69	1	1
-Private room	69	1	1
-Entire home/apt	110	1	1
-Private room	69	1	1
-Private room	69	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Private room	69	1	1
-Entire home/apt	110	1	1
-Private room	69	1	1
-Entire home/apt	95	1	1
-Private room	69	1	1
-Private room	69	1	1
-Entire home/apt	95	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Entire home/apt	219	1	1
-Entire home/apt	219	1	1
-Private room	150	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	325	1	1
-Entire home/apt	254	1	1
-Entire home/apt	254	1	1
-Entire home/apt	254	1	1
-Entire home/apt	254	1	1
-Entire home/apt	254	1	1
-Entire home/apt	254	1	1
-Entire home/apt	254	1	1
-Private room	52	1	1
-Private room	52	1	1
-Private room	52	1	1
-Private room	52	1	1
-Private room	52	1	1
-Private room	52	1	1
-Private room	52	1	1
-Private room	52	1	1
-Private room	52	1	1
-Private room	52	1	1
-Private room	52	1	1
-Private room	52	1	1
-Private room	52	1	1
-Private room	52	1	1
-Private room	52	1	1
-Private room	49	1	1
-Private room	49	1	1
-Private room	49	1	1
-Private room	49	1	1
-Private room	49	1	1
-Private room	49	1	1
-Private room	49	1	1
-Private room	49	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Private room	100	1	1
-Private room	100	1	1
-Private room	100	1	1
-Shared room	65	1	1
-Shared room	65	1	1
-Shared room	65	1	1
-Shared room	65	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	52	1	1
-Entire home/apt	375	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Private room	47	1	1
-Private room	47	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	88	1	1
-Private room	88	1	1
-Private room	88	1	1
-Private room	88	1	1
-Private room	88	1	1
-Private room	88	1	1
-Private room	88	1	1
-Private room	88	1	1
-Private room	88	1	1
-Private room	88	1	1
-Private room	65	1	1
-Private room	65	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Entire home/apt	169	1	1
-Entire home/apt	169	1	1
-Entire home/apt	169	1	1
-Entire home/apt	169	1	1
-Entire home/apt	169	1	1
-Entire home/apt	169	1	1
-Entire home/apt	169	1	1
-Private room	87	1	1
-Private room	87	1	1
-Entire home/apt	200	1	1
-Entire home/apt	200	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	170	1	1
-Entire home/apt	170	1	1
-Entire home/apt	170	1	1
-Entire home/apt	170	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Private room	51	1	1
-Private room	51	1	1
-Private room	51	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Private room	88	1	1
-Private room	88	1	1
-Private room	88	1	1
-Private room	88	1	1
-Private room	88	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Private room	68	1	1
-Private room	68	1	1
-Private room	68	1	1
-Private room	68	1	1
-Private room	68	1	1
-Private room	68	1	1
-Private room	68	1	1
-Private room	68	1	1
-Private room	150	1	1
-Private room	150	1	1
-Private room	150	1	1
-Private room	150	1	1
-Private room	150	1	1
-Private room	150	1	1
-Private room	150	1	1
-Private room	150	1	1
-Private room	150	1	1
-Private room	150	1	1
-Private room	150	1	1
-Private room	150	1	1
-Private room	150	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	82	1	1
-Private room	82	1	1
-Private room	82	1	1
-Private room	82	1	1
-Private room	82	1	1
-Private room	82	1	1
-Private room	82	1	1
-Private room	82	1	1
-Private room	82	1	1
-Private room	82	1	1
-Private room	82	1	1
-Private room	82	1	1
-Private room	82	1	1
-Entire home/apt	250	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	139	1	1
-Entire home/apt	139	1	1
-Entire home/apt	139	1	1
-Entire home/apt	139	1	1
-Shared room	59	1	1
-Shared room	59	1	1
-Shared room	59	1	1
-Shared room	59	1	1
-Shared room	59	1	1
-Shared room	59	1	1
-Shared room	59	1	1
-Shared room	59	1	1
-Shared room	59	1	1
-Shared room	59	1	1
-Shared room	59	1	1
-Private room	99	1	1
-Private room	99	1	1
-Entire home/apt	399	1	1
-Entire home/apt	399	1	1
-Entire home/apt	399	1	1
-Entire home/apt	399	1	1
-Entire home/apt	399	1	1
-Entire home/apt	399	1	1
-Entire home/apt	399	1	1
-Entire home/apt	399	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	97	1	1
-Entire home/apt	97	1	1
-Entire home/apt	97	1	1
-Entire home/apt	97	1	1
-Entire home/apt	97	1	1
-Entire home/apt	97	1	1
-Entire home/apt	97	1	1
-Entire home/apt	225	1	1
-Entire home/apt	225	1	1
-Entire home/apt	225	1	1
-Entire home/apt	225	1	1
-Entire home/apt	225	1	1
-Entire home/apt	225	1	1
-Entire home/apt	155	1	1
-Entire home/apt	155	1	1
-Entire home/apt	155	1	1
-Entire home/apt	200	1	1
-Entire home/apt	200	1	1
-Entire home/apt	200	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	119	1	1
-Entire home/apt	119	1	1
-Entire home/apt	93	1	1
-Entire home/apt	93	1	1
-Entire home/apt	93	1	1
-Entire home/apt	93	1	1
-Entire home/apt	93	1	1
-Entire home/apt	93	1	1
-Entire home/apt	93	1	1
-Entire home/apt	93	1	1
-Entire home/apt	93	1	1
-Entire home/apt	93	1	1
-Entire home/apt	93	1	1
-Entire home/apt	93	1	1
-Entire home/apt	93	1	1
-Entire home/apt	93	1	1
-Entire home/apt	93	1	1
-Entire home/apt	399	1	1
-Entire home/apt	93	1	1
-Entire home/apt	399	1	1
-Entire home/apt	93	1	1
-Entire home/apt	399	1	1
-Entire home/apt	93	1	1
-Entire home/apt	399	1	1
-Entire home/apt	93	1	1
-Entire home/apt	399	1	1
-Entire home/apt	93	1	1
-Entire home/apt	93	1	1
-Entire home/apt	399	1	1
-Entire home/apt	93	1	1
-Entire home/apt	93	1	1
-Entire home/apt	93	1	1
-Entire home/apt	399	1	1
-Entire home/apt	93	1	1
-Entire home/apt	399	1	1
-Private room	75	1	1
-Private room	250	1	1
-Private room	75	1	1
-Entire home/apt	85	1	1
-Private room	75	1	1
-Entire home/apt	85	1	1
-Private room	75	1	1
-Entire home/apt	85	1	1
-Private room	75	1	1
-Entire home/apt	85	1	1
-Private room	75	1	1
-Entire home/apt	85	1	1
-Private room	75	1	1
-Entire home/apt	85	1	1
-Private room	75	1	1
-Private room	75	1	1
-Entire home/apt	85	1	1
-Private room	75	1	1
-Private room	75	1	1
-Entire home/apt	85	1	1
-Private room	75	1	1
-Entire home/apt	85	1	1
-Private room	75	1	1
-Private room	75	1	1
-Entire home/apt	85	1	1
-Private room	75	1	1
-Private room	75	1	1
-Entire home/apt	85	1	1
-Private room	75	1	1
-Entire home/apt	85	1	1
-Private room	75	1	1
-Entire home/apt	85	1	1
-Private room	75	1	1
-Entire home/apt	85	1	1
-Private room	75	1	1
-Entire home/apt	85	1	1
-Private room	75	1	1
-Private room	75	1	1
-Entire home/apt	85	1	1
-Private room	75	1	1
-Entire home/apt	108	1	1
-Entire home/apt	85	1	1
-Entire home/apt	99	1	1
-Entire home/apt	85	1	1
-Entire home/apt	99	1	1
-Entire home/apt	85	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	85	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	85	1	1
-Entire home/apt	99	1	1
-Entire home/apt	85	1	1
-Entire home/apt	99	1	1
-Entire home/apt	85	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	219	1	1
-Entire home/apt	219	1	1
-Entire home/apt	98	1	1
-Entire home/apt	98	1	1
-Entire home/apt	98	1	1
-Entire home/apt	98	1	1
-Entire home/apt	98	1	1
-Entire home/apt	98	1	1
-Entire home/apt	98	1	1
-Entire home/apt	98	1	1
-Entire home/apt	98	1	1
-Entire home/apt	98	1	1
-Entire home/apt	98	1	1
-Entire home/apt	98	1	1
-Entire home/apt	98	1	1
-Entire home/apt	98	1	1
-Entire home/apt	81	1	1
-Entire home/apt	81	1	1
-Entire home/apt	81	1	1
-Entire home/apt	81	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Private room	48	1	1
-Private room	48	1	1
-Private room	48	1	1
-Shared room	65	1	1
-Shared room	65	1	1
-Shared room	65	1	1
-Shared room	65	1	1
-Shared room	65	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	49	1	1
-Private room	49	1	1
-Entire home/apt	70	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	219	1	1
-Entire home/apt	219	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Private room	64	1	1
-Private room	64	1	1
-Private room	64	1	1
-Private room	79	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	150	1	1
-Private room	150	1	1
-Private room	150	1	1
-Private room	150	1	1
-Private room	150	1	1
-Private room	150	1	1
-Private room	150	1	1
-Private room	150	1	1
-Private room	150	1	1
-Private room	150	1	1
-Private room	150	1	1
-Private room	150	1	1
-Private room	150	1	1
-Private room	150	1	1
-Private room	150	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	300	1	1
-Entire home/apt	300	1	1
-Entire home/apt	300	1	1
-Entire home/apt	300	1	1
-Entire home/apt	300	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	220	1	1
-Entire home/apt	220	1	1
-Entire home/apt	220	1	1
-Entire home/apt	220	1	1
-Entire home/apt	220	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Private room	68	1	1
-Private room	68	1	1
-Private room	68	1	1
-Private room	68	1	1
-Private room	150	1	1
-Private room	150	1	1
-Private room	150	1	1
-Private room	150	1	1
-Private room	150	1	1
-Private room	150	1	1
-Private room	150	1	1
-Private room	150	1	1
-Private room	150	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Entire home/apt	250	1	1
-Entire home/apt	250	1	1
-Shared room	59	1	1
-Shared room	59	1	1
-Shared room	59	1	1
-Shared room	59	1	1
-Shared room	59	1	1
-Shared room	59	1	1
-Shared room	59	1	1
-Shared room	59	1	1
-Shared room	59	1	1
-Shared room	59	1	1
-Shared room	59	1	1
-Shared room	59	1	1
-Shared room	59	1	1
-Shared room	59	1	1
-Shared room	59	1	1
-Shared room	59	1	1
-Shared room	59	1	1
-Shared room	59	1	1
-Shared room	59	1	1
-Shared room	59	1	1
-Shared room	59	1	1
-Shared room	59	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	219	1	1
-Entire home/apt	219	1	1
-Entire home/apt	219	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	169	1	1
-Private room	90	1	1
-Entire home/apt	128	1	1
-Entire home/apt	128	1	1
-Entire home/apt	128	1	1
-Entire home/apt	128	1	1
-Entire home/apt	128	1	1
-Entire home/apt	128	1	1
-Entire home/apt	128	1	1
-Entire home/apt	128	1	1
-Entire home/apt	128	1	1
-Entire home/apt	128	1	1
-Entire home/apt	128	1	1
-Entire home/apt	128	1	1
-Entire home/apt	128	1	1
-Entire home/apt	128	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	99	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	240	1	1
-Entire home/apt	240	1	1
-Entire home/apt	240	1	1
-Entire home/apt	240	1	1
-Entire home/apt	240	1	1
-Entire home/apt	99	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Private room	42	1	1
-Private room	42	1	1
-Private room	42	1	1
-Private room	42	1	1
-Private room	42	1	1
-Private room	42	1	1
-Private room	42	1	1
-Private room	42	1	1
-Private room	42	1	1
-Private room	42	1	1
-Private room	42	1	1
-Private room	42	1	1
-Private room	42	1	1
-Private room	42	1	1
-Private room	42	1	1
-Private room	42	1	1
-Private room	42	1	1
-Private room	42	1	1
-Private room	42	1	1
-Private room	42	1	1
-Private room	42	1	1
-Private room	42	1	1
-Private room	42	1	1
-Private room	42	1	1
-Private room	42	1	1
-Private room	42	1	1
-Private room	42	1	1
-Private room	42	1	1
-Private room	42	1	1
-Private room	42	1	1
-Private room	42	1	1
-Private room	42	1	1
-Private room	42	1	1
-Private room	42	1	1
-Private room	42	1	1
-Private room	42	1	1
-Private room	42	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	138	1	1
-Entire home/apt	138	1	1
-Entire home/apt	138	1	1
-Entire home/apt	138	1	1
-Entire home/apt	138	1	1
-Entire home/apt	138	1	1
-Entire home/apt	138	1	1
-Entire home/apt	138	1	1
-Entire home/apt	138	1	1
-Entire home/apt	138	1	1
-Private room	169	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Private room	64	1	1
-Entire home/apt	91	1	1
-Private room	125	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	150	1	1
-Private room	150	1	1
-Private room	150	1	1
-Private room	150	1	1
-Private room	150	1	1
-Private room	150	1	1
-Private room	150	1	1
-Private room	150	1	1
-Private room	150	1	1
-Private room	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	138	1	1
-Entire home/apt	138	1	1
-Entire home/apt	138	1	1
-Entire home/apt	138	1	1
-Entire home/apt	138	1	1
-Entire home/apt	138	1	1
-Entire home/apt	138	1	1
-Entire home/apt	86	1	1
-Entire home/apt	86	1	1
-Entire home/apt	86	1	1
-Entire home/apt	86	1	1
-Entire home/apt	86	1	1
-Entire home/apt	155	1	1
-Entire home/apt	155	1	1
-Entire home/apt	155	1	1
-Entire home/apt	155	1	1
-Entire home/apt	155	1	1
-Entire home/apt	155	1	1
-Entire home/apt	155	1	1
-Entire home/apt	155	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Entire home/apt	160	1	1
-Entire home/apt	160	1	1
-Entire home/apt	160	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Entire home/apt	124	1	1
-Entire home/apt	124	1	1
-Entire home/apt	124	1	1
-Entire home/apt	124	1	1
-Entire home/apt	124	1	1
-Entire home/apt	124	1	1
-Entire home/apt	124	1	1
-Entire home/apt	124	1	1
-Entire home/apt	124	1	1
-Entire home/apt	124	1	1
-Entire home/apt	124	1	1
-Entire home/apt	124	1	1
-Entire home/apt	124	1	1
-Entire home/apt	124	1	1
-Entire home/apt	124	1	1
-Entire home/apt	124	1	1
-Entire home/apt	124	1	1
-Entire home/apt	124	1	1
-Entire home/apt	124	1	1
-Entire home/apt	124	1	1
-Entire home/apt	124	1	1
-Entire home/apt	124	1	1
-Entire home/apt	124	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	58	1	1
-Private room	58	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Private room	40	1	1
-Private room	40	1	1
-Private room	40	1	1
-Private room	40	1	1
-Shared room	55	1	1
-Shared room	55	1	1
-Shared room	55	1	1
-Shared room	55	1	1
-Shared room	55	1	1
-Shared room	55	1	1
-Shared room	55	1	1
-Shared room	55	1	1
-Shared room	55	1	1
-Shared room	55	1	1
-Shared room	55	1	1
-Shared room	55	1	1
-Shared room	55	1	1
-Shared room	55	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	175	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Entire home/apt	220	1	1
-Entire home/apt	168	1	1
-Entire home/apt	168	1	1
-Entire home/apt	168	1	1
-Entire home/apt	168	1	1
-Entire home/apt	168	1	1
-Entire home/apt	168	1	1
-Entire home/apt	168	1	1
-Entire home/apt	168	1	1
-Entire home/apt	168	1	1
-Entire home/apt	168	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Entire home/apt	250	1	1
-Entire home/apt	250	1	1
-Entire home/apt	250	1	1
-Entire home/apt	250	1	1
-Entire home/apt	250	1	1
-Entire home/apt	250	1	1
-Entire home/apt	250	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	199	1	1
-Private room	68	1	1
-Private room	68	1	1
-Private room	68	1	1
-Private room	68	1	1
-Private room	68	1	1
-Private room	68	1	1
-Private room	68	1	1
-Private room	68	1	1
-Private room	68	1	1
-Entire home/apt	250	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	50	1	1
-Entire home/apt	50	1	1
-Entire home/apt	50	1	1
-Entire home/apt	50	1	1
-Entire home/apt	50	1	1
-Entire home/apt	50	1	1
-Entire home/apt	50	1	1
-Entire home/apt	50	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Entire home/apt	240	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Entire home/apt	99	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	110	1	1
-Entire home/apt	138	1	1
-Entire home/apt	138	1	1
-Entire home/apt	138	1	1
-Entire home/apt	138	1	1
-Entire home/apt	138	1	1
-Entire home/apt	138	1	1
-Entire home/apt	138	1	1
-Entire home/apt	138	1	1
-Entire home/apt	138	1	1
-Entire home/apt	138	1	1
-Entire home/apt	138	1	1
-Entire home/apt	138	1	1
-Entire home/apt	138	1	1
-Entire home/apt	138	1	1
-Entire home/apt	138	1	1
-Entire home/apt	138	1	1
-Entire home/apt	95	1	1
-Entire home/apt	86	1	1
-Entire home/apt	86	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	220	1	1
-Entire home/apt	220	1	1
-Entire home/apt	168	1	1
-Entire home/apt	168	1	1
-Entire home/apt	168	1	1
-Entire home/apt	168	1	1
-Entire home/apt	168	1	1
-Entire home/apt	168	1	1
-Entire home/apt	168	1	1
-Entire home/apt	168	1	1
-Entire home/apt	168	1	1
-Entire home/apt	168	1	1
-Entire home/apt	168	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Entire home/apt	250	1	1
-Entire home/apt	250	1	1
-Entire home/apt	250	1	1
-Entire home/apt	250	1	1
-Entire home/apt	250	1	1
-Entire home/apt	250	1	1
-Entire home/apt	250	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	199	1	1
-Entire home/apt	199	1	1
-Entire home/apt	199	1	1
-Entire home/apt	199	1	1
-Private room	68	1	1
-Private room	68	1	1
-Private room	68	1	1
-Private room	40	1	1
-Entire home/apt	250	1	1
-Entire home/apt	50	1	1
-Entire home/apt	50	1	1
-Entire home/apt	50	1	1
-Entire home/apt	50	1	1
-Entire home/apt	50	1	1
-Entire home/apt	50	1	1
-Entire home/apt	50	1	1
-Entire home/apt	50	1	1
-Entire home/apt	50	1	1
-Entire home/apt	50	1	1
-Entire home/apt	50	1	1
-Entire home/apt	50	1	1
-Entire home/apt	50	1	1
-Entire home/apt	50	1	1
-Entire home/apt	50	1	1
-Entire home/apt	50	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	147	1	1
-Entire home/apt	147	1	1
-Entire home/apt	147	1	1
-Entire home/apt	147	1	1
-Entire home/apt	147	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	139	1	1
-Entire home/apt	97	1	1
-Entire home/apt	97	1	1
-Entire home/apt	97	1	1
-Entire home/apt	97	1	1
-Entire home/apt	97	1	1
-Entire home/apt	97	1	1
-Entire home/apt	135	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Entire home/apt	185	1	1
-Entire home/apt	185	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Entire home/apt	182	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Entire home/apt	58	1	1
-Entire home/apt	58	1	1
-Entire home/apt	58	1	1
-Entire home/apt	58	1	1
-Entire home/apt	58	1	1
-Entire home/apt	58	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	50	1	1
-Entire home/apt	128	1	1
-Entire home/apt	128	1	1
-Entire home/apt	128	1	1
-Entire home/apt	147	1	1
-Entire home/apt	147	1	1
-Entire home/apt	147	1	1
-Entire home/apt	147	1	1
-Entire home/apt	147	1	1
-Entire home/apt	147	1	1
-Entire home/apt	97	1	1
-Entire home/apt	76	1	1
-Entire home/apt	76	1	1
-Entire home/apt	156	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Entire home/apt	150	1	1
-Entire home/apt	225	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	311	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	99	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	127	1	1
-Entire home/apt	127	1	1
-Private room	130	1	1
-Private room	130	1	1
-Private room	130	1	1
-Private room	130	1	1
-Private room	130	1	1
-Private room	130	1	1
-Private room	130	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	165	1	1
-Entire home/apt	165	1	1
-Private room	109	1	1
-Private room	109	1	1
-Private room	109	1	1
-Private room	109	1	1
-Private room	109	1	1
-Private room	109	1	1
-Private room	109	1	1
-Private room	109	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Private room	54	1	1
-Private room	54	1	1
-Private room	54	1	1
-Private room	54	1	1
-Private room	54	1	1
-Private room	54	1	1
-Private room	54	1	1
-Private room	54	1	1
-Private room	54	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Private room	130	1	1
-Private room	130	1	1
-Private room	130	1	1
-Private room	130	1	1
-Private room	130	1	1
-Private room	130	1	1
-Entire home/apt	225	1	1
-Entire home/apt	225	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Private room	149	1	1
-Private room	149	1	1
-Private room	149	1	1
-Private room	149	1	1
-Private room	149	1	1
-Private room	149	1	1
-Private room	149	1	1
-Private room	149	1	1
-Private room	149	1	1
-Private room	149	1	1
-Private room	149	1	1
-Private room	149	1	1
-Private room	149	1	1
-Private room	149	1	1
-Private room	149	1	1
-Private room	149	1	1
-Private room	149	1	1
-Private room	149	1	1
-Entire home/apt	165	1	1
-Entire home/apt	165	1	1
-Private room	109	1	1
-Private room	109	1	1
-Private room	109	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	325	1	1
-Entire home/apt	325	1	1
-Entire home/apt	325	1	1
-Entire home/apt	325	1	1
-Entire home/apt	325	1	1
-Entire home/apt	325	1	1
-Entire home/apt	325	1	1
-Entire home/apt	325	1	1
-Entire home/apt	325	1	1
-Entire home/apt	325	1	1
-Entire home/apt	325	1	1
-Entire home/apt	130	1	1
-Entire home/apt	130	1	1
-Entire home/apt	119	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	78	1	1
-Entire home/apt	78	1	1
-Entire home/apt	150	1	1
-Entire home/apt	400	1	1
-Entire home/apt	400	1	1
-Entire home/apt	400	1	1
-Entire home/apt	110	1	1
-Entire home/apt	245	1	1
-Entire home/apt	245	1	1
-Entire home/apt	245	1	1
-Entire home/apt	245	1	1
-Entire home/apt	204	1	1
-Entire home/apt	204	1	1
-Entire home/apt	169	1	1
-Entire home/apt	169	1	1
-Entire home/apt	169	1	1
-Entire home/apt	169	1	1
-Entire home/apt	169	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Entire home/apt	185	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Entire home/apt	175	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Entire home/apt	200	1	1
-Entire home/apt	143	1	1
-Entire home/apt	143	1	1
-Entire home/apt	135	1	1
-Entire home/apt	114	1	1
-Entire home/apt	147	1	1
-Entire home/apt	147	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Private room	126	1	1
-Entire home/apt	156	1	1
-Entire home/apt	156	1	1
-Entire home/apt	156	1	1
-Entire home/apt	156	1	1
-Entire home/apt	156	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	311	1	1
-Entire home/apt	311	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Private room	85	1	1
-Private room	85	1	1
-Private room	85	1	1
-Private room	85	1	1
-Private room	85	1	1
-Private room	85	1	1
-Private room	56	1	1
-Private room	56	1	1
-Private room	56	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Entire home/apt	169	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Entire home/apt	245	1	1
-Entire home/apt	245	1	1
-Entire home/apt	245	1	1
-Private room	57	1	1
-Private room	57	1	1
-Private room	57	1	1
-Private room	57	1	1
-Private room	57	1	1
-Private room	57	1	1
-Private room	57	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	250	1	1
-Entire home/apt	250	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Private room	50	1	1
-Private room	50	1	1
-Entire home/apt	204	1	1
-Entire home/apt	204	1	1
-Entire home/apt	204	1	1
-Entire home/apt	204	1	1
-Entire home/apt	204	1	1
-Entire home/apt	174	1	1
-Entire home/apt	174	1	1
-Private room	80	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	250	1	1
-Entire home/apt	250	1	1
-Entire home/apt	250	1	1
-Entire home/apt	250	1	1
-Entire home/apt	250	1	1
-Entire home/apt	250	1	1
-Entire home/apt	250	1	1
-Entire home/apt	250	1	1
-Entire home/apt	250	1	1
-Private room	60	1	1
-Private room	60	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	104	1	1
-Entire home/apt	104	1	1
-Entire home/apt	138	1	1
-Entire home/apt	138	1	1
-Entire home/apt	138	1	1
-Entire home/apt	138	1	1
-Entire home/apt	138	1	1
-Entire home/apt	138	1	1
-Private room	72	1	1
-Private room	72	1	1
-Private room	72	1	1
-Private room	72	1	1
-Private room	72	1	1
-Private room	57	1	1
-Private room	57	1	1
-Private room	57	1	1
-Private room	57	1	1
-Private room	57	1	1
-Private room	57	1	1
-Private room	57	1	1
-Private room	57	1	1
-Entire home/apt	200	1	1
-Entire home/apt	200	1	1
-Entire home/apt	121	1	1
-Entire home/apt	200	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	70	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	138	1	1
-Entire home/apt	138	1	1
-Entire home/apt	138	1	1
-Entire home/apt	138	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Entire home/apt	425	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Entire home/apt	225	1	1
-Entire home/apt	225	1	1
-Entire home/apt	225	1	1
-Entire home/apt	225	1	1
-Entire home/apt	225	1	1
-Entire home/apt	150	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Entire home/apt	275	1	1
-Entire home/apt	275	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Private room	50	1	1
-Private room	50	1	1
-Private room	50	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	98	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	93	1	1
-Entire home/apt	93	1	1
-Entire home/apt	93	1	1
-Entire home/apt	93	1	1
-Entire home/apt	93	1	1
-Entire home/apt	93	1	1
-Entire home/apt	93	1	1
-Entire home/apt	93	1	1
-Entire home/apt	93	1	1
-Entire home/apt	93	1	1
-Entire home/apt	205	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	154	1	1
-Private room	69	1	1
-Entire home/apt	175	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Entire home/apt	196	1	1
-Private room	99	1	1
-Private room	99	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	159	1	1
-Entire home/apt	159	1	1
-Entire home/apt	159	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	165	1	1
-Entire home/apt	165	1	1
-Entire home/apt	300	1	1
-Entire home/apt	300	1	1
-Entire home/apt	300	1	1
-Entire home/apt	240	1	1
-Entire home/apt	125	1	1
-Entire home/apt	135	1	1
-Private room	105	1	1
-Entire home/apt	196	1	1
-Entire home/apt	196	1	1
-Entire home/apt	196	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	75	1	1
-Entire home/apt	325	1	1
-Entire home/apt	325	1	1
-Entire home/apt	325	1	1
-Entire home/apt	325	1	1
-Entire home/apt	325	1	1
-Entire home/apt	325	1	1
-Entire home/apt	130	1	1
-Entire home/apt	130	1	1
-Entire home/apt	130	1	1
-Entire home/apt	130	1	1
-Private room	57	1	1
-Private room	57	1	1
-Private room	57	1	1
-Entire home/apt	119	1	1
-Entire home/apt	119	1	1
-Entire home/apt	119	1	1
-Entire home/apt	119	1	1
-Entire home/apt	119	1	1
-Entire home/apt	119	1	1
-Entire home/apt	78	1	1
-Entire home/apt	78	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	174	1	1
-Private room	50	1	1
-Entire home/apt	250	1	1
-Entire home/apt	169	1	1
-Entire home/apt	169	1	1
-Entire home/apt	169	1	1
-Entire home/apt	169	1	1
-Entire home/apt	169	1	1
-Entire home/apt	169	1	1
-Entire home/apt	169	1	1
-Entire home/apt	169	1	1
-Entire home/apt	169	1	1
-Entire home/apt	169	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	138	1	1
-Entire home/apt	138	1	1
-Entire home/apt	138	1	1
-Entire home/apt	138	1	1
-Entire home/apt	138	1	1
-Entire home/apt	138	1	1
-Entire home/apt	138	1	1
-Entire home/apt	138	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Entire home/apt	425	1	1
-Entire home/apt	425	1	1
-Entire home/apt	425	1	1
-Entire home/apt	425	1	1
-Entire home/apt	425	1	1
-Entire home/apt	425	1	1
-Entire home/apt	425	1	1
-Entire home/apt	425	1	1
-Entire home/apt	119	1	1
-Entire home/apt	119	1	1
-Entire home/apt	250	1	1
-Entire home/apt	250	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	275	1	1
-Entire home/apt	275	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Private room	89	1	1
-Private room	49	1	1
-Private room	49	1	1
-Private room	49	1	1
-Entire home/apt	122	1	1
-Entire home/apt	122	1	1
-Entire home/apt	122	1	1
-Entire home/apt	122	1	1
-Entire home/apt	122	1	1
-Entire home/apt	122	1	1
-Entire home/apt	122	1	1
-Entire home/apt	122	1	1
-Entire home/apt	122	1	1
-Entire home/apt	122	1	1
-Entire home/apt	122	1	1
-Entire home/apt	122	1	1
-Entire home/apt	122	1	1
-Entire home/apt	122	1	1
-Entire home/apt	122	1	1
-Entire home/apt	122	1	1
-Entire home/apt	122	1	1
-Entire home/apt	122	1	1
-Entire home/apt	122	1	1
-Private room	68	1	1
-Private room	68	1	1
-Private room	68	1	1
-Private room	68	1	1
-Private room	68	1	1
-Private room	68	1	1
-Entire home/apt	119	1	1
-Entire home/apt	119	1	1
-Entire home/apt	225	1	1
-Entire home/apt	225	1	1
-Entire home/apt	350	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Private room	75	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	200	1	1
-Entire home/apt	200	1	1
-Entire home/apt	200	1	1
-Entire home/apt	200	1	1
-Entire home/apt	200	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	250	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Private room	75	1	1
-Private room	75	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Private room	50	1	1
-Private room	50	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	98	1	1
-Entire home/apt	98	1	1
-Entire home/apt	98	1	1
-Entire home/apt	98	1	1
-Entire home/apt	98	1	1
-Entire home/apt	98	1	1
-Entire home/apt	98	1	1
-Entire home/apt	98	1	1
-Entire home/apt	98	1	1
-Entire home/apt	98	1	1
-Entire home/apt	98	1	1
-Entire home/apt	98	1	1
-Entire home/apt	98	1	1
-Private room	39	1	1
-Private room	39	1	1
-Private room	39	1	1
-Private room	150	1	1
-Private room	150	1	1
-Private room	150	1	1
-Entire home/apt	225	1	1
-Entire home/apt	225	1	1
-Entire home/apt	225	1	1
-Entire home/apt	225	1	1
-Entire home/apt	225	1	1
-Entire home/apt	225	1	1
-Entire home/apt	350	1	1
-Entire home/apt	350	1	1
-Entire home/apt	350	1	1
-Entire home/apt	350	1	1
-Entire home/apt	350	1	1
-Entire home/apt	350	1	1
-Entire home/apt	350	1	1
-Entire home/apt	350	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	98	1	1
-Entire home/apt	98	1	1
-Entire home/apt	98	1	1
-Entire home/apt	98	1	1
-Private room	39	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Entire home/apt	79	1	1
-Entire home/apt	119	1	1
-Entire home/apt	119	1	1
-Entire home/apt	119	1	1
-Entire home/apt	119	1	1
-Entire home/apt	119	1	1
-Entire home/apt	119	1	1
-Entire home/apt	119	1	1
-Private room	89	1	1
-Private room	66	1	1
-Private room	89	1	1
-Private room	66	1	1
-Private room	66	1	1
-Entire home/apt	70	1	1
-Private room	66	1	1
-Private room	85	1	1
-Private room	66	1	1
-Private room	85	1	1
-Private room	66	1	1
-Private room	85	1	1
-Private room	66	1	1
-Private room	85	1	1
-Private room	66	1	1
-Private room	85	1	1
-Private room	66	1	1
-Private room	85	1	1
-Entire home/apt	145	1	1
-Private room	85	1	1
-Entire home/apt	145	1	1
-Private room	85	1	1
-Entire home/apt	145	1	1
-Private room	85	1	1
-Entire home/apt	145	1	1
-Private room	85	1	1
-Entire home/apt	145	1	1
-Private room	85	1	1
-Entire home/apt	145	1	1
-Private room	85	1	1
-Entire home/apt	145	1	1
-Private room	85	1	1
-Entire home/apt	83	1	1
-Private room	85	1	1
-Entire home/apt	83	1	1
-Private room	85	1	1
-Private room	85	1	1
-Entire home/apt	95	1	1
-Private room	85	1	1
-Entire home/apt	95	1	1
-Private room	85	1	1
-Entire home/apt	95	1	1
-Entire home/apt	673	1	1
-Entire home/apt	95	1	1
-Entire home/apt	673	1	1
-Entire home/apt	95	1	1
-Entire home/apt	119	1	1
-Entire home/apt	119	1	1
-Entire home/apt	95	1	1
-Entire home/apt	119	1	1
-Entire home/apt	95	1	1
-Private room	75	1	1
-Entire home/apt	135	1	1
-Private room	75	1	1
-Entire home/apt	135	1	1
-Private room	75	1	1
-Entire home/apt	135	1	1
-Private room	75	1	1
-Private room	65	1	1
-Private room	75	1	1
-Entire home/apt	105	1	1
-Private room	75	1	1
-Entire home/apt	115	1	1
-Private room	75	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	220	1	1
-Entire home/apt	220	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Private room	150	1	1
-Private room	150	1	1
-Private room	150	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Shared room	49	1	1
-Shared room	49	1	1
-Shared room	49	1	1
-Shared room	65	1	1
-Entire home/apt	190	1	1
-Entire home/apt	190	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	260	1	1
-Entire home/apt	260	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	150	1	1
-Private room	150	1	1
-Private room	150	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Private room	51	1	1
-Private room	51	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Entire home/apt	108	1	1
-Entire home/apt	125	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	325	1	1
-Entire home/apt	254	1	1
-Entire home/apt	254	1	1
-Entire home/apt	254	1	1
-Entire home/apt	254	1	1
-Entire home/apt	254	1	1
-Entire home/apt	98	1	1
-Private room	52	1	1
-Private room	52	1	1
-Private room	52	1	1
-Private room	52	1	1
-Private room	52	1	1
-Entire home/apt	81	1	1
-Entire home/apt	81	1	1
-Entire home/apt	81	1	1
-Entire home/apt	125	1	1
-Private room	49	1	1
-Private room	49	1	1
-Private room	49	1	1
-Private room	49	1	1
-Private room	49	1	1
-Private room	49	1	1
-Private room	49	1	1
-Private room	49	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Private room	100	1	1
-Private room	100	1	1
-Private room	100	1	1
-Private room	48	1	1
-Private room	48	1	1
-Private room	48	1	1
-Private room	48	1	1
-Private room	48	1	1
-Private room	48	1	1
-Private room	48	1	1
-Private room	48	1	1
-Private room	48	1	1
-Private room	48	1	1
-Private room	48	1	1
-Private room	48	1	1
-Private room	48	1	1
-Private room	48	1	1
-Private room	48	1	1
-Private room	48	1	1
-Private room	48	1	1
-Shared room	65	1	1
-Shared room	65	1	1
-Shared room	65	1	1
-Shared room	65	1	1
-Shared room	65	1	1
-Shared room	65	1	1
-Shared room	65	1	1
-Shared room	65	1	1
-Shared room	65	1	1
-Shared room	65	1	1
-Entire home/apt	195	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	63	1	1
-Private room	63	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Private room	47	1	1
-Private room	47	1	1
-Private room	47	1	1
-Private room	47	1	1
-Private room	47	1	1
-Private room	47	1	1
-Private room	47	1	1
-Private room	65	1	1
-Private room	65	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	83	1	1
-Entire home/apt	83	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	97	1	1
-Private room	97	1	1
-Private room	97	1	1
-Private room	97	1	1
-Private room	97	1	1
-Private room	97	1	1
-Private room	97	1	1
-Private room	97	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	129	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Private room	96	1	1
-Private room	96	1	1
-Private room	96	1	1
-Private room	96	1	1
-Private room	150	1	1
-Private room	150	1	1
-Private room	150	1	1
-Private room	150	1	1
-Private room	150	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Private room	79	1	1
-Entire home/apt	105	1	1
-Entire home/apt	139	1	1
-Entire home/apt	139	1	1
-Entire home/apt	325	1	1
-Entire home/apt	325	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Private room	96	1	1
-Private room	96	1	1
-Private room	96	1	1
-Entire home/apt	260	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	150	1	1
-Private room	150	1	1
-Private room	150	1	1
-Private room	150	1	1
-Private room	86	1	1
-Private room	86	1	1
-Private room	68	1	1
-Private room	68	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	38	1	1
-Private room	38	1	1
-Private room	38	1	1
-Private room	38	1	1
-Private room	38	1	1
-Private room	38	1	1
-Entire home/apt	150	1	1
-Private room	75	1	1
-Private room	75	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Private room	68	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Private room	51	1	1
-Entire home/apt	89	1	1
-Private room	51	1	1
-Entire home/apt	89	1	1
-Private room	51	1	1
-Entire home/apt	89	1	1
-Private room	51	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Private room	51	1	1
-Entire home/apt	75	1	1
-Entire home/apt	89	1	1
-Private room	51	1	1
-Entire home/apt	75	1	1
-Entire home/apt	199	1	1
-Entire home/apt	75	1	1
-Entire home/apt	89	1	1
-Entire home/apt	199	1	1
-Entire home/apt	75	1	1
-Entire home/apt	89	1	1
-Entire home/apt	199	1	1
-Entire home/apt	75	1	1
-Entire home/apt	89	1	1
-Entire home/apt	199	1	1
-Private room	65	1	1
-Entire home/apt	89	1	1
-Entire home/apt	199	1	1
-Private room	65	1	1
-Entire home/apt	89	1	1
-Entire home/apt	199	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	85	1	1
-Entire home/apt	250	1	1
-Entire home/apt	85	1	1
-Private room	65	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Private room	65	1	1
-Entire home/apt	85	1	1
-Private room	65	1	1
-Entire home/apt	85	1	1
-Private room	65	1	1
-Entire home/apt	175	1	1
-Private room	65	1	1
-Entire home/apt	85	1	1
-Entire home/apt	175	1	1
-Private room	65	1	1
-Entire home/apt	85	1	1
-Entire home/apt	175	1	1
-Entire home/apt	85	1	1
-Private room	72	1	1
-Entire home/apt	175	1	1
-Private room	72	1	1
-Private room	72	1	1
-Entire home/apt	175	1	1
-Private room	72	1	1
-Entire home/apt	175	1	1
-Entire home/apt	490	1	1
-Entire home/apt	175	1	1
-Entire home/apt	490	1	1
-Entire home/apt	175	1	1
-Entire home/apt	490	1	1
-Entire home/apt	175	1	1
-Entire home/apt	490	1	1
-Entire home/apt	175	1	1
-Entire home/apt	490	1	1
-Entire home/apt	175	1	1
-Entire home/apt	325	1	1
-Entire home/apt	108	1	1
-Private room	65	1	1
-Private room	65	1	1
-Entire home/apt	85	1	1
-Entire home/apt	228	1	1
-Entire home/apt	85	1	1
-Private room	65	1	1
-Entire home/apt	228	1	1
-Entire home/apt	85	1	1
-Entire home/apt	165	1	1
-Entire home/apt	85	1	1
-Entire home/apt	89	1	1
-Entire home/apt	85	1	1
-Private room	65	1	1
-Entire home/apt	85	1	1
-Entire home/apt	250	1	1
-Entire home/apt	85	1	1
-Private room	65	1	1
-Private room	72	1	1
-Entire home/apt	85	1	1
-Private room	65	1	1
-Private room	72	1	1
-Entire home/apt	85	1	1
-Private room	72	1	1
-Private room	58	1	1
-Entire home/apt	115	1	1
-Private room	72	1	1
-Entire home/apt	115	1	1
-Private room	72	1	1
-Private room	58	1	1
-Entire home/apt	115	1	1
-Private room	72	1	1
-Private room	58	1	1
-Entire home/apt	115	1	1
-Private room	72	1	1
-Private room	58	1	1
-Entire home/apt	115	1	1
-Private room	72	1	1
-Private room	58	1	1
-Private room	55	1	1
-Entire home/apt	95	1	1
-Private room	58	1	1
-Entire home/apt	95	1	1
-Private room	55	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Private room	96	1	1
-Private room	96	1	1
-Entire home/apt	475	1	1
-Entire home/apt	275	1	1
-Entire home/apt	275	1	1
-Entire home/apt	200	1	1
-Entire home/apt	200	1	1
-Entire home/apt	200	1	1
-Shared room	49	1	1
-Shared room	65	1	1
-Private room	39	1	1
-Private room	39	1	1
-Private room	39	1	1
-Entire home/apt	139	1	1
-Entire home/apt	139	1	1
-Entire home/apt	139	1	1
-Entire home/apt	139	1	1
-Entire home/apt	139	1	1
-Entire home/apt	139	1	1
-Entire home/apt	139	1	1
-Entire home/apt	139	1	1
-Entire home/apt	139	1	1
-Entire home/apt	139	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	49	1	1
-Private room	49	1	1
-Entire home/apt	325	1	1
-Entire home/apt	325	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	78	1	1
-Private room	96	1	1
-Private room	96	1	1
-Private room	96	1	1
-Private room	96	1	1
-Private room	96	1	1
-Private room	96	1	1
-Private room	96	1	1
-Private room	96	1	1
-Private room	96	1	1
-Private room	96	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	97	1	1
-Entire home/apt	97	1	1
-Entire home/apt	97	1	1
-Entire home/apt	97	1	1
-Entire home/apt	97	1	1
-Entire home/apt	97	1	1
-Entire home/apt	97	1	1
-Entire home/apt	97	1	1
-Entire home/apt	97	1	1
-Entire home/apt	77	1	1
-Private room	68	1	1
-Entire home/apt	124	1	1
-Entire home/apt	124	1	1
-Entire home/apt	124	1	1
-Entire home/apt	124	1	1
-Entire home/apt	124	1	1
-Entire home/apt	124	1	1
-Entire home/apt	124	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	38	1	1
-Private room	38	1	1
-Private room	38	1	1
-Private room	38	1	1
-Private room	38	1	1
-Private room	38	1	1
-Private room	38	1	1
-Private room	38	1	1
-Private room	38	1	1
-Private room	38	1	1
-Private room	38	1	1
-Private room	38	1	1
-Private room	38	1	1
-Private room	38	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Entire home/apt	96	1	1
-Entire home/apt	96	1	1
-Entire home/apt	96	1	1
-Entire home/apt	96	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	150	1	1
-Entire home/apt	90	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Private room	70	1	1
-Entire home/apt	375	1	1
-Private room	99	1	1
-Entire home/apt	320	1	1
-Entire home/apt	320	1	1
-Entire home/apt	320	1	1
-Private room	99	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Private room	105	1	1
-Entire home/apt	250	1	1
-Entire home/apt	250	1	1
-Entire home/apt	249	1	1
-Entire home/apt	249	1	1
-Entire home/apt	249	1	1
-Entire home/apt	249	1	1
-Entire home/apt	155	1	1
-Entire home/apt	155	1	1
-Entire home/apt	155	1	1
-Entire home/apt	114	1	1
-Entire home/apt	114	1	1
-Entire home/apt	114	1	1
-Entire home/apt	114	1	1
-Entire home/apt	114	1	1
-Entire home/apt	114	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	82	1	1
-Private room	82	1	1
-Private room	82	1	1
-Private room	82	1	1
-Private room	82	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Entire home/apt	128	1	1
-Entire home/apt	128	1	1
-Entire home/apt	128	1	1
-Entire home/apt	128	1	1
-Entire home/apt	128	1	1
-Entire home/apt	128	1	1
-Entire home/apt	128	1	1
-Entire home/apt	128	1	1
-Entire home/apt	128	1	1
-Entire home/apt	128	1	1
-Entire home/apt	128	1	1
-Entire home/apt	128	1	1
-Entire home/apt	128	1	1
-Entire home/apt	128	1	1
-Entire home/apt	128	1	1
-Entire home/apt	128	1	1
-Entire home/apt	128	1	1
-Entire home/apt	128	1	1
-Entire home/apt	128	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Entire home/apt	200	1	1
-Entire home/apt	90	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	95	1	1
-Entire home/apt	490	1	1
-Entire home/apt	490	1	1
-Private room	52	1	1
-Private room	52	1	1
-Private room	52	1	1
-Private room	52	1	1
-Private room	52	1	1
-Private room	52	1	1
-Private room	52	1	1
-Private room	52	1	1
-Private room	52	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	42	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	120	1	1
-Private room	120	1	1
-Private room	52	1	1
-Private room	52	1	1
-Private room	52	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	150	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Entire home/apt	265	1	1
-Entire home/apt	197	1	1
-Entire home/apt	197	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Entire home/apt	95	1	1
-Private room	50	1	1
-Private room	50	1	1
-Private room	50	1	1
-Private room	87	1	1
-Private room	87	1	1
-Private room	87	1	1
-Entire home/apt	155	1	1
-Entire home/apt	155	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	50	1	1
-Private room	50	1	1
-Private room	50	1	1
-Private room	50	1	1
-Private room	50	1	1
-Private room	50	1	1
-Private room	50	1	1
-Private room	50	1	1
-Private room	50	1	1
-Private room	50	1	1
-Private room	50	1	1
-Private room	50	1	1
-Private room	50	1	1
-Private room	50	1	1
-Private room	50	1	1
-Private room	50	1	1
-Private room	50	1	1
-Private room	50	1	1
-Private room	50	1	1
-Private room	50	1	1
-Private room	39	1	1
-Private room	39	1	1
-Entire home/apt	220	1	1
-Entire home/apt	220	1	1
-Private room	85	1	1
-Private room	85	1	1
-Private room	85	1	1
-Private room	85	1	1
-Private room	85	1	1
-Private room	85	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	159	1	1
-Entire home/apt	159	1	1
-Entire home/apt	159	1	1
-Entire home/apt	159	1	1
-Entire home/apt	159	1	1
-Entire home/apt	159	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	92	1	1
-Private room	52	1	1
-Private room	52	1	1
-Private room	52	1	1
-Private room	52	1	1
-Private room	52	1	1
-Entire home/apt	96	1	1
-Entire home/apt	335	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Private room	111	1	1
-Private room	111	1	1
-Private room	111	1	1
-Private room	111	1	1
-Private room	111	1	1
-Private room	111	1	1
-Private room	111	1	1
-Private room	111	1	1
-Private room	111	1	1
-Entire home/apt	148	1	1
-Entire home/apt	95	1	1
-Entire home/apt	295	1	1
-Entire home/apt	295	1	1
-Entire home/apt	295	1	1
-Entire home/apt	167	1	1
-Entire home/apt	167	1	1
-Entire home/apt	167	1	1
-Private room	100	1	1
-Private room	100	1	1
-Private room	100	1	1
-Private room	100	1	1
-Entire home/apt	190	1	1
-Entire home/apt	435	1	1
-Private room	68	1	1
-Private room	68	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	56	1	1
-Private room	56	1	1
-Private room	56	1	1
-Private room	95	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	160	1	1
-Entire home/apt	160	1	1
-Entire home/apt	160	1	1
-Entire home/apt	160	1	1
-Entire home/apt	160	1	1
-Entire home/apt	160	1	1
-Entire home/apt	160	1	1
-Entire home/apt	160	1	1
-Private room	50	1	1
-Private room	50	1	1
-Private room	50	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	114	1	1
-Entire home/apt	114	1	1
-Private room	39	1	1
-Private room	39	1	1
-Private room	39	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	50	1	1
-Private room	50	1	1
-Private room	50	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	220	1	1
-Entire home/apt	220	1	1
-Entire home/apt	220	1	1
-Entire home/apt	220	1	1
-Entire home/apt	220	1	1
-Entire home/apt	220	1	1
-Entire home/apt	220	1	1
-Entire home/apt	220	1	1
-Entire home/apt	220	1	1
-Entire home/apt	220	1	1
-Entire home/apt	220	1	1
-Entire home/apt	220	1	1
-Entire home/apt	220	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	200	1	1
-Private room	110	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	119	1	1
-Entire home/apt	119	1	1
-Private room	54	1	1
-Private room	54	1	1
-Private room	54	1	1
-Private room	54	1	1
-Private room	54	1	1
-Private room	54	1	1
-Private room	54	1	1
-Entire home/apt	225	1	1
-Entire home/apt	225	1	1
-Entire home/apt	225	1	1
-Entire home/apt	225	1	1
-Entire home/apt	225	1	1
-Entire home/apt	225	1	1
-Entire home/apt	225	1	1
-Entire home/apt	225	1	1
-Entire home/apt	225	1	1
-Entire home/apt	225	1	1
-Entire home/apt	225	1	1
-Entire home/apt	225	1	1
-Entire home/apt	225	1	1
-Entire home/apt	225	1	1
-Entire home/apt	435	1	1
-Entire home/apt	140	1	1
-Private room	55	1	1
-Private room	68	1	1
-Private room	68	1	1
-Private room	68	1	1
-Private room	68	1	1
-Entire home/apt	70	1	1
-Entire home/apt	70	1	1
-Entire home/apt	100	1	1
-Entire home/apt	110	1	1
-Entire home/apt	142	1	1
-Entire home/apt	142	1	1
-Private room	82	1	1
-Private room	82	1	1
-Private room	82	1	1
-Private room	82	1	1
-Private room	82	1	1
-Private room	82	1	1
-Private room	82	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Private room	111	1	1
-Private room	111	1	1
-Private room	111	1	1
-Private room	99	1	1
-Entire home/apt	175	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	155	1	1
-Entire home/apt	155	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Entire home/apt	114	1	1
-Entire home/apt	114	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	49	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Private room	103	1	1
-Private room	103	1	1
-Private room	103	1	1
-Private room	103	1	1
-Private room	103	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Private room	85	1	1
-Private room	85	1	1
-Private room	85	1	1
-Private room	85	1	1
-Private room	85	1	1
-Private room	85	1	1
-Private room	85	1	1
-Entire home/apt	125	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	200	1	1
-Entire home/apt	200	1	1
-Entire home/apt	200	1	1
-Entire home/apt	200	1	1
-Entire home/apt	200	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	119	1	1
-Entire home/apt	119	1	1
-Entire home/apt	119	1	1
-Entire home/apt	119	1	1
-Private room	87	1	1
-Private room	87	1	1
-Private room	87	1	1
-Private room	87	1	1
-Private room	87	1	1
-Private room	87	1	1
-Private room	87	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	175	1	1
-Entire home/apt	300	1	1
-Entire home/apt	300	1	1
-Entire home/apt	300	1	1
-Entire home/apt	142	1	1
-Entire home/apt	142	1	1
-Entire home/apt	142	1	1
-Entire home/apt	142	1	1
-Entire home/apt	142	1	1
-Entire home/apt	142	1	1
-Entire home/apt	142	1	1
-Entire home/apt	142	1	1
-Entire home/apt	142	1	1
-Entire home/apt	142	1	1
-Entire home/apt	142	1	1
-Entire home/apt	142	1	1
-Entire home/apt	142	1	1
-Entire home/apt	142	1	1
-Entire home/apt	142	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	41	1	1
-Private room	41	1	1
-Private room	41	1	1
-Private room	41	1	1
-Private room	41	1	1
-Private room	41	1	1
-Private room	41	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	125	1	1
-Private room	145	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Private room	52	1	1
-Private room	52	1	1
-Private room	52	1	1
-Private room	52	1	1
-Private room	52	1	1
-Private room	52	1	1
-Private room	52	1	1
-Private room	52	1	1
-Private room	52	1	1
-Private room	52	1	1
-Private room	52	1	1
-Private room	52	1	1
-Private room	52	1	1
-Private room	52	1	1
-Private room	52	1	1
-Private room	52	1	1
-Private room	52	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Private room	125	1	1
-Private room	125	1	1
-Private room	125	1	1
-Entire home/apt	155	1	1
-Entire home/apt	155	1	1
-Entire home/apt	155	1	1
-Entire home/apt	155	1	1
-Entire home/apt	155	1	1
-Entire home/apt	155	1	1
-Entire home/apt	155	1	1
-Entire home/apt	155	1	1
-Entire home/apt	155	1	1
-Entire home/apt	155	1	1
-Entire home/apt	155	1	1
-Entire home/apt	155	1	1
-Entire home/apt	155	1	1
-Entire home/apt	155	1	1
-Entire home/apt	155	1	1
-Entire home/apt	155	1	1
-Entire home/apt	155	1	1
-Entire home/apt	155	1	1
-Entire home/apt	155	1	1
-Private room	60	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Entire home/apt	112	1	1
-Entire home/apt	112	1	1
-Entire home/apt	112	1	1
-Entire home/apt	112	1	1
-Entire home/apt	112	1	1
-Entire home/apt	112	1	1
-Entire home/apt	112	1	1
-Private room	95	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	165	1	1
-Entire home/apt	165	1	1
-Entire home/apt	165	1	1
-Entire home/apt	165	1	1
-Entire home/apt	240	1	1
-Entire home/apt	240	1	1
-Entire home/apt	240	1	1
-Entire home/apt	240	1	1
-Entire home/apt	240	1	1
-Entire home/apt	240	1	1
-Entire home/apt	240	1	1
-Entire home/apt	240	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	56	1	1
-Private room	56	1	1
-Private room	56	1	1
-Private room	56	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	138	1	1
-Entire home/apt	138	1	1
-Entire home/apt	138	1	1
-Entire home/apt	138	1	1
-Entire home/apt	138	1	1
-Entire home/apt	138	1	1
-Entire home/apt	138	1	1
-Entire home/apt	138	1	1
-Entire home/apt	138	1	1
-Entire home/apt	138	1	1
-Entire home/apt	138	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	86	1	1
-Entire home/apt	86	1	1
-Entire home/apt	86	1	1
-Entire home/apt	86	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	168	1	1
-Entire home/apt	168	1	1
-Entire home/apt	168	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	98	1	1
-Entire home/apt	98	1	1
-Entire home/apt	124	1	1
-Entire home/apt	124	1	1
-Entire home/apt	124	1	1
-Entire home/apt	124	1	1
-Entire home/apt	124	1	1
-Entire home/apt	124	1	1
-Entire home/apt	124	1	1
-Entire home/apt	124	1	1
-Entire home/apt	124	1	1
-Entire home/apt	124	1	1
-Entire home/apt	124	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	58	1	1
-Private room	58	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Private room	54	1	1
-Private room	54	1	1
-Private room	54	1	1
-Private room	54	1	1
-Private room	54	1	1
-Private room	54	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Entire home/apt	180	1	1
-Entire home/apt	180	1	1
-Entire home/apt	180	1	1
-Entire home/apt	180	1	1
-Entire home/apt	140	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	174	1	1
-Entire home/apt	174	1	1
-Entire home/apt	167	1	1
-Entire home/apt	167	1	1
-Entire home/apt	167	1	1
-Private room	82	1	1
-Private room	82	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	126	1	1
-Entire home/apt	126	1	1
-Entire home/apt	126	1	1
-Entire home/apt	126	1	1
-Entire home/apt	126	1	1
-Entire home/apt	126	1	1
-Entire home/apt	126	1	1
-Entire home/apt	126	1	1
-Entire home/apt	126	1	1
-Entire home/apt	126	1	1
-Entire home/apt	126	1	1
-Entire home/apt	126	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Private room	65	1	1
-Private room	99	1	1
-Private room	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	189	1	1
-Entire home/apt	189	1	1
-Entire home/apt	189	1	1
-Entire home/apt	189	1	1
-Entire home/apt	380	1	1
-Entire home/apt	380	1	1
-Entire home/apt	380	1	1
-Entire home/apt	380	1	1
-Entire home/apt	380	1	1
-Entire home/apt	380	1	1
-Entire home/apt	380	1	1
-Entire home/apt	350	1	1
-Private room	95	1	1
-Entire home/apt	260	1	1
-Private room	155	1	1
-Private room	155	1	1
-Private room	155	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Entire home/apt	195	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	79	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Entire home/apt	65	1	1
-Private room	45	1	1
-Private room	45	1	1
-Private room	45	1	1
-Private room	45	1	1
-Private room	45	1	1
-Private room	45	1	1
-Private room	45	1	1
-Private room	45	1	1
-Private room	45	1	1
-Private room	45	1	1
-Private room	45	1	1
-Private room	45	1	1
-Private room	77	1	1
-Private room	77	1	1
-Private room	77	1	1
-Private room	77	1	1
-Private room	77	1	1
-Private room	77	1	1
-Private room	77	1	1
-Private room	77	1	1
-Private room	77	1	1
-Entire home/apt	209	1	1
-Entire home/apt	209	1	1
-Entire home/apt	209	1	1
-Private room	49	1	1
-Private room	49	1	1
-Private room	49	1	1
-Private room	49	1	1
-Private room	49	1	1
-Private room	49	1	1
-Private room	49	1	1
-Private room	49	1	1
-Private room	49	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Private room	50	1	1
-Private room	50	1	1
-Private room	50	1	1
-Private room	50	1	1
-Private room	50	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	135	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	41	1	1
-Private room	41	1	1
-Private room	41	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Private room	65	1	1
-Private room	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Entire home/apt	750	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	265	1	1
-Entire home/apt	265	1	1
-Entire home/apt	300	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Entire home/apt	116	1	1
-Entire home/apt	750	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Entire home/apt	285	1	1
-Entire home/apt	285	1	1
-Entire home/apt	285	1	1
-Entire home/apt	285	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Entire home/apt	105	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	199	1	1
-Entire home/apt	199	1	1
-Private room	40	1	1
-Private room	40	1	1
-Entire home/apt	175	1	1
-Shared room	55	1	1
-Shared room	55	1	1
-Shared room	55	1	1
-Shared room	55	1	1
-Shared room	55	1	1
-Shared room	55	1	1
-Shared room	55	1	1
-Shared room	55	1	1
-Shared room	55	1	1
-Shared room	55	1	1
-Shared room	55	1	1
-Shared room	55	1	1
-Shared room	55	1	1
-Shared room	55	1	1
-Shared room	55	1	1
-Shared room	55	1	1
-Shared room	55	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Private room	75	1	1
-Private room	75	1	1
-Entire home/apt	175	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Entire home/apt	147	1	1
-Entire home/apt	147	1	1
-Entire home/apt	58	1	1
-Entire home/apt	58	1	1
-Entire home/apt	58	1	1
-Entire home/apt	58	1	1
-Entire home/apt	58	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Entire home/apt	195	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	260	1	1
-Private room	155	1	1
-Private room	155	1	1
-Private room	155	1	1
-Private room	155	1	1
-Entire home/apt	200	1	1
-Entire home/apt	200	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Private room	80	1	1
-Private room	80	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	225	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Entire home/apt	55	1	1
-Entire home/apt	55	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	50	1	1
-Private room	50	1	1
-Private room	50	1	1
-Private room	50	1	1
-Private room	50	1	1
-Private room	50	1	1
-Private room	50	1	1
-Private room	50	1	1
-Private room	50	1	1
-Private room	45	1	1
-Private room	45	1	1
-Private room	45	1	1
-Private room	45	1	1
-Private room	45	1	1
-Private room	45	1	1
-Private room	45	1	1
-Private room	45	1	1
-Private room	45	1	1
-Private room	45	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Private room	77	1	1
-Private room	77	1	1
-Private room	77	1	1
-Private room	77	1	1
-Private room	77	1	1
-Private room	77	1	1
-Private room	77	1	1
-Private room	77	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	225	1	1
-Entire home/apt	225	1	1
-Entire home/apt	225	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	250	1	1
-Entire home/apt	250	1	1
-Entire home/apt	250	1	1
-Entire home/apt	250	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	110	1	1
-Entire home/apt	65	1	1
-Entire home/apt	65	1	1
-Entire home/apt	65	1	1
-Entire home/apt	65	1	1
-Entire home/apt	65	1	1
-Entire home/apt	65	1	1
-Entire home/apt	65	1	1
-Entire home/apt	65	1	1
-Entire home/apt	65	1	1
-Entire home/apt	65	1	1
-Entire home/apt	65	1	1
-Entire home/apt	65	1	1
-Entire home/apt	65	1	1
-Entire home/apt	65	1	1
-Entire home/apt	65	1	1
-Entire home/apt	65	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Private room	100	1	1
-Private room	100	1	1
-Private room	100	1	1
-Entire home/apt	110	1	1
-Private room	90	1	1
-Private room	90	1	1
-Entire home/apt	69	1	1
-Entire home/apt	110	1	1
-Private room	88	1	1
-Private room	88	1	1
-Private room	88	1	1
-Private room	88	1	1
-Private room	88	1	1
-Private room	88	1	1
-Entire home/apt	165	1	1
-Entire home/apt	165	1	1
-Entire home/apt	165	1	1
-Entire home/apt	165	1	1
-Entire home/apt	165	1	1
-Entire home/apt	165	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Private room	69	1	1
-Private room	69	1	1
-Entire home/apt	127	1	1
-Private room	81	1	1
-Private room	81	1	1
-Private room	81	1	1
-Private room	81	1	1
-Private room	81	1	1
-Private room	81	1	1
-Private room	81	1	1
-Private room	81	1	1
-Private room	81	1	1
-Private room	81	1	1
-Private room	81	1	1
-Entire home/apt	132	1	1
-Entire home/apt	132	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	93	1	1
-Entire home/apt	93	1	1
-Entire home/apt	250	1	1
-Entire home/apt	250	1	1
-Entire home/apt	250	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	109	1	1
-Entire home/apt	109	1	1
-Entire home/apt	109	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Entire home/apt	275	1	1
-Entire home/apt	275	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Entire home/apt	170	1	1
-Entire home/apt	170	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	200	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Entire home/apt	275	1	1
-Entire home/apt	275	1	1
-Entire home/apt	275	1	1
-Entire home/apt	275	1	1
-Entire home/apt	275	1	1
-Entire home/apt	275	1	1
-Entire home/apt	275	1	1
-Entire home/apt	275	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	93	1	1
-Entire home/apt	217	1	1
-Entire home/apt	217	1	1
-Entire home/apt	217	1	1
-Entire home/apt	217	1	1
-Entire home/apt	217	1	1
-Entire home/apt	217	1	1
-Entire home/apt	217	1	1
-Entire home/apt	217	1	1
-Entire home/apt	217	1	1
-Entire home/apt	217	1	1
-Entire home/apt	217	1	1
-Entire home/apt	217	1	1
-Entire home/apt	217	1	1
-Entire home/apt	217	1	1
-Entire home/apt	217	1	1
-Entire home/apt	217	1	1
-Entire home/apt	217	1	1
-Entire home/apt	217	1	1
-Entire home/apt	295	1	1
-Entire home/apt	295	1	1
-Entire home/apt	295	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Private room	70	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	224	1	1
-Entire home/apt	224	1	1
-Entire home/apt	224	1	1
-Entire home/apt	200	1	1
-Private room	59	1	1
-Entire home/apt	155	1	1
-Entire home/apt	155	1	1
-Entire home/apt	155	1	1
-Entire home/apt	155	1	1
-Entire home/apt	155	1	1
-Entire home/apt	155	1	1
-Shared room	30	1	1
-Shared room	30	1	1
-Shared room	30	1	1
-Shared room	30	1	1
-Shared room	30	1	1
-Shared room	30	1	1
-Shared room	30	1	1
-Shared room	30	1	1
-Shared room	30	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	45	1	1
-Private room	45	1	1
-Private room	45	1	1
-Private room	45	1	1
-Private room	45	1	1
-Private room	45	1	1
-Private room	45	1	1
-Private room	45	1	1
-Private room	45	1	1
-Private room	45	1	1
-Entire home/apt	119	1	1
-Entire home/apt	119	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	66	1	1
-Private room	66	1	1
-Private room	66	1	1
-Private room	66	1	1
-Private room	40	1	1
-Private room	40	1	1
-Private room	40	1	1
-Private room	40	1	1
-Private room	40	1	1
-Private room	109	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	130	1	1
-Entire home/apt	130	1	1
-Entire home/apt	130	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Entire home/apt	250	1	1
-Private room	115	1	1
-Private room	115	1	1
-Private room	115	1	1
-Private room	115	1	1
-Entire home/apt	95	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Private room	75	1	1
-Private room	75	1	1
-Entire home/apt	975	1	1
-Entire home/apt	975	1	1
-Entire home/apt	109	1	1
-Entire home/apt	109	1	1
-Entire home/apt	109	1	1
-Entire home/apt	109	1	1
-Entire home/apt	109	1	1
-Entire home/apt	109	1	1
-Entire home/apt	109	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Private room	169	1	1
-Private room	169	1	1
-Private room	169	1	1
-Private room	169	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	62	1	1
-Entire home/apt	62	1	1
-Entire home/apt	62	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Entire home/apt	999	1	1
-Entire home/apt	999	1	1
-Entire home/apt	999	1	1
-Entire home/apt	999	1	1
-Entire home/apt	999	1	1
-Private room	45	1	1
-Entire home/apt	199	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	557	1	1
-Entire home/apt	557	1	1
-Entire home/apt	557	1	1
-Entire home/apt	557	1	1
-Entire home/apt	557	1	1
-Entire home/apt	557	1	1
-Entire home/apt	557	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	65	1	1
-Entire home/apt	65	1	1
-Entire home/apt	65	1	1
-Entire home/apt	65	1	1
-Entire home/apt	65	1	1
-Entire home/apt	65	1	1
-Entire home/apt	65	1	1
-Entire home/apt	65	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Private room	100	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Entire home/apt	195	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Private room	50	1	1
-Private room	50	1	1
-Private room	50	1	1
-Private room	50	1	1
-Entire home/apt	139	1	1
-Entire home/apt	139	1	1
-Entire home/apt	139	1	1
-Entire home/apt	139	1	1
-Entire home/apt	139	1	1
-Entire home/apt	139	1	1
-Entire home/apt	139	1	1
-Entire home/apt	139	1	1
-Entire home/apt	139	1	1
-Entire home/apt	139	1	1
-Entire home/apt	139	1	1
-Entire home/apt	139	1	1
-Entire home/apt	139	1	1
-Entire home/apt	139	1	1
-Entire home/apt	139	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	88	1	1
-Private room	88	1	1
-Entire home/apt	165	1	1
-Entire home/apt	165	1	1
-Entire home/apt	165	1	1
-Entire home/apt	189	1	1
-Entire home/apt	189	1	1
-Entire home/apt	189	1	1
-Entire home/apt	189	1	1
-Entire home/apt	189	1	1
-Private room	69	1	1
-Private room	69	1	1
-Entire home/apt	110	1	1
-Entire home/apt	250	1	1
-Entire home/apt	250	1	1
-Entire home/apt	250	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	350	1	1
-Entire home/apt	350	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	117	1	1
-Entire home/apt	117	1	1
-Entire home/apt	117	1	1
-Entire home/apt	117	1	1
-Entire home/apt	117	1	1
-Private room	100	1	1
-Private room	100	1	1
-Private room	100	1	1
-Private room	69	1	1
-Private room	69	1	1
-Entire home/apt	265	1	1
-Entire home/apt	265	1	1
-Entire home/apt	265	1	1
-Entire home/apt	129	1	1
-Entire home/apt	109	1	1
-Entire home/apt	109	1	1
-Entire home/apt	300	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Entire home/apt	116	1	1
-Entire home/apt	116	1	1
-Entire home/apt	116	1	1
-Entire home/apt	116	1	1
-Entire home/apt	116	1	1
-Entire home/apt	116	1	1
-Entire home/apt	116	1	1
-Entire home/apt	116	1	1
-Entire home/apt	116	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	195	1	1
-Private room	65	1	1
-Private room	65	1	1
-Entire home/apt	285	1	1
-Entire home/apt	285	1	1
-Entire home/apt	285	1	1
-Entire home/apt	285	1	1
-Entire home/apt	285	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Entire home/apt	195	1	1
-Entire home/apt	215	1	1
-Entire home/apt	215	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	129	1	1
-Private room	67	1	1
-Private room	67	1	1
-Private room	67	1	1
-Private room	67	1	1
-Private room	67	1	1
-Private room	67	1	1
-Private room	67	1	1
-Private room	67	1	1
-Private room	67	1	1
-Private room	67	1	1
-Private room	67	1	1
-Private room	67	1	1
-Private room	67	1	1
-Private room	67	1	1
-Private room	67	1	1
-Private room	67	1	1
-Private room	67	1	1
-Private room	67	1	1
-Private room	67	1	1
-Private room	67	1	1
-Private room	67	1	1
-Private room	67	1	1
-Private room	67	1	1
-Private room	67	1	1
-Private room	67	1	1
-Private room	67	1	1
-Private room	67	1	1
-Entire home/apt	200	1	1
-Entire home/apt	200	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Private room	50	1	1
-Private room	50	1	1
-Private room	50	1	1
-Shared room	40	1	1
-Shared room	40	1	1
-Entire home/apt	65	1	1
-Entire home/apt	65	1	1
-Entire home/apt	65	1	1
-Entire home/apt	65	1	1
-Entire home/apt	65	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	170	1	1
-Entire home/apt	170	1	1
-Entire home/apt	170	1	1
-Entire home/apt	144	1	1
-Entire home/apt	144	1	1
-Entire home/apt	144	1	1
-Entire home/apt	144	1	1
-Entire home/apt	144	1	1
-Entire home/apt	144	1	1
-Entire home/apt	144	1	1
-Entire home/apt	144	1	1
-Entire home/apt	144	1	1
-Entire home/apt	144	1	1
-Private room	109	1	1
-Private room	125	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	75	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	70	1	1
-Entire home/apt	70	1	1
-Entire home/apt	70	1	1
-Entire home/apt	70	1	1
-Entire home/apt	70	1	1
-Entire home/apt	70	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	141	1	1
-Entire home/apt	141	1	1
-Entire home/apt	141	1	1
-Private room	70	1	1
-Private room	70	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Private room	52	1	1
-Private room	52	1	1
-Private room	52	1	1
-Private room	52	1	1
-Entire home/apt	115	1	1
-Entire home/apt	450	1	1
-Private room	45	1	1
-Private room	45	1	1
-Private room	45	1	1
-Private room	45	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	120	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	125	1	1
-Private room	50	1	1
-Private room	50	1	1
-Private room	50	1	1
-Private room	50	1	1
-Private room	84	1	1
-Private room	84	1	1
-Private room	65	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Private room	95	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	275	1	1
-Entire home/apt	275	1	1
-Entire home/apt	275	1	1
-Entire home/apt	275	1	1
-Entire home/apt	275	1	1
-Entire home/apt	275	1	1
-Entire home/apt	275	1	1
-Entire home/apt	275	1	1
-Entire home/apt	275	1	1
-Entire home/apt	295	1	1
-Private room	70	1	1
-Private room	90	1	1
-Private room	90	1	1
-Entire home/apt	124	1	1
-Entire home/apt	124	1	1
-Entire home/apt	124	1	1
-Entire home/apt	124	1	1
-Entire home/apt	124	1	1
-Entire home/apt	124	1	1
-Entire home/apt	124	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Private room	54	1	1
-Private room	54	1	1
-Entire home/apt	79	1	1
-Entire home/apt	80	1	1
-Entire home/apt	79	1	1
-Entire home/apt	80	1	1
-Entire home/apt	79	1	1
-Entire home/apt	80	1	1
-Entire home/apt	79	1	1
-Entire home/apt	80	1	1
-Entire home/apt	79	1	1
-Entire home/apt	80	1	1
-Entire home/apt	79	1	1
-Entire home/apt	195	1	1
-Entire home/apt	80	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	80	1	1
-Entire home/apt	140	1	1
-Entire home/apt	80	1	1
-Entire home/apt	85	1	1
-Entire home/apt	80	1	1
-Entire home/apt	85	1	1
-Entire home/apt	80	1	1
-Entire home/apt	85	1	1
-Entire home/apt	80	1	1
-Entire home/apt	85	1	1
-Private room	65	1	1
-Private room	65	1	1
-Entire home/apt	85	1	1
-Entire home/apt	95	1	1
-Entire home/apt	250	1	1
-Entire home/apt	250	1	1
-Entire home/apt	250	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Shared room	29	1	1
-Shared room	29	1	1
-Shared room	29	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Private room	80	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	200	1	1
-Entire home/apt	200	1	1
-Entire home/apt	200	1	1
-Entire home/apt	139	1	1
-Shared room	40	1	1
-Shared room	40	1	1
-Shared room	40	1	1
-Entire home/apt	125	1	1
-Entire home/apt	179	1	1
-Entire home/apt	179	1	1
-Entire home/apt	179	1	1
-Private room	70	1	1
-Private room	70	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	109	1	1
-Entire home/apt	109	1	1
-Entire home/apt	109	1	1
-Entire home/apt	109	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	210	1	1
-Entire home/apt	210	1	1
-Entire home/apt	295	1	1
-Entire home/apt	295	1	1
-Entire home/apt	295	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	98	1	1
-Private room	45	1	1
-Private room	45	1	1
-Private room	45	1	1
-Entire home/apt	150	1	1
-Shared room	29	1	1
-Shared room	31	1	1
-Shared room	30	1	1
-Shared room	30	1	1
-Shared room	30	1	1
-Shared room	30	1	1
-Entire home/apt	160	1	1
-Entire home/apt	160	1	1
-Entire home/apt	160	1	1
-Entire home/apt	160	1	1
-Entire home/apt	150	1	1
-Entire home/apt	39	1	1
-Entire home/apt	39	1	1
-Entire home/apt	39	1	1
-Entire home/apt	175	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	59	1	1
-Entire home/apt	70	1	1
-Entire home/apt	70	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	96	1	1
-Entire home/apt	96	1	1
-Entire home/apt	96	1	1
-Entire home/apt	96	1	1
-Entire home/apt	96	1	1
-Entire home/apt	96	1	1
-Entire home/apt	96	1	1
-Entire home/apt	96	1	1
-Entire home/apt	96	1	1
-Entire home/apt	96	1	1
-Private room	49	1	1
-Private room	49	1	1
-Entire home/apt	105	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	42	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Entire home/apt	175	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Private room	62	1	1
-Private room	62	1	1
-Private room	62	1	1
-Private room	62	1	1
-Private room	62	1	1
-Private room	62	1	1
-Private room	62	1	1
-Private room	62	1	1
-Private room	62	1	1
-Private room	62	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Entire home/apt	87	1	1
-Entire home/apt	87	1	1
-Entire home/apt	87	1	1
-Entire home/apt	87	1	1
-Private room	78	1	1
-Private room	78	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	190	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	85	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	105	1	1
-Entire home/apt	999	1	1
-Entire home/apt	999	1	1
-Entire home/apt	999	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	300	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Private room	145	1	1
-Private room	64	1	1
-Private room	64	1	1
-Private room	64	1	1
-Private room	64	1	1
-Private room	64	1	1
-Private room	64	1	1
-Private room	64	1	1
-Private room	64	1	1
-Private room	64	1	1
-Private room	62	1	1
-Private room	62	1	1
-Entire home/apt	65	1	1
-Entire home/apt	65	1	1
-Entire home/apt	65	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	59	1	1
-Entire home/apt	148	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	110	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	119	1	1
-Entire home/apt	119	1	1
-Entire home/apt	119	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	139	1	1
-Entire home/apt	139	1	1
-Entire home/apt	139	1	1
-Entire home/apt	139	1	1
-Entire home/apt	139	1	1
-Entire home/apt	139	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Private room	90	1	1
-Private room	90	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Private room	55	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	100	1	1
-Private room	81	1	1
-Private room	81	1	1
-Private room	81	1	1
-Entire home/apt	132	1	1
-Entire home/apt	132	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	200	1	1
-Entire home/apt	200	1	1
-Entire home/apt	200	1	1
-Entire home/apt	200	1	1
-Entire home/apt	200	1	1
-Entire home/apt	200	1	1
-Entire home/apt	200	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	109	1	1
-Entire home/apt	109	1	1
-Entire home/apt	65	1	1
-Entire home/apt	65	1	1
-Entire home/apt	65	1	1
-Entire home/apt	65	1	1
-Entire home/apt	65	1	1
-Entire home/apt	65	1	1
-Entire home/apt	65	1	1
-Entire home/apt	65	1	1
-Entire home/apt	109	1	1
-Entire home/apt	65	1	1
-Entire home/apt	109	1	1
-Entire home/apt	109	1	1
-Entire home/apt	109	1	1
-Entire home/apt	109	1	1
-Entire home/apt	100	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Entire home/apt	200	1	1
-Entire home/apt	200	1	1
-Entire home/apt	200	1	1
-Entire home/apt	200	1	1
-Entire home/apt	200	1	1
-Private room	60	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	99	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	59	1	1
-Entire home/apt	65	1	1
-Entire home/apt	65	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Private room	125	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	58	1	1
-Entire home/apt	58	1	1
-Entire home/apt	58	1	1
-Entire home/apt	58	1	1
-Entire home/apt	58	1	1
-Entire home/apt	58	1	1
-Entire home/apt	58	1	1
-Entire home/apt	58	1	1
-Entire home/apt	58	1	1
-Private room	42	1	1
-Entire home/apt	58	1	1
-Private room	42	1	1
-Entire home/apt	58	1	1
-Entire home/apt	95	1	1
-Entire home/apt	58	1	1
-Entire home/apt	95	1	1
-Entire home/apt	58	1	1
-Entire home/apt	95	1	1
-Entire home/apt	58	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Private room	59	1	1
-Entire home/apt	140	1	1
-Entire home/apt	140	1	1
-Shared room	30	1	1
-Private room	70	1	1
-Shared room	30	1	1
-Private room	70	1	1
-Entire home/apt	90	1	1
-Private room	52	1	1
-Private room	52	1	1
-Entire home/apt	90	1	1
-Private room	52	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Shared room	30	1	1
-Shared room	30	1	1
-Entire home/apt	58	1	1
-Entire home/apt	90	1	1
-Private room	99	1	1
-Entire home/apt	90	1	1
-Private room	99	1	1
-Entire home/apt	90	1	1
-Private room	99	1	1
-Entire home/apt	90	1	1
-Private room	99	1	1
-Entire home/apt	90	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Entire home/apt	143	1	1
-Entire home/apt	143	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	147	1	1
-Entire home/apt	147	1	1
-Entire home/apt	137	1	1
-Entire home/apt	97	1	1
-Entire home/apt	97	1	1
-Entire home/apt	97	1	1
-Entire home/apt	97	1	1
-Entire home/apt	100	1	1
-Entire home/apt	85	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	225	1	1
-Entire home/apt	225	1	1
-Entire home/apt	225	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Private room	115	1	1
-Private room	56	1	1
-Private room	56	1	1
-Private room	56	1	1
-Private room	56	1	1
-Entire home/apt	500	1	1
-Entire home/apt	200	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	92	1	1
-Entire home/apt	92	1	1
-Entire home/apt	92	1	1
-Entire home/apt	92	1	1
-Entire home/apt	92	1	1
-Private room	52	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	149	1	1
-Entire home/apt	139	1	1
-Entire home/apt	172	1	1
-Private room	45	1	1
-Private room	45	1	1
-Entire home/apt	350	1	1
-Entire home/apt	350	1	1
-Entire home/apt	350	1	1
-Entire home/apt	350	1	1
-Entire home/apt	350	1	1
-Entire home/apt	350	1	1
-Entire home/apt	350	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Entire home/apt	225	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Entire home/apt	495	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	66	1	1
-Entire home/apt	99	1	1
-Entire home/apt	98	1	1
-Entire home/apt	98	1	1
-Entire home/apt	98	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Private room	80	1	1
-Entire home/apt	98	1	1
-Entire home/apt	98	1	1
-Entire home/apt	98	1	1
-Entire home/apt	98	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	500	1	1
-Shared room	79	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Private room	120	1	1
-Private room	120	1	1
-Entire home/apt	109	1	1
-Entire home/apt	109	1	1
-Entire home/apt	109	1	1
-Entire home/apt	109	1	1
-Entire home/apt	109	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Shared room	30	1	1
-Shared room	30	1	1
-Shared room	30	1	1
-Entire home/apt	82	1	1
-Entire home/apt	160	1	1
-Entire home/apt	160	1	1
-Entire home/apt	160	1	1
-Entire home/apt	160	1	1
-Entire home/apt	97	1	1
-Entire home/apt	97	1	1
-Entire home/apt	97	1	1
-Entire home/apt	97	1	1
-Entire home/apt	97	1	1
-Entire home/apt	97	1	1
-Entire home/apt	97	1	1
-Entire home/apt	97	1	1
-Entire home/apt	97	1	1
-Entire home/apt	97	1	1
-Entire home/apt	97	1	1
-Entire home/apt	97	1	1
-Entire home/apt	97	1	1
-Entire home/apt	97	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	85	1	1
-Entire home/apt	250	1	1
-Entire home/apt	250	1	1
-Entire home/apt	179	1	1
-Private room	109	1	1
-Private room	109	1	1
-Private room	109	1	1
-Private room	36	1	1
-Private room	36	1	1
-Private room	36	1	1
-Private room	36	1	1
-Private room	36	1	1
-Private room	36	1	1
-Private room	36	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	39	1	1
-Private room	39	1	1
-Private room	39	1	1
-Private room	39	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Shared room	29	1	1
-Entire home/apt	100	1	1
-Entire home/apt	169	1	1
-Entire home/apt	169	1	1
-Entire home/apt	169	1	1
-Entire home/apt	169	1	1
-Entire home/apt	169	1	1
-Entire home/apt	169	1	1
-Entire home/apt	169	1	1
-Entire home/apt	350	1	1
-Entire home/apt	185	1	1
-Entire home/apt	185	1	1
-Entire home/apt	185	1	1
-Entire home/apt	185	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Private room	40	1	1
-Private room	40	1	1
-Private room	40	1	1
-Private room	40	1	1
-Private room	40	1	1
-Private room	40	1	1
-Private room	40	1	1
-Private room	40	1	1
-Private room	40	1	1
-Private room	40	1	1
-Private room	40	1	1
-Private room	40	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	125	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Entire home/apt	195	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Entire home/apt	160	1	1
-Private room	80	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Private room	125	1	1
-Entire home/apt	250	1	1
-Private room	70	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Private room	95	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Shared room	30	1	1
-Shared room	30	1	1
-Shared room	30	1	1
-Shared room	30	1	1
-Shared room	30	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	68	1	1
-Entire home/apt	68	1	1
-Private room	54	1	1
-Private room	54	1	1
-Private room	54	1	1
-Private room	54	1	1
-Entire home/apt	140	1	1
-Entire home/apt	140	1	1
-Entire home/apt	140	1	1
-Entire home/apt	199	1	1
-Entire home/apt	199	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	45	1	1
-Private room	45	1	1
-Private room	45	1	1
-Private room	45	1	1
-Private room	45	1	1
-Private room	45	1	1
-Private room	45	1	1
-Private room	45	1	1
-Private room	85	1	1
-Private room	85	1	1
-Private room	85	1	1
-Private room	85	1	1
-Private room	85	1	1
-Private room	85	1	1
-Private room	85	1	1
-Private room	85	1	1
-Private room	85	1	1
-Private room	85	1	1
-Private room	85	1	1
-Private room	85	1	1
-Private room	85	1	1
-Private room	85	1	1
-Private room	85	1	1
-Private room	85	1	1
-Private room	85	1	1
-Private room	85	1	1
-Private room	85	1	1
-Private room	85	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	66	1	1
-Private room	66	1	1
-Private room	66	1	1
-Private room	66	1	1
-Private room	66	1	1
-Private room	66	1	1
-Private room	66	1	1
-Private room	66	1	1
-Private room	66	1	1
-Private room	66	1	1
-Private room	66	1	1
-Private room	66	1	1
-Private room	66	1	1
-Private room	66	1	1
-Private room	66	1	1
-Private room	66	1	1
-Entire home/apt	249	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Entire home/apt	130	1	1
-Entire home/apt	130	1	1
-Private room	95	1	1
-Private room	95	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	250	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	119	1	1
-Entire home/apt	119	1	1
-Entire home/apt	119	1	1
-Entire home/apt	119	1	1
-Entire home/apt	119	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Private room	130	1	1
-Entire home/apt	109	1	1
-Entire home/apt	109	1	1
-Entire home/apt	109	1	1
-Entire home/apt	92	1	1
-Entire home/apt	92	1	1
-Entire home/apt	92	1	1
-Entire home/apt	92	1	1
-Entire home/apt	92	1	1
-Entire home/apt	92	1	1
-Entire home/apt	92	1	1
-Entire home/apt	92	1	1
-Entire home/apt	92	1	1
-Entire home/apt	92	1	1
-Entire home/apt	92	1	1
-Entire home/apt	92	1	1
-Entire home/apt	92	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	54	1	1
-Private room	54	1	1
-Private room	54	1	1
-Private room	54	1	1
-Private room	54	1	1
-Private room	54	1	1
-Private room	54	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Entire home/apt	325	1	1
-Entire home/apt	245	1	1
-Entire home/apt	245	1	1
-Entire home/apt	245	1	1
-Entire home/apt	245	1	1
-Entire home/apt	245	1	1
-Entire home/apt	245	1	1
-Entire home/apt	245	1	1
-Private room	57	1	1
-Private room	57	1	1
-Private room	57	1	1
-Private room	57	1	1
-Private room	57	1	1
-Private room	57	1	1
-Entire home/apt	78	1	1
-Entire home/apt	78	1	1
-Entire home/apt	78	1	1
-Entire home/apt	78	1	1
-Entire home/apt	174	1	1
-Entire home/apt	174	1	1
-Entire home/apt	174	1	1
-Entire home/apt	174	1	1
-Private room	50	1	1
-Private room	50	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Private room	50	1	1
-Private room	50	1	1
-Private room	50	1	1
-Private room	50	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	250	1	1
-Entire home/apt	169	1	1
-Entire home/apt	169	1	1
-Entire home/apt	169	1	1
-Entire home/apt	169	1	1
-Entire home/apt	169	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Entire home/apt	104	1	1
-Entire home/apt	139	1	1
-Entire home/apt	139	1	1
-Private room	72	1	1
-Private room	72	1	1
-Private room	72	1	1
-Private room	72	1	1
-Private room	72	1	1
-Private room	72	1	1
-Private room	72	1	1
-Private room	72	1	1
-Private room	57	1	1
-Private room	65	1	1
-Private room	57	1	1
-Private room	57	1	1
-Private room	57	1	1
-Private room	57	1	1
-Entire home/apt	200	1	1
-Entire home/apt	200	1	1
-Entire home/apt	200	1	1
-Entire home/apt	200	1	1
-Entire home/apt	200	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Private room	50	1	1
-Private room	50	1	1
-Entire home/apt	450	1	1
-Entire home/apt	450	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	98	1	1
-Entire home/apt	98	1	1
-Entire home/apt	98	1	1
-Entire home/apt	98	1	1
-Entire home/apt	98	1	1
-Entire home/apt	98	1	1
-Entire home/apt	98	1	1
-Entire home/apt	98	1	1
-Entire home/apt	98	1	1
-Private room	49	1	1
-Private room	49	1	1
-Private room	49	1	1
-Private room	49	1	1
-Private room	150	1	1
-Private room	150	1	1
-Private room	150	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Entire home/apt	122	1	1
-Entire home/apt	122	1	1
-Entire home/apt	122	1	1
-Entire home/apt	122	1	1
-Entire home/apt	122	1	1
-Entire home/apt	122	1	1
-Entire home/apt	122	1	1
-Entire home/apt	122	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Private room	68	1	1
-Private room	68	1	1
-Entire home/apt	119	1	1
-Entire home/apt	119	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	66	1	1
-Private room	66	1	1
-Private room	66	1	1
-Private room	66	1	1
-Private room	66	1	1
-Private room	66	1	1
-Private room	75	1	1
-Private room	75	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Private room	78	1	1
-Entire home/apt	100	1	1
-Private room	78	1	1
-Entire home/apt	100	1	1
-Private room	78	1	1
-Entire home/apt	100	1	1
-Private room	78	1	1
-Entire home/apt	100	1	1
-Private room	78	1	1
-Entire home/apt	100	1	1
-Private room	78	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	97	1	1
-Entire home/apt	97	1	1
-Entire home/apt	97	1	1
-Entire home/apt	97	1	1
-Entire home/apt	39	1	1
-Entire home/apt	39	1	1
-Entire home/apt	39	1	1
-Entire home/apt	39	1	1
-Private room	71	1	1
-Private room	71	1	1
-Private room	71	1	1
-Private room	71	1	1
-Private room	71	1	1
-Private room	71	1	1
-Private room	71	1	1
-Private room	71	1	1
-Private room	71	1	1
-Private room	71	1	1
-Entire home/apt	183	1	1
-Entire home/apt	183	1	1
-Entire home/apt	183	1	1
-Entire home/apt	183	1	1
-Entire home/apt	300	1	1
-Entire home/apt	300	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Private room	60	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	180	1	1
-Entire home/apt	180	1	1
-Entire home/apt	180	1	1
-Entire home/apt	180	1	1
-Entire home/apt	180	1	1
-Entire home/apt	180	1	1
-Private room	68	1	1
-Private room	68	1	1
-Private room	68	1	1
-Private room	68	1	1
-Private room	49	1	1
-Private room	49	1	1
-Private room	49	1	1
-Private room	49	1	1
-Private room	49	1	1
-Private room	49	1	1
-Private room	49	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	111	1	1
-Entire home/apt	111	1	1
-Entire home/apt	111	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	160	1	1
-Entire home/apt	58	1	1
-Private room	42	1	1
-Private room	42	1	1
-Private room	42	1	1
-Private room	42	1	1
-Private room	42	1	1
-Private room	115	1	1
-Private room	115	1	1
-Private room	115	1	1
-Private room	115	1	1
-Private room	115	1	1
-Private room	115	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Private room	48	1	1
-Private room	48	1	1
-Private room	78	1	1
-Private room	97	1	1
-Private room	97	1	1
-Private room	97	1	1
-Private room	97	1	1
-Entire home/apt	295	1	1
-Entire home/apt	295	1	1
-Entire home/apt	295	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Private room	96	1	1
-Private room	96	1	1
-Private room	96	1	1
-Private room	150	1	1
-Entire home/apt	275	1	1
-Shared room	49	1	1
-Shared room	65	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	190	1	1
-Entire home/apt	190	1	1
-Entire home/apt	190	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Private room	39	1	1
-Private room	39	1	1
-Private room	39	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	105	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	77	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	150	1	1
-Private room	150	1	1
-Private room	86	1	1
-Private room	86	1	1
-Private room	45	1	1
-Private room	45	1	1
-Private room	38	1	1
-Private room	38	1	1
-Private room	38	1	1
-Private room	38	1	1
-Private room	38	1	1
-Private room	38	1	1
-Private room	38	1	1
-Private room	38	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	250	1	1
-Entire home/apt	250	1	1
-Private room	36	1	1
-Private room	36	1	1
-Private room	36	1	1
-Private room	36	1	1
-Private room	36	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Shared room	27	1	1
-Shared room	27	1	1
-Entire home/apt	128	1	1
-Entire home/apt	128	1	1
-Entire home/apt	128	1	1
-Entire home/apt	128	1	1
-Entire home/apt	128	1	1
-Entire home/apt	128	1	1
-Entire home/apt	128	1	1
-Entire home/apt	128	1	1
-Entire home/apt	128	1	1
-Private room	68	1	1
-Private room	68	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	350	1	1
-Entire home/apt	350	1	1
-Entire home/apt	350	1	1
-Entire home/apt	350	1	1
-Entire home/apt	350	1	1
-Entire home/apt	350	1	1
-Entire home/apt	350	1	1
-Entire home/apt	350	1	1
-Entire home/apt	350	1	1
-Private room	40	1	1
-Private room	40	1	1
-Private room	40	1	1
-Private room	40	1	1
-Private room	40	1	1
-Private room	40	1	1
-Private room	40	1	1
-Entire home/apt	90	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	80	1	1
-Private room	120	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Entire home/apt	151	1	1
-Entire home/apt	151	1	1
-Entire home/apt	151	1	1
-Entire home/apt	151	1	1
-Entire home/apt	151	1	1
-Entire home/apt	151	1	1
-Entire home/apt	151	1	1
-Entire home/apt	151	1	1
-Entire home/apt	151	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	299	1	1
-Entire home/apt	299	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	159	1	1
-Entire home/apt	159	1	1
-Entire home/apt	159	1	1
-Entire home/apt	159	1	1
-Entire home/apt	375	1	1
-Entire home/apt	375	1	1
-Entire home/apt	375	1	1
-Entire home/apt	228	1	1
-Entire home/apt	250	1	1
-Entire home/apt	250	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	275	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Private room	72	1	1
-Private room	72	1	1
-Private room	72	1	1
-Private room	72	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Private room	52	1	1
-Private room	52	1	1
-Private room	52	1	1
-Private room	52	1	1
-Private room	52	1	1
-Private room	52	1	1
-Private room	52	1	1
-Private room	52	1	1
-Private room	62	1	1
-Private room	62	1	1
-Private room	62	1	1
-Private room	62	1	1
-Private room	62	1	1
-Private room	62	1	1
-Private room	62	1	1
-Private room	62	1	1
-Private room	62	1	1
-Private room	62	1	1
-Private room	62	1	1
-Private room	62	1	1
-Private room	62	1	1
-Private room	62	1	1
-Private room	62	1	1
-Private room	62	1	1
-Private room	62	1	1
-Private room	62	1	1
-Private room	62	1	1
-Private room	62	1	1
-Private room	62	1	1
-Private room	62	1	1
-Private room	62	1	1
-Private room	62	1	1
-Private room	62	1	1
-Private room	62	1	1
-Private room	62	1	1
-Private room	62	1	1
-Private room	62	1	1
-Private room	62	1	1
-Private room	62	1	1
-Private room	62	1	1
-Private room	62	1	1
-Private room	62	1	1
-Private room	62	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	92	1	1
-Private room	120	1	1
-Private room	120	1	1
-Private room	120	1	1
-Private room	120	1	1
-Private room	120	1	1
-Private room	120	1	1
-Private room	120	1	1
-Private room	120	1	1
-Private room	120	1	1
-Private room	120	1	1
-Private room	52	1	1
-Private room	52	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Private room	89	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Entire home/apt	125	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	256	1	1
-Entire home/apt	256	1	1
-Entire home/apt	256	1	1
-Entire home/apt	256	1	1
-Entire home/apt	256	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	325	1	1
-Entire home/apt	325	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	142	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	80	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	125	1	1
-Private room	63	1	1
-Private room	63	1	1
-Private room	63	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Private room	59	1	1
-Private room	59	1	1
-Entire home/apt	190	1	1
-Entire home/apt	190	1	1
-Entire home/apt	131	1	1
-Entire home/apt	131	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	121	1	1
-Entire home/apt	121	1	1
-Entire home/apt	121	1	1
-Entire home/apt	121	1	1
-Entire home/apt	121	1	1
-Entire home/apt	121	1	1
-Entire home/apt	121	1	1
-Entire home/apt	121	1	1
-Entire home/apt	121	1	1
-Entire home/apt	121	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Shared room	95	1	1
-Private room	44	1	1
-Private room	44	1	1
-Private room	44	1	1
-Private room	44	1	1
-Private room	44	1	1
-Private room	44	1	1
-Private room	44	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	138	1	1
-Entire home/apt	138	1	1
-Entire home/apt	138	1	1
-Entire home/apt	108	1	1
-Entire home/apt	155	1	1
-Entire home/apt	140	1	1
-Entire home/apt	140	1	1
-Entire home/apt	140	1	1
-Entire home/apt	140	1	1
-Entire home/apt	140	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	250	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Private room	70	1	1
-Private room	70	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Private room	104	1	1
-Private room	104	1	1
-Private room	104	1	1
-Private room	104	1	1
-Entire home/apt	88	1	1
-Entire home/apt	88	1	1
-Entire home/apt	88	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	256	1	1
-Entire home/apt	256	1	1
-Entire home/apt	256	1	1
-Entire home/apt	256	1	1
-Entire home/apt	256	1	1
-Entire home/apt	116	1	1
-Entire home/apt	116	1	1
-Entire home/apt	116	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Private room	125	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Private room	47	1	1
-Private room	47	1	1
-Private room	47	1	1
-Private room	47	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Private room	60	1	1
-Private room	60	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	130	1	1
-Entire home/apt	130	1	1
-Entire home/apt	130	1	1
-Entire home/apt	130	1	1
-Entire home/apt	130	1	1
-Entire home/apt	130	1	1
-Entire home/apt	130	1	1
-Entire home/apt	130	1	1
-Entire home/apt	130	1	1
-Entire home/apt	64	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Private room	72	1	1
-Private room	72	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	42	1	1
-Private room	42	1	1
-Private room	42	1	1
-Private room	42	1	1
-Private room	37	1	1
-Private room	37	1	1
-Private room	37	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	165	1	1
-Entire home/apt	165	1	1
-Entire home/apt	165	1	1
-Entire home/apt	165	1	1
-Entire home/apt	165	1	1
-Entire home/apt	165	1	1
-Entire home/apt	165	1	1
-Entire home/apt	175	1	1
-Entire home/apt	89	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Entire home/apt	160	1	1
-Private room	44	1	1
-Entire home/apt	109	1	1
-Entire home/apt	109	1	1
-Entire home/apt	109	1	1
-Entire home/apt	109	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Private room	169	1	1
-Private room	169	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	62	1	1
-Entire home/apt	62	1	1
-Entire home/apt	62	1	1
-Entire home/apt	62	1	1
-Entire home/apt	62	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Entire home/apt	999	1	1
-Entire home/apt	200	1	1
-Entire home/apt	200	1	1
-Entire home/apt	200	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	152	1	1
-Entire home/apt	152	1	1
-Entire home/apt	152	1	1
-Entire home/apt	152	1	1
-Entire home/apt	152	1	1
-Entire home/apt	152	1	1
-Entire home/apt	152	1	1
-Entire home/apt	152	1	1
-Entire home/apt	152	1	1
-Entire home/apt	152	1	1
-Entire home/apt	152	1	1
-Entire home/apt	152	1	1
-Entire home/apt	152	1	1
-Entire home/apt	150	1	1
-Entire home/apt	140	1	1
-Entire home/apt	140	1	1
-Entire home/apt	165	1	1
-Entire home/apt	165	1	1
-Shared room	40	1	1
-Entire home/apt	65	1	1
-Entire home/apt	65	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	88	1	1
-Entire home/apt	88	1	1
-Entire home/apt	88	1	1
-Shared room	40	1	1
-Private room	45	1	1
-Entire home/apt	144	1	1
-Entire home/apt	144	1	1
-Entire home/apt	144	1	1
-Entire home/apt	144	1	1
-Entire home/apt	144	1	1
-Entire home/apt	144	1	1
-Private room	109	1	1
-Private room	109	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Entire home/apt	70	1	1
-Entire home/apt	70	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	77	1	1
-Entire home/apt	265	1	1
-Entire home/apt	265	1	1
-Entire home/apt	265	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Entire home/apt	335	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Private room	111	1	1
-Private room	111	1	1
-Private room	111	1	1
-Private room	111	1	1
-Private room	111	1	1
-Private room	111	1	1
-Private room	111	1	1
-Private room	111	1	1
-Private room	111	1	1
-Private room	111	1	1
-Private room	111	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	320	1	1
-Entire home/apt	320	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Private room	50	1	1
-Private room	70	1	1
-Entire home/apt	300	1	1
-Entire home/apt	300	1	1
-Entire home/apt	300	1	1
-Entire home/apt	300	1	1
-Entire home/apt	300	1	1
-Private room	69	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Shared room	67	1	1
-Shared room	67	1	1
-Shared room	67	1	1
-Shared room	67	1	1
-Shared room	67	1	1
-Shared room	67	1	1
-Shared room	67	1	1
-Shared room	67	1	1
-Shared room	67	1	1
-Shared room	67	1	1
-Shared room	67	1	1
-Shared room	67	1	1
-Shared room	67	1	1
-Shared room	67	1	1
-Shared room	67	1	1
-Shared room	67	1	1
-Shared room	67	1	1
-Shared room	67	1	1
-Entire home/apt	160	1	1
-Entire home/apt	160	1	1
-Entire home/apt	151	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Private room	129	1	1
-Private room	129	1	1
-Entire home/apt	82	1	1
-Entire home/apt	82	1	1
-Entire home/apt	82	1	1
-Entire home/apt	82	1	1
-Entire home/apt	210	1	1
-Entire home/apt	100	1	1
-Entire home/apt	350	1	1
-Private room	59	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	40	1	1
-Private room	40	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Private room	55	1	1
-Shared room	33	1	1
-Shared room	33	1	1
-Entire home/apt	169	1	1
-Entire home/apt	169	1	1
-Entire home/apt	169	1	1
-Entire home/apt	169	1	1
-Private room	70	1	1
-Private room	70	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	106	1	1
-Entire home/apt	106	1	1
-Entire home/apt	106	1	1
-Entire home/apt	179	1	1
-Entire home/apt	179	1	1
-Entire home/apt	179	1	1
-Entire home/apt	179	1	1
-Entire home/apt	179	1	1
-Entire home/apt	179	1	1
-Entire home/apt	179	1	1
-Entire home/apt	179	1	1
-Entire home/apt	179	1	1
-Entire home/apt	179	1	1
-Entire home/apt	179	1	1
-Entire home/apt	179	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	150	1	1
-Private room	150	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	170	1	1
-Entire home/apt	170	1	1
-Entire home/apt	170	1	1
-Entire home/apt	170	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	155	1	1
-Entire home/apt	155	1	1
-Entire home/apt	155	1	1
-Entire home/apt	85	1	1
-Private room	35	1	1
-Private room	35	1	1
-Private room	35	1	1
-Private room	55	1	1
-Private room	108	1	1
-Private room	108	1	1
-Private room	68	1	1
-Private room	68	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	35	1	1
-Private room	35	1	1
-Private room	35	1	1
-Private room	35	1	1
-Entire home/apt	110	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	250	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	70	1	1
-Private room	70	1	1
-Entire home/apt	219	1	1
-Entire home/apt	219	1	1
-Entire home/apt	219	1	1
-Entire home/apt	219	1	1
-Entire home/apt	300	1	1
-Entire home/apt	300	1	1
-Entire home/apt	300	1	1
-Entire home/apt	300	1	1
-Entire home/apt	300	1	1
-Entire home/apt	300	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Private room	53	1	1
-Private room	53	1	1
-Private room	53	1	1
-Private room	53	1	1
-Private room	53	1	1
-Private room	53	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	98	1	1
-Entire home/apt	98	1	1
-Entire home/apt	160	1	1
-Entire home/apt	160	1	1
-Entire home/apt	160	1	1
-Entire home/apt	160	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	157	1	1
-Entire home/apt	157	1	1
-Entire home/apt	157	1	1
-Entire home/apt	157	1	1
-Private room	74	1	1
-Private room	74	1	1
-Private room	39	1	1
-Private room	39	1	1
-Private room	39	1	1
-Private room	60	1	1
-Private room	60	1	1
-Entire home/apt	144	1	1
-Entire home/apt	144	1	1
-Entire home/apt	82	1	1
-Entire home/apt	82	1	1
-Entire home/apt	82	1	1
-Entire home/apt	82	1	1
-Entire home/apt	82	1	1
-Entire home/apt	82	1	1
-Entire home/apt	210	1	1
-Entire home/apt	210	1	1
-Entire home/apt	210	1	1
-Private room	59	1	1
-Entire home/apt	93	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	169	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Shared room	40	1	1
-Shared room	40	1	1
-Shared room	40	1	1
-Entire home/apt	179	1	1
-Entire home/apt	179	1	1
-Entire home/apt	179	1	1
-Entire home/apt	179	1	1
-Entire home/apt	168	1	1
-Entire home/apt	168	1	1
-Entire home/apt	168	1	1
-Entire home/apt	168	1	1
-Entire home/apt	168	1	1
-Entire home/apt	168	1	1
-Entire home/apt	168	1	1
-Entire home/apt	168	1	1
-Entire home/apt	168	1	1
-Entire home/apt	168	1	1
-Entire home/apt	168	1	1
-Entire home/apt	168	1	1
-Entire home/apt	168	1	1
-Entire home/apt	168	1	1
-Entire home/apt	168	1	1
-Entire home/apt	168	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	150	1	1
-Entire home/apt	160	1	1
-Entire home/apt	160	1	1
-Entire home/apt	160	1	1
-Entire home/apt	160	1	1
-Entire home/apt	160	1	1
-Entire home/apt	160	1	1
-Entire home/apt	160	1	1
-Entire home/apt	160	1	1
-Entire home/apt	160	1	1
-Entire home/apt	160	1	1
-Entire home/apt	160	1	1
-Entire home/apt	115	1	1
-Entire home/apt	450	1	1
-Entire home/apt	450	1	1
-Entire home/apt	450	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	200	1	1
-Entire home/apt	200	1	1
-Entire home/apt	200	1	1
-Entire home/apt	200	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	50	1	1
-Private room	50	1	1
-Private room	50	1	1
-Private room	50	1	1
-Private room	50	1	1
-Private room	50	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	50	1	1
-Private room	87	1	1
-Private room	87	1	1
-Private room	87	1	1
-Private room	87	1	1
-Private room	87	1	1
-Private room	87	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	75	1	1
-Entire home/apt	114	1	1
-Entire home/apt	114	1	1
-Entire home/apt	114	1	1
-Entire home/apt	114	1	1
-Entire home/apt	114	1	1
-Entire home/apt	114	1	1
-Entire home/apt	114	1	1
-Entire home/apt	114	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	50	1	1
-Private room	50	1	1
-Private room	50	1	1
-Private room	50	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Private room	85	1	1
-Private room	85	1	1
-Private room	85	1	1
-Private room	85	1	1
-Private room	85	1	1
-Private room	85	1	1
-Private room	85	1	1
-Private room	85	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Private room	110	1	1
-Private room	110	1	1
-Entire home/apt	119	1	1
-Entire home/apt	119	1	1
-Entire home/apt	95	1	1
-Entire home/apt	167	1	1
-Entire home/apt	167	1	1
-Entire home/apt	167	1	1
-Entire home/apt	167	1	1
-Entire home/apt	167	1	1
-Entire home/apt	167	1	1
-Entire home/apt	167	1	1
-Private room	54	1	1
-Private room	54	1	1
-Private room	54	1	1
-Private room	54	1	1
-Private room	54	1	1
-Private room	54	1	1
-Private room	54	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Entire home/apt	180	1	1
-Entire home/apt	180	1	1
-Entire home/apt	180	1	1
-Entire home/apt	180	1	1
-Entire home/apt	180	1	1
-Entire home/apt	180	1	1
-Entire home/apt	225	1	1
-Entire home/apt	225	1	1
-Entire home/apt	225	1	1
-Entire home/apt	225	1	1
-Entire home/apt	225	1	1
-Entire home/apt	225	1	1
-Private room	75	1	1
-Entire home/apt	435	1	1
-Entire home/apt	435	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Private room	68	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	68	1	1
-Private room	68	1	1
-Private room	68	1	1
-Private room	68	1	1
-Private room	68	1	1
-Private room	68	1	1
-Private room	68	1	1
-Private room	68	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Private room	126	1	1
-Private room	39	1	1
-Private room	39	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Entire home/apt	120	1	1
-Entire home/apt	151	1	1
-Entire home/apt	151	1	1
-Entire home/apt	151	1	1
-Entire home/apt	151	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	222	1	1
-Entire home/apt	170	1	1
-Entire home/apt	170	1	1
-Entire home/apt	112	1	1
-Shared room	40	1	1
-Shared room	40	1	1
-Shared room	40	1	1
-Shared room	40	1	1
-Shared room	40	1	1
-Shared room	40	1	1
-Shared room	40	1	1
-Shared room	40	1	1
-Shared room	40	1	1
-Shared room	40	1	1
-Shared room	40	1	1
-Shared room	40	1	1
-Shared room	40	1	1
-Shared room	40	1	1
-Shared room	40	1	1
-Private room	70	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	155	1	1
-Entire home/apt	155	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	400	1	1
-Private room	45	1	1
-Private room	45	1	1
-Private room	47	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	325	1	1
-Entire home/apt	115	1	1
-Entire home/apt	139	1	1
-Entire home/apt	139	1	1
-Entire home/apt	139	1	1
-Entire home/apt	139	1	1
-Entire home/apt	139	1	1
-Entire home/apt	575	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	95	1	1
-Private room	40	1	1
-Private room	40	1	1
-Private room	40	1	1
-Private room	40	1	1
-Private room	40	1	1
-Private room	40	1	1
-Entire home/apt	165	1	1
-Private room	47	1	1
-Private room	50	1	1
-Private room	50	1	1
-Private room	50	1	1
-Private room	50	1	1
-Private room	50	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Private room	49	1	1
-Private room	49	1	1
-Private room	49	1	1
-Private room	49	1	1
-Private room	49	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	59	1	1
-Entire home/apt	199	1	1
-Entire home/apt	199	1	1
-Entire home/apt	199	1	1
-Entire home/apt	199	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	200	1	1
-Entire home/apt	68	1	1
-Shared room	33	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	160	1	1
-Entire home/apt	160	1	1
-Entire home/apt	160	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	126	1	1
-Entire home/apt	126	1	1
-Entire home/apt	126	1	1
-Entire home/apt	126	1	1
-Entire home/apt	126	1	1
-Entire home/apt	99	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	85	1	1
-Private room	41	1	1
-Private room	41	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Private room	60	1	1
-Private room	60	1	1
-Entire home/apt	380	1	1
-Entire home/apt	380	1	1
-Entire home/apt	380	1	1
-Entire home/apt	380	1	1
-Entire home/apt	750	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	117	1	1
-Entire home/apt	117	1	1
-Entire home/apt	117	1	1
-Entire home/apt	117	1	1
-Entire home/apt	117	1	1
-Entire home/apt	117	1	1
-Entire home/apt	117	1	1
-Entire home/apt	117	1	1
-Entire home/apt	117	1	1
-Private room	52	1	1
-Private room	52	1	1
-Private room	52	1	1
-Private room	52	1	1
-Private room	52	1	1
-Private room	52	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Private room	65	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	35	1	1
-Private room	35	1	1
-Private room	35	1	1
-Private room	35	1	1
-Private room	35	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Private room	64	1	1
-Private room	64	1	1
-Shared room	35	1	1
-Shared room	35	1	1
-Shared room	35	1	1
-Shared room	35	1	1
-Shared room	35	1	1
-Shared room	35	1	1
-Shared room	35	1	1
-Shared room	35	1	1
-Shared room	35	1	1
-Shared room	35	1	1
-Shared room	35	1	1
-Shared room	35	1	1
-Shared room	35	1	1
-Shared room	35	1	1
-Shared room	35	1	1
-Shared room	35	1	1
-Shared room	35	1	1
-Shared room	35	1	1
-Shared room	35	1	1
-Shared room	35	1	1
-Shared room	35	1	1
-Shared room	35	1	1
-Entire home/apt	139	1	1
-Entire home/apt	199	1	1
-Entire home/apt	199	1	1
-Shared room	40	1	1
-Shared room	40	1	1
-Shared room	40	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	295	1	1
-Entire home/apt	295	1	1
-Entire home/apt	295	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	98	1	1
-Entire home/apt	98	1	1
-Private room	45	1	1
-Private room	45	1	1
-Shared room	29	1	1
-Shared room	31	1	1
-Entire home/apt	175	1	1
-Entire home/apt	350	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	39	1	1
-Entire home/apt	39	1	1
-Entire home/apt	39	1	1
-Entire home/apt	39	1	1
-Entire home/apt	39	1	1
-Entire home/apt	39	1	1
-Entire home/apt	119	1	1
-Entire home/apt	119	1	1
-Shared room	30	1	1
-Shared room	30	1	1
-Shared room	30	1	1
-Shared room	30	1	1
-Private room	68	1	1
-Private room	59	1	1
-Private room	54	1	1
-Private room	54	1	1
-Private room	54	1	1
-Private room	100	1	1
-Private room	63	1	1
-Private room	63	1	1
-Entire home/apt	200	1	1
-Entire home/apt	160	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Private room	55	1	1
-Private room	55	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	165	1	1
-Entire home/apt	139	1	1
-Entire home/apt	139	1	1
-Private room	35	1	1
-Private room	35	1	1
-Private room	66	1	1
-Private room	66	1	1
-Private room	66	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	59	1	1
-Entire home/apt	59	1	1
-Entire home/apt	59	1	1
-Entire home/apt	59	1	1
-Entire home/apt	59	1	1
-Entire home/apt	59	1	1
-Entire home/apt	59	1	1
-Entire home/apt	59	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Entire home/apt	70	1	1
-Entire home/apt	125	1	1
-Private room	70	1	1
-Private room	61	1	1
-Private room	39	1	1
-Private room	39	1	1
-Private room	39	1	1
-Private room	39	1	1
-Private room	39	1	1
-Private room	39	1	1
-Private room	39	1	1
-Private room	39	1	1
-Private room	39	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	95	1	1
-Private room	97	1	1
-Private room	97	1	1
-Entire home/apt	445	1	1
-Entire home/apt	103	1	1
-Entire home/apt	103	1	1
-Entire home/apt	103	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	84	1	1
-Private room	84	1	1
-Shared room	45	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	180	1	1
-Entire home/apt	180	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	181	1	1
-Entire home/apt	181	1	1
-Entire home/apt	300	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Entire home/apt	100	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	750	1	1
-Entire home/apt	750	1	1
-Private room	60	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	112	1	1
-Entire home/apt	112	1	1
-Entire home/apt	112	1	1
-Entire home/apt	112	1	1
-Entire home/apt	112	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Entire home/apt	195	1	1
-Private room	95	1	1
-Private room	155	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	200	1	1
-Entire home/apt	125	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	150	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Private room	77	1	1
-Private room	77	1	1
-Private room	77	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	59	1	1
-Entire home/apt	70	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	96	1	1
-Entire home/apt	96	1	1
-Entire home/apt	96	1	1
-Entire home/apt	96	1	1
-Entire home/apt	96	1	1
-Entire home/apt	96	1	1
-Entire home/apt	96	1	1
-Entire home/apt	96	1	1
-Entire home/apt	96	1	1
-Entire home/apt	96	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Entire home/apt	195	1	1
-Private room	72	1	1
-Private room	72	1	1
-Private room	72	1	1
-Private room	72	1	1
-Private room	72	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	179	1	1
-Entire home/apt	179	1	1
-Entire home/apt	179	1	1
-Entire home/apt	179	1	1
-Entire home/apt	179	1	1
-Entire home/apt	179	1	1
-Private room	70	1	1
-Private room	70	1	1
-Entire home/apt	87	1	1
-Entire home/apt	87	1	1
-Private room	39	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Shared room	29	1	1
-Shared room	29	1	1
-Shared room	29	1	1
-Shared room	29	1	1
-Entire home/apt	169	1	1
-Entire home/apt	169	1	1
-Entire home/apt	169	1	1
-Entire home/apt	169	1	1
-Entire home/apt	169	1	1
-Entire home/apt	169	1	1
-Entire home/apt	169	1	1
-Entire home/apt	169	1	1
-Entire home/apt	350	1	1
-Entire home/apt	350	1	1
-Entire home/apt	350	1	1
-Entire home/apt	350	1	1
-Entire home/apt	350	1	1
-Private room	90	1	1
-Private room	90	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Private room	119	1	1
-Private room	119	1	1
-Private room	119	1	1
-Private room	119	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Entire home/apt	200	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Private room	85	1	1
-Private room	85	1	1
-Private room	85	1	1
-Private room	85	1	1
-Private room	85	1	1
-Private room	85	1	1
-Private room	85	1	1
-Private room	85	1	1
-Private room	85	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	67	1	1
-Entire home/apt	153	1	1
-Entire home/apt	153	1	1
-Entire home/apt	153	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Private room	57	1	1
-Private room	57	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Shared room	37	1	1
-Shared room	37	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Entire home/apt	109	1	1
-Entire home/apt	109	1	1
-Entire home/apt	109	1	1
-Entire home/apt	109	1	1
-Entire home/apt	109	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Entire home/apt	250	1	1
-Entire home/apt	109	1	1
-Entire home/apt	109	1	1
-Entire home/apt	151	1	1
-Entire home/apt	151	1	1
-Entire home/apt	189	1	1
-Entire home/apt	189	1	1
-Entire home/apt	189	1	1
-Entire home/apt	119	1	1
-Entire home/apt	119	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	375	1	1
-Entire home/apt	300	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	145	1	1
-Entire home/apt	95	1	1
-Private room	39	1	1
-Private room	39	1	1
-Private room	39	1	1
-Private room	39	1	1
-Private room	39	1	1
-Private room	39	1	1
-Private room	39	1	1
-Private room	39	1	1
-Entire home/apt	139	1	1
-Entire home/apt	139	1	1
-Entire home/apt	139	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	75	1	1
-Private room	40	1	1
-Private room	40	1	1
-Private room	40	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Private room	50	1	1
-Private room	50	1	1
-Private room	50	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	100	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	43	1	1
-Private room	43	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Entire home/apt	125	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	550	1	1
-Entire home/apt	550	1	1
-Entire home/apt	550	1	1
-Entire home/apt	550	1	1
-Entire home/apt	169	1	1
-Entire home/apt	169	1	1
-Entire home/apt	169	1	1
-Entire home/apt	169	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	65	1	1
-Entire home/apt	127	1	1
-Entire home/apt	127	1	1
-Entire home/apt	127	1	1
-Entire home/apt	103	1	1
-Entire home/apt	103	1	1
-Entire home/apt	103	1	1
-Entire home/apt	103	1	1
-Entire home/apt	103	1	1
-Entire home/apt	103	1	1
-Entire home/apt	103	1	1
-Entire home/apt	103	1	1
-Entire home/apt	103	1	1
-Entire home/apt	103	1	1
-Private room	48	1	1
-Private room	48	1	1
-Private room	48	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Shared room	38	1	1
-Shared room	38	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Private room	65	1	1
-Entire home/apt	135	1	1
-Entire home/apt	200	1	1
-Entire home/apt	200	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	188	1	1
-Entire home/apt	188	1	1
-Entire home/apt	188	1	1
-Entire home/apt	188	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	160	1	1
-Entire home/apt	160	1	1
-Entire home/apt	160	1	1
-Private room	75	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	130	1	1
-Entire home/apt	130	1	1
-Entire home/apt	75	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	72	1	1
-Private room	72	1	1
-Private room	72	1	1
-Private room	72	1	1
-Entire home/apt	498	1	1
-Private room	42	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	165	1	1
-Entire home/apt	165	1	1
-Entire home/apt	165	1	1
-Entire home/apt	165	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	125	1	1
-Entire home/apt	237	1	1
-Entire home/apt	237	1	1
-Private room	87	1	1
-Private room	87	1	1
-Private room	87	1	1
-Private room	87	1	1
-Private room	87	1	1
-Private room	87	1	1
-Private room	87	1	1
-Private room	87	1	1
-Private room	87	1	1
-Private room	87	1	1
-Private room	87	1	1
-Private room	87	1	1
-Private room	87	1	1
-Private room	87	1	1
-Entire home/apt	100	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	59	1	1
-Entire home/apt	60	1	1
-Entire home/apt	60	1	1
-Entire home/apt	60	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Private room	54	1	1
-Entire home/apt	103	1	1
-Entire home/apt	103	1	1
-Entire home/apt	103	1	1
-Entire home/apt	103	1	1
-Entire home/apt	103	1	1
-Entire home/apt	103	1	1
-Entire home/apt	103	1	1
-Entire home/apt	103	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	199	1	1
-Entire home/apt	65	1	1
-Entire home/apt	65	1	1
-Entire home/apt	65	1	1
-Entire home/apt	65	1	1
-Entire home/apt	65	1	1
-Entire home/apt	65	1	1
-Entire home/apt	65	1	1
-Entire home/apt	65	1	1
-Entire home/apt	65	1	1
-Entire home/apt	65	1	1
-Entire home/apt	65	1	1
-Entire home/apt	65	1	1
-Entire home/apt	65	1	1
-Entire home/apt	65	1	1
-Entire home/apt	49	1	1
-Entire home/apt	49	1	1
-Entire home/apt	49	1	1
-Entire home/apt	49	1	1
-Entire home/apt	49	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	53	1	1
-Private room	53	1	1
-Private room	53	1	1
-Private room	53	1	1
-Private room	53	1	1
-Private room	65	1	1
-Private room	65	1	1
-Entire home/apt	98	1	1
-Entire home/apt	98	1	1
-Entire home/apt	98	1	1
-Entire home/apt	98	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Private room	42	1	1
-Private room	50	1	1
-Entire home/apt	139	1	1
-Entire home/apt	139	1	1
-Entire home/apt	139	1	1
-Entire home/apt	139	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Private room	42	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	300	1	1
-Entire home/apt	300	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	122	1	1
-Entire home/apt	122	1	1
-Entire home/apt	122	1	1
-Entire home/apt	122	1	1
-Entire home/apt	122	1	1
-Entire home/apt	122	1	1
-Entire home/apt	122	1	1
-Entire home/apt	122	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Private room	89	1	1
-Entire home/apt	110	1	1
-Private room	88	1	1
-Entire home/apt	338	1	1
-Private room	56	1	1
-Private room	56	1	1
-Private room	56	1	1
-Private room	56	1	1
-Private room	56	1	1
-Private room	56	1	1
-Entire home/apt	149	1	1
-Private room	80	1	1
-Private room	80	1	1
-Entire home/apt	138	1	1
-Entire home/apt	150	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	189	1	1
-Entire home/apt	220	1	1
-Entire home/apt	220	1	1
-Entire home/apt	159	1	1
-Private room	74	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Private room	90	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	37	1	1
-Private room	37	1	1
-Private room	37	1	1
-Private room	37	1	1
-Private room	37	1	1
-Shared room	53	1	1
-Private room	57	1	1
-Private room	57	1	1
-Entire home/apt	160	1	1
-Entire home/apt	160	1	1
-Entire home/apt	160	1	1
-Entire home/apt	160	1	1
-Entire home/apt	160	1	1
-Entire home/apt	93	1	1
-Entire home/apt	93	1	1
-Entire home/apt	115	1	1
-Private room	65	1	1
-Entire home/apt	144	1	1
-Entire home/apt	144	1	1
-Entire home/apt	144	1	1
-Shared room	53	1	1
-Entire home/apt	129	1	1
-Private room	120	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Shared room	31	1	1
-Shared room	31	1	1
-Shared room	31	1	1
-Shared room	31	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Entire home/apt	252	1	1
-Entire home/apt	107	1	1
-Private room	45	1	1
-Private room	45	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	150	1	1
-Entire home/apt	109	1	1
-Entire home/apt	250	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Private room	35	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	45	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Entire home/apt	105	1	1
-Private room	55	1	1
-Private room	55	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	59	1	1
-Entire home/apt	250	1	1
-Private room	90	1	1
-Private room	90	1	1
-Entire home/apt	245	1	1
-Entire home/apt	245	1	1
-Entire home/apt	245	1	1
-Entire home/apt	245	1	1
-Entire home/apt	150	1	1
-Entire home/apt	170	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	350	1	1
-Entire home/apt	350	1	1
-Entire home/apt	150	1	1
-Entire home/apt	134	1	1
-Entire home/apt	134	1	1
-Entire home/apt	134	1	1
-Entire home/apt	134	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Private room	39	1	1
-Private room	39	1	1
-Private room	39	1	1
-Private room	39	1	1
-Private room	39	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	95	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Entire home/apt	200	1	1
-Entire home/apt	461	1	1
-Entire home/apt	461	1	1
-Entire home/apt	461	1	1
-Entire home/apt	461	1	1
-Entire home/apt	461	1	1
-Entire home/apt	461	1	1
-Entire home/apt	461	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Entire home/apt	210	1	1
-Private room	129	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Entire home/apt	325	1	1
-Entire home/apt	325	1	1
-Entire home/apt	325	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Private room	80	1	1
-Private room	80	1	1
-Entire home/apt	100	1	1
-Entire home/apt	129	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Private room	120	1	1
-Entire home/apt	110	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Entire home/apt	127	1	1
-Entire home/apt	127	1	1
-Entire home/apt	127	1	1
-Entire home/apt	127	1	1
-Entire home/apt	127	1	1
-Entire home/apt	127	1	1
-Entire home/apt	127	1	1
-Entire home/apt	127	1	1
-Entire home/apt	100	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	67	1	1
-Entire home/apt	67	1	1
-Entire home/apt	67	1	1
-Entire home/apt	73	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	250	1	1
-Entire home/apt	250	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	85	1	1
-Private room	85	1	1
-Private room	85	1	1
-Private room	85	1	1
-Private room	85	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Entire home/apt	250	1	1
-Entire home/apt	250	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	170	1	1
-Entire home/apt	129	1	1
-Entire home/apt	130	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	212	1	1
-Private room	47	1	1
-Private room	47	1	1
-Private room	47	1	1
-Private room	47	1	1
-Private room	47	1	1
-Private room	47	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Private room	38	1	1
-Private room	80	1	1
-Private room	68	1	1
-Private room	59	1	1
-Entire home/apt	170	1	1
-Entire home/apt	170	1	1
-Entire home/apt	170	1	1
-Entire home/apt	144	1	1
-Private room	65	1	1
-Entire home/apt	120	1	1
-Private room	65	1	1
-Private room	65	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Private room	45	1	1
-Private room	45	1	1
-Private room	45	1	1
-Private room	49	1	1
-Entire home/apt	99	1	1
-Entire home/apt	125	1	1
-Entire home/apt	99	1	1
-Entire home/apt	235	1	1
-Entire home/apt	235	1	1
-Entire home/apt	165	1	1
-Entire home/apt	165	1	1
-Entire home/apt	144	1	1
-Entire home/apt	144	1	1
-Entire home/apt	144	1	1
-Entire home/apt	144	1	1
-Entire home/apt	144	1	1
-Private room	35	1	1
-Private room	35	1	1
-Private room	35	1	1
-Private room	35	1	1
-Private room	35	1	1
-Private room	35	1	1
-Private room	90	1	1
-Private room	90	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	140	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	183	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	189	1	1
-Entire home/apt	257	1	1
-Entire home/apt	89	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Private room	45	1	1
-Private room	45	1	1
-Private room	56	1	1
-Private room	56	1	1
-Private room	56	1	1
-Private room	56	1	1
-Entire home/apt	95	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Private room	43	1	1
-Private room	43	1	1
-Entire home/apt	160	1	1
-Entire home/apt	160	1	1
-Entire home/apt	160	1	1
-Entire home/apt	160	1	1
-Entire home/apt	160	1	1
-Entire home/apt	160	1	1
-Entire home/apt	160	1	1
-Entire home/apt	160	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	350	1	1
-Entire home/apt	169	1	1
-Entire home/apt	119	1	1
-Entire home/apt	119	1	1
-Entire home/apt	119	1	1
-Entire home/apt	119	1	1
-Private room	130	1	1
-Private room	130	1	1
-Private room	130	1	1
-Private room	55	1	1
-Private room	55	1	1
-Entire home/apt	88	1	1
-Entire home/apt	88	1	1
-Entire home/apt	88	1	1
-Entire home/apt	88	1	1
-Entire home/apt	150	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Private room	95	1	1
-Shared room	38	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Private room	65	1	1
-Private room	75	1	1
-Private room	118	1	1
-Private room	118	1	1
-Private room	118	1	1
-Private room	118	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	80	1	1
-Entire home/apt	110	1	1
-Entire home/apt	90	1	1
-Entire home/apt	275	1	1
-Entire home/apt	275	1	1
-Entire home/apt	128	1	1
-Private room	72	1	1
-Private room	72	1	1
-Private room	72	1	1
-Private room	72	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	120	1	1
-Private room	89	1	1
-Entire home/apt	80	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	122	1	1
-Entire home/apt	122	1	1
-Entire home/apt	122	1	1
-Entire home/apt	122	1	1
-Private room	60	1	1
-Entire home/apt	109	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	199	1	1
-Entire home/apt	199	1	1
-Entire home/apt	199	1	1
-Entire home/apt	199	1	1
-Entire home/apt	199	1	1
-Private room	195	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	249	1	1
-Entire home/apt	375	1	1
-Entire home/apt	375	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Private room	70	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	59	1	1
-Entire home/apt	139	1	1
-Entire home/apt	139	1	1
-Entire home/apt	139	1	1
-Entire home/apt	85	1	1
-Entire home/apt	60	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	110	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Private room	99	1	1
-Entire home/apt	151	1	1
-Entire home/apt	95	1	1
-Entire home/apt	104	1	1
-Entire home/apt	104	1	1
-Entire home/apt	104	1	1
-Entire home/apt	299	1	1
-Entire home/apt	299	1	1
-Entire home/apt	299	1	1
-Private room	55	1	1
-Private room	55	1	1
-Entire home/apt	171	1	1
-Entire home/apt	171	1	1
-Entire home/apt	171	1	1
-Entire home/apt	325	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Private room	75	1	1
-Entire home/apt	245	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	88	1	1
-Entire home/apt	88	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	80	1	1
-Private room	80	1	1
-Entire home/apt	93	1	1
-Entire home/apt	93	1	1
-Entire home/apt	93	1	1
-Entire home/apt	93	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	126	1	1
-Entire home/apt	139	1	1
-Entire home/apt	139	1	1
-Private room	77	1	1
-Private room	77	1	1
-Private room	77	1	1
-Private room	77	1	1
-Private room	77	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	140	1	1
-Entire home/apt	140	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	250	1	1
-Entire home/apt	250	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	95	1	1
-Private room	50	1	1
-Private room	50	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	78	1	1
-Entire home/apt	78	1	1
-Entire home/apt	78	1	1
-Entire home/apt	78	1	1
-Private room	100	1	1
-Private room	100	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	90	1	1
-Private room	90	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Private room	85	1	1
-Private room	50	1	1
-Private room	50	1	1
-Entire home/apt	139	1	1
-Entire home/apt	139	1	1
-Entire home/apt	139	1	1
-Entire home/apt	139	1	1
-Entire home/apt	139	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	129	1	1
-Entire home/apt	126	1	1
-Entire home/apt	126	1	1
-Entire home/apt	126	1	1
-Entire home/apt	156	1	1
-Entire home/apt	156	1	1
-Private room	35	1	1
-Private room	35	1	1
-Entire home/apt	100	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	59	1	1
-Entire home/apt	139	1	1
-Private room	59	1	1
-Entire home/apt	139	1	1
-Entire home/apt	200	1	1
-Private room	60	1	1
-Entire home/apt	150	1	1
-Private room	60	1	1
-Entire home/apt	92	1	1
-Private room	60	1	1
-Entire home/apt	92	1	1
-Private room	60	1	1
-Entire home/apt	92	1	1
-Private room	60	1	1
-Entire home/apt	150	1	1
-Private room	60	1	1
-Entire home/apt	150	1	1
-Entire home/apt	110	1	1
-Private room	85	1	1
-Entire home/apt	175	1	1
-Private room	85	1	1
-Private room	55	1	1
-Entire home/apt	99	1	1
-Private room	69	1	1
-Entire home/apt	99	1	1
-Private room	69	1	1
-Entire home/apt	99	1	1
-Private room	69	1	1
-Private room	55	1	1
-Entire home/apt	127	1	1
-Private room	55	1	1
-Entire home/apt	110	1	1
-Private room	55	1	1
-Entire home/apt	110	1	1
-Private room	55	1	1
-Entire home/apt	110	1	1
-Private room	75	1	1
-Private room	75	1	1
-Entire home/apt	120	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	232	1	1
-Private room	85	1	1
-Private room	75	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	100	1	1
-Entire home/apt	140	1	1
-Private room	73	1	1
-Entire home/apt	130	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Entire home/apt	189	1	1
-Private room	40	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Entire home/apt	175	1	1
-Entire home/apt	94	1	1
-Entire home/apt	94	1	1
-Entire home/apt	94	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	365	1	1
-Entire home/apt	93	1	1
-Entire home/apt	84	1	1
-Entire home/apt	199	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	125	1	1
-Private room	25	1	1
-Private room	25	1	1
-Private room	25	1	1
-Private room	25	1	1
-Private room	65	1	1
-Private room	45	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Private room	220	1	1
-Entire home/apt	240	1	1
-Entire home/apt	400	1	1
-Entire home/apt	80	1	1
-Entire home/apt	136	1	1
-Entire home/apt	160	1	1
-Private room	88	1	1
-Private room	88	1	1
-Private room	88	1	1
-Entire home/apt	275	1	1
-Entire home/apt	275	1	1
-Entire home/apt	275	1	1
-Private room	56	1	1
-Entire home/apt	59	1	1
-Entire home/apt	59	1	1
-Entire home/apt	59	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Entire home/apt	92	1	1
-Entire home/apt	92	1	1
-Entire home/apt	92	1	1
-Entire home/apt	92	1	1
-Entire home/apt	92	1	1
-Entire home/apt	92	1	1
-Entire home/apt	92	1	1
-Entire home/apt	92	1	1
-Entire home/apt	92	1	1
-Entire home/apt	159	1	1
-Entire home/apt	159	1	1
-Entire home/apt	159	1	1
-Entire home/apt	100	1	1
-Private room	90	1	1
-Private room	140	1	1
-Entire home/apt	95	1	1
-Entire home/apt	215	1	1
-Private room	75	1	1
-Entire home/apt	151	1	1
-Entire home/apt	151	1	1
-Private room	79	1	1
-Private room	79	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Private room	50	1	1
-Private room	60	1	1
-Private room	60	1	1
-Shared room	55	1	1
-Shared room	55	1	1
-Private room	150	1	1
-Private room	50	1	1
-Entire home/apt	179	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Entire home/apt	450	1	1
-Entire home/apt	450	1	1
-Entire home/apt	450	1	1
-Entire home/apt	450	1	1
-Shared room	31	1	1
-Shared room	31	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	110	1	1
-Entire home/apt	125	1	1
-Private room	122	1	1
-Private room	122	1	1
-Private room	45	1	1
-Private room	45	1	1
-Private room	65	1	1
-Private room	65	1	1
-Entire home/apt	250	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Private room	100	1	1
-Private room	74	1	1
-Entire home/apt	120	1	1
-Entire home/apt	127	1	1
-Entire home/apt	127	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	90	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	150	1	1
-Entire home/apt	65	1	1
-Entire home/apt	105	1	1
-Entire home/apt	97	1	1
-Entire home/apt	333	1	1
-Entire home/apt	333	1	1
-Entire home/apt	333	1	1
-Entire home/apt	333	1	1
-Entire home/apt	333	1	1
-Entire home/apt	333	1	1
-Entire home/apt	279	1	1
-Entire home/apt	129	1	1
-Private room	51	1	1
-Entire home/apt	180	1	1
-Entire home/apt	200	1	1
-Private room	75	1	1
-Private room	75	1	1
-Entire home/apt	90	1	1
-Private room	49	1	1
-Private room	49	1	1
-Private room	49	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Entire home/apt	138	1	1
-Entire home/apt	138	1	1
-Entire home/apt	138	1	1
-Entire home/apt	131	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	112	1	1
-Entire home/apt	330	1	1
-Entire home/apt	330	1	1
-Entire home/apt	330	1	1
-Entire home/apt	330	1	1
-Entire home/apt	330	1	1
-Entire home/apt	330	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	159	1	1
-Entire home/apt	159	1	1
-Entire home/apt	159	1	1
-Entire home/apt	138	1	1
-Entire home/apt	138	1	1
-Entire home/apt	138	1	1
-Entire home/apt	138	1	1
-Entire home/apt	138	1	1
-Entire home/apt	138	1	1
-Entire home/apt	138	1	1
-Entire home/apt	138	1	1
-Entire home/apt	108	1	1
-Entire home/apt	95	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	151	1	1
-Entire home/apt	151	1	1
-Entire home/apt	151	1	1
-Entire home/apt	151	1	1
-Entire home/apt	151	1	1
-Entire home/apt	151	1	1
-Entire home/apt	151	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	144	1	1
-Entire home/apt	100	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	58	1	1
-Entire home/apt	58	1	1
-Entire home/apt	58	1	1
-Entire home/apt	58	1	1
-Entire home/apt	58	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	57	1	1
-Private room	57	1	1
-Private room	57	1	1
-Private room	57	1	1
-Private room	57	1	1
-Private room	57	1	1
-Private room	57	1	1
-Private room	220	1	1
-Private room	57	1	1
-Private room	220	1	1
-Private room	57	1	1
-Entire home/apt	100	1	1
-Private room	57	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	50	1	1
-Private room	57	1	1
-Private room	50	1	1
-Private room	57	1	1
-Entire home/apt	199	1	1
-Shared room	25	1	1
-Private room	63	1	1
-Shared room	25	1	1
-Private room	63	1	1
-Shared room	25	1	1
-Private room	63	1	1
-Shared room	25	1	1
-Private room	63	1	1
-Shared room	25	1	1
-Private room	63	1	1
-Entire home/apt	180	1	1
-Entire home/apt	150	1	1
-Entire home/apt	109	1	1
-Entire home/apt	199	1	1
-Entire home/apt	95	1	1
-Private room	150	1	1
-Entire home/apt	79	1	1
-Entire home/apt	110	1	1
-Shared room	25	1	1
-Shared room	25	1	1
-Private room	55	1	1
-Private room	55	1	1
-Shared room	33	1	1
-Entire home/apt	90	1	1
-Shared room	40	1	1
-Shared room	40	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	106	1	1
-Entire home/apt	106	1	1
-Entire home/apt	106	1	1
-Entire home/apt	168	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Private room	60	1	1
-Private room	60	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Private room	150	1	1
-Private room	150	1	1
-Private room	150	1	1
-Entire home/apt	170	1	1
-Entire home/apt	170	1	1
-Entire home/apt	170	1	1
-Entire home/apt	170	1	1
-Entire home/apt	170	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	74	1	1
-Entire home/apt	74	1	1
-Entire home/apt	74	1	1
-Private room	150	1	1
-Private room	150	1	1
-Private room	150	1	1
-Private room	150	1	1
-Private room	150	1	1
-Private room	150	1	1
-Entire home/apt	100	1	1
-Private room	108	1	1
-Private room	68	1	1
-Private room	68	1	1
-Private room	68	1	1
-Private room	68	1	1
-Private room	126	1	1
-Private room	126	1	1
-Private room	126	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	165	1	1
-Entire home/apt	165	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	119	1	1
-Entire home/apt	225	1	1
-Entire home/apt	170	1	1
-Entire home/apt	170	1	1
-Entire home/apt	170	1	1
-Entire home/apt	170	1	1
-Entire home/apt	170	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Private room	84	1	1
-Private room	84	1	1
-Private room	84	1	1
-Private room	84	1	1
-Entire home/apt	155	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	400	1	1
-Entire home/apt	175	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	225	1	1
-Entire home/apt	225	1	1
-Entire home/apt	225	1	1
-Private room	72	1	1
-Private room	72	1	1
-Private room	72	1	1
-Entire home/apt	160	1	1
-Entire home/apt	160	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Private room	47	1	1
-Entire home/apt	79	1	1
-Entire home/apt	85	1	1
-Private room	69	1	1
-Private room	69	1	1
-Entire home/apt	91	1	1
-Entire home/apt	89	1	1
-Private room	40	1	1
-Private room	47	1	1
-Private room	47	1	1
-Entire home/apt	215	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	125	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	104	1	1
-Entire home/apt	104	1	1
-Entire home/apt	130	1	1
-Entire home/apt	130	1	1
-Entire home/apt	90	1	1
-Entire home/apt	105	1	1
-Entire home/apt	109	1	1
-Entire home/apt	125	1	1
-Entire home/apt	239	1	1
-Entire home/apt	239	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	75	1	1
-Entire home/apt	130	1	1
-Entire home/apt	65	1	1
-Entire home/apt	129	1	1
-Entire home/apt	749	1	1
-Private room	65	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Private room	65	1	1
-Entire home/apt	82	1	1
-Entire home/apt	82	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Private room	75	1	1
-Private room	75	1	1
-Entire home/apt	79	1	1
-Private room	69	1	1
-Entire home/apt	100	1	1
-Private room	68	1	1
-Private room	68	1	1
-Private room	68	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Entire home/apt	225	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Shared room	55	1	1
-Private room	85	1	1
-Private room	85	1	1
-Entire home/apt	140	1	1
-Private room	55	1	1
-Private room	60	1	1
-Entire home/apt	99	1	1
-Entire home/apt	125	1	1
-Entire home/apt	85	1	1
-Private room	90	1	1
-Private room	60	1	1
-Entire home/apt	199	1	1
-Entire home/apt	85	1	1
-Private room	35	1	1
-Private room	35	1	1
-Private room	35	1	1
-Private room	37	1	1
-Private room	37	1	1
-Private room	37	1	1
-Private room	55	1	1
-Private room	50	1	1
-Shared room	42	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Private room	49	1	1
-Entire home/apt	120	1	1
-Private room	63	1	1
-Private room	75	1	1
-Private room	39	1	1
-Private room	87	1	1
-Private room	87	1	1
-Private room	87	1	1
-Private room	87	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	65	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Entire home/apt	114	1	1
-Entire home/apt	114	1	1
-Entire home/apt	114	1	1
-Entire home/apt	148	1	1
-Private room	49	1	1
-Entire home/apt	99	1	1
-Entire home/apt	95	1	1
-Entire home/apt	90	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Shared room	50	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	90	1	1
-Entire home/apt	75	1	1
-Private room	90	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	150	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Private room	53	1	1
-Private room	53	1	1
-Private room	53	1	1
-Private room	53	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	65	1	1
-Entire home/apt	65	1	1
-Entire home/apt	65	1	1
-Entire home/apt	65	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	126	1	1
-Entire home/apt	126	1	1
-Entire home/apt	126	1	1
-Entire home/apt	126	1	1
-Entire home/apt	240	1	1
-Entire home/apt	240	1	1
-Private room	47	1	1
-Private room	47	1	1
-Private room	47	1	1
-Entire home/apt	140	1	1
-Entire home/apt	140	1	1
-Entire home/apt	140	1	1
-Entire home/apt	140	1	1
-Entire home/apt	140	1	1
-Entire home/apt	89	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	68	1	1
-Private room	68	1	1
-Private room	68	1	1
-Private room	68	1	1
-Private room	68	1	1
-Private room	101	1	1
-Private room	59	1	1
-Private room	59	1	1
-Entire home/apt	170	1	1
-Entire home/apt	187	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Private room	65	1	1
-Private room	65	1	1
-Entire home/apt	75	1	1
-Entire home/apt	140	1	1
-Entire home/apt	140	1	1
-Entire home/apt	140	1	1
-Entire home/apt	140	1	1
-Private room	120	1	1
-Private room	120	1	1
-Entire home/apt	99	1	1
-Entire home/apt	183	1	1
-Entire home/apt	183	1	1
-Entire home/apt	183	1	1
-Entire home/apt	99	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	165	1	1
-Private room	110	1	1
-Private room	110	1	1
-Entire home/apt	144	1	1
-Entire home/apt	144	1	1
-Entire home/apt	144	1	1
-Entire home/apt	225	1	1
-Entire home/apt	225	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	53	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	99	1	1
-Private room	90	1	1
-Entire home/apt	183	1	1
-Entire home/apt	183	1	1
-Entire home/apt	183	1	1
-Entire home/apt	300	1	1
-Entire home/apt	300	1	1
-Entire home/apt	199	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	100	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	115	1	1
-Entire home/apt	250	1	1
-Entire home/apt	250	1	1
-Entire home/apt	250	1	1
-Entire home/apt	250	1	1
-Entire home/apt	250	1	1
-Entire home/apt	250	1	1
-Entire home/apt	250	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	109	1	1
-Entire home/apt	109	1	1
-Entire home/apt	109	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Entire home/apt	275	1	1
-Entire home/apt	275	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	170	1	1
-Entire home/apt	170	1	1
-Entire home/apt	170	1	1
-Entire home/apt	170	1	1
-Entire home/apt	170	1	1
-Entire home/apt	170	1	1
-Entire home/apt	125	1	1
-Entire home/apt	200	1	1
-Entire home/apt	200	1	1
-Entire home/apt	200	1	1
-Entire home/apt	200	1	1
-Entire home/apt	200	1	1
-Entire home/apt	200	1	1
-Entire home/apt	200	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	93	1	1
-Entire home/apt	217	1	1
-Entire home/apt	217	1	1
-Entire home/apt	217	1	1
-Entire home/apt	217	1	1
-Entire home/apt	217	1	1
-Entire home/apt	217	1	1
-Entire home/apt	217	1	1
-Entire home/apt	217	1	1
-Entire home/apt	217	1	1
-Private room	70	1	1
-Private room	70	1	1
-Entire home/apt	680	1	1
-Entire home/apt	680	1	1
-Entire home/apt	224	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Entire home/apt	200	1	1
-Entire home/apt	155	1	1
-Entire home/apt	155	1	1
-Entire home/apt	155	1	1
-Entire home/apt	155	1	1
-Entire home/apt	155	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	54	1	1
-Private room	54	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	70	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Private room	90	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	100	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	250	1	1
-Entire home/apt	250	1	1
-Entire home/apt	250	1	1
-Entire home/apt	250	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	40	1	1
-Private room	40	1	1
-Private room	40	1	1
-Entire home/apt	150	1	1
-Private room	50	1	1
-Entire home/apt	81	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Private room	35	1	1
-Private room	35	1	1
-Private room	35	1	1
-Entire home/apt	99	1	1
-Entire home/apt	196	1	1
-Entire home/apt	169	1	1
-Entire home/apt	169	1	1
-Entire home/apt	169	1	1
-Entire home/apt	100	1	1
-Entire home/apt	299	1	1
-Entire home/apt	150	1	1
-Entire home/apt	92	1	1
-Private room	47	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Private room	50	1	1
-Private room	50	1	1
-Private room	50	1	1
-Private room	50	1	1
-Private room	50	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	49	1	1
-Private room	49	1	1
-Private room	49	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	199	1	1
-Entire home/apt	199	1	1
-Entire home/apt	199	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Entire home/apt	125	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	68	1	1
-Shared room	33	1	1
-Private room	54	1	1
-Entire home/apt	60	1	1
-Entire home/apt	60	1	1
-Entire home/apt	60	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	200	1	1
-Entire home/apt	200	1	1
-Entire home/apt	92	1	1
-Private room	105	1	1
-Entire home/apt	92	1	1
-Entire home/apt	92	1	1
-Entire home/apt	348	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	349	1	1
-Entire home/apt	115	1	1
-Private room	105	1	1
-Entire home/apt	140	1	1
-Private room	54	1	1
-Private room	105	1	1
-Entire home/apt	144	1	1
-Private room	54	1	1
-Entire home/apt	144	1	1
-Private room	54	1	1
-Private room	70	1	1
-Private room	54	1	1
-Private room	54	1	1
-Private room	78	1	1
-Private room	78	1	1
-Entire home/apt	144	1	1
-Private room	80	1	1
-Private room	40	1	1
-Entire home/apt	144	1	1
-Private room	40	1	1
-Entire home/apt	87	1	1
-Entire home/apt	87	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	80	1	1
-Private room	80	1	1
-Entire home/apt	130	1	1
-Entire home/apt	130	1	1
-Entire home/apt	130	1	1
-Private room	95	1	1
-Private room	95	1	1
-Entire home/apt	250	1	1
-Entire home/apt	250	1	1
-Entire home/apt	150	1	1
-Private room	115	1	1
-Entire home/apt	95	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	150	1	1
-Private room	75	1	1
-Private room	75	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	975	1	1
-Private room	169	1	1
-Private room	169	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	999	1	1
-Entire home/apt	999	1	1
-Entire home/apt	999	1	1
-Entire home/apt	999	1	1
-Entire home/apt	200	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Private room	45	1	1
-Entire home/apt	300	1	1
-Entire home/apt	300	1	1
-Entire home/apt	300	1	1
-Entire home/apt	300	1	1
-Entire home/apt	300	1	1
-Entire home/apt	199	1	1
-Entire home/apt	199	1	1
-Entire home/apt	199	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	557	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Entire home/apt	200	1	1
-Entire home/apt	200	1	1
-Entire home/apt	200	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	88	1	1
-Entire home/apt	88	1	1
-Shared room	40	1	1
-Private room	62	1	1
-Private room	62	1	1
-Private room	62	1	1
-Private room	62	1	1
-Private room	62	1	1
-Private room	62	1	1
-Private room	62	1	1
-Private room	62	1	1
-Private room	62	1	1
-Private room	62	1	1
-Private room	62	1	1
-Private room	62	1	1
-Private room	62	1	1
-Private room	62	1	1
-Entire home/apt	65	1	1
-Entire home/apt	65	1	1
-Entire home/apt	65	1	1
-Entire home/apt	65	1	1
-Entire home/apt	65	1	1
-Entire home/apt	65	1	1
-Entire home/apt	65	1	1
-Private room	105	1	1
-Private room	105	1	1
-Entire home/apt	144	1	1
-Entire home/apt	144	1	1
-Entire home/apt	144	1	1
-Entire home/apt	144	1	1
-Entire home/apt	190	1	1
-Private room	125	1	1
-Private room	125	1	1
-Entire home/apt	90	1	1
-Private room	69	1	1
-Entire home/apt	144	1	1
-Entire home/apt	150	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	70	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	140	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	141	1	1
-Entire home/apt	141	1	1
-Entire home/apt	141	1	1
-Entire home/apt	141	1	1
-Entire home/apt	141	1	1
-Entire home/apt	141	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Entire home/apt	200	1	1
-Entire home/apt	200	1	1
-Entire home/apt	200	1	1
-Entire home/apt	200	1	1
-Entire home/apt	200	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	139	1	1
-Entire home/apt	139	1	1
-Entire home/apt	172	1	1
-Entire home/apt	172	1	1
-Private room	45	1	1
-Private room	45	1	1
-Private room	45	1	1
-Private room	45	1	1
-Entire home/apt	350	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Entire home/apt	66	1	1
-Entire home/apt	66	1	1
-Entire home/apt	66	1	1
-Entire home/apt	66	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	98	1	1
-Private room	50	1	1
-Private room	50	1	1
-Private room	50	1	1
-Private room	50	1	1
-Private room	84	1	1
-Private room	84	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	35	1	1
-Entire home/apt	99	1	1
-Shared room	29	1	1
-Shared room	29	1	1
-Shared room	29	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Private room	80	1	1
-Private room	54	1	1
-Private room	54	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Entire home/apt	250	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	139	1	1
-Entire home/apt	139	1	1
-Private room	28	1	1
-Private room	35	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	775	1	1
-Entire home/apt	775	1	1
-Entire home/apt	150	1	1
-Entire home/apt	145	1	1
-Entire home/apt	59	1	1
-Entire home/apt	59	1	1
-Entire home/apt	59	1	1
-Entire home/apt	59	1	1
-Entire home/apt	59	1	1
-Entire home/apt	100	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Entire home/apt	70	1	1
-Entire home/apt	70	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	59	1	1
-Entire home/apt	125	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	61	1	1
-Entire home/apt	75	1	1
-Entire home/apt	125	1	1
-Private room	120	1	1
-Private room	120	1	1
-Private room	120	1	1
-Private room	120	1	1
-Private room	120	1	1
-Private room	120	1	1
-Private room	120	1	1
-Private room	120	1	1
-Entire home/apt	160	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	140	1	1
-Entire home/apt	140	1	1
-Private room	97	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	84	1	1
-Private room	84	1	1
-Private room	84	1	1
-Private room	84	1	1
-Private room	84	1	1
-Shared room	45	1	1
-Shared room	45	1	1
-Entire home/apt	126	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Private room	50	1	1
-Private room	50	1	1
-Entire home/apt	200	1	1
-Entire home/apt	200	1	1
-Entire home/apt	200	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Private room	59	1	1
-Private room	50	1	1
-Private room	50	1	1
-Private room	50	1	1
-Entire home/apt	139	1	1
-Entire home/apt	139	1	1
-Entire home/apt	139	1	1
-Entire home/apt	139	1	1
-Entire home/apt	139	1	1
-Entire home/apt	139	1	1
-Entire home/apt	139	1	1
-Entire home/apt	139	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	140	1	1
-Entire home/apt	140	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Private room	65	1	1
-Private room	65	1	1
-Entire home/apt	71	1	1
-Entire home/apt	71	1	1
-Entire home/apt	71	1	1
-Entire home/apt	225	1	1
-Private room	40	1	1
-Private room	40	1	1
-Private room	90	1	1
-Entire home/apt	88	1	1
-Entire home/apt	88	1	1
-Entire home/apt	88	1	1
-Entire home/apt	88	1	1
-Entire home/apt	88	1	1
-Entire home/apt	88	1	1
-Entire home/apt	88	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Entire home/apt	104	1	1
-Private room	99	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Entire home/apt	125	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	130	1	1
-Private room	60	1	1
-Private room	60	1	1
-Entire home/apt	550	1	1
-Entire home/apt	168	1	1
-Entire home/apt	168	1	1
-Entire home/apt	168	1	1
-Entire home/apt	168	1	1
-Entire home/apt	168	1	1
-Entire home/apt	125	1	1
-Entire home/apt	59	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	199	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Private room	41	1	1
-Private room	41	1	1
-Private room	70	1	1
-Private room	70	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Entire home/apt	85	1	1
-Private room	85	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Entire home/apt	130	1	1
-Entire home/apt	130	1	1
-Entire home/apt	99	1	1
-Entire home/apt	109	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	60	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	109	1	1
-Entire home/apt	110	1	1
-Private room	45	1	1
-Private room	60	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	82	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Private room	80	1	1
-Private room	80	1	1
-Entire home/apt	269	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Entire home/apt	100	1	1
-Entire home/apt	119	1	1
-Entire home/apt	119	1	1
-Entire home/apt	139	1	1
-Entire home/apt	85	1	1
-Entire home/apt	89	1	1
-Entire home/apt	165	1	1
-Entire home/apt	165	1	1
-Entire home/apt	165	1	1
-Entire home/apt	130	1	1
-Entire home/apt	180	1	1
-Entire home/apt	110	1	1
-Entire home/apt	280	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Private room	82	1	1
-Entire home/apt	100	1	1
-Entire home/apt	250	1	1
-Entire home/apt	150	1	1
-Entire home/apt	85	1	1
-Private room	65	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Entire home/apt	117	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	91	1	1
-Private room	35	1	1
-Private room	35	1	1
-Private room	35	1	1
-Private room	41	1	1
-Private room	41	1	1
-Private room	41	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	350	1	1
-Private room	45	1	1
-Private room	45	1	1
-Private room	45	1	1
-Private room	50	1	1
-Private room	80	1	1
-Entire home/apt	85	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	145	1	1
-Entire home/apt	140	1	1
-Entire home/apt	106	1	1
-Private room	47	1	1
-Entire home/apt	81	1	1
-Entire home/apt	81	1	1
-Entire home/apt	81	1	1
-Entire home/apt	70	1	1
-Entire home/apt	180	1	1
-Entire home/apt	180	1	1
-Private room	85	1	1
-Private room	85	1	1
-Entire home/apt	96	1	1
-Entire home/apt	109	1	1
-Private room	65	1	1
-Entire home/apt	155	1	1
-Entire home/apt	139	1	1
-Entire home/apt	79	1	1
-Entire home/apt	130	1	1
-Entire home/apt	95	1	1
-Entire home/apt	125	1	1
-Private room	41	1	1
-Private room	41	1	1
-Private room	44	1	1
-Private room	44	1	1
-Private room	43	1	1
-Entire home/apt	130	1	1
-Entire home/apt	450	1	1
-Private room	35	1	1
-Private room	49	1	1
-Private room	49	1	1
-Private room	49	1	1
-Entire home/apt	85	1	1
-Entire home/apt	219	1	1
-Private room	35	1	1
-Entire home/apt	95	1	1
-Private room	40	1	1
-Private room	68	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	119	1	1
-Entire home/apt	100	1	1
-Private room	67	1	1
-Entire home/apt	99	1	1
-Entire home/apt	130	1	1
-Entire home/apt	125	1	1
-Private room	28	1	1
-Entire home/apt	79	1	1
-Shared room	25	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Private room	84	1	1
-Private room	84	1	1
-Private room	84	1	1
-Private room	39	1	1
-Private room	39	1	1
-Private room	35	1	1
-Private room	35	1	1
-Private room	72	1	1
-Private room	72	1	1
-Private room	72	1	1
-Private room	72	1	1
-Private room	72	1	1
-Private room	72	1	1
-Entire home/apt	110	1	1
-Entire home/apt	165	1	1
-Entire home/apt	165	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	68	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	85	1	1
-Private room	85	1	1
-Private room	85	1	1
-Private room	85	1	1
-Private room	85	1	1
-Private room	85	1	1
-Entire home/apt	75	1	1
-Private room	39	1	1
-Entire home/apt	135	1	1
-Entire home/apt	107	1	1
-Entire home/apt	107	1	1
-Entire home/apt	107	1	1
-Entire home/apt	107	1	1
-Entire home/apt	107	1	1
-Entire home/apt	150	1	1
-Private room	67	1	1
-Private room	67	1	1
-Private room	65	1	1
-Private room	65	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	114	1	1
-Entire home/apt	114	1	1
-Entire home/apt	114	1	1
-Private room	50	1	1
-Entire home/apt	525	1	1
-Entire home/apt	150	1	1
-Private room	59	1	1
-Private room	59	1	1
-Shared room	45	1	1
-Entire home/apt	97	1	1
-Private room	78	1	1
-Private room	78	1	1
-Private room	78	1	1
-Private room	55	1	1
-Shared room	30	1	1
-Shared room	30	1	1
-Entire home/apt	89	1	1
-Entire home/apt	119	1	1
-Entire home/apt	119	1	1
-Private room	55	1	1
-Private room	55	1	1
-Entire home/apt	275	1	1
-Private room	55	1	1
-Entire home/apt	158	1	1
-Entire home/apt	158	1	1
-Entire home/apt	158	1	1
-Entire home/apt	110	1	1
-Private room	82	1	1
-Private room	60	1	1
-Private room	60	1	1
-Entire home/apt	75	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	90	1	1
-Entire home/apt	85	1	1
-Entire home/apt	300	1	1
-Private room	75	1	1
-Private room	75	1	1
-Entire home/apt	117	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	150	1	1
-Entire home/apt	125	1	1
-Entire home/apt	279	1	1
-Entire home/apt	115	1	1
-Private room	36	1	1
-Private room	36	1	1
-Private room	36	1	1
-Private room	36	1	1
-Private room	36	1	1
-Private room	36	1	1
-Private room	36	1	1
-Private room	34	1	1
-Private room	34	1	1
-Private room	50	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	163	1	1
-Shared room	35	1	1
-Shared room	35	1	1
-Shared room	35	1	1
-Shared room	35	1	1
-Shared room	35	1	1
-Shared room	35	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	90	1	1
-Entire home/apt	235	1	1
-Entire home/apt	139	1	1
-Entire home/apt	139	1	1
-Shared room	40	1	1
-Shared room	40	1	1
-Entire home/apt	180	1	1
-Entire home/apt	180	1	1
-Entire home/apt	179	1	1
-Shared room	79	1	1
-Shared room	79	1	1
-Shared room	79	1	1
-Shared room	79	1	1
-Shared room	79	1	1
-Private room	70	1	1
-Private room	99	1	1
-Private room	99	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	439	1	1
-Entire home/apt	439	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Private room	45	1	1
-Private room	45	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Shared room	29	1	1
-Shared room	30	1	1
-Shared room	30	1	1
-Shared room	30	1	1
-Entire home/apt	160	1	1
-Entire home/apt	160	1	1
-Entire home/apt	160	1	1
-Entire home/apt	160	1	1
-Entire home/apt	160	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	97	1	1
-Entire home/apt	97	1	1
-Entire home/apt	97	1	1
-Entire home/apt	97	1	1
-Entire home/apt	97	1	1
-Entire home/apt	97	1	1
-Entire home/apt	97	1	1
-Entire home/apt	97	1	1
-Entire home/apt	97	1	1
-Entire home/apt	97	1	1
-Entire home/apt	97	1	1
-Entire home/apt	97	1	1
-Entire home/apt	97	1	1
-Private room	45	1	1
-Entire home/apt	39	1	1
-Entire home/apt	39	1	1
-Private room	71	1	1
-Private room	71	1	1
-Private room	71	1	1
-Private room	71	1	1
-Private room	71	1	1
-Private room	71	1	1
-Private room	71	1	1
-Private room	71	1	1
-Private room	71	1	1
-Private room	71	1	1
-Private room	71	1	1
-Private room	71	1	1
-Private room	71	1	1
-Private room	71	1	1
-Private room	71	1	1
-Private room	71	1	1
-Private room	71	1	1
-Private room	71	1	1
-Private room	71	1	1
-Entire home/apt	183	1	1
-Entire home/apt	183	1	1
-Entire home/apt	183	1	1
-Entire home/apt	183	1	1
-Entire home/apt	183	1	1
-Entire home/apt	119	1	1
-Entire home/apt	119	1	1
-Entire home/apt	119	1	1
-Entire home/apt	119	1	1
-Entire home/apt	119	1	1
-Shared room	30	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Private room	50	1	1
-Private room	50	1	1
-Entire home/apt	175	1	1
-Private room	55	1	1
-Entire home/apt	100	1	1
-Private room	85	1	1
-Private room	85	1	1
-Entire home/apt	105	1	1
-Private room	49	1	1
-Entire home/apt	139	1	1
-Entire home/apt	139	1	1
-Entire home/apt	139	1	1
-Entire home/apt	139	1	1
-Private room	49	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	85	1	1
-Entire home/apt	275	1	1
-Entire home/apt	188	1	1
-Entire home/apt	188	1	1
-Entire home/apt	149	1	1
-Entire home/apt	175	1	1
-Entire home/apt	139	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	95	1	1
-Entire home/apt	145	1	1
-Entire home/apt	85	1	1
-Entire home/apt	90	1	1
-Entire home/apt	150	1	1
-Private room	75	1	1
-Entire home/apt	90	1	1
-Entire home/apt	89	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Private room	49	1	1
-Entire home/apt	85	1	1
-Entire home/apt	99	1	1
-Entire home/apt	157	1	1
-Entire home/apt	100	1	1
-Private room	41	1	1
-Private room	41	1	1
-Shared room	29	1	1
-Private room	60	1	1
-Entire home/apt	103	1	1
-Entire home/apt	100	1	1
-Private room	50	1	1
-Shared room	25	1	1
-Entire home/apt	83	1	1
-Entire home/apt	100	1	1
-Entire home/apt	245	1	1
-Entire home/apt	245	1	1
-Entire home/apt	245	1	1
-Entire home/apt	245	1	1
-Entire home/apt	245	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Entire home/apt	180	1	1
-Entire home/apt	180	1	1
-Entire home/apt	180	1	1
-Entire home/apt	180	1	1
-Entire home/apt	180	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Private room	49	1	1
-Private room	49	1	1
-Entire home/apt	130	1	1
-Entire home/apt	111	1	1
-Entire home/apt	111	1	1
-Entire home/apt	111	1	1
-Entire home/apt	111	1	1
-Shared room	50	1	1
-Private room	72	1	1
-Entire home/apt	58	1	1
-Entire home/apt	58	1	1
-Entire home/apt	58	1	1
-Entire home/apt	58	1	1
-Private room	42	1	1
-Private room	42	1	1
-Private room	42	1	1
-Private room	42	1	1
-Private room	42	1	1
-Private room	42	1	1
-Private room	42	1	1
-Private room	115	1	1
-Private room	115	1	1
-Private room	115	1	1
-Private room	115	1	1
-Private room	115	1	1
-Private room	115	1	1
-Private room	115	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	250	1	1
-Entire home/apt	250	1	1
-Entire home/apt	250	1	1
-Entire home/apt	250	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Shared room	29	1	1
-Shared room	29	1	1
-Shared room	29	1	1
-Entire home/apt	128	1	1
-Entire home/apt	128	1	1
-Entire home/apt	128	1	1
-Entire home/apt	128	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	53	1	1
-Private room	53	1	1
-Private room	53	1	1
-Private room	53	1	1
-Private room	53	1	1
-Private room	53	1	1
-Private room	53	1	1
-Private room	119	1	1
-Private room	119	1	1
-Private room	119	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Private room	40	1	1
-Private room	40	1	1
-Private room	40	1	1
-Entire home/apt	90	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	70	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Entire home/apt	160	1	1
-Private room	80	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	129	1	1
-Entire home/apt	145	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	120	1	1
-Private room	120	1	1
-Private room	120	1	1
-Private room	120	1	1
-Private room	120	1	1
-Private room	120	1	1
-Entire home/apt	175	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	550	1	1
-Entire home/apt	550	1	1
-Entire home/apt	550	1	1
-Private room	50	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Entire home/apt	103	1	1
-Entire home/apt	103	1	1
-Entire home/apt	103	1	1
-Entire home/apt	325	1	1
-Private room	48	1	1
-Private room	48	1	1
-Private room	48	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	70	1	1
-Private room	70	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	200	1	1
-Entire home/apt	200	1	1
-Entire home/apt	111	1	1
-Entire home/apt	120	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	160	1	1
-Entire home/apt	160	1	1
-Private room	75	1	1
-Entire home/apt	229	1	1
-Entire home/apt	104	1	1
-Entire home/apt	104	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Private room	85	1	1
-Entire home/apt	177	1	1
-Entire home/apt	177	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	99	1	1
-Private room	72	1	1
-Private room	72	1	1
-Private room	72	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	498	1	1
-Entire home/apt	498	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	65	1	1
-Entire home/apt	113	1	1
-Entire home/apt	113	1	1
-Entire home/apt	113	1	1
-Entire home/apt	113	1	1
-Shared room	40	1	1
-Shared room	40	1	1
-Shared room	40	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	300	1	1
-Entire home/apt	65	1	1
-Entire home/apt	65	1	1
-Entire home/apt	65	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	90	1	1
-Private room	85	1	1
-Private room	85	1	1
-Private room	85	1	1
-Private room	85	1	1
-Entire home/apt	115	1	1
-Entire home/apt	99	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	59	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Entire home/apt	70	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	175	1	1
-Private room	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	139	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Entire home/apt	104	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	62	1	1
-Entire home/apt	75	1	1
-Entire home/apt	256	1	1
-Entire home/apt	256	1	1
-Entire home/apt	256	1	1
-Entire home/apt	256	1	1
-Entire home/apt	256	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	195	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	139	1	1
-Entire home/apt	235	1	1
-Entire home/apt	245	1	1
-Entire home/apt	245	1	1
-Entire home/apt	245	1	1
-Private room	47	1	1
-Private room	47	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	60	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Private room	80	1	1
-Entire home/apt	149	1	1
-Entire home/apt	64	1	1
-Entire home/apt	64	1	1
-Entire home/apt	64	1	1
-Entire home/apt	133	1	1
-Entire home/apt	133	1	1
-Entire home/apt	93	1	1
-Entire home/apt	93	1	1
-Entire home/apt	93	1	1
-Entire home/apt	93	1	1
-Shared room	60	1	1
-Shared room	60	1	1
-Shared room	60	1	1
-Private room	76	1	1
-Private room	76	1	1
-Private room	72	1	1
-Private room	72	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	125	1	1
-Private room	42	1	1
-Entire home/apt	78	1	1
-Private room	37	1	1
-Private room	37	1	1
-Private room	37	1	1
-Private room	37	1	1
-Private room	37	1	1
-Private room	37	1	1
-Private room	37	1	1
-Entire home/apt	300	1	1
-Private room	49	1	1
-Private room	49	1	1
-Private room	49	1	1
-Private room	49	1	1
-Entire home/apt	65	1	1
-Entire home/apt	65	1	1
-Entire home/apt	65	1	1
-Entire home/apt	140	1	1
-Entire home/apt	140	1	1
-Entire home/apt	140	1	1
-Private room	66	1	1
-Private room	89	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	338	1	1
-Private room	90	1	1
-Private room	90	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	149	1	1
-Private room	139	1	1
-Private room	139	1	1
-Private room	139	1	1
-Private room	139	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Entire home/apt	200	1	1
-Entire home/apt	200	1	1
-Entire home/apt	99	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	220	1	1
-Entire home/apt	220	1	1
-Entire home/apt	220	1	1
-Entire home/apt	220	1	1
-Entire home/apt	159	1	1
-Entire home/apt	159	1	1
-Private room	53	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Private room	140	1	1
-Private room	140	1	1
-Private room	55	1	1
-Entire home/apt	75	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	244	1	1
-Private room	130	1	1
-Private room	130	1	1
-Private room	65	1	1
-Entire home/apt	144	1	1
-Entire home/apt	144	1	1
-Shared room	53	1	1
-Shared room	53	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Private room	74	1	1
-Entire home/apt	115	1	1
-Entire home/apt	300	1	1
-Entire home/apt	300	1	1
-Entire home/apt	105	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Entire home/apt	252	1	1
-Private room	150	1	1
-Entire home/apt	79	1	1
-Entire home/apt	99	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Private room	35	1	1
-Private room	35	1	1
-Private room	35	1	1
-Private room	35	1	1
-Private room	35	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	45	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	145	1	1
-Private room	48	1	1
-Private room	48	1	1
-Private room	48	1	1
-Private room	48	1	1
-Private room	48	1	1
-Private room	48	1	1
-Entire home/apt	130	1	1
-Entire home/apt	130	1	1
-Entire home/apt	130	1	1
-Entire home/apt	130	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	67	1	1
-Entire home/apt	67	1	1
-Entire home/apt	67	1	1
-Entire home/apt	67	1	1
-Entire home/apt	220	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	276	1	1
-Entire home/apt	250	1	1
-Entire home/apt	195	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Private room	69	1	1
-Entire home/apt	350	1	1
-Entire home/apt	170	1	1
-Entire home/apt	170	1	1
-Entire home/apt	129	1	1
-Entire home/apt	250	1	1
-Entire home/apt	250	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	90	1	1
-Entire home/apt	156	1	1
-Entire home/apt	156	1	1
-Entire home/apt	65	1	1
-Entire home/apt	65	1	1
-Entire home/apt	212	1	1
-Entire home/apt	125	1	1
-Private room	90	1	1
-Private room	90	1	1
-Entire home/apt	144	1	1
-Entire home/apt	144	1	1
-Entire home/apt	144	1	1
-Entire home/apt	144	1	1
-Entire home/apt	144	1	1
-Entire home/apt	144	1	1
-Entire home/apt	144	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Entire home/apt	120	1	1
-Entire home/apt	375	1	1
-Entire home/apt	375	1	1
-Entire home/apt	375	1	1
-Entire home/apt	75	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Private room	49	1	1
-Private room	49	1	1
-Private room	49	1	1
-Private room	49	1	1
-Entire home/apt	125	1	1
-Entire home/apt	158	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	35	1	1
-Private room	35	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	120	1	1
-Entire home/apt	140	1	1
-Entire home/apt	110	1	1
-Entire home/apt	199	1	1
-Entire home/apt	290	1	1
-Entire home/apt	257	1	1
-Entire home/apt	89	1	1
-Entire home/apt	465	1	1
-Private room	85	1	1
-Private room	68	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Private room	39	1	1
-Private room	39	1	1
-Private room	39	1	1
-Private room	39	1	1
-Private room	39	1	1
-Private room	40	1	1
-Entire home/apt	200	1	1
-Shared room	25	1	1
-Shared room	25	1	1
-Entire home/apt	60	1	1
-Entire home/apt	60	1	1
-Entire home/apt	60	1	1
-Entire home/apt	115	1	1
-Entire home/apt	170	1	1
-Entire home/apt	126	1	1
-Entire home/apt	126	1	1
-Entire home/apt	126	1	1
-Private room	80	1	1
-Entire home/apt	169	1	1
-Entire home/apt	169	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Private room	60	1	1
-Private room	60	1	1
-Entire home/apt	200	1	1
-Entire home/apt	200	1	1
-Private room	49	1	1
-Private room	49	1	1
-Private room	49	1	1
-Private room	49	1	1
-Private room	49	1	1
-Private room	49	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Private room	59	1	1
-Private room	70	1	1
-Entire home/apt	190	1	1
-Entire home/apt	190	1	1
-Entire home/apt	190	1	1
-Entire home/apt	190	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	112	1	1
-Entire home/apt	112	1	1
-Entire home/apt	112	1	1
-Private room	86	1	1
-Private room	86	1	1
-Private room	86	1	1
-Private room	86	1	1
-Private room	86	1	1
-Entire home/apt	121	1	1
-Entire home/apt	121	1	1
-Entire home/apt	121	1	1
-Entire home/apt	121	1	1
-Entire home/apt	121	1	1
-Entire home/apt	121	1	1
-Entire home/apt	121	1	1
-Entire home/apt	160	1	1
-Entire home/apt	400	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Shared room	95	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	90	1	1
-Private room	70	1	1
-Private room	70	1	1
-Entire home/apt	134	1	1
-Entire home/apt	159	1	1
-Entire home/apt	159	1	1
-Entire home/apt	159	1	1
-Entire home/apt	159	1	1
-Entire home/apt	159	1	1
-Entire home/apt	159	1	1
-Entire home/apt	159	1	1
-Entire home/apt	159	1	1
-Private room	35	1	1
-Private room	35	1	1
-Private room	35	1	1
-Private room	35	1	1
-Private room	35	1	1
-Entire home/apt	130	1	1
-Entire home/apt	130	1	1
-Entire home/apt	130	1	1
-Entire home/apt	130	1	1
-Entire home/apt	108	1	1
-Entire home/apt	108	1	1
-Entire home/apt	108	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	295	1	1
-Entire home/apt	285	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	219	1	1
-Entire home/apt	219	1	1
-Entire home/apt	219	1	1
-Entire home/apt	219	1	1
-Entire home/apt	219	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	38	1	1
-Private room	38	1	1
-Private room	38	1	1
-Private room	38	1	1
-Private room	53	1	1
-Entire home/apt	105	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Shared room	67	1	1
-Shared room	67	1	1
-Shared room	67	1	1
-Shared room	67	1	1
-Shared room	67	1	1
-Shared room	67	1	1
-Shared room	67	1	1
-Entire home/apt	200	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	220	1	1
-Entire home/apt	220	1	1
-Entire home/apt	200	1	1
-Private room	39	1	1
-Private room	39	1	1
-Private room	39	1	1
-Private room	39	1	1
-Private room	39	1	1
-Private room	75	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Private room	85	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Entire home/apt	130	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Entire home/apt	65	1	1
-Entire home/apt	65	1	1
-Entire home/apt	65	1	1
-Entire home/apt	198	1	1
-Entire home/apt	94	1	1
-Entire home/apt	94	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	84	1	1
-Entire home/apt	84	1	1
-Entire home/apt	84	1	1
-Private room	45	1	1
-Private room	45	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Private room	99	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	55	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Private room	45	1	1
-Entire home/apt	130	1	1
-Private room	25	1	1
-Private room	25	1	1
-Private room	25	1	1
-Private room	25	1	1
-Private room	25	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	69	1	1
-Entire home/apt	69	1	1
-Entire home/apt	150	1	1
-Private room	65	1	1
-Private room	65	1	1
-Entire home/apt	495	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	70	1	1
-Entire home/apt	109	1	1
-Entire home/apt	109	1	1
-Entire home/apt	109	1	1
-Entire home/apt	79	1	1
-Private room	85	1	1
-Private room	85	1	1
-Private room	125	1	1
-Private room	40	1	1
-Entire home/apt	100	1	1
-Private room	41	1	1
-Private room	47	1	1
-Private room	47	1	1
-Private room	47	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Entire home/apt	89	1	1
-Entire home/apt	110	1	1
-Private room	105	1	1
-Private room	105	1	1
-Private room	105	1	1
-Entire home/apt	125	1	1
-Entire home/apt	180	1	1
-Entire home/apt	105	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	200	1	1
-Entire home/apt	200	1	1
-Entire home/apt	104	1	1
-Entire home/apt	104	1	1
-Entire home/apt	104	1	1
-Entire home/apt	104	1	1
-Private room	65	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Shared room	67	1	1
-Entire home/apt	180	1	1
-Entire home/apt	98	1	1
-Entire home/apt	98	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Entire home/apt	160	1	1
-Entire home/apt	160	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Private room	129	1	1
-Entire home/apt	499	1	1
-Entire home/apt	499	1	1
-Entire home/apt	499	1	1
-Private room	60	1	1
-Private room	60	1	1
-Entire home/apt	144	1	1
-Entire home/apt	144	1	1
-Entire home/apt	144	1	1
-Entire home/apt	82	1	1
-Entire home/apt	210	1	1
-Entire home/apt	210	1	1
-Entire home/apt	115	1	1
-Shared room	59	1	1
-Entire home/apt	100	1	1
-Entire home/apt	135	1	1
-Private room	59	1	1
-Entire home/apt	58	1	1
-Entire home/apt	58	1	1
-Entire home/apt	58	1	1
-Entire home/apt	58	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Shared room	30	1	1
-Shared room	30	1	1
-Entire home/apt	169	1	1
-Entire home/apt	169	1	1
-Shared room	40	1	1
-Shared room	40	1	1
-Shared room	45	1	1
-Shared room	45	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Entire home/apt	80	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	150	1	1
-Private room	150	1	1
-Private room	150	1	1
-Private room	67	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	170	1	1
-Entire home/apt	170	1	1
-Entire home/apt	170	1	1
-Entire home/apt	170	1	1
-Private room	80	1	1
-Entire home/apt	155	1	1
-Private room	92	1	1
-Private room	92	1	1
-Private room	92	1	1
-Entire home/apt	74	1	1
-Entire home/apt	74	1	1
-Entire home/apt	74	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	109	1	1
-Entire home/apt	109	1	1
-Private room	108	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Shared room	37	1	1
-Shared room	37	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Private room	70	1	1
-Entire home/apt	109	1	1
-Entire home/apt	109	1	1
-Entire home/apt	109	1	1
-Private room	39	1	1
-Private room	39	1	1
-Private room	39	1	1
-Private room	39	1	1
-Private room	99	1	1
-Private room	99	1	1
-Entire home/apt	120	1	1
-Entire home/apt	250	1	1
-Entire home/apt	250	1	1
-Entire home/apt	109	1	1
-Shared room	35	1	1
-Entire home/apt	125	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	165	1	1
-Entire home/apt	165	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	90	1	1
-Private room	90	1	1
-Shared room	40	1	1
-Shared room	40	1	1
-Shared room	40	1	1
-Shared room	40	1	1
-Shared room	40	1	1
-Shared room	40	1	1
-Shared room	40	1	1
-Shared room	40	1	1
-Shared room	40	1	1
-Shared room	40	1	1
-Shared room	40	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Private room	52	1	1
-Private room	52	1	1
-Private room	52	1	1
-Private room	84	1	1
-Private room	84	1	1
-Private room	84	1	1
-Private room	84	1	1
-Private room	84	1	1
-Private room	84	1	1
-Private room	84	1	1
-Private room	84	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	155	1	1
-Entire home/apt	155	1	1
-Private room	47	1	1
-Private room	47	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Private room	39	1	1
-Entire home/apt	225	1	1
-Entire home/apt	225	1	1
-Entire home/apt	225	1	1
-Private room	72	1	1
-Private room	72	1	1
-Private room	72	1	1
-Private room	72	1	1
-Private room	72	1	1
-Entire home/apt	110	1	1
-Entire home/apt	160	1	1
-Entire home/apt	160	1	1
-Entire home/apt	160	1	1
-Entire home/apt	160	1	1
-Entire home/apt	160	1	1
-Entire home/apt	160	1	1
-Entire home/apt	165	1	1
-Entire home/apt	165	1	1
-Entire home/apt	165	1	1
-Entire home/apt	165	1	1
-Private room	47	1	1
-Private room	47	1	1
-Private room	47	1	1
-Private room	47	1	1
-Private room	47	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Private room	50	1	1
-Private room	50	1	1
-Private room	50	1	1
-Private room	50	1	1
-Private room	50	1	1
-Private room	50	1	1
-Entire home/apt	237	1	1
-Entire home/apt	237	1	1
-Entire home/apt	237	1	1
-Entire home/apt	237	1	1
-Entire home/apt	115	1	1
-Entire home/apt	60	1	1
-Entire home/apt	75	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Entire home/apt	103	1	1
-Entire home/apt	103	1	1
-Entire home/apt	103	1	1
-Entire home/apt	103	1	1
-Entire home/apt	103	1	1
-Private room	66	1	1
-Private room	66	1	1
-Private room	125	1	1
-Private room	125	1	1
-Entire home/apt	200	1	1
-Entire home/apt	200	1	1
-Private room	118	1	1
-Entire home/apt	250	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	119	1	1
-Entire home/apt	119	1	1
-Entire home/apt	119	1	1
-Entire home/apt	119	1	1
-Entire home/apt	119	1	1
-Entire home/apt	90	1	1
-Entire home/apt	239	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	119	1	1
-Entire home/apt	130	1	1
-Private room	50	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Private room	65	1	1
-Private room	55	1	1
-Private room	75	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	68	1	1
-Private room	79	1	1
-Private room	79	1	1
-Private room	79	1	1
-Entire home/apt	88	1	1
-Private room	100	1	1
-Private room	100	1	1
-Private room	39	1	1
-Private room	39	1	1
-Private room	39	1	1
-Entire home/apt	250	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Private room	55	1	1
-Entire home/apt	183	1	1
-Entire home/apt	125	1	1
-Entire home/apt	129	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	110	1	1
-Shared room	29	1	1
-Shared room	29	1	1
-Entire home/apt	136	1	1
-Entire home/apt	136	1	1
-Entire home/apt	136	1	1
-Entire home/apt	199	1	1
-Entire home/apt	98	1	1
-Private room	99	1	1
-Private room	75	1	1
-Private room	129	1	1
-Entire home/apt	99	1	1
-Private room	38	1	1
-Entire home/apt	114	1	1
-Entire home/apt	114	1	1
-Entire home/apt	114	1	1
-Entire home/apt	114	1	1
-Entire home/apt	114	1	1
-Shared room	65	1	1
-Shared room	65	1	1
-Shared room	65	1	1
-Shared room	65	1	1
-Entire home/apt	148	1	1
-Private room	120	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Private room	50	1	1
-Private room	50	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	168	1	1
-Entire home/apt	168	1	1
-Entire home/apt	168	1	1
-Entire home/apt	168	1	1
-Entire home/apt	168	1	1
-Entire home/apt	90	1	1
-Entire home/apt	168	1	1
-Private room	59	1	1
-Entire home/apt	150	1	1
-Private room	65	1	1
-Private room	65	1	1
-Entire home/apt	97	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Private room	40	1	1
-Private room	55	1	1
-Private room	55	1	1
-Entire home/apt	115	1	1
-Entire home/apt	80	1	1
-Entire home/apt	150	1	1
-Private room	70	1	1
-Private room	75	1	1
-Entire home/apt	180	1	1
-Private room	59	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	117	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	250	1	1
-Entire home/apt	170	1	1
-Private room	75	1	1
-Private room	70	1	1
-Private room	70	1	1
-Entire home/apt	350	1	1
-Private room	55	1	1
-Entire home/apt	99	1	1
-Private room	90	1	1
-Entire home/apt	65	1	1
-Entire home/apt	65	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	250	1	1
-Private room	65	1	1
-Entire home/apt	100	1	1
-Private room	35	1	1
-Private room	34	1	1
-Private room	35	1	1
-Private room	35	1	1
-Private room	35	1	1
-Private room	41	1	1
-Entire home/apt	96	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	74	1	1
-Private room	80	1	1
-Entire home/apt	110	1	1
-Private room	80	1	1
-Private room	80	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	94	1	1
-Entire home/apt	94	1	1
-Entire home/apt	74	1	1
-Private room	119	1	1
-Entire home/apt	125	1	1
-Entire home/apt	98	1	1
-Entire home/apt	98	1	1
-Entire home/apt	270	1	1
-Entire home/apt	270	1	1
-Entire home/apt	270	1	1
-Private room	59	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	119	1	1
-Entire home/apt	65	1	1
-Entire home/apt	105	1	1
-Entire home/apt	96	1	1
-Private room	65	1	1
-Entire home/apt	127	1	1
-Entire home/apt	65	1	1
-Entire home/apt	110	1	1
-Private room	45	1	1
-Private room	45	1	1
-Private room	45	1	1
-Private room	48	1	1
-Private room	35	1	1
-Private room	35	1	1
-Entire home/apt	103	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Private room	34	1	1
-Entire home/apt	85	1	1
-Entire home/apt	75	1	1
-Private room	59	1	1
-Private room	35	1	1
-Entire home/apt	95	1	1
-Entire home/apt	90	1	1
-Private room	79	1	1
-Entire home/apt	69	1	1
-Entire home/apt	98	1	1
-Entire home/apt	69	1	1
-Entire home/apt	68	1	1
-Entire home/apt	179	1	1
-Entire home/apt	103	1	1
-Entire home/apt	103	1	1
-Entire home/apt	103	1	1
-Entire home/apt	103	1	1
-Entire home/apt	82	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	199	1	1
-Entire home/apt	199	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	49	1	1
-Entire home/apt	49	1	1
-Entire home/apt	49	1	1
-Entire home/apt	49	1	1
-Entire home/apt	49	1	1
-Entire home/apt	49	1	1
-Entire home/apt	49	1	1
-Entire home/apt	49	1	1
-Entire home/apt	49	1	1
-Entire home/apt	49	1	1
-Entire home/apt	49	1	1
-Entire home/apt	49	1	1
-Entire home/apt	49	1	1
-Shared room	33	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	130	1	1
-Entire home/apt	130	1	1
-Entire home/apt	130	1	1
-Entire home/apt	130	1	1
-Entire home/apt	130	1	1
-Entire home/apt	200	1	1
-Entire home/apt	200	1	1
-Entire home/apt	200	1	1
-Private room	50	1	1
-Private room	50	1	1
-Entire home/apt	115	1	1
-Entire home/apt	185	1	1
-Entire home/apt	185	1	1
-Entire home/apt	185	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Private room	95	1	1
-Private room	95	1	1
-Private room	95	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	245	1	1
-Entire home/apt	245	1	1
-Entire home/apt	245	1	1
-Entire home/apt	197	1	1
-Entire home/apt	197	1	1
-Entire home/apt	197	1	1
-Entire home/apt	197	1	1
-Entire home/apt	150	1	1
-Entire home/apt	120	1	1
-Entire home/apt	139	1	1
-Private room	28	1	1
-Private room	28	1	1
-Entire home/apt	170	1	1
-Entire home/apt	125	1	1
-Private room	66	1	1
-Entire home/apt	100	1	1
-Entire home/apt	350	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	150	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	134	1	1
-Entire home/apt	134	1	1
-Private room	79	1	1
-Entire home/apt	120	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Private room	75	1	1
-Private room	115	1	1
-Private room	61	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Entire home/apt	461	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	140	1	1
-Entire home/apt	140	1	1
-Entire home/apt	140	1	1
-Entire home/apt	140	1	1
-Entire home/apt	140	1	1
-Entire home/apt	140	1	1
-Entire home/apt	140	1	1
-Entire home/apt	140	1	1
-Entire home/apt	140	1	1
-Entire home/apt	140	1	1
-Entire home/apt	140	1	1
-Entire home/apt	140	1	1
-Entire home/apt	140	1	1
-Entire home/apt	140	1	1
-Entire home/apt	140	1	1
-Entire home/apt	140	1	1
-Entire home/apt	103	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	126	1	1
-Entire home/apt	126	1	1
-Entire home/apt	350	1	1
-Entire home/apt	350	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Entire home/apt	300	1	1
-Entire home/apt	200	1	1
-Entire home/apt	200	1	1
-Private room	65	1	1
-Private room	65	1	1
-Entire home/apt	230	1	1
-Entire home/apt	250	1	1
-Entire home/apt	325	1	1
-Private room	64	1	1
-Private room	50	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Private room	75	1	1
-Private room	75	1	1
-Entire home/apt	80	1	1
-Entire home/apt	95	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Private room	80	1	1
-Entire home/apt	100	1	1
-Entire home/apt	129	1	1
-Private room	120	1	1
-Private room	120	1	1
-Entire home/apt	110	1	1
-Private room	45	1	1
-Private room	45	1	1
-Private room	45	1	1
-Private room	56	1	1
-Private room	56	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Private room	120	1	1
-Private room	120	1	1
-Private room	65	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Entire home/apt	160	1	1
-Entire home/apt	160	1	1
-Entire home/apt	160	1	1
-Entire home/apt	160	1	1
-Entire home/apt	160	1	1
-Entire home/apt	160	1	1
-Entire home/apt	160	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	80	1	1
-Entire home/apt	350	1	1
-Entire home/apt	350	1	1
-Entire home/apt	350	1	1
-Entire home/apt	119	1	1
-Private room	130	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Private room	150	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	127	1	1
-Entire home/apt	127	1	1
-Entire home/apt	325	1	1
-Entire home/apt	325	1	1
-Private room	95	1	1
-Private room	95	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	150	1	1
-Private room	59	1	1
-Private room	118	1	1
-Entire home/apt	111	1	1
-Private room	90	1	1
-Entire home/apt	188	1	1
-Entire home/apt	188	1	1
-Entire home/apt	188	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Entire home/apt	104	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	29	1	1
-Entire home/apt	128	1	1
-Entire home/apt	128	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	259	1	1
-Entire home/apt	140	1	1
-Entire home/apt	113	1	1
-Entire home/apt	113	1	1
-Entire home/apt	113	1	1
-Entire home/apt	113	1	1
-Shared room	40	1	1
-Shared room	40	1	1
-Shared room	40	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	230	1	1
-Entire home/apt	109	1	1
-Entire home/apt	109	1	1
-Entire home/apt	90	1	1
-Private room	59	1	1
-Entire home/apt	135	1	1
-Entire home/apt	135	1	1
-Entire home/apt	109	1	1
-Entire home/apt	109	1	1
-Entire home/apt	109	1	1
-Entire home/apt	109	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	600	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Entire home/apt	110	1	1
-Entire home/apt	160	1	1
-Entire home/apt	160	1	1
-Entire home/apt	338	1	1
-Entire home/apt	338	1	1
-Entire home/apt	106	1	1
-Entire home/apt	106	1	1
-Entire home/apt	106	1	1
-Entire home/apt	106	1	1
-Entire home/apt	106	1	1
-Entire home/apt	106	1	1
-Entire home/apt	106	1	1
-Entire home/apt	106	1	1
-Entire home/apt	275	1	1
-Entire home/apt	275	1	1
-Entire home/apt	275	1	1
-Entire home/apt	275	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	149	1	1
-Entire home/apt	138	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	350	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	215	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	74	1	1
-Private room	74	1	1
-Private room	74	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	159	1	1
-Entire home/apt	159	1	1
-Entire home/apt	159	1	1
-Entire home/apt	159	1	1
-Entire home/apt	159	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	220	1	1
-Entire home/apt	95	1	1
-Entire home/apt	215	1	1
-Private room	55	1	1
-Private room	55	1	1
-Entire home/apt	75	1	1
-Entire home/apt	151	1	1
-Entire home/apt	151	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Private room	50	1	1
-Private room	50	1	1
-Entire home/apt	160	1	1
-Entire home/apt	160	1	1
-Entire home/apt	93	1	1
-Private room	60	1	1
-Private room	60	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Private room	65	1	1
-Entire home/apt	348	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Private room	69	1	1
-Entire home/apt	225	1	1
-Entire home/apt	300	1	1
-Entire home/apt	105	1	1
-Entire home/apt	252	1	1
-Entire home/apt	252	1	1
-Entire home/apt	252	1	1
-Entire home/apt	252	1	1
-Private room	75	1	1
-Private room	75	1	1
-Private room	75	1	1
-Entire home/apt	125	1	1
-Entire home/apt	107	1	1
-Private room	63	1	1
-Private room	100	1	1
-Private room	100	1	1
-Private room	100	1	1
-Private room	122	1	1
-Entire home/apt	250	1	1
-Entire home/apt	250	1	1
-Entire home/apt	250	1	1
-Entire home/apt	250	1	1
-Entire home/apt	250	1	1
-Entire home/apt	99	1	1
-Private room	35	1	1
-Private room	35	1	1
-Private room	35	1	1
-Private room	35	1	1
-Private room	74	1	1
-Private room	74	1	1
-Entire home/apt	85	1	1
-Entire home/apt	175	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Private room	58	1	1
-Private room	58	1	1
-Private room	58	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	68	1	1
-Entire home/apt	68	1	1
-Entire home/apt	68	1	1
-Entire home/apt	68	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	220	1	1
-Entire home/apt	65	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Private room	70	1	1
-Private room	85	1	1
-Private room	85	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	250	1	1
-Entire home/apt	130	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	69	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Private room	60	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Private room	90	1	1
-Entire home/apt	209	1	1
-Entire home/apt	209	1	1
-Entire home/apt	209	1	1
-Entire home/apt	156	1	1
-Entire home/apt	156	1	1
-Entire home/apt	156	1	1
-Shared room	85	1	1
-Shared room	85	1	1
-Shared room	85	1	1
-Shared room	85	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	105	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	89	1	1
-Entire home/apt	100	1	1
-Private room	90	1	1
-Private room	68	1	1
-Private room	101	1	1
-Private room	101	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	140	1	1
-Entire home/apt	140	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Private room	75	1	1
-Entire home/apt	250	1	1
-Entire home/apt	250	1	1
-Entire home/apt	183	1	1
-Entire home/apt	99	1	1
-Private room	80	1	1
-Private room	80	1	1
-Private room	75	1	1
-Entire home/apt	144	1	1
-Entire home/apt	144	1	1
-Entire home/apt	144	1	1
-Entire home/apt	144	1	1
-Entire home/apt	225	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Private room	90	1	1
-Private room	53	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	300	1	1
-Entire home/apt	300	1	1
-Entire home/apt	300	1	1
-Entire home/apt	300	1	1
-Entire home/apt	300	1	1
-Entire home/apt	300	1	1
-Entire home/apt	300	1	1
-Entire home/apt	115	1	1
-Entire home/apt	290	1	1
-Shared room	80	1	1
-Shared room	80	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	145	1	1
-Entire home/apt	145	1	1
-Private room	85	1	1
-Private room	85	1	1
-Private room	85	1	1
-Private room	85	1	1
-Entire home/apt	80	1	1
-Private room	39	1	1
-Entire home/apt	110	1	1
-Private room	49	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Private room	50	1	1
-Private room	42	1	1
-Private room	42	1	1
-Private room	42	1	1
-Private room	42	1	1
-Entire home/apt	120	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	126	1	1
-Entire home/apt	99	1	1
-Private room	90	1	1
-Entire home/apt	65	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	150	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Private room	60	1	1
-Entire home/apt	299	1	1
-Entire home/apt	200	1	1
-Entire home/apt	150	1	1
-Private room	110	1	1
-Private room	110	1	1
-Private room	110	1	1
-Entire home/apt	220	1	1
-Entire home/apt	99	1	1
-Entire home/apt	348	1	1
-Shared room	60	1	1
-Shared room	60	1	1
-Shared room	60	1	1
-Shared room	60	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	349	1	1
-Entire home/apt	349	1	1
-Entire home/apt	349	1	1
-Entire home/apt	115	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	65	1	1
-Entire home/apt	85	1	1
-Private room	80	1	1
-Entire home/apt	140	1	1
-Private room	90	1	1
-Private room	90	1	1
-Entire home/apt	79	1	1
-Entire home/apt	175	1	1
-Private room	65	1	1
-Entire home/apt	425	1	1
-Entire home/apt	425	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Private room	40	1	1
-Private room	40	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	95	1	1
-Private room	90	1	1
-Private room	125	1	1
-Entire home/apt	84	1	1
-Entire home/apt	84	1	1
-Entire home/apt	84	1	1
-Entire home/apt	84	1	1
-Entire home/apt	84	1	1
-Entire home/apt	84	1	1
-Entire home/apt	84	1	1
-Entire home/apt	84	1	1
-Private room	45	1	1
-Private room	45	1	1
-Private room	45	1	1
-Private room	45	1	1
-Private room	45	1	1
-Private room	70	1	1
-Entire home/apt	110	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	199	1	1
-Private room	55	1	1
-Private room	55	1	1
-Entire home/apt	150	1	1
-Entire home/apt	95	1	1
-Private room	45	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	130	1	1
-Entire home/apt	168	1	1
-Private room	92	1	1
-Private room	92	1	1
-Private room	220	1	1
-Private room	220	1	1
-Entire home/apt	70	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	95	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	79	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Private room	63	1	1
-Private room	63	1	1
-Private room	63	1	1
-Entire home/apt	185	1	1
-Entire home/apt	119	1	1
-Entire home/apt	119	1	1
-Entire home/apt	119	1	1
-Entire home/apt	119	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	280	1	1
-Private room	150	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	95	1	1
-Private room	125	1	1
-Private room	47	1	1
-Entire home/apt	89	1	1
-Private room	105	1	1
-Private room	75	1	1
-Entire home/apt	85	1	1
-Entire home/apt	125	1	1
-Entire home/apt	200	1	1
-Entire home/apt	200	1	1
-Entire home/apt	150	1	1
-Entire home/apt	219	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	150	1	1
-Entire home/apt	99	1	1
-Entire home/apt	99	1	1
-Entire home/apt	100	1	1
-Entire home/apt	95	1	1
-Entire home/apt	105	1	1
-Entire home/apt	239	1	1
-Entire home/apt	75	1	1
-Entire home/apt	130	1	1
-Entire home/apt	130	1	1
-Entire home/apt	65	1	1
-Entire home/apt	70	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Entire home/apt	129	1	1
-Private room	50	1	1
-Private room	80	1	1
-Private room	80	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Private room	75	1	1
-Entire home/apt	79	1	1
-Entire home/apt	169	1	1
-Entire home/apt	169	1	1
-Entire home/apt	139	1	1
-Entire home/apt	139	1	1
-Entire home/apt	139	1	1
-Private room	50	1	1
-Private room	50	1	1
-Entire home/apt	89	1	1
-Private room	39	1	1
-Private room	39	1	1
-Private room	39	1	1
-Private room	76	1	1
-Private room	76	1	1
-Private room	60	1	1
-Entire home/apt	100	1	1
-Entire home/apt	85	1	1
-Entire home/apt	400	1	1
-Private room	60	1	1
-Entire home/apt	99	1	1
-Entire home/apt	125	1	1
-Entire home/apt	210	1	1
-Entire home/apt	210	1	1
-Entire home/apt	210	1	1
-Entire home/apt	210	1	1
-Entire home/apt	125	1	1
-Entire home/apt	125	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Entire home/apt	120	1	1
-Private room	84	1	1
-Private room	84	1	1
-Private room	84	1	1
-Private room	84	1	1
-Private room	84	1	1
-Private room	84	1	1
-Private room	37	1	1
-Private room	37	1	1
-Private room	39	1	1
-Private room	39	1	1
-Private room	35	1	1
-Private room	35	1	1
-Private room	72	1	1
-Private room	55	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Private room	129	1	1
-Private room	129	1	1
-Private room	87	1	1
-Entire home/apt	120	1	1
-Private room	65	1	1
-Entire home/apt	115	1	1
-Entire home/apt	115	1	1
-Private room	65	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Entire home/apt	90	1	1
-Private room	70	1	1
-Entire home/apt	114	1	1
-Entire home/apt	114	1	1
-Entire home/apt	129	1	1
-Entire home/apt	95	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	168	1	1
-Entire home/apt	168	1	1
-Entire home/apt	168	1	1
-Entire home/apt	150	1	1
-Private room	59	1	1
-Shared room	40	1	1
-Shared room	45	1	1
-Entire home/apt	100	1	1
-Private room	60	1	1
-Entire home/apt	75	1	1
-Entire home/apt	75	1	1
-Entire home/apt	156	1	1
-Entire home/apt	89	1	1
-Entire home/apt	45	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	175	1	1
-Entire home/apt	175	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	55	1	1
-Entire home/apt	85	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	110	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	259	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	250	1	1
-Entire home/apt	129	1	1
-Entire home/apt	150	1	1
-Private room	55	1	1
-Private room	55	1	1
-Private room	65	1	1
-Entire home/apt	165	1	1
-Entire home/apt	165	1	1
-Entire home/apt	65	1	1
-Private room	55	1	1
-Entire home/apt	250	1	1
-Entire home/apt	183	1	1
-Entire home/apt	183	1	1
-Private room	34	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Private room	80	1	1
-Entire home/apt	148	1	1
-Entire home/apt	148	1	1
-Entire home/apt	178	1	1
-Entire home/apt	74	1	1
-Private room	55	1	1
-Private room	55	1	1
-Entire home/apt	110	1	1
-Private room	85	1	1
-Private room	85	1	1
-Private room	85	1	1
-Entire home/apt	97	1	1
-Entire home/apt	97	1	1
-Entire home/apt	97	1	1
-Private room	50	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Entire home/apt	115	1	1
-Entire home/apt	100	1	1
-Entire home/apt	125	1	1
-Private room	49	1	1
-Entire home/apt	125	1	1
-Entire home/apt	81	1	1
-Entire home/apt	81	1	1
-Entire home/apt	70	1	1
-Entire home/apt	70	1	1
-Private room	78	1	1
-Private room	78	1	1
-Entire home/apt	188	1	1
-Entire home/apt	188	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	149	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Private room	55	1	1
-Private room	55	1	1
-Entire home/apt	109	1	1
-Private room	66	1	1
-Private room	66	1	1
-Entire home/apt	65	1	1
-Entire home/apt	85	1	1
-Private room	43	1	1
-Private room	43	1	1
-Private room	43	1	1
-Private room	44	1	1
-Private room	50	1	1
-Entire home/apt	89	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	150	1	1
-Entire home/apt	105	1	1
-Entire home/apt	150	1	1
-Entire home/apt	74	1	1
-Entire home/apt	78	1	1
-Entire home/apt	78	1	1
-Entire home/apt	78	1	1
-Entire home/apt	157	1	1
-Entire home/apt	157	1	1
-Private room	68	1	1
-Entire home/apt	200	1	1
-Entire home/apt	69	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	125	1	1
-Private room	35	1	1
-Entire home/apt	119	1	1
-Entire home/apt	69	1	1
-Entire home/apt	100	1	1
-Entire home/apt	100	1	1
-Private room	60	1	1
-Entire home/apt	85	1	1
-Entire home/apt	85	1	1
-Entire home/apt	179	1	1
-Private room	28	1	1
+COPY public.listing_predictions_reserved (listing_id, room_type, price, reserved, prediction) FROM stdin;
+4291	Private room	82	1	1
+4291	Private room	82	1	1
+4291	Private room	82	1	1
+4291	Private room	82	1	1
+5682	Entire home/apt	48	1	1
+5682	Entire home/apt	48	1	1
+5682	Entire home/apt	48	1	1
+5682	Entire home/apt	48	1	1
+5682	Entire home/apt	48	1	1
+5682	Entire home/apt	48	1	1
+5682	Entire home/apt	48	1	1
+5682	Entire home/apt	48	1	1
+5682	Entire home/apt	48	1	1
+5682	Entire home/apt	48	1	1
+5682	Entire home/apt	48	1	1
+5682	Entire home/apt	48	1	1
+5682	Entire home/apt	48	1	1
+5682	Entire home/apt	48	1	1
+5682	Entire home/apt	48	1	1
+5682	Entire home/apt	48	1	1
+5682	Entire home/apt	48	1	1
+5682	Entire home/apt	48	1	1
+5682	Entire home/apt	48	1	1
+5682	Entire home/apt	48	1	1
+5682	Entire home/apt	48	1	1
+5682	Entire home/apt	48	1	1
+5682	Entire home/apt	48	1	1
+5682	Entire home/apt	48	1	1
+5682	Entire home/apt	48	1	1
+5682	Entire home/apt	48	1	1
+5682	Entire home/apt	48	1	1
+5682	Entire home/apt	48	1	1
+5682	Entire home/apt	48	1	1
+5682	Entire home/apt	48	1	1
+5682	Entire home/apt	48	1	1
+5682	Entire home/apt	48	1	1
+5682	Entire home/apt	48	1	1
+5682	Entire home/apt	48	1	1
+5682	Entire home/apt	48	1	1
+5682	Entire home/apt	48	1	1
+5682	Entire home/apt	48	1	1
+5682	Entire home/apt	48	1	1
+6606	Entire home/apt	90	1	1
+6606	Entire home/apt	90	1	1
+6606	Entire home/apt	90	1	1
+6606	Entire home/apt	90	1	1
+9531	Entire home/apt	165	1	1
+9531	Entire home/apt	165	1	1
+9531	Entire home/apt	165	1	1
+9531	Entire home/apt	165	1	1
+9531	Entire home/apt	165	1	1
+9531	Entire home/apt	165	1	1
+9531	Entire home/apt	165	1	1
+9531	Entire home/apt	165	1	1
+9531	Entire home/apt	165	1	1
+9596	Entire home/apt	120	1	1
+9596	Entire home/apt	120	1	1
+17951	Entire home/apt	95	1	1
+19623	Entire home/apt	186	1	1
+19623	Entire home/apt	186	1	1
+19623	Entire home/apt	186	1	1
+20868	Entire home/apt	137	1	1
+20868	Entire home/apt	137	1	1
+20868	Entire home/apt	137	1	1
+20868	Entire home/apt	137	1	1
+20868	Entire home/apt	137	1	1
+20868	Entire home/apt	137	1	1
+20868	Entire home/apt	137	1	1
+20868	Entire home/apt	137	1	1
+20868	Entire home/apt	137	1	1
+20868	Entire home/apt	137	1	1
+23192	Entire home/apt	119	1	1
+23192	Entire home/apt	119	1	1
+23919	Entire home/apt	165	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+4291	Private room	82	1	1
+4291	Private room	82	1	1
+4291	Private room	82	1	1
+4291	Private room	82	1	1
+4291	Private room	82	1	1
+4291	Private room	82	1	1
+5682	Entire home/apt	48	1	1
+5682	Entire home/apt	48	1	1
+5682	Entire home/apt	48	1	1
+5682	Entire home/apt	48	1	1
+5682	Entire home/apt	48	1	1
+5682	Entire home/apt	48	1	1
+5682	Entire home/apt	48	1	1
+5682	Entire home/apt	48	1	1
+5682	Entire home/apt	48	1	1
+5682	Entire home/apt	48	1	1
+5682	Entire home/apt	48	1	1
+5682	Entire home/apt	48	1	1
+5682	Entire home/apt	48	1	1
+5682	Entire home/apt	48	1	1
+5682	Entire home/apt	48	1	1
+5682	Entire home/apt	48	1	1
+6606	Entire home/apt	90	1	1
+6606	Entire home/apt	90	1	1
+7369	Entire home/apt	85	1	1
+25002	Entire home/apt	75	1	1
+7369	Entire home/apt	85	1	1
+7369	Entire home/apt	85	1	1
+25002	Entire home/apt	75	1	1
+9419	Private room	90	1	1
+9419	Private room	90	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+38545	Entire home/apt	275	1	1
+38545	Entire home/apt	275	1	1
+38545	Entire home/apt	275	1	1
+38545	Entire home/apt	275	1	1
+38545	Entire home/apt	275	1	1
+38545	Entire home/apt	275	1	1
+38545	Entire home/apt	275	1	1
+38545	Entire home/apt	275	1	1
+38545	Entire home/apt	275	1	1
+38545	Entire home/apt	275	1	1
+38545	Entire home/apt	275	1	1
+38545	Entire home/apt	275	1	1
+38545	Entire home/apt	275	1	1
+38545	Entire home/apt	275	1	1
+38545	Entire home/apt	275	1	1
+38545	Entire home/apt	275	1	1
+38545	Entire home/apt	275	1	1
+48319	Entire home/apt	220	1	1
+48848	Entire home/apt	125	1	1
+48848	Entire home/apt	125	1	1
+48848	Entire home/apt	125	1	1
+48848	Entire home/apt	125	1	1
+52525	Private room	60	1	1
+58503	Entire home/apt	75	1	1
+58503	Entire home/apt	75	1	1
+58503	Entire home/apt	75	1	1
+58503	Entire home/apt	75	1	1
+58503	Entire home/apt	75	1	1
+58503	Entire home/apt	75	1	1
+58503	Entire home/apt	75	1	1
+59708	Entire home/apt	187	1	1
+59838	Entire home/apt	147	1	1
+59838	Entire home/apt	147	1	1
+59838	Entire home/apt	147	1	1
+59838	Entire home/apt	147	1	1
+59838	Entire home/apt	147	1	1
+63733	Entire home/apt	89	1	1
+63733	Entire home/apt	89	1	1
+63733	Entire home/apt	89	1	1
+63733	Entire home/apt	89	1	1
+63733	Entire home/apt	89	1	1
+66540	Private room	65	1	1
+66540	Private room	65	1	1
+66611	Private room	65	1	1
+67270	Private room	65	1	1
+67270	Private room	65	1	1
+74328	Entire home/apt	92	1	1
+74328	Entire home/apt	92	1	1
+74328	Entire home/apt	92	1	1
+74328	Entire home/apt	92	1	1
+74328	Entire home/apt	92	1	1
+74328	Entire home/apt	92	1	1
+74328	Entire home/apt	92	1	1
+84030	Private room	110	1	1
+84030	Private room	110	1	1
+84030	Private room	110	1	1
+84030	Private room	110	1	1
+92835	Entire home/apt	99	1	1
+92835	Entire home/apt	99	1	1
+92835	Entire home/apt	99	1	1
+92835	Entire home/apt	99	1	1
+92835	Entire home/apt	99	1	1
+92835	Entire home/apt	99	1	1
+92835	Entire home/apt	99	1	1
+92835	Entire home/apt	99	1	1
+92835	Entire home/apt	99	1	1
+92835	Entire home/apt	99	1	1
+92835	Entire home/apt	99	1	1
+92835	Entire home/apt	99	1	1
+92835	Entire home/apt	99	1	1
+107046	Entire home/apt	280	1	1
+107962	Entire home/apt	100	1	1
+107962	Entire home/apt	100	1	1
+107962	Entire home/apt	100	1	1
+107962	Entire home/apt	100	1	1
+107962	Entire home/apt	100	1	1
+107962	Entire home/apt	100	1	1
+107962	Entire home/apt	100	1	1
+107962	Entire home/apt	100	1	1
+107962	Entire home/apt	100	1	1
+107962	Entire home/apt	100	1	1
+107962	Entire home/apt	100	1	1
+107962	Entire home/apt	100	1	1
+108765	Entire home/apt	122	1	1
+108765	Entire home/apt	122	1	1
+108765	Entire home/apt	122	1	1
+117165	Private room	100	1	1
+117165	Private room	100	1	1
+117165	Private room	100	1	1
+117165	Private room	100	1	1
+9419	Private room	90	1	1
+9419	Private room	90	1	1
+9419	Private room	90	1	1
+9419	Private room	90	1	1
+9419	Private room	90	1	1
+9419	Private room	90	1	1
+9419	Private room	90	1	1
+9460	Private room	99	1	1
+9460	Private room	99	1	1
+9460	Private room	99	1	1
+9460	Private room	99	1	1
+9460	Private room	99	1	1
+9460	Private room	99	1	1
+9460	Private room	99	1	1
+9460	Private room	99	1	1
+9460	Private room	99	1	1
+9460	Private room	99	1	1
+9460	Private room	99	1	1
+9460	Private room	99	1	1
+9460	Private room	99	1	1
+9460	Private room	99	1	1
+9534	Entire home/apt	125	1	1
+9534	Entire home/apt	125	1	1
+9534	Entire home/apt	125	1	1
+9534	Entire home/apt	125	1	1
+10385	Private room	60	1	1
+10385	Private room	60	1	1
+10385	Private room	60	1	1
+10385	Private room	60	1	1
+10385	Private room	60	1	1
+10385	Private room	60	1	1
+10385	Private room	60	1	1
+10385	Private room	60	1	1
+11012	Entire home/apt	310	1	1
+11012	Entire home/apt	310	1	1
+11012	Entire home/apt	310	1	1
+11012	Entire home/apt	310	1	1
+11012	Entire home/apt	310	1	1
+11411	Private room	60	1	1
+11411	Private room	60	1	1
+11411	Private room	60	1	1
+11411	Private room	60	1	1
+11411	Private room	60	1	1
+11411	Private room	60	1	1
+11411	Private room	60	1	1
+11411	Private room	60	1	1
+11411	Private room	60	1	1
+11411	Private room	60	1	1
+11411	Private room	60	1	1
+11411	Private room	60	1	1
+11411	Private room	60	1	1
+15108	Private room	60	1	1
+15108	Private room	60	1	1
+15108	Private room	60	1	1
+15108	Private room	60	1	1
+15108	Private room	60	1	1
+19611	Entire home/apt	107	1	1
+19611	Entire home/apt	107	1	1
+19611	Entire home/apt	107	1	1
+19623	Entire home/apt	186	1	1
+19623	Entire home/apt	186	1	1
+19623	Entire home/apt	186	1	1
+20927	Entire home/apt	89	1	1
+20927	Entire home/apt	89	1	1
+20927	Entire home/apt	89	1	1
+20927	Entire home/apt	89	1	1
+6606	Entire home/apt	90	1	1
+6606	Entire home/apt	90	1	1
+6606	Entire home/apt	90	1	1
+6606	Entire home/apt	90	1	1
+6606	Entire home/apt	90	1	1
+7369	Entire home/apt	85	1	1
+9460	Private room	99	1	1
+9460	Private room	99	1	1
+9460	Private room	99	1	1
+9460	Private room	99	1	1
+20927	Entire home/apt	89	1	1
+9460	Private room	99	1	1
+9460	Private room	99	1	1
+20927	Entire home/apt	89	1	1
+9460	Private room	99	1	1
+9460	Private room	99	1	1
+9460	Private room	99	1	1
+9460	Private room	99	1	1
+9460	Private room	99	1	1
+9460	Private room	99	1	1
+9460	Private room	99	1	1
+9460	Private room	99	1	1
+9460	Private room	99	1	1
+9460	Private room	99	1	1
+9460	Private room	99	1	1
+9460	Private room	99	1	1
+9460	Private room	99	1	1
+9460	Private room	99	1	1
+9460	Private room	99	1	1
+9460	Private room	99	1	1
+9460	Private room	99	1	1
+20927	Entire home/apt	89	1	1
+9460	Private room	99	1	1
+9460	Private room	99	1	1
+9460	Private room	99	1	1
+10695	Private room	109	1	1
+10695	Private room	109	1	1
+11012	Entire home/apt	310	1	1
+11012	Entire home/apt	310	1	1
+11012	Entire home/apt	310	1	1
+11012	Entire home/apt	310	1	1
+117165	Private room	100	1	1
+117165	Private room	100	1	1
+117165	Private room	100	1	1
+117165	Private room	100	1	1
+117165	Private room	100	1	1
+117165	Private room	100	1	1
+117165	Private room	100	1	1
+117165	Private room	100	1	1
+117862	Entire home/apt	115	1	1
+117862	Entire home/apt	115	1	1
+117862	Entire home/apt	115	1	1
+117862	Entire home/apt	115	1	1
+132120	Entire home/apt	110	1	1
+132120	Entire home/apt	110	1	1
+132120	Entire home/apt	110	1	1
+134091	Entire home/apt	150	1	1
+134091	Entire home/apt	150	1	1
+134091	Entire home/apt	150	1	1
+140331	Private room	88	1	1
+140331	Private room	88	1	1
+140331	Private room	88	1	1
+140331	Private room	88	1	1
+140331	Private room	88	1	1
+140331	Private room	88	1	1
+143704	Entire home/apt	82	1	1
+143704	Entire home/apt	82	1	1
+143704	Entire home/apt	82	1	1
+143704	Entire home/apt	82	1	1
+143704	Entire home/apt	82	1	1
+143704	Entire home/apt	82	1	1
+143704	Entire home/apt	82	1	1
+143704	Entire home/apt	82	1	1
+143704	Entire home/apt	82	1	1
+143704	Entire home/apt	82	1	1
+143704	Entire home/apt	82	1	1
+146301	Entire home/apt	135	1	1
+153967	Entire home/apt	117	1	1
+153967	Entire home/apt	117	1	1
+153967	Entire home/apt	117	1	1
+157939	Entire home/apt	110	1	1
+157939	Entire home/apt	110	1	1
+160222	Entire home/apt	110	1	1
+160222	Entire home/apt	110	1	1
+160222	Entire home/apt	110	1	1
+160222	Entire home/apt	110	1	1
+160222	Entire home/apt	110	1	1
+160222	Entire home/apt	110	1	1
+160222	Entire home/apt	110	1	1
+160222	Entire home/apt	110	1	1
+160222	Entire home/apt	110	1	1
+160222	Entire home/apt	110	1	1
+175576	Entire home/apt	95	1	1
+175576	Entire home/apt	95	1	1
+175576	Entire home/apt	95	1	1
+175576	Entire home/apt	95	1	1
+180939	Entire home/apt	95	1	1
+180939	Entire home/apt	95	1	1
+180939	Entire home/apt	95	1	1
+180939	Entire home/apt	95	1	1
+180939	Entire home/apt	95	1	1
+193836	Entire home/apt	80	1	1
+193836	Entire home/apt	80	1	1
+193836	Entire home/apt	80	1	1
+193836	Entire home/apt	80	1	1
+202260	Entire home/apt	89	1	1
+202260	Entire home/apt	89	1	1
+202260	Entire home/apt	89	1	1
+202260	Entire home/apt	89	1	1
+206781	Entire home/apt	120	1	1
+206781	Entire home/apt	120	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+20927	Entire home/apt	89	1	1
+20927	Entire home/apt	89	1	1
+20927	Entire home/apt	89	1	1
+20927	Entire home/apt	89	1	1
+20927	Entire home/apt	89	1	1
+20927	Entire home/apt	89	1	1
+20927	Entire home/apt	89	1	1
+20927	Entire home/apt	89	1	1
+20927	Entire home/apt	89	1	1
+20928	Entire home/apt	79	1	1
+20928	Entire home/apt	79	1	1
+20928	Entire home/apt	79	1	1
+23430	Entire home/apt	107	1	1
+23430	Entire home/apt	107	1	1
+26116	Entire home/apt	199	1	1
+26116	Entire home/apt	199	1	1
+26116	Entire home/apt	199	1	1
+26116	Entire home/apt	199	1	1
+26116	Entire home/apt	199	1	1
+26116	Entire home/apt	199	1	1
+41401	Entire home/apt	89	1	1
+41401	Entire home/apt	89	1	1
+41401	Entire home/apt	89	1	1
+43373	Private room	59	1	1
+43373	Private room	59	1	1
+43373	Private room	59	1	1
+43373	Private room	59	1	1
+43373	Private room	59	1	1
+43373	Private room	59	1	1
+43373	Private room	59	1	1
+43373	Private room	59	1	1
+43373	Private room	59	1	1
+43373	Private room	59	1	1
+43373	Private room	59	1	1
+43373	Private room	59	1	1
+43373	Private room	59	1	1
+43373	Private room	59	1	1
+43373	Private room	59	1	1
+43373	Private room	59	1	1
+43373	Private room	59	1	1
+43373	Private room	59	1	1
+43373	Private room	59	1	1
+46022	Private room	75	1	1
+47491	Private room	60	1	1
+47491	Private room	60	1	1
+47491	Private room	60	1	1
+47491	Private room	60	1	1
+47491	Private room	60	1	1
+47491	Private room	60	1	1
+47491	Private room	60	1	1
+48848	Entire home/apt	125	1	1
+50233	Entire home/apt	165	1	1
+50233	Entire home/apt	165	1	1
+52525	Private room	60	1	1
+52525	Private room	60	1	1
+53867	Entire home/apt	86	1	1
+53867	Entire home/apt	86	1	1
+53867	Entire home/apt	86	1	1
+53867	Entire home/apt	86	1	1
+53867	Entire home/apt	86	1	1
+53867	Entire home/apt	86	1	1
+53867	Entire home/apt	86	1	1
+53867	Entire home/apt	86	1	1
+53867	Entire home/apt	86	1	1
+53867	Entire home/apt	86	1	1
+53867	Entire home/apt	86	1	1
+53867	Entire home/apt	86	1	1
+53867	Entire home/apt	86	1	1
+53867	Entire home/apt	86	1	1
+53867	Entire home/apt	86	1	1
+53867	Entire home/apt	86	1	1
+59838	Entire home/apt	147	1	1
+59838	Entire home/apt	147	1	1
+59838	Entire home/apt	147	1	1
+59838	Entire home/apt	147	1	1
+59838	Entire home/apt	147	1	1
+59838	Entire home/apt	147	1	1
+63308	Entire home/apt	89	1	1
+63308	Entire home/apt	89	1	1
+63308	Entire home/apt	89	1	1
+63308	Entire home/apt	89	1	1
+63308	Entire home/apt	89	1	1
+63308	Entire home/apt	89	1	1
+63308	Entire home/apt	89	1	1
+63308	Entire home/apt	89	1	1
+63308	Entire home/apt	89	1	1
+63308	Entire home/apt	89	1	1
+63308	Entire home/apt	89	1	1
+63308	Entire home/apt	89	1	1
+63308	Entire home/apt	89	1	1
+63308	Entire home/apt	89	1	1
+63308	Entire home/apt	89	1	1
+63308	Entire home/apt	89	1	1
+63308	Entire home/apt	89	1	1
+63308	Entire home/apt	89	1	1
+63308	Entire home/apt	89	1	1
+63308	Entire home/apt	89	1	1
+63308	Entire home/apt	89	1	1
+63308	Entire home/apt	89	1	1
+63308	Entire home/apt	89	1	1
+63308	Entire home/apt	89	1	1
+63308	Entire home/apt	89	1	1
+63308	Entire home/apt	89	1	1
+63308	Entire home/apt	89	1	1
+63308	Entire home/apt	89	1	1
+63308	Entire home/apt	89	1	1
+63308	Entire home/apt	89	1	1
+14386	Private room	40	1	1
+14386	Private room	40	1	1
+14386	Private room	40	1	1
+14386	Private room	40	1	1
+19619	Entire home/apt	145	1	1
+19623	Entire home/apt	186	1	1
+19623	Entire home/apt	186	1	1
+19623	Entire home/apt	186	1	1
+20927	Entire home/apt	89	1	1
+20927	Entire home/apt	89	1	1
+20927	Entire home/apt	89	1	1
+20927	Entire home/apt	89	1	1
+20927	Entire home/apt	89	1	1
+20927	Entire home/apt	89	1	1
+20927	Entire home/apt	89	1	1
+20927	Entire home/apt	89	1	1
+20927	Entire home/apt	89	1	1
+20927	Entire home/apt	89	1	1
+20927	Entire home/apt	89	1	1
+20927	Entire home/apt	89	1	1
+20927	Entire home/apt	89	1	1
+20927	Entire home/apt	89	1	1
+20927	Entire home/apt	89	1	1
+20927	Entire home/apt	89	1	1
+20927	Entire home/apt	89	1	1
+20927	Entire home/apt	89	1	1
+20927	Entire home/apt	89	1	1
+20927	Entire home/apt	89	1	1
+20927	Entire home/apt	89	1	1
+20927	Entire home/apt	89	1	1
+20927	Entire home/apt	89	1	1
+20927	Entire home/apt	89	1	1
+20927	Entire home/apt	89	1	1
+20927	Entire home/apt	89	1	1
+20927	Entire home/apt	89	1	1
+20927	Entire home/apt	89	1	1
+20927	Entire home/apt	89	1	1
+20927	Entire home/apt	89	1	1
+20927	Entire home/apt	89	1	1
+20927	Entire home/apt	89	1	1
+20927	Entire home/apt	89	1	1
+20927	Entire home/apt	89	1	1
+20927	Entire home/apt	89	1	1
+20927	Entire home/apt	89	1	1
+20927	Entire home/apt	89	1	1
+20927	Entire home/apt	89	1	1
+20927	Entire home/apt	89	1	1
+20927	Entire home/apt	89	1	1
+20928	Entire home/apt	79	1	1
+20928	Entire home/apt	79	1	1
+23430	Entire home/apt	107	1	1
+23430	Entire home/apt	107	1	1
+23430	Entire home/apt	107	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+26116	Entire home/apt	199	1	1
+26116	Entire home/apt	199	1	1
+26116	Entire home/apt	199	1	1
+26116	Entire home/apt	199	1	1
+26116	Entire home/apt	199	1	1
+26116	Entire home/apt	199	1	1
+26116	Entire home/apt	199	1	1
+26116	Entire home/apt	199	1	1
+26116	Entire home/apt	199	1	1
+26116	Entire home/apt	199	1	1
+30712	Entire home/apt	75	1	1
+30712	Entire home/apt	75	1	1
+63308	Entire home/apt	89	1	1
+63308	Entire home/apt	89	1	1
+63308	Entire home/apt	89	1	1
+63308	Entire home/apt	89	1	1
+63308	Entire home/apt	89	1	1
+63308	Entire home/apt	89	1	1
+63308	Entire home/apt	89	1	1
+63308	Entire home/apt	89	1	1
+66611	Private room	65	1	1
+66611	Private room	65	1	1
+66611	Private room	65	1	1
+66611	Private room	65	1	1
+67270	Private room	65	1	1
+67270	Private room	65	1	1
+67270	Private room	65	1	1
+67270	Private room	65	1	1
+67270	Private room	65	1	1
+67270	Private room	65	1	1
+67270	Private room	65	1	1
+30712	Entire home/apt	75	1	1
+30712	Entire home/apt	75	1	1
+30712	Entire home/apt	75	1	1
+30712	Entire home/apt	75	1	1
+30712	Entire home/apt	75	1	1
+30712	Entire home/apt	75	1	1
+41401	Entire home/apt	89	1	1
+41401	Entire home/apt	89	1	1
+43373	Private room	59	1	1
+43373	Private room	59	1	1
+43373	Private room	59	1	1
+43373	Private room	59	1	1
+43373	Private room	59	1	1
+43373	Private room	59	1	1
+43373	Private room	59	1	1
+43373	Private room	59	1	1
+43373	Private room	59	1	1
+43373	Private room	59	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+67270	Private room	65	1	1
+67270	Private room	65	1	1
+72743	Private room	55	1	1
+72743	Private room	55	1	1
+72743	Private room	55	1	1
+72743	Private room	55	1	1
+80188	Entire home/apt	114	1	1
+80188	Entire home/apt	114	1	1
+80188	Entire home/apt	114	1	1
+80188	Entire home/apt	114	1	1
+80188	Entire home/apt	114	1	1
+80188	Entire home/apt	114	1	1
+80188	Entire home/apt	114	1	1
+80188	Entire home/apt	114	1	1
+80188	Entire home/apt	114	1	1
+80188	Entire home/apt	114	1	1
+80188	Entire home/apt	114	1	1
+80188	Entire home/apt	114	1	1
+80188	Entire home/apt	114	1	1
+80188	Entire home/apt	114	1	1
+80188	Entire home/apt	114	1	1
+82763	Private room	100	1	1
+82763	Private room	100	1	1
+82763	Private room	100	1	1
+82763	Private room	100	1	1
+82763	Private room	100	1	1
+86185	Private room	79	1	1
+86185	Private room	79	1	1
+86185	Private room	79	1	1
+86185	Private room	79	1	1
+92835	Entire home/apt	99	1	1
+48319	Entire home/apt	220	1	1
+51826	Private room	97	1	1
+51826	Private room	97	1	1
+51826	Private room	97	1	1
+51826	Private room	97	1	1
+51826	Private room	97	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+51826	Private room	97	1	1
+51826	Private room	97	1	1
+208356	Private room	89	1	1
+51826	Private room	97	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+51826	Private room	97	1	1
+51826	Private room	97	1	1
+53803	Entire home/apt	250	1	1
+58503	Entire home/apt	75	1	1
+58503	Entire home/apt	75	1	1
+58503	Entire home/apt	75	1	1
+58503	Entire home/apt	75	1	1
+58503	Entire home/apt	75	1	1
+58503	Entire home/apt	75	1	1
+58503	Entire home/apt	75	1	1
+63308	Entire home/apt	89	1	1
+63308	Entire home/apt	89	1	1
+63308	Entire home/apt	89	1	1
+63308	Entire home/apt	89	1	1
+63308	Entire home/apt	89	1	1
+63308	Entire home/apt	89	1	1
+63308	Entire home/apt	89	1	1
+63308	Entire home/apt	89	1	1
+208356	Private room	89	1	1
+63308	Entire home/apt	89	1	1
+63308	Entire home/apt	89	1	1
+63308	Entire home/apt	89	1	1
+63308	Entire home/apt	89	1	1
+63308	Entire home/apt	89	1	1
+63308	Entire home/apt	89	1	1
+63308	Entire home/apt	89	1	1
+63308	Entire home/apt	89	1	1
+63308	Entire home/apt	89	1	1
+63308	Entire home/apt	89	1	1
+67270	Private room	65	1	1
+67270	Private room	65	1	1
+67270	Private room	65	1	1
+67270	Private room	65	1	1
+67270	Private room	65	1	1
+67270	Private room	65	1	1
+67270	Private room	65	1	1
+67270	Private room	65	1	1
+67270	Private room	65	1	1
+67270	Private room	65	1	1
+67270	Private room	65	1	1
+67270	Private room	65	1	1
+67270	Private room	65	1	1
+67270	Private room	65	1	1
+72743	Private room	55	1	1
+72743	Private room	55	1	1
+72743	Private room	55	1	1
+72743	Private room	55	1	1
+72743	Private room	55	1	1
+72743	Private room	55	1	1
+72743	Private room	55	1	1
+72743	Private room	55	1	1
+72743	Private room	55	1	1
+72743	Private room	55	1	1
+72743	Private room	55	1	1
+72743	Private room	55	1	1
+72743	Private room	55	1	1
+72743	Private room	55	1	1
+72743	Private room	55	1	1
+74328	Entire home/apt	92	1	1
+74328	Entire home/apt	92	1	1
+74328	Entire home/apt	92	1	1
+74328	Entire home/apt	92	1	1
+74328	Entire home/apt	92	1	1
+74328	Entire home/apt	92	1	1
+74328	Entire home/apt	92	1	1
+74328	Entire home/apt	92	1	1
+80188	Entire home/apt	114	1	1
+80188	Entire home/apt	114	1	1
+80188	Entire home/apt	114	1	1
+80188	Entire home/apt	114	1	1
+80188	Entire home/apt	114	1	1
+80188	Entire home/apt	114	1	1
+80188	Entire home/apt	114	1	1
+82763	Private room	100	1	1
+92835	Entire home/apt	99	1	1
+92835	Entire home/apt	99	1	1
+92835	Entire home/apt	99	1	1
+92835	Entire home/apt	99	1	1
+92835	Entire home/apt	99	1	1
+92835	Entire home/apt	99	1	1
+92835	Entire home/apt	99	1	1
+92835	Entire home/apt	99	1	1
+92835	Entire home/apt	99	1	1
+92835	Entire home/apt	99	1	1
+92835	Entire home/apt	99	1	1
+92835	Entire home/apt	99	1	1
+92835	Entire home/apt	99	1	1
+92835	Entire home/apt	99	1	1
+92835	Entire home/apt	99	1	1
+92835	Entire home/apt	99	1	1
+92835	Entire home/apt	99	1	1
+92835	Entire home/apt	99	1	1
+103466	Entire home/apt	120	1	1
+103466	Entire home/apt	120	1	1
+103466	Entire home/apt	120	1	1
+103466	Entire home/apt	120	1	1
+103466	Entire home/apt	120	1	1
+103466	Entire home/apt	120	1	1
+103466	Entire home/apt	120	1	1
+103466	Entire home/apt	120	1	1
+103466	Entire home/apt	120	1	1
+103466	Entire home/apt	120	1	1
+103466	Entire home/apt	120	1	1
+103466	Entire home/apt	120	1	1
+103466	Entire home/apt	120	1	1
+103466	Entire home/apt	120	1	1
+103466	Entire home/apt	120	1	1
+103466	Entire home/apt	120	1	1
+103466	Entire home/apt	120	1	1
+103466	Entire home/apt	120	1	1
+113951	Entire home/apt	250	1	1
+113951	Entire home/apt	250	1	1
+113951	Entire home/apt	250	1	1
+117165	Private room	100	1	1
+117165	Private room	100	1	1
+117165	Private room	100	1	1
+117165	Private room	100	1	1
+117165	Private room	100	1	1
+117862	Entire home/apt	115	1	1
+132120	Entire home/apt	110	1	1
+132120	Entire home/apt	110	1	1
+132120	Entire home/apt	110	1	1
+132160	Entire home/apt	145	1	1
+132160	Entire home/apt	145	1	1
+132160	Entire home/apt	145	1	1
+132160	Entire home/apt	145	1	1
+132160	Entire home/apt	145	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208670	Entire home/apt	169	1	1
+208670	Entire home/apt	169	1	1
+208670	Entire home/apt	169	1	1
+208670	Entire home/apt	169	1	1
+208670	Entire home/apt	169	1	1
+208670	Entire home/apt	169	1	1
+208670	Entire home/apt	169	1	1
+215954	Private room	87	1	1
+215954	Private room	87	1	1
+217142	Entire home/apt	200	1	1
+217142	Entire home/apt	200	1	1
+224763	Entire home/apt	149	1	1
+224763	Entire home/apt	149	1	1
+226495	Entire home/apt	170	1	1
+226495	Entire home/apt	170	1	1
+226495	Entire home/apt	170	1	1
+226495	Entire home/apt	170	1	1
+226677	Private room	70	1	1
+226677	Private room	70	1	1
+226677	Private room	70	1	1
+226677	Private room	70	1	1
+226677	Private room	70	1	1
+227636	Entire home/apt	120	1	1
+227636	Entire home/apt	120	1	1
+227636	Entire home/apt	120	1	1
+227636	Entire home/apt	120	1	1
+227636	Entire home/apt	120	1	1
+231097	Private room	51	1	1
+231097	Private room	51	1	1
+231097	Private room	51	1	1
+241032	Entire home/apt	85	1	1
+241032	Entire home/apt	85	1	1
+241032	Entire home/apt	85	1	1
+241032	Entire home/apt	85	1	1
+241032	Entire home/apt	85	1	1
+241032	Entire home/apt	85	1	1
+241032	Entire home/apt	85	1	1
+241032	Entire home/apt	85	1	1
+241032	Entire home/apt	85	1	1
+241032	Entire home/apt	85	1	1
+241032	Entire home/apt	85	1	1
+241032	Entire home/apt	85	1	1
+241032	Entire home/apt	85	1	1
+241032	Entire home/apt	85	1	1
+241032	Entire home/apt	85	1	1
+251922	Entire home/apt	93	1	1
+251922	Entire home/apt	93	1	1
+251922	Entire home/apt	93	1	1
+251922	Entire home/apt	93	1	1
+251922	Entire home/apt	93	1	1
+251922	Entire home/apt	93	1	1
+251922	Entire home/apt	93	1	1
+251922	Entire home/apt	93	1	1
+251922	Entire home/apt	93	1	1
+251922	Entire home/apt	93	1	1
+257140	Entire home/apt	205	1	1
+261912	Entire home/apt	175	1	1
+261912	Entire home/apt	175	1	1
+262764	Entire home/apt	154	1	1
+265901	Private room	69	1	1
+271509	Entire home/apt	175	1	1
+277416	Entire home/apt	149	1	1
+277416	Entire home/apt	149	1	1
+277416	Entire home/apt	149	1	1
+277416	Entire home/apt	149	1	1
+277416	Entire home/apt	149	1	1
+279063	Private room	89	1	1
+279063	Private room	89	1	1
+279063	Private room	89	1	1
+279063	Private room	89	1	1
+279063	Private room	89	1	1
+279063	Private room	89	1	1
+279063	Private room	89	1	1
+279063	Private room	89	1	1
+279063	Private room	89	1	1
+279063	Private room	89	1	1
+279063	Private room	89	1	1
+279063	Private room	89	1	1
+279063	Private room	89	1	1
+279063	Private room	89	1	1
+279063	Private room	89	1	1
+279063	Private room	89	1	1
+279063	Private room	89	1	1
+279063	Private room	89	1	1
+279063	Private room	89	1	1
+279063	Private room	89	1	1
+279063	Private room	89	1	1
+279063	Private room	89	1	1
+92835	Entire home/apt	99	1	1
+92835	Entire home/apt	99	1	1
+92835	Entire home/apt	99	1	1
+92835	Entire home/apt	99	1	1
+92835	Entire home/apt	99	1	1
+92835	Entire home/apt	99	1	1
+92835	Entire home/apt	99	1	1
+92835	Entire home/apt	99	1	1
+92835	Entire home/apt	99	1	1
+92835	Entire home/apt	99	1	1
+92835	Entire home/apt	99	1	1
+92835	Entire home/apt	99	1	1
+92835	Entire home/apt	99	1	1
+92835	Entire home/apt	99	1	1
+92835	Entire home/apt	99	1	1
+92835	Entire home/apt	99	1	1
+92835	Entire home/apt	99	1	1
+92835	Entire home/apt	99	1	1
+92835	Entire home/apt	99	1	1
+92835	Entire home/apt	99	1	1
+107046	Entire home/apt	280	1	1
+107046	Entire home/apt	280	1	1
+107046	Entire home/apt	280	1	1
+107046	Entire home/apt	280	1	1
+107046	Entire home/apt	280	1	1
+116221	Entire home/apt	140	1	1
+116221	Entire home/apt	140	1	1
+116221	Entire home/apt	140	1	1
+116221	Entire home/apt	140	1	1
+116221	Entire home/apt	140	1	1
+132120	Entire home/apt	110	1	1
+132120	Entire home/apt	110	1	1
+132160	Entire home/apt	145	1	1
+132160	Entire home/apt	145	1	1
+132160	Entire home/apt	145	1	1
+132160	Entire home/apt	145	1	1
+132160	Entire home/apt	145	1	1
+132160	Entire home/apt	145	1	1
+132160	Entire home/apt	145	1	1
+132160	Entire home/apt	145	1	1
+136480	Private room	65	1	1
+139463	Entire home/apt	95	1	1
+139463	Entire home/apt	95	1	1
+139463	Entire home/apt	95	1	1
+139463	Entire home/apt	95	1	1
+139463	Entire home/apt	95	1	1
+139463	Entire home/apt	95	1	1
+139463	Entire home/apt	95	1	1
+139463	Entire home/apt	95	1	1
+139463	Entire home/apt	95	1	1
+139463	Entire home/apt	95	1	1
+139463	Entire home/apt	95	1	1
+139463	Entire home/apt	95	1	1
+139463	Entire home/apt	95	1	1
+139463	Entire home/apt	95	1	1
+139463	Entire home/apt	95	1	1
+140331	Private room	88	1	1
+140331	Private room	88	1	1
+140331	Private room	88	1	1
+140331	Private room	88	1	1
+140331	Private room	88	1	1
+140331	Private room	88	1	1
+143704	Entire home/apt	82	1	1
+143704	Entire home/apt	82	1	1
+143704	Entire home/apt	82	1	1
+143704	Entire home/apt	82	1	1
+143704	Entire home/apt	82	1	1
+143704	Entire home/apt	82	1	1
+143704	Entire home/apt	82	1	1
+143704	Entire home/apt	82	1	1
+143704	Entire home/apt	82	1	1
+143704	Entire home/apt	82	1	1
+10695	Private room	109	1	1
+143704	Entire home/apt	82	1	1
+13068	Entire home/apt	360	1	1
+143704	Entire home/apt	82	1	1
+143704	Entire home/apt	82	1	1
+13068	Entire home/apt	360	1	1
+13068	Entire home/apt	360	1	1
+14386	Private room	40	1	1
+14386	Private room	40	1	1
+14386	Private room	40	1	1
+14386	Private room	40	1	1
+14386	Private room	40	1	1
+14386	Private room	40	1	1
+14386	Private room	40	1	1
+14386	Private room	40	1	1
+19619	Entire home/apt	145	1	1
+19619	Entire home/apt	145	1	1
+20868	Entire home/apt	137	1	1
+20868	Entire home/apt	137	1	1
+143704	Entire home/apt	82	1	1
+20868	Entire home/apt	137	1	1
+143704	Entire home/apt	82	1	1
+20868	Entire home/apt	137	1	1
+143704	Entire home/apt	82	1	1
+20868	Entire home/apt	137	1	1
+143704	Entire home/apt	82	1	1
+20868	Entire home/apt	137	1	1
+143704	Entire home/apt	82	1	1
+20868	Entire home/apt	137	1	1
+20868	Entire home/apt	137	1	1
+143704	Entire home/apt	82	1	1
+23356	Entire home/apt	215	1	1
+143704	Entire home/apt	82	1	1
+24212	Entire home/apt	175	1	1
+143704	Entire home/apt	82	1	1
+279063	Private room	89	1	1
+281208	Entire home/apt	196	1	1
+281789	Private room	99	1	1
+281789	Private room	99	1	1
+282934	Entire home/apt	115	1	1
+282934	Entire home/apt	115	1	1
+282934	Entire home/apt	115	1	1
+284087	Entire home/apt	175	1	1
+284087	Entire home/apt	175	1	1
+284087	Entire home/apt	175	1	1
+284087	Entire home/apt	175	1	1
+284087	Entire home/apt	175	1	1
+284087	Entire home/apt	175	1	1
+284087	Entire home/apt	175	1	1
+284087	Entire home/apt	175	1	1
+284813	Entire home/apt	159	1	1
+284813	Entire home/apt	159	1	1
+284813	Entire home/apt	159	1	1
+286080	Entire home/apt	175	1	1
+286080	Entire home/apt	175	1	1
+301059	Entire home/apt	165	1	1
+301059	Entire home/apt	165	1	1
+314180	Entire home/apt	300	1	1
+314180	Entire home/apt	300	1	1
+314180	Entire home/apt	300	1	1
+317248	Entire home/apt	240	1	1
+338043	Entire home/apt	125	1	1
+353110	Entire home/apt	135	1	1
+356566	Private room	105	1	1
+356608	Entire home/apt	196	1	1
+356608	Entire home/apt	196	1	1
+356608	Entire home/apt	196	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+366301	Entire home/apt	70	1	1
+370361	Private room	85	1	1
+370361	Private room	85	1	1
+370361	Private room	85	1	1
+370361	Private room	85	1	1
+370361	Private room	85	1	1
+370361	Private room	85	1	1
+370361	Private room	85	1	1
+370361	Private room	85	1	1
+370361	Private room	85	1	1
+370361	Private room	85	1	1
+370361	Private room	85	1	1
+370361	Private room	85	1	1
+370361	Private room	85	1	1
+370361	Private room	85	1	1
+370361	Private room	85	1	1
+370361	Private room	85	1	1
+370361	Private room	85	1	1
+370361	Private room	85	1	1
+384797	Entire home/apt	673	1	1
+384797	Entire home/apt	673	1	1
+387078	Entire home/apt	119	1	1
+387078	Entire home/apt	119	1	1
+387079	Entire home/apt	119	1	1
+392140	Private room	75	1	1
+392140	Private room	75	1	1
+392140	Private room	75	1	1
+392140	Private room	75	1	1
+392140	Private room	75	1	1
+392140	Private room	75	1	1
+392140	Private room	75	1	1
+392140	Private room	75	1	1
+392140	Private room	75	1	1
+392140	Private room	75	1	1
+392779	Entire home/apt	108	1	1
+132160	Entire home/apt	145	1	1
+132160	Entire home/apt	145	1	1
+132160	Entire home/apt	145	1	1
+132160	Entire home/apt	145	1	1
+132160	Entire home/apt	145	1	1
+132160	Entire home/apt	145	1	1
+136480	Private room	65	1	1
+136480	Private room	65	1	1
+136480	Private room	65	1	1
+136480	Private room	65	1	1
+143580	Private room	75	1	1
+143580	Private room	75	1	1
+143580	Private room	75	1	1
+143580	Private room	75	1	1
+143580	Private room	75	1	1
+143580	Private room	75	1	1
+143580	Private room	75	1	1
+143580	Private room	75	1	1
+143580	Private room	75	1	1
+143580	Private room	75	1	1
+143580	Private room	75	1	1
+143580	Private room	75	1	1
+143580	Private room	75	1	1
+143580	Private room	75	1	1
+143580	Private room	75	1	1
+153967	Entire home/apt	117	1	1
+153967	Entire home/apt	117	1	1
+160222	Entire home/apt	110	1	1
+160222	Entire home/apt	110	1	1
+160222	Entire home/apt	110	1	1
+160222	Entire home/apt	110	1	1
+173896	Private room	70	1	1
+173896	Private room	70	1	1
+173896	Private room	70	1	1
+173896	Private room	70	1	1
+173896	Private room	70	1	1
+173896	Private room	70	1	1
+173896	Private room	70	1	1
+173896	Private room	70	1	1
+173896	Private room	70	1	1
+173896	Private room	70	1	1
+173896	Private room	70	1	1
+174636	Private room	88	1	1
+174636	Private room	88	1	1
+174636	Private room	88	1	1
+174636	Private room	88	1	1
+175576	Entire home/apt	95	1	1
+175576	Entire home/apt	95	1	1
+175576	Entire home/apt	95	1	1
+175576	Entire home/apt	95	1	1
+175576	Entire home/apt	95	1	1
+175576	Entire home/apt	95	1	1
+175576	Entire home/apt	95	1	1
+175576	Entire home/apt	95	1	1
+175576	Entire home/apt	95	1	1
+175576	Entire home/apt	95	1	1
+175576	Entire home/apt	95	1	1
+175576	Entire home/apt	95	1	1
+175576	Entire home/apt	95	1	1
+175576	Entire home/apt	95	1	1
+175576	Entire home/apt	95	1	1
+175576	Entire home/apt	95	1	1
+175576	Entire home/apt	95	1	1
+175576	Entire home/apt	95	1	1
+175576	Entire home/apt	95	1	1
+175576	Entire home/apt	95	1	1
+175576	Entire home/apt	95	1	1
+175576	Entire home/apt	95	1	1
+175576	Entire home/apt	95	1	1
+175576	Entire home/apt	95	1	1
+175576	Entire home/apt	95	1	1
+175576	Entire home/apt	95	1	1
+175576	Entire home/apt	95	1	1
+175576	Entire home/apt	95	1	1
+175576	Entire home/apt	95	1	1
+175576	Entire home/apt	95	1	1
+176678	Private room	64	1	1
+176678	Private room	64	1	1
+176678	Private room	64	1	1
+176678	Private room	64	1	1
+176678	Private room	64	1	1
+182716	Private room	70	1	1
+182716	Private room	70	1	1
+182716	Private room	70	1	1
+189156	Entire home/apt	76	1	1
+189156	Entire home/apt	76	1	1
+189156	Entire home/apt	76	1	1
+189156	Entire home/apt	76	1	1
+189156	Entire home/apt	76	1	1
+189156	Entire home/apt	76	1	1
+189156	Entire home/apt	76	1	1
+193836	Entire home/apt	80	1	1
+193836	Entire home/apt	80	1	1
+193836	Entire home/apt	80	1	1
+193836	Entire home/apt	80	1	1
+193836	Entire home/apt	80	1	1
+193836	Entire home/apt	80	1	1
+193836	Entire home/apt	80	1	1
+193836	Entire home/apt	80	1	1
+193836	Entire home/apt	80	1	1
+194313	Entire home/apt	99	1	1
+194313	Entire home/apt	99	1	1
+194313	Entire home/apt	99	1	1
+194313	Entire home/apt	99	1	1
+194313	Entire home/apt	99	1	1
+194313	Entire home/apt	99	1	1
+194313	Entire home/apt	99	1	1
+143704	Entire home/apt	82	1	1
+143704	Entire home/apt	82	1	1
+143704	Entire home/apt	82	1	1
+143704	Entire home/apt	82	1	1
+143704	Entire home/apt	82	1	1
+143704	Entire home/apt	82	1	1
+143704	Entire home/apt	82	1	1
+143704	Entire home/apt	82	1	1
+143704	Entire home/apt	82	1	1
+146301	Entire home/apt	135	1	1
+153967	Entire home/apt	117	1	1
+153967	Entire home/apt	117	1	1
+153967	Entire home/apt	117	1	1
+153967	Entire home/apt	117	1	1
+170273	Private room	225	1	1
+170273	Private room	225	1	1
+170273	Private room	225	1	1
+170273	Private room	225	1	1
+170273	Private room	225	1	1
+170273	Private room	225	1	1
+170273	Private room	225	1	1
+170273	Private room	225	1	1
+170273	Private room	225	1	1
+170273	Private room	225	1	1
+170273	Private room	225	1	1
+170273	Private room	225	1	1
+170273	Private room	225	1	1
+170273	Private room	225	1	1
+170273	Private room	225	1	1
+170273	Private room	225	1	1
+170273	Private room	225	1	1
+170273	Private room	225	1	1
+170273	Private room	225	1	1
+170273	Private room	225	1	1
+173896	Private room	70	1	1
+173896	Private room	70	1	1
+173896	Private room	70	1	1
+173896	Private room	70	1	1
+173896	Private room	70	1	1
+173896	Private room	70	1	1
+173896	Private room	70	1	1
+173896	Private room	70	1	1
+173896	Private room	70	1	1
+175576	Entire home/apt	95	1	1
+175576	Entire home/apt	95	1	1
+175576	Entire home/apt	95	1	1
+175576	Entire home/apt	95	1	1
+175576	Entire home/apt	95	1	1
+175576	Entire home/apt	95	1	1
+175576	Entire home/apt	95	1	1
+175576	Entire home/apt	95	1	1
+175576	Entire home/apt	95	1	1
+182716	Private room	70	1	1
+182716	Private room	70	1	1
+182716	Private room	70	1	1
+182716	Private room	70	1	1
+182716	Private room	70	1	1
+182716	Private room	70	1	1
+189156	Entire home/apt	76	1	1
+189156	Entire home/apt	76	1	1
+189156	Entire home/apt	76	1	1
+189156	Entire home/apt	76	1	1
+189156	Entire home/apt	76	1	1
+189156	Entire home/apt	76	1	1
+189156	Entire home/apt	76	1	1
+189156	Entire home/apt	76	1	1
+189156	Entire home/apt	76	1	1
+189156	Entire home/apt	76	1	1
+189156	Entire home/apt	76	1	1
+189156	Entire home/apt	76	1	1
+193371	Entire home/apt	150	1	1
+193371	Entire home/apt	150	1	1
+193371	Entire home/apt	150	1	1
+193371	Entire home/apt	150	1	1
+193371	Entire home/apt	150	1	1
+193836	Entire home/apt	80	1	1
+193836	Entire home/apt	80	1	1
+193836	Entire home/apt	80	1	1
+193836	Entire home/apt	80	1	1
+194313	Entire home/apt	99	1	1
+194313	Entire home/apt	99	1	1
+194313	Entire home/apt	99	1	1
+194313	Entire home/apt	99	1	1
+194313	Entire home/apt	99	1	1
+194313	Entire home/apt	99	1	1
+202174	Entire home/apt	159	1	1
+202174	Entire home/apt	159	1	1
+202260	Entire home/apt	89	1	1
+202260	Entire home/apt	89	1	1
+202260	Entire home/apt	89	1	1
+202260	Entire home/apt	89	1	1
+202260	Entire home/apt	89	1	1
+202260	Entire home/apt	89	1	1
+202260	Entire home/apt	89	1	1
+202260	Entire home/apt	89	1	1
+202260	Entire home/apt	89	1	1
+202260	Entire home/apt	89	1	1
+202260	Entire home/apt	89	1	1
+202260	Entire home/apt	89	1	1
+202260	Entire home/apt	89	1	1
+202260	Entire home/apt	89	1	1
+202260	Entire home/apt	89	1	1
+202260	Entire home/apt	89	1	1
+202260	Entire home/apt	89	1	1
+202260	Entire home/apt	89	1	1
+215882	Entire home/apt	99	1	1
+215882	Entire home/apt	99	1	1
+24212	Entire home/apt	175	1	1
+24212	Entire home/apt	175	1	1
+24212	Entire home/apt	175	1	1
+24212	Entire home/apt	175	1	1
+24212	Entire home/apt	175	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+25002	Entire home/apt	75	1	1
+30712	Entire home/apt	75	1	1
+30712	Entire home/apt	75	1	1
+30712	Entire home/apt	75	1	1
+30712	Entire home/apt	75	1	1
+47196	Private room	65	1	1
+47196	Private room	65	1	1
+47196	Private room	65	1	1
+47196	Private room	65	1	1
+47196	Private room	65	1	1
+47196	Private room	65	1	1
+47196	Private room	65	1	1
+47196	Private room	65	1	1
+47196	Private room	65	1	1
+47196	Private room	65	1	1
+47196	Private room	65	1	1
+47196	Private room	65	1	1
+47196	Private room	65	1	1
+47196	Private room	65	1	1
+47196	Private room	65	1	1
+47196	Private room	65	1	1
+47196	Private room	65	1	1
+47196	Private room	65	1	1
+47196	Private room	65	1	1
+47196	Private room	65	1	1
+47196	Private room	65	1	1
+47196	Private room	65	1	1
+47196	Private room	65	1	1
+47196	Private room	65	1	1
+47196	Private room	65	1	1
+47196	Private room	65	1	1
+47196	Private room	65	1	1
+47196	Private room	65	1	1
+47196	Private room	65	1	1
+47196	Private room	65	1	1
+47196	Private room	65	1	1
+47196	Private room	65	1	1
+47196	Private room	65	1	1
+47196	Private room	65	1	1
+47196	Private room	65	1	1
+47196	Private room	65	1	1
+47196	Private room	65	1	1
+47196	Private room	65	1	1
+47196	Private room	65	1	1
+47196	Private room	65	1	1
+47196	Private room	65	1	1
+47196	Private room	65	1	1
+47196	Private room	65	1	1
+47196	Private room	65	1	1
+47196	Private room	65	1	1
+47196	Private room	65	1	1
+47196	Private room	65	1	1
+47196	Private room	65	1	1
+47196	Private room	65	1	1
+47196	Private room	65	1	1
+47196	Private room	65	1	1
+47196	Private room	65	1	1
+47196	Private room	65	1	1
+47196	Private room	65	1	1
+47196	Private room	65	1	1
+47196	Private room	65	1	1
+47196	Private room	65	1	1
+47196	Private room	65	1	1
+47196	Private room	65	1	1
+47196	Private room	65	1	1
+47196	Private room	65	1	1
+47196	Private room	65	1	1
+47196	Private room	65	1	1
+47196	Private room	65	1	1
+48319	Entire home/apt	220	1	1
+48319	Entire home/apt	220	1	1
+48319	Entire home/apt	220	1	1
+48848	Entire home/apt	125	1	1
+48848	Entire home/apt	125	1	1
+51826	Private room	97	1	1
+51826	Private room	97	1	1
+51826	Private room	97	1	1
+51826	Private room	97	1	1
+53803	Entire home/apt	250	1	1
+53803	Entire home/apt	250	1	1
+53867	Entire home/apt	86	1	1
+53867	Entire home/apt	86	1	1
+53867	Entire home/apt	86	1	1
+53867	Entire home/apt	86	1	1
+53867	Entire home/apt	86	1	1
+53867	Entire home/apt	86	1	1
+53867	Entire home/apt	86	1	1
+53867	Entire home/apt	86	1	1
+53867	Entire home/apt	86	1	1
+53867	Entire home/apt	86	1	1
+53867	Entire home/apt	86	1	1
+53867	Entire home/apt	86	1	1
+53867	Entire home/apt	86	1	1
+53867	Entire home/apt	86	1	1
+53867	Entire home/apt	86	1	1
+53867	Entire home/apt	86	1	1
+53867	Entire home/apt	86	1	1
+53867	Entire home/apt	86	1	1
+53867	Entire home/apt	86	1	1
+53867	Entire home/apt	86	1	1
+53867	Entire home/apt	86	1	1
+53867	Entire home/apt	86	1	1
+53867	Entire home/apt	86	1	1
+53867	Entire home/apt	86	1	1
+53867	Entire home/apt	86	1	1
+53867	Entire home/apt	86	1	1
+53867	Entire home/apt	86	1	1
+53867	Entire home/apt	86	1	1
+53867	Entire home/apt	86	1	1
+53867	Entire home/apt	86	1	1
+53867	Entire home/apt	86	1	1
+53867	Entire home/apt	86	1	1
+53867	Entire home/apt	86	1	1
+53867	Entire home/apt	86	1	1
+53867	Entire home/apt	86	1	1
+53867	Entire home/apt	86	1	1
+53867	Entire home/apt	86	1	1
+53867	Entire home/apt	86	1	1
+53867	Entire home/apt	86	1	1
+53867	Entire home/apt	86	1	1
+53867	Entire home/apt	86	1	1
+53867	Entire home/apt	86	1	1
+53867	Entire home/apt	86	1	1
+53867	Entire home/apt	86	1	1
+59827	Entire home/apt	135	1	1
+59827	Entire home/apt	135	1	1
+59838	Entire home/apt	147	1	1
+63733	Entire home/apt	89	1	1
+63733	Entire home/apt	89	1	1
+63733	Entire home/apt	89	1	1
+63733	Entire home/apt	89	1	1
+63733	Entire home/apt	89	1	1
+63733	Entire home/apt	89	1	1
+63733	Entire home/apt	89	1	1
+63733	Entire home/apt	89	1	1
+63733	Entire home/apt	89	1	1
+63733	Entire home/apt	89	1	1
+63733	Entire home/apt	89	1	1
+63733	Entire home/apt	89	1	1
+63733	Entire home/apt	89	1	1
+63733	Entire home/apt	89	1	1
+63733	Entire home/apt	89	1	1
+63733	Entire home/apt	89	1	1
+63733	Entire home/apt	89	1	1
+63733	Entire home/apt	89	1	1
+63733	Entire home/apt	89	1	1
+63733	Entire home/apt	89	1	1
+63733	Entire home/apt	89	1	1
+66540	Private room	65	1	1
+66540	Private room	65	1	1
+66540	Private room	65	1	1
+74328	Entire home/apt	92	1	1
+84030	Private room	110	1	1
+84030	Private room	110	1	1
+84030	Private room	110	1	1
+84030	Private room	110	1	1
+84030	Private room	110	1	1
+84030	Private room	110	1	1
+84030	Private room	110	1	1
+84030	Private room	110	1	1
+84030	Private room	110	1	1
+84030	Private room	110	1	1
+92835	Entire home/apt	99	1	1
+92835	Entire home/apt	99	1	1
+103466	Entire home/apt	120	1	1
+103466	Entire home/apt	120	1	1
+103466	Entire home/apt	120	1	1
+103466	Entire home/apt	120	1	1
+103466	Entire home/apt	120	1	1
+103466	Entire home/apt	120	1	1
+103466	Entire home/apt	120	1	1
+103466	Entire home/apt	120	1	1
+107962	Entire home/apt	100	1	1
+107962	Entire home/apt	100	1	1
+107962	Entire home/apt	100	1	1
+107962	Entire home/apt	100	1	1
+107962	Entire home/apt	100	1	1
+107962	Entire home/apt	100	1	1
+107962	Entire home/apt	100	1	1
+107962	Entire home/apt	100	1	1
+107962	Entire home/apt	100	1	1
+107962	Entire home/apt	100	1	1
+202174	Entire home/apt	159	1	1
+202174	Entire home/apt	159	1	1
+202174	Entire home/apt	159	1	1
+202174	Entire home/apt	159	1	1
+202260	Entire home/apt	89	1	1
+202260	Entire home/apt	89	1	1
+202260	Entire home/apt	89	1	1
+202260	Entire home/apt	89	1	1
+202260	Entire home/apt	89	1	1
+202260	Entire home/apt	89	1	1
+202260	Entire home/apt	89	1	1
+202260	Entire home/apt	89	1	1
+208670	Entire home/apt	169	1	1
+208670	Entire home/apt	169	1	1
+208670	Entire home/apt	169	1	1
+208670	Entire home/apt	169	1	1
+208670	Entire home/apt	169	1	1
+208670	Entire home/apt	169	1	1
+208670	Entire home/apt	169	1	1
+208670	Entire home/apt	169	1	1
+210316	Private room	65	1	1
+210316	Private room	65	1	1
+215882	Entire home/apt	99	1	1
+215882	Entire home/apt	99	1	1
+215882	Entire home/apt	99	1	1
+215882	Entire home/apt	99	1	1
+215882	Entire home/apt	99	1	1
+215882	Entire home/apt	99	1	1
+215882	Entire home/apt	99	1	1
+215882	Entire home/apt	99	1	1
+215882	Entire home/apt	99	1	1
+215882	Entire home/apt	99	1	1
+215882	Entire home/apt	99	1	1
+215882	Entire home/apt	99	1	1
+215882	Entire home/apt	99	1	1
+215882	Entire home/apt	99	1	1
+215882	Entire home/apt	99	1	1
+215882	Entire home/apt	99	1	1
+215882	Entire home/apt	99	1	1
+215882	Entire home/apt	99	1	1
+215882	Entire home/apt	99	1	1
+215882	Entire home/apt	99	1	1
+217142	Entire home/apt	200	1	1
+217142	Entire home/apt	200	1	1
+217142	Entire home/apt	200	1	1
+217142	Entire home/apt	200	1	1
+217142	Entire home/apt	200	1	1
+217142	Entire home/apt	200	1	1
+217142	Entire home/apt	200	1	1
+218741	Private room	90	1	1
+218741	Private room	90	1	1
+218741	Private room	90	1	1
+218741	Private room	90	1	1
+218741	Private room	90	1	1
+218741	Private room	90	1	1
+218741	Private room	90	1	1
+218741	Private room	90	1	1
+218741	Private room	90	1	1
+218741	Private room	90	1	1
+218741	Private room	90	1	1
+218741	Private room	90	1	1
+218741	Private room	90	1	1
+218741	Private room	90	1	1
+218741	Private room	90	1	1
+219532	Entire home/apt	275	1	1
+219532	Entire home/apt	275	1	1
+224763	Entire home/apt	149	1	1
+224763	Entire home/apt	149	1	1
+224763	Entire home/apt	149	1	1
+224763	Entire home/apt	149	1	1
+226677	Private room	70	1	1
+226677	Private room	70	1	1
+227636	Entire home/apt	120	1	1
+227636	Entire home/apt	120	1	1
+227636	Entire home/apt	120	1	1
+227636	Entire home/apt	120	1	1
+227636	Entire home/apt	120	1	1
+227636	Entire home/apt	120	1	1
+227636	Entire home/apt	120	1	1
+227636	Entire home/apt	120	1	1
+227636	Entire home/apt	120	1	1
+227636	Entire home/apt	120	1	1
+241016	Entire home/apt	115	1	1
+241016	Entire home/apt	115	1	1
+244499	Entire home/apt	125	1	1
+244499	Entire home/apt	125	1	1
+251922	Entire home/apt	93	1	1
+254340	Entire home/apt	95	1	1
+254340	Entire home/apt	95	1	1
+254340	Entire home/apt	95	1	1
+254340	Entire home/apt	95	1	1
+254340	Entire home/apt	95	1	1
+254340	Entire home/apt	95	1	1
+254340	Entire home/apt	95	1	1
+254340	Entire home/apt	95	1	1
+254340	Entire home/apt	95	1	1
+254340	Entire home/apt	95	1	1
+254340	Entire home/apt	95	1	1
+257140	Entire home/apt	205	1	1
+257140	Entire home/apt	205	1	1
+258571	Entire home/apt	79	1	1
+258571	Entire home/apt	79	1	1
+258571	Entire home/apt	79	1	1
+258571	Entire home/apt	79	1	1
+258571	Entire home/apt	79	1	1
+258571	Entire home/apt	79	1	1
+258571	Entire home/apt	79	1	1
+107962	Entire home/apt	100	1	1
+107962	Entire home/apt	100	1	1
+107962	Entire home/apt	100	1	1
+107962	Entire home/apt	100	1	1
+107962	Entire home/apt	100	1	1
+107962	Entire home/apt	100	1	1
+107962	Entire home/apt	100	1	1
+107962	Entire home/apt	100	1	1
+107962	Entire home/apt	100	1	1
+107962	Entire home/apt	100	1	1
+107962	Entire home/apt	100	1	1
+107962	Entire home/apt	100	1	1
+107962	Entire home/apt	100	1	1
+108765	Entire home/apt	122	1	1
+119103	Private room	79	1	1
+119103	Private room	79	1	1
+119103	Private room	79	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+366301	Entire home/apt	70	1	1
+368403	Entire home/apt	550	1	1
+370361	Private room	85	1	1
+370361	Private room	85	1	1
+370361	Private room	85	1	1
+370361	Private room	85	1	1
+370361	Private room	85	1	1
+370361	Private room	85	1	1
+370361	Private room	85	1	1
+370361	Private room	85	1	1
+370361	Private room	85	1	1
+370361	Private room	85	1	1
+370361	Private room	85	1	1
+370361	Private room	85	1	1
+380950	Entire home/apt	435	1	1
+380950	Entire home/apt	435	1	1
+392779	Entire home/apt	108	1	1
+392779	Entire home/apt	108	1	1
+392779	Entire home/apt	108	1	1
+392779	Entire home/apt	108	1	1
+392779	Entire home/apt	108	1	1
+392779	Entire home/apt	108	1	1
+392779	Entire home/apt	108	1	1
+392779	Entire home/apt	108	1	1
+392779	Entire home/apt	108	1	1
+394408	Entire home/apt	150	1	1
+394408	Entire home/apt	150	1	1
+394408	Entire home/apt	150	1	1
+397117	Entire home/apt	99	1	1
+397117	Entire home/apt	99	1	1
+397117	Entire home/apt	99	1	1
+557126	Private room	90	1	1
+397117	Entire home/apt	99	1	1
+557126	Private room	90	1	1
+397117	Entire home/apt	99	1	1
+565703	Entire home/apt	128	1	1
+397117	Entire home/apt	99	1	1
+565703	Entire home/apt	128	1	1
+397117	Entire home/apt	99	1	1
+397117	Entire home/apt	99	1	1
+397117	Entire home/apt	99	1	1
+397117	Entire home/apt	99	1	1
+397117	Entire home/apt	99	1	1
+397117	Entire home/apt	99	1	1
+397117	Entire home/apt	99	1	1
+282934	Entire home/apt	115	1	1
+397117	Entire home/apt	99	1	1
+282934	Entire home/apt	115	1	1
+282934	Entire home/apt	115	1	1
+397117	Entire home/apt	99	1	1
+282934	Entire home/apt	115	1	1
+397117	Entire home/apt	99	1	1
+282934	Entire home/apt	115	1	1
+397117	Entire home/apt	99	1	1
+397117	Entire home/apt	99	1	1
+397117	Entire home/apt	99	1	1
+397117	Entire home/apt	99	1	1
+565703	Entire home/apt	128	1	1
+397117	Entire home/apt	99	1	1
+397117	Entire home/apt	99	1	1
+565703	Entire home/apt	128	1	1
+397117	Entire home/apt	99	1	1
+565703	Entire home/apt	128	1	1
+397117	Entire home/apt	99	1	1
+565703	Entire home/apt	128	1	1
+397117	Entire home/apt	99	1	1
+565703	Entire home/apt	128	1	1
+397117	Entire home/apt	99	1	1
+565703	Entire home/apt	128	1	1
+397117	Entire home/apt	99	1	1
+565703	Entire home/apt	128	1	1
+421168	Private room	69	1	1
+565703	Entire home/apt	128	1	1
+421168	Private room	69	1	1
+565703	Entire home/apt	128	1	1
+421168	Private room	69	1	1
+565703	Entire home/apt	128	1	1
+421168	Private room	69	1	1
+565703	Entire home/apt	128	1	1
+282934	Entire home/apt	115	1	1
+413733	Entire home/apt	125	1	1
+421168	Private room	69	1	1
+421168	Private room	69	1	1
+421168	Private room	69	1	1
+421168	Private room	69	1	1
+421168	Private room	69	1	1
+421168	Private room	69	1	1
+421168	Private room	69	1	1
+421168	Private room	69	1	1
+421168	Private room	69	1	1
+421168	Private room	69	1	1
+421168	Private room	69	1	1
+421168	Private room	69	1	1
+421168	Private room	69	1	1
+430453	Entire home/apt	149	1	1
+430453	Entire home/apt	149	1	1
+430609	Entire home/apt	325	1	1
+430610	Entire home/apt	254	1	1
+430610	Entire home/apt	254	1	1
+430610	Entire home/apt	254	1	1
+430610	Entire home/apt	254	1	1
+430610	Entire home/apt	254	1	1
+442487	Entire home/apt	98	1	1
+443580	Private room	52	1	1
+443580	Private room	52	1	1
+443580	Private room	52	1	1
+443580	Private room	52	1	1
+443580	Private room	52	1	1
+443736	Entire home/apt	81	1	1
+443736	Entire home/apt	81	1	1
+443736	Entire home/apt	81	1	1
+443942	Entire home/apt	125	1	1
+444221	Private room	49	1	1
+444221	Private room	49	1	1
+444221	Private room	49	1	1
+444221	Private room	49	1	1
+444221	Private room	49	1	1
+444221	Private room	49	1	1
+444221	Private room	49	1	1
+444221	Private room	49	1	1
+445199	Entire home/apt	129	1	1
+445199	Entire home/apt	129	1	1
+445199	Entire home/apt	129	1	1
+445199	Entire home/apt	129	1	1
+445199	Entire home/apt	129	1	1
+445199	Entire home/apt	129	1	1
+445199	Entire home/apt	129	1	1
+445199	Entire home/apt	129	1	1
+445199	Entire home/apt	129	1	1
+445199	Entire home/apt	129	1	1
+445199	Entire home/apt	129	1	1
+445199	Entire home/apt	129	1	1
+445199	Entire home/apt	129	1	1
+447488	Private room	100	1	1
+447488	Private room	100	1	1
+447488	Private room	100	1	1
+447523	Private room	48	1	1
+447523	Private room	48	1	1
+447523	Private room	48	1	1
+447523	Private room	48	1	1
+447523	Private room	48	1	1
+447523	Private room	48	1	1
+447523	Private room	48	1	1
+447523	Private room	48	1	1
+447523	Private room	48	1	1
+447523	Private room	48	1	1
+447523	Private room	48	1	1
+447523	Private room	48	1	1
+447523	Private room	48	1	1
+447523	Private room	48	1	1
+447523	Private room	48	1	1
+447523	Private room	48	1	1
+447523	Private room	48	1	1
+449602	Shared room	65	1	1
+449602	Shared room	65	1	1
+449602	Shared room	65	1	1
+449602	Shared room	65	1	1
+449602	Shared room	65	1	1
+449602	Shared room	65	1	1
+449602	Shared room	65	1	1
+449602	Shared room	65	1	1
+449602	Shared room	65	1	1
+449602	Shared room	65	1	1
+451012	Entire home/apt	195	1	1
+456040	Private room	55	1	1
+456040	Private room	55	1	1
+456040	Private room	55	1	1
+456040	Private room	55	1	1
+456040	Private room	55	1	1
+456040	Private room	55	1	1
+456040	Private room	55	1	1
+456040	Private room	55	1	1
+458189	Private room	63	1	1
+458189	Private room	63	1	1
+475361	Entire home/apt	89	1	1
+475361	Entire home/apt	89	1	1
+475361	Entire home/apt	89	1	1
+475361	Entire home/apt	89	1	1
+475361	Entire home/apt	89	1	1
+475361	Entire home/apt	89	1	1
+475361	Entire home/apt	89	1	1
+475361	Entire home/apt	89	1	1
+475361	Entire home/apt	89	1	1
+475361	Entire home/apt	89	1	1
+475361	Entire home/apt	89	1	1
+486344	Private room	47	1	1
+486344	Private room	47	1	1
+486344	Private room	47	1	1
+258571	Entire home/apt	79	1	1
+258571	Entire home/apt	79	1	1
+258571	Entire home/apt	79	1	1
+258571	Entire home/apt	79	1	1
+258571	Entire home/apt	79	1	1
+258571	Entire home/apt	79	1	1
+258571	Entire home/apt	79	1	1
+258571	Entire home/apt	79	1	1
+258571	Entire home/apt	79	1	1
+258571	Entire home/apt	79	1	1
+258571	Entire home/apt	79	1	1
+258571	Entire home/apt	79	1	1
+258571	Entire home/apt	79	1	1
+258571	Entire home/apt	79	1	1
+258571	Entire home/apt	79	1	1
+258571	Entire home/apt	79	1	1
+258571	Entire home/apt	79	1	1
+258571	Entire home/apt	79	1	1
+258571	Entire home/apt	79	1	1
+258571	Entire home/apt	79	1	1
+258571	Entire home/apt	79	1	1
+258571	Entire home/apt	79	1	1
+258571	Entire home/apt	79	1	1
+258571	Entire home/apt	79	1	1
+258571	Entire home/apt	79	1	1
+258571	Entire home/apt	79	1	1
+258571	Entire home/apt	79	1	1
+258571	Entire home/apt	79	1	1
+258571	Entire home/apt	79	1	1
+258571	Entire home/apt	79	1	1
+258571	Entire home/apt	79	1	1
+258571	Entire home/apt	79	1	1
+261912	Entire home/apt	175	1	1
+271509	Entire home/apt	175	1	1
+281208	Entire home/apt	196	1	1
+281208	Entire home/apt	196	1	1
+284813	Entire home/apt	159	1	1
+284813	Entire home/apt	159	1	1
+284813	Entire home/apt	159	1	1
+286712	Entire home/apt	218	1	1
+293890	Entire home/apt	80	1	1
+293890	Entire home/apt	80	1	1
+293890	Entire home/apt	80	1	1
+314180	Entire home/apt	300	1	1
+319768	Entire home/apt	135	1	1
+320704	Entire home/apt	97	1	1
+320704	Entire home/apt	97	1	1
+320704	Entire home/apt	97	1	1
+320704	Entire home/apt	97	1	1
+338091	Entire home/apt	225	1	1
+338091	Entire home/apt	225	1	1
+338091	Entire home/apt	225	1	1
+338091	Entire home/apt	225	1	1
+338091	Entire home/apt	225	1	1
+338091	Entire home/apt	225	1	1
+338091	Entire home/apt	225	1	1
+338091	Entire home/apt	225	1	1
+340706	Entire home/apt	110	1	1
+340706	Entire home/apt	110	1	1
+340706	Entire home/apt	110	1	1
+340706	Entire home/apt	110	1	1
+340706	Entire home/apt	110	1	1
+340706	Entire home/apt	110	1	1
+353347	Entire home/apt	200	1	1
+353347	Entire home/apt	200	1	1
+353347	Entire home/apt	200	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+215882	Entire home/apt	99	1	1
+215882	Entire home/apt	99	1	1
+215882	Entire home/apt	99	1	1
+215882	Entire home/apt	99	1	1
+215882	Entire home/apt	99	1	1
+215882	Entire home/apt	99	1	1
+215882	Entire home/apt	99	1	1
+215882	Entire home/apt	99	1	1
+215882	Entire home/apt	99	1	1
+215882	Entire home/apt	99	1	1
+218741	Private room	90	1	1
+218741	Private room	90	1	1
+218741	Private room	90	1	1
+218741	Private room	90	1	1
+218741	Private room	90	1	1
+218741	Private room	90	1	1
+218741	Private room	90	1	1
+218741	Private room	90	1	1
+218741	Private room	90	1	1
+219532	Entire home/apt	275	1	1
+219532	Entire home/apt	275	1	1
+219532	Entire home/apt	275	1	1
+219532	Entire home/apt	275	1	1
+219532	Entire home/apt	275	1	1
+219532	Entire home/apt	275	1	1
+226536	Private room	46	1	1
+226536	Private room	46	1	1
+226536	Private room	46	1	1
+226536	Private room	46	1	1
+226536	Private room	46	1	1
+226536	Private room	46	1	1
+226536	Private room	46	1	1
+226677	Private room	70	1	1
+226677	Private room	70	1	1
+226677	Private room	70	1	1
+226677	Private room	70	1	1
+226677	Private room	70	1	1
+226677	Private room	70	1	1
+227636	Entire home/apt	120	1	1
+227636	Entire home/apt	120	1	1
+227636	Entire home/apt	120	1	1
+227636	Entire home/apt	120	1	1
+227636	Entire home/apt	120	1	1
+227636	Entire home/apt	120	1	1
+227636	Entire home/apt	120	1	1
+227636	Entire home/apt	120	1	1
+227636	Entire home/apt	120	1	1
+227636	Entire home/apt	120	1	1
+227636	Entire home/apt	120	1	1
+231097	Private room	51	1	1
+231097	Private room	51	1	1
+234898	Entire home/apt	80	1	1
+234898	Entire home/apt	80	1	1
+234898	Entire home/apt	80	1	1
+234898	Entire home/apt	80	1	1
+234898	Entire home/apt	80	1	1
+234898	Entire home/apt	80	1	1
+234898	Entire home/apt	80	1	1
+234898	Entire home/apt	80	1	1
+234898	Entire home/apt	80	1	1
+234898	Entire home/apt	80	1	1
+234898	Entire home/apt	80	1	1
+251922	Entire home/apt	93	1	1
+251922	Entire home/apt	93	1	1
+254340	Entire home/apt	95	1	1
+254340	Entire home/apt	95	1	1
+254340	Entire home/apt	95	1	1
+254340	Entire home/apt	95	1	1
+254340	Entire home/apt	95	1	1
+254340	Entire home/apt	95	1	1
+258571	Entire home/apt	79	1	1
+258571	Entire home/apt	79	1	1
+258571	Entire home/apt	79	1	1
+258571	Entire home/apt	79	1	1
+258571	Entire home/apt	79	1	1
+258571	Entire home/apt	79	1	1
+258571	Entire home/apt	79	1	1
+258571	Entire home/apt	79	1	1
+258571	Entire home/apt	79	1	1
+258571	Entire home/apt	79	1	1
+258571	Entire home/apt	79	1	1
+258571	Entire home/apt	79	1	1
+258571	Entire home/apt	79	1	1
+258571	Entire home/apt	79	1	1
+258571	Entire home/apt	79	1	1
+258571	Entire home/apt	79	1	1
+260613	Entire home/apt	135	1	1
+262764	Entire home/apt	154	1	1
+277416	Entire home/apt	149	1	1
+277416	Entire home/apt	149	1	1
+277416	Entire home/apt	149	1	1
+278192	Private room	79	1	1
+278830	Entire home/apt	450	1	1
+278830	Entire home/apt	450	1	1
+278830	Entire home/apt	450	1	1
+278830	Entire home/apt	450	1	1
+278830	Entire home/apt	450	1	1
+278830	Entire home/apt	450	1	1
+278830	Entire home/apt	450	1	1
+278830	Entire home/apt	450	1	1
+278830	Entire home/apt	450	1	1
+278830	Entire home/apt	450	1	1
+281208	Entire home/apt	196	1	1
+281208	Entire home/apt	196	1	1
+281208	Entire home/apt	196	1	1
+281789	Private room	99	1	1
+281789	Private room	99	1	1
+486344	Private room	47	1	1
+486344	Private room	47	1	1
+486344	Private room	47	1	1
+486344	Private room	47	1	1
+486829	Private room	65	1	1
+486829	Private room	65	1	1
+491958	Entire home/apt	75	1	1
+491958	Entire home/apt	75	1	1
+491958	Entire home/apt	75	1	1
+491958	Entire home/apt	75	1	1
+491958	Entire home/apt	75	1	1
+491958	Entire home/apt	75	1	1
+491958	Entire home/apt	75	1	1
+491958	Entire home/apt	75	1	1
+491958	Entire home/apt	75	1	1
+491958	Entire home/apt	75	1	1
+491958	Entire home/apt	75	1	1
+491958	Entire home/apt	75	1	1
+493591	Private room	65	1	1
+493591	Private room	65	1	1
+493591	Private room	65	1	1
+493591	Private room	65	1	1
+493591	Private room	65	1	1
+493591	Private room	65	1	1
+493591	Private room	65	1	1
+496074	Entire home/apt	85	1	1
+496074	Entire home/apt	85	1	1
+496074	Entire home/apt	85	1	1
+496074	Entire home/apt	85	1	1
+496074	Entire home/apt	85	1	1
+496074	Entire home/apt	85	1	1
+496074	Entire home/apt	85	1	1
+496074	Entire home/apt	85	1	1
+496074	Entire home/apt	85	1	1
+496074	Entire home/apt	85	1	1
+506542	Entire home/apt	115	1	1
+506542	Entire home/apt	115	1	1
+506542	Entire home/apt	115	1	1
+506542	Entire home/apt	115	1	1
+506542	Entire home/apt	115	1	1
+522287	Private room	55	1	1
+522287	Private room	55	1	1
+522287	Private room	55	1	1
+522287	Private room	55	1	1
+522287	Private room	55	1	1
+522287	Private room	55	1	1
+522287	Private room	55	1	1
+522287	Private room	55	1	1
+522287	Private room	55	1	1
+535300	Private room	82	1	1
+535300	Private room	82	1	1
+535300	Private room	82	1	1
+535300	Private room	82	1	1
+535300	Private room	82	1	1
+544433	Entire home/apt	95	1	1
+544433	Entire home/apt	95	1	1
+544433	Entire home/apt	95	1	1
+544433	Entire home/apt	95	1	1
+544433	Entire home/apt	95	1	1
+544433	Entire home/apt	95	1	1
+544433	Entire home/apt	95	1	1
+544433	Entire home/apt	95	1	1
+544433	Entire home/apt	95	1	1
+544433	Entire home/apt	95	1	1
+544433	Entire home/apt	95	1	1
+544433	Entire home/apt	95	1	1
+544433	Entire home/apt	95	1	1
+544433	Entire home/apt	95	1	1
+544433	Entire home/apt	95	1	1
+544433	Entire home/apt	95	1	1
+544433	Entire home/apt	95	1	1
+544433	Entire home/apt	95	1	1
+544433	Entire home/apt	95	1	1
+544433	Entire home/apt	95	1	1
+544433	Entire home/apt	95	1	1
+544433	Entire home/apt	95	1	1
+544433	Entire home/apt	95	1	1
+544433	Entire home/apt	95	1	1
+544433	Entire home/apt	95	1	1
+544433	Entire home/apt	95	1	1
+544433	Entire home/apt	95	1	1
+544433	Entire home/apt	95	1	1
+544433	Entire home/apt	95	1	1
+544433	Entire home/apt	95	1	1
+544433	Entire home/apt	95	1	1
+544433	Entire home/apt	95	1	1
+544433	Entire home/apt	95	1	1
+544433	Entire home/apt	95	1	1
+544433	Entire home/apt	95	1	1
+544433	Entire home/apt	95	1	1
+544433	Entire home/apt	95	1	1
+544433	Entire home/apt	95	1	1
+544433	Entire home/apt	95	1	1
+544433	Entire home/apt	95	1	1
+544433	Entire home/apt	95	1	1
+544433	Entire home/apt	95	1	1
+544433	Entire home/apt	95	1	1
+557126	Private room	90	1	1
+557126	Private room	90	1	1
+557126	Private room	90	1	1
+557126	Private room	90	1	1
+557126	Private room	90	1	1
+557126	Private room	90	1	1
+557126	Private room	90	1	1
+557126	Private room	90	1	1
+557126	Private room	90	1	1
+557126	Private room	90	1	1
+565703	Entire home/apt	128	1	1
+565703	Entire home/apt	128	1	1
+565703	Entire home/apt	128	1	1
+565703	Entire home/apt	128	1	1
+565703	Entire home/apt	128	1	1
+565703	Entire home/apt	128	1	1
+573942	Private room	65	1	1
+573942	Private room	65	1	1
+573942	Private room	65	1	1
+573942	Private room	65	1	1
+573942	Private room	65	1	1
+573942	Private room	65	1	1
+573942	Private room	65	1	1
+573942	Private room	65	1	1
+604600	Entire home/apt	200	1	1
+609610	Entire home/apt	90	1	1
+611509	Private room	65	1	1
+611509	Private room	65	1	1
+611509	Private room	65	1	1
+611509	Private room	65	1	1
+611509	Private room	65	1	1
+611509	Private room	65	1	1
+611509	Private room	65	1	1
+619366	Entire home/apt	115	1	1
+619366	Entire home/apt	115	1	1
+619366	Entire home/apt	115	1	1
+619366	Entire home/apt	115	1	1
+619366	Entire home/apt	115	1	1
+619366	Entire home/apt	115	1	1
+619366	Entire home/apt	115	1	1
+619366	Entire home/apt	115	1	1
+619366	Entire home/apt	115	1	1
+619366	Entire home/apt	115	1	1
+619366	Entire home/apt	115	1	1
+619366	Entire home/apt	115	1	1
+619366	Entire home/apt	115	1	1
+619366	Entire home/apt	115	1	1
+619366	Entire home/apt	115	1	1
+619366	Entire home/apt	115	1	1
+619366	Entire home/apt	115	1	1
+619366	Entire home/apt	115	1	1
+619366	Entire home/apt	115	1	1
+631445	Entire home/apt	165	1	1
+631445	Entire home/apt	165	1	1
+631445	Entire home/apt	165	1	1
+631445	Entire home/apt	165	1	1
+637710	Entire home/apt	240	1	1
+637710	Entire home/apt	240	1	1
+637710	Entire home/apt	240	1	1
+637710	Entire home/apt	240	1	1
+637710	Entire home/apt	240	1	1
+637710	Entire home/apt	240	1	1
+637710	Entire home/apt	240	1	1
+637710	Entire home/apt	240	1	1
+649243	Private room	75	1	1
+649243	Private room	75	1	1
+649243	Private room	75	1	1
+649243	Private room	75	1	1
+649243	Private room	75	1	1
+649243	Private room	75	1	1
+649243	Private room	75	1	1
+649243	Private room	75	1	1
+649243	Private room	75	1	1
+649243	Private room	75	1	1
+649243	Private room	75	1	1
+654734	Entire home/apt	175	1	1
+654734	Entire home/apt	175	1	1
+654734	Entire home/apt	175	1	1
+668169	Private room	55	1	1
+668169	Private room	55	1	1
+670056	Private room	56	1	1
+670056	Private room	56	1	1
+670056	Private room	56	1	1
+670056	Private room	56	1	1
+685600	Private room	75	1	1
+685600	Private room	75	1	1
+685600	Private room	75	1	1
+703058	Entire home/apt	150	1	1
+703058	Entire home/apt	150	1	1
+703058	Entire home/apt	150	1	1
+703058	Entire home/apt	150	1	1
+703058	Entire home/apt	150	1	1
+703058	Entire home/apt	150	1	1
+703058	Entire home/apt	150	1	1
+703058	Entire home/apt	150	1	1
+706385	Entire home/apt	138	1	1
+706385	Entire home/apt	138	1	1
+706385	Entire home/apt	138	1	1
+706385	Entire home/apt	138	1	1
+706385	Entire home/apt	138	1	1
+706385	Entire home/apt	138	1	1
+706385	Entire home/apt	138	1	1
+706385	Entire home/apt	138	1	1
+706385	Entire home/apt	138	1	1
+706385	Entire home/apt	138	1	1
+706385	Entire home/apt	138	1	1
+708774	Entire home/apt	95	1	1
+708774	Entire home/apt	95	1	1
+708774	Entire home/apt	95	1	1
+714043	Entire home/apt	86	1	1
+714043	Entire home/apt	86	1	1
+714043	Entire home/apt	86	1	1
+714043	Entire home/apt	86	1	1
+723846	Entire home/apt	79	1	1
+723846	Entire home/apt	79	1	1
+723846	Entire home/apt	79	1	1
+723846	Entire home/apt	79	1	1
+284813	Entire home/apt	159	1	1
+286080	Entire home/apt	175	1	1
+286080	Entire home/apt	175	1	1
+286080	Entire home/apt	175	1	1
+286080	Entire home/apt	175	1	1
+286080	Entire home/apt	175	1	1
+286712	Entire home/apt	218	1	1
+286712	Entire home/apt	218	1	1
+286712	Entire home/apt	218	1	1
+286712	Entire home/apt	218	1	1
+286712	Entire home/apt	218	1	1
+286712	Entire home/apt	218	1	1
+286712	Entire home/apt	218	1	1
+320704	Entire home/apt	97	1	1
+320704	Entire home/apt	97	1	1
+320704	Entire home/apt	97	1	1
+320704	Entire home/apt	97	1	1
+338091	Entire home/apt	225	1	1
+338091	Entire home/apt	225	1	1
+338091	Entire home/apt	225	1	1
+338091	Entire home/apt	225	1	1
+338091	Entire home/apt	225	1	1
+338091	Entire home/apt	225	1	1
+338091	Entire home/apt	225	1	1
+338091	Entire home/apt	225	1	1
+340706	Entire home/apt	110	1	1
+340706	Entire home/apt	110	1	1
+340706	Entire home/apt	110	1	1
+340706	Entire home/apt	110	1	1
+340706	Entire home/apt	110	1	1
+340706	Entire home/apt	110	1	1
+340706	Entire home/apt	110	1	1
+340706	Entire home/apt	110	1	1
+353110	Entire home/apt	135	1	1
+353110	Entire home/apt	135	1	1
+356608	Entire home/apt	196	1	1
+356608	Entire home/apt	196	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+365550	Private room	89	1	1
+385438	Entire home/apt	175	1	1
+387079	Entire home/apt	119	1	1
+387079	Entire home/apt	119	1	1
+387079	Entire home/apt	119	1	1
+387079	Entire home/apt	119	1	1
+387079	Entire home/apt	119	1	1
+394408	Entire home/apt	150	1	1
+394408	Entire home/apt	150	1	1
+394408	Entire home/apt	150	1	1
+394408	Entire home/apt	150	1	1
+394408	Entire home/apt	150	1	1
+394408	Entire home/apt	150	1	1
+394408	Entire home/apt	150	1	1
+394408	Entire home/apt	150	1	1
+429453	Private room	150	1	1
+430453	Entire home/apt	149	1	1
+430453	Entire home/apt	149	1	1
+430453	Entire home/apt	149	1	1
+430453	Entire home/apt	149	1	1
+430453	Entire home/apt	149	1	1
+430453	Entire home/apt	149	1	1
+430453	Entire home/apt	149	1	1
+443580	Private room	52	1	1
+443580	Private room	52	1	1
+443580	Private room	52	1	1
+443580	Private room	52	1	1
+443580	Private room	52	1	1
+443580	Private room	52	1	1
+447488	Private room	100	1	1
+447488	Private room	100	1	1
+447488	Private room	100	1	1
+447488	Private room	100	1	1
+456040	Private room	55	1	1
+456040	Private room	55	1	1
+456040	Private room	55	1	1
+456040	Private room	55	1	1
+456040	Private room	55	1	1
+456040	Private room	55	1	1
+456040	Private room	55	1	1
+456040	Private room	55	1	1
+458186	Private room	61	1	1
+458186	Private room	61	1	1
+458193	Private room	69	1	1
+461234	Entire home/apt	99	1	1
+461234	Entire home/apt	99	1	1
+461234	Entire home/apt	99	1	1
+461234	Entire home/apt	99	1	1
+461234	Entire home/apt	99	1	1
+461234	Entire home/apt	99	1	1
+461234	Entire home/apt	99	1	1
+461234	Entire home/apt	99	1	1
+461234	Entire home/apt	99	1	1
+461234	Entire home/apt	99	1	1
+461234	Entire home/apt	99	1	1
+461234	Entire home/apt	99	1	1
+421168	Private room	69	1	1
+421168	Private room	69	1	1
+421168	Private room	69	1	1
+421168	Private room	69	1	1
+421168	Private room	69	1	1
+421168	Private room	69	1	1
+421168	Private room	69	1	1
+421168	Private room	69	1	1
+421168	Private room	69	1	1
+421168	Private room	69	1	1
+421168	Private room	69	1	1
+421168	Private room	69	1	1
+421168	Private room	69	1	1
+421168	Private room	69	1	1
+421168	Private room	69	1	1
+421168	Private room	69	1	1
+421168	Private room	69	1	1
+421168	Private room	69	1	1
+421168	Private room	69	1	1
+421168	Private room	69	1	1
+421168	Private room	69	1	1
+421168	Private room	69	1	1
+421168	Private room	69	1	1
+421168	Private room	69	1	1
+421168	Private room	69	1	1
+421168	Private room	69	1	1
+421168	Private room	69	1	1
+421168	Private room	69	1	1
+421168	Private room	69	1	1
+421168	Private room	69	1	1
+421168	Private room	69	1	1
+421168	Private room	69	1	1
+421168	Private room	69	1	1
+421168	Private room	69	1	1
+421168	Private room	69	1	1
+421168	Private room	69	1	1
+426089	Entire home/apt	219	1	1
+426089	Entire home/apt	219	1	1
+429453	Private room	150	1	1
+430453	Entire home/apt	149	1	1
+430453	Entire home/apt	149	1	1
+430453	Entire home/apt	149	1	1
+430609	Entire home/apt	325	1	1
+430610	Entire home/apt	254	1	1
+430610	Entire home/apt	254	1	1
+430610	Entire home/apt	254	1	1
+430610	Entire home/apt	254	1	1
+430610	Entire home/apt	254	1	1
+430610	Entire home/apt	254	1	1
+430610	Entire home/apt	254	1	1
+443580	Private room	52	1	1
+443580	Private room	52	1	1
+443580	Private room	52	1	1
+443580	Private room	52	1	1
+443580	Private room	52	1	1
+443580	Private room	52	1	1
+443580	Private room	52	1	1
+443580	Private room	52	1	1
+443580	Private room	52	1	1
+443580	Private room	52	1	1
+443580	Private room	52	1	1
+443580	Private room	52	1	1
+443580	Private room	52	1	1
+443580	Private room	52	1	1
+443580	Private room	52	1	1
+444221	Private room	49	1	1
+444221	Private room	49	1	1
+444221	Private room	49	1	1
+444221	Private room	49	1	1
+444221	Private room	49	1	1
+444221	Private room	49	1	1
+444221	Private room	49	1	1
+444221	Private room	49	1	1
+446276	Entire home/apt	195	1	1
+446276	Entire home/apt	195	1	1
+447488	Private room	100	1	1
+447488	Private room	100	1	1
+447488	Private room	100	1	1
+449602	Shared room	65	1	1
+449602	Shared room	65	1	1
+449602	Shared room	65	1	1
+449602	Shared room	65	1	1
+456040	Private room	55	1	1
+456040	Private room	55	1	1
+456040	Private room	55	1	1
+456040	Private room	55	1	1
+456040	Private room	55	1	1
+456040	Private room	55	1	1
+456040	Private room	55	1	1
+456040	Private room	55	1	1
+456040	Private room	55	1	1
+456040	Private room	55	1	1
+456040	Private room	55	1	1
+456040	Private room	55	1	1
+456040	Private room	55	1	1
+456040	Private room	55	1	1
+456040	Private room	55	1	1
+456040	Private room	55	1	1
+458183	Private room	52	1	1
+463768	Entire home/apt	375	1	1
+475361	Entire home/apt	89	1	1
+475361	Entire home/apt	89	1	1
+475361	Entire home/apt	89	1	1
+475361	Entire home/apt	89	1	1
+475361	Entire home/apt	89	1	1
+486344	Private room	47	1	1
+486344	Private room	47	1	1
+3139972	Shared room	30	1	1
+119103	Private room	79	1	1
+119103	Private room	79	1	1
+119103	Private room	79	1	1
+119103	Private room	79	1	1
+119103	Private room	79	1	1
+119103	Private room	79	1	1
+119103	Private room	79	1	1
+119103	Private room	79	1	1
+119103	Private room	79	1	1
+119103	Private room	79	1	1
+119103	Private room	79	1	1
+119103	Private room	79	1	1
+119103	Private room	79	1	1
+119103	Private room	79	1	1
+119103	Private room	79	1	1
+119103	Private room	79	1	1
+119103	Private room	79	1	1
+119103	Private room	79	1	1
+119103	Private room	79	1	1
+119103	Private room	79	1	1
+119103	Private room	79	1	1
+119103	Private room	79	1	1
+119103	Private room	79	1	1
+119103	Private room	79	1	1
+119103	Private room	79	1	1
+119103	Private room	79	1	1
+119103	Private room	79	1	1
+119103	Private room	79	1	1
+119103	Private room	79	1	1
+119103	Private room	79	1	1
+119103	Private room	79	1	1
+119103	Private room	79	1	1
+119103	Private room	79	1	1
+119103	Private room	79	1	1
+132160	Entire home/apt	145	1	1
+132160	Entire home/apt	145	1	1
+132160	Entire home/apt	145	1	1
+140331	Private room	88	1	1
+140331	Private room	88	1	1
+140331	Private room	88	1	1
+143580	Private room	75	1	1
+143580	Private room	75	1	1
+143580	Private room	75	1	1
+143580	Private room	75	1	1
+143580	Private room	75	1	1
+143580	Private room	75	1	1
+143580	Private room	75	1	1
+143580	Private room	75	1	1
+143580	Private room	75	1	1
+143580	Private room	75	1	1
+143580	Private room	75	1	1
+143580	Private room	75	1	1
+143580	Private room	75	1	1
+143580	Private room	75	1	1
+143580	Private room	75	1	1
+143580	Private room	75	1	1
+143580	Private room	75	1	1
+143580	Private room	75	1	1
+143580	Private room	75	1	1
+143580	Private room	75	1	1
+143580	Private room	75	1	1
+143580	Private room	75	1	1
+143580	Private room	75	1	1
+143580	Private room	75	1	1
+146301	Entire home/apt	135	1	1
+158345	Private room	55	1	1
+158345	Private room	55	1	1
+158345	Private room	55	1	1
+158345	Private room	55	1	1
+158345	Private room	55	1	1
+158345	Private room	55	1	1
+158345	Private room	55	1	1
+158345	Private room	55	1	1
+158345	Private room	55	1	1
+158345	Private room	55	1	1
+158345	Private room	55	1	1
+158345	Private room	55	1	1
+158345	Private room	55	1	1
+158345	Private room	55	1	1
+158345	Private room	55	1	1
+158345	Private room	55	1	1
+158345	Private room	55	1	1
+158345	Private room	55	1	1
+158345	Private room	55	1	1
+158345	Private room	55	1	1
+158345	Private room	55	1	1
+158345	Private room	55	1	1
+158345	Private room	55	1	1
+158345	Private room	55	1	1
+158345	Private room	55	1	1
+158345	Private room	55	1	1
+158345	Private room	55	1	1
+158345	Private room	55	1	1
+158345	Private room	55	1	1
+158345	Private room	55	1	1
+158345	Private room	55	1	1
+158345	Private room	55	1	1
+158345	Private room	55	1	1
+158345	Private room	55	1	1
+158345	Private room	55	1	1
+158345	Private room	55	1	1
+158345	Private room	55	1	1
+158345	Private room	55	1	1
+158345	Private room	55	1	1
+158345	Private room	55	1	1
+158345	Private room	55	1	1
+158345	Private room	55	1	1
+461234	Entire home/apt	99	1	1
+461234	Entire home/apt	99	1	1
+461234	Entire home/apt	99	1	1
+461234	Entire home/apt	99	1	1
+461234	Entire home/apt	99	1	1
+461234	Entire home/apt	99	1	1
+461234	Entire home/apt	99	1	1
+461234	Entire home/apt	99	1	1
+461234	Entire home/apt	99	1	1
+461234	Entire home/apt	99	1	1
+461234	Entire home/apt	99	1	1
+461234	Entire home/apt	99	1	1
+461234	Entire home/apt	99	1	1
+461234	Entire home/apt	99	1	1
+461234	Entire home/apt	99	1	1
+461234	Entire home/apt	99	1	1
+461234	Entire home/apt	99	1	1
+461567	Entire home/apt	70	1	1
+461567	Entire home/apt	70	1	1
+461567	Entire home/apt	70	1	1
+461567	Entire home/apt	70	1	1
+461567	Entire home/apt	70	1	1
+461567	Entire home/apt	70	1	1
+461567	Entire home/apt	70	1	1
+461567	Entire home/apt	70	1	1
+461567	Entire home/apt	70	1	1
+461567	Entire home/apt	70	1	1
+461567	Entire home/apt	70	1	1
+461567	Entire home/apt	70	1	1
+461567	Entire home/apt	70	1	1
+461567	Entire home/apt	70	1	1
+461567	Entire home/apt	70	1	1
+461567	Entire home/apt	70	1	1
+461567	Entire home/apt	70	1	1
+461567	Entire home/apt	70	1	1
+463768	Entire home/apt	375	1	1
+463768	Entire home/apt	375	1	1
+463768	Entire home/apt	375	1	1
+479653	Entire home/apt	150	1	1
+479653	Entire home/apt	150	1	1
+479653	Entire home/apt	150	1	1
+479653	Entire home/apt	150	1	1
+479653	Entire home/apt	150	1	1
+479653	Entire home/apt	150	1	1
+479653	Entire home/apt	150	1	1
+479653	Entire home/apt	150	1	1
+479653	Entire home/apt	150	1	1
+479653	Entire home/apt	150	1	1
+479653	Entire home/apt	150	1	1
+479653	Entire home/apt	150	1	1
+479653	Entire home/apt	150	1	1
+481220	Entire home/apt	195	1	1
+481220	Entire home/apt	195	1	1
+481220	Entire home/apt	195	1	1
+481220	Entire home/apt	195	1	1
+481220	Entire home/apt	195	1	1
+481220	Entire home/apt	195	1	1
+481220	Entire home/apt	195	1	1
+481220	Entire home/apt	195	1	1
+481220	Entire home/apt	195	1	1
+481220	Entire home/apt	195	1	1
+481220	Entire home/apt	195	1	1
+481220	Entire home/apt	195	1	1
+481220	Entire home/apt	195	1	1
+481220	Entire home/apt	195	1	1
+481220	Entire home/apt	195	1	1
+481220	Entire home/apt	195	1	1
+481220	Entire home/apt	195	1	1
+481220	Entire home/apt	195	1	1
+481220	Entire home/apt	195	1	1
+481220	Entire home/apt	195	1	1
+481220	Entire home/apt	195	1	1
+481220	Entire home/apt	195	1	1
+481220	Entire home/apt	195	1	1
+481220	Entire home/apt	195	1	1
+481220	Entire home/apt	195	1	1
+481220	Entire home/apt	195	1	1
+481220	Entire home/apt	195	1	1
+486829	Private room	65	1	1
+486829	Private room	65	1	1
+486829	Private room	65	1	1
+486829	Private room	65	1	1
+486829	Private room	65	1	1
+488268	Private room	58	1	1
+488268	Private room	58	1	1
+488268	Private room	58	1	1
+488268	Private room	58	1	1
+488268	Private room	58	1	1
+488268	Private room	58	1	1
+490076	Entire home/apt	84	1	1
+490076	Entire home/apt	84	1	1
+490076	Entire home/apt	84	1	1
+490076	Entire home/apt	84	1	1
+490076	Entire home/apt	84	1	1
+490076	Entire home/apt	84	1	1
+490076	Entire home/apt	84	1	1
+490076	Entire home/apt	84	1	1
+490076	Entire home/apt	84	1	1
+490076	Entire home/apt	84	1	1
+490076	Entire home/apt	84	1	1
+490076	Entire home/apt	84	1	1
+490076	Entire home/apt	84	1	1
+490076	Entire home/apt	84	1	1
+490076	Entire home/apt	84	1	1
+490076	Entire home/apt	84	1	1
+490076	Entire home/apt	84	1	1
+490076	Entire home/apt	84	1	1
+158345	Private room	55	1	1
+158345	Private room	55	1	1
+158345	Private room	55	1	1
+158345	Private room	55	1	1
+158345	Private room	55	1	1
+158345	Private room	55	1	1
+174636	Private room	88	1	1
+174636	Private room	88	1	1
+174636	Private room	88	1	1
+176678	Private room	64	1	1
+176678	Private room	64	1	1
+176678	Private room	64	1	1
+180939	Entire home/apt	95	1	1
+180939	Entire home/apt	95	1	1
+180939	Entire home/apt	95	1	1
+180939	Entire home/apt	95	1	1
+180939	Entire home/apt	95	1	1
+180939	Entire home/apt	95	1	1
+180939	Entire home/apt	95	1	1
+180939	Entire home/apt	95	1	1
+180939	Entire home/apt	95	1	1
+180939	Entire home/apt	95	1	1
+180939	Entire home/apt	95	1	1
+190984	Entire home/apt	110	1	1
+190984	Entire home/apt	110	1	1
+190984	Entire home/apt	110	1	1
+190984	Entire home/apt	110	1	1
+190984	Entire home/apt	110	1	1
+190984	Entire home/apt	110	1	1
+190984	Entire home/apt	110	1	1
+190984	Entire home/apt	110	1	1
+190984	Entire home/apt	110	1	1
+190984	Entire home/apt	110	1	1
+190984	Entire home/apt	110	1	1
+202260	Entire home/apt	89	1	1
+202260	Entire home/apt	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+208356	Private room	89	1	1
+215954	Private room	87	1	1
+226495	Entire home/apt	170	1	1
+226495	Entire home/apt	170	1	1
+226495	Entire home/apt	170	1	1
+226495	Entire home/apt	170	1	1
+226495	Entire home/apt	170	1	1
+226495	Entire home/apt	170	1	1
+226495	Entire home/apt	170	1	1
+231097	Private room	51	1	1
+231097	Private room	51	1	1
+231097	Private room	51	1	1
+231097	Private room	51	1	1
+231097	Private room	51	1	1
+231097	Private room	51	1	1
+231097	Private room	51	1	1
+231097	Private room	51	1	1
+231097	Private room	51	1	1
+231097	Private room	51	1	1
+231097	Private room	51	1	1
+231097	Private room	51	1	1
+231097	Private room	51	1	1
+240920	Private room	45	1	1
+240920	Private room	45	1	1
+241032	Entire home/apt	85	1	1
+241032	Entire home/apt	85	1	1
+241032	Entire home/apt	85	1	1
+241032	Entire home/apt	85	1	1
+241032	Entire home/apt	85	1	1
+241032	Entire home/apt	85	1	1
+241032	Entire home/apt	85	1	1
+241032	Entire home/apt	85	1	1
+241032	Entire home/apt	85	1	1
+241032	Entire home/apt	85	1	1
+241032	Entire home/apt	85	1	1
+241032	Entire home/apt	85	1	1
+241032	Entire home/apt	85	1	1
+241032	Entire home/apt	85	1	1
+241032	Entire home/apt	85	1	1
+241032	Entire home/apt	85	1	1
+241032	Entire home/apt	85	1	1
+241032	Entire home/apt	85	1	1
+241032	Entire home/apt	85	1	1
+241032	Entire home/apt	85	1	1
+241032	Entire home/apt	85	1	1
+241032	Entire home/apt	85	1	1
+241032	Entire home/apt	85	1	1
+241032	Entire home/apt	85	1	1
+241032	Entire home/apt	85	1	1
+241032	Entire home/apt	85	1	1
+241032	Entire home/apt	85	1	1
+241032	Entire home/apt	85	1	1
+241032	Entire home/apt	85	1	1
+241032	Entire home/apt	85	1	1
+241032	Entire home/apt	85	1	1
+251922	Entire home/apt	93	1	1
+251922	Entire home/apt	93	1	1
+251922	Entire home/apt	93	1	1
+251922	Entire home/apt	93	1	1
+251922	Entire home/apt	93	1	1
+251922	Entire home/apt	93	1	1
+251922	Entire home/apt	93	1	1
+251922	Entire home/apt	93	1	1
+251922	Entire home/apt	93	1	1
+251922	Entire home/apt	93	1	1
+251922	Entire home/apt	93	1	1
+251922	Entire home/apt	93	1	1
+264829	Entire home/apt	165	1	1
+264829	Entire home/apt	165	1	1
+264829	Entire home/apt	165	1	1
+264829	Entire home/apt	165	1	1
+264829	Entire home/apt	165	1	1
+264829	Entire home/apt	165	1	1
+264829	Entire home/apt	165	1	1
+265901	Private room	69	1	1
+265901	Private room	69	1	1
+279063	Private room	89	1	1
+279063	Private room	89	1	1
+279063	Private room	89	1	1
+279063	Private room	89	1	1
+279063	Private room	89	1	1
+279063	Private room	89	1	1
+279063	Private room	89	1	1
+279063	Private room	89	1	1
+279063	Private room	89	1	1
+279063	Private room	89	1	1
+279063	Private room	89	1	1
+279063	Private room	89	1	1
+279063	Private room	89	1	1
+279063	Private room	89	1	1
+279063	Private room	89	1	1
+279063	Private room	89	1	1
+279063	Private room	89	1	1
+279063	Private room	89	1	1
+279063	Private room	89	1	1
+279063	Private room	89	1	1
+279063	Private room	89	1	1
+279063	Private room	89	1	1
+279063	Private room	89	1	1
+279063	Private room	89	1	1
+279063	Private room	89	1	1
+279063	Private room	89	1	1
+279063	Private room	89	1	1
+279063	Private room	89	1	1
+279063	Private room	89	1	1
+279063	Private room	89	1	1
+279063	Private room	89	1	1
+279063	Private room	89	1	1
+279063	Private room	89	1	1
+279063	Private room	89	1	1
+279063	Private room	89	1	1
+279063	Private room	89	1	1
+279063	Private room	89	1	1
+279063	Private room	89	1	1
+284087	Entire home/apt	175	1	1
+284087	Entire home/apt	175	1	1
+284087	Entire home/apt	175	1	1
+284087	Entire home/apt	175	1	1
+284087	Entire home/apt	175	1	1
+284087	Entire home/apt	175	1	1
+315120	Entire home/apt	125	1	1
+315120	Entire home/apt	125	1	1
+315120	Entire home/apt	125	1	1
+315120	Entire home/apt	125	1	1
+315120	Entire home/apt	125	1	1
+315120	Entire home/apt	125	1	1
+315120	Entire home/apt	125	1	1
+315120	Entire home/apt	125	1	1
+315120	Entire home/apt	125	1	1
+315120	Entire home/apt	125	1	1
+315120	Entire home/apt	125	1	1
+315120	Entire home/apt	125	1	1
+315120	Entire home/apt	125	1	1
+315120	Entire home/apt	125	1	1
+315120	Entire home/apt	125	1	1
+315120	Entire home/apt	125	1	1
+320704	Entire home/apt	97	1	1
+320704	Entire home/apt	97	1	1
+320704	Entire home/apt	97	1	1
+320704	Entire home/apt	97	1	1
+320704	Entire home/apt	97	1	1
+320704	Entire home/apt	97	1	1
+320704	Entire home/apt	97	1	1
+338091	Entire home/apt	225	1	1
+338091	Entire home/apt	225	1	1
+338091	Entire home/apt	225	1	1
+338091	Entire home/apt	225	1	1
+338091	Entire home/apt	225	1	1
+338091	Entire home/apt	225	1	1
+353039	Entire home/apt	155	1	1
+353039	Entire home/apt	155	1	1
+723846	Entire home/apt	79	1	1
+723846	Entire home/apt	79	1	1
+723846	Entire home/apt	79	1	1
+723846	Entire home/apt	79	1	1
+741699	Entire home/apt	168	1	1
+741699	Entire home/apt	168	1	1
+741699	Entire home/apt	168	1	1
+746380	Private room	69	1	1
+746380	Private room	69	1	1
+746380	Private room	69	1	1
+746380	Private room	69	1	1
+746380	Private room	69	1	1
+746380	Private room	69	1	1
+746380	Private room	69	1	1
+746380	Private room	69	1	1
+748526	Entire home/apt	69	1	1
+748526	Entire home/apt	69	1	1
+749758	Entire home/apt	98	1	1
+749758	Entire home/apt	98	1	1
+769213	Entire home/apt	124	1	1
+769213	Entire home/apt	124	1	1
+769213	Entire home/apt	124	1	1
+769213	Entire home/apt	124	1	1
+769213	Entire home/apt	124	1	1
+769213	Entire home/apt	124	1	1
+769213	Entire home/apt	124	1	1
+769213	Entire home/apt	124	1	1
+769213	Entire home/apt	124	1	1
+769213	Entire home/apt	124	1	1
+769213	Entire home/apt	124	1	1
+774659	Entire home/apt	105	1	1
+774659	Entire home/apt	105	1	1
+774659	Entire home/apt	105	1	1
+774659	Entire home/apt	105	1	1
+774659	Entire home/apt	105	1	1
+777159	Entire home/apt	150	1	1
+777159	Entire home/apt	150	1	1
+783061	Private room	60	1	1
+783061	Private room	60	1	1
+783061	Private room	60	1	1
+783061	Private room	60	1	1
+783061	Private room	60	1	1
+783061	Private room	60	1	1
+788146	Private room	58	1	1
+788146	Private room	58	1	1
+789229	Entire home/apt	149	1	1
+789229	Entire home/apt	149	1	1
+789229	Entire home/apt	149	1	1
+789229	Entire home/apt	149	1	1
+789966	Entire home/apt	105	1	1
+789966	Entire home/apt	105	1	1
+789966	Entire home/apt	105	1	1
+789966	Entire home/apt	105	1	1
+789966	Entire home/apt	105	1	1
+793629	Entire home/apt	95	1	1
+793629	Entire home/apt	95	1	1
+793629	Entire home/apt	95	1	1
+793629	Entire home/apt	95	1	1
+793629	Entire home/apt	95	1	1
+793629	Entire home/apt	95	1	1
+793629	Entire home/apt	95	1	1
+793629	Entire home/apt	95	1	1
+793629	Entire home/apt	95	1	1
+793629	Entire home/apt	95	1	1
+793629	Entire home/apt	95	1	1
+793629	Entire home/apt	95	1	1
+793629	Entire home/apt	95	1	1
+793629	Entire home/apt	95	1	1
+793629	Entire home/apt	95	1	1
+793629	Entire home/apt	95	1	1
+796594	Entire home/apt	199	1	1
+796594	Entire home/apt	199	1	1
+799882	Private room	40	1	1
+799882	Private room	40	1	1
+808811	Entire home/apt	175	1	1
+815017	Shared room	55	1	1
+815017	Shared room	55	1	1
+815017	Shared room	55	1	1
+815017	Shared room	55	1	1
+815017	Shared room	55	1	1
+815017	Shared room	55	1	1
+815017	Shared room	55	1	1
+815017	Shared room	55	1	1
+815017	Shared room	55	1	1
+815017	Shared room	55	1	1
+815017	Shared room	55	1	1
+815017	Shared room	55	1	1
+815017	Shared room	55	1	1
+815017	Shared room	55	1	1
+815017	Shared room	55	1	1
+815017	Shared room	55	1	1
+815017	Shared room	55	1	1
+823989	Entire home/apt	105	1	1
+823989	Entire home/apt	105	1	1
+823989	Entire home/apt	105	1	1
+823989	Entire home/apt	105	1	1
+823989	Entire home/apt	105	1	1
+825574	Entire home/apt	150	1	1
+825574	Entire home/apt	150	1	1
+825574	Entire home/apt	150	1	1
+826436	Private room	75	1	1
+826436	Private room	75	1	1
+828298	Entire home/apt	175	1	1
+841049	Private room	58	1	1
+841049	Private room	58	1	1
+841049	Private room	58	1	1
+841049	Private room	58	1	1
+841049	Private room	58	1	1
+841049	Private room	58	1	1
+486829	Private room	65	1	1
+486829	Private room	65	1	1
+486829	Private room	65	1	1
+488268	Private room	58	1	1
+488268	Private room	58	1	1
+488268	Private room	58	1	1
+492287	Private room	88	1	1
+492287	Private room	88	1	1
+492287	Private room	88	1	1
+492287	Private room	88	1	1
+492287	Private room	88	1	1
+492287	Private room	88	1	1
+492287	Private room	88	1	1
+492287	Private room	88	1	1
+492287	Private room	88	1	1
+492287	Private room	88	1	1
+493591	Private room	65	1	1
+493591	Private room	65	1	1
+493591	Private room	65	1	1
+493591	Private room	65	1	1
+493591	Private room	65	1	1
+493591	Private room	65	1	1
+493591	Private room	65	1	1
+493591	Private room	65	1	1
+493591	Private room	65	1	1
+493591	Private room	65	1	1
+493591	Private room	65	1	1
+496074	Entire home/apt	85	1	1
+496074	Entire home/apt	85	1	1
+496074	Entire home/apt	85	1	1
+506542	Entire home/apt	115	1	1
+506542	Entire home/apt	115	1	1
+506542	Entire home/apt	115	1	1
+506542	Entire home/apt	115	1	1
+506542	Entire home/apt	115	1	1
+506542	Entire home/apt	115	1	1
+506542	Entire home/apt	115	1	1
+506542	Entire home/apt	115	1	1
+506542	Entire home/apt	115	1	1
+523883	Private room	68	1	1
+523883	Private room	68	1	1
+523883	Private room	68	1	1
+523883	Private room	68	1	1
+529090	Private room	150	1	1
+529090	Private room	150	1	1
+529090	Private room	150	1	1
+529090	Private room	150	1	1
+529090	Private room	150	1	1
+529090	Private room	150	1	1
+529090	Private room	150	1	1
+529090	Private room	150	1	1
+529090	Private room	150	1	1
+533443	Private room	55	1	1
+533443	Private room	55	1	1
+533443	Private room	55	1	1
+533443	Private room	55	1	1
+533443	Private room	55	1	1
+533443	Private room	55	1	1
+533443	Private room	55	1	1
+533443	Private room	55	1	1
+533443	Private room	55	1	1
+533443	Private room	55	1	1
+533443	Private room	55	1	1
+533443	Private room	55	1	1
+533443	Private room	55	1	1
+533443	Private room	55	1	1
+533443	Private room	55	1	1
+533443	Private room	55	1	1
+533443	Private room	55	1	1
+533443	Private room	55	1	1
+533443	Private room	55	1	1
+533443	Private room	55	1	1
+533443	Private room	55	1	1
+533443	Private room	55	1	1
+555182	Entire home/apt	250	1	1
+555182	Entire home/apt	250	1	1
+585418	Shared room	59	1	1
+585418	Shared room	59	1	1
+585418	Shared room	59	1	1
+585418	Shared room	59	1	1
+585418	Shared room	59	1	1
+585418	Shared room	59	1	1
+585418	Shared room	59	1	1
+585418	Shared room	59	1	1
+585418	Shared room	59	1	1
+585418	Shared room	59	1	1
+585418	Shared room	59	1	1
+585418	Shared room	59	1	1
+585418	Shared room	59	1	1
+585418	Shared room	59	1	1
+585418	Shared room	59	1	1
+585418	Shared room	59	1	1
+585418	Shared room	59	1	1
+585418	Shared room	59	1	1
+585418	Shared room	59	1	1
+585418	Shared room	59	1	1
+585418	Shared room	59	1	1
+585418	Shared room	59	1	1
+609701	Entire home/apt	85	1	1
+609701	Entire home/apt	85	1	1
+609701	Entire home/apt	85	1	1
+609701	Entire home/apt	85	1	1
+609701	Entire home/apt	85	1	1
+609701	Entire home/apt	85	1	1
+609701	Entire home/apt	85	1	1
+609701	Entire home/apt	85	1	1
+609701	Entire home/apt	85	1	1
+609701	Entire home/apt	85	1	1
+609701	Entire home/apt	85	1	1
+490076	Entire home/apt	84	1	1
+491958	Entire home/apt	75	1	1
+491958	Entire home/apt	75	1	1
+491958	Entire home/apt	75	1	1
+491958	Entire home/apt	75	1	1
+491958	Entire home/apt	75	1	1
+491958	Entire home/apt	75	1	1
+491958	Entire home/apt	75	1	1
+491958	Entire home/apt	75	1	1
+491958	Entire home/apt	75	1	1
+491958	Entire home/apt	75	1	1
+491958	Entire home/apt	75	1	1
+491958	Entire home/apt	75	1	1
+491958	Entire home/apt	75	1	1
+491958	Entire home/apt	75	1	1
+491958	Entire home/apt	75	1	1
+491958	Entire home/apt	75	1	1
+491958	Entire home/apt	75	1	1
+491958	Entire home/apt	75	1	1
+491958	Entire home/apt	75	1	1
+491958	Entire home/apt	75	1	1
+491958	Entire home/apt	75	1	1
+491958	Entire home/apt	75	1	1
+491958	Entire home/apt	75	1	1
+491958	Entire home/apt	75	1	1
+492287	Private room	88	1	1
+492287	Private room	88	1	1
+492287	Private room	88	1	1
+492287	Private room	88	1	1
+492287	Private room	88	1	1
+506542	Entire home/apt	115	1	1
+506542	Entire home/apt	115	1	1
+506542	Entire home/apt	115	1	1
+506542	Entire home/apt	115	1	1
+506542	Entire home/apt	115	1	1
+506542	Entire home/apt	115	1	1
+506542	Entire home/apt	115	1	1
+523883	Private room	68	1	1
+523883	Private room	68	1	1
+523883	Private room	68	1	1
+523883	Private room	68	1	1
+523883	Private room	68	1	1
+523883	Private room	68	1	1
+523883	Private room	68	1	1
+523883	Private room	68	1	1
+529090	Private room	150	1	1
+529090	Private room	150	1	1
+529090	Private room	150	1	1
+529090	Private room	150	1	1
+529090	Private room	150	1	1
+529090	Private room	150	1	1
+529090	Private room	150	1	1
+529090	Private room	150	1	1
+529090	Private room	150	1	1
+529090	Private room	150	1	1
+529090	Private room	150	1	1
+529090	Private room	150	1	1
+529090	Private room	150	1	1
+533443	Private room	55	1	1
+533443	Private room	55	1	1
+533443	Private room	55	1	1
+533443	Private room	55	1	1
+533443	Private room	55	1	1
+533443	Private room	55	1	1
+533443	Private room	55	1	1
+533443	Private room	55	1	1
+533443	Private room	55	1	1
+533443	Private room	55	1	1
+533443	Private room	55	1	1
+533443	Private room	55	1	1
+533443	Private room	55	1	1
+533443	Private room	55	1	1
+533443	Private room	55	1	1
+533443	Private room	55	1	1
+533443	Private room	55	1	1
+535300	Private room	82	1	1
+535300	Private room	82	1	1
+535300	Private room	82	1	1
+535300	Private room	82	1	1
+535300	Private room	82	1	1
+535300	Private room	82	1	1
+535300	Private room	82	1	1
+535300	Private room	82	1	1
+535300	Private room	82	1	1
+535300	Private room	82	1	1
+535300	Private room	82	1	1
+535300	Private room	82	1	1
+535300	Private room	82	1	1
+555182	Entire home/apt	250	1	1
+555858	Private room	95	1	1
+555858	Private room	95	1	1
+555858	Private room	95	1	1
+566435	Private room	65	1	1
+566435	Private room	65	1	1
+566435	Private room	65	1	1
+566435	Private room	65	1	1
+566435	Private room	65	1	1
+566435	Private room	65	1	1
+566435	Private room	65	1	1
+566435	Private room	65	1	1
+566435	Private room	65	1	1
+571640	Private room	79	1	1
+571640	Private room	79	1	1
+571640	Private room	79	1	1
+573942	Private room	65	1	1
+573942	Private room	65	1	1
+573942	Private room	65	1	1
+841049	Private room	58	1	1
+841049	Private room	58	1	1
+841049	Private room	58	1	1
+841049	Private room	58	1	1
+841049	Private room	58	1	1
+841049	Private room	58	1	1
+841049	Private room	58	1	1
+841049	Private room	58	1	1
+841049	Private room	58	1	1
+841049	Private room	58	1	1
+841049	Private room	58	1	1
+841049	Private room	58	1	1
+841049	Private room	58	1	1
+841049	Private room	58	1	1
+844939	Entire home/apt	99	1	1
+844939	Entire home/apt	99	1	1
+856550	Private room	60	1	1
+856550	Private room	60	1	1
+856550	Private room	60	1	1
+856550	Private room	60	1	1
+856550	Private room	60	1	1
+856550	Private room	60	1	1
+856550	Private room	60	1	1
+856550	Private room	60	1	1
+856550	Private room	60	1	1
+856550	Private room	60	1	1
+856550	Private room	60	1	1
+859467	Entire home/apt	195	1	1
+859467	Entire home/apt	195	1	1
+859467	Entire home/apt	195	1	1
+859467	Entire home/apt	195	1	1
+877203	Private room	60	1	1
+877203	Private room	60	1	1
+879181	Private room	60	1	1
+882274	Entire home/apt	79	1	1
+882274	Entire home/apt	79	1	1
+882274	Entire home/apt	79	1	1
+882274	Entire home/apt	79	1	1
+882274	Entire home/apt	79	1	1
+882274	Entire home/apt	79	1	1
+882274	Entire home/apt	79	1	1
+882274	Entire home/apt	79	1	1
+882274	Entire home/apt	79	1	1
+882274	Entire home/apt	79	1	1
+882274	Entire home/apt	79	1	1
+888967	Private room	90	1	1
+888967	Private room	90	1	1
+888967	Private room	90	1	1
+888967	Private room	90	1	1
+888967	Private room	90	1	1
+888967	Private room	90	1	1
+888967	Private room	90	1	1
+888967	Private room	90	1	1
+888967	Private room	90	1	1
+888967	Private room	90	1	1
+888967	Private room	90	1	1
+888967	Private room	90	1	1
+890677	Entire home/apt	147	1	1
+890677	Entire home/apt	147	1	1
+902609	Entire home/apt	58	1	1
+902609	Entire home/apt	58	1	1
+902609	Entire home/apt	58	1	1
+902609	Entire home/apt	58	1	1
+902609	Entire home/apt	58	1	1
+902609	Entire home/apt	58	1	1
+902609	Entire home/apt	58	1	1
+902609	Entire home/apt	58	1	1
+902609	Entire home/apt	58	1	1
+902609	Entire home/apt	58	1	1
+902609	Entire home/apt	58	1	1
+902609	Entire home/apt	58	1	1
+902609	Entire home/apt	58	1	1
+902609	Entire home/apt	58	1	1
+902609	Entire home/apt	58	1	1
+902609	Entire home/apt	58	1	1
+902609	Entire home/apt	58	1	1
+902609	Entire home/apt	58	1	1
+902609	Entire home/apt	58	1	1
+902609	Entire home/apt	58	1	1
+909102	Private room	99	1	1
+909102	Private room	99	1	1
+909102	Private room	99	1	1
+909102	Private room	99	1	1
+909102	Private room	99	1	1
+909102	Private room	99	1	1
+909102	Private room	99	1	1
+909102	Private room	99	1	1
+931154	Entire home/apt	143	1	1
+931154	Entire home/apt	143	1	1
+931758	Entire home/apt	135	1	1
+931758	Entire home/apt	135	1	1
+931785	Entire home/apt	147	1	1
+931785	Entire home/apt	147	1	1
+934216	Entire home/apt	137	1	1
+935845	Entire home/apt	97	1	1
+935845	Entire home/apt	97	1	1
+935845	Entire home/apt	97	1	1
+935845	Entire home/apt	97	1	1
+938785	Entire home/apt	100	1	1
+944237	Entire home/apt	85	1	1
+948077	Entire home/apt	99	1	1
+948077	Entire home/apt	99	1	1
+953595	Entire home/apt	150	1	1
+953595	Entire home/apt	150	1	1
+953595	Entire home/apt	150	1	1
+953595	Entire home/apt	150	1	1
+953595	Entire home/apt	150	1	1
+609701	Entire home/apt	85	1	1
+609701	Entire home/apt	85	1	1
+609701	Entire home/apt	85	1	1
+609701	Entire home/apt	85	1	1
+609701	Entire home/apt	85	1	1
+609701	Entire home/apt	85	1	1
+611500	Entire home/apt	219	1	1
+611500	Entire home/apt	219	1	1
+611500	Entire home/apt	219	1	1
+611509	Private room	65	1	1
+611509	Private room	65	1	1
+611509	Private room	65	1	1
+613020	Private room	75	1	1
+613020	Private room	75	1	1
+613020	Private room	75	1	1
+613020	Private room	75	1	1
+613020	Private room	75	1	1
+613020	Private room	75	1	1
+613020	Private room	75	1	1
+613020	Private room	75	1	1
+613020	Private room	75	1	1
+613020	Private room	75	1	1
+613020	Private room	75	1	1
+613020	Private room	75	1	1
+613020	Private room	75	1	1
+613020	Private room	75	1	1
+613020	Private room	75	1	1
+613020	Private room	75	1	1
+613151	Private room	169	1	1
+613151	Private room	169	1	1
+649243	Private room	75	1	1
+649243	Private room	75	1	1
+649243	Private room	75	1	1
+649243	Private room	75	1	1
+649243	Private room	75	1	1
+649243	Private room	75	1	1
+649243	Private room	75	1	1
+649243	Private room	75	1	1
+649243	Private room	75	1	1
+649243	Private room	75	1	1
+649243	Private room	75	1	1
+649243	Private room	75	1	1
+649243	Private room	75	1	1
+649243	Private room	75	1	1
+649243	Private room	75	1	1
+649243	Private room	75	1	1
+649243	Private room	75	1	1
+649243	Private room	75	1	1
+649243	Private room	75	1	1
+654734	Entire home/apt	175	1	1
+654734	Entire home/apt	175	1	1
+656909	Private room	64	1	1
+682135	Entire home/apt	91	1	1
+689309	Private room	125	1	1
+692671	Entire home/apt	110	1	1
+692671	Entire home/apt	110	1	1
+692671	Entire home/apt	110	1	1
+692671	Entire home/apt	110	1	1
+696004	Entire home/apt	120	1	1
+696004	Entire home/apt	120	1	1
+696004	Entire home/apt	120	1	1
+696004	Entire home/apt	120	1	1
+696004	Entire home/apt	120	1	1
+696004	Entire home/apt	120	1	1
+696004	Entire home/apt	120	1	1
+696004	Entire home/apt	120	1	1
+699460	Private room	95	1	1
+699460	Private room	95	1	1
+699460	Private room	95	1	1
+699460	Private room	95	1	1
+699460	Private room	95	1	1
+699460	Private room	95	1	1
+699460	Private room	95	1	1
+699596	Private room	150	1	1
+699596	Private room	150	1	1
+699596	Private room	150	1	1
+699596	Private room	150	1	1
+699596	Private room	150	1	1
+699596	Private room	150	1	1
+699596	Private room	150	1	1
+699596	Private room	150	1	1
+699596	Private room	150	1	1
+699596	Private room	150	1	1
+703058	Entire home/apt	150	1	1
+703058	Entire home/apt	150	1	1
+703058	Entire home/apt	150	1	1
+703058	Entire home/apt	150	1	1
+703058	Entire home/apt	150	1	1
+703058	Entire home/apt	150	1	1
+704764	Entire home/apt	110	1	1
+704764	Entire home/apt	110	1	1
+704764	Entire home/apt	110	1	1
+704764	Entire home/apt	110	1	1
+704764	Entire home/apt	110	1	1
+704764	Entire home/apt	110	1	1
+706385	Entire home/apt	138	1	1
+706385	Entire home/apt	138	1	1
+706385	Entire home/apt	138	1	1
+706385	Entire home/apt	138	1	1
+706385	Entire home/apt	138	1	1
+706385	Entire home/apt	138	1	1
+706385	Entire home/apt	138	1	1
+706385	Entire home/apt	138	1	1
+706385	Entire home/apt	138	1	1
+706385	Entire home/apt	138	1	1
+706385	Entire home/apt	138	1	1
+706385	Entire home/apt	138	1	1
+353039	Entire home/apt	155	1	1
+353347	Entire home/apt	200	1	1
+353347	Entire home/apt	200	1	1
+353347	Entire home/apt	200	1	1
+363064	Entire home/apt	90	1	1
+363064	Entire home/apt	90	1	1
+363064	Entire home/apt	90	1	1
+387078	Entire home/apt	119	1	1
+387078	Entire home/apt	119	1	1
+387464	Entire home/apt	93	1	1
+387464	Entire home/apt	93	1	1
+387464	Entire home/apt	93	1	1
+387464	Entire home/apt	93	1	1
+387464	Entire home/apt	93	1	1
+387464	Entire home/apt	93	1	1
+387464	Entire home/apt	93	1	1
+387464	Entire home/apt	93	1	1
+387464	Entire home/apt	93	1	1
+387464	Entire home/apt	93	1	1
+387464	Entire home/apt	93	1	1
+387464	Entire home/apt	93	1	1
+387464	Entire home/apt	93	1	1
+387464	Entire home/apt	93	1	1
+387464	Entire home/apt	93	1	1
+387464	Entire home/apt	93	1	1
+387464	Entire home/apt	93	1	1
+387464	Entire home/apt	93	1	1
+387464	Entire home/apt	93	1	1
+387464	Entire home/apt	93	1	1
+387464	Entire home/apt	93	1	1
+387464	Entire home/apt	93	1	1
+387464	Entire home/apt	93	1	1
+387464	Entire home/apt	93	1	1
+387464	Entire home/apt	93	1	1
+392140	Private room	75	1	1
+392140	Private room	75	1	1
+392140	Private room	75	1	1
+392140	Private room	75	1	1
+392140	Private room	75	1	1
+392140	Private room	75	1	1
+392140	Private room	75	1	1
+392140	Private room	75	1	1
+392140	Private room	75	1	1
+392140	Private room	75	1	1
+392140	Private room	75	1	1
+392140	Private room	75	1	1
+392140	Private room	75	1	1
+392140	Private room	75	1	1
+392140	Private room	75	1	1
+392140	Private room	75	1	1
+392140	Private room	75	1	1
+392140	Private room	75	1	1
+392140	Private room	75	1	1
+392140	Private room	75	1	1
+392140	Private room	75	1	1
+392140	Private room	75	1	1
+392140	Private room	75	1	1
+392779	Entire home/apt	108	1	1
+397117	Entire home/apt	99	1	1
+397117	Entire home/apt	99	1	1
+397117	Entire home/apt	99	1	1
+397117	Entire home/apt	99	1	1
+397117	Entire home/apt	99	1	1
+397117	Entire home/apt	99	1	1
+397117	Entire home/apt	99	1	1
+397117	Entire home/apt	99	1	1
+397117	Entire home/apt	99	1	1
+397117	Entire home/apt	99	1	1
+397117	Entire home/apt	99	1	1
+397117	Entire home/apt	99	1	1
+397117	Entire home/apt	99	1	1
+397117	Entire home/apt	99	1	1
+397117	Entire home/apt	99	1	1
+397117	Entire home/apt	99	1	1
+397117	Entire home/apt	99	1	1
+413733	Entire home/apt	125	1	1
+413733	Entire home/apt	125	1	1
+413733	Entire home/apt	125	1	1
+426089	Entire home/apt	219	1	1
+426089	Entire home/apt	219	1	1
+442487	Entire home/apt	98	1	1
+442487	Entire home/apt	98	1	1
+442487	Entire home/apt	98	1	1
+442487	Entire home/apt	98	1	1
+442487	Entire home/apt	98	1	1
+442487	Entire home/apt	98	1	1
+442487	Entire home/apt	98	1	1
+442487	Entire home/apt	98	1	1
+442487	Entire home/apt	98	1	1
+442487	Entire home/apt	98	1	1
+442487	Entire home/apt	98	1	1
+442487	Entire home/apt	98	1	1
+442487	Entire home/apt	98	1	1
+442487	Entire home/apt	98	1	1
+443736	Entire home/apt	81	1	1
+443736	Entire home/apt	81	1	1
+443736	Entire home/apt	81	1	1
+443736	Entire home/apt	81	1	1
+443942	Entire home/apt	125	1	1
+443942	Entire home/apt	125	1	1
+445199	Entire home/apt	129	1	1
+445199	Entire home/apt	129	1	1
+445199	Entire home/apt	129	1	1
+445199	Entire home/apt	129	1	1
+446276	Entire home/apt	195	1	1
+446276	Entire home/apt	195	1	1
+446276	Entire home/apt	195	1	1
+573942	Private room	65	1	1
+573942	Private room	65	1	1
+580182	Entire home/apt	79	1	1
+580182	Entire home/apt	79	1	1
+580182	Entire home/apt	79	1	1
+580182	Entire home/apt	79	1	1
+580182	Entire home/apt	79	1	1
+580182	Entire home/apt	79	1	1
+580182	Entire home/apt	79	1	1
+580815	Entire home/apt	139	1	1
+580815	Entire home/apt	139	1	1
+580815	Entire home/apt	139	1	1
+580815	Entire home/apt	139	1	1
+585418	Shared room	59	1	1
+585418	Shared room	59	1	1
+585418	Shared room	59	1	1
+585418	Shared room	59	1	1
+585418	Shared room	59	1	1
+585418	Shared room	59	1	1
+585418	Shared room	59	1	1
+585418	Shared room	59	1	1
+585418	Shared room	59	1	1
+585418	Shared room	59	1	1
+585418	Shared room	59	1	1
+598023	Private room	99	1	1
+598023	Private room	99	1	1
+606297	Entire home/apt	399	1	1
+606297	Entire home/apt	399	1	1
+606297	Entire home/apt	399	1	1
+606297	Entire home/apt	399	1	1
+606297	Entire home/apt	399	1	1
+606297	Entire home/apt	399	1	1
+606297	Entire home/apt	399	1	1
+606297	Entire home/apt	399	1	1
+606297	Entire home/apt	399	1	1
+606297	Entire home/apt	399	1	1
+606297	Entire home/apt	399	1	1
+606297	Entire home/apt	399	1	1
+606297	Entire home/apt	399	1	1
+606297	Entire home/apt	399	1	1
+606297	Entire home/apt	399	1	1
+606297	Entire home/apt	399	1	1
+607788	Private room	250	1	1
+609701	Entire home/apt	85	1	1
+609701	Entire home/apt	85	1	1
+609701	Entire home/apt	85	1	1
+609701	Entire home/apt	85	1	1
+609701	Entire home/apt	85	1	1
+609701	Entire home/apt	85	1	1
+609701	Entire home/apt	85	1	1
+609701	Entire home/apt	85	1	1
+609701	Entire home/apt	85	1	1
+609701	Entire home/apt	85	1	1
+609701	Entire home/apt	85	1	1
+609701	Entire home/apt	85	1	1
+609701	Entire home/apt	85	1	1
+609701	Entire home/apt	85	1	1
+609701	Entire home/apt	85	1	1
+609701	Entire home/apt	85	1	1
+609701	Entire home/apt	85	1	1
+609701	Entire home/apt	85	1	1
+609701	Entire home/apt	85	1	1
+609701	Entire home/apt	85	1	1
+609701	Entire home/apt	85	1	1
+609701	Entire home/apt	85	1	1
+609701	Entire home/apt	85	1	1
+609701	Entire home/apt	85	1	1
+609701	Entire home/apt	85	1	1
+609701	Entire home/apt	85	1	1
+611500	Entire home/apt	219	1	1
+611500	Entire home/apt	219	1	1
+613020	Private room	75	1	1
+613020	Private room	75	1	1
+613020	Private room	75	1	1
+613020	Private room	75	1	1
+613020	Private room	75	1	1
+613020	Private room	75	1	1
+613020	Private room	75	1	1
+613020	Private room	75	1	1
+613020	Private room	75	1	1
+613020	Private room	75	1	1
+637326	Entire home/apt	110	1	1
+637326	Entire home/apt	110	1	1
+637326	Entire home/apt	110	1	1
+637326	Entire home/apt	110	1	1
+637326	Entire home/apt	110	1	1
+637326	Entire home/apt	110	1	1
+637326	Entire home/apt	110	1	1
+654734	Entire home/apt	175	1	1
+654734	Entire home/apt	175	1	1
+654734	Entire home/apt	175	1	1
+654734	Entire home/apt	175	1	1
+656909	Private room	64	1	1
+656909	Private room	64	1	1
+656909	Private room	64	1	1
+660603	Private room	79	1	1
+668169	Private room	55	1	1
+668169	Private room	55	1	1
+668169	Private room	55	1	1
+677266	Private room	70	1	1
+677266	Private room	70	1	1
+677266	Private room	70	1	1
+677266	Private room	70	1	1
+677266	Private room	70	1	1
+677266	Private room	70	1	1
+677266	Private room	70	1	1
+677266	Private room	70	1	1
+677266	Private room	70	1	1
+447523	Private room	48	1	1
+447523	Private room	48	1	1
+447523	Private room	48	1	1
+449602	Shared room	65	1	1
+449602	Shared room	65	1	1
+449602	Shared room	65	1	1
+449602	Shared room	65	1	1
+449602	Shared room	65	1	1
+456040	Private room	55	1	1
+456040	Private room	55	1	1
+456040	Private room	55	1	1
+456040	Private room	55	1	1
+456040	Private room	55	1	1
+456040	Private room	55	1	1
+458191	Private room	49	1	1
+458191	Private room	49	1	1
+461567	Entire home/apt	70	1	1
+488268	Private room	58	1	1
+488268	Private room	58	1	1
+488268	Private room	58	1	1
+488268	Private room	58	1	1
+488268	Private room	58	1	1
+496074	Entire home/apt	85	1	1
+496074	Entire home/apt	85	1	1
+496074	Entire home/apt	85	1	1
+496074	Entire home/apt	85	1	1
+496074	Entire home/apt	85	1	1
+496074	Entire home/apt	85	1	1
+496074	Entire home/apt	85	1	1
+496074	Entire home/apt	85	1	1
+522287	Private room	55	1	1
+522287	Private room	55	1	1
+522287	Private room	55	1	1
+522287	Private room	55	1	1
+522287	Private room	55	1	1
+522287	Private room	55	1	1
+522287	Private room	55	1	1
+522287	Private room	55	1	1
+522287	Private room	55	1	1
+522287	Private room	55	1	1
+522287	Private room	55	1	1
+522287	Private room	55	1	1
+522287	Private room	55	1	1
+522287	Private room	55	1	1
+522287	Private room	55	1	1
+522287	Private room	55	1	1
+522287	Private room	55	1	1
+522287	Private room	55	1	1
+522287	Private room	55	1	1
+522287	Private room	55	1	1
+522287	Private room	55	1	1
+522287	Private room	55	1	1
+522287	Private room	55	1	1
+522287	Private room	55	1	1
+557126	Private room	90	1	1
+557126	Private room	90	1	1
+557126	Private room	90	1	1
+557126	Private room	90	1	1
+557126	Private room	90	1	1
+557126	Private room	90	1	1
+557126	Private room	90	1	1
+557126	Private room	90	1	1
+557126	Private room	90	1	1
+557126	Private room	90	1	1
+557126	Private room	90	1	1
+557126	Private room	90	1	1
+557126	Private room	90	1	1
+557126	Private room	90	1	1
+557126	Private room	90	1	1
+557126	Private room	90	1	1
+557126	Private room	90	1	1
+557126	Private room	90	1	1
+557126	Private room	90	1	1
+557126	Private room	90	1	1
+557126	Private room	90	1	1
+557126	Private room	90	1	1
+557126	Private room	90	1	1
+557126	Private room	90	1	1
+557126	Private room	90	1	1
+557126	Private room	90	1	1
+565703	Entire home/apt	128	1	1
+565703	Entire home/apt	128	1	1
+565703	Entire home/apt	128	1	1
+565703	Entire home/apt	128	1	1
+565703	Entire home/apt	128	1	1
+565703	Entire home/apt	128	1	1
+565703	Entire home/apt	128	1	1
+565703	Entire home/apt	128	1	1
+565703	Entire home/apt	128	1	1
+565703	Entire home/apt	128	1	1
+565703	Entire home/apt	128	1	1
+565703	Entire home/apt	128	1	1
+565703	Entire home/apt	128	1	1
+565703	Entire home/apt	128	1	1
+580182	Entire home/apt	79	1	1
+580182	Entire home/apt	79	1	1
+580182	Entire home/apt	79	1	1
+580182	Entire home/apt	79	1	1
+580182	Entire home/apt	79	1	1
+580182	Entire home/apt	79	1	1
+587584	Entire home/apt	99	1	1
+609610	Entire home/apt	90	1	1
+609610	Entire home/apt	90	1	1
+619366	Entire home/apt	115	1	1
+619366	Entire home/apt	115	1	1
+619366	Entire home/apt	115	1	1
+619366	Entire home/apt	115	1	1
+619366	Entire home/apt	115	1	1
+677266	Private room	70	1	1
+677266	Private room	70	1	1
+677266	Private room	70	1	1
+677266	Private room	70	1	1
+692671	Entire home/apt	110	1	1
+692671	Entire home/apt	110	1	1
+692671	Entire home/apt	110	1	1
+692671	Entire home/apt	110	1	1
+692671	Entire home/apt	110	1	1
+692671	Entire home/apt	110	1	1
+699460	Private room	95	1	1
+699460	Private room	95	1	1
+699460	Private room	95	1	1
+699460	Private room	95	1	1
+699460	Private room	95	1	1
+699460	Private room	95	1	1
+699460	Private room	95	1	1
+699460	Private room	95	1	1
+699596	Private room	150	1	1
+699596	Private room	150	1	1
+699596	Private room	150	1	1
+699596	Private room	150	1	1
+699596	Private room	150	1	1
+699596	Private room	150	1	1
+699596	Private room	150	1	1
+699596	Private room	150	1	1
+699596	Private room	150	1	1
+699596	Private room	150	1	1
+699596	Private room	150	1	1
+699596	Private room	150	1	1
+699596	Private room	150	1	1
+699596	Private room	150	1	1
+699596	Private room	150	1	1
+704764	Entire home/apt	110	1	1
+704764	Entire home/apt	110	1	1
+704764	Entire home/apt	110	1	1
+704764	Entire home/apt	110	1	1
+704764	Entire home/apt	110	1	1
+704764	Entire home/apt	110	1	1
+704764	Entire home/apt	110	1	1
+704764	Entire home/apt	110	1	1
+704764	Entire home/apt	110	1	1
+704764	Entire home/apt	110	1	1
+704764	Entire home/apt	110	1	1
+704764	Entire home/apt	110	1	1
+704764	Entire home/apt	110	1	1
+704764	Entire home/apt	110	1	1
+707424	Entire home/apt	300	1	1
+707424	Entire home/apt	300	1	1
+707424	Entire home/apt	300	1	1
+707424	Entire home/apt	300	1	1
+707424	Entire home/apt	300	1	1
+708774	Entire home/apt	95	1	1
+708774	Entire home/apt	95	1	1
+708774	Entire home/apt	95	1	1
+708774	Entire home/apt	95	1	1
+708774	Entire home/apt	95	1	1
+719233	Entire home/apt	69	1	1
+719233	Entire home/apt	69	1	1
+719233	Entire home/apt	69	1	1
+719233	Entire home/apt	69	1	1
+719233	Entire home/apt	69	1	1
+719233	Entire home/apt	69	1	1
+719233	Entire home/apt	69	1	1
+719233	Entire home/apt	69	1	1
+719233	Entire home/apt	69	1	1
+719233	Entire home/apt	69	1	1
+719233	Entire home/apt	69	1	1
+719233	Entire home/apt	69	1	1
+719233	Entire home/apt	69	1	1
+719233	Entire home/apt	69	1	1
+719233	Entire home/apt	69	1	1
+719233	Entire home/apt	69	1	1
+722537	Entire home/apt	220	1	1
+722537	Entire home/apt	220	1	1
+722537	Entire home/apt	220	1	1
+722537	Entire home/apt	220	1	1
+722537	Entire home/apt	220	1	1
+722537	Entire home/apt	220	1	1
+741699	Entire home/apt	168	1	1
+741699	Entire home/apt	168	1	1
+741699	Entire home/apt	168	1	1
+741699	Entire home/apt	168	1	1
+741699	Entire home/apt	168	1	1
+741699	Entire home/apt	168	1	1
+741699	Entire home/apt	168	1	1
+741699	Entire home/apt	168	1	1
+741699	Entire home/apt	168	1	1
+741699	Entire home/apt	168	1	1
+748526	Entire home/apt	69	1	1
+748526	Entire home/apt	69	1	1
+748526	Entire home/apt	69	1	1
+748526	Entire home/apt	69	1	1
+748526	Entire home/apt	69	1	1
+755613	Private room	89	1	1
+755613	Private room	89	1	1
+755613	Private room	89	1	1
+755613	Private room	89	1	1
+755613	Private room	89	1	1
+755613	Private room	89	1	1
+755613	Private room	89	1	1
+755613	Private room	89	1	1
+757840	Entire home/apt	250	1	1
+757840	Entire home/apt	250	1	1
+757840	Entire home/apt	250	1	1
+757840	Entire home/apt	250	1	1
+757840	Entire home/apt	250	1	1
+706385	Entire home/apt	138	1	1
+706385	Entire home/apt	138	1	1
+706385	Entire home/apt	138	1	1
+706385	Entire home/apt	138	1	1
+708774	Entire home/apt	95	1	1
+714043	Entire home/apt	86	1	1
+714043	Entire home/apt	86	1	1
+719233	Entire home/apt	69	1	1
+719233	Entire home/apt	69	1	1
+719233	Entire home/apt	69	1	1
+719233	Entire home/apt	69	1	1
+719233	Entire home/apt	69	1	1
+719233	Entire home/apt	69	1	1
+719233	Entire home/apt	69	1	1
+719233	Entire home/apt	69	1	1
+719233	Entire home/apt	69	1	1
+719233	Entire home/apt	69	1	1
+719233	Entire home/apt	69	1	1
+719233	Entire home/apt	69	1	1
+719233	Entire home/apt	69	1	1
+719233	Entire home/apt	69	1	1
+719233	Entire home/apt	69	1	1
+719233	Entire home/apt	69	1	1
+719233	Entire home/apt	69	1	1
+719233	Entire home/apt	69	1	1
+719233	Entire home/apt	69	1	1
+719233	Entire home/apt	69	1	1
+719233	Entire home/apt	69	1	1
+719233	Entire home/apt	69	1	1
+719233	Entire home/apt	69	1	1
+719233	Entire home/apt	69	1	1
+719233	Entire home/apt	69	1	1
+719233	Entire home/apt	69	1	1
+719233	Entire home/apt	69	1	1
+719233	Entire home/apt	69	1	1
+722537	Entire home/apt	220	1	1
+722537	Entire home/apt	220	1	1
+741699	Entire home/apt	168	1	1
+741699	Entire home/apt	168	1	1
+741699	Entire home/apt	168	1	1
+741699	Entire home/apt	168	1	1
+741699	Entire home/apt	168	1	1
+741699	Entire home/apt	168	1	1
+741699	Entire home/apt	168	1	1
+741699	Entire home/apt	168	1	1
+741699	Entire home/apt	168	1	1
+741699	Entire home/apt	168	1	1
+741699	Entire home/apt	168	1	1
+755613	Private room	89	1	1
+755613	Private room	89	1	1
+755613	Private room	89	1	1
+755613	Private room	89	1	1
+757840	Entire home/apt	250	1	1
+757840	Entire home/apt	250	1	1
+757840	Entire home/apt	250	1	1
+757840	Entire home/apt	250	1	1
+757840	Entire home/apt	250	1	1
+757840	Entire home/apt	250	1	1
+757840	Entire home/apt	250	1	1
+789229	Entire home/apt	149	1	1
+789229	Entire home/apt	149	1	1
+789229	Entire home/apt	149	1	1
+789229	Entire home/apt	149	1	1
+789229	Entire home/apt	149	1	1
+789229	Entire home/apt	149	1	1
+789966	Entire home/apt	105	1	1
+789966	Entire home/apt	105	1	1
+789966	Entire home/apt	105	1	1
+789966	Entire home/apt	105	1	1
+789966	Entire home/apt	105	1	1
+789966	Entire home/apt	105	1	1
+793629	Entire home/apt	95	1	1
+793629	Entire home/apt	95	1	1
+793629	Entire home/apt	95	1	1
+793629	Entire home/apt	95	1	1
+793629	Entire home/apt	95	1	1
+793629	Entire home/apt	95	1	1
+793629	Entire home/apt	95	1	1
+794633	Entire home/apt	79	1	1
+794633	Entire home/apt	79	1	1
+796594	Entire home/apt	199	1	1
+796594	Entire home/apt	199	1	1
+796594	Entire home/apt	199	1	1
+796594	Entire home/apt	199	1	1
+797358	Private room	68	1	1
+797358	Private room	68	1	1
+797358	Private room	68	1	1
+799882	Private room	40	1	1
+803902	Entire home/apt	250	1	1
+817115	Entire home/apt	50	1	1
+817115	Entire home/apt	50	1	1
+817115	Entire home/apt	50	1	1
+817115	Entire home/apt	50	1	1
+817115	Entire home/apt	50	1	1
+817115	Entire home/apt	50	1	1
+817115	Entire home/apt	50	1	1
+817115	Entire home/apt	50	1	1
+817115	Entire home/apt	50	1	1
+817115	Entire home/apt	50	1	1
+817115	Entire home/apt	50	1	1
+817115	Entire home/apt	50	1	1
+817115	Entire home/apt	50	1	1
+817115	Entire home/apt	50	1	1
+817115	Entire home/apt	50	1	1
+817115	Entire home/apt	50	1	1
+823989	Entire home/apt	105	1	1
+823989	Entire home/apt	105	1	1
+619366	Entire home/apt	115	1	1
+619366	Entire home/apt	115	1	1
+619366	Entire home/apt	115	1	1
+619366	Entire home/apt	115	1	1
+619366	Entire home/apt	115	1	1
+619366	Entire home/apt	115	1	1
+619366	Entire home/apt	115	1	1
+619366	Entire home/apt	115	1	1
+619366	Entire home/apt	115	1	1
+619366	Entire home/apt	115	1	1
+619366	Entire home/apt	115	1	1
+637710	Entire home/apt	240	1	1
+637710	Entire home/apt	240	1	1
+637710	Entire home/apt	240	1	1
+637710	Entire home/apt	240	1	1
+637710	Entire home/apt	240	1	1
+666897	Entire home/apt	99	1	1
+670009	Entire home/apt	175	1	1
+670009	Entire home/apt	175	1	1
+674113	Private room	42	1	1
+674113	Private room	42	1	1
+674113	Private room	42	1	1
+674113	Private room	42	1	1
+674113	Private room	42	1	1
+674113	Private room	42	1	1
+674113	Private room	42	1	1
+674113	Private room	42	1	1
+674113	Private room	42	1	1
+674113	Private room	42	1	1
+674113	Private room	42	1	1
+674113	Private room	42	1	1
+674113	Private room	42	1	1
+674113	Private room	42	1	1
+674113	Private room	42	1	1
+674113	Private room	42	1	1
+674113	Private room	42	1	1
+674113	Private room	42	1	1
+674113	Private room	42	1	1
+674113	Private room	42	1	1
+674113	Private room	42	1	1
+674113	Private room	42	1	1
+674113	Private room	42	1	1
+674113	Private room	42	1	1
+674113	Private room	42	1	1
+674113	Private room	42	1	1
+674113	Private room	42	1	1
+674113	Private room	42	1	1
+674113	Private room	42	1	1
+674113	Private room	42	1	1
+674113	Private room	42	1	1
+674113	Private room	42	1	1
+674113	Private room	42	1	1
+674113	Private room	42	1	1
+674113	Private room	42	1	1
+674113	Private room	42	1	1
+674113	Private room	42	1	1
+696004	Entire home/apt	120	1	1
+696004	Entire home/apt	120	1	1
+696004	Entire home/apt	120	1	1
+696004	Entire home/apt	120	1	1
+696004	Entire home/apt	120	1	1
+699460	Private room	95	1	1
+699460	Private room	95	1	1
+699460	Private room	95	1	1
+699460	Private room	95	1	1
+699460	Private room	95	1	1
+699460	Private room	95	1	1
+699460	Private room	95	1	1
+699460	Private room	95	1	1
+699460	Private room	95	1	1
+703058	Entire home/apt	150	1	1
+703058	Entire home/apt	150	1	1
+703058	Entire home/apt	150	1	1
+703058	Entire home/apt	150	1	1
+703058	Entire home/apt	150	1	1
+703058	Entire home/apt	150	1	1
+703058	Entire home/apt	150	1	1
+703058	Entire home/apt	150	1	1
+703058	Entire home/apt	150	1	1
+703058	Entire home/apt	150	1	1
+703058	Entire home/apt	150	1	1
+706385	Entire home/apt	138	1	1
+706385	Entire home/apt	138	1	1
+706385	Entire home/apt	138	1	1
+706385	Entire home/apt	138	1	1
+706385	Entire home/apt	138	1	1
+706385	Entire home/apt	138	1	1
+706385	Entire home/apt	138	1	1
+706385	Entire home/apt	138	1	1
+706385	Entire home/apt	138	1	1
+706385	Entire home/apt	138	1	1
+706385	Entire home/apt	138	1	1
+706385	Entire home/apt	138	1	1
+706385	Entire home/apt	138	1	1
+706385	Entire home/apt	138	1	1
+706385	Entire home/apt	138	1	1
+706385	Entire home/apt	138	1	1
+706385	Entire home/apt	138	1	1
+714043	Entire home/apt	86	1	1
+714043	Entire home/apt	86	1	1
+714043	Entire home/apt	86	1	1
+714043	Entire home/apt	86	1	1
+714043	Entire home/apt	86	1	1
+723723	Entire home/apt	155	1	1
+723723	Entire home/apt	155	1	1
+723723	Entire home/apt	155	1	1
+723723	Entire home/apt	155	1	1
+955506	Entire home/apt	225	1	1
+955506	Entire home/apt	225	1	1
+955506	Entire home/apt	225	1	1
+958475	Entire home/apt	85	1	1
+958475	Entire home/apt	85	1	1
+958475	Entire home/apt	85	1	1
+958475	Entire home/apt	85	1	1
+958475	Entire home/apt	85	1	1
+958475	Entire home/apt	85	1	1
+973859	Entire home/apt	115	1	1
+973859	Entire home/apt	115	1	1
+973859	Entire home/apt	115	1	1
+973859	Entire home/apt	115	1	1
+975179	Private room	55	1	1
+975179	Private room	55	1	1
+975179	Private room	55	1	1
+975179	Private room	55	1	1
+975179	Private room	55	1	1
+975179	Private room	55	1	1
+975179	Private room	55	1	1
+975179	Private room	55	1	1
+975179	Private room	55	1	1
+975179	Private room	55	1	1
+975179	Private room	55	1	1
+975179	Private room	55	1	1
+975179	Private room	55	1	1
+975179	Private room	55	1	1
+975179	Private room	55	1	1
+975179	Private room	55	1	1
+975179	Private room	55	1	1
+975179	Private room	55	1	1
+988176	Entire home/apt	125	1	1
+988176	Entire home/apt	125	1	1
+988176	Entire home/apt	125	1	1
+988176	Entire home/apt	125	1	1
+988176	Entire home/apt	125	1	1
+1000883	Entire home/apt	100	1	1
+1000883	Entire home/apt	100	1	1
+1003890	Entire home/apt	99	1	1
+1003890	Entire home/apt	99	1	1
+1003890	Entire home/apt	99	1	1
+1003890	Entire home/apt	99	1	1
+1003890	Entire home/apt	99	1	1
+1003890	Entire home/apt	99	1	1
+1003890	Entire home/apt	99	1	1
+1012003	Private room	115	1	1
+1018204	Private room	56	1	1
+1018204	Private room	56	1	1
+1018204	Private room	56	1	1
+1018204	Private room	56	1	1
+1029680	Entire home/apt	500	1	1
+1030411	Entire home/apt	200	1	1
+1030615	Private room	95	1	1
+1030615	Private room	95	1	1
+1030615	Private room	95	1	1
+1030615	Private room	95	1	1
+1030615	Private room	95	1	1
+1030615	Private room	95	1	1
+1039766	Private room	60	1	1
+1039766	Private room	60	1	1
+1039766	Private room	60	1	1
+1039766	Private room	60	1	1
+1039766	Private room	60	1	1
+1039766	Private room	60	1	1
+1042022	Entire home/apt	125	1	1
+1042022	Entire home/apt	125	1	1
+1042022	Entire home/apt	125	1	1
+1048798	Entire home/apt	129	1	1
+1048798	Entire home/apt	129	1	1
+1048798	Entire home/apt	129	1	1
+1048798	Entire home/apt	129	1	1
+1048798	Entire home/apt	129	1	1
+1069562	Entire home/apt	149	1	1
+1069562	Entire home/apt	149	1	1
+1090449	Entire home/apt	135	1	1
+1090449	Entire home/apt	135	1	1
+1090449	Entire home/apt	135	1	1
+1090449	Entire home/apt	135	1	1
+1090449	Entire home/apt	135	1	1
+1090449	Entire home/apt	135	1	1
+1090449	Entire home/apt	135	1	1
+1090449	Entire home/apt	135	1	1
+1090449	Entire home/apt	135	1	1
+1090449	Entire home/apt	135	1	1
+1090449	Entire home/apt	135	1	1
+1090449	Entire home/apt	135	1	1
+1090449	Entire home/apt	135	1	1
+1090449	Entire home/apt	135	1	1
+1090449	Entire home/apt	135	1	1
+1090449	Entire home/apt	135	1	1
+1090449	Entire home/apt	135	1	1
+1097520	Entire home/apt	92	1	1
+1097520	Entire home/apt	92	1	1
+1097520	Entire home/apt	92	1	1
+1097520	Entire home/apt	92	1	1
+1097520	Entire home/apt	92	1	1
+1097520	Entire home/apt	92	1	1
+1097520	Entire home/apt	92	1	1
+1097520	Entire home/apt	92	1	1
+1097520	Entire home/apt	92	1	1
+1097520	Entire home/apt	92	1	1
+1097520	Entire home/apt	92	1	1
+1097520	Entire home/apt	92	1	1
+1097520	Entire home/apt	92	1	1
+1097520	Entire home/apt	92	1	1
+1097520	Entire home/apt	92	1	1
+1097520	Entire home/apt	92	1	1
+757840	Entire home/apt	250	1	1
+757840	Entire home/apt	250	1	1
+777159	Entire home/apt	150	1	1
+777159	Entire home/apt	150	1	1
+777159	Entire home/apt	150	1	1
+796594	Entire home/apt	199	1	1
+797358	Private room	68	1	1
+797358	Private room	68	1	1
+797358	Private room	68	1	1
+797358	Private room	68	1	1
+797358	Private room	68	1	1
+797358	Private room	68	1	1
+797358	Private room	68	1	1
+797358	Private room	68	1	1
+797358	Private room	68	1	1
+803902	Entire home/apt	250	1	1
+808811	Entire home/apt	175	1	1
+808811	Entire home/apt	175	1	1
+808811	Entire home/apt	175	1	1
+808811	Entire home/apt	175	1	1
+817115	Entire home/apt	50	1	1
+817115	Entire home/apt	50	1	1
+817115	Entire home/apt	50	1	1
+817115	Entire home/apt	50	1	1
+817115	Entire home/apt	50	1	1
+817115	Entire home/apt	50	1	1
+817115	Entire home/apt	50	1	1
+817115	Entire home/apt	50	1	1
+826436	Private room	75	1	1
+826436	Private room	75	1	1
+826436	Private room	75	1	1
+826436	Private room	75	1	1
+826436	Private room	75	1	1
+826436	Private room	75	1	1
+835149	Private room	58	1	1
+835149	Private room	58	1	1
+835149	Private room	58	1	1
+835149	Private room	58	1	1
+835149	Private room	58	1	1
+835149	Private room	58	1	1
+835149	Private room	58	1	1
+835149	Private room	58	1	1
+835149	Private room	58	1	1
+835149	Private room	58	1	1
+835149	Private room	58	1	1
+835149	Private room	58	1	1
+835149	Private room	58	1	1
+835149	Private room	58	1	1
+835149	Private room	58	1	1
+835149	Private room	58	1	1
+835149	Private room	58	1	1
+835149	Private room	58	1	1
+835149	Private room	58	1	1
+835149	Private room	58	1	1
+835149	Private room	58	1	1
+835149	Private room	58	1	1
+835149	Private room	58	1	1
+835149	Private room	58	1	1
+835149	Private room	58	1	1
+835149	Private room	58	1	1
+835149	Private room	58	1	1
+835149	Private room	58	1	1
+835149	Private room	58	1	1
+835149	Private room	58	1	1
+835149	Private room	58	1	1
+835149	Private room	58	1	1
+835149	Private room	58	1	1
+835149	Private room	58	1	1
+835149	Private room	58	1	1
+835149	Private room	58	1	1
+835149	Private room	58	1	1
+835149	Private room	58	1	1
+838764	Entire home/apt	240	1	1
+841049	Private room	58	1	1
+841049	Private room	58	1	1
+841049	Private room	58	1	1
+841049	Private room	58	1	1
+841049	Private room	58	1	1
+841049	Private room	58	1	1
+841049	Private room	58	1	1
+844939	Entire home/apt	99	1	1
+859467	Entire home/apt	195	1	1
+859467	Entire home/apt	195	1	1
+859467	Entire home/apt	195	1	1
+859467	Entire home/apt	195	1	1
+859467	Entire home/apt	195	1	1
+882274	Entire home/apt	79	1	1
+882274	Entire home/apt	79	1	1
+882274	Entire home/apt	79	1	1
+882274	Entire home/apt	79	1	1
+882274	Entire home/apt	79	1	1
+882274	Entire home/apt	79	1	1
+882274	Entire home/apt	79	1	1
+882274	Entire home/apt	79	1	1
+882274	Entire home/apt	79	1	1
+882274	Entire home/apt	79	1	1
+882274	Entire home/apt	79	1	1
+882274	Entire home/apt	79	1	1
+882274	Entire home/apt	79	1	1
+882274	Entire home/apt	79	1	1
+882274	Entire home/apt	79	1	1
+882274	Entire home/apt	79	1	1
+882274	Entire home/apt	79	1	1
+882274	Entire home/apt	79	1	1
+882274	Entire home/apt	79	1	1
+890677	Entire home/apt	147	1	1
+890677	Entire home/apt	147	1	1
+723723	Entire home/apt	155	1	1
+723723	Entire home/apt	155	1	1
+723723	Entire home/apt	155	1	1
+723723	Entire home/apt	155	1	1
+746380	Private room	69	1	1
+746380	Private room	69	1	1
+746380	Private room	69	1	1
+746380	Private room	69	1	1
+746380	Private room	69	1	1
+746380	Private room	69	1	1
+752483	Entire home/apt	160	1	1
+752483	Entire home/apt	160	1	1
+752483	Entire home/apt	160	1	1
+762029	Private room	60	1	1
+762029	Private room	60	1	1
+762029	Private room	60	1	1
+762029	Private room	60	1	1
+762029	Private room	60	1	1
+762029	Private room	60	1	1
+762029	Private room	60	1	1
+762029	Private room	60	1	1
+762029	Private room	60	1	1
+762029	Private room	60	1	1
+762029	Private room	60	1	1
+762029	Private room	60	1	1
+762029	Private room	60	1	1
+762029	Private room	60	1	1
+762029	Private room	60	1	1
+762029	Private room	60	1	1
+762029	Private room	60	1	1
+762029	Private room	60	1	1
+762029	Private room	60	1	1
+762029	Private room	60	1	1
+762029	Private room	60	1	1
+762029	Private room	60	1	1
+762029	Private room	60	1	1
+762029	Private room	60	1	1
+762029	Private room	60	1	1
+762029	Private room	60	1	1
+762029	Private room	60	1	1
+762029	Private room	60	1	1
+762029	Private room	60	1	1
+762029	Private room	60	1	1
+762029	Private room	60	1	1
+762029	Private room	60	1	1
+762029	Private room	60	1	1
+762029	Private room	60	1	1
+762029	Private room	60	1	1
+769213	Entire home/apt	124	1	1
+769213	Entire home/apt	124	1	1
+769213	Entire home/apt	124	1	1
+769213	Entire home/apt	124	1	1
+769213	Entire home/apt	124	1	1
+769213	Entire home/apt	124	1	1
+769213	Entire home/apt	124	1	1
+769213	Entire home/apt	124	1	1
+769213	Entire home/apt	124	1	1
+769213	Entire home/apt	124	1	1
+769213	Entire home/apt	124	1	1
+769213	Entire home/apt	124	1	1
+769213	Entire home/apt	124	1	1
+769213	Entire home/apt	124	1	1
+769213	Entire home/apt	124	1	1
+769213	Entire home/apt	124	1	1
+769213	Entire home/apt	124	1	1
+769213	Entire home/apt	124	1	1
+769213	Entire home/apt	124	1	1
+769213	Entire home/apt	124	1	1
+769213	Entire home/apt	124	1	1
+769213	Entire home/apt	124	1	1
+769213	Entire home/apt	124	1	1
+774659	Entire home/apt	105	1	1
+774659	Entire home/apt	105	1	1
+774659	Entire home/apt	105	1	1
+783061	Private room	60	1	1
+783061	Private room	60	1	1
+783061	Private room	60	1	1
+788146	Private room	58	1	1
+788146	Private room	58	1	1
+794633	Entire home/apt	79	1	1
+794633	Entire home/apt	79	1	1
+794633	Entire home/apt	79	1	1
+794633	Entire home/apt	79	1	1
+794633	Entire home/apt	79	1	1
+794633	Entire home/apt	79	1	1
+794633	Entire home/apt	79	1	1
+794633	Entire home/apt	79	1	1
+794633	Entire home/apt	79	1	1
+794633	Entire home/apt	79	1	1
+794633	Entire home/apt	79	1	1
+794633	Entire home/apt	79	1	1
+794633	Entire home/apt	79	1	1
+794633	Entire home/apt	79	1	1
+794633	Entire home/apt	79	1	1
+794633	Entire home/apt	79	1	1
+794633	Entire home/apt	79	1	1
+794633	Entire home/apt	79	1	1
+794633	Entire home/apt	79	1	1
+794633	Entire home/apt	79	1	1
+794633	Entire home/apt	79	1	1
+794633	Entire home/apt	79	1	1
+794633	Entire home/apt	79	1	1
+794633	Entire home/apt	79	1	1
+794633	Entire home/apt	79	1	1
+794633	Entire home/apt	79	1	1
+794633	Entire home/apt	79	1	1
+794633	Entire home/apt	79	1	1
+823989	Entire home/apt	105	1	1
+823989	Entire home/apt	105	1	1
+823989	Entire home/apt	105	1	1
+823989	Entire home/apt	105	1	1
+823989	Entire home/apt	105	1	1
+835149	Private room	58	1	1
+835149	Private room	58	1	1
+835149	Private room	58	1	1
+835149	Private room	58	1	1
+835149	Private room	58	1	1
+835149	Private room	58	1	1
+835149	Private room	58	1	1
+835149	Private room	58	1	1
+835149	Private room	58	1	1
+835149	Private room	58	1	1
+835149	Private room	58	1	1
+835149	Private room	58	1	1
+835149	Private room	58	1	1
+835149	Private room	58	1	1
+835149	Private room	58	1	1
+835149	Private room	58	1	1
+835149	Private room	58	1	1
+835149	Private room	58	1	1
+835149	Private room	58	1	1
+835149	Private room	58	1	1
+841049	Private room	58	1	1
+841049	Private room	58	1	1
+841049	Private room	58	1	1
+841049	Private room	58	1	1
+841049	Private room	58	1	1
+841049	Private room	58	1	1
+841049	Private room	58	1	1
+841049	Private room	58	1	1
+841049	Private room	58	1	1
+841049	Private room	58	1	1
+841049	Private room	58	1	1
+841049	Private room	58	1	1
+841049	Private room	58	1	1
+841049	Private room	58	1	1
+841049	Private room	58	1	1
+841049	Private room	58	1	1
+841049	Private room	58	1	1
+841049	Private room	58	1	1
+841049	Private room	58	1	1
+841140	Entire home/apt	185	1	1
+841140	Entire home/apt	185	1	1
+841274	Entire home/apt	90	1	1
+841274	Entire home/apt	90	1	1
+841274	Entire home/apt	90	1	1
+841274	Entire home/apt	90	1	1
+841274	Entire home/apt	90	1	1
+841274	Entire home/apt	90	1	1
+841274	Entire home/apt	90	1	1
+856550	Private room	60	1	1
+856550	Private room	60	1	1
+856550	Private room	60	1	1
+856550	Private room	60	1	1
+856550	Private room	60	1	1
+856550	Private room	60	1	1
+856550	Private room	60	1	1
+856550	Private room	60	1	1
+856550	Private room	60	1	1
+856550	Private room	60	1	1
+856550	Private room	60	1	1
+856550	Private room	60	1	1
+856550	Private room	60	1	1
+872152	Entire home/apt	182	1	1
+877203	Private room	60	1	1
+877203	Private room	60	1	1
+877203	Private room	60	1	1
+877203	Private room	60	1	1
+877203	Private room	60	1	1
+879181	Private room	60	1	1
+879181	Private room	60	1	1
+902609	Entire home/apt	58	1	1
+902609	Entire home/apt	58	1	1
+902609	Entire home/apt	58	1	1
+902609	Entire home/apt	58	1	1
+902609	Entire home/apt	58	1	1
+902609	Entire home/apt	58	1	1
+904057	Entire home/apt	95	1	1
+904057	Entire home/apt	95	1	1
+904057	Entire home/apt	95	1	1
+904057	Entire home/apt	95	1	1
+904057	Entire home/apt	95	1	1
+904057	Entire home/apt	95	1	1
+904057	Entire home/apt	95	1	1
+904057	Entire home/apt	95	1	1
+904057	Entire home/apt	95	1	1
+904057	Entire home/apt	95	1	1
+904057	Entire home/apt	95	1	1
+904057	Entire home/apt	95	1	1
+904057	Entire home/apt	95	1	1
+909102	Private room	99	1	1
+909102	Private room	99	1	1
+909102	Private room	99	1	1
+909102	Private room	99	1	1
+909102	Private room	99	1	1
+909102	Private room	99	1	1
+909102	Private room	99	1	1
+909102	Private room	99	1	1
+909102	Private room	99	1	1
+909102	Private room	99	1	1
+921571	Private room	50	1	1
+922986	Entire home/apt	128	1	1
+922986	Entire home/apt	128	1	1
+922986	Entire home/apt	128	1	1
+1097520	Entire home/apt	92	1	1
+1097520	Entire home/apt	92	1	1
+1097766	Private room	55	1	1
+1097766	Private room	55	1	1
+1097766	Private room	55	1	1
+1097766	Private room	55	1	1
+1097766	Private room	55	1	1
+1100686	Private room	54	1	1
+1100686	Private room	54	1	1
+1100686	Private room	54	1	1
+1100686	Private room	54	1	1
+1100686	Private room	54	1	1
+1100686	Private room	54	1	1
+1100686	Private room	54	1	1
+1100714	Private room	75	1	1
+1100714	Private room	75	1	1
+1100714	Private room	75	1	1
+1100714	Private room	75	1	1
+1100714	Private room	75	1	1
+1100714	Private room	75	1	1
+1100714	Private room	75	1	1
+1100714	Private room	75	1	1
+1100714	Private room	75	1	1
+1100714	Private room	75	1	1
+1110749	Entire home/apt	325	1	1
+1114695	Entire home/apt	245	1	1
+1114695	Entire home/apt	245	1	1
+1114695	Entire home/apt	245	1	1
+1114695	Entire home/apt	245	1	1
+1114695	Entire home/apt	245	1	1
+1114695	Entire home/apt	245	1	1
+1114695	Entire home/apt	245	1	1
+1118153	Private room	57	1	1
+1118153	Private room	57	1	1
+1118153	Private room	57	1	1
+1118153	Private room	57	1	1
+1118153	Private room	57	1	1
+1118153	Private room	57	1	1
+1133329	Entire home/apt	78	1	1
+1133329	Entire home/apt	78	1	1
+1133329	Entire home/apt	78	1	1
+1133329	Entire home/apt	78	1	1
+1141226	Entire home/apt	174	1	1
+1141226	Entire home/apt	174	1	1
+1141226	Entire home/apt	174	1	1
+1141226	Entire home/apt	174	1	1
+1142039	Private room	50	1	1
+1142039	Private room	50	1	1
+1145941	Entire home/apt	149	1	1
+1145941	Entire home/apt	149	1	1
+1145941	Entire home/apt	149	1	1
+1145941	Entire home/apt	149	1	1
+1145941	Entire home/apt	149	1	1
+1145941	Entire home/apt	149	1	1
+1145941	Entire home/apt	149	1	1
+1145941	Entire home/apt	149	1	1
+1146966	Private room	50	1	1
+1146966	Private room	50	1	1
+1146966	Private room	50	1	1
+1146966	Private room	50	1	1
+1148517	Entire home/apt	145	1	1
+1148517	Entire home/apt	145	1	1
+1148517	Entire home/apt	145	1	1
+1148517	Entire home/apt	145	1	1
+1148517	Entire home/apt	145	1	1
+1148517	Entire home/apt	145	1	1
+1148517	Entire home/apt	145	1	1
+1150519	Entire home/apt	250	1	1
+1163345	Entire home/apt	169	1	1
+1163345	Entire home/apt	169	1	1
+1163345	Entire home/apt	169	1	1
+1163345	Entire home/apt	169	1	1
+1163345	Entire home/apt	169	1	1
+1167507	Entire home/apt	110	1	1
+1167507	Entire home/apt	110	1	1
+1171574	Private room	65	1	1
+1171574	Private room	65	1	1
+1171574	Private room	65	1	1
+1171574	Private room	65	1	1
+1171574	Private room	65	1	1
+1171574	Private room	65	1	1
+1171574	Private room	65	1	1
+1171574	Private room	65	1	1
+1171574	Private room	65	1	1
+1171574	Private room	65	1	1
+1171574	Private room	65	1	1
+1171574	Private room	65	1	1
+1171574	Private room	65	1	1
+1171574	Private room	65	1	1
+1171574	Private room	65	1	1
+1171574	Private room	65	1	1
+1171574	Private room	65	1	1
+1171574	Private room	65	1	1
+1171574	Private room	65	1	1
+1171574	Private room	65	1	1
+1171574	Private room	65	1	1
+1171574	Private room	65	1	1
+1200083	Entire home/apt	104	1	1
+1209447	Entire home/apt	139	1	1
+1209447	Entire home/apt	139	1	1
+1214306	Private room	72	1	1
+1214306	Private room	72	1	1
+1214306	Private room	72	1	1
+1214306	Private room	72	1	1
+1214306	Private room	72	1	1
+1214306	Private room	72	1	1
+1214306	Private room	72	1	1
+890677	Entire home/apt	147	1	1
+890677	Entire home/apt	147	1	1
+890677	Entire home/apt	147	1	1
+904057	Entire home/apt	95	1	1
+904057	Entire home/apt	95	1	1
+904057	Entire home/apt	95	1	1
+904057	Entire home/apt	95	1	1
+904057	Entire home/apt	95	1	1
+904057	Entire home/apt	95	1	1
+904057	Entire home/apt	95	1	1
+904057	Entire home/apt	95	1	1
+904057	Entire home/apt	95	1	1
+904057	Entire home/apt	95	1	1
+909102	Private room	99	1	1
+909102	Private room	99	1	1
+909102	Private room	99	1	1
+909102	Private room	99	1	1
+909102	Private room	99	1	1
+910784	Entire home/apt	125	1	1
+910784	Entire home/apt	125	1	1
+910784	Entire home/apt	125	1	1
+910784	Entire home/apt	125	1	1
+910784	Entire home/apt	125	1	1
+910784	Entire home/apt	125	1	1
+910784	Entire home/apt	125	1	1
+910784	Entire home/apt	125	1	1
+910784	Entire home/apt	125	1	1
+910784	Entire home/apt	125	1	1
+910784	Entire home/apt	125	1	1
+910784	Entire home/apt	125	1	1
+910784	Entire home/apt	125	1	1
+910784	Entire home/apt	125	1	1
+910784	Entire home/apt	125	1	1
+910784	Entire home/apt	125	1	1
+910784	Entire home/apt	125	1	1
+910784	Entire home/apt	125	1	1
+910784	Entire home/apt	125	1	1
+910784	Entire home/apt	125	1	1
+910784	Entire home/apt	125	1	1
+910784	Entire home/apt	125	1	1
+910784	Entire home/apt	125	1	1
+910784	Entire home/apt	125	1	1
+910784	Entire home/apt	125	1	1
+910784	Entire home/apt	125	1	1
+910784	Entire home/apt	125	1	1
+934123	Entire home/apt	139	1	1
+935845	Entire home/apt	97	1	1
+935845	Entire home/apt	97	1	1
+935845	Entire home/apt	97	1	1
+935845	Entire home/apt	97	1	1
+935845	Entire home/apt	97	1	1
+935845	Entire home/apt	97	1	1
+936177	Entire home/apt	135	1	1
+942490	Private room	80	1	1
+942490	Private room	80	1	1
+942490	Private room	80	1	1
+942490	Private room	80	1	1
+942490	Private room	80	1	1
+942490	Private room	80	1	1
+942490	Private room	80	1	1
+942490	Private room	80	1	1
+942490	Private room	80	1	1
+942490	Private room	80	1	1
+958475	Entire home/apt	85	1	1
+958475	Entire home/apt	85	1	1
+958475	Entire home/apt	85	1	1
+958475	Entire home/apt	85	1	1
+958475	Entire home/apt	85	1	1
+958475	Entire home/apt	85	1	1
+958475	Entire home/apt	85	1	1
+958475	Entire home/apt	85	1	1
+958475	Entire home/apt	85	1	1
+958475	Entire home/apt	85	1	1
+958475	Entire home/apt	85	1	1
+958475	Entire home/apt	85	1	1
+973859	Entire home/apt	115	1	1
+973859	Entire home/apt	115	1	1
+973859	Entire home/apt	115	1	1
+973859	Entire home/apt	115	1	1
+973859	Entire home/apt	115	1	1
+973859	Entire home/apt	115	1	1
+988176	Entire home/apt	125	1	1
+988176	Entire home/apt	125	1	1
+988176	Entire home/apt	125	1	1
+988176	Entire home/apt	125	1	1
+988176	Entire home/apt	125	1	1
+1023693	Entire home/apt	115	1	1
+1023693	Entire home/apt	115	1	1
+1023693	Entire home/apt	115	1	1
+1023693	Entire home/apt	115	1	1
+1023693	Entire home/apt	115	1	1
+1023693	Entire home/apt	115	1	1
+1023693	Entire home/apt	115	1	1
+1023693	Entire home/apt	115	1	1
+1023693	Entire home/apt	115	1	1
+1023693	Entire home/apt	115	1	1
+1023693	Entire home/apt	115	1	1
+1023693	Entire home/apt	115	1	1
+1023693	Entire home/apt	115	1	1
+1023693	Entire home/apt	115	1	1
+1023693	Entire home/apt	115	1	1
+1030615	Private room	95	1	1
+1030615	Private room	95	1	1
+1030615	Private room	95	1	1
+1048798	Entire home/apt	129	1	1
+1048798	Entire home/apt	129	1	1
+1048798	Entire home/apt	129	1	1
+1214306	Private room	72	1	1
+1214316	Private room	57	1	1
+1214316	Private room	57	1	1
+1214316	Private room	57	1	1
+1214316	Private room	57	1	1
+1214316	Private room	57	1	1
+1246117	Entire home/apt	200	1	1
+1246117	Entire home/apt	200	1	1
+1246117	Entire home/apt	200	1	1
+1246117	Entire home/apt	200	1	1
+1246117	Entire home/apt	200	1	1
+1246809	Entire home/apt	79	1	1
+1246809	Entire home/apt	79	1	1
+1249060	Entire home/apt	85	1	1
+1249060	Entire home/apt	85	1	1
+1249060	Entire home/apt	85	1	1
+1249060	Entire home/apt	85	1	1
+1249060	Entire home/apt	85	1	1
+1249060	Entire home/apt	85	1	1
+1249060	Entire home/apt	85	1	1
+1249060	Entire home/apt	85	1	1
+1249060	Entire home/apt	85	1	1
+1249060	Entire home/apt	85	1	1
+1249060	Entire home/apt	85	1	1
+1301535	Entire home/apt	105	1	1
+1301535	Entire home/apt	105	1	1
+1305009	Private room	50	1	1
+1305009	Private room	50	1	1
+1307898	Entire home/apt	450	1	1
+1307898	Entire home/apt	450	1	1
+1321090	Entire home/apt	95	1	1
+1321090	Entire home/apt	95	1	1
+1321090	Entire home/apt	95	1	1
+1321090	Entire home/apt	95	1	1
+1323446	Entire home/apt	98	1	1
+1323446	Entire home/apt	98	1	1
+1323446	Entire home/apt	98	1	1
+1323446	Entire home/apt	98	1	1
+1323446	Entire home/apt	98	1	1
+1323446	Entire home/apt	98	1	1
+1323446	Entire home/apt	98	1	1
+1323446	Entire home/apt	98	1	1
+1323446	Entire home/apt	98	1	1
+1328159	Private room	49	1	1
+1328159	Private room	49	1	1
+1328159	Private room	49	1	1
+1328159	Private room	49	1	1
+1348777	Private room	150	1	1
+1348777	Private room	150	1	1
+1348777	Private room	150	1	1
+1349175	Private room	80	1	1
+1349175	Private room	80	1	1
+1349175	Private room	80	1	1
+1349175	Private room	80	1	1
+1349175	Private room	80	1	1
+1349175	Private room	80	1	1
+1349175	Private room	80	1	1
+1349175	Private room	80	1	1
+1349175	Private room	80	1	1
+1351716	Entire home/apt	122	1	1
+1351716	Entire home/apt	122	1	1
+1351716	Entire home/apt	122	1	1
+1351716	Entire home/apt	122	1	1
+1351716	Entire home/apt	122	1	1
+1351716	Entire home/apt	122	1	1
+1351716	Entire home/apt	122	1	1
+1351716	Entire home/apt	122	1	1
+1354750	Entire home/apt	79	1	1
+1354750	Entire home/apt	79	1	1
+1354750	Entire home/apt	79	1	1
+1355094	Private room	68	1	1
+1355094	Private room	68	1	1
+1356339	Entire home/apt	119	1	1
+1356339	Entire home/apt	119	1	1
+1364440	Private room	55	1	1
+1364440	Private room	55	1	1
+1364440	Private room	55	1	1
+1364440	Private room	55	1	1
+1364440	Private room	55	1	1
+1386306	Private room	66	1	1
+1386306	Private room	66	1	1
+1386306	Private room	66	1	1
+1386306	Private room	66	1	1
+1386306	Private room	66	1	1
+1386306	Private room	66	1	1
+1407502	Private room	75	1	1
+1407502	Private room	75	1	1
+1416763	Entire home/apt	150	1	1
+1416763	Entire home/apt	150	1	1
+1427103	Entire home/apt	95	1	1
+1427103	Entire home/apt	95	1	1
+1427103	Entire home/apt	95	1	1
+1428687	Entire home/apt	135	1	1
+1428687	Entire home/apt	135	1	1
+1428687	Entire home/apt	135	1	1
+1428687	Entire home/apt	135	1	1
+1428687	Entire home/apt	135	1	1
+1428687	Entire home/apt	135	1	1
+1429904	Entire home/apt	100	1	1
+1429904	Entire home/apt	100	1	1
+1429904	Entire home/apt	100	1	1
+1429904	Entire home/apt	100	1	1
+1429904	Entire home/apt	100	1	1
+1429904	Entire home/apt	100	1	1
+1429904	Entire home/apt	100	1	1
+1432713	Entire home/apt	120	1	1
+1432713	Entire home/apt	120	1	1
+1048798	Entire home/apt	129	1	1
+1048798	Entire home/apt	129	1	1
+1048798	Entire home/apt	129	1	1
+1048798	Entire home/apt	129	1	1
+1048798	Entire home/apt	129	1	1
+1048798	Entire home/apt	129	1	1
+1048798	Entire home/apt	129	1	1
+1048798	Entire home/apt	129	1	1
+1048798	Entire home/apt	129	1	1
+1048798	Entire home/apt	129	1	1
+1048798	Entire home/apt	129	1	1
+1048798	Entire home/apt	129	1	1
+1048798	Entire home/apt	129	1	1
+1060467	Private room	130	1	1
+1060467	Private room	130	1	1
+1060467	Private room	130	1	1
+1060467	Private room	130	1	1
+1060467	Private room	130	1	1
+1060467	Private room	130	1	1
+1063855	Entire home/apt	225	1	1
+1063855	Entire home/apt	225	1	1
+1071843	Entire home/apt	95	1	1
+1071843	Entire home/apt	95	1	1
+1071843	Entire home/apt	95	1	1
+1071843	Entire home/apt	95	1	1
+1071843	Entire home/apt	95	1	1
+1071843	Entire home/apt	95	1	1
+1071843	Entire home/apt	95	1	1
+1071843	Entire home/apt	95	1	1
+1071843	Entire home/apt	95	1	1
+1071843	Entire home/apt	95	1	1
+1071843	Entire home/apt	95	1	1
+1071843	Entire home/apt	95	1	1
+1071843	Entire home/apt	95	1	1
+1071843	Entire home/apt	95	1	1
+1071843	Entire home/apt	95	1	1
+1071843	Entire home/apt	95	1	1
+1071843	Entire home/apt	95	1	1
+1071843	Entire home/apt	95	1	1
+1071843	Entire home/apt	95	1	1
+1071843	Entire home/apt	95	1	1
+1071843	Entire home/apt	95	1	1
+1071843	Entire home/apt	95	1	1
+1071843	Entire home/apt	95	1	1
+1071843	Entire home/apt	95	1	1
+1071843	Entire home/apt	95	1	1
+1071843	Entire home/apt	95	1	1
+1071843	Entire home/apt	95	1	1
+1071843	Entire home/apt	95	1	1
+1080097	Private room	149	1	1
+1080097	Private room	149	1	1
+1080097	Private room	149	1	1
+1080097	Private room	149	1	1
+1080097	Private room	149	1	1
+1080097	Private room	149	1	1
+1080097	Private room	149	1	1
+1080097	Private room	149	1	1
+1080097	Private room	149	1	1
+1080097	Private room	149	1	1
+1080097	Private room	149	1	1
+1080097	Private room	149	1	1
+1080097	Private room	149	1	1
+1080097	Private room	149	1	1
+1080097	Private room	149	1	1
+1080097	Private room	149	1	1
+1080097	Private room	149	1	1
+1080097	Private room	149	1	1
+1084046	Entire home/apt	165	1	1
+1084046	Entire home/apt	165	1	1
+1090307	Private room	109	1	1
+1090307	Private room	109	1	1
+1090307	Private room	109	1	1
+1107845	Entire home/apt	80	1	1
+1107845	Entire home/apt	80	1	1
+1107845	Entire home/apt	80	1	1
+1107845	Entire home/apt	80	1	1
+1107845	Entire home/apt	80	1	1
+1107845	Entire home/apt	80	1	1
+1107845	Entire home/apt	80	1	1
+1107845	Entire home/apt	80	1	1
+1107845	Entire home/apt	80	1	1
+1107845	Entire home/apt	80	1	1
+1107845	Entire home/apt	80	1	1
+1110749	Entire home/apt	325	1	1
+1110749	Entire home/apt	325	1	1
+1110749	Entire home/apt	325	1	1
+1110749	Entire home/apt	325	1	1
+1110749	Entire home/apt	325	1	1
+1110749	Entire home/apt	325	1	1
+1110749	Entire home/apt	325	1	1
+1110749	Entire home/apt	325	1	1
+1110749	Entire home/apt	325	1	1
+1110749	Entire home/apt	325	1	1
+1110749	Entire home/apt	325	1	1
+1112092	Entire home/apt	130	1	1
+1112092	Entire home/apt	130	1	1
+1122236	Entire home/apt	119	1	1
+1123977	Entire home/apt	150	1	1
+1123977	Entire home/apt	150	1	1
+1133329	Entire home/apt	78	1	1
+1133329	Entire home/apt	78	1	1
+1136984	Entire home/apt	150	1	1
+1145590	Entire home/apt	400	1	1
+1145590	Entire home/apt	400	1	1
+1145590	Entire home/apt	400	1	1
+1147349	Entire home/apt	110	1	1
+1157083	Entire home/apt	245	1	1
+935671	Entire home/apt	147	1	1
+935671	Entire home/apt	147	1	1
+935671	Entire home/apt	147	1	1
+935671	Entire home/apt	147	1	1
+935671	Entire home/apt	147	1	1
+935671	Entire home/apt	147	1	1
+935845	Entire home/apt	97	1	1
+936484	Entire home/apt	76	1	1
+936484	Entire home/apt	76	1	1
+937370	Entire home/apt	156	1	1
+941467	Private room	95	1	1
+941467	Private room	95	1	1
+941467	Private room	95	1	1
+941467	Private room	95	1	1
+941467	Private room	95	1	1
+941467	Private room	95	1	1
+941467	Private room	95	1	1
+941467	Private room	95	1	1
+941467	Private room	95	1	1
+941467	Private room	95	1	1
+941467	Private room	95	1	1
+941467	Private room	95	1	1
+941467	Private room	95	1	1
+941467	Private room	95	1	1
+941467	Private room	95	1	1
+942490	Private room	80	1	1
+942490	Private room	80	1	1
+942490	Private room	80	1	1
+942490	Private room	80	1	1
+953595	Entire home/apt	150	1	1
+955506	Entire home/apt	225	1	1
+973859	Entire home/apt	115	1	1
+973859	Entire home/apt	115	1	1
+973859	Entire home/apt	115	1	1
+973859	Entire home/apt	115	1	1
+973859	Entire home/apt	115	1	1
+973859	Entire home/apt	115	1	1
+977722	Entire home/apt	80	1	1
+977722	Entire home/apt	80	1	1
+977722	Entire home/apt	80	1	1
+977722	Entire home/apt	80	1	1
+977722	Entire home/apt	80	1	1
+977722	Entire home/apt	80	1	1
+977722	Entire home/apt	80	1	1
+977722	Entire home/apt	80	1	1
+977722	Entire home/apt	80	1	1
+988176	Entire home/apt	125	1	1
+988176	Entire home/apt	125	1	1
+988176	Entire home/apt	125	1	1
+988176	Entire home/apt	125	1	1
+988176	Entire home/apt	125	1	1
+988176	Entire home/apt	125	1	1
+988176	Entire home/apt	125	1	1
+991961	Entire home/apt	311	1	1
+995443	Entire home/apt	85	1	1
+995443	Entire home/apt	85	1	1
+1003890	Entire home/apt	99	1	1
+1023693	Entire home/apt	115	1	1
+1023693	Entire home/apt	115	1	1
+1023693	Entire home/apt	115	1	1
+1023693	Entire home/apt	115	1	1
+1023693	Entire home/apt	115	1	1
+1023693	Entire home/apt	115	1	1
+1023693	Entire home/apt	115	1	1
+1030615	Private room	95	1	1
+1030615	Private room	95	1	1
+1030615	Private room	95	1	1
+1030615	Private room	95	1	1
+1030615	Private room	95	1	1
+1030615	Private room	95	1	1
+1030615	Private room	95	1	1
+1030615	Private room	95	1	1
+1030615	Private room	95	1	1
+1030615	Private room	95	1	1
+1042022	Entire home/apt	125	1	1
+1042022	Entire home/apt	125	1	1
+1042022	Entire home/apt	125	1	1
+1042022	Entire home/apt	125	1	1
+1042022	Entire home/apt	125	1	1
+1042022	Entire home/apt	125	1	1
+1042022	Entire home/apt	125	1	1
+1042022	Entire home/apt	125	1	1
+1042022	Entire home/apt	125	1	1
+1042022	Entire home/apt	125	1	1
+1042022	Entire home/apt	125	1	1
+1042022	Entire home/apt	125	1	1
+1042022	Entire home/apt	125	1	1
+1042022	Entire home/apt	125	1	1
+1042022	Entire home/apt	125	1	1
+1043194	Entire home/apt	175	1	1
+1043194	Entire home/apt	175	1	1
+1055661	Entire home/apt	127	1	1
+1055661	Entire home/apt	127	1	1
+1060467	Private room	130	1	1
+1060467	Private room	130	1	1
+1060467	Private room	130	1	1
+1060467	Private room	130	1	1
+1060467	Private room	130	1	1
+1060467	Private room	130	1	1
+1060467	Private room	130	1	1
+1069562	Entire home/apt	149	1	1
+1069562	Entire home/apt	149	1	1
+1069562	Entire home/apt	149	1	1
+1084046	Entire home/apt	165	1	1
+1084046	Entire home/apt	165	1	1
+1090307	Private room	109	1	1
+1090307	Private room	109	1	1
+1432713	Entire home/apt	120	1	1
+1432713	Entire home/apt	120	1	1
+1432713	Entire home/apt	120	1	1
+1432713	Entire home/apt	120	1	1
+1432713	Entire home/apt	120	1	1
+1432713	Entire home/apt	120	1	1
+1432713	Entire home/apt	120	1	1
+1432713	Entire home/apt	120	1	1
+1439237	Private room	97	1	1
+1439237	Private room	97	1	1
+1439237	Private room	97	1	1
+1439237	Private room	97	1	1
+1450262	Entire home/apt	295	1	1
+1450262	Entire home/apt	295	1	1
+1450262	Entire home/apt	295	1	1
+1455269	Entire home/apt	115	1	1
+1455269	Entire home/apt	115	1	1
+1455269	Entire home/apt	115	1	1
+1455269	Entire home/apt	115	1	1
+1455908	Entire home/apt	135	1	1
+1455908	Entire home/apt	135	1	1
+1455908	Entire home/apt	135	1	1
+1455908	Entire home/apt	135	1	1
+1476298	Entire home/apt	80	1	1
+1476298	Entire home/apt	80	1	1
+1476298	Entire home/apt	80	1	1
+1476298	Entire home/apt	80	1	1
+1476298	Entire home/apt	80	1	1
+1476298	Entire home/apt	80	1	1
+1476298	Entire home/apt	80	1	1
+1476298	Entire home/apt	80	1	1
+1476298	Entire home/apt	80	1	1
+1476298	Entire home/apt	80	1	1
+1476298	Entire home/apt	80	1	1
+1476298	Entire home/apt	80	1	1
+1476298	Entire home/apt	80	1	1
+1476298	Entire home/apt	80	1	1
+1476298	Entire home/apt	80	1	1
+1476298	Entire home/apt	80	1	1
+1476298	Entire home/apt	80	1	1
+1476298	Entire home/apt	80	1	1
+1476298	Entire home/apt	80	1	1
+1476298	Entire home/apt	80	1	1
+1476298	Entire home/apt	80	1	1
+1476298	Entire home/apt	80	1	1
+1476298	Entire home/apt	80	1	1
+1476298	Entire home/apt	80	1	1
+1476298	Entire home/apt	80	1	1
+1476298	Entire home/apt	80	1	1
+1476298	Entire home/apt	80	1	1
+1476298	Entire home/apt	80	1	1
+1476298	Entire home/apt	80	1	1
+1476298	Entire home/apt	80	1	1
+1476298	Entire home/apt	80	1	1
+1476298	Entire home/apt	80	1	1
+1476298	Entire home/apt	80	1	1
+1476298	Entire home/apt	80	1	1
+1476298	Entire home/apt	80	1	1
+1476298	Entire home/apt	80	1	1
+1476298	Entire home/apt	80	1	1
+1476298	Entire home/apt	80	1	1
+1476298	Entire home/apt	80	1	1
+1483944	Private room	96	1	1
+1483944	Private room	96	1	1
+1483944	Private room	96	1	1
+1484651	Private room	150	1	1
+1493197	Entire home/apt	275	1	1
+1520533	Shared room	49	1	1
+1520549	Shared room	65	1	1
+1521633	Entire home/apt	85	1	1
+1521633	Entire home/apt	85	1	1
+1521633	Entire home/apt	85	1	1
+1525972	Entire home/apt	190	1	1
+1525972	Entire home/apt	190	1	1
+1525972	Entire home/apt	190	1	1
+1531458	Entire home/apt	105	1	1
+1531458	Entire home/apt	105	1	1
+1534622	Private room	39	1	1
+1534622	Private room	39	1	1
+1534622	Private room	39	1	1
+1538865	Entire home/apt	90	1	1
+1538865	Entire home/apt	90	1	1
+1539463	Private room	75	1	1
+1539476	Private room	75	1	1
+1539476	Private room	75	1	1
+1539476	Private room	75	1	1
+1539476	Private room	75	1	1
+1539476	Private room	75	1	1
+1539476	Private room	75	1	1
+1547337	Entire home/apt	100	1	1
+1547337	Entire home/apt	100	1	1
+1556170	Entire home/apt	69	1	1
+1556170	Entire home/apt	69	1	1
+1556170	Entire home/apt	69	1	1
+1556170	Entire home/apt	69	1	1
+1556170	Entire home/apt	69	1	1
+1557314	Entire home/apt	105	1	1
+1566487	Entire home/apt	79	1	1
+1566487	Entire home/apt	79	1	1
+1566487	Entire home/apt	79	1	1
+1566487	Entire home/apt	79	1	1
+1583047	Entire home/apt	77	1	1
+1593939	Private room	55	1	1
+1593939	Private room	55	1	1
+1593939	Private room	55	1	1
+1593939	Private room	55	1	1
+1593991	Private room	150	1	1
+1157083	Entire home/apt	245	1	1
+1157083	Entire home/apt	245	1	1
+1157083	Entire home/apt	245	1	1
+1159111	Entire home/apt	204	1	1
+1159111	Entire home/apt	204	1	1
+1163345	Entire home/apt	169	1	1
+1163345	Entire home/apt	169	1	1
+1163345	Entire home/apt	169	1	1
+1163345	Entire home/apt	169	1	1
+1163345	Entire home/apt	169	1	1
+1163345	Entire home/apt	169	1	1
+1167507	Entire home/apt	110	1	1
+1167507	Entire home/apt	110	1	1
+1167507	Entire home/apt	110	1	1
+1167507	Entire home/apt	110	1	1
+1167507	Entire home/apt	110	1	1
+1167507	Entire home/apt	110	1	1
+1190224	Private room	60	1	1
+1190224	Private room	60	1	1
+1190224	Private room	60	1	1
+1198799	Private room	70	1	1
+1200829	Entire home/apt	100	1	1
+1200829	Entire home/apt	100	1	1
+1200829	Entire home/apt	100	1	1
+1204142	Entire home/apt	138	1	1
+1204142	Entire home/apt	138	1	1
+1204142	Entire home/apt	138	1	1
+1204142	Entire home/apt	138	1	1
+1205666	Private room	75	1	1
+1205666	Private room	75	1	1
+1205666	Private room	75	1	1
+1205666	Private room	75	1	1
+1205666	Private room	75	1	1
+1205666	Private room	75	1	1
+1205666	Private room	75	1	1
+1205666	Private room	75	1	1
+1205666	Private room	75	1	1
+1205666	Private room	75	1	1
+1209255	Entire home/apt	425	1	1
+1220816	Entire home/apt	89	1	1
+1220816	Entire home/apt	89	1	1
+1220816	Entire home/apt	89	1	1
+1220816	Entire home/apt	89	1	1
+1220816	Entire home/apt	89	1	1
+1220816	Entire home/apt	89	1	1
+1220816	Entire home/apt	89	1	1
+1220816	Entire home/apt	89	1	1
+1220816	Entire home/apt	89	1	1
+1220816	Entire home/apt	89	1	1
+1220816	Entire home/apt	89	1	1
+1220816	Entire home/apt	89	1	1
+1223644	Entire home/apt	90	1	1
+1223644	Entire home/apt	90	1	1
+1223644	Entire home/apt	90	1	1
+1223644	Entire home/apt	90	1	1
+1223644	Entire home/apt	90	1	1
+1225820	Entire home/apt	85	1	1
+1225820	Entire home/apt	85	1	1
+1225820	Entire home/apt	85	1	1
+1225820	Entire home/apt	85	1	1
+1246769	Entire home/apt	129	1	1
+1246769	Entire home/apt	129	1	1
+1246769	Entire home/apt	129	1	1
+1246769	Entire home/apt	129	1	1
+1246769	Entire home/apt	129	1	1
+1246769	Entire home/apt	129	1	1
+1246769	Entire home/apt	129	1	1
+1246769	Entire home/apt	129	1	1
+1246769	Entire home/apt	129	1	1
+1246769	Entire home/apt	129	1	1
+1246769	Entire home/apt	129	1	1
+1246769	Entire home/apt	129	1	1
+1246769	Entire home/apt	129	1	1
+1246769	Entire home/apt	129	1	1
+1246769	Entire home/apt	129	1	1
+1246769	Entire home/apt	129	1	1
+1246769	Entire home/apt	129	1	1
+1246769	Entire home/apt	129	1	1
+1246769	Entire home/apt	129	1	1
+1246769	Entire home/apt	129	1	1
+1246769	Entire home/apt	129	1	1
+1246769	Entire home/apt	129	1	1
+1246769	Entire home/apt	129	1	1
+1246769	Entire home/apt	129	1	1
+1246769	Entire home/apt	129	1	1
+1246769	Entire home/apt	129	1	1
+1246769	Entire home/apt	129	1	1
+1246769	Entire home/apt	129	1	1
+1246809	Entire home/apt	79	1	1
+1246809	Entire home/apt	79	1	1
+1246809	Entire home/apt	79	1	1
+1246809	Entire home/apt	79	1	1
+1246809	Entire home/apt	79	1	1
+1252740	Private room	70	1	1
+1252740	Private room	70	1	1
+1252740	Private room	70	1	1
+1264287	Entire home/apt	225	1	1
+1264287	Entire home/apt	225	1	1
+1264287	Entire home/apt	225	1	1
+1264287	Entire home/apt	225	1	1
+1264287	Entire home/apt	225	1	1
+1266459	Entire home/apt	150	1	1
+1277033	Private room	75	1	1
+1277033	Private room	75	1	1
+1277033	Private room	75	1	1
+1277033	Private room	75	1	1
+1289082	Entire home/apt	275	1	1
+1593991	Private room	150	1	1
+1594219	Private room	86	1	1
+1594219	Private room	86	1	1
+1602421	Private room	45	1	1
+1602421	Private room	45	1	1
+1606171	Private room	38	1	1
+1606171	Private room	38	1	1
+1606171	Private room	38	1	1
+1606171	Private room	38	1	1
+1606171	Private room	38	1	1
+1606171	Private room	38	1	1
+1606171	Private room	38	1	1
+1606171	Private room	38	1	1
+1609922	Entire home/apt	150	1	1
+1609922	Entire home/apt	150	1	1
+1609922	Entire home/apt	150	1	1
+1614502	Private room	75	1	1
+1614502	Private room	75	1	1
+1614502	Private room	75	1	1
+1618842	Entire home/apt	95	1	1
+1618842	Entire home/apt	95	1	1
+1618842	Entire home/apt	95	1	1
+1618842	Entire home/apt	95	1	1
+1618842	Entire home/apt	95	1	1
+1622794	Entire home/apt	145	1	1
+1622794	Entire home/apt	145	1	1
+1622794	Entire home/apt	145	1	1
+1622794	Entire home/apt	145	1	1
+1622794	Entire home/apt	145	1	1
+1622794	Entire home/apt	145	1	1
+1622794	Entire home/apt	145	1	1
+1622794	Entire home/apt	145	1	1
+1684236	Entire home/apt	100	1	1
+1684236	Entire home/apt	100	1	1
+1684236	Entire home/apt	100	1	1
+1684236	Entire home/apt	100	1	1
+1686930	Entire home/apt	159	1	1
+1686930	Entire home/apt	159	1	1
+1686930	Entire home/apt	159	1	1
+1686930	Entire home/apt	159	1	1
+1696015	Entire home/apt	375	1	1
+1696015	Entire home/apt	375	1	1
+1696015	Entire home/apt	375	1	1
+1696194	Entire home/apt	228	1	1
+1709737	Entire home/apt	250	1	1
+1709737	Entire home/apt	250	1	1
+1716901	Entire home/apt	85	1	1
+1716901	Entire home/apt	85	1	1
+1724849	Entire home/apt	275	1	1
+1732441	Entire home/apt	85	1	1
+1732441	Entire home/apt	85	1	1
+1732441	Entire home/apt	85	1	1
+1732441	Entire home/apt	85	1	1
+1733747	Private room	72	1	1
+1733747	Private room	72	1	1
+1733747	Private room	72	1	1
+1733747	Private room	72	1	1
+1742425	Entire home/apt	95	1	1
+1742425	Entire home/apt	95	1	1
+1742425	Entire home/apt	95	1	1
+1742425	Entire home/apt	95	1	1
+1742425	Entire home/apt	95	1	1
+1750681	Private room	52	1	1
+1750681	Private room	52	1	1
+1750681	Private room	52	1	1
+1750681	Private room	52	1	1
+1750681	Private room	52	1	1
+1750681	Private room	52	1	1
+1750681	Private room	52	1	1
+1750681	Private room	52	1	1
+1758935	Private room	62	1	1
+1758935	Private room	62	1	1
+1758935	Private room	62	1	1
+1758935	Private room	62	1	1
+1758935	Private room	62	1	1
+1758935	Private room	62	1	1
+1758935	Private room	62	1	1
+1758935	Private room	62	1	1
+1758935	Private room	62	1	1
+1758935	Private room	62	1	1
+1758935	Private room	62	1	1
+1758935	Private room	62	1	1
+1758935	Private room	62	1	1
+1758935	Private room	62	1	1
+1758935	Private room	62	1	1
+1758935	Private room	62	1	1
+1758935	Private room	62	1	1
+1758935	Private room	62	1	1
+1758935	Private room	62	1	1
+1758935	Private room	62	1	1
+1758935	Private room	62	1	1
+1758935	Private room	62	1	1
+1758935	Private room	62	1	1
+1758935	Private room	62	1	1
+1758935	Private room	62	1	1
+1758935	Private room	62	1	1
+1758935	Private room	62	1	1
+1758935	Private room	62	1	1
+1758935	Private room	62	1	1
+1758935	Private room	62	1	1
+1758935	Private room	62	1	1
+1758935	Private room	62	1	1
+1758935	Private room	62	1	1
+1758935	Private room	62	1	1
+1758935	Private room	62	1	1
+1762354	Entire home/apt	120	1	1
+1762354	Entire home/apt	120	1	1
+1090307	Private room	109	1	1
+1090307	Private room	109	1	1
+1090307	Private room	109	1	1
+1090307	Private room	109	1	1
+1090307	Private room	109	1	1
+1090307	Private room	109	1	1
+1090449	Entire home/apt	135	1	1
+1090449	Entire home/apt	135	1	1
+1090449	Entire home/apt	135	1	1
+1090449	Entire home/apt	135	1	1
+1090449	Entire home/apt	135	1	1
+1090449	Entire home/apt	135	1	1
+1090449	Entire home/apt	135	1	1
+1090449	Entire home/apt	135	1	1
+1090449	Entire home/apt	135	1	1
+1090449	Entire home/apt	135	1	1
+1090449	Entire home/apt	135	1	1
+1100686	Private room	54	1	1
+1100686	Private room	54	1	1
+1100686	Private room	54	1	1
+1100686	Private room	54	1	1
+1100686	Private room	54	1	1
+1100686	Private room	54	1	1
+1100686	Private room	54	1	1
+1100686	Private room	54	1	1
+1100686	Private room	54	1	1
+1100714	Private room	75	1	1
+1110749	Entire home/apt	325	1	1
+1110749	Entire home/apt	325	1	1
+1110749	Entire home/apt	325	1	1
+1110749	Entire home/apt	325	1	1
+1110749	Entire home/apt	325	1	1
+1110749	Entire home/apt	325	1	1
+1112092	Entire home/apt	130	1	1
+1112092	Entire home/apt	130	1	1
+1112092	Entire home/apt	130	1	1
+1112092	Entire home/apt	130	1	1
+1118153	Private room	57	1	1
+1118153	Private room	57	1	1
+1118153	Private room	57	1	1
+1122236	Entire home/apt	119	1	1
+1122236	Entire home/apt	119	1	1
+1122236	Entire home/apt	119	1	1
+1122236	Entire home/apt	119	1	1
+1122236	Entire home/apt	119	1	1
+1122236	Entire home/apt	119	1	1
+1133329	Entire home/apt	78	1	1
+1133329	Entire home/apt	78	1	1
+1136984	Entire home/apt	150	1	1
+1136984	Entire home/apt	150	1	1
+1136984	Entire home/apt	150	1	1
+1136984	Entire home/apt	150	1	1
+1136984	Entire home/apt	150	1	1
+1136984	Entire home/apt	150	1	1
+1136984	Entire home/apt	150	1	1
+1136984	Entire home/apt	150	1	1
+1136984	Entire home/apt	150	1	1
+1141226	Entire home/apt	174	1	1
+1142039	Private room	50	1	1
+1145148	Entire home/apt	250	1	1
+1163345	Entire home/apt	169	1	1
+1163345	Entire home/apt	169	1	1
+1163345	Entire home/apt	169	1	1
+1163345	Entire home/apt	169	1	1
+1163345	Entire home/apt	169	1	1
+1163345	Entire home/apt	169	1	1
+1163345	Entire home/apt	169	1	1
+1163345	Entire home/apt	169	1	1
+1163345	Entire home/apt	169	1	1
+1163345	Entire home/apt	169	1	1
+1171574	Private room	65	1	1
+1171574	Private room	65	1	1
+1171574	Private room	65	1	1
+1171574	Private room	65	1	1
+1171574	Private room	65	1	1
+1171574	Private room	65	1	1
+1171574	Private room	65	1	1
+1171574	Private room	65	1	1
+1171574	Private room	65	1	1
+1171574	Private room	65	1	1
+1171574	Private room	65	1	1
+1171574	Private room	65	1	1
+1171574	Private room	65	1	1
+1198884	Entire home/apt	150	1	1
+1198884	Entire home/apt	150	1	1
+1198884	Entire home/apt	150	1	1
+1198884	Entire home/apt	150	1	1
+1198884	Entire home/apt	150	1	1
+1198884	Entire home/apt	150	1	1
+1198884	Entire home/apt	150	1	1
+1200829	Entire home/apt	100	1	1
+1200829	Entire home/apt	100	1	1
+1200829	Entire home/apt	100	1	1
+1204142	Entire home/apt	138	1	1
+1204142	Entire home/apt	138	1	1
+1204142	Entire home/apt	138	1	1
+1204142	Entire home/apt	138	1	1
+1204142	Entire home/apt	138	1	1
+1204142	Entire home/apt	138	1	1
+1204142	Entire home/apt	138	1	1
+1204142	Entire home/apt	138	1	1
+1205666	Private room	75	1	1
+1205666	Private room	75	1	1
+1205666	Private room	75	1	1
+1205666	Private room	75	1	1
+1205666	Private room	75	1	1
+1205666	Private room	75	1	1
+794633	Entire home/apt	79	1	1
+794633	Entire home/apt	79	1	1
+794633	Entire home/apt	79	1	1
+794633	Entire home/apt	79	1	1
+794633	Entire home/apt	79	1	1
+794633	Entire home/apt	79	1	1
+794633	Entire home/apt	79	1	1
+794633	Entire home/apt	79	1	1
+794633	Entire home/apt	79	1	1
+794633	Entire home/apt	79	1	1
+794633	Entire home/apt	79	1	1
+794633	Entire home/apt	79	1	1
+794633	Entire home/apt	79	1	1
+799882	Private room	40	1	1
+799882	Private room	40	1	1
+799882	Private room	40	1	1
+799882	Private room	40	1	1
+815017	Shared room	55	1	1
+815017	Shared room	55	1	1
+815017	Shared room	55	1	1
+815017	Shared room	55	1	1
+815017	Shared room	55	1	1
+815017	Shared room	55	1	1
+815017	Shared room	55	1	1
+815017	Shared room	55	1	1
+815017	Shared room	55	1	1
+815017	Shared room	55	1	1
+815017	Shared room	55	1	1
+815017	Shared room	55	1	1
+815017	Shared room	55	1	1
+815017	Shared room	55	1	1
+825574	Entire home/apt	150	1	1
+825574	Entire home/apt	150	1	1
+825574	Entire home/apt	150	1	1
+825574	Entire home/apt	150	1	1
+825574	Entire home/apt	150	1	1
+825574	Entire home/apt	150	1	1
+825574	Entire home/apt	150	1	1
+825574	Entire home/apt	150	1	1
+825574	Entire home/apt	150	1	1
+828298	Entire home/apt	175	1	1
+841049	Private room	58	1	1
+841049	Private room	58	1	1
+841049	Private room	58	1	1
+841049	Private room	58	1	1
+841049	Private room	58	1	1
+841049	Private room	58	1	1
+841049	Private room	58	1	1
+841049	Private room	58	1	1
+841049	Private room	58	1	1
+841049	Private room	58	1	1
+841049	Private room	58	1	1
+841049	Private room	58	1	1
+841049	Private room	58	1	1
+841049	Private room	58	1	1
+841049	Private room	58	1	1
+841140	Entire home/apt	185	1	1
+841274	Entire home/apt	90	1	1
+841274	Entire home/apt	90	1	1
+841274	Entire home/apt	90	1	1
+856550	Private room	60	1	1
+856550	Private room	60	1	1
+856550	Private room	60	1	1
+856550	Private room	60	1	1
+856550	Private room	60	1	1
+856550	Private room	60	1	1
+856550	Private room	60	1	1
+856550	Private room	60	1	1
+856550	Private room	60	1	1
+856550	Private room	60	1	1
+856550	Private room	60	1	1
+856550	Private room	60	1	1
+856550	Private room	60	1	1
+873073	Entire home/apt	175	1	1
+888967	Private room	90	1	1
+888967	Private room	90	1	1
+888967	Private room	90	1	1
+888967	Private room	90	1	1
+902243	Entire home/apt	200	1	1
+931154	Entire home/apt	143	1	1
+931154	Entire home/apt	143	1	1
+931758	Entire home/apt	135	1	1
+935432	Entire home/apt	114	1	1
+935671	Entire home/apt	147	1	1
+935671	Entire home/apt	147	1	1
+936177	Entire home/apt	135	1	1
+936177	Entire home/apt	135	1	1
+936378	Private room	126	1	1
+937370	Entire home/apt	156	1	1
+937370	Entire home/apt	156	1	1
+937370	Entire home/apt	156	1	1
+937370	Entire home/apt	156	1	1
+937370	Entire home/apt	156	1	1
+941467	Private room	95	1	1
+941467	Private room	95	1	1
+941467	Private room	95	1	1
+941467	Private room	95	1	1
+941467	Private room	95	1	1
+941467	Private room	95	1	1
+941467	Private room	95	1	1
+941467	Private room	95	1	1
+941467	Private room	95	1	1
+941467	Private room	95	1	1
+941467	Private room	95	1	1
+945645	Entire home/apt	99	1	1
+948077	Entire home/apt	99	1	1
+948077	Entire home/apt	99	1	1
+948077	Entire home/apt	99	1	1
+3139972	Shared room	30	1	1
+1205666	Private room	75	1	1
+1205666	Private room	75	1	1
+1205666	Private room	75	1	1
+1205666	Private room	75	1	1
+1205666	Private room	75	1	1
+1205666	Private room	75	1	1
+1205666	Private room	75	1	1
+1205666	Private room	75	1	1
+1205666	Private room	75	1	1
+1205666	Private room	75	1	1
+1205666	Private room	75	1	1
+1205666	Private room	75	1	1
+1205666	Private room	75	1	1
+1209255	Entire home/apt	425	1	1
+1209255	Entire home/apt	425	1	1
+1209255	Entire home/apt	425	1	1
+1209255	Entire home/apt	425	1	1
+1209255	Entire home/apt	425	1	1
+1209255	Entire home/apt	425	1	1
+1209255	Entire home/apt	425	1	1
+1209255	Entire home/apt	425	1	1
+1219691	Entire home/apt	119	1	1
+1219691	Entire home/apt	119	1	1
+1220471	Entire home/apt	250	1	1
+1220471	Entire home/apt	250	1	1
+1225820	Entire home/apt	85	1	1
+1225820	Entire home/apt	85	1	1
+1225820	Entire home/apt	85	1	1
+1225820	Entire home/apt	85	1	1
+1225820	Entire home/apt	85	1	1
+1225820	Entire home/apt	85	1	1
+1244053	Private room	90	1	1
+1244053	Private room	90	1	1
+1244053	Private room	90	1	1
+1244053	Private room	90	1	1
+1244053	Private room	90	1	1
+1244053	Private room	90	1	1
+1244053	Private room	90	1	1
+1244053	Private room	90	1	1
+1246769	Entire home/apt	129	1	1
+1246769	Entire home/apt	129	1	1
+1246769	Entire home/apt	129	1	1
+1246769	Entire home/apt	129	1	1
+1246769	Entire home/apt	129	1	1
+1246769	Entire home/apt	129	1	1
+1246809	Entire home/apt	79	1	1
+1246809	Entire home/apt	79	1	1
+1246809	Entire home/apt	79	1	1
+1246809	Entire home/apt	79	1	1
+1252147	Entire home/apt	200	1	1
+1252147	Entire home/apt	200	1	1
+1252147	Entire home/apt	200	1	1
+1252147	Entire home/apt	200	1	1
+1252147	Entire home/apt	200	1	1
+1252740	Private room	70	1	1
+1252740	Private room	70	1	1
+1252740	Private room	70	1	1
+1252740	Private room	70	1	1
+1252740	Private room	70	1	1
+1252740	Private room	70	1	1
+1252740	Private room	70	1	1
+1252740	Private room	70	1	1
+1252740	Private room	70	1	1
+1252740	Private room	70	1	1
+1256883	Entire home/apt	99	1	1
+1256883	Entire home/apt	99	1	1
+1256883	Entire home/apt	99	1	1
+1256883	Entire home/apt	99	1	1
+1256883	Entire home/apt	99	1	1
+1256883	Entire home/apt	99	1	1
+1256883	Entire home/apt	99	1	1
+1256883	Entire home/apt	99	1	1
+1256883	Entire home/apt	99	1	1
+1256883	Entire home/apt	99	1	1
+1256892	Entire home/apt	100	1	1
+1256892	Entire home/apt	100	1	1
+1256892	Entire home/apt	100	1	1
+1256892	Entire home/apt	100	1	1
+1256892	Entire home/apt	100	1	1
+1256892	Entire home/apt	100	1	1
+1256892	Entire home/apt	100	1	1
+1256892	Entire home/apt	100	1	1
+1256892	Entire home/apt	100	1	1
+1259305	Entire home/apt	250	1	1
+1260259	Entire home/apt	150	1	1
+1260259	Entire home/apt	150	1	1
+1260259	Entire home/apt	150	1	1
+1260259	Entire home/apt	150	1	1
+1260259	Entire home/apt	150	1	1
+1260259	Entire home/apt	150	1	1
+1260259	Entire home/apt	150	1	1
+1260259	Entire home/apt	150	1	1
+1260259	Entire home/apt	150	1	1
+1260259	Entire home/apt	150	1	1
+1260259	Entire home/apt	150	1	1
+1266459	Entire home/apt	150	1	1
+1277033	Private room	75	1	1
+1277033	Private room	75	1	1
+1301535	Entire home/apt	105	1	1
+1301535	Entire home/apt	105	1	1
+1301535	Entire home/apt	105	1	1
+1301535	Entire home/apt	105	1	1
+1301535	Entire home/apt	105	1	1
+1305009	Private room	50	1	1
+1305009	Private room	50	1	1
+1321090	Entire home/apt	95	1	1
+1321090	Entire home/apt	95	1	1
+948077	Entire home/apt	99	1	1
+948077	Entire home/apt	99	1	1
+948077	Entire home/apt	99	1	1
+948077	Entire home/apt	99	1	1
+948077	Entire home/apt	99	1	1
+948077	Entire home/apt	99	1	1
+948077	Entire home/apt	99	1	1
+948077	Entire home/apt	99	1	1
+948077	Entire home/apt	99	1	1
+948077	Entire home/apt	99	1	1
+948077	Entire home/apt	99	1	1
+948077	Entire home/apt	99	1	1
+948077	Entire home/apt	99	1	1
+948077	Entire home/apt	99	1	1
+953595	Entire home/apt	150	1	1
+953595	Entire home/apt	150	1	1
+975179	Private room	55	1	1
+975179	Private room	55	1	1
+975179	Private room	55	1	1
+975179	Private room	55	1	1
+975179	Private room	55	1	1
+975179	Private room	55	1	1
+975179	Private room	55	1	1
+975179	Private room	55	1	1
+975179	Private room	55	1	1
+975179	Private room	55	1	1
+975179	Private room	55	1	1
+975179	Private room	55	1	1
+975179	Private room	55	1	1
+975179	Private room	55	1	1
+975179	Private room	55	1	1
+977722	Entire home/apt	80	1	1
+977722	Entire home/apt	80	1	1
+977722	Entire home/apt	80	1	1
+977722	Entire home/apt	80	1	1
+991961	Entire home/apt	311	1	1
+991961	Entire home/apt	311	1	1
+995443	Entire home/apt	85	1	1
+995443	Entire home/apt	85	1	1
+1000883	Entire home/apt	100	1	1
+1000883	Entire home/apt	100	1	1
+1000883	Entire home/apt	100	1	1
+1002835	Entire home/apt	135	1	1
+1002835	Entire home/apt	135	1	1
+1003890	Entire home/apt	99	1	1
+1003890	Entire home/apt	99	1	1
+1003890	Entire home/apt	99	1	1
+1003890	Entire home/apt	99	1	1
+1003890	Entire home/apt	99	1	1
+1009838	Private room	85	1	1
+1009838	Private room	85	1	1
+1009838	Private room	85	1	1
+1009838	Private room	85	1	1
+1009838	Private room	85	1	1
+1009838	Private room	85	1	1
+1018204	Private room	56	1	1
+1018204	Private room	56	1	1
+1018204	Private room	56	1	1
+1039766	Private room	60	1	1
+1039766	Private room	60	1	1
+1039766	Private room	60	1	1
+1039766	Private room	60	1	1
+1039766	Private room	60	1	1
+1039766	Private room	60	1	1
+1039766	Private room	60	1	1
+1039766	Private room	60	1	1
+1039766	Private room	60	1	1
+1039766	Private room	60	1	1
+1039766	Private room	60	1	1
+1039766	Private room	60	1	1
+1039766	Private room	60	1	1
+1039766	Private room	60	1	1
+1039766	Private room	60	1	1
+1039766	Private room	60	1	1
+1039766	Private room	60	1	1
+1049293	Entire home/apt	125	1	1
+1049293	Entire home/apt	125	1	1
+1049293	Entire home/apt	125	1	1
+1100714	Private room	75	1	1
+1100714	Private room	75	1	1
+1100714	Private room	75	1	1
+1100714	Private room	75	1	1
+1100714	Private room	75	1	1
+1100714	Private room	75	1	1
+1100714	Private room	75	1	1
+1100714	Private room	75	1	1
+1100714	Private room	75	1	1
+1100714	Private room	75	1	1
+1100714	Private room	75	1	1
+1100714	Private room	75	1	1
+1100714	Private room	75	1	1
+1100714	Private room	75	1	1
+1100714	Private room	75	1	1
+1100714	Private room	75	1	1
+1100714	Private room	75	1	1
+1114695	Entire home/apt	245	1	1
+1114695	Entire home/apt	245	1	1
+1114695	Entire home/apt	245	1	1
+1118153	Private room	57	1	1
+1118153	Private room	57	1	1
+1118153	Private room	57	1	1
+1118153	Private room	57	1	1
+1118153	Private room	57	1	1
+1118153	Private room	57	1	1
+1118153	Private room	57	1	1
+1136522	Entire home/apt	115	1	1
+1136522	Entire home/apt	115	1	1
+1289082	Entire home/apt	275	1	1
+1301535	Entire home/apt	105	1	1
+1301535	Entire home/apt	105	1	1
+1301535	Entire home/apt	105	1	1
+1301535	Entire home/apt	105	1	1
+1301535	Entire home/apt	105	1	1
+1301535	Entire home/apt	105	1	1
+1301535	Entire home/apt	105	1	1
+1301535	Entire home/apt	105	1	1
+1301535	Entire home/apt	105	1	1
+1301535	Entire home/apt	105	1	1
+1305009	Private room	50	1	1
+1305009	Private room	50	1	1
+1305009	Private room	50	1	1
+1321090	Entire home/apt	95	1	1
+1321090	Entire home/apt	95	1	1
+1321090	Entire home/apt	95	1	1
+1321090	Entire home/apt	95	1	1
+1321090	Entire home/apt	95	1	1
+1321090	Entire home/apt	95	1	1
+1321090	Entire home/apt	95	1	1
+1321090	Entire home/apt	95	1	1
+1321090	Entire home/apt	95	1	1
+1323446	Entire home/apt	98	1	1
+1323446	Entire home/apt	98	1	1
+1323446	Entire home/apt	98	1	1
+1323446	Entire home/apt	98	1	1
+1323446	Entire home/apt	98	1	1
+1340668	Private room	39	1	1
+1349175	Private room	80	1	1
+1349175	Private room	80	1	1
+1349175	Private room	80	1	1
+1349175	Private room	80	1	1
+1349175	Private room	80	1	1
+1349175	Private room	80	1	1
+1349175	Private room	80	1	1
+1349175	Private room	80	1	1
+1349175	Private room	80	1	1
+1349175	Private room	80	1	1
+1349175	Private room	80	1	1
+1349175	Private room	80	1	1
+1349175	Private room	80	1	1
+1349175	Private room	80	1	1
+1349175	Private room	80	1	1
+1349175	Private room	80	1	1
+1349175	Private room	80	1	1
+1349175	Private room	80	1	1
+1349175	Private room	80	1	1
+1349175	Private room	80	1	1
+1349175	Private room	80	1	1
+1349175	Private room	80	1	1
+1349175	Private room	80	1	1
+1349175	Private room	80	1	1
+1354750	Entire home/apt	79	1	1
+1356339	Entire home/apt	119	1	1
+1356339	Entire home/apt	119	1	1
+1356339	Entire home/apt	119	1	1
+1356339	Entire home/apt	119	1	1
+1356339	Entire home/apt	119	1	1
+1356339	Entire home/apt	119	1	1
+1356339	Entire home/apt	119	1	1
+1386306	Private room	66	1	1
+1386306	Private room	66	1	1
+1386306	Private room	66	1	1
+1386306	Private room	66	1	1
+1386306	Private room	66	1	1
+1386306	Private room	66	1	1
+1386306	Private room	66	1	1
+1386306	Private room	66	1	1
+1386306	Private room	66	1	1
+1416279	Entire home/apt	145	1	1
+1416279	Entire home/apt	145	1	1
+1416279	Entire home/apt	145	1	1
+1416279	Entire home/apt	145	1	1
+1416279	Entire home/apt	145	1	1
+1416279	Entire home/apt	145	1	1
+1416279	Entire home/apt	145	1	1
+1417880	Entire home/apt	83	1	1
+1417880	Entire home/apt	83	1	1
+1427103	Entire home/apt	95	1	1
+1427103	Entire home/apt	95	1	1
+1427103	Entire home/apt	95	1	1
+1427103	Entire home/apt	95	1	1
+1427103	Entire home/apt	95	1	1
+1427103	Entire home/apt	95	1	1
+1427103	Entire home/apt	95	1	1
+1428687	Entire home/apt	135	1	1
+1428687	Entire home/apt	135	1	1
+1428687	Entire home/apt	135	1	1
+1433440	Private room	65	1	1
+1442973	Entire home/apt	105	1	1
+1455269	Entire home/apt	115	1	1
+1455269	Entire home/apt	115	1	1
+1455269	Entire home/apt	115	1	1
+1455269	Entire home/apt	115	1	1
+1455269	Entire home/apt	115	1	1
+1455269	Entire home/apt	115	1	1
+1455269	Entire home/apt	115	1	1
+1455269	Entire home/apt	115	1	1
+1455269	Entire home/apt	115	1	1
+1455269	Entire home/apt	115	1	1
+1455269	Entire home/apt	115	1	1
+1455269	Entire home/apt	115	1	1
+1455269	Entire home/apt	115	1	1
+1455269	Entire home/apt	115	1	1
+1455269	Entire home/apt	115	1	1
+1455269	Entire home/apt	115	1	1
+1762354	Entire home/apt	120	1	1
+1768883	Entire home/apt	175	1	1
+1768883	Entire home/apt	175	1	1
+1773803	Entire home/apt	89	1	1
+1773803	Entire home/apt	89	1	1
+1773803	Entire home/apt	89	1	1
+1773803	Entire home/apt	89	1	1
+1773803	Entire home/apt	89	1	1
+1773803	Entire home/apt	89	1	1
+1773803	Entire home/apt	89	1	1
+1773803	Entire home/apt	89	1	1
+1773803	Entire home/apt	89	1	1
+1773803	Entire home/apt	89	1	1
+1773803	Entire home/apt	89	1	1
+1773803	Entire home/apt	89	1	1
+1775016	Private room	79	1	1
+1775016	Private room	79	1	1
+1777158	Private room	92	1	1
+1778989	Private room	120	1	1
+1778989	Private room	120	1	1
+1778989	Private room	120	1	1
+1778989	Private room	120	1	1
+1778989	Private room	120	1	1
+1778989	Private room	120	1	1
+1778989	Private room	120	1	1
+1778989	Private room	120	1	1
+1778989	Private room	120	1	1
+1778989	Private room	120	1	1
+1781723	Private room	52	1	1
+1781723	Private room	52	1	1
+1789341	Entire home/apt	115	1	1
+1789341	Entire home/apt	115	1	1
+1789341	Entire home/apt	115	1	1
+1790020	Private room	89	1	1
+1790020	Private room	89	1	1
+1790020	Private room	89	1	1
+1790020	Private room	89	1	1
+1790020	Private room	89	1	1
+1790020	Private room	89	1	1
+1790020	Private room	89	1	1
+1790020	Private room	89	1	1
+1790020	Private room	89	1	1
+1790020	Private room	89	1	1
+1790020	Private room	89	1	1
+1790020	Private room	89	1	1
+1790020	Private room	89	1	1
+1790020	Private room	89	1	1
+1790020	Private room	89	1	1
+1790020	Private room	89	1	1
+1790020	Private room	89	1	1
+1790020	Private room	89	1	1
+1790020	Private room	89	1	1
+1793138	Private room	77	1	1
+1796217	Entire home/apt	265	1	1
+1796217	Entire home/apt	265	1	1
+1796217	Entire home/apt	265	1	1
+1796302	Private room	65	1	1
+1796302	Private room	65	1	1
+1796302	Private room	65	1	1
+1796302	Private room	65	1	1
+1796302	Private room	65	1	1
+1796302	Private room	65	1	1
+1796302	Private room	65	1	1
+1796302	Private room	65	1	1
+1796302	Private room	65	1	1
+1796302	Private room	65	1	1
+1796302	Private room	65	1	1
+1796302	Private room	65	1	1
+1796302	Private room	65	1	1
+1796302	Private room	65	1	1
+1796302	Private room	65	1	1
+1796302	Private room	65	1	1
+1796302	Private room	65	1	1
+1796302	Private room	65	1	1
+1796302	Private room	65	1	1
+1796302	Private room	65	1	1
+1796302	Private room	65	1	1
+1796302	Private room	65	1	1
+1796302	Private room	65	1	1
+1796302	Private room	65	1	1
+1796302	Private room	65	1	1
+1796302	Private room	65	1	1
+1796302	Private room	65	1	1
+1796861	Entire home/apt	335	1	1
+1799255	Private room	90	1	1
+1799255	Private room	90	1	1
+1799255	Private room	90	1	1
+1802663	Entire home/apt	100	1	1
+1802663	Entire home/apt	100	1	1
+1802663	Entire home/apt	100	1	1
+1802663	Entire home/apt	100	1	1
+1802663	Entire home/apt	100	1	1
+1802663	Entire home/apt	100	1	1
+1802663	Entire home/apt	100	1	1
+1806899	Private room	60	1	1
+1806899	Private room	60	1	1
+1806899	Private room	60	1	1
+1815304	Private room	79	1	1
+1815304	Private room	79	1	1
+1815304	Private room	79	1	1
+1815304	Private room	79	1	1
+1815304	Private room	79	1	1
+1815304	Private room	79	1	1
+1815304	Private room	79	1	1
+1815304	Private room	79	1	1
+1815304	Private room	79	1	1
+1815472	Entire home/apt	150	1	1
+1321090	Entire home/apt	95	1	1
+1321090	Entire home/apt	95	1	1
+1321090	Entire home/apt	95	1	1
+1321090	Entire home/apt	95	1	1
+1321090	Entire home/apt	95	1	1
+1321090	Entire home/apt	95	1	1
+1321090	Entire home/apt	95	1	1
+1321090	Entire home/apt	95	1	1
+1321090	Entire home/apt	95	1	1
+1321090	Entire home/apt	95	1	1
+1321090	Entire home/apt	95	1	1
+1321090	Entire home/apt	95	1	1
+1321090	Entire home/apt	95	1	1
+1321090	Entire home/apt	95	1	1
+1321090	Entire home/apt	95	1	1
+1323446	Entire home/apt	98	1	1
+1323446	Entire home/apt	98	1	1
+1323446	Entire home/apt	98	1	1
+1323446	Entire home/apt	98	1	1
+1323446	Entire home/apt	98	1	1
+1323446	Entire home/apt	98	1	1
+1323446	Entire home/apt	98	1	1
+1323446	Entire home/apt	98	1	1
+1323446	Entire home/apt	98	1	1
+1323446	Entire home/apt	98	1	1
+1323446	Entire home/apt	98	1	1
+1323446	Entire home/apt	98	1	1
+1323446	Entire home/apt	98	1	1
+1340668	Private room	39	1	1
+1340668	Private room	39	1	1
+1340668	Private room	39	1	1
+1348777	Private room	150	1	1
+1348777	Private room	150	1	1
+1348777	Private room	150	1	1
+1377812	Entire home/apt	225	1	1
+1377812	Entire home/apt	225	1	1
+1377812	Entire home/apt	225	1	1
+1377812	Entire home/apt	225	1	1
+1377812	Entire home/apt	225	1	1
+1377812	Entire home/apt	225	1	1
+1392332	Entire home/apt	350	1	1
+1392332	Entire home/apt	350	1	1
+1392332	Entire home/apt	350	1	1
+1392332	Entire home/apt	350	1	1
+1392332	Entire home/apt	350	1	1
+1392332	Entire home/apt	350	1	1
+1392332	Entire home/apt	350	1	1
+1392332	Entire home/apt	350	1	1
+1416279	Entire home/apt	145	1	1
+1416279	Entire home/apt	145	1	1
+1416763	Entire home/apt	150	1	1
+1416763	Entire home/apt	150	1	1
+1417880	Entire home/apt	83	1	1
+1417880	Entire home/apt	83	1	1
+1427103	Entire home/apt	95	1	1
+1427103	Entire home/apt	95	1	1
+1427103	Entire home/apt	95	1	1
+1427103	Entire home/apt	95	1	1
+1433440	Private room	65	1	1
+1433440	Private room	65	1	1
+1433440	Private room	65	1	1
+1433440	Private room	65	1	1
+1439237	Private room	97	1	1
+1439237	Private room	97	1	1
+1439237	Private room	97	1	1
+1439237	Private room	97	1	1
+1439237	Private room	97	1	1
+1439237	Private room	97	1	1
+1439237	Private room	97	1	1
+1439237	Private room	97	1	1
+1442973	Entire home/apt	105	1	1
+1442973	Entire home/apt	105	1	1
+1442973	Entire home/apt	105	1	1
+1442973	Entire home/apt	105	1	1
+1461971	Entire home/apt	129	1	1
+1472532	Entire home/apt	80	1	1
+1472532	Entire home/apt	80	1	1
+1472532	Entire home/apt	80	1	1
+1472532	Entire home/apt	80	1	1
+1472532	Entire home/apt	80	1	1
+1472532	Entire home/apt	80	1	1
+1472532	Entire home/apt	80	1	1
+1472532	Entire home/apt	80	1	1
+1472532	Entire home/apt	80	1	1
+1483944	Private room	96	1	1
+1483944	Private room	96	1	1
+1483944	Private room	96	1	1
+1483944	Private room	96	1	1
+1484651	Private room	150	1	1
+1484651	Private room	150	1	1
+1484651	Private room	150	1	1
+1484651	Private room	150	1	1
+1484651	Private room	150	1	1
+1494828	Entire home/apt	125	1	1
+1494828	Entire home/apt	125	1	1
+1494828	Entire home/apt	125	1	1
+1520593	Private room	79	1	1
+1531458	Entire home/apt	105	1	1
+1537246	Entire home/apt	139	1	1
+1537246	Entire home/apt	139	1	1
+1545801	Entire home/apt	325	1	1
+1545801	Entire home/apt	325	1	1
+1547337	Entire home/apt	100	1	1
+1547337	Entire home/apt	100	1	1
+1547337	Entire home/apt	100	1	1
+1547337	Entire home/apt	100	1	1
+1561256	Private room	96	1	1
+1457330	Entire home/apt	220	1	1
+1457330	Entire home/apt	220	1	1
+1472532	Entire home/apt	80	1	1
+1472532	Entire home/apt	80	1	1
+1472532	Entire home/apt	80	1	1
+1472532	Entire home/apt	80	1	1
+1472532	Entire home/apt	80	1	1
+1472532	Entire home/apt	80	1	1
+1472532	Entire home/apt	80	1	1
+1472532	Entire home/apt	80	1	1
+1472532	Entire home/apt	80	1	1
+1472532	Entire home/apt	80	1	1
+1472532	Entire home/apt	80	1	1
+1472532	Entire home/apt	80	1	1
+1472532	Entire home/apt	80	1	1
+1472532	Entire home/apt	80	1	1
+1483944	Private room	96	1	1
+1483944	Private room	96	1	1
+1488166	Entire home/apt	475	1	1
+1493197	Entire home/apt	275	1	1
+1493197	Entire home/apt	275	1	1
+1513847	Entire home/apt	200	1	1
+1513847	Entire home/apt	200	1	1
+1513847	Entire home/apt	200	1	1
+1520449	Shared room	49	1	1
+1520581	Shared room	65	1	1
+1534622	Private room	39	1	1
+1534622	Private room	39	1	1
+1534622	Private room	39	1	1
+1537246	Entire home/apt	139	1	1
+1537246	Entire home/apt	139	1	1
+1537246	Entire home/apt	139	1	1
+1537246	Entire home/apt	139	1	1
+1537246	Entire home/apt	139	1	1
+1537246	Entire home/apt	139	1	1
+1537246	Entire home/apt	139	1	1
+1537246	Entire home/apt	139	1	1
+1537246	Entire home/apt	139	1	1
+1537246	Entire home/apt	139	1	1
+1538865	Entire home/apt	90	1	1
+1538865	Entire home/apt	90	1	1
+1538865	Entire home/apt	90	1	1
+1539463	Private room	75	1	1
+1539463	Private room	75	1	1
+1539463	Private room	75	1	1
+1539463	Private room	75	1	1
+1539463	Private room	75	1	1
+1541705	Private room	49	1	1
+1541705	Private room	49	1	1
+1545801	Entire home/apt	325	1	1
+1545801	Entire home/apt	325	1	1
+1547337	Entire home/apt	100	1	1
+1547337	Entire home/apt	100	1	1
+1549973	Entire home/apt	78	1	1
+1561256	Private room	96	1	1
+1561256	Private room	96	1	1
+1561256	Private room	96	1	1
+1561256	Private room	96	1	1
+1561256	Private room	96	1	1
+1561256	Private room	96	1	1
+1561256	Private room	96	1	1
+1561256	Private room	96	1	1
+1561256	Private room	96	1	1
+1561256	Private room	96	1	1
+1566487	Entire home/apt	79	1	1
+1566487	Entire home/apt	79	1	1
+1566487	Entire home/apt	79	1	1
+1566487	Entire home/apt	79	1	1
+1566487	Entire home/apt	79	1	1
+1566487	Entire home/apt	79	1	1
+1566487	Entire home/apt	79	1	1
+1571230	Entire home/apt	85	1	1
+1571230	Entire home/apt	85	1	1
+1571230	Entire home/apt	85	1	1
+1579615	Entire home/apt	97	1	1
+1579615	Entire home/apt	97	1	1
+1579615	Entire home/apt	97	1	1
+1579615	Entire home/apt	97	1	1
+1579615	Entire home/apt	97	1	1
+1579615	Entire home/apt	97	1	1
+1579615	Entire home/apt	97	1	1
+1579615	Entire home/apt	97	1	1
+1579615	Entire home/apt	97	1	1
+1583047	Entire home/apt	77	1	1
+1594313	Private room	68	1	1
+1601714	Entire home/apt	124	1	1
+1601714	Entire home/apt	124	1	1
+1601714	Entire home/apt	124	1	1
+1601714	Entire home/apt	124	1	1
+1601714	Entire home/apt	124	1	1
+1601714	Entire home/apt	124	1	1
+1601714	Entire home/apt	124	1	1
+1602488	Private room	95	1	1
+1602488	Private room	95	1	1
+1602488	Private room	95	1	1
+1602488	Private room	95	1	1
+1602488	Private room	95	1	1
+1602488	Private room	95	1	1
+1602488	Private room	95	1	1
+1602488	Private room	95	1	1
+1602488	Private room	95	1	1
+1602488	Private room	95	1	1
+1602488	Private room	95	1	1
+1602488	Private room	95	1	1
+1606171	Private room	38	1	1
+1606171	Private room	38	1	1
+1606171	Private room	38	1	1
+1815472	Entire home/apt	150	1	1
+1815472	Entire home/apt	150	1	1
+1815472	Entire home/apt	150	1	1
+1815472	Entire home/apt	150	1	1
+1815472	Entire home/apt	150	1	1
+1815472	Entire home/apt	150	1	1
+1815472	Entire home/apt	150	1	1
+1818768	Private room	70	1	1
+1818768	Private room	70	1	1
+1818768	Private room	70	1	1
+1818768	Private room	70	1	1
+1818768	Private room	70	1	1
+1818768	Private room	70	1	1
+1818768	Private room	70	1	1
+1818768	Private room	70	1	1
+1818768	Private room	70	1	1
+1820794	Entire home/apt	99	1	1
+1820794	Entire home/apt	99	1	1
+1820794	Entire home/apt	99	1	1
+1820794	Entire home/apt	99	1	1
+1820794	Entire home/apt	99	1	1
+1820794	Entire home/apt	99	1	1
+1820794	Entire home/apt	99	1	1
+1820794	Entire home/apt	99	1	1
+1826155	Private room	111	1	1
+1826155	Private room	111	1	1
+1826155	Private room	111	1	1
+1826155	Private room	111	1	1
+1826155	Private room	111	1	1
+1826155	Private room	111	1	1
+1826155	Private room	111	1	1
+1826155	Private room	111	1	1
+1826155	Private room	111	1	1
+1826155	Private room	111	1	1
+1826155	Private room	111	1	1
+1828232	Entire home/apt	100	1	1
+1828232	Entire home/apt	100	1	1
+1833250	Entire home/apt	320	1	1
+1833250	Entire home/apt	320	1	1
+1844791	Entire home/apt	175	1	1
+1844791	Entire home/apt	175	1	1
+1844791	Entire home/apt	175	1	1
+1851837	Entire home/apt	95	1	1
+1851837	Entire home/apt	95	1	1
+1851863	Entire home/apt	95	1	1
+1851863	Entire home/apt	95	1	1
+1856253	Private room	50	1	1
+1856253	Private room	50	1	1
+1856851	Private room	87	1	1
+1856851	Private room	87	1	1
+1856851	Private room	87	1	1
+1856851	Private room	87	1	1
+1856851	Private room	87	1	1
+1856851	Private room	87	1	1
+1856970	Private room	70	1	1
+1856970	Private room	70	1	1
+1856970	Private room	70	1	1
+1856970	Private room	70	1	1
+1856970	Private room	70	1	1
+1856970	Private room	70	1	1
+1856970	Private room	70	1	1
+1856970	Private room	70	1	1
+1857141	Entire home/apt	115	1	1
+1857141	Entire home/apt	115	1	1
+1898511	Private room	60	1	1
+1898511	Private room	60	1	1
+1898511	Private room	60	1	1
+1898511	Private room	60	1	1
+1905473	Private room	75	1	1
+1914051	Entire home/apt	114	1	1
+1914051	Entire home/apt	114	1	1
+1914051	Entire home/apt	114	1	1
+1914051	Entire home/apt	114	1	1
+1914051	Entire home/apt	114	1	1
+1914051	Entire home/apt	114	1	1
+1914051	Entire home/apt	114	1	1
+1914051	Entire home/apt	114	1	1
+1920477	Private room	75	1	1
+1920477	Private room	75	1	1
+1928010	Private room	79	1	1
+1928010	Private room	79	1	1
+1928010	Private room	79	1	1
+1928010	Private room	79	1	1
+1928010	Private room	79	1	1
+1928010	Private room	79	1	1
+1928010	Private room	79	1	1
+1928010	Private room	79	1	1
+1928010	Private room	79	1	1
+1950012	Private room	50	1	1
+1950012	Private room	50	1	1
+1950012	Private room	50	1	1
+1950012	Private room	50	1	1
+1950446	Entire home/apt	129	1	1
+1950446	Entire home/apt	129	1	1
+1950446	Entire home/apt	129	1	1
+1950446	Entire home/apt	129	1	1
+1950446	Entire home/apt	129	1	1
+1950446	Entire home/apt	129	1	1
+1950446	Entire home/apt	129	1	1
+1950446	Entire home/apt	129	1	1
+1950446	Entire home/apt	129	1	1
+1950446	Entire home/apt	129	1	1
+1956094	Private room	85	1	1
+1956094	Private room	85	1	1
+1956094	Private room	85	1	1
+1956094	Private room	85	1	1
+1956094	Private room	85	1	1
+1136522	Entire home/apt	115	1	1
+1136522	Entire home/apt	115	1	1
+1136522	Entire home/apt	115	1	1
+1145148	Entire home/apt	250	1	1
+1145148	Entire home/apt	250	1	1
+1145941	Entire home/apt	149	1	1
+1145941	Entire home/apt	149	1	1
+1145941	Entire home/apt	149	1	1
+1145941	Entire home/apt	149	1	1
+1145941	Entire home/apt	149	1	1
+1145941	Entire home/apt	149	1	1
+1145941	Entire home/apt	149	1	1
+1145941	Entire home/apt	149	1	1
+1146966	Private room	50	1	1
+1146966	Private room	50	1	1
+1159111	Entire home/apt	204	1	1
+1159111	Entire home/apt	204	1	1
+1159111	Entire home/apt	204	1	1
+1159111	Entire home/apt	204	1	1
+1159111	Entire home/apt	204	1	1
+1159226	Entire home/apt	174	1	1
+1159226	Entire home/apt	174	1	1
+1179538	Private room	80	1	1
+1184846	Entire home/apt	120	1	1
+1184846	Entire home/apt	120	1	1
+1184846	Entire home/apt	120	1	1
+1187735	Entire home/apt	250	1	1
+1187735	Entire home/apt	250	1	1
+1187735	Entire home/apt	250	1	1
+1187735	Entire home/apt	250	1	1
+1187735	Entire home/apt	250	1	1
+1187735	Entire home/apt	250	1	1
+1187735	Entire home/apt	250	1	1
+1187735	Entire home/apt	250	1	1
+1187735	Entire home/apt	250	1	1
+1190571	Private room	60	1	1
+1190571	Private room	60	1	1
+1198884	Entire home/apt	150	1	1
+1198884	Entire home/apt	150	1	1
+1198884	Entire home/apt	150	1	1
+1198884	Entire home/apt	150	1	1
+1198884	Entire home/apt	150	1	1
+1198884	Entire home/apt	150	1	1
+1200083	Entire home/apt	104	1	1
+1200083	Entire home/apt	104	1	1
+1204142	Entire home/apt	138	1	1
+1204142	Entire home/apt	138	1	1
+1204142	Entire home/apt	138	1	1
+1204142	Entire home/apt	138	1	1
+1204142	Entire home/apt	138	1	1
+1204142	Entire home/apt	138	1	1
+1214306	Private room	72	1	1
+1214306	Private room	72	1	1
+1214306	Private room	72	1	1
+1214306	Private room	72	1	1
+1214306	Private room	72	1	1
+1214316	Private room	57	1	1
+1214316	Private room	57	1	1
+1214316	Private room	57	1	1
+1214316	Private room	57	1	1
+1214316	Private room	57	1	1
+1214316	Private room	57	1	1
+1214316	Private room	57	1	1
+1214316	Private room	57	1	1
+1246117	Entire home/apt	200	1	1
+1246117	Entire home/apt	200	1	1
+1251707	Entire home/apt	121	1	1
+1252147	Entire home/apt	200	1	1
+1256883	Entire home/apt	99	1	1
+1256883	Entire home/apt	99	1	1
+1256883	Entire home/apt	99	1	1
+1256883	Entire home/apt	99	1	1
+1256883	Entire home/apt	99	1	1
+1256883	Entire home/apt	99	1	1
+1256892	Entire home/apt	100	1	1
+1256892	Entire home/apt	100	1	1
+1256892	Entire home/apt	100	1	1
+1256892	Entire home/apt	100	1	1
+1256892	Entire home/apt	100	1	1
+1256892	Entire home/apt	100	1	1
+1256892	Entire home/apt	100	1	1
+1256892	Entire home/apt	100	1	1
+1256892	Entire home/apt	100	1	1
+1256892	Entire home/apt	100	1	1
+1256892	Entire home/apt	100	1	1
+1256892	Entire home/apt	100	1	1
+1273432	Entire home/apt	275	1	1
+1273432	Entire home/apt	275	1	1
+1279660	Entire home/apt	99	1	1
+1279660	Entire home/apt	99	1	1
+1279660	Entire home/apt	99	1	1
+1279660	Entire home/apt	99	1	1
+1279660	Entire home/apt	99	1	1
+1279660	Entire home/apt	99	1	1
+1279660	Entire home/apt	99	1	1
+1279660	Entire home/apt	99	1	1
+1279660	Entire home/apt	99	1	1
+1279660	Entire home/apt	99	1	1
+1279660	Entire home/apt	99	1	1
+1279660	Entire home/apt	99	1	1
+1279660	Entire home/apt	99	1	1
+1279660	Entire home/apt	99	1	1
+1279660	Entire home/apt	99	1	1
+1279660	Entire home/apt	99	1	1
+1279660	Entire home/apt	99	1	1
+1279660	Entire home/apt	99	1	1
+1279660	Entire home/apt	99	1	1
+1606171	Private room	38	1	1
+1606171	Private room	38	1	1
+1606171	Private room	38	1	1
+1606171	Private room	38	1	1
+1606171	Private room	38	1	1
+1606171	Private room	38	1	1
+1606171	Private room	38	1	1
+1606171	Private room	38	1	1
+1606171	Private room	38	1	1
+1606171	Private room	38	1	1
+1606171	Private room	38	1	1
+1618842	Entire home/apt	95	1	1
+1618842	Entire home/apt	95	1	1
+1618842	Entire home/apt	95	1	1
+1618842	Entire home/apt	95	1	1
+1618842	Entire home/apt	95	1	1
+1618842	Entire home/apt	95	1	1
+1618842	Entire home/apt	95	1	1
+1618842	Entire home/apt	95	1	1
+1618842	Entire home/apt	95	1	1
+1618842	Entire home/apt	95	1	1
+1623894	Entire home/apt	115	1	1
+1623894	Entire home/apt	115	1	1
+1623894	Entire home/apt	115	1	1
+1623894	Entire home/apt	115	1	1
+1623894	Entire home/apt	115	1	1
+1623894	Entire home/apt	115	1	1
+1623894	Entire home/apt	115	1	1
+1623894	Entire home/apt	115	1	1
+1623894	Entire home/apt	115	1	1
+1623894	Entire home/apt	115	1	1
+1623894	Entire home/apt	115	1	1
+1651324	Entire home/apt	90	1	1
+1651324	Entire home/apt	90	1	1
+1651324	Entire home/apt	90	1	1
+1651324	Entire home/apt	90	1	1
+1651324	Entire home/apt	90	1	1
+1651324	Entire home/apt	90	1	1
+1651324	Entire home/apt	90	1	1
+1651324	Entire home/apt	90	1	1
+1651324	Entire home/apt	90	1	1
+1651324	Entire home/apt	90	1	1
+1651324	Entire home/apt	90	1	1
+1651324	Entire home/apt	90	1	1
+1651324	Entire home/apt	90	1	1
+1651324	Entire home/apt	90	1	1
+1651324	Entire home/apt	90	1	1
+1684236	Entire home/apt	100	1	1
+1684236	Entire home/apt	100	1	1
+1684236	Entire home/apt	100	1	1
+1684236	Entire home/apt	100	1	1
+1684236	Entire home/apt	100	1	1
+1684236	Entire home/apt	100	1	1
+1684236	Entire home/apt	100	1	1
+1684236	Entire home/apt	100	1	1
+1684236	Entire home/apt	100	1	1
+1684236	Entire home/apt	100	1	1
+1686930	Entire home/apt	159	1	1
+1686930	Entire home/apt	159	1	1
+1686930	Entire home/apt	159	1	1
+1686930	Entire home/apt	159	1	1
+1686930	Entire home/apt	159	1	1
+1686930	Entire home/apt	159	1	1
+1707064	Entire home/apt	89	1	1
+1707064	Entire home/apt	89	1	1
+1707064	Entire home/apt	89	1	1
+1707064	Entire home/apt	89	1	1
+1707064	Entire home/apt	89	1	1
+1707064	Entire home/apt	89	1	1
+1707064	Entire home/apt	89	1	1
+1707064	Entire home/apt	89	1	1
+1707064	Entire home/apt	89	1	1
+1707064	Entire home/apt	89	1	1
+1707064	Entire home/apt	89	1	1
+1707064	Entire home/apt	89	1	1
+1707064	Entire home/apt	89	1	1
+1707064	Entire home/apt	89	1	1
+1707064	Entire home/apt	89	1	1
+1707064	Entire home/apt	89	1	1
+1707064	Entire home/apt	89	1	1
+1707064	Entire home/apt	89	1	1
+1715582	Private room	65	1	1
+1715582	Private room	65	1	1
+1715582	Private room	65	1	1
+1715582	Private room	65	1	1
+1715582	Private room	65	1	1
+1715582	Private room	65	1	1
+1715582	Private room	65	1	1
+1732441	Entire home/apt	85	1	1
+1732441	Entire home/apt	85	1	1
+1772119	Private room	58	1	1
+1772119	Private room	58	1	1
+1772119	Private room	58	1	1
+1772119	Private room	58	1	1
+1772119	Private room	58	1	1
+1772119	Private room	58	1	1
+1772119	Private room	58	1	1
+1772119	Private room	58	1	1
+1772119	Private room	58	1	1
+1772119	Private room	58	1	1
+1777158	Private room	92	1	1
+1781723	Private room	52	1	1
+1781723	Private room	52	1	1
+1781723	Private room	52	1	1
+1781723	Private room	52	1	1
+1781723	Private room	52	1	1
+1781873	Entire home/apt	96	1	1
+1561256	Private room	96	1	1
+1561256	Private room	96	1	1
+1562643	Entire home/apt	260	1	1
+1593939	Private room	55	1	1
+1593939	Private room	55	1	1
+1593939	Private room	55	1	1
+1593991	Private room	150	1	1
+1593991	Private room	150	1	1
+1593991	Private room	150	1	1
+1593991	Private room	150	1	1
+1594219	Private room	86	1	1
+1594219	Private room	86	1	1
+1594313	Private room	68	1	1
+1594313	Private room	68	1	1
+1599856	Entire home/apt	125	1	1
+1599856	Entire home/apt	125	1	1
+1599856	Entire home/apt	125	1	1
+1599856	Entire home/apt	125	1	1
+1599856	Entire home/apt	125	1	1
+1599856	Entire home/apt	125	1	1
+1599856	Entire home/apt	125	1	1
+1599856	Entire home/apt	125	1	1
+1599856	Entire home/apt	125	1	1
+1599856	Entire home/apt	125	1	1
+1599856	Entire home/apt	125	1	1
+1602488	Private room	95	1	1
+1602488	Private room	95	1	1
+1602488	Private room	95	1	1
+1606171	Private room	38	1	1
+1606171	Private room	38	1	1
+1606171	Private room	38	1	1
+1606171	Private room	38	1	1
+1606171	Private room	38	1	1
+1606171	Private room	38	1	1
+1609922	Entire home/apt	150	1	1
+1614502	Private room	75	1	1
+1614502	Private room	75	1	1
+1618842	Entire home/apt	95	1	1
+1618842	Entire home/apt	95	1	1
+1618842	Entire home/apt	95	1	1
+1618842	Entire home/apt	95	1	1
+1618842	Entire home/apt	95	1	1
+1618842	Entire home/apt	95	1	1
+1618842	Entire home/apt	95	1	1
+1618842	Entire home/apt	95	1	1
+1623894	Entire home/apt	115	1	1
+1623894	Entire home/apt	115	1	1
+1623894	Entire home/apt	115	1	1
+1623894	Entire home/apt	115	1	1
+1623894	Entire home/apt	115	1	1
+1623894	Entire home/apt	115	1	1
+1623894	Entire home/apt	115	1	1
+1623894	Entire home/apt	115	1	1
+1623894	Entire home/apt	115	1	1
+1651324	Entire home/apt	90	1	1
+1651324	Entire home/apt	90	1	1
+1651324	Entire home/apt	90	1	1
+1651324	Entire home/apt	90	1	1
+1651324	Entire home/apt	90	1	1
+1652097	Entire home/apt	85	1	1
+1652097	Entire home/apt	85	1	1
+1672979	Private room	68	1	1
+1707064	Entire home/apt	89	1	1
+1707064	Entire home/apt	89	1	1
+1707064	Entire home/apt	89	1	1
+1707064	Entire home/apt	89	1	1
+1707064	Entire home/apt	89	1	1
+1707064	Entire home/apt	89	1	1
+1707064	Entire home/apt	89	1	1
+1707064	Entire home/apt	89	1	1
+1707064	Entire home/apt	89	1	1
+1707064	Entire home/apt	89	1	1
+1707064	Entire home/apt	89	1	1
+1707064	Entire home/apt	89	1	1
+1707064	Entire home/apt	89	1	1
+1707064	Entire home/apt	89	1	1
+1707064	Entire home/apt	89	1	1
+1707064	Entire home/apt	89	1	1
+1707064	Entire home/apt	89	1	1
+1707064	Entire home/apt	89	1	1
+1709737	Entire home/apt	250	1	1
+1715582	Private room	65	1	1
+1732441	Entire home/apt	85	1	1
+1732441	Entire home/apt	85	1	1
+1732441	Entire home/apt	85	1	1
+1732441	Entire home/apt	85	1	1
+1733747	Private room	72	1	1
+1733747	Private room	72	1	1
+1738425	Private room	72	1	1
+1738425	Private room	72	1	1
+1747184	Entire home/apt	490	1	1
+1747184	Entire home/apt	490	1	1
+1747184	Entire home/apt	490	1	1
+1747184	Entire home/apt	490	1	1
+1747184	Entire home/apt	490	1	1
+1750010	Entire home/apt	325	1	1
+1763809	Private room	65	1	1
+1763809	Private room	65	1	1
+1763809	Private room	65	1	1
+1763809	Private room	65	1	1
+1763809	Private room	65	1	1
+1763809	Private room	65	1	1
+1772119	Private room	58	1	1
+1772119	Private room	58	1	1
+1772119	Private room	58	1	1
+1772119	Private room	58	1	1
+1772119	Private room	58	1	1
+1956094	Private room	85	1	1
+1956094	Private room	85	1	1
+1956094	Private room	85	1	1
+1961950	Entire home/apt	99	1	1
+1961950	Entire home/apt	99	1	1
+1961950	Entire home/apt	99	1	1
+1970725	Private room	110	1	1
+1970725	Private room	110	1	1
+1976382	Entire home/apt	119	1	1
+1976382	Entire home/apt	119	1	1
+1983713	Entire home/apt	95	1	1
+2004931	Entire home/apt	167	1	1
+2004931	Entire home/apt	167	1	1
+2004931	Entire home/apt	167	1	1
+2004931	Entire home/apt	167	1	1
+2004931	Entire home/apt	167	1	1
+2004931	Entire home/apt	167	1	1
+2004931	Entire home/apt	167	1	1
+2026794	Private room	54	1	1
+2026794	Private room	54	1	1
+2026794	Private room	54	1	1
+2026794	Private room	54	1	1
+2026794	Private room	54	1	1
+2026794	Private room	54	1	1
+2026794	Private room	54	1	1
+2027236	Private room	60	1	1
+2027236	Private room	60	1	1
+2027236	Private room	60	1	1
+2027236	Private room	60	1	1
+2027236	Private room	60	1	1
+2027236	Private room	60	1	1
+2027236	Private room	60	1	1
+2027236	Private room	60	1	1
+2027236	Private room	60	1	1
+2027236	Private room	60	1	1
+2027236	Private room	60	1	1
+2027236	Private room	60	1	1
+2027236	Private room	60	1	1
+2027236	Private room	60	1	1
+2033191	Entire home/apt	180	1	1
+2033191	Entire home/apt	180	1	1
+2033191	Entire home/apt	180	1	1
+2033191	Entire home/apt	180	1	1
+2033191	Entire home/apt	180	1	1
+2033191	Entire home/apt	180	1	1
+2039149	Entire home/apt	225	1	1
+2039149	Entire home/apt	225	1	1
+2039149	Entire home/apt	225	1	1
+2039149	Entire home/apt	225	1	1
+2039149	Entire home/apt	225	1	1
+2039149	Entire home/apt	225	1	1
+2056276	Private room	75	1	1
+2060441	Entire home/apt	435	1	1
+2060441	Entire home/apt	435	1	1
+2069917	Entire home/apt	69	1	1
+2069917	Entire home/apt	69	1	1
+2069917	Entire home/apt	69	1	1
+2075094	Private room	68	1	1
+2134911	Private room	95	1	1
+2134911	Private room	95	1	1
+2150760	Entire home/apt	100	1	1
+2150760	Entire home/apt	100	1	1
+2154617	Entire home/apt	150	1	1
+2154617	Entire home/apt	150	1	1
+2154617	Entire home/apt	150	1	1
+2154617	Entire home/apt	150	1	1
+2154617	Entire home/apt	150	1	1
+2154617	Entire home/apt	150	1	1
+2154617	Entire home/apt	150	1	1
+2154617	Entire home/apt	150	1	1
+2154617	Entire home/apt	150	1	1
+2154617	Entire home/apt	150	1	1
+2154617	Entire home/apt	150	1	1
+2154617	Entire home/apt	150	1	1
+2187563	Entire home/apt	160	1	1
+2187563	Entire home/apt	160	1	1
+2187563	Entire home/apt	160	1	1
+2197168	Entire home/apt	135	1	1
+2197168	Entire home/apt	135	1	1
+2197168	Entire home/apt	135	1	1
+2197168	Entire home/apt	135	1	1
+2197168	Entire home/apt	135	1	1
+2197168	Entire home/apt	135	1	1
+2197982	Entire home/apt	80	1	1
+2197982	Entire home/apt	80	1	1
+2197982	Entire home/apt	80	1	1
+2197982	Entire home/apt	80	1	1
+2197982	Entire home/apt	80	1	1
+2197982	Entire home/apt	80	1	1
+2197982	Entire home/apt	80	1	1
+2197982	Entire home/apt	80	1	1
+2211594	Entire home/apt	126	1	1
+2211594	Entire home/apt	126	1	1
+2211594	Entire home/apt	126	1	1
+2211594	Entire home/apt	126	1	1
+2211594	Entire home/apt	126	1	1
+2215336	Entire home/apt	99	1	1
+2217257	Entire home/apt	125	1	1
+2217257	Entire home/apt	125	1	1
+2217257	Entire home/apt	125	1	1
+2256124	Entire home/apt	85	1	1
+2263643	Private room	41	1	1
+2263643	Private room	41	1	1
+2267088	Entire home/apt	110	1	1
+2267088	Entire home/apt	110	1	1
+2267088	Entire home/apt	110	1	1
+2267088	Entire home/apt	110	1	1
+1772119	Private room	58	1	1
+1773803	Entire home/apt	89	1	1
+1773803	Entire home/apt	89	1	1
+1773803	Entire home/apt	89	1	1
+1773803	Entire home/apt	89	1	1
+1773803	Entire home/apt	89	1	1
+1773803	Entire home/apt	89	1	1
+1773803	Entire home/apt	89	1	1
+1773803	Entire home/apt	89	1	1
+1773803	Entire home/apt	89	1	1
+1773803	Entire home/apt	89	1	1
+1773803	Entire home/apt	89	1	1
+1773803	Entire home/apt	89	1	1
+1773803	Entire home/apt	89	1	1
+1773803	Entire home/apt	89	1	1
+1773803	Entire home/apt	89	1	1
+1773803	Entire home/apt	89	1	1
+1773803	Entire home/apt	89	1	1
+1775016	Private room	79	1	1
+1775016	Private room	79	1	1
+1775016	Private room	79	1	1
+1775016	Private room	79	1	1
+1781873	Entire home/apt	96	1	1
+1781873	Entire home/apt	96	1	1
+1781873	Entire home/apt	96	1	1
+1781873	Entire home/apt	96	1	1
+1782140	Entire home/apt	99	1	1
+1782140	Entire home/apt	99	1	1
+1782140	Entire home/apt	99	1	1
+1782140	Entire home/apt	99	1	1
+1782140	Entire home/apt	99	1	1
+1782140	Entire home/apt	99	1	1
+1782140	Entire home/apt	99	1	1
+1782140	Entire home/apt	99	1	1
+1782140	Entire home/apt	99	1	1
+1782140	Entire home/apt	99	1	1
+1782140	Entire home/apt	99	1	1
+1783382	Entire home/apt	150	1	1
+1786923	Entire home/apt	90	1	1
+1790020	Private room	89	1	1
+1790020	Private room	89	1	1
+1790020	Private room	89	1	1
+1790020	Private room	89	1	1
+1790020	Private room	89	1	1
+1806899	Private room	60	1	1
+1806899	Private room	60	1	1
+1806899	Private room	60	1	1
+1806899	Private room	60	1	1
+1806899	Private room	60	1	1
+1815304	Private room	79	1	1
+1815304	Private room	79	1	1
+1815304	Private room	79	1	1
+1815304	Private room	79	1	1
+1815304	Private room	79	1	1
+1815304	Private room	79	1	1
+1815304	Private room	79	1	1
+1815304	Private room	79	1	1
+1815304	Private room	79	1	1
+1815304	Private room	79	1	1
+1815304	Private room	79	1	1
+1815304	Private room	79	1	1
+1815472	Entire home/apt	150	1	1
+1815472	Entire home/apt	150	1	1
+1818768	Private room	70	1	1
+1827586	Entire home/apt	375	1	1
+1831338	Private room	99	1	1
+1833250	Entire home/apt	320	1	1
+1833250	Entire home/apt	320	1	1
+1833250	Entire home/apt	320	1	1
+1840671	Private room	99	1	1
+1844791	Entire home/apt	175	1	1
+1844791	Entire home/apt	175	1	1
+1844791	Entire home/apt	175	1	1
+1856970	Private room	70	1	1
+1856970	Private room	70	1	1
+1856970	Private room	70	1	1
+1856970	Private room	70	1	1
+1856970	Private room	70	1	1
+1856970	Private room	70	1	1
+1856970	Private room	70	1	1
+1856970	Private room	70	1	1
+1856970	Private room	70	1	1
+1856970	Private room	70	1	1
+1856970	Private room	70	1	1
+1856970	Private room	70	1	1
+1856970	Private room	70	1	1
+1856970	Private room	70	1	1
+1856970	Private room	70	1	1
+1856970	Private room	70	1	1
+1856970	Private room	70	1	1
+1856970	Private room	70	1	1
+1856970	Private room	70	1	1
+1856970	Private room	70	1	1
+1856970	Private room	70	1	1
+1856970	Private room	70	1	1
+1856970	Private room	70	1	1
+1856970	Private room	70	1	1
+1856970	Private room	70	1	1
+1856970	Private room	70	1	1
+1856970	Private room	70	1	1
+1856970	Private room	70	1	1
+1856970	Private room	70	1	1
+1856970	Private room	70	1	1
+1857141	Entire home/apt	115	1	1
+1857141	Entire home/apt	115	1	1
+1872885	Private room	105	1	1
+1880734	Entire home/apt	250	1	1
+1279660	Entire home/apt	99	1	1
+1279660	Entire home/apt	99	1	1
+1279660	Entire home/apt	99	1	1
+1279660	Entire home/apt	99	1	1
+1279660	Entire home/apt	99	1	1
+1279660	Entire home/apt	99	1	1
+1279660	Entire home/apt	99	1	1
+1279660	Entire home/apt	99	1	1
+1279660	Entire home/apt	99	1	1
+1279660	Entire home/apt	99	1	1
+1279660	Entire home/apt	99	1	1
+1279660	Entire home/apt	99	1	1
+1279660	Entire home/apt	99	1	1
+1279660	Entire home/apt	99	1	1
+1279660	Entire home/apt	99	1	1
+1279660	Entire home/apt	99	1	1
+1279660	Entire home/apt	99	1	1
+1279660	Entire home/apt	99	1	1
+1279660	Entire home/apt	99	1	1
+1279660	Entire home/apt	99	1	1
+1279660	Entire home/apt	99	1	1
+1279660	Entire home/apt	99	1	1
+1279660	Entire home/apt	99	1	1
+1279660	Entire home/apt	99	1	1
+1279660	Entire home/apt	99	1	1
+1279660	Entire home/apt	99	1	1
+1279660	Entire home/apt	99	1	1
+1279660	Entire home/apt	99	1	1
+1279660	Entire home/apt	99	1	1
+1279660	Entire home/apt	99	1	1
+1279660	Entire home/apt	99	1	1
+1279660	Entire home/apt	99	1	1
+1279660	Entire home/apt	99	1	1
+1279660	Entire home/apt	99	1	1
+1321090	Entire home/apt	95	1	1
+1321090	Entire home/apt	95	1	1
+1321090	Entire home/apt	95	1	1
+1321090	Entire home/apt	95	1	1
+1321090	Entire home/apt	95	1	1
+1321090	Entire home/apt	95	1	1
+1321090	Entire home/apt	95	1	1
+1321090	Entire home/apt	95	1	1
+1321090	Entire home/apt	95	1	1
+1321090	Entire home/apt	95	1	1
+1321090	Entire home/apt	95	1	1
+1323634	Private room	89	1	1
+1328159	Private room	49	1	1
+1328159	Private room	49	1	1
+1328159	Private room	49	1	1
+1351716	Entire home/apt	122	1	1
+1351716	Entire home/apt	122	1	1
+1351716	Entire home/apt	122	1	1
+1351716	Entire home/apt	122	1	1
+1351716	Entire home/apt	122	1	1
+1351716	Entire home/apt	122	1	1
+1351716	Entire home/apt	122	1	1
+1351716	Entire home/apt	122	1	1
+1351716	Entire home/apt	122	1	1
+1351716	Entire home/apt	122	1	1
+1351716	Entire home/apt	122	1	1
+1351716	Entire home/apt	122	1	1
+1351716	Entire home/apt	122	1	1
+1351716	Entire home/apt	122	1	1
+1351716	Entire home/apt	122	1	1
+1351716	Entire home/apt	122	1	1
+1351716	Entire home/apt	122	1	1
+1351716	Entire home/apt	122	1	1
+1351716	Entire home/apt	122	1	1
+1355094	Private room	68	1	1
+1355094	Private room	68	1	1
+1355094	Private room	68	1	1
+1355094	Private room	68	1	1
+1355094	Private room	68	1	1
+1355094	Private room	68	1	1
+1356339	Entire home/apt	119	1	1
+1356339	Entire home/apt	119	1	1
+1377812	Entire home/apt	225	1	1
+1377812	Entire home/apt	225	1	1
+1392332	Entire home/apt	350	1	1
+1404307	Entire home/apt	125	1	1
+1404307	Entire home/apt	125	1	1
+1404307	Entire home/apt	125	1	1
+1404307	Entire home/apt	125	1	1
+1404307	Entire home/apt	125	1	1
+1404307	Entire home/apt	125	1	1
+1407502	Private room	75	1	1
+1429904	Entire home/apt	100	1	1
+1429904	Entire home/apt	100	1	1
+1429904	Entire home/apt	100	1	1
+1429904	Entire home/apt	100	1	1
+1429904	Entire home/apt	100	1	1
+1429904	Entire home/apt	100	1	1
+1429904	Entire home/apt	100	1	1
+1429904	Entire home/apt	100	1	1
+1429904	Entire home/apt	100	1	1
+1429904	Entire home/apt	100	1	1
+1429904	Entire home/apt	100	1	1
+1429904	Entire home/apt	100	1	1
+1432713	Entire home/apt	120	1	1
+1432713	Entire home/apt	120	1	1
+1432713	Entire home/apt	120	1	1
+1432713	Entire home/apt	120	1	1
+1432713	Entire home/apt	120	1	1
+1432713	Entire home/apt	120	1	1
+1432713	Entire home/apt	120	1	1
+1432713	Entire home/apt	120	1	1
+1432713	Entire home/apt	120	1	1
+1796861	Entire home/apt	335	1	1
+1799255	Private room	90	1	1
+1799255	Private room	90	1	1
+1799255	Private room	90	1	1
+1820794	Entire home/apt	99	1	1
+1820794	Entire home/apt	99	1	1
+1820794	Entire home/apt	99	1	1
+1820794	Entire home/apt	99	1	1
+1820794	Entire home/apt	99	1	1
+1820794	Entire home/apt	99	1	1
+1820794	Entire home/apt	99	1	1
+1820794	Entire home/apt	99	1	1
+1820794	Entire home/apt	99	1	1
+1820794	Entire home/apt	99	1	1
+1820794	Entire home/apt	99	1	1
+1820794	Entire home/apt	99	1	1
+1820794	Entire home/apt	99	1	1
+1820794	Entire home/apt	99	1	1
+1820794	Entire home/apt	99	1	1
+1820794	Entire home/apt	99	1	1
+1820794	Entire home/apt	99	1	1
+1826155	Private room	111	1	1
+1826155	Private room	111	1	1
+1826155	Private room	111	1	1
+1826155	Private room	111	1	1
+1826155	Private room	111	1	1
+1826155	Private room	111	1	1
+1826155	Private room	111	1	1
+1826155	Private room	111	1	1
+1826155	Private room	111	1	1
+1826155	Private room	111	1	1
+1826155	Private room	111	1	1
+1826155	Private room	111	1	1
+1831338	Private room	99	1	1
+1844791	Entire home/apt	175	1	1
+1857141	Entire home/apt	115	1	1
+1857141	Entire home/apt	115	1	1
+1857141	Entire home/apt	115	1	1
+1901706	Entire home/apt	155	1	1
+1901706	Entire home/apt	155	1	1
+1909058	Private room	80	1	1
+1909058	Private room	80	1	1
+1909058	Private room	80	1	1
+1909058	Private room	80	1	1
+1909058	Private room	80	1	1
+1909058	Private room	80	1	1
+1909058	Private room	80	1	1
+1909058	Private room	80	1	1
+1909058	Private room	80	1	1
+1909058	Private room	80	1	1
+1909058	Private room	80	1	1
+1909058	Private room	80	1	1
+1909058	Private room	80	1	1
+1909058	Private room	80	1	1
+1914051	Entire home/apt	114	1	1
+1914051	Entire home/apt	114	1	1
+1920477	Private room	75	1	1
+1920477	Private room	75	1	1
+1920477	Private room	75	1	1
+1928010	Private room	79	1	1
+1928010	Private room	79	1	1
+1928010	Private room	79	1	1
+1928010	Private room	79	1	1
+1928010	Private room	79	1	1
+1928010	Private room	79	1	1
+1928010	Private room	79	1	1
+1928010	Private room	79	1	1
+1935439	Private room	49	1	1
+1940787	Entire home/apt	150	1	1
+1940787	Entire home/apt	150	1	1
+1940787	Entire home/apt	150	1	1
+1944596	Private room	103	1	1
+1944596	Private room	103	1	1
+1944596	Private room	103	1	1
+1944596	Private room	103	1	1
+1944596	Private room	103	1	1
+1950446	Entire home/apt	129	1	1
+1950446	Entire home/apt	129	1	1
+1950446	Entire home/apt	129	1	1
+1950446	Entire home/apt	129	1	1
+1950446	Entire home/apt	129	1	1
+1950446	Entire home/apt	129	1	1
+1956094	Private room	85	1	1
+1956094	Private room	85	1	1
+1956094	Private room	85	1	1
+1956094	Private room	85	1	1
+1956094	Private room	85	1	1
+1956094	Private room	85	1	1
+1956094	Private room	85	1	1
+1956274	Entire home/apt	125	1	1
+1956553	Entire home/apt	95	1	1
+1956553	Entire home/apt	95	1	1
+1956553	Entire home/apt	95	1	1
+1956553	Entire home/apt	95	1	1
+1956553	Entire home/apt	95	1	1
+1961671	Entire home/apt	200	1	1
+1961671	Entire home/apt	200	1	1
+1961671	Entire home/apt	200	1	1
+1961671	Entire home/apt	200	1	1
+1961671	Entire home/apt	200	1	1
+1961950	Entire home/apt	99	1	1
+1961950	Entire home/apt	99	1	1
+1974131	Entire home/apt	120	1	1
+1974131	Entire home/apt	120	1	1
+1974131	Entire home/apt	120	1	1
+1974131	Entire home/apt	120	1	1
+1974131	Entire home/apt	120	1	1
+1432713	Entire home/apt	120	1	1
+1432713	Entire home/apt	120	1	1
+1432713	Entire home/apt	120	1	1
+1432713	Entire home/apt	120	1	1
+1432713	Entire home/apt	120	1	1
+1432713	Entire home/apt	120	1	1
+1432713	Entire home/apt	120	1	1
+1432713	Entire home/apt	120	1	1
+1432713	Entire home/apt	120	1	1
+1455908	Entire home/apt	135	1	1
+1455908	Entire home/apt	135	1	1
+1455908	Entire home/apt	135	1	1
+1455908	Entire home/apt	135	1	1
+1455908	Entire home/apt	135	1	1
+1455908	Entire home/apt	135	1	1
+1472532	Entire home/apt	80	1	1
+1472532	Entire home/apt	80	1	1
+1472532	Entire home/apt	80	1	1
+1472532	Entire home/apt	80	1	1
+1472532	Entire home/apt	80	1	1
+1472532	Entire home/apt	80	1	1
+1472532	Entire home/apt	80	1	1
+1472532	Entire home/apt	80	1	1
+1472532	Entire home/apt	80	1	1
+1472532	Entire home/apt	80	1	1
+1472532	Entire home/apt	80	1	1
+1472532	Entire home/apt	80	1	1
+1484651	Private room	150	1	1
+1484651	Private room	150	1	1
+1484651	Private room	150	1	1
+1494828	Entire home/apt	125	1	1
+1494828	Entire home/apt	125	1	1
+1494828	Entire home/apt	125	1	1
+1494828	Entire home/apt	125	1	1
+1494828	Entire home/apt	125	1	1
+1494828	Entire home/apt	125	1	1
+1494828	Entire home/apt	125	1	1
+1494828	Entire home/apt	125	1	1
+1494828	Entire home/apt	125	1	1
+1494828	Entire home/apt	125	1	1
+1494828	Entire home/apt	125	1	1
+1494986	Entire home/apt	145	1	1
+1494986	Entire home/apt	145	1	1
+1494986	Entire home/apt	145	1	1
+1520533	Shared room	49	1	1
+1520533	Shared room	49	1	1
+1520533	Shared room	49	1	1
+1520549	Shared room	65	1	1
+1525972	Entire home/apt	190	1	1
+1525972	Entire home/apt	190	1	1
+1539476	Private room	75	1	1
+1539476	Private room	75	1	1
+1539476	Private room	75	1	1
+1556170	Entire home/apt	69	1	1
+1556170	Entire home/apt	69	1	1
+1556170	Entire home/apt	69	1	1
+1556170	Entire home/apt	69	1	1
+1556170	Entire home/apt	69	1	1
+1556170	Entire home/apt	69	1	1
+1556170	Entire home/apt	69	1	1
+1556170	Entire home/apt	69	1	1
+1556170	Entire home/apt	69	1	1
+1562643	Entire home/apt	260	1	1
+1562643	Entire home/apt	260	1	1
+1589681	Entire home/apt	80	1	1
+1589681	Entire home/apt	80	1	1
+1593939	Private room	55	1	1
+1593939	Private room	55	1	1
+1593939	Private room	55	1	1
+1593939	Private room	55	1	1
+1593939	Private room	55	1	1
+1593991	Private room	150	1	1
+1593991	Private room	150	1	1
+1593991	Private room	150	1	1
+1599856	Entire home/apt	125	1	1
+1599856	Entire home/apt	125	1	1
+1599856	Entire home/apt	125	1	1
+1599856	Entire home/apt	125	1	1
+1599856	Entire home/apt	125	1	1
+1599856	Entire home/apt	125	1	1
+1599856	Entire home/apt	125	1	1
+1599856	Entire home/apt	125	1	1
+1599856	Entire home/apt	125	1	1
+1599856	Entire home/apt	125	1	1
+1599856	Entire home/apt	125	1	1
+1599856	Entire home/apt	125	1	1
+1599856	Entire home/apt	125	1	1
+1599856	Entire home/apt	125	1	1
+1599856	Entire home/apt	125	1	1
+1614502	Private room	75	1	1
+1614502	Private room	75	1	1
+1614502	Private room	75	1	1
+1614502	Private room	75	1	1
+1622794	Entire home/apt	145	1	1
+1622794	Entire home/apt	145	1	1
+1622794	Entire home/apt	145	1	1
+1622794	Entire home/apt	145	1	1
+1622794	Entire home/apt	145	1	1
+1622794	Entire home/apt	145	1	1
+1622794	Entire home/apt	145	1	1
+1633025	Private room	51	1	1
+1633025	Private room	51	1	1
+1633025	Private room	51	1	1
+1633025	Private room	51	1	1
+1633025	Private room	51	1	1
+1633025	Private room	51	1	1
+1633025	Private room	51	1	1
+3139972	Shared room	30	1	1
+2267088	Entire home/apt	110	1	1
+2267088	Entire home/apt	110	1	1
+2277640	Entire home/apt	89	1	1
+2277640	Entire home/apt	89	1	1
+2277640	Entire home/apt	89	1	1
+2277640	Entire home/apt	89	1	1
+2277640	Entire home/apt	89	1	1
+2277640	Entire home/apt	89	1	1
+2277640	Entire home/apt	89	1	1
+2277640	Entire home/apt	89	1	1
+2277640	Entire home/apt	89	1	1
+2277640	Entire home/apt	89	1	1
+2277640	Entire home/apt	89	1	1
+2277640	Entire home/apt	89	1	1
+2277640	Entire home/apt	89	1	1
+2277640	Entire home/apt	89	1	1
+2277640	Entire home/apt	89	1	1
+2284536	Entire home/apt	99	1	1
+2284536	Entire home/apt	99	1	1
+2284536	Entire home/apt	99	1	1
+2284536	Entire home/apt	99	1	1
+2284536	Entire home/apt	99	1	1
+2284536	Entire home/apt	99	1	1
+2284536	Entire home/apt	99	1	1
+2297917	Entire home/apt	125	1	1
+2297917	Entire home/apt	125	1	1
+2297917	Entire home/apt	125	1	1
+2297917	Entire home/apt	125	1	1
+2297917	Entire home/apt	125	1	1
+2297917	Entire home/apt	125	1	1
+2297917	Entire home/apt	125	1	1
+2297917	Entire home/apt	125	1	1
+2297917	Entire home/apt	125	1	1
+2297917	Entire home/apt	125	1	1
+2297917	Entire home/apt	125	1	1
+2298775	Private room	60	1	1
+2298775	Private room	60	1	1
+2332949	Entire home/apt	380	1	1
+2332949	Entire home/apt	380	1	1
+2332949	Entire home/apt	380	1	1
+2332949	Entire home/apt	380	1	1
+2350464	Entire home/apt	750	1	1
+2352218	Entire home/apt	80	1	1
+2352218	Entire home/apt	80	1	1
+2373176	Entire home/apt	117	1	1
+2373176	Entire home/apt	117	1	1
+2373176	Entire home/apt	117	1	1
+2373176	Entire home/apt	117	1	1
+2373176	Entire home/apt	117	1	1
+2373176	Entire home/apt	117	1	1
+2373176	Entire home/apt	117	1	1
+2373176	Entire home/apt	117	1	1
+2373176	Entire home/apt	117	1	1
+2391699	Private room	52	1	1
+2391699	Private room	52	1	1
+2391699	Private room	52	1	1
+2391699	Private room	52	1	1
+2391699	Private room	52	1	1
+2391699	Private room	52	1	1
+2392869	Entire home/apt	149	1	1
+2392869	Entire home/apt	149	1	1
+2392869	Entire home/apt	149	1	1
+2392869	Entire home/apt	149	1	1
+2392869	Entire home/apt	149	1	1
+2392869	Entire home/apt	149	1	1
+2399736	Entire home/apt	150	1	1
+2399736	Entire home/apt	150	1	1
+2399736	Entire home/apt	150	1	1
+2399736	Entire home/apt	150	1	1
+2399736	Entire home/apt	150	1	1
+2399736	Entire home/apt	150	1	1
+2399736	Entire home/apt	150	1	1
+2399736	Entire home/apt	150	1	1
+2399736	Entire home/apt	150	1	1
+2399736	Entire home/apt	150	1	1
+2399736	Entire home/apt	150	1	1
+2399736	Entire home/apt	150	1	1
+2399736	Entire home/apt	150	1	1
+2399736	Entire home/apt	150	1	1
+2399736	Entire home/apt	150	1	1
+2399736	Entire home/apt	150	1	1
+2399736	Entire home/apt	150	1	1
+2399736	Entire home/apt	150	1	1
+2399736	Entire home/apt	150	1	1
+2399736	Entire home/apt	150	1	1
+2399736	Entire home/apt	150	1	1
+2399736	Entire home/apt	150	1	1
+2399736	Entire home/apt	150	1	1
+2399736	Entire home/apt	150	1	1
+2459519	Entire home/apt	750	1	1
+2459519	Entire home/apt	750	1	1
+2471731	Private room	60	1	1
+2472850	Entire home/apt	195	1	1
+2472850	Entire home/apt	195	1	1
+2472850	Entire home/apt	195	1	1
+2474569	Private room	65	1	1
+2474569	Private room	65	1	1
+2474569	Private room	65	1	1
+2481869	Entire home/apt	175	1	1
+2481869	Entire home/apt	175	1	1
+2481869	Entire home/apt	175	1	1
+2481869	Entire home/apt	175	1	1
+2486612	Entire home/apt	112	1	1
+2486612	Entire home/apt	112	1	1
+2486612	Entire home/apt	112	1	1
+2486612	Entire home/apt	112	1	1
+2486612	Entire home/apt	112	1	1
+1974131	Entire home/apt	120	1	1
+1974131	Entire home/apt	120	1	1
+1974131	Entire home/apt	120	1	1
+1974131	Entire home/apt	120	1	1
+1974131	Entire home/apt	120	1	1
+1974131	Entire home/apt	120	1	1
+1976382	Entire home/apt	119	1	1
+1976382	Entire home/apt	119	1	1
+1976382	Entire home/apt	119	1	1
+1976382	Entire home/apt	119	1	1
+1978743	Private room	87	1	1
+1978743	Private room	87	1	1
+1978743	Private room	87	1	1
+1978743	Private room	87	1	1
+1978743	Private room	87	1	1
+1978743	Private room	87	1	1
+1978743	Private room	87	1	1
+1980283	Entire home/apt	99	1	1
+1980283	Entire home/apt	99	1	1
+1980283	Entire home/apt	99	1	1
+1980283	Entire home/apt	99	1	1
+1980283	Entire home/apt	99	1	1
+1980283	Entire home/apt	99	1	1
+1980283	Entire home/apt	99	1	1
+1984692	Entire home/apt	175	1	1
+2016613	Entire home/apt	300	1	1
+2016613	Entire home/apt	300	1	1
+2016613	Entire home/apt	300	1	1
+2020505	Entire home/apt	142	1	1
+2020505	Entire home/apt	142	1	1
+2020505	Entire home/apt	142	1	1
+2020505	Entire home/apt	142	1	1
+2020505	Entire home/apt	142	1	1
+2020505	Entire home/apt	142	1	1
+2020505	Entire home/apt	142	1	1
+2020505	Entire home/apt	142	1	1
+2020505	Entire home/apt	142	1	1
+2020505	Entire home/apt	142	1	1
+2020505	Entire home/apt	142	1	1
+2020505	Entire home/apt	142	1	1
+2020505	Entire home/apt	142	1	1
+2020505	Entire home/apt	142	1	1
+2020505	Entire home/apt	142	1	1
+2026794	Private room	54	1	1
+2026794	Private room	54	1	1
+2026794	Private room	54	1	1
+2026794	Private room	54	1	1
+2026794	Private room	54	1	1
+2026794	Private room	54	1	1
+2027236	Private room	60	1	1
+2027236	Private room	60	1	1
+2027236	Private room	60	1	1
+2027236	Private room	60	1	1
+2027236	Private room	60	1	1
+2027236	Private room	60	1	1
+2027236	Private room	60	1	1
+2027236	Private room	60	1	1
+2027236	Private room	60	1	1
+2027236	Private room	60	1	1
+2027236	Private room	60	1	1
+2027236	Private room	60	1	1
+2027236	Private room	60	1	1
+2027236	Private room	60	1	1
+2027236	Private room	60	1	1
+2027236	Private room	60	1	1
+2027236	Private room	60	1	1
+2027236	Private room	60	1	1
+2032805	Private room	70	1	1
+2032805	Private room	70	1	1
+2032805	Private room	70	1	1
+2032805	Private room	70	1	1
+2032805	Private room	70	1	1
+2032805	Private room	70	1	1
+2032805	Private room	70	1	1
+2032805	Private room	70	1	1
+2032805	Private room	70	1	1
+2032805	Private room	70	1	1
+2032805	Private room	70	1	1
+2032805	Private room	70	1	1
+2032805	Private room	70	1	1
+2033191	Entire home/apt	180	1	1
+2033191	Entire home/apt	180	1	1
+2033191	Entire home/apt	180	1	1
+2033191	Entire home/apt	180	1	1
+2068301	Entire home/apt	140	1	1
+2130652	Entire home/apt	150	1	1
+2130652	Entire home/apt	150	1	1
+2130652	Entire home/apt	150	1	1
+2130652	Entire home/apt	150	1	1
+2130652	Entire home/apt	150	1	1
+2130652	Entire home/apt	150	1	1
+2130652	Entire home/apt	150	1	1
+2130652	Entire home/apt	150	1	1
+2130652	Entire home/apt	150	1	1
+2130652	Entire home/apt	150	1	1
+2130652	Entire home/apt	150	1	1
+2130652	Entire home/apt	150	1	1
+2130652	Entire home/apt	150	1	1
+2130652	Entire home/apt	150	1	1
+2130652	Entire home/apt	150	1	1
+2130652	Entire home/apt	150	1	1
+2130652	Entire home/apt	150	1	1
+2130652	Entire home/apt	150	1	1
+2130652	Entire home/apt	150	1	1
+2130652	Entire home/apt	150	1	1
+2130652	Entire home/apt	150	1	1
+2130652	Entire home/apt	150	1	1
+1880734	Entire home/apt	250	1	1
+1882316	Entire home/apt	249	1	1
+1882316	Entire home/apt	249	1	1
+1882316	Entire home/apt	249	1	1
+1882316	Entire home/apt	249	1	1
+1897000	Entire home/apt	155	1	1
+1897000	Entire home/apt	155	1	1
+1901706	Entire home/apt	155	1	1
+1914051	Entire home/apt	114	1	1
+1914051	Entire home/apt	114	1	1
+1914051	Entire home/apt	114	1	1
+1914051	Entire home/apt	114	1	1
+1914051	Entire home/apt	114	1	1
+1914051	Entire home/apt	114	1	1
+1914051	Entire home/apt	114	1	1
+1914051	Entire home/apt	114	1	1
+1925661	Private room	39	1	1
+1925661	Private room	39	1	1
+1925661	Private room	39	1	1
+1928010	Private room	79	1	1
+1928010	Private room	79	1	1
+1928010	Private room	79	1	1
+1928010	Private room	79	1	1
+1928010	Private room	79	1	1
+1928010	Private room	79	1	1
+1928010	Private room	79	1	1
+1928010	Private room	79	1	1
+1928010	Private room	79	1	1
+1928010	Private room	79	1	1
+1950012	Private room	50	1	1
+1950012	Private room	50	1	1
+1950012	Private room	50	1	1
+1950446	Entire home/apt	129	1	1
+1950446	Entire home/apt	129	1	1
+1950446	Entire home/apt	129	1	1
+1950446	Entire home/apt	129	1	1
+1950446	Entire home/apt	129	1	1
+1950446	Entire home/apt	129	1	1
+1950446	Entire home/apt	129	1	1
+1950446	Entire home/apt	129	1	1
+1950446	Entire home/apt	129	1	1
+1954452	Entire home/apt	220	1	1
+1954452	Entire home/apt	220	1	1
+1954452	Entire home/apt	220	1	1
+1954452	Entire home/apt	220	1	1
+1954452	Entire home/apt	220	1	1
+1954452	Entire home/apt	220	1	1
+1954452	Entire home/apt	220	1	1
+1954452	Entire home/apt	220	1	1
+1954452	Entire home/apt	220	1	1
+1954452	Entire home/apt	220	1	1
+1954452	Entire home/apt	220	1	1
+1954452	Entire home/apt	220	1	1
+1954452	Entire home/apt	220	1	1
+1956274	Entire home/apt	125	1	1
+1956274	Entire home/apt	125	1	1
+1956274	Entire home/apt	125	1	1
+1956553	Entire home/apt	95	1	1
+1956553	Entire home/apt	95	1	1
+1956553	Entire home/apt	95	1	1
+1956553	Entire home/apt	95	1	1
+1956553	Entire home/apt	95	1	1
+1956553	Entire home/apt	95	1	1
+1961671	Entire home/apt	200	1	1
+1970725	Private room	110	1	1
+1974131	Entire home/apt	120	1	1
+1974131	Entire home/apt	120	1	1
+1974131	Entire home/apt	120	1	1
+1974131	Entire home/apt	120	1	1
+1974131	Entire home/apt	120	1	1
+1974131	Entire home/apt	120	1	1
+1974131	Entire home/apt	120	1	1
+1974131	Entire home/apt	120	1	1
+1974131	Entire home/apt	120	1	1
+1974131	Entire home/apt	120	1	1
+1974131	Entire home/apt	120	1	1
+1974131	Entire home/apt	120	1	1
+1974131	Entire home/apt	120	1	1
+1974131	Entire home/apt	120	1	1
+1974131	Entire home/apt	120	1	1
+1974131	Entire home/apt	120	1	1
+1974131	Entire home/apt	120	1	1
+1974131	Entire home/apt	120	1	1
+1974131	Entire home/apt	120	1	1
+1976382	Entire home/apt	119	1	1
+1976382	Entire home/apt	119	1	1
+2026794	Private room	54	1	1
+2026794	Private room	54	1	1
+2026794	Private room	54	1	1
+2026794	Private room	54	1	1
+2026794	Private room	54	1	1
+2026794	Private room	54	1	1
+2026794	Private room	54	1	1
+2039149	Entire home/apt	225	1	1
+2039149	Entire home/apt	225	1	1
+2039149	Entire home/apt	225	1	1
+2039149	Entire home/apt	225	1	1
+2039149	Entire home/apt	225	1	1
+2039149	Entire home/apt	225	1	1
+2039149	Entire home/apt	225	1	1
+2039149	Entire home/apt	225	1	1
+2039149	Entire home/apt	225	1	1
+2039149	Entire home/apt	225	1	1
+2039149	Entire home/apt	225	1	1
+2039149	Entire home/apt	225	1	1
+2039149	Entire home/apt	225	1	1
+2039149	Entire home/apt	225	1	1
+1633025	Private room	51	1	1
+1633986	Entire home/apt	199	1	1
+1633986	Entire home/apt	199	1	1
+1633986	Entire home/apt	199	1	1
+1633986	Entire home/apt	199	1	1
+1633986	Entire home/apt	199	1	1
+1633986	Entire home/apt	199	1	1
+1652097	Entire home/apt	85	1	1
+1652097	Entire home/apt	85	1	1
+1652097	Entire home/apt	85	1	1
+1652097	Entire home/apt	85	1	1
+1652107	Entire home/apt	175	1	1
+1652107	Entire home/apt	175	1	1
+1652107	Entire home/apt	175	1	1
+1652107	Entire home/apt	175	1	1
+1652107	Entire home/apt	175	1	1
+1652107	Entire home/apt	175	1	1
+1652107	Entire home/apt	175	1	1
+1652107	Entire home/apt	175	1	1
+1652107	Entire home/apt	175	1	1
+1652107	Entire home/apt	175	1	1
+1652107	Entire home/apt	175	1	1
+1692318	Entire home/apt	108	1	1
+1696194	Entire home/apt	228	1	1
+1696194	Entire home/apt	228	1	1
+1702092	Entire home/apt	165	1	1
+1707064	Entire home/apt	89	1	1
+1709737	Entire home/apt	250	1	1
+1738425	Private room	72	1	1
+1738425	Private room	72	1	1
+1738425	Private room	72	1	1
+1738425	Private room	72	1	1
+1738425	Private room	72	1	1
+1738425	Private room	72	1	1
+1738425	Private room	72	1	1
+1738425	Private room	72	1	1
+1742425	Entire home/apt	95	1	1
+1742425	Entire home/apt	95	1	1
+1742425	Entire home/apt	95	1	1
+1747184	Entire home/apt	490	1	1
+1747184	Entire home/apt	490	1	1
+1750681	Private room	52	1	1
+1750681	Private room	52	1	1
+1750681	Private room	52	1	1
+1750681	Private room	52	1	1
+1750681	Private room	52	1	1
+1750681	Private room	52	1	1
+1750681	Private room	52	1	1
+1750681	Private room	52	1	1
+1750681	Private room	52	1	1
+1762354	Entire home/apt	120	1	1
+1762354	Entire home/apt	120	1	1
+1762354	Entire home/apt	120	1	1
+1763809	Private room	65	1	1
+1763809	Private room	65	1	1
+1763809	Private room	65	1	1
+1763809	Private room	65	1	1
+1763809	Private room	65	1	1
+1763809	Private room	65	1	1
+1763809	Private room	65	1	1
+1764233	Private room	42	1	1
+1775016	Private room	79	1	1
+1775016	Private room	79	1	1
+1775016	Private room	79	1	1
+1775016	Private room	79	1	1
+1775016	Private room	79	1	1
+1775016	Private room	79	1	1
+1775016	Private room	79	1	1
+1775016	Private room	79	1	1
+1778989	Private room	120	1	1
+1778989	Private room	120	1	1
+1781723	Private room	52	1	1
+1781723	Private room	52	1	1
+1781723	Private room	52	1	1
+1782140	Entire home/apt	99	1	1
+1782140	Entire home/apt	99	1	1
+1782140	Entire home/apt	99	1	1
+1782140	Entire home/apt	99	1	1
+1782140	Entire home/apt	99	1	1
+1782140	Entire home/apt	99	1	1
+1782140	Entire home/apt	99	1	1
+1782140	Entire home/apt	99	1	1
+1782140	Entire home/apt	99	1	1
+1782140	Entire home/apt	99	1	1
+1783382	Entire home/apt	150	1	1
+1786923	Entire home/apt	90	1	1
+1786923	Entire home/apt	90	1	1
+1790020	Private room	89	1	1
+1790020	Private room	89	1	1
+1790020	Private room	89	1	1
+1790020	Private room	89	1	1
+1790020	Private room	89	1	1
+1790020	Private room	89	1	1
+1790020	Private room	89	1	1
+1790020	Private room	89	1	1
+1790020	Private room	89	1	1
+1790020	Private room	89	1	1
+1790020	Private room	89	1	1
+1790020	Private room	89	1	1
+1796217	Entire home/apt	265	1	1
+1797207	Entire home/apt	197	1	1
+1797207	Entire home/apt	197	1	1
+1802663	Entire home/apt	100	1	1
+1802663	Entire home/apt	100	1	1
+1802663	Entire home/apt	100	1	1
+1806899	Private room	60	1	1
+1806899	Private room	60	1	1
+2060441	Entire home/apt	435	1	1
+2068301	Entire home/apt	140	1	1
+2071305	Private room	55	1	1
+2075094	Private room	68	1	1
+2075094	Private room	68	1	1
+2075094	Private room	68	1	1
+2075094	Private room	68	1	1
+2103939	Entire home/apt	70	1	1
+2103939	Entire home/apt	70	1	1
+2150760	Entire home/apt	100	1	1
+2158992	Entire home/apt	110	1	1
+2191169	Entire home/apt	142	1	1
+2191169	Entire home/apt	142	1	1
+2194715	Private room	82	1	1
+2194715	Private room	82	1	1
+2194715	Private room	82	1	1
+2194715	Private room	82	1	1
+2194715	Private room	82	1	1
+2194715	Private room	82	1	1
+2194715	Private room	82	1	1
+2197168	Entire home/apt	135	1	1
+2197168	Entire home/apt	135	1	1
+2197168	Entire home/apt	135	1	1
+2197168	Entire home/apt	135	1	1
+2197168	Entire home/apt	135	1	1
+2197168	Entire home/apt	135	1	1
+2197168	Entire home/apt	135	1	1
+2197168	Entire home/apt	135	1	1
+2197982	Entire home/apt	80	1	1
+2197982	Entire home/apt	80	1	1
+2197982	Entire home/apt	80	1	1
+2197982	Entire home/apt	80	1	1
+2197982	Entire home/apt	80	1	1
+2215336	Entire home/apt	99	1	1
+2215336	Entire home/apt	99	1	1
+2217257	Entire home/apt	125	1	1
+2217257	Entire home/apt	125	1	1
+2217257	Entire home/apt	125	1	1
+2217257	Entire home/apt	125	1	1
+2238105	Entire home/apt	100	1	1
+2238105	Entire home/apt	100	1	1
+2238105	Entire home/apt	100	1	1
+2238105	Entire home/apt	100	1	1
+2238105	Entire home/apt	100	1	1
+2238105	Entire home/apt	100	1	1
+2238105	Entire home/apt	100	1	1
+2238105	Entire home/apt	100	1	1
+2260626	Private room	55	1	1
+2260626	Private room	55	1	1
+2260626	Private room	55	1	1
+2260626	Private room	55	1	1
+2260626	Private room	55	1	1
+2260626	Private room	55	1	1
+2260626	Private room	55	1	1
+2260626	Private room	55	1	1
+2260626	Private room	55	1	1
+2260626	Private room	55	1	1
+2260626	Private room	55	1	1
+2260626	Private room	55	1	1
+2263643	Private room	41	1	1
+2263643	Private room	41	1	1
+2263643	Private room	41	1	1
+2267088	Entire home/apt	110	1	1
+2267088	Entire home/apt	110	1	1
+2267088	Entire home/apt	110	1	1
+2267088	Entire home/apt	110	1	1
+2267088	Entire home/apt	110	1	1
+2267088	Entire home/apt	110	1	1
+2267088	Entire home/apt	110	1	1
+2268329	Private room	65	1	1
+2274086	Private room	99	1	1
+2284536	Entire home/apt	99	1	1
+2284536	Entire home/apt	99	1	1
+2284536	Entire home/apt	99	1	1
+2284536	Entire home/apt	99	1	1
+2284536	Entire home/apt	99	1	1
+2284536	Entire home/apt	99	1	1
+2298775	Private room	60	1	1
+2298775	Private room	60	1	1
+2298775	Private room	60	1	1
+2350464	Entire home/apt	750	1	1
+2367298	Entire home/apt	129	1	1
+2367298	Entire home/apt	129	1	1
+2367298	Entire home/apt	129	1	1
+2367298	Entire home/apt	129	1	1
+2367298	Entire home/apt	129	1	1
+2367298	Entire home/apt	129	1	1
+2367298	Entire home/apt	129	1	1
+2367298	Entire home/apt	129	1	1
+2367298	Entire home/apt	129	1	1
+2367298	Entire home/apt	129	1	1
+2367298	Entire home/apt	129	1	1
+2367298	Entire home/apt	129	1	1
+2367298	Entire home/apt	129	1	1
+2367298	Entire home/apt	129	1	1
+2367298	Entire home/apt	129	1	1
+2367298	Entire home/apt	129	1	1
+2367298	Entire home/apt	129	1	1
+2367298	Entire home/apt	129	1	1
+2367298	Entire home/apt	129	1	1
+2367298	Entire home/apt	129	1	1
+2367298	Entire home/apt	129	1	1
+2367298	Entire home/apt	129	1	1
+2387605	Private room	69	1	1
+2387605	Private room	69	1	1
+2387605	Private room	69	1	1
+2387605	Private room	69	1	1
+2487892	Private room	70	1	1
+2487892	Private room	70	1	1
+2487892	Private room	70	1	1
+2487892	Private room	70	1	1
+2487892	Private room	70	1	1
+2487892	Private room	70	1	1
+2487892	Private room	70	1	1
+2487892	Private room	70	1	1
+2488228	Private room	69	1	1
+2488228	Private room	69	1	1
+2488228	Private room	69	1	1
+2488228	Private room	69	1	1
+2488228	Private room	69	1	1
+2488228	Private room	69	1	1
+2488228	Private room	69	1	1
+2489283	Entire home/apt	195	1	1
+2492143	Private room	95	1	1
+2500188	Private room	155	1	1
+2516391	Entire home/apt	135	1	1
+2516391	Entire home/apt	135	1	1
+2520890	Private room	80	1	1
+2526405	Private room	80	1	1
+2526405	Private room	80	1	1
+2526405	Private room	80	1	1
+2526405	Private room	80	1	1
+2526405	Private room	80	1	1
+2526405	Private room	80	1	1
+2526405	Private room	80	1	1
+2526405	Private room	80	1	1
+2526405	Private room	80	1	1
+2526405	Private room	80	1	1
+2526405	Private room	80	1	1
+2532879	Entire home/apt	110	1	1
+2532879	Entire home/apt	110	1	1
+2532879	Entire home/apt	110	1	1
+2532879	Entire home/apt	110	1	1
+2532879	Entire home/apt	110	1	1
+2536507	Entire home/apt	99	1	1
+2536507	Entire home/apt	99	1	1
+2536507	Entire home/apt	99	1	1
+2536507	Entire home/apt	99	1	1
+2536507	Entire home/apt	99	1	1
+2536507	Entire home/apt	99	1	1
+2536507	Entire home/apt	99	1	1
+2536507	Entire home/apt	99	1	1
+2536507	Entire home/apt	99	1	1
+2536507	Entire home/apt	99	1	1
+2536507	Entire home/apt	99	1	1
+2536507	Entire home/apt	99	1	1
+2536507	Entire home/apt	99	1	1
+2536507	Entire home/apt	99	1	1
+2536507	Entire home/apt	99	1	1
+2536507	Entire home/apt	99	1	1
+2557712	Entire home/apt	200	1	1
+2584354	Entire home/apt	125	1	1
+2586350	Entire home/apt	105	1	1
+2586350	Entire home/apt	105	1	1
+2586350	Entire home/apt	105	1	1
+2586350	Entire home/apt	105	1	1
+2586350	Entire home/apt	105	1	1
+2586350	Entire home/apt	105	1	1
+2586350	Entire home/apt	105	1	1
+2586350	Entire home/apt	105	1	1
+2586350	Entire home/apt	105	1	1
+2586350	Entire home/apt	105	1	1
+2586350	Entire home/apt	105	1	1
+2586350	Entire home/apt	105	1	1
+2586350	Entire home/apt	105	1	1
+2586642	Entire home/apt	150	1	1
+2593176	Private room	70	1	1
+2593176	Private room	70	1	1
+2593176	Private room	70	1	1
+2593176	Private room	70	1	1
+2593176	Private room	70	1	1
+2593176	Private room	70	1	1
+2593263	Private room	69	1	1
+2593263	Private room	69	1	1
+2593263	Private room	69	1	1
+2593263	Private room	69	1	1
+2593263	Private room	69	1	1
+2612399	Entire home/apt	79	1	1
+2612399	Entire home/apt	79	1	1
+2612399	Entire home/apt	79	1	1
+2614387	Private room	77	1	1
+2614387	Private room	77	1	1
+2614387	Private room	77	1	1
+2614387	Private room	77	1	1
+2614387	Private room	77	1	1
+2614387	Private room	77	1	1
+2614387	Private room	77	1	1
+2614387	Private room	77	1	1
+2620429	Entire home/apt	195	1	1
+2620429	Entire home/apt	195	1	1
+2620429	Entire home/apt	195	1	1
+2620429	Entire home/apt	195	1	1
+2621746	Entire home/apt	99	1	1
+2621746	Entire home/apt	99	1	1
+2621746	Entire home/apt	99	1	1
+2621746	Entire home/apt	99	1	1
+2621746	Entire home/apt	99	1	1
+2621746	Entire home/apt	99	1	1
+2621746	Entire home/apt	99	1	1
+2621746	Entire home/apt	99	1	1
+2621746	Entire home/apt	99	1	1
+2638086	Entire home/apt	140	1	1
+2638086	Entire home/apt	140	1	1
+2660384	Entire home/apt	100	1	1
+2660384	Entire home/apt	100	1	1
+2660384	Entire home/apt	100	1	1
+2660384	Entire home/apt	100	1	1
+2660384	Entire home/apt	100	1	1
+2660384	Entire home/apt	100	1	1
+2660384	Entire home/apt	100	1	1
+2670365	Private room	65	1	1
+2670365	Private room	65	1	1
+2670365	Private room	65	1	1
+2670365	Private room	65	1	1
+2670365	Private room	65	1	1
+2670365	Private room	65	1	1
+2670365	Private room	65	1	1
+2686374	Entire home/apt	149	1	1
+2686374	Entire home/apt	149	1	1
+2686374	Entire home/apt	149	1	1
+2686374	Entire home/apt	149	1	1
+2686374	Entire home/apt	149	1	1
+2686374	Entire home/apt	149	1	1
+2686374	Entire home/apt	149	1	1
+2686374	Entire home/apt	149	1	1
+2686374	Entire home/apt	149	1	1
+2686374	Entire home/apt	149	1	1
+2686374	Entire home/apt	149	1	1
+2686374	Entire home/apt	149	1	1
+2686374	Entire home/apt	149	1	1
+2686374	Entire home/apt	149	1	1
+2686374	Entire home/apt	149	1	1
+2686374	Entire home/apt	149	1	1
+2686374	Entire home/apt	149	1	1
+2686374	Entire home/apt	149	1	1
+2686374	Entire home/apt	149	1	1
+2686374	Entire home/apt	149	1	1
+2686374	Entire home/apt	149	1	1
+2686624	Entire home/apt	85	1	1
+2687172	Entire home/apt	85	1	1
+2687172	Entire home/apt	85	1	1
+2688555	Entire home/apt	250	1	1
+2688555	Entire home/apt	250	1	1
+2692126	Entire home/apt	120	1	1
+2692126	Entire home/apt	120	1	1
+2692126	Entire home/apt	120	1	1
+2693700	Entire home/apt	115	1	1
+2693700	Entire home/apt	115	1	1
+2693700	Entire home/apt	115	1	1
+2693700	Entire home/apt	115	1	1
+2693700	Entire home/apt	115	1	1
+2693700	Entire home/apt	115	1	1
+2693700	Entire home/apt	115	1	1
+2693700	Entire home/apt	115	1	1
+2695493	Entire home/apt	95	1	1
+2723368	Private room	50	1	1
+2723368	Private room	50	1	1
+2727808	Entire home/apt	95	1	1
+2727808	Entire home/apt	95	1	1
+2727808	Entire home/apt	95	1	1
+2727808	Entire home/apt	95	1	1
+2727808	Entire home/apt	95	1	1
+2727808	Entire home/apt	95	1	1
+2731253	Entire home/apt	129	1	1
+2731253	Entire home/apt	129	1	1
+2731253	Entire home/apt	129	1	1
+2731253	Entire home/apt	129	1	1
+2731253	Entire home/apt	129	1	1
+2731253	Entire home/apt	129	1	1
+2749725	Entire home/apt	175	1	1
+2755730	Entire home/apt	175	1	1
+2755730	Entire home/apt	175	1	1
+2755730	Entire home/apt	175	1	1
+2755730	Entire home/apt	175	1	1
+2755730	Entire home/apt	175	1	1
+2755730	Entire home/apt	175	1	1
+2755730	Entire home/apt	175	1	1
+2755730	Entire home/apt	175	1	1
+2755730	Entire home/apt	175	1	1
+2761092	Entire home/apt	78	1	1
+2761092	Entire home/apt	78	1	1
+2761092	Entire home/apt	78	1	1
+2761092	Entire home/apt	78	1	1
+2762241	Private room	100	1	1
+2762241	Private room	100	1	1
+2763078	Private room	70	1	1
+2763078	Private room	70	1	1
+2763078	Private room	70	1	1
+2763078	Private room	70	1	1
+2763078	Private room	70	1	1
+2763078	Private room	70	1	1
+2802844	Private room	90	1	1
+2804399	Private room	90	1	1
+2809796	Entire home/apt	69	1	1
+2809796	Entire home/apt	69	1	1
+2818292	Private room	85	1	1
+2822984	Private room	50	1	1
+2822984	Private room	50	1	1
+2825852	Entire home/apt	139	1	1
+2825852	Entire home/apt	139	1	1
+2825852	Entire home/apt	139	1	1
+2825852	Entire home/apt	139	1	1
+2825852	Entire home/apt	139	1	1
+2825852	Entire home/apt	139	1	1
+2825852	Entire home/apt	139	1	1
+2830174	Private room	60	1	1
+2830174	Private room	60	1	1
+2830174	Private room	60	1	1
+2830174	Private room	60	1	1
+2830174	Private room	60	1	1
+2830174	Private room	60	1	1
+2836237	Entire home/apt	110	1	1
+2856806	Entire home/apt	175	1	1
+2858482	Private room	55	1	1
+2898954	Private room	69	1	1
+2898954	Private room	69	1	1
+2898954	Private room	69	1	1
+2905375	Entire home/apt	127	1	1
+2923529	Entire home/apt	110	1	1
+2923529	Entire home/apt	110	1	1
+2923529	Entire home/apt	110	1	1
+2923529	Entire home/apt	110	1	1
+2923529	Entire home/apt	110	1	1
+2923529	Entire home/apt	110	1	1
+2923529	Entire home/apt	110	1	1
+2923529	Entire home/apt	110	1	1
+2933877	Entire home/apt	115	1	1
+2935486	Entire home/apt	250	1	1
+2935486	Entire home/apt	250	1	1
+2935486	Entire home/apt	250	1	1
+2935486	Entire home/apt	250	1	1
+2935486	Entire home/apt	250	1	1
+2935486	Entire home/apt	250	1	1
+2935486	Entire home/apt	250	1	1
+2955782	Entire home/apt	135	1	1
+2955782	Entire home/apt	135	1	1
+2955782	Entire home/apt	135	1	1
+2955782	Entire home/apt	135	1	1
+2955782	Entire home/apt	135	1	1
+2955782	Entire home/apt	135	1	1
+2970666	Entire home/apt	109	1	1
+2970666	Entire home/apt	109	1	1
+2970666	Entire home/apt	109	1	1
+2976798	Private room	65	1	1
+2976798	Private room	65	1	1
+2976798	Private room	65	1	1
+2976798	Private room	65	1	1
+2976798	Private room	65	1	1
+2976798	Private room	65	1	1
+2979387	Entire home/apt	275	1	1
+2979387	Entire home/apt	275	1	1
+2989758	Entire home/apt	125	1	1
+2989758	Entire home/apt	125	1	1
+2994309	Entire home/apt	135	1	1
+2994309	Entire home/apt	135	1	1
+2994309	Entire home/apt	135	1	1
+2994309	Entire home/apt	135	1	1
+2994309	Entire home/apt	135	1	1
+2994309	Entire home/apt	135	1	1
+2994309	Entire home/apt	135	1	1
+2995996	Entire home/apt	170	1	1
+2995996	Entire home/apt	170	1	1
+2995996	Entire home/apt	170	1	1
+2995996	Entire home/apt	170	1	1
+2995996	Entire home/apt	170	1	1
+2995996	Entire home/apt	170	1	1
+3004007	Entire home/apt	125	1	1
+3024336	Entire home/apt	200	1	1
+3024336	Entire home/apt	200	1	1
+3024336	Entire home/apt	200	1	1
+3024336	Entire home/apt	200	1	1
+3024336	Entire home/apt	200	1	1
+3024336	Entire home/apt	200	1	1
+3024336	Entire home/apt	200	1	1
+3025456	Private room	60	1	1
+3025456	Private room	60	1	1
+3025456	Private room	60	1	1
+3025456	Private room	60	1	1
+3025456	Private room	60	1	1
+3025456	Private room	60	1	1
+3038772	Private room	55	1	1
+3038772	Private room	55	1	1
+3038772	Private room	55	1	1
+3038772	Private room	55	1	1
+3038772	Private room	55	1	1
+3039438	Private room	93	1	1
+3040278	Entire home/apt	217	1	1
+3040278	Entire home/apt	217	1	1
+3040278	Entire home/apt	217	1	1
+3040278	Entire home/apt	217	1	1
+3040278	Entire home/apt	217	1	1
+3040278	Entire home/apt	217	1	1
+3040278	Entire home/apt	217	1	1
+3040278	Entire home/apt	217	1	1
+3040278	Entire home/apt	217	1	1
+3052151	Private room	70	1	1
+3052151	Private room	70	1	1
+3066740	Entire home/apt	680	1	1
+3066740	Entire home/apt	680	1	1
+3076065	Entire home/apt	224	1	1
+3123041	Private room	75	1	1
+3123041	Private room	75	1	1
+3123041	Private room	75	1	1
+3123041	Private room	75	1	1
+3123041	Private room	75	1	1
+3123041	Private room	75	1	1
+3123041	Private room	75	1	1
+3123632	Entire home/apt	200	1	1
+3139847	Entire home/apt	155	1	1
+3139847	Entire home/apt	155	1	1
+3139847	Entire home/apt	155	1	1
+3139847	Entire home/apt	155	1	1
+3139847	Entire home/apt	155	1	1
+3143227	Private room	55	1	1
+3143227	Private room	55	1	1
+3143227	Private room	55	1	1
+3143227	Private room	55	1	1
+3143227	Private room	55	1	1
+2149219	Entire home/apt	174	1	1
+2149219	Entire home/apt	174	1	1
+2186330	Entire home/apt	167	1	1
+2186330	Entire home/apt	167	1	1
+2186330	Entire home/apt	167	1	1
+2194715	Private room	82	1	1
+2194715	Private room	82	1	1
+2203983	Entire home/apt	80	1	1
+2203983	Entire home/apt	80	1	1
+2211594	Entire home/apt	126	1	1
+2211594	Entire home/apt	126	1	1
+2211594	Entire home/apt	126	1	1
+2211594	Entire home/apt	126	1	1
+2211594	Entire home/apt	126	1	1
+2211594	Entire home/apt	126	1	1
+2211594	Entire home/apt	126	1	1
+2211594	Entire home/apt	126	1	1
+2211594	Entire home/apt	126	1	1
+2211594	Entire home/apt	126	1	1
+2211594	Entire home/apt	126	1	1
+2211594	Entire home/apt	126	1	1
+2249292	Entire home/apt	75	1	1
+2249292	Entire home/apt	75	1	1
+2249292	Entire home/apt	75	1	1
+2249292	Entire home/apt	75	1	1
+2249292	Entire home/apt	75	1	1
+2249292	Entire home/apt	75	1	1
+2249292	Entire home/apt	75	1	1
+2249292	Entire home/apt	75	1	1
+2249292	Entire home/apt	75	1	1
+2249292	Entire home/apt	75	1	1
+2249292	Entire home/apt	75	1	1
+2249292	Entire home/apt	75	1	1
+2249292	Entire home/apt	75	1	1
+2249292	Entire home/apt	75	1	1
+2249292	Entire home/apt	75	1	1
+2249292	Entire home/apt	75	1	1
+2249292	Entire home/apt	75	1	1
+2249292	Entire home/apt	75	1	1
+2249292	Entire home/apt	75	1	1
+2268329	Private room	65	1	1
+2274086	Private room	99	1	1
+2274086	Private room	99	1	1
+2303981	Entire home/apt	99	1	1
+2309250	Entire home/apt	189	1	1
+2309250	Entire home/apt	189	1	1
+2309250	Entire home/apt	189	1	1
+2309250	Entire home/apt	189	1	1
+2332949	Entire home/apt	380	1	1
+2332949	Entire home/apt	380	1	1
+2332949	Entire home/apt	380	1	1
+2332949	Entire home/apt	380	1	1
+2332949	Entire home/apt	380	1	1
+2332949	Entire home/apt	380	1	1
+2332949	Entire home/apt	380	1	1
+2339333	Entire home/apt	350	1	1
+2339333	Entire home/apt	350	1	1
+2339333	Entire home/apt	350	1	1
+2352218	Entire home/apt	80	1	1
+2352218	Entire home/apt	80	1	1
+2352218	Entire home/apt	80	1	1
+2352218	Entire home/apt	80	1	1
+2352218	Entire home/apt	80	1	1
+2352218	Entire home/apt	80	1	1
+2367298	Entire home/apt	129	1	1
+2367298	Entire home/apt	129	1	1
+2367298	Entire home/apt	129	1	1
+2367298	Entire home/apt	129	1	1
+2367298	Entire home/apt	129	1	1
+2367298	Entire home/apt	129	1	1
+2373176	Entire home/apt	117	1	1
+2373176	Entire home/apt	117	1	1
+2373176	Entire home/apt	117	1	1
+2373176	Entire home/apt	117	1	1
+2373176	Entire home/apt	117	1	1
+2385623	Private room	100	1	1
+2385623	Private room	100	1	1
+2385623	Private room	100	1	1
+2387605	Private room	69	1	1
+2387605	Private room	69	1	1
+2396734	Entire home/apt	265	1	1
+2396734	Entire home/apt	265	1	1
+2396734	Entire home/apt	265	1	1
+2406966	Entire home/apt	129	1	1
+2412633	Entire home/apt	109	1	1
+2412633	Entire home/apt	109	1	1
+2419879	Entire home/apt	300	1	1
+2420536	Private room	69	1	1
+2420536	Private room	69	1	1
+2420536	Private room	69	1	1
+2420536	Private room	69	1	1
+2420536	Private room	69	1	1
+2420536	Private room	69	1	1
+2420536	Private room	69	1	1
+2420536	Private room	69	1	1
+2441908	Entire home/apt	116	1	1
+2441908	Entire home/apt	116	1	1
+2441908	Entire home/apt	116	1	1
+2441908	Entire home/apt	116	1	1
+2441908	Entire home/apt	116	1	1
+2441908	Entire home/apt	116	1	1
+2441908	Entire home/apt	116	1	1
+2441908	Entire home/apt	116	1	1
+2441908	Entire home/apt	116	1	1
+2471659	Entire home/apt	100	1	1
+2471659	Entire home/apt	100	1	1
+2471659	Entire home/apt	100	1	1
+1815304	Private room	79	1	1
+1815304	Private room	79	1	1
+1815304	Private room	79	1	1
+1815304	Private room	79	1	1
+1815304	Private room	79	1	1
+1815304	Private room	79	1	1
+1851863	Entire home/apt	95	1	1
+1856253	Private room	50	1	1
+1856253	Private room	50	1	1
+1856253	Private room	50	1	1
+1856851	Private room	87	1	1
+1856851	Private room	87	1	1
+1856851	Private room	87	1	1
+1897000	Entire home/apt	155	1	1
+1897000	Entire home/apt	155	1	1
+1898511	Private room	60	1	1
+1898511	Private room	60	1	1
+1898511	Private room	60	1	1
+1900698	Private room	50	1	1
+1900698	Private room	50	1	1
+1900698	Private room	50	1	1
+1900698	Private room	50	1	1
+1900698	Private room	50	1	1
+1900698	Private room	50	1	1
+1900698	Private room	50	1	1
+1900698	Private room	50	1	1
+1900698	Private room	50	1	1
+1900698	Private room	50	1	1
+1900698	Private room	50	1	1
+1900698	Private room	50	1	1
+1900698	Private room	50	1	1
+1900698	Private room	50	1	1
+1900698	Private room	50	1	1
+1900698	Private room	50	1	1
+1900698	Private room	50	1	1
+1900698	Private room	50	1	1
+1900698	Private room	50	1	1
+1900698	Private room	50	1	1
+1925661	Private room	39	1	1
+1925661	Private room	39	1	1
+1954452	Entire home/apt	220	1	1
+1954452	Entire home/apt	220	1	1
+1956094	Private room	85	1	1
+1956094	Private room	85	1	1
+1956094	Private room	85	1	1
+1956094	Private room	85	1	1
+1956094	Private room	85	1	1
+1956094	Private room	85	1	1
+1956274	Entire home/apt	125	1	1
+1956274	Entire home/apt	125	1	1
+1956274	Entire home/apt	125	1	1
+1980395	Entire home/apt	148	1	1
+1983713	Entire home/apt	95	1	1
+1984962	Entire home/apt	295	1	1
+1984962	Entire home/apt	295	1	1
+1984962	Entire home/apt	295	1	1
+2004931	Entire home/apt	167	1	1
+2004931	Entire home/apt	167	1	1
+2004931	Entire home/apt	167	1	1
+2037250	Private room	100	1	1
+2037250	Private room	100	1	1
+2037250	Private room	100	1	1
+2037250	Private room	100	1	1
+2051658	Entire home/apt	190	1	1
+2060441	Entire home/apt	435	1	1
+2075094	Private room	68	1	1
+2075094	Private room	68	1	1
+2110357	Private room	99	1	1
+2110357	Private room	99	1	1
+2110357	Private room	99	1	1
+2110357	Private room	99	1	1
+2110357	Private room	99	1	1
+2110357	Private room	99	1	1
+2110357	Private room	99	1	1
+2110357	Private room	99	1	1
+2110357	Private room	99	1	1
+2110357	Private room	99	1	1
+2110357	Private room	99	1	1
+2110357	Private room	99	1	1
+2110357	Private room	99	1	1
+2110357	Private room	99	1	1
+2110357	Private room	99	1	1
+2110357	Private room	99	1	1
+2110357	Private room	99	1	1
+2110357	Private room	99	1	1
+2110357	Private room	99	1	1
+2110357	Private room	99	1	1
+2110357	Private room	99	1	1
+2110357	Private room	99	1	1
+2110357	Private room	99	1	1
+2110357	Private room	99	1	1
+2110357	Private room	99	1	1
+2110357	Private room	99	1	1
+2110357	Private room	99	1	1
+2110357	Private room	99	1	1
+2110357	Private room	99	1	1
+2110357	Private room	99	1	1
+2110357	Private room	99	1	1
+2110357	Private room	99	1	1
+2110357	Private room	99	1	1
+2110357	Private room	99	1	1
+2110357	Private room	99	1	1
+2110357	Private room	99	1	1
+2110357	Private room	99	1	1
+2110357	Private room	99	1	1
+2112625	Private room	56	1	1
+2112625	Private room	56	1	1
+2471659	Entire home/apt	100	1	1
+3143227	Private room	55	1	1
+2471659	Entire home/apt	100	1	1
+3143227	Private room	55	1	1
+2471659	Entire home/apt	100	1	1
+3143227	Private room	55	1	1
+2471659	Entire home/apt	100	1	1
+3143227	Private room	55	1	1
+2472850	Entire home/apt	195	1	1
+3143227	Private room	55	1	1
+2474569	Private room	65	1	1
+3144597	Private room	54	1	1
+2474569	Private room	65	1	1
+3144597	Private room	54	1	1
+2481189	Entire home/apt	285	1	1
+3168651	Private room	90	1	1
+2481189	Entire home/apt	285	1	1
+3168651	Private room	90	1	1
+2481189	Entire home/apt	285	1	1
+3168651	Private room	90	1	1
+2481189	Entire home/apt	285	1	1
+3168651	Private room	90	1	1
+2481189	Entire home/apt	285	1	1
+3168651	Private room	90	1	1
+2488228	Private room	69	1	1
+3186785	Private room	70	1	1
+2488228	Private room	69	1	1
+3206305	Entire home/apt	90	1	1
+2488228	Private room	69	1	1
+3206305	Entire home/apt	90	1	1
+2488228	Private room	69	1	1
+2488228	Private room	69	1	1
+3206305	Entire home/apt	90	1	1
+2488228	Private room	69	1	1
+3206305	Entire home/apt	90	1	1
+2488228	Private room	69	1	1
+3206305	Entire home/apt	90	1	1
+2488228	Private room	69	1	1
+3237501	Private room	90	1	1
+2488228	Private room	69	1	1
+3238295	Entire home/apt	135	1	1
+2488228	Private room	69	1	1
+3238295	Entire home/apt	135	1	1
+2488228	Private room	69	1	1
+3238295	Entire home/apt	135	1	1
+2488228	Private room	69	1	1
+3238295	Entire home/apt	135	1	1
+2488228	Private room	69	1	1
+3238295	Entire home/apt	135	1	1
+2489283	Entire home/apt	195	1	1
+3242247	Entire home/apt	87	1	1
+2489339	Entire home/apt	215	1	1
+3242247	Entire home/apt	87	1	1
+2489339	Entire home/apt	215	1	1
+3254956	Entire home/apt	129	1	1
+2493658	Entire home/apt	150	1	1
+3254956	Entire home/apt	129	1	1
+2493658	Entire home/apt	150	1	1
+3254956	Entire home/apt	129	1	1
+2493658	Entire home/apt	150	1	1
+3258213	Private room	60	1	1
+2493658	Entire home/apt	150	1	1
+3258213	Private room	60	1	1
+2493658	Entire home/apt	150	1	1
+3258585	Private room	80	1	1
+2508065	Entire home/apt	129	1	1
+3258585	Private room	80	1	1
+2525172	Private room	67	1	1
+3265292	Entire home/apt	130	1	1
+2525172	Private room	67	1	1
+3265292	Entire home/apt	130	1	1
+2525172	Private room	67	1	1
+3265292	Entire home/apt	130	1	1
+2525172	Private room	67	1	1
+3270492	Private room	95	1	1
+2525172	Private room	67	1	1
+3270492	Private room	95	1	1
+2525172	Private room	67	1	1
+2112625	Private room	56	1	1
+2525172	Private room	67	1	1
+3273240	Entire home/apt	250	1	1
+2134911	Private room	95	1	1
+3273240	Entire home/apt	250	1	1
+2150760	Entire home/apt	100	1	1
+2150760	Entire home/apt	100	1	1
+2150760	Entire home/apt	100	1	1
+3279728	Entire home/apt	150	1	1
+2150760	Entire home/apt	100	1	1
+2154617	Entire home/apt	150	1	1
+3282000	Private room	115	1	1
+2154617	Entire home/apt	150	1	1
+3291295	Entire home/apt	95	1	1
+2154617	Entire home/apt	150	1	1
+2154617	Entire home/apt	150	1	1
+2525172	Private room	67	1	1
+3293438	Entire home/apt	85	1	1
+2525172	Private room	67	1	1
+2525172	Private room	67	1	1
+3293438	Entire home/apt	85	1	1
+2525172	Private room	67	1	1
+2154617	Entire home/apt	150	1	1
+2525172	Private room	67	1	1
+2525172	Private room	67	1	1
+3293438	Entire home/apt	85	1	1
+2525172	Private room	67	1	1
+2525172	Private room	67	1	1
+2154617	Entire home/apt	150	1	1
+3293438	Entire home/apt	85	1	1
+3293438	Entire home/apt	85	1	1
+3293438	Entire home/apt	85	1	1
+3293438	Entire home/apt	85	1	1
+3293438	Entire home/apt	85	1	1
+3294243	Entire home/apt	150	1	1
+3303376	Private room	75	1	1
+3303376	Private room	75	1	1
+3303857	Entire home/apt	95	1	1
+3303857	Entire home/apt	95	1	1
+3303857	Entire home/apt	95	1	1
+3303978	Entire home/apt	80	1	1
+3303978	Entire home/apt	80	1	1
+3303978	Entire home/apt	80	1	1
+3303978	Entire home/apt	80	1	1
+3308979	Entire home/apt	975	1	1
+3319386	Private room	169	1	1
+3319386	Private room	169	1	1
+3329962	Entire home/apt	105	1	1
+3329962	Entire home/apt	105	1	1
+3329962	Entire home/apt	105	1	1
+3329962	Entire home/apt	105	1	1
+3329962	Entire home/apt	105	1	1
+3345341	Entire home/apt	999	1	1
+3345341	Entire home/apt	999	1	1
+3345341	Entire home/apt	999	1	1
+3345341	Entire home/apt	999	1	1
+3352685	Entire home/apt	200	1	1
+3354614	Entire home/apt	125	1	1
+3354614	Entire home/apt	125	1	1
+3354614	Entire home/apt	125	1	1
+3372535	Private room	45	1	1
+3379116	Entire home/apt	300	1	1
+3379116	Entire home/apt	300	1	1
+3379116	Entire home/apt	300	1	1
+3379116	Entire home/apt	300	1	1
+3379116	Entire home/apt	300	1	1
+3380159	Entire home/apt	199	1	1
+3380159	Entire home/apt	199	1	1
+3380159	Entire home/apt	199	1	1
+3382533	Entire home/apt	150	1	1
+3382533	Entire home/apt	150	1	1
+3382533	Entire home/apt	150	1	1
+3385421	Entire home/apt	557	1	1
+3394338	Entire home/apt	150	1	1
+3394338	Entire home/apt	150	1	1
+3396140	Private room	75	1	1
+3396140	Private room	75	1	1
+3396140	Private room	75	1	1
+3396140	Private room	75	1	1
+3396140	Private room	75	1	1
+3396140	Private room	75	1	1
+3396140	Private room	75	1	1
+3396140	Private room	75	1	1
+3396140	Private room	75	1	1
+3396140	Private room	75	1	1
+3396140	Private room	75	1	1
+3403858	Entire home/apt	200	1	1
+3403858	Entire home/apt	200	1	1
+3403858	Entire home/apt	200	1	1
+3418349	Entire home/apt	99	1	1
+3418349	Entire home/apt	99	1	1
+3418349	Entire home/apt	99	1	1
+3418349	Entire home/apt	99	1	1
+3418349	Entire home/apt	99	1	1
+3418349	Entire home/apt	99	1	1
+3418349	Entire home/apt	99	1	1
+3418349	Entire home/apt	99	1	1
+3418349	Entire home/apt	99	1	1
+3418349	Entire home/apt	99	1	1
+3418349	Entire home/apt	99	1	1
+3418349	Entire home/apt	99	1	1
+3422894	Entire home/apt	88	1	1
+3422894	Entire home/apt	88	1	1
+3424242	Shared room	40	1	1
+3426639	Private room	62	1	1
+3426639	Private room	62	1	1
+3426639	Private room	62	1	1
+3426639	Private room	62	1	1
+3426639	Private room	62	1	1
+3426639	Private room	62	1	1
+3426639	Private room	62	1	1
+3426639	Private room	62	1	1
+3426639	Private room	62	1	1
+3426639	Private room	62	1	1
+3426639	Private room	62	1	1
+3426639	Private room	62	1	1
+3426639	Private room	62	1	1
+3426639	Private room	62	1	1
+3441402	Entire home/apt	65	1	1
+3441402	Entire home/apt	65	1	1
+3441402	Entire home/apt	65	1	1
+3441402	Entire home/apt	65	1	1
+3441402	Entire home/apt	65	1	1
+3441402	Entire home/apt	65	1	1
+3441402	Entire home/apt	65	1	1
+3446274	Private room	105	1	1
+3446274	Private room	105	1	1
+3446274	Private room	105	1	1
+3446274	Private room	105	1	1
+3446274	Private room	105	1	1
+3449059	Entire home/apt	144	1	1
+3449059	Entire home/apt	144	1	1
+3449059	Entire home/apt	144	1	1
+3449059	Entire home/apt	144	1	1
+3449059	Entire home/apt	144	1	1
+3449059	Entire home/apt	144	1	1
+2387605	Private room	69	1	1
+2387605	Private room	69	1	1
+2387605	Private room	69	1	1
+2392869	Entire home/apt	149	1	1
+2392869	Entire home/apt	149	1	1
+2392869	Entire home/apt	149	1	1
+2392869	Entire home/apt	149	1	1
+2392869	Entire home/apt	149	1	1
+2392869	Entire home/apt	149	1	1
+2392869	Entire home/apt	149	1	1
+2396734	Entire home/apt	265	1	1
+2396734	Entire home/apt	265	1	1
+2419879	Entire home/apt	300	1	1
+2420536	Private room	69	1	1
+2420536	Private room	69	1	1
+2420536	Private room	69	1	1
+2420536	Private room	69	1	1
+2420536	Private room	69	1	1
+2420536	Private room	69	1	1
+2420536	Private room	69	1	1
+2420536	Private room	69	1	1
+2420536	Private room	69	1	1
+2420536	Private room	69	1	1
+2441908	Entire home/apt	116	1	1
+2459519	Entire home/apt	750	1	1
+2471659	Entire home/apt	100	1	1
+2471659	Entire home/apt	100	1	1
+2471659	Entire home/apt	100	1	1
+2471659	Entire home/apt	100	1	1
+2474569	Private room	65	1	1
+2474569	Private room	65	1	1
+2474569	Private room	65	1	1
+2474569	Private room	65	1	1
+2481189	Entire home/apt	285	1	1
+2481189	Entire home/apt	285	1	1
+2481189	Entire home/apt	285	1	1
+2481189	Entire home/apt	285	1	1
+2487892	Private room	70	1	1
+2487892	Private room	70	1	1
+2487892	Private room	70	1	1
+2487892	Private room	70	1	1
+2487892	Private room	70	1	1
+2487892	Private room	70	1	1
+2489283	Entire home/apt	195	1	1
+2493658	Entire home/apt	150	1	1
+2493658	Entire home/apt	150	1	1
+2493658	Entire home/apt	150	1	1
+2494157	Entire home/apt	260	1	1
+2500188	Private room	155	1	1
+2500188	Private room	155	1	1
+2500188	Private room	155	1	1
+2500188	Private room	155	1	1
+2515795	Entire home/apt	200	1	1
+2515795	Entire home/apt	200	1	1
+2516391	Entire home/apt	135	1	1
+2516391	Entire home/apt	135	1	1
+2520890	Private room	80	1	1
+2520890	Private room	80	1	1
+2522091	Entire home/apt	195	1	1
+2522091	Entire home/apt	195	1	1
+2522091	Entire home/apt	195	1	1
+2522091	Entire home/apt	195	1	1
+2522091	Entire home/apt	195	1	1
+2526129	Entire home/apt	225	1	1
+2526405	Private room	80	1	1
+2526405	Private room	80	1	1
+2526405	Private room	80	1	1
+2526405	Private room	80	1	1
+2526405	Private room	80	1	1
+2526405	Private room	80	1	1
+2556794	Entire home/apt	55	1	1
+2556794	Entire home/apt	55	1	1
+2584354	Entire home/apt	125	1	1
+2584354	Entire home/apt	125	1	1
+2586350	Entire home/apt	105	1	1
+2586350	Entire home/apt	105	1	1
+2586350	Entire home/apt	105	1	1
+2593176	Private room	70	1	1
+2593176	Private room	70	1	1
+2593176	Private room	70	1	1
+2593176	Private room	70	1	1
+2593176	Private room	70	1	1
+2593176	Private room	70	1	1
+2593176	Private room	70	1	1
+2605975	Private room	50	1	1
+2605975	Private room	50	1	1
+2605975	Private room	50	1	1
+2605975	Private room	50	1	1
+2605975	Private room	50	1	1
+2605975	Private room	50	1	1
+2605975	Private room	50	1	1
+2605975	Private room	50	1	1
+2605975	Private room	50	1	1
+2612025	Private room	45	1	1
+2612025	Private room	45	1	1
+2612025	Private room	45	1	1
+2612025	Private room	45	1	1
+2612025	Private room	45	1	1
+2612025	Private room	45	1	1
+2612025	Private room	45	1	1
+2612025	Private room	45	1	1
+2612025	Private room	45	1	1
+2612025	Private room	45	1	1
+2612399	Entire home/apt	79	1	1
+2612399	Entire home/apt	79	1	1
+2612399	Entire home/apt	79	1	1
+2612399	Entire home/apt	79	1	1
+2154617	Entire home/apt	150	1	1
+2154617	Entire home/apt	150	1	1
+2154617	Entire home/apt	150	1	1
+2154617	Entire home/apt	150	1	1
+2154617	Entire home/apt	150	1	1
+2154617	Entire home/apt	150	1	1
+2154617	Entire home/apt	150	1	1
+2154617	Entire home/apt	150	1	1
+2154617	Entire home/apt	150	1	1
+2154617	Entire home/apt	150	1	1
+2154617	Entire home/apt	150	1	1
+2154617	Entire home/apt	150	1	1
+2154617	Entire home/apt	150	1	1
+2154617	Entire home/apt	150	1	1
+2154617	Entire home/apt	150	1	1
+2154617	Entire home/apt	150	1	1
+2154617	Entire home/apt	150	1	1
+2154617	Entire home/apt	150	1	1
+2154617	Entire home/apt	150	1	1
+2154617	Entire home/apt	150	1	1
+2154617	Entire home/apt	150	1	1
+2154617	Entire home/apt	150	1	1
+2154617	Entire home/apt	150	1	1
+2187563	Entire home/apt	160	1	1
+2187563	Entire home/apt	160	1	1
+2187563	Entire home/apt	160	1	1
+2187563	Entire home/apt	160	1	1
+2187563	Entire home/apt	160	1	1
+2187563	Entire home/apt	160	1	1
+2187563	Entire home/apt	160	1	1
+2187563	Entire home/apt	160	1	1
+2187906	Private room	50	1	1
+2187906	Private room	50	1	1
+2187906	Private room	50	1	1
+2197168	Entire home/apt	135	1	1
+2197168	Entire home/apt	135	1	1
+2197168	Entire home/apt	135	1	1
+2197168	Entire home/apt	135	1	1
+2197168	Entire home/apt	135	1	1
+2197168	Entire home/apt	135	1	1
+2197168	Entire home/apt	135	1	1
+2197982	Entire home/apt	80	1	1
+2197982	Entire home/apt	80	1	1
+2197982	Entire home/apt	80	1	1
+2197982	Entire home/apt	80	1	1
+2197982	Entire home/apt	80	1	1
+2238105	Entire home/apt	100	1	1
+2238105	Entire home/apt	100	1	1
+2238105	Entire home/apt	100	1	1
+2238105	Entire home/apt	100	1	1
+2238105	Entire home/apt	100	1	1
+2238105	Entire home/apt	100	1	1
+2256124	Entire home/apt	85	1	1
+2256124	Entire home/apt	85	1	1
+2256124	Entire home/apt	85	1	1
+2256124	Entire home/apt	85	1	1
+2256124	Entire home/apt	85	1	1
+2256124	Entire home/apt	85	1	1
+2256124	Entire home/apt	85	1	1
+2256124	Entire home/apt	85	1	1
+2256124	Entire home/apt	85	1	1
+2260626	Private room	55	1	1
+2260626	Private room	55	1	1
+2260626	Private room	55	1	1
+2260626	Private room	55	1	1
+2260626	Private room	55	1	1
+2263643	Private room	41	1	1
+2263643	Private room	41	1	1
+3449059	Entire home/apt	144	1	1
+2263643	Private room	41	1	1
+3449059	Entire home/apt	144	1	1
+2263643	Private room	41	1	1
+3468261	Entire home/apt	190	1	1
+2263643	Private room	41	1	1
+3479241	Private room	125	1	1
+2263643	Private room	41	1	1
+3479241	Private room	125	1	1
+3479851	Entire home/apt	90	1	1
+2263643	Private room	41	1	1
+2267088	Entire home/apt	110	1	1
+2267088	Entire home/apt	110	1	1
+2277640	Entire home/apt	89	1	1
+2277640	Entire home/apt	89	1	1
+2277640	Entire home/apt	89	1	1
+2277640	Entire home/apt	89	1	1
+2277640	Entire home/apt	89	1	1
+2612399	Entire home/apt	79	1	1
+2614387	Private room	77	1	1
+2614387	Private room	77	1	1
+2614387	Private room	77	1	1
+2614387	Private room	77	1	1
+2614387	Private room	77	1	1
+2614387	Private room	77	1	1
+2614387	Private room	77	1	1
+2614387	Private room	77	1	1
+2620429	Entire home/apt	195	1	1
+2620429	Entire home/apt	195	1	1
+2620429	Entire home/apt	195	1	1
+2621746	Entire home/apt	99	1	1
+2621746	Entire home/apt	99	1	1
+2621746	Entire home/apt	99	1	1
+2621746	Entire home/apt	99	1	1
+2621746	Entire home/apt	99	1	1
+2621746	Entire home/apt	99	1	1
+2621746	Entire home/apt	99	1	1
+2621746	Entire home/apt	99	1	1
+2621746	Entire home/apt	99	1	1
+2525172	Private room	67	1	1
+2525172	Private room	67	1	1
+2525172	Private room	67	1	1
+2525172	Private room	67	1	1
+2525172	Private room	67	1	1
+2525172	Private room	67	1	1
+2525172	Private room	67	1	1
+2525172	Private room	67	1	1
+2525172	Private room	67	1	1
+2525172	Private room	67	1	1
+2525172	Private room	67	1	1
+2525172	Private room	67	1	1
+2557712	Entire home/apt	200	1	1
+2557712	Entire home/apt	200	1	1
+2584354	Entire home/apt	125	1	1
+2584354	Entire home/apt	125	1	1
+2584354	Entire home/apt	125	1	1
+2605975	Private room	50	1	1
+2605975	Private room	50	1	1
+2605975	Private room	50	1	1
+2612399	Entire home/apt	79	1	1
+2612399	Entire home/apt	79	1	1
+2612399	Entire home/apt	79	1	1
+2612399	Entire home/apt	79	1	1
+2612399	Entire home/apt	79	1	1
+2612399	Entire home/apt	79	1	1
+2620429	Entire home/apt	195	1	1
+2620429	Entire home/apt	195	1	1
+2620429	Entire home/apt	195	1	1
+2638086	Entire home/apt	140	1	1
+2686624	Entire home/apt	85	1	1
+2686624	Entire home/apt	85	1	1
+2686624	Entire home/apt	85	1	1
+2686624	Entire home/apt	85	1	1
+2686624	Entire home/apt	85	1	1
+2686659	Entire home/apt	95	1	1
+2688555	Entire home/apt	250	1	1
+2688555	Entire home/apt	250	1	1
+2688555	Entire home/apt	250	1	1
+2692126	Entire home/apt	120	1	1
+2692126	Entire home/apt	120	1	1
+2692126	Entire home/apt	120	1	1
+2693137	Private room	58	1	1
+2693137	Private room	58	1	1
+2693137	Private room	58	1	1
+2693137	Private room	58	1	1
+2693137	Private room	58	1	1
+2710274	Private room	59	1	1
+2710274	Private room	59	1	1
+2710274	Private room	59	1	1
+2710274	Private room	59	1	1
+2710274	Private room	59	1	1
+2710274	Private room	59	1	1
+2710274	Private room	59	1	1
+2710274	Private room	59	1	1
+2710274	Private room	59	1	1
+2710274	Private room	59	1	1
+2710274	Private room	59	1	1
+2710274	Private room	59	1	1
+2710274	Private room	59	1	1
+2710274	Private room	59	1	1
+2710274	Private room	59	1	1
+2710274	Private room	59	1	1
+2710274	Private room	59	1	1
+2715623	Entire home/apt	148	1	1
+2721575	Entire home/apt	95	1	1
+2721575	Entire home/apt	95	1	1
+2721575	Entire home/apt	95	1	1
+2721575	Entire home/apt	95	1	1
+2721575	Entire home/apt	95	1	1
+2721575	Entire home/apt	95	1	1
+2721575	Entire home/apt	95	1	1
+2721575	Entire home/apt	95	1	1
+2721575	Entire home/apt	95	1	1
+2721575	Entire home/apt	95	1	1
+2721575	Entire home/apt	95	1	1
+2721575	Entire home/apt	95	1	1
+2721575	Entire home/apt	95	1	1
+2721575	Entire home/apt	95	1	1
+2727808	Entire home/apt	95	1	1
+2727808	Entire home/apt	95	1	1
+2727808	Entire home/apt	95	1	1
+2727938	Entire home/apt	110	1	1
+2731253	Entire home/apt	129	1	1
+2731253	Entire home/apt	129	1	1
+2731253	Entire home/apt	129	1	1
+2731253	Entire home/apt	129	1	1
+2731253	Entire home/apt	129	1	1
+2731253	Entire home/apt	129	1	1
+2731253	Entire home/apt	129	1	1
+2731253	Entire home/apt	129	1	1
+2731253	Entire home/apt	129	1	1
+2731253	Entire home/apt	129	1	1
+2731253	Entire home/apt	129	1	1
+2731253	Entire home/apt	129	1	1
+2731253	Entire home/apt	129	1	1
+2731253	Entire home/apt	129	1	1
+2731253	Entire home/apt	129	1	1
+2731253	Entire home/apt	129	1	1
+2731253	Entire home/apt	129	1	1
+2737038	Entire home/apt	75	1	1
+2737038	Entire home/apt	75	1	1
+2749725	Entire home/apt	175	1	1
+2749725	Entire home/apt	175	1	1
+2749725	Entire home/apt	175	1	1
+2760901	Entire home/apt	119	1	1
+2760901	Entire home/apt	119	1	1
+2621746	Entire home/apt	99	1	1
+2621746	Entire home/apt	99	1	1
+2621746	Entire home/apt	99	1	1
+2621746	Entire home/apt	99	1	1
+2621746	Entire home/apt	99	1	1
+2650482	Entire home/apt	225	1	1
+2650482	Entire home/apt	225	1	1
+2650482	Entire home/apt	225	1	1
+2660384	Entire home/apt	100	1	1
+2660384	Entire home/apt	100	1	1
+2660384	Entire home/apt	100	1	1
+2660384	Entire home/apt	100	1	1
+2660384	Entire home/apt	100	1	1
+2686374	Entire home/apt	149	1	1
+2686374	Entire home/apt	149	1	1
+2686374	Entire home/apt	149	1	1
+2686374	Entire home/apt	149	1	1
+2686374	Entire home/apt	149	1	1
+2686374	Entire home/apt	149	1	1
+2686374	Entire home/apt	149	1	1
+2686374	Entire home/apt	149	1	1
+2686374	Entire home/apt	149	1	1
+2686374	Entire home/apt	149	1	1
+2686374	Entire home/apt	149	1	1
+2686374	Entire home/apt	149	1	1
+2686659	Entire home/apt	95	1	1
+2686659	Entire home/apt	95	1	1
+2686659	Entire home/apt	95	1	1
+2686659	Entire home/apt	95	1	1
+2686659	Entire home/apt	95	1	1
+2686659	Entire home/apt	95	1	1
+2686659	Entire home/apt	95	1	1
+2688555	Entire home/apt	250	1	1
+2688555	Entire home/apt	250	1	1
+2688555	Entire home/apt	250	1	1
+2688555	Entire home/apt	250	1	1
+2692126	Entire home/apt	120	1	1
+2692126	Entire home/apt	120	1	1
+2692126	Entire home/apt	120	1	1
+2692126	Entire home/apt	120	1	1
+2692126	Entire home/apt	120	1	1
+2693137	Private room	58	1	1
+2693137	Private room	58	1	1
+2693137	Private room	58	1	1
+2693137	Private room	58	1	1
+2693137	Private room	58	1	1
+2693137	Private room	58	1	1
+2693137	Private room	58	1	1
+2693137	Private room	58	1	1
+2693137	Private room	58	1	1
+2693137	Private room	58	1	1
+2693137	Private room	58	1	1
+2693137	Private room	58	1	1
+2693137	Private room	58	1	1
+2693137	Private room	58	1	1
+2693137	Private room	58	1	1
+2693137	Private room	58	1	1
+2693137	Private room	58	1	1
+2693137	Private room	58	1	1
+2727808	Entire home/apt	95	1	1
+2727808	Entire home/apt	95	1	1
+2727808	Entire home/apt	95	1	1
+2727808	Entire home/apt	95	1	1
+2727808	Entire home/apt	95	1	1
+2727808	Entire home/apt	95	1	1
+2727938	Entire home/apt	110	1	1
+2737012	Entire home/apt	65	1	1
+2737012	Entire home/apt	65	1	1
+2737012	Entire home/apt	65	1	1
+2737012	Entire home/apt	65	1	1
+2737012	Entire home/apt	65	1	1
+2737012	Entire home/apt	65	1	1
+2737012	Entire home/apt	65	1	1
+2737012	Entire home/apt	65	1	1
+2737012	Entire home/apt	65	1	1
+2737012	Entire home/apt	65	1	1
+2737012	Entire home/apt	65	1	1
+2737012	Entire home/apt	65	1	1
+2737012	Entire home/apt	65	1	1
+2737012	Entire home/apt	65	1	1
+2737012	Entire home/apt	65	1	1
+2737012	Entire home/apt	65	1	1
+2749725	Entire home/apt	175	1	1
+2749725	Entire home/apt	175	1	1
+2755730	Entire home/apt	175	1	1
+2755730	Entire home/apt	175	1	1
+2755730	Entire home/apt	175	1	1
+2755730	Entire home/apt	175	1	1
+2755730	Entire home/apt	175	1	1
+2755730	Entire home/apt	175	1	1
+2755730	Entire home/apt	175	1	1
+2755730	Entire home/apt	175	1	1
+2762241	Private room	100	1	1
+2762241	Private room	100	1	1
+2762241	Private room	100	1	1
+2769088	Entire home/apt	110	1	1
+2802844	Private room	90	1	1
+2802844	Private room	90	1	1
+2809796	Entire home/apt	69	1	1
+2836237	Entire home/apt	110	1	1
+2865992	Private room	88	1	1
+2865992	Private room	88	1	1
+2865992	Private room	88	1	1
+2865992	Private room	88	1	1
+2865992	Private room	88	1	1
+2865992	Private room	88	1	1
+2882641	Entire home/apt	165	1	1
+2277640	Entire home/apt	89	1	1
+2277640	Entire home/apt	89	1	1
+2284536	Entire home/apt	99	1	1
+2284536	Entire home/apt	99	1	1
+2284536	Entire home/apt	99	1	1
+2284536	Entire home/apt	99	1	1
+2284536	Entire home/apt	99	1	1
+2284536	Entire home/apt	99	1	1
+2284536	Entire home/apt	99	1	1
+2284536	Entire home/apt	99	1	1
+2284536	Entire home/apt	99	1	1
+2284536	Entire home/apt	99	1	1
+2297917	Entire home/apt	125	1	1
+2357110	Private room	145	1	1
+2386589	Entire home/apt	125	1	1
+2386589	Entire home/apt	125	1	1
+2386589	Entire home/apt	125	1	1
+2386589	Entire home/apt	125	1	1
+2386589	Entire home/apt	125	1	1
+2386589	Entire home/apt	125	1	1
+2386589	Entire home/apt	125	1	1
+2386589	Entire home/apt	125	1	1
+2386589	Entire home/apt	125	1	1
+2386589	Entire home/apt	125	1	1
+2386589	Entire home/apt	125	1	1
+2391699	Private room	52	1	1
+2391699	Private room	52	1	1
+2391699	Private room	52	1	1
+2391699	Private room	52	1	1
+2391699	Private room	52	1	1
+2391699	Private room	52	1	1
+2391699	Private room	52	1	1
+2391699	Private room	52	1	1
+2391699	Private room	52	1	1
+2391699	Private room	52	1	1
+2391699	Private room	52	1	1
+2391699	Private room	52	1	1
+2391699	Private room	52	1	1
+2391699	Private room	52	1	1
+2391699	Private room	52	1	1
+2391699	Private room	52	1	1
+2391699	Private room	52	1	1
+2392869	Entire home/apt	149	1	1
+2392869	Entire home/apt	149	1	1
+2392869	Entire home/apt	149	1	1
+2392869	Entire home/apt	149	1	1
+2413338	Private room	125	1	1
+2413338	Private room	125	1	1
+2413338	Private room	125	1	1
+2418658	Entire home/apt	155	1	1
+2418658	Entire home/apt	155	1	1
+2418658	Entire home/apt	155	1	1
+2418658	Entire home/apt	155	1	1
+2418658	Entire home/apt	155	1	1
+2418658	Entire home/apt	155	1	1
+2418658	Entire home/apt	155	1	1
+2418658	Entire home/apt	155	1	1
+2418658	Entire home/apt	155	1	1
+2418658	Entire home/apt	155	1	1
+2418658	Entire home/apt	155	1	1
+2418658	Entire home/apt	155	1	1
+2418658	Entire home/apt	155	1	1
+2418658	Entire home/apt	155	1	1
+2418658	Entire home/apt	155	1	1
+2418658	Entire home/apt	155	1	1
+2418658	Entire home/apt	155	1	1
+2418658	Entire home/apt	155	1	1
+2418658	Entire home/apt	155	1	1
+2471731	Private room	60	1	1
+2472850	Entire home/apt	195	1	1
+2472850	Entire home/apt	195	1	1
+2481869	Entire home/apt	175	1	1
+2481869	Entire home/apt	175	1	1
+2481869	Entire home/apt	175	1	1
+2481869	Entire home/apt	175	1	1
+2481869	Entire home/apt	175	1	1
+2481869	Entire home/apt	175	1	1
+2484067	Private room	69	1	1
+2484067	Private room	69	1	1
+2484067	Private room	69	1	1
+2484067	Private room	69	1	1
+2484067	Private room	69	1	1
+2484067	Private room	69	1	1
+2484067	Private room	69	1	1
+2486612	Entire home/apt	112	1	1
+2486612	Entire home/apt	112	1	1
+2486612	Entire home/apt	112	1	1
+2486612	Entire home/apt	112	1	1
+2486612	Entire home/apt	112	1	1
+2486612	Entire home/apt	112	1	1
+2486612	Entire home/apt	112	1	1
+2492143	Private room	95	1	1
+2492143	Private room	95	1	1
+2494157	Entire home/apt	260	1	1
+2500188	Private room	155	1	1
+2500188	Private room	155	1	1
+2500188	Private room	155	1	1
+2520890	Private room	80	1	1
+2520890	Private room	80	1	1
+2520890	Private room	80	1	1
+2520890	Private room	80	1	1
+2520890	Private room	80	1	1
+2522091	Entire home/apt	195	1	1
+2532879	Entire home/apt	110	1	1
+2532879	Entire home/apt	110	1	1
+2532879	Entire home/apt	110	1	1
+2536507	Entire home/apt	99	1	1
+2760901	Entire home/apt	119	1	1
+2769088	Entire home/apt	110	1	1
+2769088	Entire home/apt	110	1	1
+2776890	Entire home/apt	139	1	1
+2776890	Entire home/apt	139	1	1
+2776890	Entire home/apt	139	1	1
+2776890	Entire home/apt	139	1	1
+2776890	Entire home/apt	139	1	1
+2776890	Entire home/apt	139	1	1
+2778101	Entire home/apt	195	1	1
+2778101	Entire home/apt	195	1	1
+2778101	Entire home/apt	195	1	1
+2804399	Private room	90	1	1
+2804399	Private room	90	1	1
+2809796	Entire home/apt	69	1	1
+2809796	Entire home/apt	69	1	1
+2858482	Private room	55	1	1
+2881446	Entire home/apt	150	1	1
+2881446	Entire home/apt	150	1	1
+2881446	Entire home/apt	150	1	1
+2898401	Entire home/apt	100	1	1
+2906694	Private room	81	1	1
+2906694	Private room	81	1	1
+2906694	Private room	81	1	1
+2909809	Entire home/apt	132	1	1
+2909809	Entire home/apt	132	1	1
+2923529	Entire home/apt	110	1	1
+2923529	Entire home/apt	110	1	1
+2926776	Entire home/apt	150	1	1
+2926776	Entire home/apt	150	1	1
+2931922	Entire home/apt	145	1	1
+2931922	Entire home/apt	145	1	1
+2931922	Entire home/apt	145	1	1
+2944021	Entire home/apt	175	1	1
+2944021	Entire home/apt	175	1	1
+2944021	Entire home/apt	175	1	1
+2944021	Entire home/apt	175	1	1
+2944021	Entire home/apt	175	1	1
+2944021	Entire home/apt	175	1	1
+2950213	Entire home/apt	200	1	1
+2950213	Entire home/apt	200	1	1
+2950213	Entire home/apt	200	1	1
+2950213	Entire home/apt	200	1	1
+2950213	Entire home/apt	200	1	1
+2950213	Entire home/apt	200	1	1
+2950213	Entire home/apt	200	1	1
+2955782	Entire home/apt	135	1	1
+2955782	Entire home/apt	135	1	1
+2955782	Entire home/apt	135	1	1
+2955782	Entire home/apt	135	1	1
+2955782	Entire home/apt	135	1	1
+2955782	Entire home/apt	135	1	1
+2955782	Entire home/apt	135	1	1
+2970666	Entire home/apt	109	1	1
+2970666	Entire home/apt	109	1	1
+2970666	Entire home/apt	109	1	1
+2970666	Entire home/apt	109	1	1
+2970666	Entire home/apt	109	1	1
+2970666	Entire home/apt	109	1	1
+2970666	Entire home/apt	109	1	1
+2978929	Entire home/apt	100	1	1
+2980762	Private room	65	1	1
+2980762	Private room	65	1	1
+2980762	Private room	65	1	1
+3024336	Entire home/apt	200	1	1
+3024336	Entire home/apt	200	1	1
+3024336	Entire home/apt	200	1	1
+3024336	Entire home/apt	200	1	1
+3024336	Entire home/apt	200	1	1
+3025456	Private room	60	1	1
+3038772	Private room	55	1	1
+3038772	Private room	55	1	1
+3038772	Private room	55	1	1
+3038772	Private room	55	1	1
+3038772	Private room	55	1	1
+3038772	Private room	55	1	1
+3038772	Private room	55	1	1
+3050140	Entire home/apt	90	1	1
+3050140	Entire home/apt	90	1	1
+3050140	Entire home/apt	90	1	1
+3050140	Entire home/apt	90	1	1
+3050140	Entire home/apt	90	1	1
+3050140	Entire home/apt	90	1	1
+3050140	Entire home/apt	90	1	1
+3050140	Entire home/apt	90	1	1
+3053237	Entire home/apt	149	1	1
+3053237	Entire home/apt	149	1	1
+3053237	Entire home/apt	149	1	1
+3053237	Entire home/apt	149	1	1
+3053237	Entire home/apt	149	1	1
+3053237	Entire home/apt	149	1	1
+3053237	Entire home/apt	149	1	1
+3053237	Entire home/apt	149	1	1
+3053237	Entire home/apt	149	1	1
+3053237	Entire home/apt	149	1	1
+3053237	Entire home/apt	149	1	1
+3053237	Entire home/apt	149	1	1
+3053237	Entire home/apt	149	1	1
+3115801	Entire home/apt	99	1	1
+3124383	Private room	59	1	1
+3124383	Private room	59	1	1
+3124383	Private room	59	1	1
+3124383	Private room	59	1	1
+3139972	Shared room	30	1	1
+3139972	Shared room	30	1	1
+3139972	Shared room	30	1	1
+3139972	Shared room	30	1	1
+3139972	Shared room	30	1	1
+3487824	Private room	69	1	1
+3489083	Entire home/apt	144	1	1
+3490239	Entire home/apt	150	1	1
+3494608	Entire home/apt	79	1	1
+3494608	Entire home/apt	79	1	1
+3498114	Entire home/apt	70	1	1
+3504521	Entire home/apt	90	1	1
+3504521	Entire home/apt	90	1	1
+3510818	Entire home/apt	140	1	1
+3518808	Entire home/apt	100	1	1
+3518808	Entire home/apt	100	1	1
+3522409	Entire home/apt	141	1	1
+3522409	Entire home/apt	141	1	1
+3522409	Entire home/apt	141	1	1
+3522409	Entire home/apt	141	1	1
+3522409	Entire home/apt	141	1	1
+3522409	Entire home/apt	141	1	1
+3531616	Private room	70	1	1
+3531616	Private room	70	1	1
+3531616	Private room	70	1	1
+3531616	Private room	70	1	1
+3531616	Private room	70	1	1
+3531616	Private room	70	1	1
+3531616	Private room	70	1	1
+3531616	Private room	70	1	1
+3533112	Entire home/apt	200	1	1
+3533112	Entire home/apt	200	1	1
+3533112	Entire home/apt	200	1	1
+3533112	Entire home/apt	200	1	1
+3533112	Entire home/apt	200	1	1
+3551668	Entire home/apt	195	1	1
+3551668	Entire home/apt	195	1	1
+3551668	Entire home/apt	195	1	1
+3552006	Entire home/apt	149	1	1
+3552006	Entire home/apt	149	1	1
+3552006	Entire home/apt	149	1	1
+3554558	Entire home/apt	110	1	1
+3554558	Entire home/apt	110	1	1
+3554558	Entire home/apt	110	1	1
+3561108	Entire home/apt	139	1	1
+3561108	Entire home/apt	139	1	1
+3561237	Entire home/apt	172	1	1
+3561237	Entire home/apt	172	1	1
+3563218	Private room	45	1	1
+3563218	Private room	45	1	1
+3563218	Private room	45	1	1
+3563218	Private room	45	1	1
+3570691	Entire home/apt	350	1	1
+3604904	Private room	60	1	1
+3604904	Private room	60	1	1
+3604904	Private room	60	1	1
+3615614	Private room	69	1	1
+3615614	Private room	69	1	1
+3615614	Private room	69	1	1
+3615614	Private room	69	1	1
+3615614	Private room	69	1	1
+3615614	Private room	69	1	1
+3615614	Private room	69	1	1
+3615614	Private room	69	1	1
+3615614	Private room	69	1	1
+3626162	Entire home/apt	66	1	1
+3626162	Entire home/apt	66	1	1
+3626162	Entire home/apt	66	1	1
+3626162	Entire home/apt	66	1	1
+3626497	Entire home/apt	99	1	1
+3626497	Entire home/apt	99	1	1
+3626497	Entire home/apt	99	1	1
+3630581	Entire home/apt	98	1	1
+3637180	Private room	50	1	1
+3637180	Private room	50	1	1
+3637180	Private room	50	1	1
+3637180	Private room	50	1	1
+3639023	Private room	84	1	1
+3639023	Private room	84	1	1
+3642289	Private room	65	1	1
+3642289	Private room	65	1	1
+3642289	Private room	65	1	1
+3642289	Private room	65	1	1
+3642289	Private room	65	1	1
+3646393	Entire home/apt	125	1	1
+3646393	Entire home/apt	125	1	1
+3646393	Entire home/apt	125	1	1
+3646393	Entire home/apt	125	1	1
+3652434	Private room	95	1	1
+3652434	Private room	95	1	1
+3652434	Private room	95	1	1
+3652434	Private room	95	1	1
+3652434	Private room	95	1	1
+3652434	Private room	95	1	1
+3652434	Private room	95	1	1
+3652434	Private room	95	1	1
+3656508	Private room	35	1	1
+3657819	Entire home/apt	99	1	1
+3666970	Shared room	29	1	1
+3666970	Shared room	29	1	1
+3666970	Shared room	29	1	1
+3673011	Private room	69	1	1
+3673011	Private room	69	1	1
+3673011	Private room	69	1	1
+3673011	Private room	69	1	1
+3673011	Private room	69	1	1
+3673011	Private room	69	1	1
+3673011	Private room	69	1	1
+3673011	Private room	69	1	1
+3673011	Private room	69	1	1
+3673011	Private room	69	1	1
+3673011	Private room	69	1	1
+3139972	Shared room	30	1	1
+3143175	Entire home/apt	79	1	1
+3143175	Entire home/apt	79	1	1
+3144311	Entire home/apt	68	1	1
+3144311	Entire home/apt	68	1	1
+3144597	Private room	54	1	1
+3144597	Private room	54	1	1
+3144597	Private room	54	1	1
+3144597	Private room	54	1	1
+3158210	Entire home/apt	140	1	1
+3158210	Entire home/apt	140	1	1
+3158210	Entire home/apt	140	1	1
+3177005	Entire home/apt	199	1	1
+3177005	Entire home/apt	199	1	1
+3186785	Private room	70	1	1
+3186785	Private room	70	1	1
+3200646	Private room	45	1	1
+3200646	Private room	45	1	1
+3200646	Private room	45	1	1
+3200646	Private room	45	1	1
+3200646	Private room	45	1	1
+3200646	Private room	45	1	1
+3200646	Private room	45	1	1
+3200646	Private room	45	1	1
+3208330	Private room	85	1	1
+3208330	Private room	85	1	1
+3208330	Private room	85	1	1
+3208330	Private room	85	1	1
+3208330	Private room	85	1	1
+3208330	Private room	85	1	1
+3208330	Private room	85	1	1
+3208330	Private room	85	1	1
+3208330	Private room	85	1	1
+3208330	Private room	85	1	1
+3208330	Private room	85	1	1
+3208330	Private room	85	1	1
+3208330	Private room	85	1	1
+3208330	Private room	85	1	1
+3208330	Private room	85	1	1
+3208330	Private room	85	1	1
+3208330	Private room	85	1	1
+3208330	Private room	85	1	1
+3208330	Private room	85	1	1
+3208330	Private room	85	1	1
+3209633	Private room	75	1	1
+3209633	Private room	75	1	1
+3209633	Private room	75	1	1
+3231850	Entire home/apt	100	1	1
+3231850	Entire home/apt	100	1	1
+3231850	Entire home/apt	100	1	1
+3231850	Entire home/apt	100	1	1
+3231850	Entire home/apt	100	1	1
+3231850	Entire home/apt	100	1	1
+3238295	Entire home/apt	135	1	1
+3238295	Entire home/apt	135	1	1
+3238295	Entire home/apt	135	1	1
+3242605	Private room	60	1	1
+3242605	Private room	60	1	1
+3242605	Private room	60	1	1
+3242605	Private room	60	1	1
+3245876	Private room	66	1	1
+3245876	Private room	66	1	1
+3245876	Private room	66	1	1
+3245876	Private room	66	1	1
+3245876	Private room	66	1	1
+3245876	Private room	66	1	1
+3245876	Private room	66	1	1
+3245876	Private room	66	1	1
+3245876	Private room	66	1	1
+3245876	Private room	66	1	1
+3245876	Private room	66	1	1
+3245876	Private room	66	1	1
+3245876	Private room	66	1	1
+3245876	Private room	66	1	1
+3245876	Private room	66	1	1
+3245876	Private room	66	1	1
+3251016	Entire home/apt	249	1	1
+3258213	Private room	60	1	1
+3258213	Private room	60	1	1
+3258213	Private room	60	1	1
+3258585	Private room	80	1	1
+3258585	Private room	80	1	1
+3258585	Private room	80	1	1
+3258585	Private room	80	1	1
+3258585	Private room	80	1	1
+3258585	Private room	80	1	1
+3258585	Private room	80	1	1
+3265292	Entire home/apt	130	1	1
+3265292	Entire home/apt	130	1	1
+3270492	Private room	95	1	1
+3270492	Private room	95	1	1
+3272374	Entire home/apt	75	1	1
+3272374	Entire home/apt	75	1	1
+3272374	Entire home/apt	75	1	1
+3272374	Entire home/apt	75	1	1
+3272374	Entire home/apt	75	1	1
+3273240	Entire home/apt	250	1	1
+3293438	Entire home/apt	85	1	1
+3293438	Entire home/apt	85	1	1
+3293438	Entire home/apt	85	1	1
+3294243	Entire home/apt	150	1	1
+3294243	Entire home/apt	150	1	1
+3294804	Entire home/apt	119	1	1
+3294804	Entire home/apt	119	1	1
+3294804	Entire home/apt	119	1	1
+3294804	Entire home/apt	119	1	1
+3294804	Entire home/apt	119	1	1
+3673759	Entire home/apt	100	1	1
+3673759	Entire home/apt	100	1	1
+3673759	Entire home/apt	100	1	1
+3676779	Entire home/apt	100	1	1
+3677729	Private room	80	1	1
+3677729	Private room	80	1	1
+3677729	Private room	80	1	1
+3677729	Private room	80	1	1
+3689119	Entire home/apt	85	1	1
+3689119	Entire home/apt	85	1	1
+3689119	Entire home/apt	85	1	1
+3689119	Entire home/apt	85	1	1
+3691288	Entire home/apt	163	1	1
+3697351	Shared room	35	1	1
+3697351	Shared room	35	1	1
+3697351	Shared room	35	1	1
+3697351	Shared room	35	1	1
+3697351	Shared room	35	1	1
+3697351	Shared room	35	1	1
+3703121	Entire home/apt	150	1	1
+3703121	Entire home/apt	150	1	1
+3703121	Entire home/apt	150	1	1
+3706719	Entire home/apt	90	1	1
+3720511	Entire home/apt	235	1	1
+3720731	Entire home/apt	139	1	1
+3720731	Entire home/apt	139	1	1
+3732103	Shared room	40	1	1
+3732103	Shared room	40	1	1
+3732949	Entire home/apt	180	1	1
+3732949	Entire home/apt	180	1	1
+3751503	Entire home/apt	179	1	1
+3757858	Shared room	79	1	1
+3757858	Shared room	79	1	1
+3757858	Shared room	79	1	1
+3757858	Shared room	79	1	1
+3757858	Shared room	79	1	1
+3766055	Private room	70	1	1
+3768742	Private room	99	1	1
+3768742	Private room	99	1	1
+3772674	Entire home/apt	85	1	1
+3772674	Entire home/apt	85	1	1
+3773568	Entire home/apt	439	1	1
+3773568	Entire home/apt	439	1	1
+3773784	Entire home/apt	115	1	1
+3773784	Entire home/apt	115	1	1
+3773784	Entire home/apt	115	1	1
+3773784	Entire home/apt	115	1	1
+3793047	Entire home/apt	100	1	1
+3793047	Entire home/apt	100	1	1
+3793047	Entire home/apt	100	1	1
+3793047	Entire home/apt	100	1	1
+3793047	Entire home/apt	100	1	1
+3793790	Private room	45	1	1
+3793790	Private room	45	1	1
+3803947	Entire home/apt	129	1	1
+3803947	Entire home/apt	129	1	1
+3803947	Entire home/apt	129	1	1
+3803947	Entire home/apt	129	1	1
+3803947	Entire home/apt	129	1	1
+3803947	Entire home/apt	129	1	1
+3803947	Entire home/apt	129	1	1
+3811828	Shared room	29	1	1
+3811930	Shared room	30	1	1
+3811955	Shared room	30	1	1
+3811955	Shared room	30	1	1
+3821663	Entire home/apt	160	1	1
+3821663	Entire home/apt	160	1	1
+3821663	Entire home/apt	160	1	1
+3821663	Entire home/apt	160	1	1
+3821663	Entire home/apt	160	1	1
+3821822	Entire home/apt	75	1	1
+3821822	Entire home/apt	75	1	1
+3821822	Entire home/apt	75	1	1
+3821822	Entire home/apt	75	1	1
+3821822	Entire home/apt	75	1	1
+3821822	Entire home/apt	75	1	1
+3835995	Entire home/apt	97	1	1
+3835995	Entire home/apt	97	1	1
+3835995	Entire home/apt	97	1	1
+3835995	Entire home/apt	97	1	1
+3835995	Entire home/apt	97	1	1
+3835995	Entire home/apt	97	1	1
+3835995	Entire home/apt	97	1	1
+3835995	Entire home/apt	97	1	1
+3835995	Entire home/apt	97	1	1
+3835995	Entire home/apt	97	1	1
+3835995	Entire home/apt	97	1	1
+3835995	Entire home/apt	97	1	1
+3835995	Entire home/apt	97	1	1
+3844087	Private room	45	1	1
+3852117	Entire home/apt	39	1	1
+3852117	Entire home/apt	39	1	1
+3861673	Private room	71	1	1
+3861673	Private room	71	1	1
+3861673	Private room	71	1	1
+3861673	Private room	71	1	1
+3861673	Private room	71	1	1
+3861673	Private room	71	1	1
+3861673	Private room	71	1	1
+3861673	Private room	71	1	1
+3861673	Private room	71	1	1
+3861673	Private room	71	1	1
+3861673	Private room	71	1	1
+3861673	Private room	71	1	1
+3861673	Private room	71	1	1
+3861673	Private room	71	1	1
+3861673	Private room	71	1	1
+3861673	Private room	71	1	1
+3861673	Private room	71	1	1
+2536507	Entire home/apt	99	1	1
+2536507	Entire home/apt	99	1	1
+2536507	Entire home/apt	99	1	1
+2536507	Entire home/apt	99	1	1
+2536507	Entire home/apt	99	1	1
+2536507	Entire home/apt	99	1	1
+2536507	Entire home/apt	99	1	1
+2536507	Entire home/apt	99	1	1
+2536507	Entire home/apt	99	1	1
+2539881	Entire home/apt	79	1	1
+2577625	Entire home/apt	90	1	1
+2577625	Entire home/apt	90	1	1
+2577625	Entire home/apt	90	1	1
+2586642	Entire home/apt	150	1	1
+2586642	Entire home/apt	150	1	1
+2586642	Entire home/apt	150	1	1
+2593263	Private room	69	1	1
+2593263	Private room	69	1	1
+2593263	Private room	69	1	1
+2593263	Private room	69	1	1
+2593263	Private room	69	1	1
+2593263	Private room	69	1	1
+2593263	Private room	69	1	1
+2593263	Private room	69	1	1
+2610187	Entire home/apt	65	1	1
+2612025	Private room	45	1	1
+2612025	Private room	45	1	1
+2612025	Private room	45	1	1
+2612025	Private room	45	1	1
+2612025	Private room	45	1	1
+2612025	Private room	45	1	1
+2612025	Private room	45	1	1
+2612025	Private room	45	1	1
+2612025	Private room	45	1	1
+2612025	Private room	45	1	1
+2612025	Private room	45	1	1
+2612025	Private room	45	1	1
+2614387	Private room	77	1	1
+2614387	Private room	77	1	1
+2614387	Private room	77	1	1
+2614387	Private room	77	1	1
+2614387	Private room	77	1	1
+2614387	Private room	77	1	1
+2614387	Private room	77	1	1
+2614387	Private room	77	1	1
+2614387	Private room	77	1	1
+2628010	Entire home/apt	209	1	1
+2628010	Entire home/apt	209	1	1
+2628010	Entire home/apt	209	1	1
+2642359	Private room	49	1	1
+2642359	Private room	49	1	1
+2642359	Private room	49	1	1
+2642359	Private room	49	1	1
+2642359	Private room	49	1	1
+2642359	Private room	49	1	1
+2642359	Private room	49	1	1
+2642359	Private room	49	1	1
+2642359	Private room	49	1	1
+2652941	Entire home/apt	95	1	1
+2652941	Entire home/apt	95	1	1
+2652941	Entire home/apt	95	1	1
+2652941	Entire home/apt	95	1	1
+2652941	Entire home/apt	95	1	1
+2652941	Entire home/apt	95	1	1
+2652941	Entire home/apt	95	1	1
+2660384	Entire home/apt	100	1	1
+2660384	Entire home/apt	100	1	1
+2660384	Entire home/apt	100	1	1
+2660384	Entire home/apt	100	1	1
+2660384	Entire home/apt	100	1	1
+2660384	Entire home/apt	100	1	1
+2660384	Entire home/apt	100	1	1
+2670365	Private room	65	1	1
+2670365	Private room	65	1	1
+2670365	Private room	65	1	1
+2693700	Entire home/apt	115	1	1
+2693700	Entire home/apt	115	1	1
+2693700	Entire home/apt	115	1	1
+2693700	Entire home/apt	115	1	1
+2693700	Entire home/apt	115	1	1
+2693700	Entire home/apt	115	1	1
+2693700	Entire home/apt	115	1	1
+2693700	Entire home/apt	115	1	1
+2693700	Entire home/apt	115	1	1
+2693700	Entire home/apt	115	1	1
+2693700	Entire home/apt	115	1	1
+2693700	Entire home/apt	115	1	1
+2693700	Entire home/apt	115	1	1
+2693700	Entire home/apt	115	1	1
+2693700	Entire home/apt	115	1	1
+2693700	Entire home/apt	115	1	1
+2693700	Entire home/apt	115	1	1
+2695493	Entire home/apt	95	1	1
+2695493	Entire home/apt	95	1	1
+2695493	Entire home/apt	95	1	1
+2723368	Private room	50	1	1
+2723368	Private room	50	1	1
+2723368	Private room	50	1	1
+2723368	Private room	50	1	1
+2723368	Private room	50	1	1
+2736961	Entire home/apt	95	1	1
+2736961	Entire home/apt	95	1	1
+2736961	Entire home/apt	95	1	1
+2736961	Entire home/apt	95	1	1
+2736961	Entire home/apt	95	1	1
+2736961	Entire home/apt	95	1	1
+2736961	Entire home/apt	95	1	1
+2882641	Entire home/apt	165	1	1
+2882641	Entire home/apt	165	1	1
+2882641	Entire home/apt	165	1	1
+2882641	Entire home/apt	165	1	1
+2882641	Entire home/apt	165	1	1
+2898401	Entire home/apt	100	1	1
+2898401	Entire home/apt	100	1	1
+2898954	Private room	69	1	1
+2898954	Private room	69	1	1
+2905375	Entire home/apt	127	1	1
+2906694	Private room	81	1	1
+2906694	Private room	81	1	1
+2906694	Private room	81	1	1
+2906694	Private room	81	1	1
+2906694	Private room	81	1	1
+2906694	Private room	81	1	1
+2906694	Private room	81	1	1
+2906694	Private room	81	1	1
+2906694	Private room	81	1	1
+2906694	Private room	81	1	1
+2906694	Private room	81	1	1
+2909809	Entire home/apt	132	1	1
+2909809	Entire home/apt	132	1	1
+2926776	Entire home/apt	150	1	1
+2926776	Entire home/apt	150	1	1
+2934389	Entire home/apt	93	1	1
+2934389	Entire home/apt	93	1	1
+2935486	Entire home/apt	250	1	1
+2935486	Entire home/apt	250	1	1
+2935486	Entire home/apt	250	1	1
+2943860	Entire home/apt	195	1	1
+2943860	Entire home/apt	195	1	1
+2970666	Entire home/apt	109	1	1
+2970666	Entire home/apt	109	1	1
+2970666	Entire home/apt	109	1	1
+2976798	Private room	65	1	1
+2976798	Private room	65	1	1
+2976798	Private room	65	1	1
+2976798	Private room	65	1	1
+2979387	Entire home/apt	275	1	1
+2979387	Entire home/apt	275	1	1
+2980762	Private room	65	1	1
+2980762	Private room	65	1	1
+2980762	Private room	65	1	1
+2995996	Entire home/apt	170	1	1
+2995996	Entire home/apt	170	1	1
+3022564	Entire home/apt	90	1	1
+3022564	Entire home/apt	90	1	1
+3022564	Entire home/apt	90	1	1
+3022564	Entire home/apt	90	1	1
+3022564	Entire home/apt	90	1	1
+3022564	Entire home/apt	90	1	1
+3022564	Entire home/apt	90	1	1
+3022564	Entire home/apt	90	1	1
+3022564	Entire home/apt	90	1	1
+3022564	Entire home/apt	90	1	1
+3022564	Entire home/apt	90	1	1
+3022564	Entire home/apt	90	1	1
+3022564	Entire home/apt	90	1	1
+3022564	Entire home/apt	90	1	1
+3022564	Entire home/apt	90	1	1
+3022564	Entire home/apt	90	1	1
+3022564	Entire home/apt	90	1	1
+3024336	Entire home/apt	200	1	1
+3025456	Private room	60	1	1
+3025456	Private room	60	1	1
+3025456	Private room	60	1	1
+3025456	Private room	60	1	1
+3025456	Private room	60	1	1
+3025456	Private room	60	1	1
+3031415	Entire home/apt	275	1	1
+3031415	Entire home/apt	275	1	1
+3031415	Entire home/apt	275	1	1
+3031415	Entire home/apt	275	1	1
+3031415	Entire home/apt	275	1	1
+3031415	Entire home/apt	275	1	1
+3031415	Entire home/apt	275	1	1
+3031415	Entire home/apt	275	1	1
+3038772	Private room	55	1	1
+3038772	Private room	55	1	1
+3038772	Private room	55	1	1
+3038772	Private room	55	1	1
+3038772	Private room	55	1	1
+3038772	Private room	55	1	1
+3039438	Private room	93	1	1
+3040278	Entire home/apt	217	1	1
+3040278	Entire home/apt	217	1	1
+3040278	Entire home/apt	217	1	1
+3040278	Entire home/apt	217	1	1
+3040278	Entire home/apt	217	1	1
+3040278	Entire home/apt	217	1	1
+3040278	Entire home/apt	217	1	1
+3040278	Entire home/apt	217	1	1
+3040278	Entire home/apt	217	1	1
+3040278	Entire home/apt	217	1	1
+3040278	Entire home/apt	217	1	1
+3040278	Entire home/apt	217	1	1
+3040278	Entire home/apt	217	1	1
+3040278	Entire home/apt	217	1	1
+3040278	Entire home/apt	217	1	1
+3040278	Entire home/apt	217	1	1
+3040278	Entire home/apt	217	1	1
+3040278	Entire home/apt	217	1	1
+3041619	Entire home/apt	295	1	1
+3041619	Entire home/apt	295	1	1
+3041619	Entire home/apt	295	1	1
+3050140	Entire home/apt	90	1	1
+3861673	Private room	71	1	1
+3861673	Private room	71	1	1
+3868138	Entire home/apt	183	1	1
+3868138	Entire home/apt	183	1	1
+3868138	Entire home/apt	183	1	1
+3868138	Entire home/apt	183	1	1
+3868138	Entire home/apt	183	1	1
+3870937	Entire home/apt	119	1	1
+3870937	Entire home/apt	119	1	1
+3870937	Entire home/apt	119	1	1
+3870937	Entire home/apt	119	1	1
+3870937	Entire home/apt	119	1	1
+3876097	Shared room	30	1	1
+3883137	Entire home/apt	100	1	1
+3883137	Entire home/apt	100	1	1
+3883137	Entire home/apt	100	1	1
+3883137	Entire home/apt	100	1	1
+3883392	Entire home/apt	245	1	1
+3883392	Entire home/apt	245	1	1
+3883392	Entire home/apt	245	1	1
+3883392	Entire home/apt	245	1	1
+3883392	Entire home/apt	245	1	1
+3884851	Private room	65	1	1
+3884851	Private room	65	1	1
+3884851	Private room	65	1	1
+3884851	Private room	65	1	1
+3884851	Private room	65	1	1
+3884851	Private room	65	1	1
+3884851	Private room	65	1	1
+3884851	Private room	65	1	1
+3891695	Entire home/apt	180	1	1
+3891695	Entire home/apt	180	1	1
+3891695	Entire home/apt	180	1	1
+3891695	Entire home/apt	180	1	1
+3891695	Entire home/apt	180	1	1
+3898692	Entire home/apt	95	1	1
+3898692	Entire home/apt	95	1	1
+3898692	Entire home/apt	95	1	1
+3898692	Entire home/apt	95	1	1
+3915826	Entire home/apt	95	1	1
+3915826	Entire home/apt	95	1	1
+3916050	Private room	49	1	1
+3916050	Private room	49	1	1
+3925573	Entire home/apt	130	1	1
+3930681	Entire home/apt	111	1	1
+3930681	Entire home/apt	111	1	1
+3930681	Entire home/apt	111	1	1
+3930681	Entire home/apt	111	1	1
+3939683	Shared room	50	1	1
+3940265	Private room	72	1	1
+3951768	Entire home/apt	58	1	1
+3951768	Entire home/apt	58	1	1
+3951768	Entire home/apt	58	1	1
+3951768	Entire home/apt	58	1	1
+3953365	Private room	42	1	1
+3953365	Private room	42	1	1
+3953365	Private room	42	1	1
+3953365	Private room	42	1	1
+3953365	Private room	42	1	1
+3953365	Private room	42	1	1
+3953365	Private room	42	1	1
+3953611	Private room	115	1	1
+3953611	Private room	115	1	1
+3953611	Private room	115	1	1
+3953611	Private room	115	1	1
+3953611	Private room	115	1	1
+3953611	Private room	115	1	1
+3953611	Private room	115	1	1
+3959460	Entire home/apt	135	1	1
+3959460	Entire home/apt	135	1	1
+3970736	Entire home/apt	90	1	1
+3970736	Entire home/apt	90	1	1
+3971346	Entire home/apt	250	1	1
+3971346	Entire home/apt	250	1	1
+3971346	Entire home/apt	250	1	1
+3971346	Entire home/apt	250	1	1
+3993960	Entire home/apt	75	1	1
+3993960	Entire home/apt	75	1	1
+3994397	Private room	75	1	1
+3994397	Private room	75	1	1
+3994634	Shared room	29	1	1
+3994634	Shared room	29	1	1
+3994634	Shared room	29	1	1
+3995007	Entire home/apt	128	1	1
+3995007	Entire home/apt	128	1	1
+3995007	Entire home/apt	128	1	1
+3995007	Entire home/apt	128	1	1
+4016650	Private room	90	1	1
+4016650	Private room	90	1	1
+4017140	Private room	53	1	1
+4017140	Private room	53	1	1
+4017140	Private room	53	1	1
+4017140	Private room	53	1	1
+4017140	Private room	53	1	1
+4017140	Private room	53	1	1
+4017140	Private room	53	1	1
+4023177	Private room	119	1	1
+4023177	Private room	119	1	1
+4023177	Private room	119	1	1
+4024844	Entire home/apt	80	1	1
+4024844	Entire home/apt	80	1	1
+4024844	Entire home/apt	80	1	1
+4024844	Entire home/apt	80	1	1
+4024844	Entire home/apt	80	1	1
+4024844	Entire home/apt	80	1	1
+4024844	Entire home/apt	80	1	1
+4024844	Entire home/apt	80	1	1
+4024844	Entire home/apt	80	1	1
+3303376	Private room	75	1	1
+3303376	Private room	75	1	1
+3303376	Private room	75	1	1
+3303857	Entire home/apt	95	1	1
+3303857	Entire home/apt	95	1	1
+3308825	Private room	130	1	1
+3312406	Entire home/apt	109	1	1
+3312406	Entire home/apt	109	1	1
+3312406	Entire home/apt	109	1	1
+3312406	Entire home/apt	109	1	1
+3312406	Entire home/apt	109	1	1
+3312406	Entire home/apt	109	1	1
+3312406	Entire home/apt	109	1	1
+3316219	Entire home/apt	115	1	1
+3316219	Entire home/apt	115	1	1
+3316219	Entire home/apt	115	1	1
+3316219	Entire home/apt	115	1	1
+3316219	Entire home/apt	115	1	1
+3316219	Entire home/apt	115	1	1
+3316219	Entire home/apt	115	1	1
+3319386	Private room	169	1	1
+3319386	Private room	169	1	1
+3333971	Entire home/apt	145	1	1
+3333971	Entire home/apt	145	1	1
+3333971	Entire home/apt	145	1	1
+3333971	Entire home/apt	145	1	1
+3333971	Entire home/apt	145	1	1
+3333971	Entire home/apt	145	1	1
+3333971	Entire home/apt	145	1	1
+3333971	Entire home/apt	145	1	1
+3333971	Entire home/apt	145	1	1
+3333971	Entire home/apt	145	1	1
+3334052	Entire home/apt	62	1	1
+3334052	Entire home/apt	62	1	1
+3334052	Entire home/apt	62	1	1
+3334052	Entire home/apt	62	1	1
+3334052	Entire home/apt	62	1	1
+3344977	Private room	80	1	1
+3344977	Private room	80	1	1
+3344977	Private room	80	1	1
+3344977	Private room	80	1	1
+3344977	Private room	80	1	1
+3344977	Private room	80	1	1
+3344977	Private room	80	1	1
+3345341	Entire home/apt	999	1	1
+3352685	Entire home/apt	200	1	1
+3352685	Entire home/apt	200	1	1
+3352685	Entire home/apt	200	1	1
+3383329	Entire home/apt	95	1	1
+3383329	Entire home/apt	95	1	1
+3383329	Entire home/apt	95	1	1
+3383329	Entire home/apt	95	1	1
+3383329	Entire home/apt	95	1	1
+3383329	Entire home/apt	95	1	1
+3383329	Entire home/apt	95	1	1
+3383329	Entire home/apt	95	1	1
+3383329	Entire home/apt	95	1	1
+3383329	Entire home/apt	95	1	1
+3383329	Entire home/apt	95	1	1
+3383329	Entire home/apt	95	1	1
+3383329	Entire home/apt	95	1	1
+3386862	Entire home/apt	152	1	1
+3386862	Entire home/apt	152	1	1
+3386862	Entire home/apt	152	1	1
+3386862	Entire home/apt	152	1	1
+3386862	Entire home/apt	152	1	1
+3386862	Entire home/apt	152	1	1
+3386862	Entire home/apt	152	1	1
+3386862	Entire home/apt	152	1	1
+3386862	Entire home/apt	152	1	1
+3386862	Entire home/apt	152	1	1
+3386862	Entire home/apt	152	1	1
+3386862	Entire home/apt	152	1	1
+3386862	Entire home/apt	152	1	1
+3394338	Entire home/apt	150	1	1
+3394936	Entire home/apt	140	1	1
+3394936	Entire home/apt	140	1	1
+3402376	Entire home/apt	165	1	1
+3402376	Entire home/apt	165	1	1
+3403638	Shared room	40	1	1
+3404700	Entire home/apt	65	1	1
+3404700	Entire home/apt	65	1	1
+3418349	Entire home/apt	99	1	1
+3418349	Entire home/apt	99	1	1
+3418349	Entire home/apt	99	1	1
+3418349	Entire home/apt	99	1	1
+3418349	Entire home/apt	99	1	1
+3418349	Entire home/apt	99	1	1
+3418349	Entire home/apt	99	1	1
+3418349	Entire home/apt	99	1	1
+3418349	Entire home/apt	99	1	1
+3418349	Entire home/apt	99	1	1
+3418349	Entire home/apt	99	1	1
+3418349	Entire home/apt	99	1	1
+3422894	Entire home/apt	88	1	1
+3422894	Entire home/apt	88	1	1
+3422894	Entire home/apt	88	1	1
+3424242	Shared room	40	1	1
+3434459	Private room	45	1	1
+3449059	Entire home/apt	144	1	1
+3449059	Entire home/apt	144	1	1
+3449059	Entire home/apt	144	1	1
+3449059	Entire home/apt	144	1	1
+3449059	Entire home/apt	144	1	1
+3449059	Entire home/apt	144	1	1
+3463245	Private room	109	1	1
+3463245	Private room	109	1	1
+3050140	Entire home/apt	90	1	1
+3050140	Entire home/apt	90	1	1
+3050140	Entire home/apt	90	1	1
+3050140	Entire home/apt	90	1	1
+3050140	Entire home/apt	90	1	1
+3052151	Private room	70	1	1
+3053237	Entire home/apt	149	1	1
+3053237	Entire home/apt	149	1	1
+3053237	Entire home/apt	149	1	1
+3053237	Entire home/apt	149	1	1
+3053237	Entire home/apt	149	1	1
+3053237	Entire home/apt	149	1	1
+3053237	Entire home/apt	149	1	1
+3076065	Entire home/apt	224	1	1
+3076065	Entire home/apt	224	1	1
+3076065	Entire home/apt	224	1	1
+3123632	Entire home/apt	200	1	1
+3124383	Private room	59	1	1
+3139847	Entire home/apt	155	1	1
+3139847	Entire home/apt	155	1	1
+3139847	Entire home/apt	155	1	1
+3139847	Entire home/apt	155	1	1
+3139847	Entire home/apt	155	1	1
+3139847	Entire home/apt	155	1	1
+3139972	Shared room	30	1	1
+3139972	Shared room	30	1	1
+3139972	Shared room	30	1	1
+3139972	Shared room	30	1	1
+3139972	Shared room	30	1	1
+3139972	Shared room	30	1	1
+3139972	Shared room	30	1	1
+3139972	Shared room	30	1	1
+3139972	Shared room	30	1	1
+3143227	Private room	55	1	1
+3143227	Private room	55	1	1
+3143227	Private room	55	1	1
+3143227	Private room	55	1	1
+3143227	Private room	55	1	1
+3200646	Private room	45	1	1
+3200646	Private room	45	1	1
+3200646	Private room	45	1	1
+3200646	Private room	45	1	1
+3200646	Private room	45	1	1
+3200646	Private room	45	1	1
+3200646	Private room	45	1	1
+3200646	Private room	45	1	1
+3200646	Private room	45	1	1
+3200646	Private room	45	1	1
+3215404	Entire home/apt	119	1	1
+3215404	Entire home/apt	119	1	1
+3231850	Entire home/apt	100	1	1
+3231850	Entire home/apt	100	1	1
+3231850	Entire home/apt	100	1	1
+3231850	Entire home/apt	100	1	1
+3231850	Entire home/apt	100	1	1
+3231850	Entire home/apt	100	1	1
+3231850	Entire home/apt	100	1	1
+3231850	Entire home/apt	100	1	1
+3231850	Entire home/apt	100	1	1
+3231850	Entire home/apt	100	1	1
+3231850	Entire home/apt	100	1	1
+3231850	Entire home/apt	100	1	1
+3231850	Entire home/apt	100	1	1
+3242605	Private room	60	1	1
+3242605	Private room	60	1	1
+3242605	Private room	60	1	1
+3242605	Private room	60	1	1
+3242605	Private room	60	1	1
+3242605	Private room	60	1	1
+3242605	Private room	60	1	1
+3242605	Private room	60	1	1
+3242605	Private room	60	1	1
+3242605	Private room	60	1	1
+3242605	Private room	60	1	1
+3242605	Private room	60	1	1
+3242605	Private room	60	1	1
+3242605	Private room	60	1	1
+3242605	Private room	60	1	1
+3242605	Private room	60	1	1
+3245876	Private room	66	1	1
+3245876	Private room	66	1	1
+3245876	Private room	66	1	1
+3245876	Private room	66	1	1
+3246706	Private room	40	1	1
+3246706	Private room	40	1	1
+3246706	Private room	40	1	1
+4024844	Entire home/apt	80	1	1
+4024844	Entire home/apt	80	1	1
+4025593	Private room	40	1	1
+4025593	Private room	40	1	1
+2736961	Entire home/apt	95	1	1
+4025593	Private room	40	1	1
+2736961	Entire home/apt	95	1	1
+4025954	Entire home/apt	90	1	1
+2736961	Entire home/apt	95	1	1
+4026757	Private room	55	1	1
+2737012	Entire home/apt	65	1	1
+4026757	Private room	55	1	1
+2737012	Entire home/apt	65	1	1
+4026757	Private room	55	1	1
+2737012	Entire home/apt	65	1	1
+4026757	Private room	55	1	1
+2737012	Entire home/apt	65	1	1
+4026757	Private room	55	1	1
+2737012	Entire home/apt	65	1	1
+4026757	Private room	55	1	1
+2737012	Entire home/apt	65	1	1
+4026757	Private room	55	1	1
+2737012	Entire home/apt	65	1	1
+2737012	Entire home/apt	65	1	1
+2746782	Entire home/apt	90	1	1
+2746782	Entire home/apt	90	1	1
+2746782	Entire home/apt	90	1	1
+2746782	Entire home/apt	90	1	1
+2746782	Entire home/apt	90	1	1
+2746782	Entire home/apt	90	1	1
+2746782	Entire home/apt	90	1	1
+2746782	Entire home/apt	90	1	1
+2746782	Entire home/apt	90	1	1
+2746782	Entire home/apt	90	1	1
+2746782	Entire home/apt	90	1	1
+2746782	Entire home/apt	90	1	1
+2746782	Entire home/apt	90	1	1
+2746782	Entire home/apt	90	1	1
+2746782	Entire home/apt	90	1	1
+2746782	Entire home/apt	90	1	1
+2746782	Entire home/apt	90	1	1
+2746782	Entire home/apt	90	1	1
+2746782	Entire home/apt	90	1	1
+2746782	Entire home/apt	90	1	1
+2746782	Entire home/apt	90	1	1
+2762241	Private room	100	1	1
+2763078	Private room	70	1	1
+2763078	Private room	70	1	1
+2763078	Private room	70	1	1
+2763078	Private room	70	1	1
+2763078	Private room	70	1	1
+2763078	Private room	70	1	1
+2763078	Private room	70	1	1
+2763078	Private room	70	1	1
+2763078	Private room	70	1	1
+2763078	Private room	70	1	1
+2763078	Private room	70	1	1
+2763078	Private room	70	1	1
+2763078	Private room	70	1	1
+2778101	Entire home/apt	195	1	1
+2800448	Private room	65	1	1
+2800448	Private room	65	1	1
+2800448	Private room	65	1	1
+2804399	Private room	90	1	1
+2804399	Private room	90	1	1
+2804399	Private room	90	1	1
+2818420	Entire home/apt	89	1	1
+2818420	Entire home/apt	89	1	1
+2822984	Private room	50	1	1
+2822984	Private room	50	1	1
+2822984	Private room	50	1	1
+2822984	Private room	50	1	1
+2825852	Entire home/apt	139	1	1
+2825852	Entire home/apt	139	1	1
+2825852	Entire home/apt	139	1	1
+2825852	Entire home/apt	139	1	1
+2825852	Entire home/apt	139	1	1
+2825852	Entire home/apt	139	1	1
+2825852	Entire home/apt	139	1	1
+2825852	Entire home/apt	139	1	1
+2825852	Entire home/apt	139	1	1
+2825852	Entire home/apt	139	1	1
+2825852	Entire home/apt	139	1	1
+2825852	Entire home/apt	139	1	1
+2825852	Entire home/apt	139	1	1
+2825852	Entire home/apt	139	1	1
+2825852	Entire home/apt	139	1	1
+2830174	Private room	60	1	1
+2830174	Private room	60	1	1
+2865992	Private room	88	1	1
+2865992	Private room	88	1	1
+2882641	Entire home/apt	165	1	1
+2882641	Entire home/apt	165	1	1
+2882641	Entire home/apt	165	1	1
+2897897	Entire home/apt	189	1	1
+2897897	Entire home/apt	189	1	1
+2897897	Entire home/apt	189	1	1
+2897897	Entire home/apt	189	1	1
+2897897	Entire home/apt	189	1	1
+2898954	Private room	69	1	1
+2898954	Private room	69	1	1
+2923529	Entire home/apt	110	1	1
+2935486	Entire home/apt	250	1	1
+2935486	Entire home/apt	250	1	1
+2935486	Entire home/apt	250	1	1
+2955782	Entire home/apt	135	1	1
+2955782	Entire home/apt	135	1	1
+2955782	Entire home/apt	135	1	1
+2955782	Entire home/apt	135	1	1
+2955782	Entire home/apt	135	1	1
+2955782	Entire home/apt	135	1	1
+2966415	Private room	55	1	1
+2966415	Private room	55	1	1
+2966415	Private room	55	1	1
+2966415	Private room	55	1	1
+2966415	Private room	55	1	1
+2978929	Entire home/apt	100	1	1
+2978929	Entire home/apt	100	1	1
+2978929	Entire home/apt	100	1	1
+2978929	Entire home/apt	100	1	1
+2978929	Entire home/apt	100	1	1
+2978929	Entire home/apt	100	1	1
+2978929	Entire home/apt	100	1	1
+2978929	Entire home/apt	100	1	1
+2978929	Entire home/apt	100	1	1
+2978929	Entire home/apt	100	1	1
+2989758	Entire home/apt	125	1	1
+2989758	Entire home/apt	125	1	1
+2989758	Entire home/apt	125	1	1
+2989758	Entire home/apt	125	1	1
+2989758	Entire home/apt	125	1	1
+2994309	Entire home/apt	135	1	1
+2994309	Entire home/apt	135	1	1
+2994309	Entire home/apt	135	1	1
+2994309	Entire home/apt	135	1	1
+2994309	Entire home/apt	135	1	1
+2994309	Entire home/apt	135	1	1
+2994309	Entire home/apt	135	1	1
+2994309	Entire home/apt	135	1	1
+2994309	Entire home/apt	135	1	1
+2994309	Entire home/apt	135	1	1
+2994309	Entire home/apt	135	1	1
+2994309	Entire home/apt	135	1	1
+2994309	Entire home/apt	135	1	1
+3004007	Entire home/apt	125	1	1
+3004007	Entire home/apt	125	1	1
+3022564	Entire home/apt	90	1	1
+3022564	Entire home/apt	90	1	1
+3022564	Entire home/apt	90	1	1
+3022564	Entire home/apt	90	1	1
+3022564	Entire home/apt	90	1	1
+3022564	Entire home/apt	90	1	1
+3022564	Entire home/apt	90	1	1
+3022564	Entire home/apt	90	1	1
+3022564	Entire home/apt	90	1	1
+3022564	Entire home/apt	90	1	1
+3031415	Entire home/apt	275	1	1
+3031415	Entire home/apt	275	1	1
+3031415	Entire home/apt	275	1	1
+3031415	Entire home/apt	275	1	1
+3031415	Entire home/apt	275	1	1
+3031415	Entire home/apt	275	1	1
+3031415	Entire home/apt	275	1	1
+3031415	Entire home/apt	275	1	1
+3031415	Entire home/apt	275	1	1
+3041619	Entire home/apt	295	1	1
+3052151	Private room	70	1	1
+3061918	Private room	90	1	1
+3061918	Private room	90	1	1
+3120652	Entire home/apt	124	1	1
+3120652	Entire home/apt	124	1	1
+3120652	Entire home/apt	124	1	1
+3120652	Entire home/apt	124	1	1
+3120652	Entire home/apt	124	1	1
+3120652	Entire home/apt	124	1	1
+3120652	Entire home/apt	124	1	1
+3123041	Private room	75	1	1
+3123041	Private room	75	1	1
+3123041	Private room	75	1	1
+3123041	Private room	75	1	1
+3123041	Private room	75	1	1
+3123041	Private room	75	1	1
+3123041	Private room	75	1	1
+3123041	Private room	75	1	1
+3123041	Private room	75	1	1
+3123041	Private room	75	1	1
+3123041	Private room	75	1	1
+3123041	Private room	75	1	1
+3143175	Entire home/apt	79	1	1
+3143175	Entire home/apt	79	1	1
+3143175	Entire home/apt	79	1	1
+3143175	Entire home/apt	79	1	1
+3144597	Private room	54	1	1
+3144597	Private room	54	1	1
+3146212	Entire home/apt	80	1	1
+3146212	Entire home/apt	80	1	1
+3146212	Entire home/apt	80	1	1
+3146212	Entire home/apt	80	1	1
+3146212	Entire home/apt	80	1	1
+3146212	Entire home/apt	80	1	1
+3146212	Entire home/apt	80	1	1
+3146212	Entire home/apt	80	1	1
+3146212	Entire home/apt	80	1	1
+3146212	Entire home/apt	80	1	1
+3146212	Entire home/apt	80	1	1
+3147706	Private room	65	1	1
+3147706	Private room	65	1	1
+3147706	Private room	65	1	1
+3147706	Private room	65	1	1
+3147706	Private room	65	1	1
+3147706	Private room	65	1	1
+3147706	Private room	65	1	1
+3157738	Entire home/apt	175	1	1
+3158243	Entire home/apt	110	1	1
+3158243	Entire home/apt	110	1	1
+3193738	Entire home/apt	150	1	1
+3193738	Entire home/apt	150	1	1
+3206305	Entire home/apt	90	1	1
+3206305	Entire home/apt	90	1	1
+3206305	Entire home/apt	90	1	1
+3206305	Entire home/apt	90	1	1
+3206305	Entire home/apt	90	1	1
+3206305	Entire home/apt	90	1	1
+3206305	Entire home/apt	90	1	1
+3206305	Entire home/apt	90	1	1
+3206305	Entire home/apt	90	1	1
+3208667	Private room	62	1	1
+3208667	Private room	62	1	1
+3208667	Private room	62	1	1
+3208667	Private room	62	1	1
+3208667	Private room	62	1	1
+3208667	Private room	62	1	1
+3208667	Private room	62	1	1
+3208667	Private room	62	1	1
+3208667	Private room	62	1	1
+3208667	Private room	62	1	1
+3246706	Private room	40	1	1
+3246706	Private room	40	1	1
+3251069	Private room	109	1	1
+3254956	Entire home/apt	129	1	1
+3254956	Entire home/apt	129	1	1
+3258213	Private room	60	1	1
+3258213	Private room	60	1	1
+3258213	Private room	60	1	1
+3258213	Private room	60	1	1
+3263071	Entire home/apt	85	1	1
+3263071	Entire home/apt	85	1	1
+3263071	Entire home/apt	85	1	1
+3265292	Entire home/apt	130	1	1
+3265292	Entire home/apt	130	1	1
+3265292	Entire home/apt	130	1	1
+3270492	Private room	95	1	1
+3270492	Private room	95	1	1
+3270492	Private room	95	1	1
+3270492	Private room	95	1	1
+3270492	Private room	95	1	1
+3270492	Private room	95	1	1
+3273240	Entire home/apt	250	1	1
+3282000	Private room	115	1	1
+3282000	Private room	115	1	1
+3282000	Private room	115	1	1
+3282000	Private room	115	1	1
+3291777	Entire home/apt	95	1	1
+3293438	Entire home/apt	85	1	1
+3293438	Entire home/apt	85	1	1
+3293438	Entire home/apt	85	1	1
+3303376	Private room	75	1	1
+3303376	Private room	75	1	1
+3308979	Entire home/apt	975	1	1
+3308979	Entire home/apt	975	1	1
+3312406	Entire home/apt	109	1	1
+3312406	Entire home/apt	109	1	1
+3312406	Entire home/apt	109	1	1
+3312406	Entire home/apt	109	1	1
+3312406	Entire home/apt	109	1	1
+3312406	Entire home/apt	109	1	1
+3312406	Entire home/apt	109	1	1
+3316219	Entire home/apt	115	1	1
+3316219	Entire home/apt	115	1	1
+3316219	Entire home/apt	115	1	1
+3316219	Entire home/apt	115	1	1
+3316219	Entire home/apt	115	1	1
+3316219	Entire home/apt	115	1	1
+3316219	Entire home/apt	115	1	1
+3316219	Entire home/apt	115	1	1
+3316219	Entire home/apt	115	1	1
+3316219	Entire home/apt	115	1	1
+3316219	Entire home/apt	115	1	1
+3316219	Entire home/apt	115	1	1
+3316219	Entire home/apt	115	1	1
+3319386	Private room	169	1	1
+3319386	Private room	169	1	1
+3319386	Private room	169	1	1
+3319386	Private room	169	1	1
+3333971	Entire home/apt	145	1	1
+3333971	Entire home/apt	145	1	1
+3333971	Entire home/apt	145	1	1
+3333971	Entire home/apt	145	1	1
+3333971	Entire home/apt	145	1	1
+3334052	Entire home/apt	62	1	1
+3334052	Entire home/apt	62	1	1
+3334052	Entire home/apt	62	1	1
+3344977	Private room	80	1	1
+3344977	Private room	80	1	1
+3344977	Private room	80	1	1
+3344977	Private room	80	1	1
+3344977	Private room	80	1	1
+3345341	Entire home/apt	999	1	1
+3345341	Entire home/apt	999	1	1
+3345341	Entire home/apt	999	1	1
+3345341	Entire home/apt	999	1	1
+3345341	Entire home/apt	999	1	1
+3372535	Private room	45	1	1
+3380159	Entire home/apt	199	1	1
+3382533	Entire home/apt	150	1	1
+3382533	Entire home/apt	150	1	1
+3382533	Entire home/apt	150	1	1
+3385421	Entire home/apt	557	1	1
+3385421	Entire home/apt	557	1	1
+3385421	Entire home/apt	557	1	1
+3385421	Entire home/apt	557	1	1
+3385421	Entire home/apt	557	1	1
+3385421	Entire home/apt	557	1	1
+3385421	Entire home/apt	557	1	1
+3396140	Private room	75	1	1
+3396140	Private room	75	1	1
+3396140	Private room	75	1	1
+3396140	Private room	75	1	1
+3403638	Shared room	40	1	1
+3404557	Shared room	40	1	1
+3404700	Entire home/apt	65	1	1
+3404700	Entire home/apt	65	1	1
+3404700	Entire home/apt	65	1	1
+3404700	Entire home/apt	65	1	1
+3404700	Entire home/apt	65	1	1
+3412630	Entire home/apt	195	1	1
+3412630	Entire home/apt	195	1	1
+3412630	Entire home/apt	195	1	1
+3416217	Entire home/apt	170	1	1
+3416217	Entire home/apt	170	1	1
+3416217	Entire home/apt	170	1	1
+3449059	Entire home/apt	144	1	1
+3449059	Entire home/apt	144	1	1
+3487824	Private room	69	1	1
+3487824	Private room	69	1	1
+3487824	Private room	69	1	1
+3487824	Private room	69	1	1
+3487824	Private room	69	1	1
+3487824	Private room	69	1	1
+3487824	Private room	69	1	1
+3487824	Private room	69	1	1
+3487824	Private room	69	1	1
+3487824	Private room	69	1	1
+3487824	Private room	69	1	1
+3487824	Private room	69	1	1
+3487824	Private room	69	1	1
+3488436	Private room	75	1	1
+3488436	Private room	75	1	1
+3488436	Private room	75	1	1
+3498114	Entire home/apt	70	1	1
+3498114	Entire home/apt	70	1	1
+3505739	Entire home/apt	129	1	1
+3505739	Entire home/apt	129	1	1
+3518808	Entire home/apt	100	1	1
+3518808	Entire home/apt	100	1	1
+3531616	Private room	70	1	1
+3531616	Private room	70	1	1
+3531616	Private room	70	1	1
+3531616	Private room	70	1	1
+3531616	Private room	70	1	1
+3533224	Private room	70	1	1
+3533224	Private room	70	1	1
+3533224	Private room	70	1	1
+3533224	Private room	70	1	1
+3533224	Private room	70	1	1
+3533224	Private room	70	1	1
+3533224	Private room	70	1	1
+3533224	Private room	70	1	1
+3533224	Private room	70	1	1
+3533224	Private room	70	1	1
+3533224	Private room	70	1	1
+3533224	Private room	70	1	1
+3533224	Private room	70	1	1
+3533224	Private room	70	1	1
+3533224	Private room	70	1	1
+3533224	Private room	70	1	1
+3533224	Private room	70	1	1
+3533224	Private room	70	1	1
+3533224	Private room	70	1	1
+3533224	Private room	70	1	1
+3533224	Private room	70	1	1
+3533224	Private room	70	1	1
+3533224	Private room	70	1	1
+3533224	Private room	70	1	1
+3533224	Private room	70	1	1
+3533224	Private room	70	1	1
+3533224	Private room	70	1	1
+3533224	Private room	70	1	1
+3533224	Private room	70	1	1
+3533224	Private room	70	1	1
+3533224	Private room	70	1	1
+3533224	Private room	70	1	1
+3534364	Entire home/apt	100	1	1
+3534364	Entire home/apt	100	1	1
+3543084	Entire home/apt	150	1	1
+3543247	Entire home/apt	160	1	1
+3543247	Entire home/apt	160	1	1
+3543247	Entire home/apt	160	1	1
+3543247	Entire home/apt	160	1	1
+3543247	Entire home/apt	160	1	1
+3543247	Entire home/apt	160	1	1
+3543247	Entire home/apt	160	1	1
+3543247	Entire home/apt	160	1	1
+3543247	Entire home/apt	160	1	1
+3543247	Entire home/apt	160	1	1
+3543247	Entire home/apt	160	1	1
+3543791	Entire home/apt	115	1	1
+3544550	Entire home/apt	450	1	1
+3544550	Entire home/apt	450	1	1
+3544550	Entire home/apt	450	1	1
+3544953	Private room	99	1	1
+3544953	Private room	99	1	1
+3544953	Private room	99	1	1
+3552523	Entire home/apt	69	1	1
+3552523	Entire home/apt	69	1	1
+3552523	Entire home/apt	69	1	1
+3552523	Entire home/apt	69	1	1
+3552523	Entire home/apt	69	1	1
+3552523	Entire home/apt	69	1	1
+3552523	Entire home/apt	69	1	1
+3552523	Entire home/apt	69	1	1
+3552523	Entire home/apt	69	1	1
+3552523	Entire home/apt	69	1	1
+3552523	Entire home/apt	69	1	1
+3554558	Entire home/apt	110	1	1
+3554558	Entire home/apt	110	1	1
+3554558	Entire home/apt	110	1	1
+3554558	Entire home/apt	110	1	1
+3554558	Entire home/apt	110	1	1
+3554558	Entire home/apt	110	1	1
+3554558	Entire home/apt	110	1	1
+3554558	Entire home/apt	110	1	1
+3562617	Entire home/apt	200	1	1
+3562617	Entire home/apt	200	1	1
+3562617	Entire home/apt	200	1	1
+3562617	Entire home/apt	200	1	1
+3592838	Entire home/apt	175	1	1
+3592838	Entire home/apt	175	1	1
+3592838	Entire home/apt	175	1	1
+3592838	Entire home/apt	175	1	1
+4030600	Private room	70	1	1
+4038347	Private room	55	1	1
+4038347	Private room	55	1	1
+4046863	Private room	55	1	1
+4046863	Private room	55	1	1
+4046863	Private room	55	1	1
+4046863	Private room	55	1	1
+4047058	Private room	55	1	1
+4047058	Private room	55	1	1
+4047058	Private room	55	1	1
+4047058	Private room	55	1	1
+4047058	Private room	55	1	1
+4047399	Entire home/apt	160	1	1
+4053092	Private room	80	1	1
+4053972	Entire home/apt	95	1	1
+4053972	Entire home/apt	95	1	1
+4053972	Entire home/apt	95	1	1
+4061207	Entire home/apt	90	1	1
+4069543	Private room	85	1	1
+4069543	Private room	85	1	1
+4069543	Private room	85	1	1
+4069543	Private room	85	1	1
+4084712	Entire home/apt	115	1	1
+4100009	Entire home/apt	99	1	1
+4105164	Private room	59	1	1
+4105164	Private room	59	1	1
+4105164	Private room	59	1	1
+4105164	Private room	59	1	1
+4110396	Private room	95	1	1
+4110396	Private room	95	1	1
+4110396	Private room	95	1	1
+4110396	Private room	95	1	1
+4110396	Private room	95	1	1
+4116645	Entire home/apt	70	1	1
+4118282	Entire home/apt	80	1	1
+4118282	Entire home/apt	80	1	1
+4118282	Entire home/apt	80	1	1
+4122325	Entire home/apt	175	1	1
+4125779	Private room	99	1	1
+4138423	Entire home/apt	99	1	1
+4138423	Entire home/apt	99	1	1
+4138423	Entire home/apt	99	1	1
+4138423	Entire home/apt	99	1	1
+4138423	Entire home/apt	99	1	1
+4151093	Entire home/apt	139	1	1
+4157572	Private room	65	1	1
+4157572	Private room	65	1	1
+4157572	Private room	65	1	1
+4157572	Private room	65	1	1
+4157572	Private room	65	1	1
+4163851	Entire home/apt	104	1	1
+4172364	Private room	55	1	1
+4172364	Private room	55	1	1
+4205026	Private room	62	1	1
+4208555	Entire home/apt	75	1	1
+4211081	Entire home/apt	256	1	1
+4211081	Entire home/apt	256	1	1
+4211081	Entire home/apt	256	1	1
+4211081	Entire home/apt	256	1	1
+4211081	Entire home/apt	256	1	1
+4223597	Entire home/apt	195	1	1
+4223597	Entire home/apt	195	1	1
+4223597	Entire home/apt	195	1	1
+4223597	Entire home/apt	195	1	1
+4223597	Entire home/apt	195	1	1
+4223597	Entire home/apt	195	1	1
+4241862	Entire home/apt	100	1	1
+4241862	Entire home/apt	100	1	1
+4241862	Entire home/apt	100	1	1
+4241862	Entire home/apt	100	1	1
+4241862	Entire home/apt	100	1	1
+4241862	Entire home/apt	100	1	1
+4250639	Entire home/apt	139	1	1
+4250749	Entire home/apt	235	1	1
+4251235	Entire home/apt	245	1	1
+4251235	Entire home/apt	245	1	1
+4251426	Entire home/apt	245	1	1
+4258515	Private room	47	1	1
+4258515	Private room	47	1	1
+4258762	Entire home/apt	110	1	1
+4258762	Entire home/apt	110	1	1
+4258762	Entire home/apt	110	1	1
+4264012	Private room	55	1	1
+4264012	Private room	55	1	1
+4264012	Private room	55	1	1
+4271221	Private room	80	1	1
+4271221	Private room	80	1	1
+4271221	Private room	80	1	1
+4271221	Private room	80	1	1
+4271221	Private room	80	1	1
+4271221	Private room	80	1	1
+4271221	Private room	80	1	1
+4278896	Private room	60	1	1
+4279578	Entire home/apt	85	1	1
+4279578	Entire home/apt	85	1	1
+4279876	Entire home/apt	95	1	1
+4279876	Entire home/apt	95	1	1
+4279876	Entire home/apt	95	1	1
+4279876	Entire home/apt	95	1	1
+4279876	Entire home/apt	95	1	1
+4288801	Private room	80	1	1
+4297068	Entire home/apt	149	1	1
+4316910	Entire home/apt	64	1	1
+4316910	Entire home/apt	64	1	1
+4316910	Entire home/apt	64	1	1
+4317390	Entire home/apt	133	1	1
+4317390	Entire home/apt	133	1	1
+4318031	Entire home/apt	93	1	1
+4318031	Entire home/apt	93	1	1
+4318031	Entire home/apt	93	1	1
+4318031	Entire home/apt	93	1	1
+4318709	Shared room	60	1	1
+4318709	Shared room	60	1	1
+4318709	Shared room	60	1	1
+4322622	Private room	76	1	1
+4322622	Private room	76	1	1
+4324917	Private room	72	1	1
+4324917	Private room	72	1	1
+4340410	Entire home/apt	135	1	1
+4340410	Entire home/apt	135	1	1
+4349344	Entire home/apt	125	1	1
+4360604	Private room	42	1	1
+4370312	Entire home/apt	78	1	1
+4374326	Private room	37	1	1
+4374326	Private room	37	1	1
+4374326	Private room	37	1	1
+4374326	Private room	37	1	1
+4374326	Private room	37	1	1
+4374326	Private room	37	1	1
+4374326	Private room	37	1	1
+4384000	Entire home/apt	300	1	1
+4384095	Private room	49	1	1
+3479241	Private room	125	1	1
+4384095	Private room	49	1	1
+3479851	Entire home/apt	90	1	1
+4384095	Private room	49	1	1
+3479851	Entire home/apt	90	1	1
+4384095	Private room	49	1	1
+3487824	Private room	69	1	1
+4384095	Private room	49	1	1
+3487824	Private room	69	1	1
+3487824	Private room	69	1	1
+3487824	Private room	69	1	1
+3487824	Private room	69	1	1
+3487824	Private room	69	1	1
+3504521	Entire home/apt	90	1	1
+3504521	Entire home/apt	90	1	1
+3504521	Entire home/apt	90	1	1
+3510818	Entire home/apt	140	1	1
+3510818	Entire home/apt	140	1	1
+3528627	Private room	70	1	1
+3528627	Private room	70	1	1
+3535171	Private room	52	1	1
+3535171	Private room	52	1	1
+3535171	Private room	52	1	1
+3535171	Private room	52	1	1
+3551668	Entire home/apt	195	1	1
+3551668	Entire home/apt	195	1	1
+3551668	Entire home/apt	195	1	1
+3552006	Entire home/apt	149	1	1
+3561108	Entire home/apt	139	1	1
+3561237	Entire home/apt	172	1	1
+3563218	Private room	45	1	1
+3563218	Private room	45	1	1
+3570691	Entire home/apt	350	1	1
+3570691	Entire home/apt	350	1	1
+4384095	Private room	49	1	1
+3570691	Entire home/apt	350	1	1
+3570691	Entire home/apt	350	1	1
+3570691	Entire home/apt	350	1	1
+3570691	Entire home/apt	350	1	1
+3570691	Entire home/apt	350	1	1
+3582883	Private room	55	1	1
+3582883	Private room	55	1	1
+3582883	Private room	55	1	1
+3582883	Private room	55	1	1
+3582883	Private room	55	1	1
+3582883	Private room	55	1	1
+3594959	Entire home/apt	225	1	1
+3604904	Private room	60	1	1
+3604904	Private room	60	1	1
+3604904	Private room	60	1	1
+3604931	Entire home/apt	495	1	1
+3624990	Entire home/apt	175	1	1
+3624990	Entire home/apt	175	1	1
+3624990	Entire home/apt	175	1	1
+3626162	Entire home/apt	66	1	1
+3626497	Entire home/apt	99	1	1
+3630581	Entire home/apt	98	1	1
+3630581	Entire home/apt	98	1	1
+3630581	Entire home/apt	98	1	1
+3652612	Entire home/apt	150	1	1
+3652612	Entire home/apt	150	1	1
+3652612	Entire home/apt	150	1	1
+3653575	Private room	95	1	1
+3653575	Private room	95	1	1
+3653575	Private room	95	1	1
+3657819	Entire home/apt	99	1	1
+3657819	Entire home/apt	99	1	1
+3657819	Entire home/apt	99	1	1
+3657819	Entire home/apt	99	1	1
+3657819	Entire home/apt	99	1	1
+3657819	Entire home/apt	99	1	1
+3657819	Entire home/apt	99	1	1
+3657819	Entire home/apt	99	1	1
+3657819	Entire home/apt	99	1	1
+3657819	Entire home/apt	99	1	1
+3657819	Entire home/apt	99	1	1
+3657819	Entire home/apt	99	1	1
+3657819	Entire home/apt	99	1	1
+3657819	Entire home/apt	99	1	1
+4384095	Private room	49	1	1
+3657819	Entire home/apt	99	1	1
+3657819	Entire home/apt	99	1	1
+3449059	Entire home/apt	144	1	1
+3449059	Entire home/apt	144	1	1
+3449059	Entire home/apt	144	1	1
+3449059	Entire home/apt	144	1	1
+3449059	Entire home/apt	144	1	1
+3449059	Entire home/apt	144	1	1
+3449059	Entire home/apt	144	1	1
+3449059	Entire home/apt	144	1	1
+3463245	Private room	109	1	1
+3479241	Private room	125	1	1
+3487824	Private room	69	1	1
+3487824	Private room	69	1	1
+3487824	Private room	69	1	1
+3487824	Private room	69	1	1
+3487824	Private room	69	1	1
+3487824	Private room	69	1	1
+3487824	Private room	69	1	1
+3487824	Private room	69	1	1
+3487824	Private room	69	1	1
+3487824	Private room	69	1	1
+3487824	Private room	69	1	1
+3487824	Private room	69	1	1
+3487824	Private room	69	1	1
+3487824	Private room	69	1	1
+3488436	Private room	75	1	1
+3494608	Entire home/apt	79	1	1
+3494608	Entire home/apt	79	1	1
+3498114	Entire home/apt	70	1	1
+3498114	Entire home/apt	70	1	1
+3498114	Entire home/apt	70	1	1
+3498114	Entire home/apt	70	1	1
+3498114	Entire home/apt	70	1	1
+3498114	Entire home/apt	70	1	1
+3505739	Entire home/apt	129	1	1
+3505739	Entire home/apt	129	1	1
+3505739	Entire home/apt	129	1	1
+3518808	Entire home/apt	100	1	1
+3518808	Entire home/apt	100	1	1
+3522409	Entire home/apt	141	1	1
+3522409	Entire home/apt	141	1	1
+3522409	Entire home/apt	141	1	1
+3528627	Private room	70	1	1
+3528627	Private room	70	1	1
+3534364	Entire home/apt	100	1	1
+3534364	Entire home/apt	100	1	1
+3535171	Private room	52	1	1
+3535171	Private room	52	1	1
+3535171	Private room	52	1	1
+3535171	Private room	52	1	1
+3543791	Entire home/apt	115	1	1
+3544550	Entire home/apt	450	1	1
+3544964	Private room	45	1	1
+3544964	Private room	45	1	1
+3544964	Private room	45	1	1
+3544964	Private room	45	1	1
+3552523	Entire home/apt	69	1	1
+3552523	Entire home/apt	69	1	1
+3552523	Entire home/apt	69	1	1
+3552523	Entire home/apt	69	1	1
+3552523	Entire home/apt	69	1	1
+3552523	Entire home/apt	69	1	1
+3582883	Private room	55	1	1
+3582883	Private room	55	1	1
+3582883	Private room	55	1	1
+3582883	Private room	55	1	1
+3582883	Private room	55	1	1
+3582883	Private room	55	1	1
+3582883	Private room	55	1	1
+3582883	Private room	55	1	1
+3582883	Private room	55	1	1
+3582883	Private room	55	1	1
+3582883	Private room	55	1	1
+3582883	Private room	55	1	1
+3582883	Private room	55	1	1
+3582883	Private room	55	1	1
+3582883	Private room	55	1	1
+3582883	Private room	55	1	1
+3592838	Entire home/apt	175	1	1
+3592838	Entire home/apt	175	1	1
+3592838	Entire home/apt	175	1	1
+3592838	Entire home/apt	175	1	1
+3592838	Entire home/apt	175	1	1
+3593582	Entire home/apt	120	1	1
+3594885	Entire home/apt	150	1	1
+3594885	Entire home/apt	150	1	1
+3604904	Private room	60	1	1
+3604904	Private room	60	1	1
+3604904	Private room	60	1	1
+3604904	Private room	60	1	1
+3610724	Entire home/apt	85	1	1
+3610724	Entire home/apt	85	1	1
+3610724	Entire home/apt	85	1	1
+3610724	Entire home/apt	85	1	1
+3610724	Entire home/apt	85	1	1
+3627658	Entire home/apt	125	1	1
+3637180	Private room	50	1	1
+3637180	Private room	50	1	1
+3637180	Private room	50	1	1
+3637180	Private room	50	1	1
+3639023	Private room	84	1	1
+3639023	Private room	84	1	1
+3642289	Private room	65	1	1
+3646393	Entire home/apt	125	1	1
+3646393	Entire home/apt	125	1	1
+3652434	Private room	95	1	1
+3652434	Private room	95	1	1
+3652434	Private room	95	1	1
+3652434	Private room	95	1	1
+3666970	Shared room	29	1	1
+3666970	Shared room	29	1	1
+3666970	Shared room	29	1	1
+3676779	Entire home/apt	100	1	1
+3676779	Entire home/apt	100	1	1
+3677729	Private room	80	1	1
+3678718	Entire home/apt	75	1	1
+3678718	Entire home/apt	75	1	1
+3678718	Entire home/apt	75	1	1
+3678718	Entire home/apt	75	1	1
+3678718	Entire home/apt	75	1	1
+3678718	Entire home/apt	75	1	1
+3686556	Entire home/apt	120	1	1
+3686556	Entire home/apt	120	1	1
+3686556	Entire home/apt	120	1	1
+3686556	Entire home/apt	120	1	1
+3686556	Entire home/apt	120	1	1
+3689119	Entire home/apt	85	1	1
+3689119	Entire home/apt	85	1	1
+3689119	Entire home/apt	85	1	1
+3720429	Entire home/apt	200	1	1
+3720429	Entire home/apt	200	1	1
+3720429	Entire home/apt	200	1	1
+3720731	Entire home/apt	139	1	1
+3732076	Shared room	40	1	1
+3732076	Shared room	40	1	1
+3732076	Shared room	40	1	1
+3739681	Entire home/apt	125	1	1
+3751503	Entire home/apt	179	1	1
+3751503	Entire home/apt	179	1	1
+3751503	Entire home/apt	179	1	1
+3766055	Private room	70	1	1
+3766055	Private room	70	1	1
+3766866	Entire home/apt	145	1	1
+3766866	Entire home/apt	145	1	1
+3769336	Entire home/apt	109	1	1
+3769336	Entire home/apt	109	1	1
+3769336	Entire home/apt	109	1	1
+3769336	Entire home/apt	109	1	1
+3772674	Entire home/apt	85	1	1
+3772674	Entire home/apt	85	1	1
+3791920	Entire home/apt	99	1	1
+3791920	Entire home/apt	99	1	1
+3791920	Entire home/apt	99	1	1
+3793185	Entire home/apt	175	1	1
+3793185	Entire home/apt	175	1	1
+3793406	Entire home/apt	98	1	1
+3793406	Entire home/apt	98	1	1
+3793790	Private room	45	1	1
+3793790	Private room	45	1	1
+3673011	Private room	69	1	1
+3811828	Shared room	29	1	1
+3673011	Private room	69	1	1
+3811872	Shared room	31	1	1
+3673011	Private room	69	1	1
+3812725	Entire home/apt	175	1	1
+3673011	Private room	69	1	1
+3818746	Entire home/apt	350	1	1
+3673011	Private room	69	1	1
+3821822	Entire home/apt	75	1	1
+3673759	Entire home/apt	100	1	1
+3772674	Entire home/apt	85	1	1
+3673759	Entire home/apt	100	1	1
+3676779	Entire home/apt	100	1	1
+3772674	Entire home/apt	85	1	1
+3677729	Private room	80	1	1
+4384095	Private room	49	1	1
+3821822	Entire home/apt	75	1	1
+4384095	Private room	49	1	1
+4384095	Private room	49	1	1
+3772674	Entire home/apt	85	1	1
+3679617	Entire home/apt	98	1	1
+3679617	Entire home/apt	98	1	1
+3679617	Entire home/apt	98	1	1
+3679617	Entire home/apt	98	1	1
+3689119	Entire home/apt	85	1	1
+3689119	Entire home/apt	85	1	1
+3728802	Entire home/apt	500	1	1
+3757858	Shared room	79	1	1
+3768626	Entire home/apt	145	1	1
+3768626	Entire home/apt	145	1	1
+3768626	Entire home/apt	145	1	1
+3768626	Entire home/apt	145	1	1
+3768626	Entire home/apt	145	1	1
+3768626	Entire home/apt	145	1	1
+3772674	Entire home/apt	85	1	1
+3768626	Entire home/apt	145	1	1
+3773700	Entire home/apt	210	1	1
+3768626	Entire home/apt	145	1	1
+3768626	Entire home/apt	145	1	1
+3768745	Private room	120	1	1
+3821822	Entire home/apt	75	1	1
+4388148	Entire home/apt	85	1	1
+3821822	Entire home/apt	75	1	1
+3821822	Entire home/apt	75	1	1
+3773700	Entire home/apt	210	1	1
+3821822	Entire home/apt	75	1	1
+3821822	Entire home/apt	75	1	1
+3783162	Entire home/apt	295	1	1
+3783162	Entire home/apt	295	1	1
+3768745	Private room	120	1	1
+4388148	Entire home/apt	85	1	1
+3769336	Entire home/apt	109	1	1
+4388148	Entire home/apt	85	1	1
+3769336	Entire home/apt	109	1	1
+4388148	Entire home/apt	85	1	1
+3769336	Entire home/apt	109	1	1
+3592838	Entire home/apt	175	1	1
+3592838	Entire home/apt	175	1	1
+3592838	Entire home/apt	175	1	1
+3592838	Entire home/apt	175	1	1
+3592838	Entire home/apt	175	1	1
+3592838	Entire home/apt	175	1	1
+3592838	Entire home/apt	175	1	1
+3610724	Entire home/apt	85	1	1
+3610724	Entire home/apt	85	1	1
+3610724	Entire home/apt	85	1	1
+3615614	Private room	69	1	1
+3615614	Private room	69	1	1
+3615614	Private room	69	1	1
+3615614	Private room	69	1	1
+3615614	Private room	69	1	1
+3615614	Private room	69	1	1
+3615614	Private room	69	1	1
+3615614	Private room	69	1	1
+3615614	Private room	69	1	1
+3615614	Private room	69	1	1
+3615614	Private room	69	1	1
+3615614	Private room	69	1	1
+3615614	Private room	69	1	1
+3615614	Private room	69	1	1
+3615614	Private room	69	1	1
+3615614	Private room	69	1	1
+3637180	Private room	50	1	1
+3637180	Private room	50	1	1
+3637180	Private room	50	1	1
+3637180	Private room	50	1	1
+3637180	Private room	50	1	1
+3637180	Private room	50	1	1
+3642289	Private room	65	1	1
+3642289	Private room	65	1	1
+3642289	Private room	65	1	1
+3642289	Private room	65	1	1
+3646393	Entire home/apt	125	1	1
+3646393	Entire home/apt	125	1	1
+3652434	Private room	95	1	1
+3652434	Private room	95	1	1
+3652434	Private room	95	1	1
+3652434	Private room	95	1	1
+3652434	Private room	95	1	1
+3653575	Private room	95	1	1
+3653575	Private room	95	1	1
+3653575	Private room	95	1	1
+3656508	Private room	35	1	1
+3656508	Private room	35	1	1
+3656508	Private room	35	1	1
+3656508	Private room	35	1	1
+3656508	Private room	35	1	1
+3673759	Entire home/apt	100	1	1
+3673759	Entire home/apt	100	1	1
+3673759	Entire home/apt	100	1	1
+3673759	Entire home/apt	100	1	1
+3678718	Entire home/apt	75	1	1
+3678718	Entire home/apt	75	1	1
+3678718	Entire home/apt	75	1	1
+3678718	Entire home/apt	75	1	1
+3678718	Entire home/apt	75	1	1
+3678718	Entire home/apt	75	1	1
+3678718	Entire home/apt	75	1	1
+3678718	Entire home/apt	75	1	1
+3686556	Entire home/apt	120	1	1
+3686556	Entire home/apt	120	1	1
+3686556	Entire home/apt	120	1	1
+3689416	Private room	64	1	1
+3689416	Private room	64	1	1
+3697351	Shared room	35	1	1
+3697351	Shared room	35	1	1
+3697351	Shared room	35	1	1
+3697351	Shared room	35	1	1
+3697351	Shared room	35	1	1
+3697351	Shared room	35	1	1
+3697351	Shared room	35	1	1
+3697351	Shared room	35	1	1
+3697351	Shared room	35	1	1
+3697351	Shared room	35	1	1
+3697351	Shared room	35	1	1
+3697351	Shared room	35	1	1
+3697351	Shared room	35	1	1
+3697351	Shared room	35	1	1
+3697351	Shared room	35	1	1
+3697351	Shared room	35	1	1
+3697351	Shared room	35	1	1
+3697351	Shared room	35	1	1
+3697351	Shared room	35	1	1
+3697351	Shared room	35	1	1
+3697351	Shared room	35	1	1
+3697351	Shared room	35	1	1
+3720731	Entire home/apt	139	1	1
+3727017	Entire home/apt	199	1	1
+3727017	Entire home/apt	199	1	1
+3732094	Shared room	40	1	1
+3732094	Shared room	40	1	1
+3732094	Shared room	40	1	1
+3739681	Entire home/apt	125	1	1
+3739681	Entire home/apt	125	1	1
+3739681	Entire home/apt	125	1	1
+3739681	Entire home/apt	125	1	1
+3783162	Entire home/apt	295	1	1
+3783162	Entire home/apt	295	1	1
+3783162	Entire home/apt	295	1	1
+3791920	Entire home/apt	99	1	1
+3791920	Entire home/apt	99	1	1
+3791920	Entire home/apt	99	1	1
+3791920	Entire home/apt	99	1	1
+3791920	Entire home/apt	99	1	1
+3791920	Entire home/apt	99	1	1
+3791920	Entire home/apt	99	1	1
+3209633	Private room	75	1	1
+3209633	Private room	75	1	1
+3209633	Private room	75	1	1
+3209633	Private room	75	1	1
+3209633	Private room	75	1	1
+3209633	Private room	75	1	1
+3209633	Private room	75	1	1
+3242247	Entire home/apt	87	1	1
+3242247	Entire home/apt	87	1	1
+3242247	Entire home/apt	87	1	1
+3242247	Entire home/apt	87	1	1
+3250577	Private room	78	1	1
+3250577	Private room	78	1	1
+3254956	Entire home/apt	129	1	1
+3254956	Entire home/apt	129	1	1
+3254956	Entire home/apt	129	1	1
+3258386	Entire home/apt	85	1	1
+3258386	Entire home/apt	85	1	1
+3258386	Entire home/apt	85	1	1
+3258386	Entire home/apt	85	1	1
+3258386	Entire home/apt	85	1	1
+3258386	Entire home/apt	85	1	1
+3263722	Entire home/apt	190	1	1
+3269390	Entire home/apt	95	1	1
+3269390	Entire home/apt	95	1	1
+3269390	Entire home/apt	95	1	1
+3269390	Entire home/apt	95	1	1
+3269390	Entire home/apt	95	1	1
+3269390	Entire home/apt	95	1	1
+3269390	Entire home/apt	95	1	1
+3269390	Entire home/apt	95	1	1
+3269390	Entire home/apt	95	1	1
+3269390	Entire home/apt	95	1	1
+3269390	Entire home/apt	95	1	1
+3269390	Entire home/apt	95	1	1
+3269390	Entire home/apt	95	1	1
+3269390	Entire home/apt	95	1	1
+3269390	Entire home/apt	95	1	1
+3269390	Entire home/apt	95	1	1
+3281072	Entire home/apt	150	1	1
+3281072	Entire home/apt	150	1	1
+3281072	Entire home/apt	150	1	1
+3281072	Entire home/apt	150	1	1
+3293438	Entire home/apt	85	1	1
+3303978	Entire home/apt	80	1	1
+3303978	Entire home/apt	80	1	1
+3303978	Entire home/apt	80	1	1
+3303978	Entire home/apt	80	1	1
+3303978	Entire home/apt	80	1	1
+3303978	Entire home/apt	80	1	1
+3317940	Entire home/apt	85	1	1
+3317940	Entire home/apt	85	1	1
+3317940	Entire home/apt	85	1	1
+3317940	Entire home/apt	85	1	1
+3317940	Entire home/apt	85	1	1
+3317940	Entire home/apt	85	1	1
+3317940	Entire home/apt	85	1	1
+3317940	Entire home/apt	85	1	1
+3317940	Entire home/apt	85	1	1
+3329962	Entire home/apt	105	1	1
+3345341	Entire home/apt	999	1	1
+3345341	Entire home/apt	999	1	1
+3345341	Entire home/apt	999	1	1
+3354614	Entire home/apt	125	1	1
+3354614	Entire home/apt	125	1	1
+3354614	Entire home/apt	125	1	1
+3379116	Entire home/apt	300	1	1
+3382533	Entire home/apt	150	1	1
+3382533	Entire home/apt	150	1	1
+3401644	Entire home/apt	150	1	1
+3401644	Entire home/apt	150	1	1
+3412630	Entire home/apt	195	1	1
+3412630	Entire home/apt	195	1	1
+3412630	Entire home/apt	195	1	1
+3412630	Entire home/apt	195	1	1
+3412630	Entire home/apt	195	1	1
+3416590	Private room	145	1	1
+3424991	Private room	64	1	1
+3424991	Private room	64	1	1
+3424991	Private room	64	1	1
+3424991	Private room	64	1	1
+3424991	Private room	64	1	1
+3424991	Private room	64	1	1
+3424991	Private room	64	1	1
+3424991	Private room	64	1	1
+3424991	Private room	64	1	1
+3426639	Private room	62	1	1
+3426639	Private room	62	1	1
+3441402	Entire home/apt	65	1	1
+3441402	Entire home/apt	65	1	1
+3441402	Entire home/apt	65	1	1
+3441402	Entire home/apt	65	1	1
+3441402	Entire home/apt	65	1	1
+3441402	Entire home/apt	65	1	1
+3441402	Entire home/apt	65	1	1
+3441402	Entire home/apt	65	1	1
+3441402	Entire home/apt	65	1	1
+3441402	Entire home/apt	65	1	1
+3441402	Entire home/apt	65	1	1
+3441402	Entire home/apt	65	1	1
+3441402	Entire home/apt	65	1	1
+3441402	Entire home/apt	65	1	1
+3456599	Entire home/apt	85	1	1
+3456599	Entire home/apt	85	1	1
+3456599	Entire home/apt	85	1	1
+3456599	Entire home/apt	85	1	1
+3456599	Entire home/apt	85	1	1
+3783162	Entire home/apt	295	1	1
+3791920	Entire home/apt	99	1	1
+3791920	Entire home/apt	99	1	1
+3791920	Entire home/apt	99	1	1
+3793047	Entire home/apt	100	1	1
+3793047	Entire home/apt	100	1	1
+3793185	Entire home/apt	175	1	1
+3793185	Entire home/apt	175	1	1
+3793185	Entire home/apt	175	1	1
+3793185	Entire home/apt	175	1	1
+3793406	Entire home/apt	98	1	1
+3793790	Private room	45	1	1
+3793790	Private room	45	1	1
+3793790	Private room	45	1	1
+3803212	Entire home/apt	150	1	1
+3811828	Shared room	29	1	1
+3811872	Shared room	31	1	1
+3811930	Shared room	30	1	1
+3811930	Shared room	30	1	1
+3811930	Shared room	30	1	1
+3811930	Shared room	30	1	1
+3821663	Entire home/apt	160	1	1
+3821663	Entire home/apt	160	1	1
+3821663	Entire home/apt	160	1	1
+3821663	Entire home/apt	160	1	1
+3849918	Entire home/apt	150	1	1
+3852117	Entire home/apt	39	1	1
+3852117	Entire home/apt	39	1	1
+3852117	Entire home/apt	39	1	1
+3870253	Entire home/apt	175	1	1
+3882930	Private room	60	1	1
+3882930	Private room	60	1	1
+3882930	Private room	60	1	1
+3883137	Entire home/apt	100	1	1
+3883137	Entire home/apt	100	1	1
+3883137	Entire home/apt	100	1	1
+3883137	Entire home/apt	100	1	1
+3883137	Entire home/apt	100	1	1
+3883137	Entire home/apt	100	1	1
+3898692	Entire home/apt	95	1	1
+3898692	Entire home/apt	95	1	1
+3899160	Private room	59	1	1
+3899160	Private room	59	1	1
+3899160	Private room	59	1	1
+3904056	Entire home/apt	70	1	1
+3904056	Entire home/apt	70	1	1
+3906076	Entire home/apt	110	1	1
+3906076	Entire home/apt	110	1	1
+3908378	Entire home/apt	96	1	1
+3908378	Entire home/apt	96	1	1
+3908378	Entire home/apt	96	1	1
+3908378	Entire home/apt	96	1	1
+3908378	Entire home/apt	96	1	1
+3908378	Entire home/apt	96	1	1
+3908378	Entire home/apt	96	1	1
+3908378	Entire home/apt	96	1	1
+3908378	Entire home/apt	96	1	1
+3908378	Entire home/apt	96	1	1
+3916050	Private room	49	1	1
+3916050	Private room	49	1	1
+3922853	Entire home/apt	105	1	1
+3930270	Private room	58	1	1
+3930270	Private room	58	1	1
+3930270	Private room	58	1	1
+3930270	Private room	58	1	1
+3930270	Private room	58	1	1
+3930270	Private room	58	1	1
+3930270	Private room	58	1	1
+3930270	Private room	58	1	1
+3930270	Private room	58	1	1
+3930270	Private room	58	1	1
+3930270	Private room	58	1	1
+3930270	Private room	58	1	1
+3930270	Private room	58	1	1
+3930270	Private room	58	1	1
+3930270	Private room	58	1	1
+3930270	Private room	58	1	1
+3930270	Private room	58	1	1
+3931571	Entire home/apt	195	1	1
+3931571	Entire home/apt	195	1	1
+3931571	Entire home/apt	195	1	1
+3931571	Entire home/apt	195	1	1
+3931571	Entire home/apt	195	1	1
+3931571	Entire home/apt	195	1	1
+3931571	Entire home/apt	195	1	1
+3946674	Private room	90	1	1
+3946674	Private room	90	1	1
+3946674	Private room	90	1	1
+3946674	Private room	90	1	1
+3953365	Private room	42	1	1
+3953365	Private room	42	1	1
+3953365	Private room	42	1	1
+3959442	Entire home/apt	95	1	1
+3959442	Entire home/apt	95	1	1
+3959442	Entire home/apt	95	1	1
+3970736	Entire home/apt	90	1	1
+3970736	Entire home/apt	90	1	1
+3970736	Entire home/apt	90	1	1
+3970736	Entire home/apt	90	1	1
+3970736	Entire home/apt	90	1	1
+3970736	Entire home/apt	90	1	1
+3970736	Entire home/apt	90	1	1
+3970736	Entire home/apt	90	1	1
+3970736	Entire home/apt	90	1	1
+3970736	Entire home/apt	90	1	1
+3970736	Entire home/apt	90	1	1
+3970736	Entire home/apt	90	1	1
+3971137	Entire home/apt	85	1	1
+4388148	Entire home/apt	85	1	1
+4388148	Entire home/apt	85	1	1
+4396961	Private room	59	1	1
+4404126	Private room	70	1	1
+4410544	Entire home/apt	190	1	1
+4410544	Entire home/apt	190	1	1
+4410544	Entire home/apt	190	1	1
+4410544	Entire home/apt	190	1	1
+4417792	Entire home/apt	175	1	1
+4417792	Entire home/apt	175	1	1
+4417792	Entire home/apt	175	1	1
+4423130	Private room	69	1	1
+4423130	Private room	69	1	1
+4423130	Private room	69	1	1
+4423130	Private room	69	1	1
+4423130	Private room	69	1	1
+4423130	Private room	69	1	1
+4423130	Private room	69	1	1
+4432489	Entire home/apt	80	1	1
+4432489	Entire home/apt	80	1	1
+4432489	Entire home/apt	80	1	1
+4432489	Entire home/apt	80	1	1
+4432489	Entire home/apt	80	1	1
+4438188	Entire home/apt	112	1	1
+4438188	Entire home/apt	112	1	1
+4438188	Entire home/apt	112	1	1
+4438871	Private room	86	1	1
+4438871	Private room	86	1	1
+4438871	Private room	86	1	1
+4438871	Private room	86	1	1
+4438871	Private room	86	1	1
+4439293	Entire home/apt	121	1	1
+4439293	Entire home/apt	121	1	1
+4439293	Entire home/apt	121	1	1
+4439293	Entire home/apt	121	1	1
+4439293	Entire home/apt	121	1	1
+4439293	Entire home/apt	121	1	1
+4439293	Entire home/apt	121	1	1
+4454121	Entire home/apt	160	1	1
+4454264	Entire home/apt	400	1	1
+4461706	Entire home/apt	99	1	1
+4461706	Entire home/apt	99	1	1
+4461706	Entire home/apt	99	1	1
+4461706	Entire home/apt	99	1	1
+4461706	Entire home/apt	99	1	1
+4464795	Shared room	95	1	1
+4477426	Private room	90	1	1
+4477426	Private room	90	1	1
+4477426	Private room	90	1	1
+4477426	Private room	90	1	1
+4479426	Private room	70	1	1
+4479426	Private room	70	1	1
+4481979	Entire home/apt	134	1	1
+4516960	Entire home/apt	159	1	1
+4516960	Entire home/apt	159	1	1
+4516960	Entire home/apt	159	1	1
+4516960	Entire home/apt	159	1	1
+4516960	Entire home/apt	159	1	1
+4516960	Entire home/apt	159	1	1
+4516960	Entire home/apt	159	1	1
+4516960	Entire home/apt	159	1	1
+4518037	Private room	35	1	1
+4518037	Private room	35	1	1
+4518037	Private room	35	1	1
+4518037	Private room	35	1	1
+4518037	Private room	35	1	1
+4520179	Entire home/apt	130	1	1
+4520179	Entire home/apt	130	1	1
+4520179	Entire home/apt	130	1	1
+4520179	Entire home/apt	130	1	1
+4524575	Entire home/apt	108	1	1
+4524575	Entire home/apt	108	1	1
+4524575	Entire home/apt	108	1	1
+4539948	Entire home/apt	110	1	1
+4539948	Entire home/apt	110	1	1
+4546924	Entire home/apt	150	1	1
+4546924	Entire home/apt	150	1	1
+4546924	Entire home/apt	150	1	1
+4550099	Entire home/apt	295	1	1
+4557204	Entire home/apt	285	1	1
+4564730	Entire home/apt	99	1	1
+4564730	Entire home/apt	99	1	1
+4564730	Entire home/apt	99	1	1
+4566609	Entire home/apt	69	1	1
+4566609	Entire home/apt	69	1	1
+4569115	Entire home/apt	219	1	1
+4569115	Entire home/apt	219	1	1
+4569115	Entire home/apt	219	1	1
+4569115	Entire home/apt	219	1	1
+4569115	Entire home/apt	219	1	1
+4581124	Private room	69	1	1
+4581124	Private room	69	1	1
+4581124	Private room	69	1	1
+4581256	Private room	38	1	1
+4581256	Private room	38	1	1
+4581256	Private room	38	1	1
+4581256	Private room	38	1	1
+4583161	Private room	53	1	1
+4589654	Entire home/apt	105	1	1
+4593740	Entire home/apt	150	1	1
+4593740	Entire home/apt	150	1	1
+4593740	Entire home/apt	150	1	1
+4593740	Entire home/apt	150	1	1
+4598160	Shared room	67	1	1
+4598160	Shared room	67	1	1
+4598160	Shared room	67	1	1
+4598160	Shared room	67	1	1
+4598160	Shared room	67	1	1
+3769336	Entire home/apt	109	1	1
+3769336	Entire home/apt	109	1	1
+3803947	Entire home/apt	129	1	1
+3803947	Entire home/apt	129	1	1
+3803947	Entire home/apt	129	1	1
+3803947	Entire home/apt	129	1	1
+3803947	Entire home/apt	129	1	1
+3803947	Entire home/apt	129	1	1
+3803947	Entire home/apt	129	1	1
+3803947	Entire home/apt	129	1	1
+3811955	Shared room	30	1	1
+3811955	Shared room	30	1	1
+3811955	Shared room	30	1	1
+3819831	Entire home/apt	82	1	1
+3821663	Entire home/apt	160	1	1
+3821663	Entire home/apt	160	1	1
+3821663	Entire home/apt	160	1	1
+3821663	Entire home/apt	160	1	1
+3835995	Entire home/apt	97	1	1
+3835995	Entire home/apt	97	1	1
+3835995	Entire home/apt	97	1	1
+3835995	Entire home/apt	97	1	1
+3835995	Entire home/apt	97	1	1
+3835995	Entire home/apt	97	1	1
+3835995	Entire home/apt	97	1	1
+3835995	Entire home/apt	97	1	1
+3835995	Entire home/apt	97	1	1
+3835995	Entire home/apt	97	1	1
+3835995	Entire home/apt	97	1	1
+3835995	Entire home/apt	97	1	1
+3835995	Entire home/apt	97	1	1
+3835995	Entire home/apt	97	1	1
+3835995	Entire home/apt	97	1	1
+3835995	Entire home/apt	97	1	1
+3835995	Entire home/apt	97	1	1
+3835995	Entire home/apt	97	1	1
+3852117	Entire home/apt	39	1	1
+3852117	Entire home/apt	39	1	1
+3852117	Entire home/apt	39	1	1
+3852117	Entire home/apt	39	1	1
+3861673	Private room	71	1	1
+3861673	Private room	71	1	1
+3861673	Private room	71	1	1
+3861673	Private room	71	1	1
+3861673	Private room	71	1	1
+3861673	Private room	71	1	1
+3861673	Private room	71	1	1
+3861673	Private room	71	1	1
+3861673	Private room	71	1	1
+3861673	Private room	71	1	1
+3868138	Entire home/apt	183	1	1
+3868138	Entire home/apt	183	1	1
+3868138	Entire home/apt	183	1	1
+3868138	Entire home/apt	183	1	1
+3868844	Entire home/apt	300	1	1
+3868844	Entire home/apt	300	1	1
+3870253	Entire home/apt	175	1	1
+3870253	Entire home/apt	175	1	1
+3870253	Entire home/apt	175	1	1
+3870253	Entire home/apt	175	1	1
+3870253	Entire home/apt	175	1	1
+3870253	Entire home/apt	175	1	1
+3870253	Entire home/apt	175	1	1
+3870253	Entire home/apt	175	1	1
+3870253	Entire home/apt	175	1	1
+3882930	Private room	60	1	1
+3884851	Private room	65	1	1
+3884851	Private room	65	1	1
+3884851	Private room	65	1	1
+3884851	Private room	65	1	1
+3884851	Private room	65	1	1
+3884851	Private room	65	1	1
+3884851	Private room	65	1	1
+3884851	Private room	65	1	1
+3884851	Private room	65	1	1
+3890990	Entire home/apt	175	1	1
+3890990	Entire home/apt	175	1	1
+3890990	Entire home/apt	175	1	1
+3890990	Entire home/apt	175	1	1
+3890990	Entire home/apt	175	1	1
+3890990	Entire home/apt	175	1	1
+3890990	Entire home/apt	175	1	1
+3890990	Entire home/apt	175	1	1
+3890990	Entire home/apt	175	1	1
+3890990	Entire home/apt	175	1	1
+3890990	Entire home/apt	175	1	1
+3891695	Entire home/apt	180	1	1
+3891695	Entire home/apt	180	1	1
+3891695	Entire home/apt	180	1	1
+3891695	Entire home/apt	180	1	1
+3891695	Entire home/apt	180	1	1
+3891695	Entire home/apt	180	1	1
+3898413	Private room	68	1	1
+3898413	Private room	68	1	1
+3898413	Private room	68	1	1
+3898413	Private room	68	1	1
+3916050	Private room	49	1	1
+3916050	Private room	49	1	1
+3916050	Private room	49	1	1
+3916050	Private room	49	1	1
+3916050	Private room	49	1	1
+3916050	Private room	49	1	1
+3916050	Private room	49	1	1
+3926008	Entire home/apt	135	1	1
+3926008	Entire home/apt	135	1	1
+3930681	Entire home/apt	111	1	1
+3930681	Entire home/apt	111	1	1
+3821822	Entire home/apt	75	1	1
+3821822	Entire home/apt	75	1	1
+3821822	Entire home/apt	75	1	1
+3821822	Entire home/apt	75	1	1
+3821822	Entire home/apt	75	1	1
+3821822	Entire home/apt	75	1	1
+3821822	Entire home/apt	75	1	1
+3821822	Entire home/apt	75	1	1
+3821822	Entire home/apt	75	1	1
+3821822	Entire home/apt	75	1	1
+3821822	Entire home/apt	75	1	1
+3852117	Entire home/apt	39	1	1
+3852117	Entire home/apt	39	1	1
+3852117	Entire home/apt	39	1	1
+3852117	Entire home/apt	39	1	1
+3852117	Entire home/apt	39	1	1
+3852117	Entire home/apt	39	1	1
+3870937	Entire home/apt	119	1	1
+3870937	Entire home/apt	119	1	1
+3876097	Shared room	30	1	1
+3876097	Shared room	30	1	1
+3876097	Shared room	30	1	1
+3876097	Shared room	30	1	1
+3898413	Private room	68	1	1
+3899160	Private room	59	1	1
+3899160	Private room	59	1	1
+3899160	Private room	59	1	1
+3899160	Private room	59	1	1
+3904056	Entire home/apt	70	1	1
+3906076	Entire home/apt	110	1	1
+3906076	Entire home/apt	110	1	1
+3906076	Entire home/apt	110	1	1
+3906076	Entire home/apt	110	1	1
+3906076	Entire home/apt	110	1	1
+3908378	Entire home/apt	96	1	1
+3908378	Entire home/apt	96	1	1
+3908378	Entire home/apt	96	1	1
+3908378	Entire home/apt	96	1	1
+3908378	Entire home/apt	96	1	1
+3908378	Entire home/apt	96	1	1
+3908378	Entire home/apt	96	1	1
+3908378	Entire home/apt	96	1	1
+3908378	Entire home/apt	96	1	1
+3908378	Entire home/apt	96	1	1
+3925572	Private room	70	1	1
+3925572	Private room	70	1	1
+3930270	Private room	58	1	1
+3930270	Private room	58	1	1
+3930270	Private room	58	1	1
+3930270	Private room	58	1	1
+3930270	Private room	58	1	1
+3930270	Private room	58	1	1
+3930270	Private room	58	1	1
+3930270	Private room	58	1	1
+3931571	Entire home/apt	195	1	1
+3940265	Private room	72	1	1
+3940265	Private room	72	1	1
+3940265	Private room	72	1	1
+3940265	Private room	72	1	1
+3940265	Private room	72	1	1
+3959460	Entire home/apt	135	1	1
+3959460	Entire home/apt	135	1	1
+3959460	Entire home/apt	135	1	1
+3959460	Entire home/apt	135	1	1
+3959460	Entire home/apt	135	1	1
+3959460	Entire home/apt	135	1	1
+3959460	Entire home/apt	135	1	1
+3963320	Entire home/apt	135	1	1
+3971934	Entire home/apt	179	1	1
+3971934	Entire home/apt	179	1	1
+3971934	Entire home/apt	179	1	1
+3971934	Entire home/apt	179	1	1
+3971934	Entire home/apt	179	1	1
+3971934	Entire home/apt	179	1	1
+3979496	Private room	70	1	1
+3979496	Private room	70	1	1
+3986788	Entire home/apt	87	1	1
+3986788	Entire home/apt	87	1	1
+3986793	Private room	39	1	1
+3987838	Entire home/apt	90	1	1
+3987838	Entire home/apt	90	1	1
+3992155	Entire home/apt	100	1	1
+3992155	Entire home/apt	100	1	1
+3992155	Entire home/apt	100	1	1
+3994634	Shared room	29	1	1
+3994634	Shared room	29	1	1
+3994634	Shared room	29	1	1
+3994634	Shared room	29	1	1
+4009295	Entire home/apt	169	1	1
+4009295	Entire home/apt	169	1	1
+4009295	Entire home/apt	169	1	1
+4009295	Entire home/apt	169	1	1
+4009295	Entire home/apt	169	1	1
+4009295	Entire home/apt	169	1	1
+4009295	Entire home/apt	169	1	1
+4009295	Entire home/apt	169	1	1
+4009508	Entire home/apt	350	1	1
+4009508	Entire home/apt	350	1	1
+4009508	Entire home/apt	350	1	1
+4009508	Entire home/apt	350	1	1
+4009508	Entire home/apt	350	1	1
+4016650	Private room	90	1	1
+4016650	Private room	90	1	1
+4022127	Entire home/apt	79	1	1
+4022127	Entire home/apt	79	1	1
+4022127	Entire home/apt	79	1	1
+4022127	Entire home/apt	79	1	1
+4022127	Entire home/apt	79	1	1
+3971346	Entire home/apt	250	1	1
+3971346	Entire home/apt	250	1	1
+3971934	Entire home/apt	179	1	1
+3975434	Private room	109	1	1
+3975434	Private room	109	1	1
+3975434	Private room	109	1	1
+3977450	Private room	36	1	1
+3977450	Private room	36	1	1
+3977450	Private room	36	1	1
+3977450	Private room	36	1	1
+3977450	Private room	36	1	1
+3977450	Private room	36	1	1
+3977450	Private room	36	1	1
+3979496	Private room	70	1	1
+3979496	Private room	70	1	1
+3979496	Private room	70	1	1
+3979496	Private room	70	1	1
+3986793	Private room	39	1	1
+3986793	Private room	39	1	1
+3986793	Private room	39	1	1
+3986793	Private room	39	1	1
+3987838	Entire home/apt	90	1	1
+3987838	Entire home/apt	90	1	1
+3987838	Entire home/apt	90	1	1
+3987838	Entire home/apt	90	1	1
+3992155	Entire home/apt	100	1	1
+3992155	Entire home/apt	100	1	1
+3992155	Entire home/apt	100	1	1
+3992155	Entire home/apt	100	1	1
+3994634	Shared room	29	1	1
+3998984	Entire home/apt	100	1	1
+4009295	Entire home/apt	169	1	1
+4009295	Entire home/apt	169	1	1
+4009295	Entire home/apt	169	1	1
+4009295	Entire home/apt	169	1	1
+4009295	Entire home/apt	169	1	1
+4009295	Entire home/apt	169	1	1
+4009295	Entire home/apt	169	1	1
+4009508	Entire home/apt	350	1	1
+4016079	Entire home/apt	185	1	1
+4016079	Entire home/apt	185	1	1
+4016079	Entire home/apt	185	1	1
+4016079	Entire home/apt	185	1	1
+4022127	Entire home/apt	79	1	1
+4022127	Entire home/apt	79	1	1
+4022127	Entire home/apt	79	1	1
+4022127	Entire home/apt	79	1	1
+4025593	Private room	40	1	1
+4025593	Private room	40	1	1
+4025593	Private room	40	1	1
+4025593	Private room	40	1	1
+4025593	Private room	40	1	1
+4025593	Private room	40	1	1
+4025593	Private room	40	1	1
+4025593	Private room	40	1	1
+4025593	Private room	40	1	1
+4025593	Private room	40	1	1
+4025593	Private room	40	1	1
+4025593	Private room	40	1	1
+4025954	Entire home/apt	90	1	1
+4025954	Entire home/apt	90	1	1
+4025954	Entire home/apt	90	1	1
+4030640	Entire home/apt	125	1	1
+4031625	Entire home/apt	129	1	1
+4031625	Entire home/apt	129	1	1
+4031625	Entire home/apt	129	1	1
+4031625	Entire home/apt	129	1	1
+4031625	Entire home/apt	129	1	1
+4031625	Entire home/apt	129	1	1
+4031625	Entire home/apt	129	1	1
+4031625	Entire home/apt	129	1	1
+4038347	Private room	55	1	1
+4038347	Private room	55	1	1
+4038347	Private room	55	1	1
+4041868	Entire home/apt	195	1	1
+4046863	Private room	55	1	1
+4046863	Private room	55	1	1
+4046863	Private room	55	1	1
+4046863	Private room	55	1	1
+4047058	Private room	55	1	1
+4047058	Private room	55	1	1
+4047399	Entire home/apt	160	1	1
+4053092	Private room	80	1	1
+4082986	Entire home/apt	115	1	1
+4082986	Entire home/apt	115	1	1
+4084712	Entire home/apt	115	1	1
+4084712	Entire home/apt	115	1	1
+4084712	Entire home/apt	115	1	1
+4084712	Entire home/apt	115	1	1
+4085439	Private room	125	1	1
+4092037	Entire home/apt	250	1	1
+4104442	Private room	70	1	1
+4111137	Entire home/apt	85	1	1
+4111137	Entire home/apt	85	1	1
+4111137	Entire home/apt	85	1	1
+4118282	Entire home/apt	80	1	1
+4118282	Entire home/apt	80	1	1
+4118282	Entire home/apt	80	1	1
+4118282	Entire home/apt	80	1	1
+4118282	Entire home/apt	80	1	1
+4118282	Entire home/apt	80	1	1
+4118282	Entire home/apt	80	1	1
+4118282	Entire home/apt	80	1	1
+4118282	Entire home/apt	80	1	1
+4122325	Entire home/apt	175	1	1
+4122325	Entire home/apt	175	1	1
+4122325	Entire home/apt	175	1	1
+3930681	Entire home/apt	111	1	1
+3946160	Entire home/apt	90	1	1
+3946160	Entire home/apt	90	1	1
+3946160	Entire home/apt	90	1	1
+3946160	Entire home/apt	90	1	1
+3946160	Entire home/apt	90	1	1
+3946160	Entire home/apt	90	1	1
+3946160	Entire home/apt	90	1	1
+3946160	Entire home/apt	90	1	1
+3946160	Entire home/apt	90	1	1
+3946160	Entire home/apt	90	1	1
+3946160	Entire home/apt	90	1	1
+3946160	Entire home/apt	90	1	1
+3946160	Entire home/apt	90	1	1
+3946160	Entire home/apt	90	1	1
+3946160	Entire home/apt	90	1	1
+3946160	Entire home/apt	90	1	1
+3946160	Entire home/apt	90	1	1
+3946160	Entire home/apt	90	1	1
+3946160	Entire home/apt	90	1	1
+3946160	Entire home/apt	90	1	1
+3946160	Entire home/apt	90	1	1
+3946631	Entire home/apt	160	1	1
+3951768	Entire home/apt	58	1	1
+3953365	Private room	42	1	1
+3953365	Private room	42	1	1
+3953365	Private room	42	1	1
+3953365	Private room	42	1	1
+3953365	Private room	42	1	1
+3953611	Private room	115	1	1
+3953611	Private room	115	1	1
+3953611	Private room	115	1	1
+3953611	Private room	115	1	1
+3953611	Private room	115	1	1
+3953611	Private room	115	1	1
+3959442	Entire home/apt	95	1	1
+3959442	Entire home/apt	95	1	1
+3959442	Entire home/apt	95	1	1
+3959442	Entire home/apt	95	1	1
+3959442	Entire home/apt	95	1	1
+3959442	Entire home/apt	95	1	1
+3959442	Entire home/apt	95	1	1
+3961077	Private room	48	1	1
+3961077	Private room	48	1	1
+3968416	Private room	78	1	1
+3968416	Private room	78	1	1
+3968416	Private room	78	1	1
+3968416	Private room	78	1	1
+3968416	Private room	78	1	1
+3968416	Private room	78	1	1
+3968416	Private room	78	1	1
+3971346	Entire home/apt	250	1	1
+3971346	Entire home/apt	250	1	1
+3977450	Private room	36	1	1
+3977450	Private room	36	1	1
+3977450	Private room	36	1	1
+3977450	Private room	36	1	1
+3977450	Private room	36	1	1
+3977605	Entire home/apt	85	1	1
+3977605	Entire home/apt	85	1	1
+3977605	Entire home/apt	85	1	1
+3977605	Entire home/apt	85	1	1
+3977605	Entire home/apt	85	1	1
+3977605	Entire home/apt	85	1	1
+3977605	Entire home/apt	85	1	1
+3977605	Entire home/apt	85	1	1
+3977605	Entire home/apt	85	1	1
+3977605	Entire home/apt	85	1	1
+3977605	Entire home/apt	85	1	1
+3977605	Entire home/apt	85	1	1
+3977605	Entire home/apt	85	1	1
+3977605	Entire home/apt	85	1	1
+3977605	Entire home/apt	85	1	1
+3977605	Entire home/apt	85	1	1
+3977605	Entire home/apt	85	1	1
+3977605	Entire home/apt	85	1	1
+3977605	Entire home/apt	85	1	1
+3977605	Entire home/apt	85	1	1
+3977605	Entire home/apt	85	1	1
+3977605	Entire home/apt	85	1	1
+3977605	Entire home/apt	85	1	1
+3993960	Entire home/apt	75	1	1
+3993960	Entire home/apt	75	1	1
+3994397	Private room	75	1	1
+3994397	Private room	75	1	1
+3994397	Private room	75	1	1
+3994601	Shared room	27	1	1
+3994601	Shared room	27	1	1
+3995007	Entire home/apt	128	1	1
+3995007	Entire home/apt	128	1	1
+3995007	Entire home/apt	128	1	1
+3995007	Entire home/apt	128	1	1
+3995007	Entire home/apt	128	1	1
+3995007	Entire home/apt	128	1	1
+3995007	Entire home/apt	128	1	1
+3995007	Entire home/apt	128	1	1
+3995007	Entire home/apt	128	1	1
+3998922	Private room	68	1	1
+3998922	Private room	68	1	1
+3998984	Entire home/apt	100	1	1
+3998984	Entire home/apt	100	1	1
+4008373	Entire home/apt	350	1	1
+4008373	Entire home/apt	350	1	1
+4008373	Entire home/apt	350	1	1
+4008373	Entire home/apt	350	1	1
+4008373	Entire home/apt	350	1	1
+4008373	Entire home/apt	350	1	1
+4127196	Private room	95	1	1
+4157572	Private room	65	1	1
+4157572	Private room	65	1	1
+4157572	Private room	65	1	1
+4157572	Private room	65	1	1
+4157572	Private room	65	1	1
+4157572	Private room	65	1	1
+4157572	Private room	65	1	1
+4157572	Private room	65	1	1
+4157572	Private room	65	1	1
+4157572	Private room	65	1	1
+4157572	Private room	65	1	1
+4172364	Private room	55	1	1
+4172364	Private room	55	1	1
+4172364	Private room	55	1	1
+4172364	Private room	55	1	1
+4180905	Entire home/apt	125	1	1
+4208555	Entire home/apt	75	1	1
+4208555	Entire home/apt	75	1	1
+4211081	Entire home/apt	256	1	1
+4211081	Entire home/apt	256	1	1
+4211081	Entire home/apt	256	1	1
+4211081	Entire home/apt	256	1	1
+4211081	Entire home/apt	256	1	1
+4218733	Entire home/apt	110	1	1
+4218733	Entire home/apt	110	1	1
+4218733	Entire home/apt	110	1	1
+4218733	Entire home/apt	110	1	1
+4218733	Entire home/apt	110	1	1
+4235559	Entire home/apt	325	1	1
+4235559	Entire home/apt	325	1	1
+4236723	Entire home/apt	195	1	1
+4236723	Entire home/apt	195	1	1
+4236723	Entire home/apt	195	1	1
+4236723	Entire home/apt	195	1	1
+4236723	Entire home/apt	195	1	1
+4236723	Entire home/apt	195	1	1
+4240933	Entire home/apt	142	1	1
+4258762	Entire home/apt	110	1	1
+4258762	Entire home/apt	110	1	1
+4264012	Private room	55	1	1
+4264012	Private room	55	1	1
+4264012	Private room	55	1	1
+4264012	Private room	55	1	1
+4264043	Entire home/apt	75	1	1
+4264043	Entire home/apt	75	1	1
+4264043	Entire home/apt	75	1	1
+4264043	Entire home/apt	75	1	1
+4264043	Entire home/apt	75	1	1
+4264043	Entire home/apt	75	1	1
+4264043	Entire home/apt	75	1	1
+4264043	Entire home/apt	75	1	1
+4264043	Entire home/apt	75	1	1
+4264043	Entire home/apt	75	1	1
+4271174	Private room	75	1	1
+4271174	Private room	75	1	1
+4271174	Private room	75	1	1
+4278896	Private room	60	1	1
+4278896	Private room	60	1	1
+4288801	Private room	80	1	1
+4324317	Entire home/apt	100	1	1
+4324317	Entire home/apt	100	1	1
+4324317	Entire home/apt	100	1	1
+4324317	Entire home/apt	100	1	1
+4349344	Entire home/apt	125	1	1
+4360485	Private room	63	1	1
+4360485	Private room	63	1	1
+4360485	Private room	63	1	1
+4388148	Entire home/apt	85	1	1
+4388148	Entire home/apt	85	1	1
+4396961	Private room	59	1	1
+4396961	Private room	59	1	1
+4410544	Entire home/apt	190	1	1
+4410544	Entire home/apt	190	1	1
+4410789	Entire home/apt	131	1	1
+4410789	Entire home/apt	131	1	1
+4417792	Entire home/apt	175	1	1
+4417792	Entire home/apt	175	1	1
+4417792	Entire home/apt	175	1	1
+4429898	Entire home/apt	89	1	1
+4429898	Entire home/apt	89	1	1
+4439293	Entire home/apt	121	1	1
+4439293	Entire home/apt	121	1	1
+4439293	Entire home/apt	121	1	1
+4439293	Entire home/apt	121	1	1
+4439293	Entire home/apt	121	1	1
+4439293	Entire home/apt	121	1	1
+4439293	Entire home/apt	121	1	1
+4439293	Entire home/apt	121	1	1
+4439293	Entire home/apt	121	1	1
+4439293	Entire home/apt	121	1	1
+4449303	Private room	80	1	1
+4449303	Private room	80	1	1
+4449303	Private room	80	1	1
+4449303	Private room	80	1	1
+4454295	Entire home/apt	99	1	1
+4454295	Entire home/apt	99	1	1
+4454295	Entire home/apt	99	1	1
+4461706	Entire home/apt	99	1	1
+4461706	Entire home/apt	99	1	1
+4464795	Shared room	95	1	1
+4468524	Private room	44	1	1
+4468524	Private room	44	1	1
+4468524	Private room	44	1	1
+4468524	Private room	44	1	1
+4468524	Private room	44	1	1
+4468524	Private room	44	1	1
+4022127	Entire home/apt	79	1	1
+4022127	Entire home/apt	79	1	1
+4023177	Private room	119	1	1
+4023177	Private room	119	1	1
+4023177	Private room	119	1	1
+4023177	Private room	119	1	1
+4024844	Entire home/apt	80	1	1
+4024844	Entire home/apt	80	1	1
+4046863	Private room	55	1	1
+4046863	Private room	55	1	1
+4047058	Private room	55	1	1
+4047058	Private room	55	1	1
+4047058	Private room	55	1	1
+4047058	Private room	55	1	1
+4047058	Private room	55	1	1
+4053644	Entire home/apt	200	1	1
+4053972	Entire home/apt	95	1	1
+4053972	Entire home/apt	95	1	1
+4053972	Entire home/apt	95	1	1
+4053972	Entire home/apt	95	1	1
+4053972	Entire home/apt	95	1	1
+4053972	Entire home/apt	95	1	1
+4053972	Entire home/apt	95	1	1
+4053972	Entire home/apt	95	1	1
+4053972	Entire home/apt	95	1	1
+4069543	Private room	85	1	1
+4069543	Private room	85	1	1
+4069543	Private room	85	1	1
+4069543	Private room	85	1	1
+4069543	Private room	85	1	1
+4069543	Private room	85	1	1
+4069543	Private room	85	1	1
+4069543	Private room	85	1	1
+4069543	Private room	85	1	1
+4082986	Entire home/apt	115	1	1
+4082986	Entire home/apt	115	1	1
+4082986	Entire home/apt	115	1	1
+4082986	Entire home/apt	115	1	1
+4082986	Entire home/apt	115	1	1
+4082986	Entire home/apt	115	1	1
+4082986	Entire home/apt	115	1	1
+4082986	Entire home/apt	115	1	1
+4082986	Entire home/apt	115	1	1
+4082986	Entire home/apt	115	1	1
+4082986	Entire home/apt	115	1	1
+4084712	Entire home/apt	115	1	1
+4084712	Entire home/apt	115	1	1
+4100009	Entire home/apt	99	1	1
+4100009	Entire home/apt	99	1	1
+4100009	Entire home/apt	99	1	1
+4100009	Entire home/apt	99	1	1
+4100009	Entire home/apt	99	1	1
+4100009	Entire home/apt	99	1	1
+4104442	Private room	70	1	1
+4105164	Private room	59	1	1
+4105164	Private room	59	1	1
+4105164	Private room	59	1	1
+4105164	Private room	59	1	1
+4105164	Private room	59	1	1
+4105164	Private room	59	1	1
+4105164	Private room	59	1	1
+4106041	Entire home/apt	139	1	1
+4106041	Entire home/apt	139	1	1
+4106041	Entire home/apt	139	1	1
+4111137	Entire home/apt	85	1	1
+4111954	Entire home/apt	60	1	1
+4118282	Entire home/apt	80	1	1
+4118282	Entire home/apt	80	1	1
+4118282	Entire home/apt	80	1	1
+4118282	Entire home/apt	80	1	1
+4118282	Entire home/apt	80	1	1
+4118282	Entire home/apt	80	1	1
+4118282	Entire home/apt	80	1	1
+4121334	Entire home/apt	110	1	1
+4122325	Entire home/apt	175	1	1
+4122325	Entire home/apt	175	1	1
+4125779	Private room	99	1	1
+4137114	Entire home/apt	151	1	1
+4144767	Entire home/apt	95	1	1
+4163851	Entire home/apt	104	1	1
+4163851	Entire home/apt	104	1	1
+4163851	Entire home/apt	104	1	1
+4165387	Entire home/apt	299	1	1
+4165387	Entire home/apt	299	1	1
+4165387	Entire home/apt	299	1	1
+4172364	Private room	55	1	1
+4172364	Private room	55	1	1
+4210585	Entire home/apt	171	1	1
+4210585	Entire home/apt	171	1	1
+4210585	Entire home/apt	171	1	1
+4235559	Entire home/apt	325	1	1
+4236723	Entire home/apt	195	1	1
+4236723	Entire home/apt	195	1	1
+4236723	Entire home/apt	195	1	1
+4236723	Entire home/apt	195	1	1
+4236723	Entire home/apt	195	1	1
+4236723	Entire home/apt	195	1	1
+4236723	Entire home/apt	195	1	1
+4236723	Entire home/apt	195	1	1
+4236723	Entire home/apt	195	1	1
+4236723	Entire home/apt	195	1	1
+4236723	Entire home/apt	195	1	1
+4236723	Entire home/apt	195	1	1
+4236723	Entire home/apt	195	1	1
+4236723	Entire home/apt	195	1	1
+4238106	Private room	75	1	1
+4251426	Entire home/apt	245	1	1
+4598160	Shared room	67	1	1
+4598160	Shared room	67	1	1
+4598160	Shared room	67	1	1
+4599119	Entire home/apt	180	1	1
+4607830	Entire home/apt	98	1	1
+4607830	Entire home/apt	98	1	1
+4608208	Private room	70	1	1
+4608208	Private room	70	1	1
+4608208	Private room	70	1	1
+4608208	Private room	70	1	1
+4608208	Private room	70	1	1
+4608592	Entire home/apt	160	1	1
+4608592	Entire home/apt	160	1	1
+4616634	Entire home/apt	105	1	1
+4616634	Entire home/apt	105	1	1
+4616634	Entire home/apt	105	1	1
+4616634	Entire home/apt	105	1	1
+4616634	Entire home/apt	105	1	1
+4616695	Entire home/apt	150	1	1
+4616695	Entire home/apt	150	1	1
+4637670	Entire home/apt	135	1	1
+4637670	Entire home/apt	135	1	1
+4639465	Private room	129	1	1
+4645208	Entire home/apt	499	1	1
+4645208	Entire home/apt	499	1	1
+4645208	Entire home/apt	499	1	1
+4645405	Private room	60	1	1
+4645405	Private room	60	1	1
+4653552	Entire home/apt	144	1	1
+4653552	Entire home/apt	144	1	1
+4653552	Entire home/apt	144	1	1
+4660460	Entire home/apt	82	1	1
+4660517	Entire home/apt	210	1	1
+4660517	Entire home/apt	210	1	1
+4661812	Entire home/apt	115	1	1
+4664312	Shared room	59	1	1
+4668327	Entire home/apt	100	1	1
+4677524	Entire home/apt	135	1	1
+4679983	Private room	59	1	1
+4681687	Entire home/apt	58	1	1
+4681687	Entire home/apt	58	1	1
+4681687	Entire home/apt	58	1	1
+4681687	Entire home/apt	58	1	1
+4693488	Entire home/apt	90	1	1
+4693488	Entire home/apt	90	1	1
+4693488	Entire home/apt	90	1	1
+4693488	Entire home/apt	90	1	1
+4707171	Entire home/apt	110	1	1
+4707171	Entire home/apt	110	1	1
+4707171	Entire home/apt	110	1	1
+4707171	Entire home/apt	110	1	1
+4710869	Shared room	30	1	1
+4710869	Shared room	30	1	1
+4711069	Entire home/apt	169	1	1
+4711069	Entire home/apt	169	1	1
+4725935	Shared room	40	1	1
+4725935	Shared room	40	1	1
+4735761	Shared room	45	1	1
+4735761	Shared room	45	1	1
+4760181	Private room	55	1	1
+4760181	Private room	55	1	1
+4760181	Private room	55	1	1
+4760181	Private room	55	1	1
+4760181	Private room	55	1	1
+4760472	Entire home/apt	80	1	1
+4760472	Entire home/apt	80	1	1
+4760472	Entire home/apt	80	1	1
+4760968	Private room	60	1	1
+4760968	Private room	60	1	1
+4768038	Private room	150	1	1
+4768038	Private room	150	1	1
+4768038	Private room	150	1	1
+4772997	Private room	67	1	1
+4776823	Entire home/apt	125	1	1
+4776823	Entire home/apt	125	1	1
+4776823	Entire home/apt	125	1	1
+4777832	Entire home/apt	170	1	1
+4777832	Entire home/apt	170	1	1
+4777832	Entire home/apt	170	1	1
+4777832	Entire home/apt	170	1	1
+4783817	Private room	80	1	1
+4784639	Entire home/apt	155	1	1
+4814811	Private room	92	1	1
+4814811	Private room	92	1	1
+4814811	Private room	92	1	1
+4814894	Entire home/apt	74	1	1
+4814894	Entire home/apt	74	1	1
+4814894	Entire home/apt	74	1	1
+4841586	Entire home/apt	100	1	1
+4841586	Entire home/apt	100	1	1
+4841586	Entire home/apt	100	1	1
+4841586	Entire home/apt	100	1	1
+4841586	Entire home/apt	100	1	1
+4854767	Entire home/apt	109	1	1
+4854767	Entire home/apt	109	1	1
+4857192	Private room	108	1	1
+4862719	Private room	55	1	1
+4862719	Private room	55	1	1
+4862719	Private room	55	1	1
+4869458	Shared room	37	1	1
+4869458	Shared room	37	1	1
+4871348	Private room	70	1	1
+4871348	Private room	70	1	1
+4871348	Private room	70	1	1
+4871348	Private room	70	1	1
+4871348	Private room	70	1	1
+4871348	Private room	70	1	1
+4871348	Private room	70	1	1
+4871348	Private room	70	1	1
+4871348	Private room	70	1	1
+4871348	Private room	70	1	1
+4879013	Entire home/apt	109	1	1
+4879013	Entire home/apt	109	1	1
+4879013	Entire home/apt	109	1	1
+4910140	Private room	39	1	1
+4910140	Private room	39	1	1
+4910140	Private room	39	1	1
+4910140	Private room	39	1	1
+4933447	Private room	99	1	1
+4933447	Private room	99	1	1
+4936647	Entire home/apt	120	1	1
+4940379	Entire home/apt	250	1	1
+4940379	Entire home/apt	250	1	1
+4940491	Entire home/apt	109	1	1
+4941356	Shared room	35	1	1
+4951430	Entire home/apt	125	1	1
+4968752	Entire home/apt	100	1	1
+4968752	Entire home/apt	100	1	1
+4973204	Entire home/apt	165	1	1
+4973204	Entire home/apt	165	1	1
+4993710	Entire home/apt	99	1	1
+4993710	Entire home/apt	99	1	1
+4993710	Entire home/apt	99	1	1
+4993710	Entire home/apt	99	1	1
+4993710	Entire home/apt	99	1	1
+5006092	Entire home/apt	125	1	1
+5006092	Entire home/apt	125	1	1
+5019444	Entire home/apt	110	1	1
+5019444	Entire home/apt	110	1	1
+5020861	Private room	65	1	1
+5020861	Private room	65	1	1
+5020861	Private room	65	1	1
+5030361	Private room	90	1	1
+5030361	Private room	90	1	1
+5031285	Shared room	40	1	1
+5031285	Shared room	40	1	1
+5031285	Shared room	40	1	1
+5031285	Shared room	40	1	1
+5031285	Shared room	40	1	1
+5031285	Shared room	40	1	1
+5031383	Shared room	40	1	1
+5031383	Shared room	40	1	1
+5031383	Shared room	40	1	1
+5031383	Shared room	40	1	1
+5031383	Shared room	40	1	1
+5041669	Entire home/apt	95	1	1
+5041669	Entire home/apt	95	1	1
+5042014	Private room	52	1	1
+5042014	Private room	52	1	1
+5042014	Private room	52	1	1
+5057466	Private room	84	1	1
+5057466	Private room	84	1	1
+5057466	Private room	84	1	1
+5057466	Private room	84	1	1
+5057466	Private room	84	1	1
+5057466	Private room	84	1	1
+5057466	Private room	84	1	1
+5057466	Private room	84	1	1
+5058086	Entire home/apt	145	1	1
+5058086	Entire home/apt	145	1	1
+5058086	Entire home/apt	145	1	1
+5058086	Entire home/apt	145	1	1
+5058086	Entire home/apt	145	1	1
+5058086	Entire home/apt	145	1	1
+5058086	Entire home/apt	145	1	1
+5058086	Entire home/apt	145	1	1
+5058086	Entire home/apt	145	1	1
+5058302	Entire home/apt	155	1	1
+5058302	Entire home/apt	155	1	1
+5067177	Private room	47	1	1
+5067177	Private room	47	1	1
+5069495	Entire home/apt	95	1	1
+5078129	Entire home/apt	95	1	1
+5078129	Entire home/apt	95	1	1
+5078129	Entire home/apt	95	1	1
+5078129	Entire home/apt	95	1	1
+5078129	Entire home/apt	95	1	1
+5078129	Entire home/apt	95	1	1
+5078244	Private room	39	1	1
+5078876	Entire home/apt	225	1	1
+5078876	Entire home/apt	225	1	1
+5078876	Entire home/apt	225	1	1
+5096363	Private room	72	1	1
+5096363	Private room	72	1	1
+5096363	Private room	72	1	1
+5096363	Private room	72	1	1
+5096363	Private room	72	1	1
+5104077	Entire home/apt	110	1	1
+5104918	Entire home/apt	160	1	1
+5104918	Entire home/apt	160	1	1
+5104918	Entire home/apt	160	1	1
+5104918	Entire home/apt	160	1	1
+5104918	Entire home/apt	160	1	1
+4468524	Private room	44	1	1
+5104918	Entire home/apt	160	1	1
+4494948	Entire home/apt	135	1	1
+5175631	Entire home/apt	165	1	1
+4494948	Entire home/apt	135	1	1
+5175631	Entire home/apt	165	1	1
+5175631	Entire home/apt	165	1	1
+5175631	Entire home/apt	165	1	1
+5183164	Private room	47	1	1
+5183164	Private room	47	1	1
+5183164	Private room	47	1	1
+5183164	Private room	47	1	1
+5183164	Private room	47	1	1
+4008373	Entire home/apt	350	1	1
+4008373	Entire home/apt	350	1	1
+4008373	Entire home/apt	350	1	1
+4025593	Private room	40	1	1
+4025593	Private room	40	1	1
+4025593	Private room	40	1	1
+4025593	Private room	40	1	1
+4025593	Private room	40	1	1
+4025593	Private room	40	1	1
+4025593	Private room	40	1	1
+4025954	Entire home/apt	90	1	1
+4026757	Private room	55	1	1
+4026757	Private room	55	1	1
+4026757	Private room	55	1	1
+4026757	Private room	55	1	1
+4026757	Private room	55	1	1
+4026757	Private room	55	1	1
+4026757	Private room	55	1	1
+4026757	Private room	55	1	1
+4026757	Private room	55	1	1
+4026757	Private room	55	1	1
+4026757	Private room	55	1	1
+4026757	Private room	55	1	1
+4026757	Private room	55	1	1
+4030600	Private room	70	1	1
+4030600	Private room	70	1	1
+4030600	Private room	70	1	1
+4030600	Private room	70	1	1
+4038347	Private room	55	1	1
+4038347	Private room	55	1	1
+4053092	Private room	80	1	1
+4061051	Private room	120	1	1
+4082986	Entire home/apt	115	1	1
+4082986	Entire home/apt	115	1	1
+4082986	Entire home/apt	115	1	1
+4082986	Entire home/apt	115	1	1
+4082986	Entire home/apt	115	1	1
+4082986	Entire home/apt	115	1	1
+4082986	Entire home/apt	115	1	1
+4084712	Entire home/apt	115	1	1
+4110396	Private room	95	1	1
+4110396	Private room	95	1	1
+4110396	Private room	95	1	1
+4110396	Private room	95	1	1
+4110396	Private room	95	1	1
+4110396	Private room	95	1	1
+4110396	Private room	95	1	1
+4137114	Entire home/apt	151	1	1
+4137114	Entire home/apt	151	1	1
+4137114	Entire home/apt	151	1	1
+4137114	Entire home/apt	151	1	1
+4137114	Entire home/apt	151	1	1
+4137114	Entire home/apt	151	1	1
+4137114	Entire home/apt	151	1	1
+4137114	Entire home/apt	151	1	1
+4137114	Entire home/apt	151	1	1
+4138423	Entire home/apt	99	1	1
+4138423	Entire home/apt	99	1	1
+4138423	Entire home/apt	99	1	1
+4165387	Entire home/apt	299	1	1
+4165387	Entire home/apt	299	1	1
+4180905	Entire home/apt	125	1	1
+4180905	Entire home/apt	125	1	1
+4180905	Entire home/apt	125	1	1
+4180905	Entire home/apt	125	1	1
+4180905	Entire home/apt	125	1	1
+4184211	Private room	104	1	1
+4184211	Private room	104	1	1
+4184211	Private room	104	1	1
+4184211	Private room	104	1	1
+4187961	Entire home/apt	88	1	1
+4187961	Entire home/apt	88	1	1
+4187961	Entire home/apt	88	1	1
+4208555	Entire home/apt	75	1	1
+4208555	Entire home/apt	75	1	1
+4208555	Entire home/apt	75	1	1
+4208555	Entire home/apt	75	1	1
+4208555	Entire home/apt	75	1	1
+4211081	Entire home/apt	256	1	1
+4211081	Entire home/apt	256	1	1
+4211081	Entire home/apt	256	1	1
+4211081	Entire home/apt	256	1	1
+4211081	Entire home/apt	256	1	1
+4211629	Entire home/apt	116	1	1
+4211629	Entire home/apt	116	1	1
+4211629	Entire home/apt	116	1	1
+4218733	Entire home/apt	110	1	1
+4218733	Entire home/apt	110	1	1
+4218733	Entire home/apt	110	1	1
+4218733	Entire home/apt	110	1	1
+4218733	Entire home/apt	110	1	1
+4218733	Entire home/apt	110	1	1
+4218733	Entire home/apt	110	1	1
+4218733	Entire home/apt	110	1	1
+4218733	Entire home/apt	110	1	1
+4218733	Entire home/apt	110	1	1
+4218733	Entire home/apt	110	1	1
+4218733	Entire home/apt	110	1	1
+4218733	Entire home/apt	110	1	1
+4218733	Entire home/apt	110	1	1
+4218733	Entire home/apt	110	1	1
+4218733	Entire home/apt	110	1	1
+4225225	Private room	125	1	1
+4241862	Entire home/apt	100	1	1
+4241862	Entire home/apt	100	1	1
+4258515	Private room	47	1	1
+4258515	Private room	47	1	1
+4258515	Private room	47	1	1
+4258515	Private room	47	1	1
+4264043	Entire home/apt	75	1	1
+4264043	Entire home/apt	75	1	1
+4264043	Entire home/apt	75	1	1
+4264043	Entire home/apt	75	1	1
+4264043	Entire home/apt	75	1	1
+4264043	Entire home/apt	75	1	1
+4264043	Entire home/apt	75	1	1
+4264043	Entire home/apt	75	1	1
+4278896	Private room	60	1	1
+4278896	Private room	60	1	1
+4279578	Entire home/apt	85	1	1
+4279578	Entire home/apt	85	1	1
+4279578	Entire home/apt	85	1	1
+4279578	Entire home/apt	85	1	1
+4279578	Entire home/apt	85	1	1
+4279578	Entire home/apt	85	1	1
+4279876	Entire home/apt	95	1	1
+4279876	Entire home/apt	95	1	1
+4279876	Entire home/apt	95	1	1
+4279876	Entire home/apt	95	1	1
+4279876	Entire home/apt	95	1	1
+4287974	Entire home/apt	130	1	1
+4287974	Entire home/apt	130	1	1
+4287974	Entire home/apt	130	1	1
+4287974	Entire home/apt	130	1	1
+4287974	Entire home/apt	130	1	1
+4287974	Entire home/apt	130	1	1
+4287974	Entire home/apt	130	1	1
+4287974	Entire home/apt	130	1	1
+4287974	Entire home/apt	130	1	1
+4316910	Entire home/apt	64	1	1
+4324317	Entire home/apt	100	1	1
+4324317	Entire home/apt	100	1	1
+4324917	Private room	72	1	1
+4324917	Private room	72	1	1
+4349344	Entire home/apt	125	1	1
+4349344	Entire home/apt	125	1	1
+4349344	Entire home/apt	125	1	1
+4349344	Entire home/apt	125	1	1
+4349344	Entire home/apt	125	1	1
+4349344	Entire home/apt	125	1	1
+4357979	Private room	90	1	1
+4357979	Private room	90	1	1
+4357979	Private room	90	1	1
+4360604	Private room	42	1	1
+4360604	Private room	42	1	1
+4360604	Private room	42	1	1
+4360604	Private room	42	1	1
+4374326	Private room	37	1	1
+4374326	Private room	37	1	1
+4374326	Private room	37	1	1
+4384343	Entire home/apt	110	1	1
+4384343	Entire home/apt	110	1	1
+4384343	Entire home/apt	110	1	1
+4384343	Entire home/apt	110	1	1
+4384343	Entire home/apt	110	1	1
+4384343	Entire home/apt	110	1	1
+4384343	Entire home/apt	110	1	1
+4384343	Entire home/apt	110	1	1
+4384343	Entire home/apt	110	1	1
+4387985	Entire home/apt	165	1	1
+4387985	Entire home/apt	165	1	1
+4387985	Entire home/apt	165	1	1
+4387985	Entire home/apt	165	1	1
+4387985	Entire home/apt	165	1	1
+4387985	Entire home/apt	165	1	1
+4387985	Entire home/apt	165	1	1
+4417792	Entire home/apt	175	1	1
+4429898	Entire home/apt	89	1	1
+4449303	Private room	80	1	1
+4449303	Private room	80	1	1
+4449303	Private room	80	1	1
+4449303	Private room	80	1	1
+4454121	Entire home/apt	160	1	1
+4468524	Private room	44	1	1
+4477426	Private room	90	1	1
+4477426	Private room	90	1	1
+4477426	Private room	90	1	1
+4479426	Private room	70	1	1
+4479426	Private room	70	1	1
+4479426	Private room	70	1	1
+4479426	Private room	70	1	1
+4479426	Private room	70	1	1
+4518037	Private room	35	1	1
+4518037	Private room	35	1	1
+4518037	Private room	35	1	1
+4518037	Private room	35	1	1
+4539948	Entire home/apt	110	1	1
+4546924	Entire home/apt	150	1	1
+4546924	Entire home/apt	150	1	1
+4546924	Entire home/apt	150	1	1
+4550199	Entire home/apt	250	1	1
+4555997	Entire home/apt	80	1	1
+4555997	Entire home/apt	80	1	1
+4555997	Entire home/apt	80	1	1
+4555997	Entire home/apt	80	1	1
+4555997	Entire home/apt	80	1	1
+4555997	Entire home/apt	80	1	1
+5183938	Entire home/apt	149	1	1
+5183938	Entire home/apt	149	1	1
+5183938	Entire home/apt	149	1	1
+5183938	Entire home/apt	149	1	1
+5195064	Private room	50	1	1
+5195064	Private room	50	1	1
+5195064	Private room	50	1	1
+5195064	Private room	50	1	1
+5195064	Private room	50	1	1
+5195064	Private room	50	1	1
+5213468	Entire home/apt	237	1	1
+5213468	Entire home/apt	237	1	1
+5213468	Entire home/apt	237	1	1
+5213468	Entire home/apt	237	1	1
+5240694	Entire home/apt	115	1	1
+5242712	Entire home/apt	60	1	1
+5249067	Entire home/apt	75	1	1
+5259194	Private room	69	1	1
+5259194	Private room	69	1	1
+5259194	Private room	69	1	1
+5259194	Private room	69	1	1
+5259194	Private room	69	1	1
+5259194	Private room	69	1	1
+5259194	Private room	69	1	1
+5261239	Entire home/apt	103	1	1
+5261239	Entire home/apt	103	1	1
+5261239	Entire home/apt	103	1	1
+5261239	Entire home/apt	103	1	1
+5261239	Entire home/apt	103	1	1
+5261239	Entire home/apt	103	1	1
+5261239	Entire home/apt	103	1	1
+5261239	Entire home/apt	103	1	1
+5261239	Entire home/apt	103	1	1
+5270886	Entire home/apt	82	1	1
+5272327	Entire home/apt	105	1	1
+5272327	Entire home/apt	105	1	1
+5277900	Entire home/apt	199	1	1
+5277900	Entire home/apt	199	1	1
+5289293	Entire home/apt	115	1	1
+5289293	Entire home/apt	115	1	1
+5289293	Entire home/apt	115	1	1
+5289293	Entire home/apt	115	1	1
+5289293	Entire home/apt	115	1	1
+5289293	Entire home/apt	115	1	1
+5304739	Entire home/apt	49	1	1
+5304739	Entire home/apt	49	1	1
+5304739	Entire home/apt	49	1	1
+5304739	Entire home/apt	49	1	1
+5304739	Entire home/apt	49	1	1
+5304739	Entire home/apt	49	1	1
+5304739	Entire home/apt	49	1	1
+5304739	Entire home/apt	49	1	1
+5304739	Entire home/apt	49	1	1
+5304739	Entire home/apt	49	1	1
+5304739	Entire home/apt	49	1	1
+5304739	Entire home/apt	49	1	1
+5304739	Entire home/apt	49	1	1
+5310503	Shared room	33	1	1
+5315169	Entire home/apt	120	1	1
+5315169	Entire home/apt	120	1	1
+5315169	Entire home/apt	120	1	1
+5319948	Private room	65	1	1
+5319948	Private room	65	1	1
+5319948	Private room	65	1	1
+5328449	Entire home/apt	150	1	1
+5328449	Entire home/apt	150	1	1
+5328449	Entire home/apt	150	1	1
+5328449	Entire home/apt	150	1	1
+5362889	Entire home/apt	175	1	1
+5362889	Entire home/apt	175	1	1
+5362889	Entire home/apt	175	1	1
+5362889	Entire home/apt	175	1	1
+5362889	Entire home/apt	175	1	1
+5362889	Entire home/apt	175	1	1
+5362889	Entire home/apt	175	1	1
+5362889	Entire home/apt	175	1	1
+5364244	Entire home/apt	130	1	1
+5364244	Entire home/apt	130	1	1
+5364244	Entire home/apt	130	1	1
+5364244	Entire home/apt	130	1	1
+5364244	Entire home/apt	130	1	1
+5364414	Entire home/apt	200	1	1
+5364414	Entire home/apt	200	1	1
+5364414	Entire home/apt	200	1	1
+5365612	Private room	50	1	1
+5365612	Private room	50	1	1
+5395530	Entire home/apt	115	1	1
+5402304	Entire home/apt	185	1	1
+5402304	Entire home/apt	185	1	1
+5402304	Entire home/apt	185	1	1
+5405643	Entire home/apt	89	1	1
+5405643	Entire home/apt	89	1	1
+5405643	Entire home/apt	89	1	1
+5405643	Entire home/apt	89	1	1
+5405643	Entire home/apt	89	1	1
+5415077	Private room	95	1	1
+5415077	Private room	95	1	1
+5415077	Private room	95	1	1
+5422159	Entire home/apt	99	1	1
+5422159	Entire home/apt	99	1	1
+5422159	Entire home/apt	99	1	1
+5422159	Entire home/apt	99	1	1
+5422159	Entire home/apt	99	1	1
+5422159	Entire home/apt	99	1	1
+5422159	Entire home/apt	99	1	1
+5422159	Entire home/apt	99	1	1
+5446156	Entire home/apt	245	1	1
+5446156	Entire home/apt	245	1	1
+5446156	Entire home/apt	245	1	1
+5446176	Entire home/apt	197	1	1
+5446176	Entire home/apt	197	1	1
+5446176	Entire home/apt	197	1	1
+5446176	Entire home/apt	197	1	1
+5446513	Entire home/apt	150	1	1
+4258762	Entire home/apt	110	1	1
+4258762	Entire home/apt	110	1	1
+4258762	Entire home/apt	110	1	1
+4258762	Entire home/apt	110	1	1
+4258762	Entire home/apt	110	1	1
+4258762	Entire home/apt	110	1	1
+4264056	Entire home/apt	75	1	1
+4264056	Entire home/apt	75	1	1
+4264056	Entire home/apt	75	1	1
+4264056	Entire home/apt	75	1	1
+4264056	Entire home/apt	75	1	1
+4264056	Entire home/apt	75	1	1
+4264056	Entire home/apt	75	1	1
+4264056	Entire home/apt	75	1	1
+4264056	Entire home/apt	75	1	1
+4264056	Entire home/apt	75	1	1
+4264056	Entire home/apt	75	1	1
+4264056	Entire home/apt	75	1	1
+4270642	Entire home/apt	88	1	1
+4270642	Entire home/apt	88	1	1
+4271174	Private room	75	1	1
+4271174	Private room	75	1	1
+4271221	Private room	80	1	1
+4271221	Private room	80	1	1
+4318031	Entire home/apt	93	1	1
+4318031	Entire home/apt	93	1	1
+4318031	Entire home/apt	93	1	1
+4318031	Entire home/apt	93	1	1
+4318814	Entire home/apt	120	1	1
+4318814	Entire home/apt	120	1	1
+4318814	Entire home/apt	120	1	1
+4318814	Entire home/apt	120	1	1
+4318814	Entire home/apt	120	1	1
+4318814	Entire home/apt	120	1	1
+4318814	Entire home/apt	120	1	1
+4318814	Entire home/apt	120	1	1
+4318814	Entire home/apt	120	1	1
+4318814	Entire home/apt	120	1	1
+4318814	Entire home/apt	120	1	1
+4318814	Entire home/apt	120	1	1
+4340838	Entire home/apt	85	1	1
+4340838	Entire home/apt	85	1	1
+4340838	Entire home/apt	85	1	1
+4340838	Entire home/apt	85	1	1
+4340838	Entire home/apt	85	1	1
+4340838	Entire home/apt	85	1	1
+4340838	Entire home/apt	85	1	1
+4364285	Entire home/apt	126	1	1
+4378803	Entire home/apt	139	1	1
+4378803	Entire home/apt	139	1	1
+4384095	Private room	49	1	1
+4384095	Private room	49	1	1
+4384095	Private room	49	1	1
+4384800	Entire home/apt	195	1	1
+4384800	Entire home/apt	195	1	1
+4384800	Entire home/apt	195	1	1
+4396961	Private room	59	1	1
+4396961	Private room	59	1	1
+4396961	Private room	59	1	1
+4404126	Private room	70	1	1
+4404126	Private room	70	1	1
+4404126	Private room	70	1	1
+4404126	Private room	70	1	1
+4404126	Private room	70	1	1
+4404126	Private room	70	1	1
+4410493	Entire home/apt	138	1	1
+4410493	Entire home/apt	138	1	1
+4410493	Entire home/apt	138	1	1
+4410789	Entire home/apt	131	1	1
+4432489	Entire home/apt	80	1	1
+4432489	Entire home/apt	80	1	1
+4438188	Entire home/apt	112	1	1
+4485424	Entire home/apt	330	1	1
+4485424	Entire home/apt	330	1	1
+4485424	Entire home/apt	330	1	1
+4485424	Entire home/apt	330	1	1
+4485424	Entire home/apt	330	1	1
+4485424	Entire home/apt	330	1	1
+4494948	Entire home/apt	135	1	1
+4494948	Entire home/apt	135	1	1
+4494948	Entire home/apt	135	1	1
+4516960	Entire home/apt	159	1	1
+4516960	Entire home/apt	159	1	1
+4516960	Entire home/apt	159	1	1
+4518474	Entire home/apt	138	1	1
+4518474	Entire home/apt	138	1	1
+4518474	Entire home/apt	138	1	1
+4518474	Entire home/apt	138	1	1
+4518474	Entire home/apt	138	1	1
+4518474	Entire home/apt	138	1	1
+4518474	Entire home/apt	138	1	1
+4518474	Entire home/apt	138	1	1
+4524575	Entire home/apt	108	1	1
+4526737	Entire home/apt	95	1	1
+4566609	Entire home/apt	69	1	1
+4566609	Entire home/apt	69	1	1
+4589654	Entire home/apt	105	1	1
+4589654	Entire home/apt	105	1	1
+4589654	Entire home/apt	105	1	1
+4589654	Entire home/apt	105	1	1
+4614955	Entire home/apt	151	1	1
+4614955	Entire home/apt	151	1	1
+4614955	Entire home/apt	151	1	1
+4614955	Entire home/apt	151	1	1
+4614955	Entire home/apt	151	1	1
+4614955	Entire home/apt	151	1	1
+4614955	Entire home/apt	151	1	1
+4559222	Private room	60	1	1
+4559222	Private room	60	1	1
+4565370	Private room	70	1	1
+4565370	Private room	70	1	1
+4569115	Entire home/apt	219	1	1
+4569115	Entire home/apt	219	1	1
+4569115	Entire home/apt	219	1	1
+4569115	Entire home/apt	219	1	1
+4574039	Entire home/apt	300	1	1
+4574039	Entire home/apt	300	1	1
+4574039	Entire home/apt	300	1	1
+4574039	Entire home/apt	300	1	1
+4574039	Entire home/apt	300	1	1
+4574039	Entire home/apt	300	1	1
+4577542	Entire home/apt	120	1	1
+4577542	Entire home/apt	120	1	1
+4577542	Entire home/apt	120	1	1
+4577542	Entire home/apt	120	1	1
+4577542	Entire home/apt	120	1	1
+4577542	Entire home/apt	120	1	1
+4577542	Entire home/apt	120	1	1
+4583161	Private room	53	1	1
+4583161	Private room	53	1	1
+4583161	Private room	53	1	1
+4583161	Private room	53	1	1
+4583161	Private room	53	1	1
+4583161	Private room	53	1	1
+4593740	Entire home/apt	150	1	1
+4593740	Entire home/apt	150	1	1
+4593740	Entire home/apt	150	1	1
+4593740	Entire home/apt	150	1	1
+4607830	Entire home/apt	98	1	1
+4607830	Entire home/apt	98	1	1
+4608592	Entire home/apt	160	1	1
+4608592	Entire home/apt	160	1	1
+4608592	Entire home/apt	160	1	1
+4608592	Entire home/apt	160	1	1
+4616695	Entire home/apt	150	1	1
+4616695	Entire home/apt	150	1	1
+4616695	Entire home/apt	150	1	1
+4623541	Entire home/apt	157	1	1
+4623541	Entire home/apt	157	1	1
+4623541	Entire home/apt	157	1	1
+4623541	Entire home/apt	157	1	1
+4637801	Private room	74	1	1
+4637801	Private room	74	1	1
+4639040	Private room	39	1	1
+4639040	Private room	39	1	1
+4639040	Private room	39	1	1
+4645405	Private room	60	1	1
+4645405	Private room	60	1	1
+4653552	Entire home/apt	144	1	1
+4653552	Entire home/apt	144	1	1
+4660460	Entire home/apt	82	1	1
+4660460	Entire home/apt	82	1	1
+4660460	Entire home/apt	82	1	1
+4660460	Entire home/apt	82	1	1
+4660460	Entire home/apt	82	1	1
+4660460	Entire home/apt	82	1	1
+4660517	Entire home/apt	210	1	1
+4660517	Entire home/apt	210	1	1
+4660517	Entire home/apt	210	1	1
+4688603	Private room	59	1	1
+4701146	Entire home/apt	93	1	1
+4707171	Entire home/apt	110	1	1
+4707171	Entire home/apt	110	1	1
+4711069	Entire home/apt	169	1	1
+4718921	Entire home/apt	80	1	1
+4718921	Entire home/apt	80	1	1
+4718921	Entire home/apt	80	1	1
+4725935	Shared room	40	1	1
+4725935	Shared room	40	1	1
+4725935	Shared room	40	1	1
+4752817	Entire home/apt	179	1	1
+4752817	Entire home/apt	179	1	1
+4752817	Entire home/apt	179	1	1
+4752817	Entire home/apt	179	1	1
+4757025	Entire home/apt	168	1	1
+4757025	Entire home/apt	168	1	1
+4757025	Entire home/apt	168	1	1
+4757025	Entire home/apt	168	1	1
+4757025	Entire home/apt	168	1	1
+4757025	Entire home/apt	168	1	1
+4757025	Entire home/apt	168	1	1
+4757025	Entire home/apt	168	1	1
+4757025	Entire home/apt	168	1	1
+4757025	Entire home/apt	168	1	1
+4757025	Entire home/apt	168	1	1
+4757025	Entire home/apt	168	1	1
+4757025	Entire home/apt	168	1	1
+4757025	Entire home/apt	168	1	1
+4757025	Entire home/apt	168	1	1
+4757025	Entire home/apt	168	1	1
+4760181	Private room	55	1	1
+4760181	Private room	55	1	1
+4760181	Private room	55	1	1
+4760181	Private room	55	1	1
+4760181	Private room	55	1	1
+4760181	Private room	55	1	1
+4760181	Private room	55	1	1
+4760181	Private room	55	1	1
+4760181	Private room	55	1	1
+4760181	Private room	55	1	1
+4772997	Private room	67	1	1
+4808896	Entire home/apt	153	1	1
+4808896	Entire home/apt	153	1	1
+4808896	Entire home/apt	153	1	1
+4494948	Entire home/apt	135	1	1
+4494948	Entire home/apt	135	1	1
+4518474	Entire home/apt	138	1	1
+4518474	Entire home/apt	138	1	1
+4518474	Entire home/apt	138	1	1
+4524575	Entire home/apt	108	1	1
+4526943	Entire home/apt	155	1	1
+4531944	Entire home/apt	140	1	1
+4531944	Entire home/apt	140	1	1
+4531944	Entire home/apt	140	1	1
+4531944	Entire home/apt	140	1	1
+4531944	Entire home/apt	140	1	1
+4546924	Entire home/apt	150	1	1
+4546924	Entire home/apt	150	1	1
+4546924	Entire home/apt	150	1	1
+4550199	Entire home/apt	250	1	1
+4564730	Entire home/apt	99	1	1
+4564730	Entire home/apt	99	1	1
+4565370	Private room	70	1	1
+4565370	Private room	70	1	1
+4565370	Private room	70	1	1
+4574039	Entire home/apt	300	1	1
+4574039	Entire home/apt	300	1	1
+4574039	Entire home/apt	300	1	1
+4574039	Entire home/apt	300	1	1
+4574039	Entire home/apt	300	1	1
+4581124	Private room	69	1	1
+4593740	Entire home/apt	150	1	1
+4593740	Entire home/apt	150	1	1
+4598160	Shared room	67	1	1
+4598160	Shared room	67	1	1
+4598160	Shared room	67	1	1
+4598160	Shared room	67	1	1
+4598160	Shared room	67	1	1
+4598160	Shared room	67	1	1
+4598160	Shared room	67	1	1
+4598160	Shared room	67	1	1
+4598160	Shared room	67	1	1
+4598160	Shared room	67	1	1
+4598160	Shared room	67	1	1
+4598160	Shared room	67	1	1
+4598160	Shared room	67	1	1
+4598160	Shared room	67	1	1
+4598160	Shared room	67	1	1
+4598160	Shared room	67	1	1
+4598160	Shared room	67	1	1
+4598160	Shared room	67	1	1
+4608592	Entire home/apt	160	1	1
+4608592	Entire home/apt	160	1	1
+4614955	Entire home/apt	151	1	1
+4616634	Entire home/apt	105	1	1
+4616634	Entire home/apt	105	1	1
+4637670	Entire home/apt	135	1	1
+4637670	Entire home/apt	135	1	1
+4637670	Entire home/apt	135	1	1
+4639465	Private room	129	1	1
+4639465	Private room	129	1	1
+4660460	Entire home/apt	82	1	1
+4660460	Entire home/apt	82	1	1
+4660460	Entire home/apt	82	1	1
+4660460	Entire home/apt	82	1	1
+4660517	Entire home/apt	210	1	1
+4668327	Entire home/apt	100	1	1
+4672934	Entire home/apt	350	1	1
+4679983	Private room	59	1	1
+4681885	Private room	65	1	1
+4681885	Private room	65	1	1
+4681885	Private room	65	1	1
+4681885	Private room	65	1	1
+4681885	Private room	65	1	1
+4701141	Private room	40	1	1
+4701141	Private room	40	1	1
+4707171	Entire home/apt	110	1	1
+4707171	Entire home/apt	110	1	1
+4707171	Entire home/apt	110	1	1
+4707171	Entire home/apt	110	1	1
+4708075	Private room	55	1	1
+4710866	Shared room	33	1	1
+4710866	Shared room	33	1	1
+4711069	Entire home/apt	169	1	1
+4711069	Entire home/apt	169	1	1
+4711069	Entire home/apt	169	1	1
+4711069	Entire home/apt	169	1	1
+4737727	Private room	70	1	1
+4737727	Private room	70	1	1
+4738971	Entire home/apt	90	1	1
+4738971	Entire home/apt	90	1	1
+4738971	Entire home/apt	90	1	1
+4738971	Entire home/apt	90	1	1
+4738971	Entire home/apt	90	1	1
+4739190	Entire home/apt	106	1	1
+4739190	Entire home/apt	106	1	1
+4739190	Entire home/apt	106	1	1
+4752817	Entire home/apt	179	1	1
+4752817	Entire home/apt	179	1	1
+4752817	Entire home/apt	179	1	1
+4752817	Entire home/apt	179	1	1
+4752817	Entire home/apt	179	1	1
+4752817	Entire home/apt	179	1	1
+4752817	Entire home/apt	179	1	1
+4752817	Entire home/apt	179	1	1
+4752817	Entire home/apt	179	1	1
+4752817	Entire home/apt	179	1	1
+4752817	Entire home/apt	179	1	1
+4752817	Entire home/apt	179	1	1
+4760181	Private room	55	1	1
+4760181	Private room	55	1	1
+4760968	Private room	60	1	1
+4760968	Private room	60	1	1
+4616634	Entire home/apt	105	1	1
+4616634	Entire home/apt	105	1	1
+4616634	Entire home/apt	105	1	1
+4616634	Entire home/apt	105	1	1
+4616634	Entire home/apt	105	1	1
+4616634	Entire home/apt	105	1	1
+4616634	Entire home/apt	105	1	1
+4653552	Entire home/apt	144	1	1
+4668327	Entire home/apt	100	1	1
+4677524	Entire home/apt	135	1	1
+4677524	Entire home/apt	135	1	1
+4677524	Entire home/apt	135	1	1
+4678866	Entire home/apt	135	1	1
+4681687	Entire home/apt	58	1	1
+4681687	Entire home/apt	58	1	1
+4681687	Entire home/apt	58	1	1
+4681687	Entire home/apt	58	1	1
+4681687	Entire home/apt	58	1	1
+4681885	Private room	65	1	1
+4681885	Private room	65	1	1
+4694479	Private room	57	1	1
+4694479	Private room	57	1	1
+4694479	Private room	57	1	1
+4694479	Private room	57	1	1
+4694479	Private room	57	1	1
+4694479	Private room	57	1	1
+4694479	Private room	57	1	1
+4694479	Private room	57	1	1
+4694479	Private room	57	1	1
+4694479	Private room	57	1	1
+4694479	Private room	57	1	1
+4694479	Private room	57	1	1
+4701205	Shared room	25	1	1
+4701205	Shared room	25	1	1
+4701205	Shared room	25	1	1
+4701205	Shared room	25	1	1
+4701205	Shared room	25	1	1
+4701205	Shared room	25	1	1
+4701205	Shared room	25	1	1
+4708075	Private room	55	1	1
+4708075	Private room	55	1	1
+4710866	Shared room	33	1	1
+4716486	Entire home/apt	90	1	1
+4725935	Shared room	40	1	1
+4725935	Shared room	40	1	1
+4738971	Entire home/apt	90	1	1
+4738971	Entire home/apt	90	1	1
+4739190	Entire home/apt	106	1	1
+4739190	Entire home/apt	106	1	1
+4739190	Entire home/apt	106	1	1
+4757025	Entire home/apt	168	1	1
+4760472	Entire home/apt	80	1	1
+4760472	Entire home/apt	80	1	1
+4760472	Entire home/apt	80	1	1
+4760472	Entire home/apt	80	1	1
+4760968	Private room	60	1	1
+4760968	Private room	60	1	1
+4766173	Entire home/apt	110	1	1
+4766173	Entire home/apt	110	1	1
+4766173	Entire home/apt	110	1	1
+4768038	Private room	150	1	1
+4768038	Private room	150	1	1
+4768038	Private room	150	1	1
+4777832	Entire home/apt	170	1	1
+4777832	Entire home/apt	170	1	1
+4777832	Entire home/apt	170	1	1
+4777832	Entire home/apt	170	1	1
+4777832	Entire home/apt	170	1	1
+4783585	Entire home/apt	175	1	1
+4783585	Entire home/apt	175	1	1
+4783585	Entire home/apt	175	1	1
+4814894	Entire home/apt	74	1	1
+4814894	Entire home/apt	74	1	1
+4814894	Entire home/apt	74	1	1
+4824581	Private room	150	1	1
+4824581	Private room	150	1	1
+4824581	Private room	150	1	1
+4824581	Private room	150	1	1
+4824581	Private room	150	1	1
+4824581	Private room	150	1	1
+4841586	Entire home/apt	100	1	1
+4857192	Private room	108	1	1
+4863369	Private room	68	1	1
+4863369	Private room	68	1	1
+4863369	Private room	68	1	1
+4863369	Private room	68	1	1
+4909327	Private room	126	1	1
+4909327	Private room	126	1	1
+4909327	Private room	126	1	1
+4922836	Private room	70	1	1
+4922836	Private room	70	1	1
+4922836	Private room	70	1	1
+4922836	Private room	70	1	1
+4922836	Private room	70	1	1
+4922836	Private room	70	1	1
+4922836	Private room	70	1	1
+4922836	Private room	70	1	1
+4922836	Private room	70	1	1
+4968752	Entire home/apt	100	1	1
+4968752	Entire home/apt	100	1	1
+4968752	Entire home/apt	100	1	1
+4968752	Entire home/apt	100	1	1
+4968752	Entire home/apt	100	1	1
+4968752	Entire home/apt	100	1	1
+4968752	Entire home/apt	100	1	1
+4973204	Entire home/apt	165	1	1
+4973204	Entire home/apt	165	1	1
+4993710	Entire home/apt	99	1	1
+5470629	Entire home/apt	120	1	1
+5470943	Entire home/apt	139	1	1
+5471427	Private room	28	1	1
+5471427	Private room	28	1	1
+5489676	Entire home/apt	170	1	1
+5495802	Entire home/apt	125	1	1
+5500398	Private room	66	1	1
+5500752	Entire home/apt	100	1	1
+5524530	Entire home/apt	350	1	1
+5524847	Entire home/apt	135	1	1
+5524847	Entire home/apt	135	1	1
+5524847	Entire home/apt	135	1	1
+5524847	Entire home/apt	135	1	1
+5525073	Entire home/apt	115	1	1
+5525073	Entire home/apt	115	1	1
+5525073	Entire home/apt	115	1	1
+5537446	Entire home/apt	150	1	1
+5538663	Entire home/apt	145	1	1
+5538663	Entire home/apt	145	1	1
+5549211	Entire home/apt	134	1	1
+5549211	Entire home/apt	134	1	1
+5578943	Private room	79	1	1
+5593399	Entire home/apt	120	1	1
+5615620	Entire home/apt	100	1	1
+5615620	Entire home/apt	100	1	1
+5615620	Entire home/apt	100	1	1
+5615620	Entire home/apt	100	1	1
+5615620	Entire home/apt	100	1	1
+5615620	Entire home/apt	100	1	1
+5615620	Entire home/apt	100	1	1
+5615620	Entire home/apt	100	1	1
+5618094	Private room	75	1	1
+5620928	Private room	115	1	1
+5625964	Private room	61	1	1
+5630783	Entire home/apt	100	1	1
+5630783	Entire home/apt	100	1	1
+5640214	Entire home/apt	75	1	1
+5640214	Entire home/apt	75	1	1
+5671843	Private room	65	1	1
+5671843	Private room	65	1	1
+5671843	Private room	65	1	1
+5671843	Private room	65	1	1
+5680462	Entire home/apt	461	1	1
+5682316	Entire home/apt	85	1	1
+5682316	Entire home/apt	85	1	1
+5682316	Entire home/apt	85	1	1
+5682316	Entire home/apt	85	1	1
+5682316	Entire home/apt	85	1	1
+5682316	Entire home/apt	85	1	1
+5682316	Entire home/apt	85	1	1
+5685646	Entire home/apt	140	1	1
+5685646	Entire home/apt	140	1	1
+5685646	Entire home/apt	140	1	1
+5685646	Entire home/apt	140	1	1
+5685646	Entire home/apt	140	1	1
+5685646	Entire home/apt	140	1	1
+5685646	Entire home/apt	140	1	1
+5685646	Entire home/apt	140	1	1
+5685646	Entire home/apt	140	1	1
+5685646	Entire home/apt	140	1	1
+5685646	Entire home/apt	140	1	1
+5685646	Entire home/apt	140	1	1
+5685646	Entire home/apt	140	1	1
+5685646	Entire home/apt	140	1	1
+5685646	Entire home/apt	140	1	1
+5685646	Entire home/apt	140	1	1
+5695717	Entire home/apt	103	1	1
+5705161	Private room	75	1	1
+5705161	Private room	75	1	1
+5705161	Private room	75	1	1
+5705161	Private room	75	1	1
+5705161	Private room	75	1	1
+5705161	Private room	75	1	1
+5705161	Private room	75	1	1
+5705161	Private room	75	1	1
+5760902	Entire home/apt	100	1	1
+5760902	Entire home/apt	100	1	1
+5760902	Entire home/apt	100	1	1
+5761290	Entire home/apt	126	1	1
+5761290	Entire home/apt	126	1	1
+5781547	Entire home/apt	350	1	1
+5781547	Entire home/apt	350	1	1
+5793477	Private room	75	1	1
+5793477	Private room	75	1	1
+5793477	Private room	75	1	1
+5813657	Entire home/apt	300	1	1
+5825701	Entire home/apt	200	1	1
+5825701	Entire home/apt	200	1	1
+5834820	Private room	65	1	1
+5834820	Private room	65	1	1
+5847934	Entire home/apt	230	1	1
+5848400	Entire home/apt	250	1	1
+5862552	Entire home/apt	325	1	1
+5863558	Private room	64	1	1
+5873892	Private room	50	1	1
+5882923	Entire home/apt	95	1	1
+5882923	Entire home/apt	95	1	1
+5882923	Entire home/apt	95	1	1
+5882923	Entire home/apt	95	1	1
+5882923	Entire home/apt	95	1	1
+5892185	Private room	75	1	1
+5892185	Private room	75	1	1
+5893969	Entire home/apt	80	1	1
+5905958	Entire home/apt	95	1	1
+5918259	Entire home/apt	100	1	1
+5918259	Entire home/apt	100	1	1
+5927083	Private room	80	1	1
+4760968	Private room	60	1	1
+4768038	Private room	150	1	1
+4768038	Private room	150	1	1
+4776823	Entire home/apt	125	1	1
+4776823	Entire home/apt	125	1	1
+4776823	Entire home/apt	125	1	1
+4776823	Entire home/apt	125	1	1
+4776823	Entire home/apt	125	1	1
+4776823	Entire home/apt	125	1	1
+4776823	Entire home/apt	125	1	1
+4776823	Entire home/apt	125	1	1
+4776823	Entire home/apt	125	1	1
+4776823	Entire home/apt	125	1	1
+4777832	Entire home/apt	170	1	1
+4777832	Entire home/apt	170	1	1
+4777832	Entire home/apt	170	1	1
+4777832	Entire home/apt	170	1	1
+4783585	Entire home/apt	175	1	1
+4783585	Entire home/apt	175	1	1
+4784639	Entire home/apt	155	1	1
+4784639	Entire home/apt	155	1	1
+4784639	Entire home/apt	155	1	1
+4803403	Entire home/apt	85	1	1
+4825472	Private room	35	1	1
+4825472	Private room	35	1	1
+4825472	Private room	35	1	1
+4848255	Private room	55	1	1
+4857192	Private room	108	1	1
+4857192	Private room	108	1	1
+4863369	Private room	68	1	1
+4863369	Private room	68	1	1
+4863369	Private room	68	1	1
+4863369	Private room	68	1	1
+4863369	Private room	68	1	1
+4863369	Private room	68	1	1
+4863369	Private room	68	1	1
+4863369	Private room	68	1	1
+4863369	Private room	68	1	1
+4863369	Private room	68	1	1
+4868135	Entire home/apt	149	1	1
+4868135	Entire home/apt	149	1	1
+4868135	Entire home/apt	149	1	1
+4909327	Private room	126	1	1
+4910140	Private room	39	1	1
+4910140	Private room	39	1	1
+4922836	Private room	70	1	1
+4922836	Private room	70	1	1
+4922836	Private room	70	1	1
+4936647	Entire home/apt	120	1	1
+4947002	Entire home/apt	151	1	1
+4947002	Entire home/apt	151	1	1
+4947002	Entire home/apt	151	1	1
+4947002	Entire home/apt	151	1	1
+5019444	Entire home/apt	110	1	1
+5019444	Entire home/apt	110	1	1
+5021081	Entire home/apt	222	1	1
+5021969	Entire home/apt	170	1	1
+5021969	Entire home/apt	170	1	1
+5029665	Entire home/apt	112	1	1
+5031285	Shared room	40	1	1
+5031285	Shared room	40	1	1
+5031285	Shared room	40	1	1
+5031285	Shared room	40	1	1
+5031285	Shared room	40	1	1
+5031285	Shared room	40	1	1
+5031285	Shared room	40	1	1
+5031285	Shared room	40	1	1
+5031285	Shared room	40	1	1
+5031285	Shared room	40	1	1
+5031285	Shared room	40	1	1
+5031285	Shared room	40	1	1
+5031285	Shared room	40	1	1
+5031285	Shared room	40	1	1
+5031285	Shared room	40	1	1
+5031357	Private room	70	1	1
+5052459	Entire home/apt	149	1	1
+5052459	Entire home/apt	149	1	1
+5056580	Entire home/apt	99	1	1
+5056580	Entire home/apt	99	1	1
+5056580	Entire home/apt	99	1	1
+5056580	Entire home/apt	99	1	1
+5056580	Entire home/apt	99	1	1
+5058302	Entire home/apt	155	1	1
+5058302	Entire home/apt	155	1	1
+5060388	Entire home/apt	95	1	1
+5060388	Entire home/apt	95	1	1
+5060388	Entire home/apt	95	1	1
+5060388	Entire home/apt	95	1	1
+5060388	Entire home/apt	95	1	1
+5061411	Entire home/apt	400	1	1
+5062445	Private room	45	1	1
+5062445	Private room	45	1	1
+5067177	Private room	47	1	1
+5069495	Entire home/apt	95	1	1
+5069495	Entire home/apt	95	1	1
+5069495	Entire home/apt	95	1	1
+5069495	Entire home/apt	95	1	1
+5123904	Entire home/apt	325	1	1
+5126446	Entire home/apt	115	1	1
+5127136	Entire home/apt	139	1	1
+5127136	Entire home/apt	139	1	1
+5127136	Entire home/apt	139	1	1
+5127136	Entire home/apt	139	1	1
+5127136	Entire home/apt	139	1	1
+5128160	Entire home/apt	575	1	1
+5143441	Entire home/apt	110	1	1
+5143441	Entire home/apt	110	1	1
+5143441	Entire home/apt	110	1	1
+5160893	Private room	80	1	1
+5930473	Entire home/apt	100	1	1
+5931372	Entire home/apt	129	1	1
+5956968	Private room	120	1	1
+5956968	Private room	120	1	1
+5957039	Entire home/apt	110	1	1
+5958194	Private room	45	1	1
+5958194	Private room	45	1	1
+5958194	Private room	45	1	1
+5958674	Private room	56	1	1
+5958674	Private room	56	1	1
+5959816	Entire home/apt	95	1	1
+5959816	Entire home/apt	95	1	1
+5959816	Entire home/apt	95	1	1
+5959816	Entire home/apt	95	1	1
+5977556	Private room	120	1	1
+5977556	Private room	120	1	1
+5978216	Private room	65	1	1
+5978498	Entire home/apt	175	1	1
+5978498	Entire home/apt	175	1	1
+5981343	Entire home/apt	160	1	1
+5981343	Entire home/apt	160	1	1
+5981343	Entire home/apt	160	1	1
+5981343	Entire home/apt	160	1	1
+5981343	Entire home/apt	160	1	1
+5981343	Entire home/apt	160	1	1
+5981343	Entire home/apt	160	1	1
+5989894	Entire home/apt	90	1	1
+5989894	Entire home/apt	90	1	1
+5989894	Entire home/apt	90	1	1
+5991139	Entire home/apt	80	1	1
+6018416	Entire home/apt	350	1	1
+6018416	Entire home/apt	350	1	1
+6018416	Entire home/apt	350	1	1
+6073437	Entire home/apt	119	1	1
+6077760	Private room	130	1	1
+6087451	Entire home/apt	105	1	1
+6087451	Entire home/apt	105	1	1
+6103108	Private room	150	1	1
+6105021	Entire home/apt	99	1	1
+6105021	Entire home/apt	99	1	1
+6105021	Entire home/apt	99	1	1
+6108006	Entire home/apt	127	1	1
+6108006	Entire home/apt	127	1	1
+6115704	Entire home/apt	325	1	1
+6115704	Entire home/apt	325	1	1
+6118291	Private room	95	1	1
+6118291	Private room	95	1	1
+6120046	Entire home/apt	120	1	1
+6120046	Entire home/apt	120	1	1
+6131411	Entire home/apt	150	1	1
+6134382	Private room	59	1	1
+6153532	Private room	118	1	1
+6154478	Entire home/apt	111	1	1
+6156470	Private room	90	1	1
+6168975	Entire home/apt	188	1	1
+6168975	Entire home/apt	188	1	1
+6168975	Entire home/apt	188	1	1
+6179956	Private room	75	1	1
+6179956	Private room	75	1	1
+6179956	Private room	75	1	1
+6179956	Private room	75	1	1
+6179956	Private room	75	1	1
+6202214	Entire home/apt	104	1	1
+6211882	Private room	60	1	1
+6211882	Private room	60	1	1
+6218849	Private room	29	1	1
+6228959	Entire home/apt	128	1	1
+6228959	Entire home/apt	128	1	1
+6239108	Entire home/apt	75	1	1
+6239108	Entire home/apt	75	1	1
+6239108	Entire home/apt	75	1	1
+6246861	Entire home/apt	115	1	1
+6246861	Entire home/apt	115	1	1
+6246861	Entire home/apt	115	1	1
+6246861	Entire home/apt	115	1	1
+6246861	Entire home/apt	115	1	1
+6246861	Entire home/apt	115	1	1
+6246861	Entire home/apt	115	1	1
+6246861	Entire home/apt	115	1	1
+6249458	Entire home/apt	259	1	1
+6263270	Entire home/apt	140	1	1
+6278191	Entire home/apt	113	1	1
+6278191	Entire home/apt	113	1	1
+6278191	Entire home/apt	113	1	1
+6278191	Entire home/apt	113	1	1
+6278361	Shared room	40	1	1
+6278361	Shared room	40	1	1
+6278361	Shared room	40	1	1
+6278680	Entire home/apt	100	1	1
+6278680	Entire home/apt	100	1	1
+6278680	Entire home/apt	100	1	1
+6278680	Entire home/apt	100	1	1
+6278680	Entire home/apt	100	1	1
+6315269	Entire home/apt	230	1	1
+6325283	Entire home/apt	109	1	1
+6325283	Entire home/apt	109	1	1
+6327662	Entire home/apt	90	1	1
+6335327	Private room	59	1	1
+6349598	Entire home/apt	135	1	1
+6349598	Entire home/apt	135	1	1
+6360895	Entire home/apt	109	1	1
+6360895	Entire home/apt	109	1	1
+6360895	Entire home/apt	109	1	1
+6360895	Entire home/apt	109	1	1
+6361863	Entire home/apt	145	1	1
+6361863	Entire home/apt	145	1	1
+6361863	Entire home/apt	145	1	1
+5160893	Private room	80	1	1
+5160893	Private room	80	1	1
+5164194	Private room	95	1	1
+5164581	Private room	40	1	1
+5164581	Private room	40	1	1
+5164581	Private room	40	1	1
+5164581	Private room	40	1	1
+5164581	Private room	40	1	1
+5164581	Private room	40	1	1
+5175631	Entire home/apt	165	1	1
+5183164	Private room	47	1	1
+5195064	Private room	50	1	1
+5195064	Private room	50	1	1
+5195064	Private room	50	1	1
+5195064	Private room	50	1	1
+5195064	Private room	50	1	1
+5219336	Entire home/apt	100	1	1
+5219336	Entire home/apt	100	1	1
+5236979	Private room	49	1	1
+5236979	Private room	49	1	1
+5236979	Private room	49	1	1
+5236979	Private room	49	1	1
+5236979	Private room	49	1	1
+5241773	Private room	59	1	1
+5241773	Private room	59	1	1
+5241773	Private room	59	1	1
+5241773	Private room	59	1	1
+5241773	Private room	59	1	1
+5242148	Entire home/apt	199	1	1
+5242148	Entire home/apt	199	1	1
+5242148	Entire home/apt	199	1	1
+5242148	Entire home/apt	199	1	1
+5252877	Entire home/apt	149	1	1
+5252877	Entire home/apt	149	1	1
+5262750	Entire home/apt	125	1	1
+5262750	Entire home/apt	125	1	1
+5262750	Entire home/apt	125	1	1
+5262750	Entire home/apt	125	1	1
+5262750	Entire home/apt	125	1	1
+5297143	Entire home/apt	200	1	1
+5308875	Entire home/apt	68	1	1
+5310503	Shared room	33	1	1
+5324459	Private room	54	1	1
+5324459	Private room	54	1	1
+5324459	Private room	54	1	1
+5330475	Private room	100	1	1
+5364119	Private room	63	1	1
+5364119	Private room	63	1	1
+5364414	Entire home/apt	200	1	1
+5383192	Entire home/apt	160	1	1
+5386937	Entire home/apt	120	1	1
+5386937	Entire home/apt	120	1	1
+5386937	Entire home/apt	120	1	1
+5386937	Entire home/apt	120	1	1
+5403847	Private room	55	1	1
+5403847	Private room	55	1	1
+5405643	Entire home/apt	89	1	1
+5405643	Entire home/apt	89	1	1
+5405643	Entire home/apt	89	1	1
+5405643	Entire home/apt	89	1	1
+5415077	Private room	95	1	1
+5415077	Private room	95	1	1
+5415077	Private room	95	1	1
+5422159	Entire home/apt	99	1	1
+5422159	Entire home/apt	99	1	1
+5446180	Entire home/apt	165	1	1
+5470943	Entire home/apt	139	1	1
+5470943	Entire home/apt	139	1	1
+5473498	Private room	35	1	1
+5473498	Private room	35	1	1
+5500398	Private room	66	1	1
+5500398	Private room	66	1	1
+5500398	Private room	66	1	1
+5510720	Entire home/apt	125	1	1
+5510720	Entire home/apt	125	1	1
+5510720	Entire home/apt	125	1	1
+5510720	Entire home/apt	125	1	1
+5510720	Entire home/apt	125	1	1
+5510720	Entire home/apt	125	1	1
+5510720	Entire home/apt	125	1	1
+5510720	Entire home/apt	125	1	1
+5548982	Entire home/apt	59	1	1
+5548982	Entire home/apt	59	1	1
+5548982	Entire home/apt	59	1	1
+5548982	Entire home/apt	59	1	1
+5548982	Entire home/apt	59	1	1
+5548982	Entire home/apt	59	1	1
+5548982	Entire home/apt	59	1	1
+5548982	Entire home/apt	59	1	1
+5562674	Entire home/apt	79	1	1
+5562674	Entire home/apt	79	1	1
+5562674	Entire home/apt	79	1	1
+5562674	Entire home/apt	79	1	1
+5562674	Entire home/apt	79	1	1
+5562674	Entire home/apt	79	1	1
+5562674	Entire home/apt	79	1	1
+5562674	Entire home/apt	79	1	1
+5562674	Entire home/apt	79	1	1
+5562674	Entire home/apt	79	1	1
+5562674	Entire home/apt	79	1	1
+5562674	Entire home/apt	79	1	1
+5562674	Entire home/apt	79	1	1
+5562674	Entire home/apt	79	1	1
+5562674	Entire home/apt	79	1	1
+5578943	Private room	79	1	1
+5578943	Private room	79	1	1
+5578943	Private room	79	1	1
+6361863	Entire home/apt	145	1	1
+6361863	Entire home/apt	145	1	1
+6361863	Entire home/apt	145	1	1
+6362362	Entire home/apt	600	1	1
+6362918	Entire home/apt	145	1	1
+6362918	Entire home/apt	145	1	1
+6390214	Entire home/apt	110	1	1
+6400000	Entire home/apt	160	1	1
+6400000	Entire home/apt	160	1	1
+6401209	Entire home/apt	338	1	1
+6401209	Entire home/apt	338	1	1
+6403878	Entire home/apt	106	1	1
+6403878	Entire home/apt	106	1	1
+6403878	Entire home/apt	106	1	1
+6403878	Entire home/apt	106	1	1
+6403878	Entire home/apt	106	1	1
+6403878	Entire home/apt	106	1	1
+6403878	Entire home/apt	106	1	1
+6403878	Entire home/apt	106	1	1
+6404427	Entire home/apt	275	1	1
+6404427	Entire home/apt	275	1	1
+6404427	Entire home/apt	275	1	1
+6404427	Entire home/apt	275	1	1
+6412566	Entire home/apt	95	1	1
+6412566	Entire home/apt	95	1	1
+6423204	Entire home/apt	115	1	1
+6423204	Entire home/apt	115	1	1
+6423204	Entire home/apt	115	1	1
+6423204	Entire home/apt	115	1	1
+6423204	Entire home/apt	115	1	1
+6423488	Entire home/apt	149	1	1
+6425537	Entire home/apt	138	1	1
+6436727	Entire home/apt	150	1	1
+6436727	Entire home/apt	150	1	1
+6436772	Entire home/apt	350	1	1
+6436976	Entire home/apt	99	1	1
+6436976	Entire home/apt	99	1	1
+6436976	Entire home/apt	99	1	1
+6436976	Entire home/apt	99	1	1
+6436976	Entire home/apt	99	1	1
+6436976	Entire home/apt	99	1	1
+6448099	Entire home/apt	215	1	1
+6453383	Private room	69	1	1
+6453383	Private room	69	1	1
+6466388	Private room	74	1	1
+6466388	Private room	74	1	1
+6466388	Private room	74	1	1
+6474341	Entire home/apt	150	1	1
+6474341	Entire home/apt	150	1	1
+6475289	Entire home/apt	159	1	1
+6475289	Entire home/apt	159	1	1
+6475289	Entire home/apt	159	1	1
+6475289	Entire home/apt	159	1	1
+6475289	Entire home/apt	159	1	1
+6477225	Entire home/apt	100	1	1
+6477225	Entire home/apt	100	1	1
+6477225	Entire home/apt	100	1	1
+6481764	Entire home/apt	220	1	1
+6492880	Entire home/apt	95	1	1
+6494181	Entire home/apt	215	1	1
+6512378	Private room	55	1	1
+6512378	Private room	55	1	1
+6512979	Entire home/apt	75	1	1
+6514446	Entire home/apt	151	1	1
+6514446	Entire home/apt	151	1	1
+6523393	Entire home/apt	95	1	1
+6523393	Entire home/apt	95	1	1
+6543677	Private room	50	1	1
+6543677	Private room	50	1	1
+6555128	Entire home/apt	160	1	1
+6555128	Entire home/apt	160	1	1
+6555393	Entire home/apt	93	1	1
+6557297	Private room	60	1	1
+6557297	Private room	60	1	1
+6557767	Private room	65	1	1
+6557767	Private room	65	1	1
+6557767	Private room	65	1	1
+6557767	Private room	65	1	1
+6557767	Private room	65	1	1
+6562393	Entire home/apt	348	1	1
+6577295	Private room	69	1	1
+6577295	Private room	69	1	1
+6577295	Private room	69	1	1
+6577295	Private room	69	1	1
+6591879	Entire home/apt	225	1	1
+6592178	Entire home/apt	300	1	1
+6599960	Entire home/apt	105	1	1
+6603376	Entire home/apt	252	1	1
+6603376	Entire home/apt	252	1	1
+6603376	Entire home/apt	252	1	1
+6603376	Entire home/apt	252	1	1
+6610942	Private room	75	1	1
+6610942	Private room	75	1	1
+6610942	Private room	75	1	1
+6613601	Entire home/apt	125	1	1
+6621924	Entire home/apt	107	1	1
+6623079	Private room	63	1	1
+6627403	Private room	100	1	1
+6627403	Private room	100	1	1
+6627403	Private room	100	1	1
+6629132	Private room	122	1	1
+6644854	Entire home/apt	250	1	1
+6644854	Entire home/apt	250	1	1
+6644854	Entire home/apt	250	1	1
+6644854	Entire home/apt	250	1	1
+6644854	Entire home/apt	250	1	1
+6646843	Entire home/apt	99	1	1
+4820795	Entire home/apt	129	1	1
+4820795	Entire home/apt	129	1	1
+4820795	Entire home/apt	129	1	1
+4832481	Private room	57	1	1
+4832481	Private room	57	1	1
+4848255	Private room	55	1	1
+4848255	Private room	55	1	1
+4862719	Private room	55	1	1
+4862719	Private room	55	1	1
+4862719	Private room	55	1	1
+4862719	Private room	55	1	1
+4862719	Private room	55	1	1
+4862719	Private room	55	1	1
+4869458	Shared room	37	1	1
+4869458	Shared room	37	1	1
+4871348	Private room	70	1	1
+4871348	Private room	70	1	1
+4871348	Private room	70	1	1
+4871348	Private room	70	1	1
+4879013	Entire home/apt	109	1	1
+4879013	Entire home/apt	109	1	1
+4879013	Entire home/apt	109	1	1
+4879013	Entire home/apt	109	1	1
+4879013	Entire home/apt	109	1	1
+4933447	Private room	99	1	1
+4933447	Private room	99	1	1
+4933447	Private room	99	1	1
+4933447	Private room	99	1	1
+4933447	Private room	99	1	1
+4933447	Private room	99	1	1
+4933447	Private room	99	1	1
+4940379	Entire home/apt	250	1	1
+4940491	Entire home/apt	109	1	1
+4940491	Entire home/apt	109	1	1
+4947002	Entire home/apt	151	1	1
+4947002	Entire home/apt	151	1	1
+4988679	Entire home/apt	189	1	1
+4988679	Entire home/apt	189	1	1
+4988679	Entire home/apt	189	1	1
+4996554	Entire home/apt	119	1	1
+4996554	Entire home/apt	119	1	1
+5006092	Entire home/apt	125	1	1
+5006092	Entire home/apt	125	1	1
+5006092	Entire home/apt	125	1	1
+5006092	Entire home/apt	125	1	1
+5006092	Entire home/apt	125	1	1
+5006092	Entire home/apt	125	1	1
+5006092	Entire home/apt	125	1	1
+5019444	Entire home/apt	110	1	1
+5019444	Entire home/apt	110	1	1
+5019444	Entire home/apt	110	1	1
+5019444	Entire home/apt	110	1	1
+5019444	Entire home/apt	110	1	1
+5019444	Entire home/apt	110	1	1
+5022572	Entire home/apt	375	1	1
+5040885	Entire home/apt	300	1	1
+5048597	Entire home/apt	195	1	1
+5048597	Entire home/apt	195	1	1
+5056580	Entire home/apt	99	1	1
+5056580	Entire home/apt	99	1	1
+5056580	Entire home/apt	99	1	1
+5056580	Entire home/apt	99	1	1
+5056580	Entire home/apt	99	1	1
+5056580	Entire home/apt	99	1	1
+5056580	Entire home/apt	99	1	1
+5056580	Entire home/apt	99	1	1
+5056580	Entire home/apt	99	1	1
+5056580	Entire home/apt	99	1	1
+5056580	Entire home/apt	99	1	1
+5056580	Entire home/apt	99	1	1
+5058086	Entire home/apt	145	1	1
+5078129	Entire home/apt	95	1	1
+5078244	Private room	39	1	1
+5078244	Private room	39	1	1
+5078244	Private room	39	1	1
+5078244	Private room	39	1	1
+5078244	Private room	39	1	1
+5078244	Private room	39	1	1
+5078244	Private room	39	1	1
+5078244	Private room	39	1	1
+5127136	Entire home/apt	139	1	1
+5127136	Entire home/apt	139	1	1
+5127136	Entire home/apt	139	1	1
+5160893	Private room	80	1	1
+5160893	Private room	80	1	1
+5160893	Private room	80	1	1
+5160893	Private room	80	1	1
+5160893	Private room	80	1	1
+5160893	Private room	80	1	1
+5160893	Private room	80	1	1
+5160893	Private room	80	1	1
+5160893	Private room	80	1	1
+5160893	Private room	80	1	1
+5160893	Private room	80	1	1
+5160893	Private room	80	1	1
+5160893	Private room	80	1	1
+5160893	Private room	80	1	1
+5160893	Private room	80	1	1
+5160893	Private room	80	1	1
+5160893	Private room	80	1	1
+5163047	Private room	75	1	1
+5164581	Private room	40	1	1
+5164581	Private room	40	1	1
+5164581	Private room	40	1	1
+5174876	Entire home/apt	85	1	1
+5174876	Entire home/apt	85	1	1
+5174876	Entire home/apt	85	1	1
+5362889	Entire home/apt	175	1	1
+5362889	Entire home/apt	175	1	1
+5362889	Entire home/apt	175	1	1
+5362889	Entire home/apt	175	1	1
+5362889	Entire home/apt	175	1	1
+5362889	Entire home/apt	175	1	1
+5362889	Entire home/apt	175	1	1
+5364414	Entire home/apt	200	1	1
+5364414	Entire home/apt	200	1	1
+5376433	Private room	54	1	1
+5376433	Private room	54	1	1
+5376433	Private room	54	1	1
+5376433	Private room	54	1	1
+5376433	Private room	54	1	1
+5376433	Private room	54	1	1
+5376433	Private room	54	1	1
+5403847	Private room	55	1	1
+5403847	Private room	55	1	1
+5403847	Private room	55	1	1
+5415077	Private room	95	1	1
+5415077	Private room	95	1	1
+5415077	Private room	95	1	1
+5415077	Private room	95	1	1
+5415077	Private room	95	1	1
+5415077	Private room	95	1	1
+5415077	Private room	95	1	1
+5433597	Entire home/apt	250	1	1
+5470629	Entire home/apt	120	1	1
+5470629	Entire home/apt	120	1	1
+5470629	Entire home/apt	120	1	1
+5470629	Entire home/apt	120	1	1
+5470629	Entire home/apt	120	1	1
+5470629	Entire home/apt	120	1	1
+5470943	Entire home/apt	139	1	1
+5470943	Entire home/apt	139	1	1
+5471427	Private room	28	1	1
+5473498	Private room	35	1	1
+5524847	Entire home/apt	135	1	1
+5524847	Entire home/apt	135	1	1
+5534463	Entire home/apt	775	1	1
+5534463	Entire home/apt	775	1	1
+5537446	Entire home/apt	150	1	1
+5538663	Entire home/apt	145	1	1
+5548982	Entire home/apt	59	1	1
+5548982	Entire home/apt	59	1	1
+5548982	Entire home/apt	59	1	1
+5548982	Entire home/apt	59	1	1
+5548982	Entire home/apt	59	1	1
+5563136	Entire home/apt	100	1	1
+5578943	Private room	79	1	1
+5578943	Private room	79	1	1
+5580773	Entire home/apt	70	1	1
+5607404	Entire home/apt	125	1	1
+5620306	Private room	70	1	1
+5625964	Private room	61	1	1
+5633607	Private room	39	1	1
+5633607	Private room	39	1	1
+5633607	Private room	39	1	1
+5633607	Private room	39	1	1
+5633607	Private room	39	1	1
+5633607	Private room	39	1	1
+5633607	Private room	39	1	1
+5633607	Private room	39	1	1
+5633607	Private room	39	1	1
+5640214	Entire home/apt	75	1	1
+5640214	Entire home/apt	75	1	1
+5640722	Private room	60	1	1
+5640722	Private room	60	1	1
+5640722	Private room	60	1	1
+5651254	Private room	95	1	1
+5685908	Private room	97	1	1
+5685908	Private room	97	1	1
+5686435	Entire home/apt	445	1	1
+5695717	Entire home/apt	103	1	1
+5695717	Entire home/apt	103	1	1
+5695717	Entire home/apt	103	1	1
+5705161	Private room	75	1	1
+5705161	Private room	75	1	1
+5705161	Private room	75	1	1
+5728135	Private room	84	1	1
+5728135	Private room	84	1	1
+5736082	Shared room	45	1	1
+5744931	Entire home/apt	110	1	1
+5744931	Entire home/apt	110	1	1
+5749958	Entire home/apt	180	1	1
+5749958	Entire home/apt	180	1	1
+5760902	Entire home/apt	100	1	1
+5760902	Entire home/apt	100	1	1
+5760902	Entire home/apt	100	1	1
+5760902	Entire home/apt	100	1	1
+5760902	Entire home/apt	100	1	1
+5174876	Entire home/apt	85	1	1
+5760902	Entire home/apt	100	1	1
+5760902	Entire home/apt	100	1	1
+5174876	Entire home/apt	85	1	1
+5760902	Entire home/apt	100	1	1
+5784320	Entire home/apt	181	1	1
+5174876	Entire home/apt	85	1	1
+5784320	Entire home/apt	181	1	1
+5174876	Entire home/apt	85	1	1
+5813657	Entire home/apt	300	1	1
+5174876	Entire home/apt	85	1	1
+5838129	Private room	65	1	1
+5174876	Entire home/apt	85	1	1
+5838129	Private room	65	1	1
+5174876	Entire home/apt	85	1	1
+5838129	Private room	65	1	1
+4993710	Entire home/apt	99	1	1
+4993710	Entire home/apt	99	1	1
+4993710	Entire home/apt	99	1	1
+4996554	Entire home/apt	119	1	1
+5014835	Entire home/apt	225	1	1
+5021969	Entire home/apt	170	1	1
+5021969	Entire home/apt	170	1	1
+5021969	Entire home/apt	170	1	1
+5021969	Entire home/apt	170	1	1
+5021969	Entire home/apt	170	1	1
+5030361	Private room	90	1	1
+5030361	Private room	90	1	1
+5030361	Private room	90	1	1
+5030361	Private room	90	1	1
+5030361	Private room	90	1	1
+5030361	Private room	90	1	1
+5051529	Entire home/apt	135	1	1
+5051529	Entire home/apt	135	1	1
+5052459	Entire home/apt	149	1	1
+5052459	Entire home/apt	149	1	1
+5052459	Entire home/apt	149	1	1
+5052459	Entire home/apt	149	1	1
+5052459	Entire home/apt	149	1	1
+5057466	Private room	84	1	1
+5057466	Private room	84	1	1
+5057466	Private room	84	1	1
+5057466	Private room	84	1	1
+5058302	Entire home/apt	155	1	1
+5060388	Entire home/apt	95	1	1
+5060388	Entire home/apt	95	1	1
+5060388	Entire home/apt	95	1	1
+5060388	Entire home/apt	95	1	1
+5061411	Entire home/apt	400	1	1
+5061566	Entire home/apt	175	1	1
+5069495	Entire home/apt	95	1	1
+5069495	Entire home/apt	95	1	1
+5078876	Entire home/apt	225	1	1
+5078876	Entire home/apt	225	1	1
+5078876	Entire home/apt	225	1	1
+5096363	Private room	72	1	1
+5096363	Private room	72	1	1
+5096363	Private room	72	1	1
+5104918	Entire home/apt	160	1	1
+5104918	Entire home/apt	160	1	1
+5143441	Entire home/apt	110	1	1
+5143441	Entire home/apt	110	1	1
+5143441	Entire home/apt	110	1	1
+5143441	Entire home/apt	110	1	1
+5143441	Entire home/apt	110	1	1
+5143441	Entire home/apt	110	1	1
+5143441	Entire home/apt	110	1	1
+5143441	Entire home/apt	110	1	1
+5143441	Entire home/apt	110	1	1
+5183164	Private room	47	1	1
+5183164	Private room	47	1	1
+5194332	Entire home/apt	125	1	1
+5194332	Entire home/apt	125	1	1
+5195064	Private room	50	1	1
+5195064	Private room	50	1	1
+5195064	Private room	50	1	1
+5195064	Private room	50	1	1
+5195064	Private room	50	1	1
+5205984	Private room	60	1	1
+5205984	Private room	60	1	1
+5236979	Private room	49	1	1
+5236979	Private room	49	1	1
+5236979	Private room	49	1	1
+5240694	Entire home/apt	115	1	1
+5240694	Entire home/apt	115	1	1
+5242148	Entire home/apt	199	1	1
+5242148	Entire home/apt	199	1	1
+5242148	Entire home/apt	199	1	1
+5259194	Private room	69	1	1
+5259194	Private room	69	1	1
+5259194	Private room	69	1	1
+5259194	Private room	69	1	1
+5259194	Private room	69	1	1
+5259194	Private room	69	1	1
+5259194	Private room	69	1	1
+5259194	Private room	69	1	1
+5259194	Private room	69	1	1
+5259194	Private room	69	1	1
+5259194	Private room	69	1	1
+5259194	Private room	69	1	1
+5259194	Private room	69	1	1
+5259194	Private room	69	1	1
+5259194	Private room	69	1	1
+5259194	Private room	69	1	1
+5259194	Private room	69	1	1
+5262750	Entire home/apt	125	1	1
+5289293	Entire home/apt	115	1	1
+5289293	Entire home/apt	115	1	1
+5289293	Entire home/apt	115	1	1
+5289293	Entire home/apt	115	1	1
+5289293	Entire home/apt	115	1	1
+5308875	Entire home/apt	68	1	1
+5310503	Shared room	33	1	1
+5324459	Private room	54	1	1
+5325214	Entire home/apt	60	1	1
+5325214	Entire home/apt	60	1	1
+5325214	Entire home/apt	60	1	1
+5337848	Entire home/apt	110	1	1
+5337848	Entire home/apt	110	1	1
+5337848	Entire home/apt	110	1	1
+5337848	Entire home/apt	110	1	1
+5337848	Entire home/apt	110	1	1
+5337848	Entire home/apt	110	1	1
+5175464	Entire home/apt	90	1	1
+5175464	Entire home/apt	90	1	1
+5175464	Entire home/apt	90	1	1
+5175464	Entire home/apt	90	1	1
+5175631	Entire home/apt	165	1	1
+5175631	Entire home/apt	165	1	1
+5175631	Entire home/apt	165	1	1
+5175631	Entire home/apt	165	1	1
+5183938	Entire home/apt	149	1	1
+5183938	Entire home/apt	149	1	1
+5183938	Entire home/apt	149	1	1
+5183938	Entire home/apt	149	1	1
+5183938	Entire home/apt	149	1	1
+5183938	Entire home/apt	149	1	1
+5183938	Entire home/apt	149	1	1
+5194332	Entire home/apt	125	1	1
+5213468	Entire home/apt	237	1	1
+5213468	Entire home/apt	237	1	1
+5218550	Private room	87	1	1
+5218550	Private room	87	1	1
+5218550	Private room	87	1	1
+5218550	Private room	87	1	1
+5218550	Private room	87	1	1
+5218550	Private room	87	1	1
+5218550	Private room	87	1	1
+5218550	Private room	87	1	1
+5218550	Private room	87	1	1
+5218550	Private room	87	1	1
+5218550	Private room	87	1	1
+5218550	Private room	87	1	1
+5218550	Private room	87	1	1
+5218550	Private room	87	1	1
+5219336	Entire home/apt	100	1	1
+5241773	Private room	59	1	1
+5241773	Private room	59	1	1
+5241773	Private room	59	1	1
+5241773	Private room	59	1	1
+5241773	Private room	59	1	1
+5241773	Private room	59	1	1
+5241773	Private room	59	1	1
+5241773	Private room	59	1	1
+5242712	Entire home/apt	60	1	1
+5242712	Entire home/apt	60	1	1
+5242712	Entire home/apt	60	1	1
+5249093	Entire home/apt	175	1	1
+5249093	Entire home/apt	175	1	1
+5249093	Entire home/apt	175	1	1
+5249093	Entire home/apt	175	1	1
+5249093	Entire home/apt	175	1	1
+5252543	Private room	54	1	1
+5261239	Entire home/apt	103	1	1
+5261239	Entire home/apt	103	1	1
+5261239	Entire home/apt	103	1	1
+5261239	Entire home/apt	103	1	1
+5261239	Entire home/apt	103	1	1
+5261239	Entire home/apt	103	1	1
+5261239	Entire home/apt	103	1	1
+5261239	Entire home/apt	103	1	1
+5272327	Entire home/apt	105	1	1
+5272327	Entire home/apt	105	1	1
+5272327	Entire home/apt	105	1	1
+5272327	Entire home/apt	105	1	1
+5272327	Entire home/apt	105	1	1
+5277900	Entire home/apt	199	1	1
+5299060	Entire home/apt	65	1	1
+5299060	Entire home/apt	65	1	1
+5299060	Entire home/apt	65	1	1
+5299060	Entire home/apt	65	1	1
+5299060	Entire home/apt	65	1	1
+5299060	Entire home/apt	65	1	1
+5299060	Entire home/apt	65	1	1
+5299060	Entire home/apt	65	1	1
+5299060	Entire home/apt	65	1	1
+5299060	Entire home/apt	65	1	1
+5299060	Entire home/apt	65	1	1
+5299060	Entire home/apt	65	1	1
+5299060	Entire home/apt	65	1	1
+5299060	Entire home/apt	65	1	1
+5304739	Entire home/apt	49	1	1
+5304739	Entire home/apt	49	1	1
+5304739	Entire home/apt	49	1	1
+5304739	Entire home/apt	49	1	1
+5304739	Entire home/apt	49	1	1
+5308339	Private room	70	1	1
+5308339	Private room	70	1	1
+5308339	Private room	70	1	1
+5308429	Private room	53	1	1
+5308429	Private room	53	1	1
+5308429	Private room	53	1	1
+5308429	Private room	53	1	1
+5308429	Private room	53	1	1
+5319948	Private room	65	1	1
+5319948	Private room	65	1	1
+5325809	Entire home/apt	98	1	1
+5325809	Entire home/apt	98	1	1
+5325809	Entire home/apt	98	1	1
+5325809	Entire home/apt	98	1	1
+5328449	Entire home/apt	150	1	1
+5328449	Entire home/apt	150	1	1
+5328449	Entire home/apt	150	1	1
+5337848	Entire home/apt	110	1	1
+5337848	Entire home/apt	110	1	1
+5353512	Private room	42	1	1
+5365612	Private room	50	1	1
+5372156	Entire home/apt	139	1	1
+5372156	Entire home/apt	139	1	1
+5372156	Entire home/apt	139	1	1
+5838129	Private room	65	1	1
+5848330	Entire home/apt	100	1	1
+5852034	Entire home/apt	99	1	1
+5852034	Entire home/apt	99	1	1
+5852034	Entire home/apt	99	1	1
+5852034	Entire home/apt	99	1	1
+5852034	Entire home/apt	99	1	1
+5852034	Entire home/apt	99	1	1
+5852034	Entire home/apt	99	1	1
+5852034	Entire home/apt	99	1	1
+5873892	Private room	50	1	1
+5873892	Private room	50	1	1
+5873892	Private room	50	1	1
+5892185	Private room	75	1	1
+5892185	Private room	75	1	1
+5892185	Private room	75	1	1
+5892185	Private room	75	1	1
+5892185	Private room	75	1	1
+5892185	Private room	75	1	1
+5900224	Entire home/apt	150	1	1
+5900224	Entire home/apt	150	1	1
+5900224	Entire home/apt	150	1	1
+5918259	Entire home/apt	100	1	1
+5931372	Entire home/apt	129	1	1
+5941598	Entire home/apt	129	1	1
+5941598	Entire home/apt	129	1	1
+5941598	Entire home/apt	129	1	1
+5948003	Private room	55	1	1
+5948003	Private room	55	1	1
+5948003	Private room	55	1	1
+5969872	Private room	43	1	1
+5969872	Private room	43	1	1
+5978216	Private room	65	1	1
+5978216	Private room	65	1	1
+5978216	Private room	65	1	1
+5978216	Private room	65	1	1
+5978216	Private room	65	1	1
+5992032	Entire home/apt	125	1	1
+6020744	Entire home/apt	129	1	1
+6020744	Entire home/apt	129	1	1
+6032726	Entire home/apt	550	1	1
+6032726	Entire home/apt	550	1	1
+6032726	Entire home/apt	550	1	1
+6032726	Entire home/apt	550	1	1
+6033201	Entire home/apt	169	1	1
+6033201	Entire home/apt	169	1	1
+6033201	Entire home/apt	169	1	1
+6033201	Entire home/apt	169	1	1
+6066185	Entire home/apt	125	1	1
+6066185	Entire home/apt	125	1	1
+6066185	Entire home/apt	125	1	1
+6066185	Entire home/apt	125	1	1
+6078382	Private room	55	1	1
+6078382	Private room	55	1	1
+6078382	Private room	55	1	1
+6107518	Private room	65	1	1
+6108006	Entire home/apt	127	1	1
+6108006	Entire home/apt	127	1	1
+6108006	Entire home/apt	127	1	1
+6108796	Entire home/apt	103	1	1
+6108796	Entire home/apt	103	1	1
+6108796	Entire home/apt	103	1	1
+6108796	Entire home/apt	103	1	1
+6108796	Entire home/apt	103	1	1
+6108796	Entire home/apt	103	1	1
+6108796	Entire home/apt	103	1	1
+6108796	Entire home/apt	103	1	1
+6108796	Entire home/apt	103	1	1
+6108796	Entire home/apt	103	1	1
+6117473	Private room	48	1	1
+6117473	Private room	48	1	1
+6117473	Private room	48	1	1
+6118198	Private room	79	1	1
+6118198	Private room	79	1	1
+6118198	Private room	79	1	1
+6118198	Private room	79	1	1
+6118291	Private room	95	1	1
+6118291	Private room	95	1	1
+6118359	Private room	70	1	1
+6118359	Private room	70	1	1
+6118359	Private room	70	1	1
+6119821	Shared room	38	1	1
+6119821	Shared room	38	1	1
+6127974	Entire home/apt	75	1	1
+6127974	Entire home/apt	75	1	1
+6127974	Entire home/apt	75	1	1
+6130287	Private room	65	1	1
+6133354	Entire home/apt	135	1	1
+6134153	Entire home/apt	200	1	1
+6134153	Entire home/apt	200	1	1
+6166307	Entire home/apt	120	1	1
+6166307	Entire home/apt	120	1	1
+6166307	Entire home/apt	120	1	1
+6166307	Entire home/apt	120	1	1
+6168975	Entire home/apt	188	1	1
+6168975	Entire home/apt	188	1	1
+6168975	Entire home/apt	188	1	1
+6168975	Entire home/apt	188	1	1
+6183330	Entire home/apt	100	1	1
+6183330	Entire home/apt	100	1	1
+6183721	Entire home/apt	160	1	1
+6183721	Entire home/apt	160	1	1
+6183721	Entire home/apt	160	1	1
+6185083	Private room	75	1	1
+6186081	Entire home/apt	110	1	1
+6186081	Entire home/apt	110	1	1
+6186081	Entire home/apt	110	1	1
+6646985	Private room	35	1	1
+6646985	Private room	35	1	1
+6646985	Private room	35	1	1
+6646985	Private room	35	1	1
+6655233	Private room	74	1	1
+6655233	Private room	74	1	1
+6660186	Entire home/apt	85	1	1
+6661617	Entire home/apt	175	1	1
+6671901	Entire home/apt	120	1	1
+6671901	Entire home/apt	120	1	1
+6671901	Entire home/apt	120	1	1
+6671901	Entire home/apt	120	1	1
+6671901	Entire home/apt	120	1	1
+6671901	Entire home/apt	120	1	1
+6675927	Private room	58	1	1
+6675927	Private room	58	1	1
+6675927	Private room	58	1	1
+6678058	Entire home/apt	110	1	1
+6678058	Entire home/apt	110	1	1
+6678058	Entire home/apt	110	1	1
+6690388	Entire home/apt	68	1	1
+6690388	Entire home/apt	68	1	1
+6690388	Entire home/apt	68	1	1
+6690388	Entire home/apt	68	1	1
+6691324	Entire home/apt	150	1	1
+6691324	Entire home/apt	150	1	1
+6691324	Entire home/apt	150	1	1
+6707735	Entire home/apt	110	1	1
+6707735	Entire home/apt	110	1	1
+6707735	Entire home/apt	110	1	1
+6707735	Entire home/apt	110	1	1
+6707735	Entire home/apt	110	1	1
+6707735	Entire home/apt	110	1	1
+6707735	Entire home/apt	110	1	1
+6716380	Entire home/apt	220	1	1
+6716620	Entire home/apt	65	1	1
+6728419	Entire home/apt	100	1	1
+6728419	Entire home/apt	100	1	1
+6728419	Entire home/apt	100	1	1
+6728419	Entire home/apt	100	1	1
+6728419	Entire home/apt	100	1	1
+6728419	Entire home/apt	100	1	1
+6728419	Entire home/apt	100	1	1
+6728419	Entire home/apt	100	1	1
+6746826	Entire home/apt	129	1	1
+6746826	Entire home/apt	129	1	1
+6746826	Entire home/apt	129	1	1
+6746826	Entire home/apt	129	1	1
+6746826	Entire home/apt	129	1	1
+6747473	Entire home/apt	150	1	1
+6747473	Entire home/apt	150	1	1
+6747473	Entire home/apt	150	1	1
+6747473	Entire home/apt	150	1	1
+6747473	Entire home/apt	150	1	1
+6747473	Entire home/apt	150	1	1
+6752031	Private room	70	1	1
+6759038	Private room	85	1	1
+6759038	Private room	85	1	1
+6761267	Entire home/apt	90	1	1
+6761267	Entire home/apt	90	1	1
+6761267	Entire home/apt	90	1	1
+6761267	Entire home/apt	90	1	1
+6761267	Entire home/apt	90	1	1
+6761267	Entire home/apt	90	1	1
+6761267	Entire home/apt	90	1	1
+6765045	Entire home/apt	250	1	1
+6780670	Entire home/apt	130	1	1
+6783394	Entire home/apt	125	1	1
+6783394	Entire home/apt	125	1	1
+6793490	Entire home/apt	69	1	1
+6795678	Entire home/apt	120	1	1
+6795678	Entire home/apt	120	1	1
+6796066	Private room	60	1	1
+6796246	Entire home/apt	90	1	1
+6796246	Entire home/apt	90	1	1
+6796246	Entire home/apt	90	1	1
+6796246	Entire home/apt	90	1	1
+6797786	Entire home/apt	125	1	1
+6797786	Entire home/apt	125	1	1
+6801095	Private room	90	1	1
+6807884	Entire home/apt	209	1	1
+6807884	Entire home/apt	209	1	1
+6807884	Entire home/apt	209	1	1
+6807981	Entire home/apt	156	1	1
+6807981	Entire home/apt	156	1	1
+6807981	Entire home/apt	156	1	1
+6812415	Shared room	85	1	1
+6812415	Shared room	85	1	1
+6812415	Shared room	85	1	1
+6812415	Shared room	85	1	1
+6822322	Entire home/apt	105	1	1
+6822322	Entire home/apt	105	1	1
+6822322	Entire home/apt	105	1	1
+6823781	Entire home/apt	89	1	1
+6823781	Entire home/apt	89	1	1
+6823781	Entire home/apt	89	1	1
+6835466	Entire home/apt	100	1	1
+6837751	Private room	90	1	1
+6838418	Private room	68	1	1
+6847052	Private room	101	1	1
+6847052	Private room	101	1	1
+6883913	Entire home/apt	120	1	1
+6883913	Entire home/apt	120	1	1
+6883913	Entire home/apt	120	1	1
+6883913	Entire home/apt	120	1	1
+6883913	Entire home/apt	120	1	1
+6883913	Entire home/apt	120	1	1
+7219838	Shared room	60	1	1
+5372156	Entire home/apt	139	1	1
+5386937	Entire home/apt	120	1	1
+5386937	Entire home/apt	120	1	1
+5395530	Entire home/apt	115	1	1
+5395530	Entire home/apt	115	1	1
+5397134	Entire home/apt	105	1	1
+5397134	Entire home/apt	105	1	1
+5397134	Entire home/apt	105	1	1
+5397134	Entire home/apt	105	1	1
+5397134	Entire home/apt	105	1	1
+5403847	Private room	55	1	1
+5403847	Private room	55	1	1
+5405643	Entire home/apt	89	1	1
+5405643	Entire home/apt	89	1	1
+5405643	Entire home/apt	89	1	1
+5405643	Entire home/apt	89	1	1
+5405643	Entire home/apt	89	1	1
+5423692	Private room	59	1	1
+5423692	Private room	59	1	1
+5423692	Private room	59	1	1
+5423692	Private room	59	1	1
+5423692	Private room	59	1	1
+5423692	Private room	59	1	1
+5423692	Private room	59	1	1
+5423692	Private room	59	1	1
+5433597	Entire home/apt	250	1	1
+5444457	Private room	90	1	1
+5444457	Private room	90	1	1
+5446156	Entire home/apt	245	1	1
+5446156	Entire home/apt	245	1	1
+5446156	Entire home/apt	245	1	1
+5446156	Entire home/apt	245	1	1
+5446513	Entire home/apt	150	1	1
+5489676	Entire home/apt	170	1	1
+5495802	Entire home/apt	125	1	1
+5495802	Entire home/apt	125	1	1
+5495802	Entire home/apt	125	1	1
+5499882	Entire home/apt	100	1	1
+5499882	Entire home/apt	100	1	1
+5499882	Entire home/apt	100	1	1
+5499882	Entire home/apt	100	1	1
+5499882	Entire home/apt	100	1	1
+5499882	Entire home/apt	100	1	1
+5499882	Entire home/apt	100	1	1
+5499882	Entire home/apt	100	1	1
+5499882	Entire home/apt	100	1	1
+5524530	Entire home/apt	350	1	1
+5524530	Entire home/apt	350	1	1
+5537833	Entire home/apt	150	1	1
+5549211	Entire home/apt	134	1	1
+5549211	Entire home/apt	134	1	1
+5549211	Entire home/apt	134	1	1
+5549211	Entire home/apt	134	1	1
+5559643	Entire home/apt	175	1	1
+5559643	Entire home/apt	175	1	1
+5559643	Entire home/apt	175	1	1
+5562674	Entire home/apt	79	1	1
+5562674	Entire home/apt	79	1	1
+5562674	Entire home/apt	79	1	1
+5562674	Entire home/apt	79	1	1
+5562674	Entire home/apt	79	1	1
+5562674	Entire home/apt	79	1	1
+5562674	Entire home/apt	79	1	1
+5630783	Entire home/apt	100	1	1
+5630783	Entire home/apt	100	1	1
+5633607	Private room	39	1	1
+5633607	Private room	39	1	1
+5633607	Private room	39	1	1
+5633607	Private room	39	1	1
+5633607	Private room	39	1	1
+5640722	Private room	60	1	1
+5640722	Private room	60	1	1
+5640722	Private room	60	1	1
+5651254	Private room	95	1	1
+5671843	Private room	65	1	1
+5671843	Private room	65	1	1
+5671843	Private room	65	1	1
+5671843	Private room	65	1	1
+5671843	Private room	65	1	1
+5671843	Private room	65	1	1
+5673552	Entire home/apt	200	1	1
+5680462	Entire home/apt	461	1	1
+5680462	Entire home/apt	461	1	1
+5680462	Entire home/apt	461	1	1
+5680462	Entire home/apt	461	1	1
+5680462	Entire home/apt	461	1	1
+5680462	Entire home/apt	461	1	1
+5680462	Entire home/apt	461	1	1
+5683646	Entire home/apt	95	1	1
+5683646	Entire home/apt	95	1	1
+5683646	Entire home/apt	95	1	1
+5683646	Entire home/apt	95	1	1
+5705161	Private room	75	1	1
+5705161	Private room	75	1	1
+5705161	Private room	75	1	1
+5705161	Private room	75	1	1
+5705161	Private room	75	1	1
+5705161	Private room	75	1	1
+5705161	Private room	75	1	1
+5705161	Private room	75	1	1
+5705161	Private room	75	1	1
+5728739	Entire home/apt	210	1	1
+5751177	Private room	129	1	1
+5759668	Entire home/apt	125	1	1
+5759668	Entire home/apt	125	1	1
+5759668	Entire home/apt	125	1	1
+5834820	Private room	65	1	1
+5578943	Private room	79	1	1
+5580773	Entire home/apt	70	1	1
+5580773	Entire home/apt	70	1	1
+5593504	Private room	59	1	1
+5593504	Private room	59	1	1
+5593504	Private room	59	1	1
+5607404	Entire home/apt	125	1	1
+5618094	Private room	75	1	1
+5618094	Private room	75	1	1
+5625964	Private room	61	1	1
+5632713	Entire home/apt	75	1	1
+5652705	Entire home/apt	125	1	1
+5660792	Private room	120	1	1
+5660792	Private room	120	1	1
+5660792	Private room	120	1	1
+5660792	Private room	120	1	1
+5660792	Private room	120	1	1
+5660792	Private room	120	1	1
+5660792	Private room	120	1	1
+5660792	Private room	120	1	1
+5670781	Entire home/apt	160	1	1
+5682316	Entire home/apt	85	1	1
+5682316	Entire home/apt	85	1	1
+5683646	Entire home/apt	95	1	1
+5683646	Entire home/apt	95	1	1
+5685646	Entire home/apt	140	1	1
+5685646	Entire home/apt	140	1	1
+5685908	Private room	97	1	1
+5695344	Private room	60	1	1
+5695344	Private room	60	1	1
+5728135	Private room	84	1	1
+5728135	Private room	84	1	1
+5728135	Private room	84	1	1
+5728135	Private room	84	1	1
+5728135	Private room	84	1	1
+5736082	Shared room	45	1	1
+5736082	Shared room	45	1	1
+5761290	Entire home/apt	126	1	1
+5766989	Entire home/apt	89	1	1
+5766989	Entire home/apt	89	1	1
+5766989	Entire home/apt	89	1	1
+5787922	Entire home/apt	120	1	1
+5787922	Entire home/apt	120	1	1
+5787922	Entire home/apt	120	1	1
+5787922	Entire home/apt	120	1	1
+5787922	Entire home/apt	120	1	1
+5787922	Entire home/apt	120	1	1
+5787922	Entire home/apt	120	1	1
+5787922	Entire home/apt	120	1	1
+5787922	Entire home/apt	120	1	1
+5787922	Entire home/apt	120	1	1
+5787922	Entire home/apt	120	1	1
+5787922	Entire home/apt	120	1	1
+5793477	Private room	75	1	1
+5793477	Private room	75	1	1
+5793477	Private room	75	1	1
+5805162	Entire home/apt	95	1	1
+5805162	Entire home/apt	95	1	1
+5805162	Entire home/apt	95	1	1
+5805162	Entire home/apt	95	1	1
+5805907	Private room	50	1	1
+5805907	Private room	50	1	1
+5825701	Entire home/apt	200	1	1
+5825701	Entire home/apt	200	1	1
+5825701	Entire home/apt	200	1	1
+5852034	Entire home/apt	99	1	1
+5852034	Entire home/apt	99	1	1
+5852034	Entire home/apt	99	1	1
+5859152	Private room	59	1	1
+5873892	Private room	50	1	1
+5873892	Private room	50	1	1
+5873892	Private room	50	1	1
+5874421	Entire home/apt	139	1	1
+5874421	Entire home/apt	139	1	1
+5874421	Entire home/apt	139	1	1
+5874421	Entire home/apt	139	1	1
+5874421	Entire home/apt	139	1	1
+5874421	Entire home/apt	139	1	1
+5874421	Entire home/apt	139	1	1
+5874421	Entire home/apt	139	1	1
+5882923	Entire home/apt	95	1	1
+5882923	Entire home/apt	95	1	1
+5882923	Entire home/apt	95	1	1
+5882923	Entire home/apt	95	1	1
+5882923	Entire home/apt	95	1	1
+5882923	Entire home/apt	95	1	1
+5900224	Entire home/apt	150	1	1
+5900224	Entire home/apt	150	1	1
+5918259	Entire home/apt	100	1	1
+5918259	Entire home/apt	100	1	1
+5919096	Entire home/apt	129	1	1
+5946675	Entire home/apt	145	1	1
+5948003	Private room	55	1	1
+5948003	Private room	55	1	1
+5948003	Private room	55	1	1
+5977556	Private room	120	1	1
+5977556	Private room	120	1	1
+5977556	Private room	120	1	1
+5977556	Private room	120	1	1
+5977556	Private room	120	1	1
+5977556	Private room	120	1	1
+5978498	Entire home/apt	175	1	1
+6004165	Entire home/apt	75	1	1
+6004165	Entire home/apt	75	1	1
+6020744	Entire home/apt	129	1	1
+6020744	Entire home/apt	129	1	1
+6032726	Entire home/apt	550	1	1
+6186081	Entire home/apt	110	1	1
+6186081	Entire home/apt	110	1	1
+6186081	Entire home/apt	110	1	1
+6216116	Entire home/apt	90	1	1
+6216116	Entire home/apt	90	1	1
+6222245	Entire home/apt	130	1	1
+6222245	Entire home/apt	130	1	1
+6239108	Entire home/apt	75	1	1
+6239907	Private room	99	1	1
+6239907	Private room	99	1	1
+6239907	Private room	99	1	1
+6239907	Private room	99	1	1
+6239907	Private room	99	1	1
+6240501	Private room	72	1	1
+6240501	Private room	72	1	1
+6240501	Private room	72	1	1
+6240501	Private room	72	1	1
+6248083	Entire home/apt	498	1	1
+6249164	Private room	42	1	1
+6249164	Private room	42	1	1
+6272065	Private room	65	1	1
+6272065	Private room	65	1	1
+6272065	Private room	65	1	1
+6272065	Private room	65	1	1
+6278216	Entire home/apt	175	1	1
+6278216	Entire home/apt	175	1	1
+6288141	Entire home/apt	149	1	1
+6288141	Entire home/apt	149	1	1
+6315435	Entire home/apt	300	1	1
+6315435	Entire home/apt	300	1	1
+6316917	Entire home/apt	90	1	1
+6316917	Entire home/apt	90	1	1
+6316917	Entire home/apt	90	1	1
+6316917	Entire home/apt	90	1	1
+6325685	Entire home/apt	120	1	1
+6325685	Entire home/apt	120	1	1
+6325685	Entire home/apt	120	1	1
+6325685	Entire home/apt	120	1	1
+6325685	Entire home/apt	120	1	1
+6325685	Entire home/apt	120	1	1
+6325685	Entire home/apt	120	1	1
+6325685	Entire home/apt	120	1	1
+6344566	Entire home/apt	122	1	1
+6344566	Entire home/apt	122	1	1
+6344566	Entire home/apt	122	1	1
+6344566	Entire home/apt	122	1	1
+6344566	Entire home/apt	122	1	1
+6344566	Entire home/apt	122	1	1
+6344566	Entire home/apt	122	1	1
+6344566	Entire home/apt	122	1	1
+6387576	Private room	89	1	1
+6387576	Private room	89	1	1
+6387576	Private room	89	1	1
+6387576	Private room	89	1	1
+6387576	Private room	89	1	1
+6390214	Entire home/apt	110	1	1
+6400379	Private room	88	1	1
+6401209	Entire home/apt	338	1	1
+6411259	Private room	56	1	1
+6411259	Private room	56	1	1
+6411259	Private room	56	1	1
+6411259	Private room	56	1	1
+6411259	Private room	56	1	1
+6411259	Private room	56	1	1
+6416765	Entire home/apt	149	1	1
+6424982	Private room	80	1	1
+6424982	Private room	80	1	1
+6425537	Entire home/apt	138	1	1
+6436727	Entire home/apt	150	1	1
+6438518	Entire home/apt	145	1	1
+6438518	Entire home/apt	145	1	1
+6438518	Entire home/apt	145	1	1
+6445741	Entire home/apt	189	1	1
+6451305	Entire home/apt	220	1	1
+6451305	Entire home/apt	220	1	1
+6452801	Entire home/apt	159	1	1
+6466388	Private room	74	1	1
+6482409	Entire home/apt	105	1	1
+6482409	Entire home/apt	105	1	1
+6482409	Entire home/apt	105	1	1
+6482984	Private room	90	1	1
+6515046	Private room	79	1	1
+6515046	Private room	79	1	1
+6528192	Private room	37	1	1
+6528192	Private room	37	1	1
+6528192	Private room	37	1	1
+6528192	Private room	37	1	1
+6528192	Private room	37	1	1
+6545602	Shared room	53	1	1
+6554352	Private room	57	1	1
+6554352	Private room	57	1	1
+6555128	Entire home/apt	160	1	1
+6555128	Entire home/apt	160	1	1
+6555128	Entire home/apt	160	1	1
+6555128	Entire home/apt	160	1	1
+6555128	Entire home/apt	160	1	1
+6555393	Entire home/apt	93	1	1
+6555393	Entire home/apt	93	1	1
+6557018	Entire home/apt	115	1	1
+6557767	Private room	65	1	1
+6561379	Entire home/apt	144	1	1
+6561379	Entire home/apt	144	1	1
+6561379	Entire home/apt	144	1	1
+6561811	Shared room	53	1	1
+6567683	Entire home/apt	129	1	1
+6575407	Private room	120	1	1
+6577729	Entire home/apt	100	1	1
+6884604	Entire home/apt	140	1	1
+6884604	Entire home/apt	140	1	1
+6886633	Entire home/apt	75	1	1
+6886633	Entire home/apt	75	1	1
+6886633	Entire home/apt	75	1	1
+6886633	Entire home/apt	75	1	1
+6902752	Private room	75	1	1
+6908161	Entire home/apt	250	1	1
+6908161	Entire home/apt	250	1	1
+6913706	Entire home/apt	183	1	1
+6921373	Entire home/apt	99	1	1
+6934128	Private room	80	1	1
+6934128	Private room	80	1	1
+6938103	Private room	75	1	1
+6939106	Entire home/apt	144	1	1
+6939106	Entire home/apt	144	1	1
+6939106	Entire home/apt	144	1	1
+6939106	Entire home/apt	144	1	1
+6941113	Entire home/apt	225	1	1
+6951415	Entire home/apt	95	1	1
+6951415	Entire home/apt	95	1	1
+6956938	Private room	90	1	1
+6958603	Private room	53	1	1
+6961346	Entire home/apt	85	1	1
+6961346	Entire home/apt	85	1	1
+6973790	Entire home/apt	99	1	1
+6973790	Entire home/apt	99	1	1
+6990882	Entire home/apt	300	1	1
+6990882	Entire home/apt	300	1	1
+6990882	Entire home/apt	300	1	1
+6990882	Entire home/apt	300	1	1
+6990882	Entire home/apt	300	1	1
+6990882	Entire home/apt	300	1	1
+6990882	Entire home/apt	300	1	1
+6991188	Entire home/apt	115	1	1
+6993019	Entire home/apt	290	1	1
+6993978	Shared room	80	1	1
+6993978	Shared room	80	1	1
+7007118	Entire home/apt	100	1	1
+7007118	Entire home/apt	100	1	1
+7021544	Entire home/apt	145	1	1
+7021544	Entire home/apt	145	1	1
+7026898	Private room	85	1	1
+7026898	Private room	85	1	1
+7026898	Private room	85	1	1
+7026898	Private room	85	1	1
+7037522	Entire home/apt	80	1	1
+7039427	Private room	39	1	1
+7050492	Entire home/apt	110	1	1
+7067082	Private room	49	1	1
+7067650	Entire home/apt	75	1	1
+7067650	Entire home/apt	75	1	1
+7067650	Entire home/apt	75	1	1
+7067650	Entire home/apt	75	1	1
+7069143	Private room	50	1	1
+7071331	Private room	42	1	1
+7071331	Private room	42	1	1
+7071331	Private room	42	1	1
+7071331	Private room	42	1	1
+7072218	Entire home/apt	120	1	1
+7075913	Entire home/apt	100	1	1
+7075913	Entire home/apt	100	1	1
+7075913	Entire home/apt	100	1	1
+7087957	Entire home/apt	126	1	1
+7089415	Entire home/apt	99	1	1
+7093738	Private room	90	1	1
+7096107	Entire home/apt	65	1	1
+7110655	Entire home/apt	99	1	1
+7110655	Entire home/apt	99	1	1
+7110655	Entire home/apt	99	1	1
+7110655	Entire home/apt	99	1	1
+7110655	Entire home/apt	99	1	1
+6577729	Entire home/apt	100	1	1
+6591894	Shared room	31	1	1
+6591894	Shared room	31	1	1
+6591894	Shared room	31	1	1
+6591894	Shared room	31	1	1
+6603061	Private room	65	1	1
+6603061	Private room	65	1	1
+6603061	Private room	65	1	1
+6603376	Entire home/apt	252	1	1
+6621924	Entire home/apt	107	1	1
+6629278	Private room	45	1	1
+6629278	Private room	45	1	1
+6637899	Private room	65	1	1
+6637899	Private room	65	1	1
+6637899	Private room	65	1	1
+6644628	Private room	150	1	1
+6644760	Entire home/apt	109	1	1
+6644854	Entire home/apt	250	1	1
+6646894	Entire home/apt	175	1	1
+6646894	Entire home/apt	175	1	1
+6646985	Private room	35	1	1
+6647442	Private room	55	1	1
+6647442	Private room	55	1	1
+6647442	Private room	55	1	1
+6647442	Private room	55	1	1
+6657574	Private room	45	1	1
+6675927	Private room	58	1	1
+6675927	Private room	58	1	1
+6675927	Private room	58	1	1
+6675927	Private room	58	1	1
+6675927	Private room	58	1	1
+6675927	Private room	58	1	1
+6675927	Private room	58	1	1
+6675927	Private room	58	1	1
+6675927	Private room	58	1	1
+6676926	Entire home/apt	127	1	1
+6676926	Entire home/apt	127	1	1
+6676926	Entire home/apt	127	1	1
+6676926	Entire home/apt	127	1	1
+6676926	Entire home/apt	127	1	1
+6676926	Entire home/apt	127	1	1
+6676926	Entire home/apt	127	1	1
+6676926	Entire home/apt	127	1	1
+6687939	Entire home/apt	100	1	1
+6691873	Entire home/apt	90	1	1
+6691873	Entire home/apt	90	1	1
+6691873	Entire home/apt	90	1	1
+6691873	Entire home/apt	90	1	1
+6691873	Entire home/apt	90	1	1
+6701018	Entire home/apt	67	1	1
+6701018	Entire home/apt	67	1	1
+6701018	Entire home/apt	67	1	1
+6706377	Entire home/apt	73	1	1
+6707735	Entire home/apt	110	1	1
+6707735	Entire home/apt	110	1	1
+6707735	Entire home/apt	110	1	1
+6707735	Entire home/apt	110	1	1
+6707735	Entire home/apt	110	1	1
+6728419	Entire home/apt	100	1	1
+6728419	Entire home/apt	100	1	1
+6728419	Entire home/apt	100	1	1
+6741526	Entire home/apt	250	1	1
+6741526	Entire home/apt	250	1	1
+6752031	Private room	70	1	1
+6752031	Private room	70	1	1
+6759038	Private room	85	1	1
+6759038	Private room	85	1	1
+6759038	Private room	85	1	1
+6759038	Private room	85	1	1
+6759038	Private room	85	1	1
+6759104	Private room	69	1	1
+6759104	Private room	69	1	1
+6759104	Private room	69	1	1
+6765045	Entire home/apt	250	1	1
+6765045	Entire home/apt	250	1	1
+6766513	Entire home/apt	95	1	1
+6766513	Entire home/apt	95	1	1
+6773472	Entire home/apt	170	1	1
+6776229	Entire home/apt	129	1	1
+6780670	Entire home/apt	130	1	1
+6783394	Entire home/apt	125	1	1
+6783394	Entire home/apt	125	1	1
+6783394	Entire home/apt	125	1	1
+6783394	Entire home/apt	125	1	1
+6783394	Entire home/apt	125	1	1
+6783394	Entire home/apt	125	1	1
+6812054	Entire home/apt	212	1	1
+6821407	Private room	47	1	1
+6821407	Private room	47	1	1
+6821407	Private room	47	1	1
+6821407	Private room	47	1	1
+6821407	Private room	47	1	1
+6821407	Private room	47	1	1
+6823837	Entire home/apt	129	1	1
+6823837	Entire home/apt	129	1	1
+6823837	Entire home/apt	129	1	1
+6823837	Entire home/apt	129	1	1
+6831239	Private room	38	1	1
+6837338	Private room	80	1	1
+6838418	Private room	68	1	1
+6852288	Private room	59	1	1
+6854552	Entire home/apt	170	1	1
+6854552	Entire home/apt	170	1	1
+6854552	Entire home/apt	170	1	1
+6855839	Entire home/apt	144	1	1
+6856295	Private room	65	1	1
+6865200	Entire home/apt	120	1	1
+6872650	Private room	65	1	1
+6872650	Private room	65	1	1
+6882518	Entire home/apt	75	1	1
+6882518	Entire home/apt	75	1	1
+6884820	Private room	45	1	1
+6884820	Private room	45	1	1
+6884820	Private room	45	1	1
+6888107	Private room	49	1	1
+6901218	Entire home/apt	99	1	1
+6913414	Entire home/apt	125	1	1
+6921373	Entire home/apt	99	1	1
+6926511	Entire home/apt	235	1	1
+6926511	Entire home/apt	235	1	1
+6937492	Entire home/apt	165	1	1
+6937492	Entire home/apt	165	1	1
+6939106	Entire home/apt	144	1	1
+6939106	Entire home/apt	144	1	1
+6939106	Entire home/apt	144	1	1
+6939106	Entire home/apt	144	1	1
+6939106	Entire home/apt	144	1	1
+6939472	Private room	35	1	1
+6939472	Private room	35	1	1
+6939472	Private room	35	1	1
+6939472	Private room	35	1	1
+6939472	Private room	35	1	1
+6939472	Private room	35	1	1
+6956938	Private room	90	1	1
+6956938	Private room	90	1	1
+6961346	Entire home/apt	85	1	1
+6961346	Entire home/apt	85	1	1
+6968101	Entire home/apt	140	1	1
+6973790	Entire home/apt	99	1	1
+6973790	Entire home/apt	99	1	1
+6990477	Entire home/apt	183	1	1
+6990677	Entire home/apt	110	1	1
+6990677	Entire home/apt	110	1	1
+5834820	Private room	65	1	1
+5834820	Private room	65	1	1
+5834820	Private room	65	1	1
+5834820	Private room	65	1	1
+5862552	Entire home/apt	325	1	1
+5862552	Entire home/apt	325	1	1
+5862552	Entire home/apt	325	1	1
+5905958	Entire home/apt	95	1	1
+5905958	Entire home/apt	95	1	1
+5913611	Entire home/apt	95	1	1
+5913611	Entire home/apt	95	1	1
+5913611	Entire home/apt	95	1	1
+5913611	Entire home/apt	95	1	1
+5927083	Private room	80	1	1
+5927083	Private room	80	1	1
+5932882	Entire home/apt	100	1	1
+5941598	Entire home/apt	129	1	1
+5946151	Entire home/apt	125	1	1
+5946151	Entire home/apt	125	1	1
+5946151	Entire home/apt	125	1	1
+5956968	Private room	120	1	1
+5957039	Entire home/apt	110	1	1
+5958194	Private room	45	1	1
+5958194	Private room	45	1	1
+5958674	Private room	56	1	1
+5958674	Private room	56	1	1
+5958674	Private room	56	1	1
+5958674	Private room	56	1	1
+5959816	Entire home/apt	95	1	1
+5969069	Entire home/apt	125	1	1
+5969069	Entire home/apt	125	1	1
+5969872	Private room	43	1	1
+5969872	Private room	43	1	1
+5981343	Entire home/apt	160	1	1
+5981343	Entire home/apt	160	1	1
+5981343	Entire home/apt	160	1	1
+5981343	Entire home/apt	160	1	1
+5981343	Entire home/apt	160	1	1
+5981343	Entire home/apt	160	1	1
+5981343	Entire home/apt	160	1	1
+5981343	Entire home/apt	160	1	1
+5991734	Entire home/apt	90	1	1
+5991734	Entire home/apt	90	1	1
+5991734	Entire home/apt	90	1	1
+5991734	Entire home/apt	90	1	1
+5991734	Entire home/apt	90	1	1
+6004058	Entire home/apt	100	1	1
+6004058	Entire home/apt	100	1	1
+6018416	Entire home/apt	350	1	1
+6033201	Entire home/apt	169	1	1
+6073437	Entire home/apt	119	1	1
+6073437	Entire home/apt	119	1	1
+6073437	Entire home/apt	119	1	1
+6073437	Entire home/apt	119	1	1
+6077760	Private room	130	1	1
+6077760	Private room	130	1	1
+6077760	Private room	130	1	1
+6078382	Private room	55	1	1
+6078382	Private room	55	1	1
+6079131	Entire home/apt	88	1	1
+6079131	Entire home/apt	88	1	1
+6079131	Entire home/apt	88	1	1
+6079131	Entire home/apt	88	1	1
+6079216	Entire home/apt	150	1	1
+6107518	Private room	65	1	1
+6107518	Private room	65	1	1
+6107518	Private room	65	1	1
+6107518	Private room	65	1	1
+6107518	Private room	65	1	1
+6107901	Entire home/apt	105	1	1
+6107901	Entire home/apt	105	1	1
+6107901	Entire home/apt	105	1	1
+6107901	Entire home/apt	105	1	1
+6107901	Entire home/apt	105	1	1
+6107901	Entire home/apt	105	1	1
+6107901	Entire home/apt	105	1	1
+6107901	Entire home/apt	105	1	1
+6107901	Entire home/apt	105	1	1
+6118291	Private room	95	1	1
+6119821	Shared room	38	1	1
+6127974	Entire home/apt	75	1	1
+6127974	Entire home/apt	75	1	1
+6127974	Entire home/apt	75	1	1
+6130287	Private room	65	1	1
+6133684	Private room	75	1	1
+6153532	Private room	118	1	1
+6153532	Private room	118	1	1
+6153532	Private room	118	1	1
+6153532	Private room	118	1	1
+6156470	Private room	90	1	1
+6156470	Private room	90	1	1
+6156470	Private room	90	1	1
+6156470	Private room	90	1	1
+6168769	Private room	80	1	1
+6186081	Entire home/apt	110	1	1
+6202603	Entire home/apt	90	1	1
+6228474	Entire home/apt	275	1	1
+6228474	Entire home/apt	275	1	1
+6228959	Entire home/apt	128	1	1
+6240501	Private room	72	1	1
+6240501	Private room	72	1	1
+6240501	Private room	72	1	1
+6240501	Private room	72	1	1
+6316934	Entire home/apt	75	1	1
+6316934	Entire home/apt	75	1	1
+6316934	Entire home/apt	75	1	1
+6316934	Entire home/apt	75	1	1
+6992387	Entire home/apt	189	1	1
+6316934	Entire home/apt	75	1	1
+7003848	Entire home/apt	257	1	1
+6316934	Entire home/apt	75	1	1
+7011200	Entire home/apt	89	1	1
+7013085	Entire home/apt	99	1	1
+6325685	Entire home/apt	120	1	1
+7013085	Entire home/apt	99	1	1
+7013085	Entire home/apt	99	1	1
+6328923	Private room	89	1	1
+7013085	Entire home/apt	99	1	1
+7013085	Entire home/apt	99	1	1
+6337492	Entire home/apt	80	1	1
+7013085	Entire home/apt	99	1	1
+6343866	Entire home/apt	99	1	1
+6343866	Entire home/apt	99	1	1
+6343866	Entire home/apt	99	1	1
+6343866	Entire home/apt	99	1	1
+6343866	Entire home/apt	99	1	1
+6344566	Entire home/apt	122	1	1
+6344566	Entire home/apt	122	1	1
+6344566	Entire home/apt	122	1	1
+6344566	Entire home/apt	122	1	1
+6348159	Private room	60	1	1
+6360895	Entire home/apt	109	1	1
+6361863	Entire home/apt	145	1	1
+7035498	Entire home/apt	129	1	1
+6362918	Entire home/apt	145	1	1
+6362918	Entire home/apt	145	1	1
+7035498	Entire home/apt	129	1	1
+6362918	Entire home/apt	145	1	1
+7035498	Entire home/apt	129	1	1
+6362918	Entire home/apt	145	1	1
+7035498	Entire home/apt	129	1	1
+6362918	Entire home/apt	145	1	1
+7035498	Entire home/apt	129	1	1
+6363765	Entire home/apt	199	1	1
+7036707	Entire home/apt	80	1	1
+6363765	Entire home/apt	199	1	1
+7036707	Entire home/apt	80	1	1
+7036707	Entire home/apt	80	1	1
+7050492	Entire home/apt	110	1	1
+7050492	Entire home/apt	110	1	1
+7050492	Entire home/apt	110	1	1
+7070169	Entire home/apt	115	1	1
+7070169	Entire home/apt	115	1	1
+7070169	Entire home/apt	115	1	1
+7075357	Entire home/apt	129	1	1
+7087957	Entire home/apt	126	1	1
+7087957	Entire home/apt	126	1	1
+7087957	Entire home/apt	126	1	1
+7091397	Entire home/apt	156	1	1
+7091397	Entire home/apt	156	1	1
+7095802	Private room	35	1	1
+7095802	Private room	35	1	1
+7128310	Entire home/apt	100	1	1
+7149703	Private room	59	1	1
+7149703	Private room	59	1	1
+6363765	Entire home/apt	199	1	1
+7149703	Private room	59	1	1
+6363765	Entire home/apt	199	1	1
+6363765	Entire home/apt	199	1	1
+6363779	Private room	195	1	1
+6364549	Entire home/apt	110	1	1
+6364549	Entire home/apt	110	1	1
+6364549	Entire home/apt	110	1	1
+6364549	Entire home/apt	110	1	1
+6370313	Entire home/apt	249	1	1
+6375415	Entire home/apt	375	1	1
+7149703	Private room	59	1	1
+6375415	Entire home/apt	375	1	1
+6376952	Entire home/apt	240	1	1
+6386210	Entire home/apt	400	1	1
+6389657	Entire home/apt	80	1	1
+6392029	Entire home/apt	136	1	1
+6400000	Entire home/apt	160	1	1
+6400379	Private room	88	1	1
+6400379	Private room	88	1	1
+6400379	Private room	88	1	1
+6404427	Entire home/apt	275	1	1
+6404427	Entire home/apt	275	1	1
+6404427	Entire home/apt	275	1	1
+6411259	Private room	56	1	1
+7151417	Entire home/apt	200	1	1
+7151924	Entire home/apt	150	1	1
+6421243	Entire home/apt	59	1	1
+7110655	Entire home/apt	99	1	1
+7127036	Entire home/apt	150	1	1
+7153101	Entire home/apt	92	1	1
+7128310	Entire home/apt	100	1	1
+7128310	Entire home/apt	100	1	1
+7153101	Entire home/apt	92	1	1
+7134759	Private room	60	1	1
+7153101	Entire home/apt	92	1	1
+7151107	Entire home/apt	299	1	1
+7161897	Entire home/apt	150	1	1
+7151417	Entire home/apt	200	1	1
+6421243	Entire home/apt	59	1	1
+7151924	Entire home/apt	150	1	1
+7161725	Private room	110	1	1
+7161897	Entire home/apt	150	1	1
+7161725	Private room	110	1	1
+7161725	Private room	110	1	1
+6421243	Entire home/apt	59	1	1
+7162664	Entire home/apt	220	1	1
+7179337	Entire home/apt	99	1	1
+7207641	Entire home/apt	348	1	1
+7163934	Private room	85	1	1
+7163934	Private room	85	1	1
+7179337	Entire home/apt	99	1	1
+7179337	Entire home/apt	99	1	1
+7179337	Entire home/apt	99	1	1
+7198282	Private room	55	1	1
+7198282	Private room	55	1	1
+7198282	Private room	55	1	1
+7198282	Private room	55	1	1
+7202016	Private room	75	1	1
+7202016	Private room	75	1	1
+7203408	Entire home/apt	120	1	1
+7205443	Entire home/apt	99	1	1
+7205443	Entire home/apt	99	1	1
+7217102	Entire home/apt	232	1	1
+7221204	Private room	85	1	1
+7226013	Private room	75	1	1
+7239217	Entire home/apt	95	1	1
+7239217	Entire home/apt	95	1	1
+7241235	Entire home/apt	100	1	1
+7243974	Entire home/apt	140	1	1
+7245692	Private room	73	1	1
+7247518	Entire home/apt	130	1	1
+7247720	Private room	70	1	1
+7247720	Private room	70	1	1
+7247720	Private room	70	1	1
+7247720	Private room	70	1	1
+7247720	Private room	70	1	1
+7264667	Entire home/apt	189	1	1
+7274556	Private room	40	1	1
+7305969	Private room	90	1	1
+7305969	Private room	90	1	1
+7305969	Private room	90	1	1
+7324993	Entire home/apt	175	1	1
+7327623	Entire home/apt	94	1	1
+7327623	Entire home/apt	94	1	1
+7327623	Entire home/apt	94	1	1
+7349029	Entire home/apt	100	1	1
+7349029	Entire home/apt	100	1	1
+7349029	Entire home/apt	100	1	1
+7350870	Entire home/apt	365	1	1
+7353834	Entire home/apt	93	1	1
+7362757	Entire home/apt	84	1	1
+7381677	Entire home/apt	199	1	1
+7382303	Entire home/apt	150	1	1
+7382303	Entire home/apt	150	1	1
+7382303	Entire home/apt	150	1	1
+7387294	Private room	75	1	1
+7387294	Private room	75	1	1
+7389950	Private room	99	1	1
+7389950	Private room	99	1	1
+7390195	Private room	75	1	1
+7390195	Private room	75	1	1
+7390195	Private room	75	1	1
+7391003	Entire home/apt	75	1	1
+7391003	Entire home/apt	75	1	1
+7403174	Entire home/apt	125	1	1
+7411863	Private room	25	1	1
+7411863	Private room	25	1	1
+7411863	Private room	25	1	1
+7411863	Private room	25	1	1
+7417852	Private room	65	1	1
+7420488	Private room	45	1	1
+7430926	Entire home/apt	69	1	1
+7430926	Entire home/apt	69	1	1
+7430926	Entire home/apt	69	1	1
+7430926	Entire home/apt	69	1	1
+7438635	Private room	220	1	1
+7438635	Private room	220	1	1
+7438635	Private room	220	1	1
+7440415	Entire home/apt	100	1	1
+7441508	Private room	65	1	1
+7441508	Private room	65	1	1
+7462428	Private room	50	1	1
+7462428	Private room	50	1	1
+7480196	Entire home/apt	199	1	1
+7483750	Private room	63	1	1
+7483750	Private room	63	1	1
+7483750	Private room	63	1	1
+7483750	Private room	63	1	1
+7483750	Private room	63	1	1
+7492877	Entire home/apt	180	1	1
+7501919	Entire home/apt	150	1	1
+7502246	Entire home/apt	109	1	1
+7510776	Entire home/apt	199	1	1
+7514366	Entire home/apt	95	1	1
+7517684	Private room	150	1	1
+7529124	Entire home/apt	79	1	1
+7529124	Entire home/apt	79	1	1
+7533537	Entire home/apt	85	1	1
+7534398	Private room	69	1	1
+7534398	Private room	69	1	1
+7536219	Entire home/apt	91	1	1
+7543458	Entire home/apt	89	1	1
+7550234	Private room	40	1	1
+7561272	Private room	47	1	1
+7561272	Private room	47	1	1
+7562591	Entire home/apt	215	1	1
+7563243	Entire home/apt	100	1	1
+7563243	Entire home/apt	100	1	1
+7563243	Entire home/apt	100	1	1
+7563243	Entire home/apt	100	1	1
+7597244	Entire home/apt	125	1	1
+7616008	Entire home/apt	135	1	1
+7616008	Entire home/apt	135	1	1
+7616008	Entire home/apt	135	1	1
+7634011	Entire home/apt	104	1	1
+6453383	Private room	69	1	1
+6453383	Private room	69	1	1
+6453383	Private room	69	1	1
+6453383	Private room	69	1	1
+6453383	Private room	69	1	1
+6453383	Private room	69	1	1
+6453383	Private room	69	1	1
+6466129	Entire home/apt	92	1	1
+6466129	Entire home/apt	92	1	1
+6466129	Entire home/apt	92	1	1
+6466129	Entire home/apt	92	1	1
+6466129	Entire home/apt	92	1	1
+6466129	Entire home/apt	92	1	1
+6466129	Entire home/apt	92	1	1
+6466129	Entire home/apt	92	1	1
+6466129	Entire home/apt	92	1	1
+6475289	Entire home/apt	159	1	1
+6475289	Entire home/apt	159	1	1
+6475289	Entire home/apt	159	1	1
+6477225	Entire home/apt	100	1	1
+6482984	Private room	90	1	1
+6490453	Private room	140	1	1
+6492880	Entire home/apt	95	1	1
+6494181	Entire home/apt	215	1	1
+6495424	Private room	75	1	1
+6514446	Entire home/apt	151	1	1
+6514446	Entire home/apt	151	1	1
+6515046	Private room	79	1	1
+6515046	Private room	79	1	1
+6516775	Entire home/apt	99	1	1
+6516775	Entire home/apt	99	1	1
+6523393	Entire home/apt	95	1	1
+6523393	Entire home/apt	95	1	1
+6523393	Entire home/apt	95	1	1
+6543677	Private room	50	1	1
+6557297	Private room	60	1	1
+6557297	Private room	60	1	1
+6561753	Shared room	55	1	1
+6561753	Shared room	55	1	1
+6575380	Private room	150	1	1
+6576006	Private room	50	1	1
+6576228	Entire home/apt	179	1	1
+6577295	Private room	69	1	1
+6577295	Private room	69	1	1
+6577295	Private room	69	1	1
+6577295	Private room	69	1	1
+6577295	Private room	69	1	1
+6577295	Private room	69	1	1
+6577295	Private room	69	1	1
+6577295	Private room	69	1	1
+6577295	Private room	69	1	1
+6586979	Entire home/apt	450	1	1
+6586979	Entire home/apt	450	1	1
+6586979	Entire home/apt	450	1	1
+6586979	Entire home/apt	450	1	1
+6591894	Shared room	31	1	1
+6591894	Shared room	31	1	1
+6592421	Entire home/apt	150	1	1
+6592421	Entire home/apt	150	1	1
+6592421	Entire home/apt	150	1	1
+6613192	Entire home/apt	110	1	1
+6613601	Entire home/apt	125	1	1
+6629132	Private room	122	1	1
+6629132	Private room	122	1	1
+6629657	Private room	45	1	1
+6629657	Private room	45	1	1
+6637899	Private room	65	1	1
+6637899	Private room	65	1	1
+6644854	Entire home/apt	250	1	1
+6646843	Entire home/apt	99	1	1
+6646843	Entire home/apt	99	1	1
+6646843	Entire home/apt	99	1	1
+6652199	Private room	100	1	1
+6655233	Private room	74	1	1
+6671901	Entire home/apt	120	1	1
+6676926	Entire home/apt	127	1	1
+6676926	Entire home/apt	127	1	1
+6691324	Entire home/apt	150	1	1
+6691324	Entire home/apt	150	1	1
+6691324	Entire home/apt	150	1	1
+6691324	Entire home/apt	150	1	1
+6691324	Entire home/apt	150	1	1
+6691873	Entire home/apt	90	1	1
+6707735	Entire home/apt	110	1	1
+6707735	Entire home/apt	110	1	1
+6707735	Entire home/apt	110	1	1
+6707735	Entire home/apt	110	1	1
+6714652	Entire home/apt	150	1	1
+6716620	Entire home/apt	65	1	1
+6716874	Entire home/apt	105	1	1
+6724599	Entire home/apt	97	1	1
+6734621	Entire home/apt	333	1	1
+6734621	Entire home/apt	333	1	1
+6734621	Entire home/apt	333	1	1
+6734621	Entire home/apt	333	1	1
+6734621	Entire home/apt	333	1	1
+6734621	Entire home/apt	333	1	1
+6741135	Entire home/apt	279	1	1
+6746826	Entire home/apt	129	1	1
+6748502	Private room	51	1	1
+6750264	Entire home/apt	180	1	1
+6750430	Entire home/apt	200	1	1
+6759046	Private room	75	1	1
+6759046	Private room	75	1	1
+6761267	Entire home/apt	90	1	1
+6761267	Entire home/apt	90	1	1
+6762958	Entire home/apt	75	1	1
+7219838	Shared room	60	1	1
+7219838	Shared room	60	1	1
+7219838	Shared room	60	1	1
+7227464	Entire home/apt	125	1	1
+7227464	Entire home/apt	125	1	1
+7228499	Entire home/apt	349	1	1
+7228499	Entire home/apt	349	1	1
+7228499	Entire home/apt	349	1	1
+7241905	Entire home/apt	115	1	1
+7249631	Entire home/apt	150	1	1
+7249631	Entire home/apt	150	1	1
+7262142	Entire home/apt	65	1	1
+7263506	Entire home/apt	85	1	1
+7266662	Private room	80	1	1
+7275464	Entire home/apt	140	1	1
+7305969	Private room	90	1	1
+7305969	Private room	90	1	1
+7324041	Entire home/apt	79	1	1
+7324993	Entire home/apt	175	1	1
+7326419	Private room	65	1	1
+7344117	Entire home/apt	425	1	1
+7344117	Entire home/apt	425	1	1
+7347229	Entire home/apt	149	1	1
+7347229	Entire home/apt	149	1	1
+7348578	Private room	40	1	1
+7348578	Private room	40	1	1
+7349029	Entire home/apt	100	1	1
+7349029	Entire home/apt	100	1	1
+7349029	Entire home/apt	100	1	1
+7349099	Entire home/apt	95	1	1
+7350059	Private room	90	1	1
+7360078	Private room	125	1	1
+7362757	Entire home/apt	84	1	1
+7362757	Entire home/apt	84	1	1
+7362757	Entire home/apt	84	1	1
+7362757	Entire home/apt	84	1	1
+7362757	Entire home/apt	84	1	1
+7362757	Entire home/apt	84	1	1
+7362757	Entire home/apt	84	1	1
+7362757	Entire home/apt	84	1	1
+7363462	Private room	45	1	1
+7363462	Private room	45	1	1
+7363462	Private room	45	1	1
+7363462	Private room	45	1	1
+7363462	Private room	45	1	1
+7363727	Private room	70	1	1
+7364024	Entire home/apt	110	1	1
+7364146	Entire home/apt	100	1	1
+7364146	Entire home/apt	100	1	1
+7381677	Entire home/apt	199	1	1
+7388899	Private room	55	1	1
+7388899	Private room	55	1	1
+7396508	Entire home/apt	150	1	1
+7401854	Entire home/apt	95	1	1
+7402861	Private room	45	1	1
+7420762	Entire home/apt	90	1	1
+7420762	Entire home/apt	90	1	1
+7420762	Entire home/apt	90	1	1
+7420762	Entire home/apt	90	1	1
+7421950	Entire home/apt	130	1	1
+7429207	Entire home/apt	168	1	1
+7434103	Private room	92	1	1
+7434103	Private room	92	1	1
+7438635	Private room	220	1	1
+7438635	Private room	220	1	1
+7455706	Entire home/apt	70	1	1
+7459684	Entire home/apt	95	1	1
+7459684	Entire home/apt	95	1	1
+7459684	Entire home/apt	95	1	1
+7471629	Entire home/apt	79	1	1
+7471629	Entire home/apt	79	1	1
+7471629	Entire home/apt	79	1	1
+7481498	Entire home/apt	125	1	1
+7481498	Entire home/apt	125	1	1
+7483750	Private room	63	1	1
+7483750	Private room	63	1	1
+7483750	Private room	63	1	1
+7496485	Entire home/apt	185	1	1
+7500191	Entire home/apt	119	1	1
+7500191	Entire home/apt	119	1	1
+7500191	Entire home/apt	119	1	1
+7500191	Entire home/apt	119	1	1
+7500728	Entire home/apt	99	1	1
+7500728	Entire home/apt	99	1	1
+7500728	Entire home/apt	99	1	1
+7500728	Entire home/apt	99	1	1
+7506165	Entire home/apt	280	1	1
+7517684	Private room	150	1	1
+7518794	Entire home/apt	120	1	1
+7518794	Entire home/apt	120	1	1
+7518794	Entire home/apt	120	1	1
+7527242	Entire home/apt	95	1	1
+7534300	Private room	125	1	1
+7561272	Private room	47	1	1
+7579854	Entire home/apt	89	1	1
+7581974	Private room	105	1	1
+7601766	Private room	75	1	1
+7604621	Entire home/apt	85	1	1
+7616031	Entire home/apt	125	1	1
+7616507	Entire home/apt	200	1	1
+7616507	Entire home/apt	200	1	1
+7620570	Entire home/apt	150	1	1
+7627794	Entire home/apt	219	1	1
+7636185	Entire home/apt	90	1	1
+7636185	Entire home/apt	90	1	1
+7638689	Entire home/apt	150	1	1
+7646637	Entire home/apt	99	1	1
+6032726	Entire home/apt	550	1	1
+6032726	Entire home/apt	550	1	1
+6043482	Private room	50	1	1
+6044106	Entire home/apt	90	1	1
+6044106	Entire home/apt	90	1	1
+6044106	Entire home/apt	90	1	1
+6044106	Entire home/apt	90	1	1
+6044106	Entire home/apt	90	1	1
+6044106	Entire home/apt	90	1	1
+6044106	Entire home/apt	90	1	1
+6044106	Entire home/apt	90	1	1
+6076158	Entire home/apt	99	1	1
+6076158	Entire home/apt	99	1	1
+6087451	Entire home/apt	105	1	1
+6087451	Entire home/apt	105	1	1
+6087451	Entire home/apt	105	1	1
+6087451	Entire home/apt	105	1	1
+6087451	Entire home/apt	105	1	1
+6087451	Entire home/apt	105	1	1
+6105021	Entire home/apt	99	1	1
+6105021	Entire home/apt	99	1	1
+6105021	Entire home/apt	99	1	1
+6105021	Entire home/apt	99	1	1
+6106498	Private room	55	1	1
+6106498	Private room	55	1	1
+6106498	Private room	55	1	1
+6106498	Private room	55	1	1
+6108796	Entire home/apt	103	1	1
+6108796	Entire home/apt	103	1	1
+6108796	Entire home/apt	103	1	1
+6115704	Entire home/apt	325	1	1
+6117473	Private room	48	1	1
+6117473	Private room	48	1	1
+6117473	Private room	48	1	1
+6118198	Private room	79	1	1
+6118198	Private room	79	1	1
+6118359	Private room	70	1	1
+6118359	Private room	70	1	1
+6133354	Entire home/apt	135	1	1
+6133354	Entire home/apt	135	1	1
+6134153	Entire home/apt	200	1	1
+6134153	Entire home/apt	200	1	1
+6154478	Entire home/apt	111	1	1
+6166307	Entire home/apt	120	1	1
+6183330	Entire home/apt	100	1	1
+6183330	Entire home/apt	100	1	1
+6183330	Entire home/apt	100	1	1
+6183330	Entire home/apt	100	1	1
+6183721	Entire home/apt	160	1	1
+6183721	Entire home/apt	160	1	1
+6185083	Private room	75	1	1
+6187841	Entire home/apt	229	1	1
+6202214	Entire home/apt	104	1	1
+6202214	Entire home/apt	104	1	1
+6214517	Entire home/apt	120	1	1
+6214517	Entire home/apt	120	1	1
+6214517	Entire home/apt	120	1	1
+6214517	Entire home/apt	120	1	1
+6214998	Private room	85	1	1
+6215943	Entire home/apt	177	1	1
+6215943	Entire home/apt	177	1	1
+6239907	Private room	99	1	1
+6239907	Private room	99	1	1
+6239907	Private room	99	1	1
+6239907	Private room	99	1	1
+6239907	Private room	99	1	1
+6240501	Private room	72	1	1
+6240501	Private room	72	1	1
+6240501	Private room	72	1	1
+6245498	Entire home/apt	105	1	1
+6245498	Entire home/apt	105	1	1
+6246861	Entire home/apt	115	1	1
+6246861	Entire home/apt	115	1	1
+6246861	Entire home/apt	115	1	1
+6246861	Entire home/apt	115	1	1
+6246861	Entire home/apt	115	1	1
+6246861	Entire home/apt	115	1	1
+6248083	Entire home/apt	498	1	1
+6248083	Entire home/apt	498	1	1
+6262987	Private room	55	1	1
+6262987	Private room	55	1	1
+6262987	Private room	55	1	1
+6272065	Private room	65	1	1
+6278191	Entire home/apt	113	1	1
+6278191	Entire home/apt	113	1	1
+6278191	Entire home/apt	113	1	1
+6278191	Entire home/apt	113	1	1
+6278361	Shared room	40	1	1
+6278361	Shared room	40	1	1
+6278361	Shared room	40	1	1
+6304139	Entire home/apt	95	1	1
+6304139	Entire home/apt	95	1	1
+6315435	Entire home/apt	300	1	1
+6327506	Entire home/apt	65	1	1
+6327506	Entire home/apt	65	1	1
+6327506	Entire home/apt	65	1	1
+6327506	Entire home/apt	65	1	1
+6327506	Entire home/apt	65	1	1
+6327506	Entire home/apt	65	1	1
+6328150	Entire home/apt	140	1	1
+6328150	Entire home/apt	140	1	1
+6328150	Entire home/apt	140	1	1
+6358605	Private room	66	1	1
+6387576	Private room	89	1	1
+6390214	Entire home/apt	110	1	1
+6390214	Entire home/apt	110	1	1
+6390214	Entire home/apt	110	1	1
+7634011	Entire home/apt	104	1	1
+7638282	Entire home/apt	130	1	1
+7638282	Entire home/apt	130	1	1
+7649837	Entire home/apt	90	1	1
+7651653	Entire home/apt	105	1	1
+7661577	Entire home/apt	109	1	1
+7680289	Entire home/apt	125	1	1
+7697170	Entire home/apt	239	1	1
+7697170	Entire home/apt	239	1	1
+7699495	Entire home/apt	105	1	1
+7699495	Entire home/apt	105	1	1
+7699495	Entire home/apt	105	1	1
+7713043	Entire home/apt	75	1	1
+7717813	Entire home/apt	130	1	1
+7718139	Entire home/apt	65	1	1
+7732071	Entire home/apt	129	1	1
+7733192	Entire home/apt	749	1	1
+7735100	Private room	65	1	1
+7735282	Entire home/apt	99	1	1
+7735282	Entire home/apt	99	1	1
+7746170	Private room	65	1	1
+7756839	Entire home/apt	82	1	1
+7756839	Entire home/apt	82	1	1
+7763613	Entire home/apt	149	1	1
+7763613	Entire home/apt	149	1	1
+7763613	Entire home/apt	149	1	1
+7763613	Entire home/apt	149	1	1
+7768727	Private room	75	1	1
+7768727	Private room	75	1	1
+7771531	Entire home/apt	79	1	1
+7773668	Private room	69	1	1
+7784802	Entire home/apt	100	1	1
+7788695	Private room	68	1	1
+7788695	Private room	68	1	1
+7788695	Private room	68	1	1
+7791010	Private room	79	1	1
+7791010	Private room	79	1	1
+7791010	Private room	79	1	1
+7800143	Entire home/apt	225	1	1
+7800238	Entire home/apt	85	1	1
+7800238	Entire home/apt	85	1	1
+7805491	Shared room	55	1	1
+7824426	Private room	85	1	1
+7824426	Private room	85	1	1
+7826541	Entire home/apt	140	1	1
+7833113	Private room	55	1	1
+7859906	Private room	60	1	1
+7860837	Entire home/apt	99	1	1
+7871885	Entire home/apt	125	1	1
+7872818	Entire home/apt	85	1	1
+7875887	Private room	90	1	1
+7883181	Private room	60	1	1
+7900056	Entire home/apt	199	1	1
+7900497	Entire home/apt	85	1	1
+7902068	Private room	35	1	1
+7902068	Private room	35	1	1
+7902068	Private room	35	1	1
+7902268	Private room	37	1	1
+7902268	Private room	37	1	1
+7902268	Private room	37	1	1
+7917718	Private room	55	1	1
+7921278	Private room	50	1	1
+7922063	Shared room	42	1	1
+7922581	Entire home/apt	125	1	1
+7922581	Entire home/apt	125	1	1
+7931386	Entire home/apt	175	1	1
+7931386	Entire home/apt	175	1	1
+7934963	Private room	49	1	1
+7936712	Entire home/apt	120	1	1
+7938153	Private room	63	1	1
+7939058	Private room	75	1	1
+7956337	Private room	39	1	1
+7968548	Private room	87	1	1
+7974112	Private room	87	1	1
+7974112	Private room	87	1	1
+7974112	Private room	87	1	1
+7988300	Private room	65	1	1
+7988436	Private room	65	1	1
+7988436	Private room	65	1	1
+7995944	Entire home/apt	90	1	1
+7995944	Entire home/apt	90	1	1
+7995944	Entire home/apt	90	1	1
+8006745	Entire home/apt	65	1	1
+8012443	Private room	70	1	1
+8012443	Private room	70	1	1
+8012443	Private room	70	1	1
+8015531	Entire home/apt	114	1	1
+8015531	Entire home/apt	114	1	1
+8015531	Entire home/apt	114	1	1
+8016481	Entire home/apt	148	1	1
+8017832	Private room	49	1	1
+8027776	Entire home/apt	99	1	1
+8034871	Entire home/apt	95	1	1
+8050232	Entire home/apt	90	1	1
+8053049	Entire home/apt	150	1	1
+8053396	Entire home/apt	150	1	1
+8064351	Shared room	50	1	1
+8072907	Entire home/apt	115	1	1
+8072907	Entire home/apt	115	1	1
+8082659	Entire home/apt	150	1	1
+8082659	Entire home/apt	150	1	1
+8147215	Entire home/apt	180	1	1
+8153673	Entire home/apt	110	1	1
+8173487	Entire home/apt	280	1	1
+8174626	Entire home/apt	85	1	1
+8174626	Entire home/apt	85	1	1
+8193241	Entire home/apt	110	1	1
+6401209	Entire home/apt	338	1	1
+6411986	Private room	90	1	1
+6411986	Private room	90	1	1
+6412566	Entire home/apt	95	1	1
+6412566	Entire home/apt	95	1	1
+6416765	Entire home/apt	149	1	1
+6416765	Entire home/apt	149	1	1
+6423204	Entire home/apt	115	1	1
+6423204	Entire home/apt	115	1	1
+6423204	Entire home/apt	115	1	1
+6423204	Entire home/apt	115	1	1
+6423488	Entire home/apt	149	1	1
+6424859	Private room	139	1	1
+6424859	Private room	139	1	1
+6424859	Private room	139	1	1
+6424859	Private room	139	1	1
+6424982	Private room	80	1	1
+6424982	Private room	80	1	1
+6424982	Private room	80	1	1
+6424982	Private room	80	1	1
+6424982	Private room	80	1	1
+6424982	Private room	80	1	1
+6424982	Private room	80	1	1
+6424982	Private room	80	1	1
+6425652	Entire home/apt	200	1	1
+6425652	Entire home/apt	200	1	1
+6436976	Entire home/apt	99	1	1
+6438518	Entire home/apt	145	1	1
+6438518	Entire home/apt	145	1	1
+6445769	Entire home/apt	100	1	1
+6445769	Entire home/apt	100	1	1
+6445769	Entire home/apt	100	1	1
+6445769	Entire home/apt	100	1	1
+6445769	Entire home/apt	100	1	1
+6445769	Entire home/apt	100	1	1
+6445769	Entire home/apt	100	1	1
+6451305	Entire home/apt	220	1	1
+6451305	Entire home/apt	220	1	1
+6451305	Entire home/apt	220	1	1
+6451305	Entire home/apt	220	1	1
+6452801	Entire home/apt	159	1	1
+6452801	Entire home/apt	159	1	1
+6479027	Private room	53	1	1
+6482409	Entire home/apt	105	1	1
+6482409	Entire home/apt	105	1	1
+6482409	Entire home/apt	105	1	1
+6482409	Entire home/apt	105	1	1
+6490453	Private room	140	1	1
+6490453	Private room	140	1	1
+6512378	Private room	55	1	1
+6512979	Entire home/apt	75	1	1
+6523393	Entire home/apt	95	1	1
+6523393	Entire home/apt	95	1	1
+6523393	Entire home/apt	95	1	1
+6523393	Entire home/apt	95	1	1
+6528342	Entire home/apt	244	1	1
+6543683	Private room	130	1	1
+6543683	Private room	130	1	1
+6557767	Private room	65	1	1
+6561379	Entire home/apt	144	1	1
+6561379	Entire home/apt	144	1	1
+6561811	Shared room	53	1	1
+6561811	Shared room	53	1	1
+6567683	Entire home/apt	129	1	1
+6567683	Entire home/apt	129	1	1
+6587443	Private room	74	1	1
+6590264	Entire home/apt	115	1	1
+6592178	Entire home/apt	300	1	1
+6592178	Entire home/apt	300	1	1
+6599960	Entire home/apt	105	1	1
+6603061	Private room	65	1	1
+6603061	Private room	65	1	1
+6603061	Private room	65	1	1
+6603061	Private room	65	1	1
+6603061	Private room	65	1	1
+6603061	Private room	65	1	1
+6603061	Private room	65	1	1
+6603061	Private room	65	1	1
+6603376	Entire home/apt	252	1	1
+6644628	Private room	150	1	1
+6644796	Entire home/apt	79	1	1
+6646843	Entire home/apt	99	1	1
+6646894	Entire home/apt	175	1	1
+6646894	Entire home/apt	175	1	1
+6646985	Private room	35	1	1
+6646985	Private room	35	1	1
+6646985	Private room	35	1	1
+6646985	Private room	35	1	1
+6646985	Private room	35	1	1
+6647442	Private room	55	1	1
+6647442	Private room	55	1	1
+6647442	Private room	55	1	1
+6647442	Private room	55	1	1
+6657574	Private room	45	1	1
+6658052	Entire home/apt	149	1	1
+6658052	Entire home/apt	149	1	1
+6658052	Entire home/apt	149	1	1
+6658052	Entire home/apt	149	1	1
+6658052	Entire home/apt	149	1	1
+6661617	Entire home/apt	175	1	1
+6661617	Entire home/apt	175	1	1
+6670332	Entire home/apt	145	1	1
+6674408	Private room	48	1	1
+6674408	Private room	48	1	1
+6674408	Private room	48	1	1
+6674408	Private room	48	1	1
+6674408	Private room	48	1	1
+6765354	Private room	90	1	1
+6766513	Entire home/apt	95	1	1
+6766513	Entire home/apt	95	1	1
+6780615	Entire home/apt	150	1	1
+6781308	Entire home/apt	125	1	1
+6781308	Entire home/apt	125	1	1
+6781308	Entire home/apt	125	1	1
+6781308	Entire home/apt	125	1	1
+6781308	Entire home/apt	125	1	1
+6781308	Entire home/apt	125	1	1
+6782993	Private room	53	1	1
+6782993	Private room	53	1	1
+6782993	Private room	53	1	1
+6782993	Private room	53	1	1
+6795678	Entire home/apt	120	1	1
+6795678	Entire home/apt	120	1	1
+6795678	Entire home/apt	120	1	1
+6795678	Entire home/apt	120	1	1
+6797786	Entire home/apt	125	1	1
+6797786	Entire home/apt	125	1	1
+6810430	Entire home/apt	65	1	1
+6810430	Entire home/apt	65	1	1
+6810430	Entire home/apt	65	1	1
+6810430	Entire home/apt	65	1	1
+6811792	Entire home/apt	125	1	1
+6811792	Entire home/apt	125	1	1
+6813483	Entire home/apt	126	1	1
+6813483	Entire home/apt	126	1	1
+6813483	Entire home/apt	126	1	1
+6813483	Entire home/apt	126	1	1
+6813623	Entire home/apt	240	1	1
+6813623	Entire home/apt	240	1	1
+6821407	Private room	47	1	1
+6821407	Private room	47	1	1
+6821407	Private room	47	1	1
+6823597	Entire home/apt	140	1	1
+6823597	Entire home/apt	140	1	1
+6823597	Entire home/apt	140	1	1
+6823597	Entire home/apt	140	1	1
+6823597	Entire home/apt	140	1	1
+6823781	Entire home/apt	89	1	1
+6837751	Private room	90	1	1
+6837751	Private room	90	1	1
+6837751	Private room	90	1	1
+6838418	Private room	68	1	1
+6838418	Private room	68	1	1
+6838418	Private room	68	1	1
+6838418	Private room	68	1	1
+6838418	Private room	68	1	1
+6847052	Private room	101	1	1
+6852288	Private room	59	1	1
+6852288	Private room	59	1	1
+6854552	Entire home/apt	170	1	1
+6868378	Entire home/apt	187	1	1
+6870575	Entire home/apt	149	1	1
+6870575	Entire home/apt	149	1	1
+6870575	Entire home/apt	149	1	1
+6870575	Entire home/apt	149	1	1
+6870575	Entire home/apt	149	1	1
+6870575	Entire home/apt	149	1	1
+6870575	Entire home/apt	149	1	1
+6870575	Entire home/apt	149	1	1
+6872650	Private room	65	1	1
+6872650	Private room	65	1	1
+6882518	Entire home/apt	75	1	1
+6884604	Entire home/apt	140	1	1
+6884604	Entire home/apt	140	1	1
+6884604	Entire home/apt	140	1	1
+6884604	Entire home/apt	140	1	1
+6895132	Private room	120	1	1
+6895132	Private room	120	1	1
+6901218	Entire home/apt	99	1	1
+6913706	Entire home/apt	183	1	1
+6913706	Entire home/apt	183	1	1
+6913706	Entire home/apt	183	1	1
+6921373	Entire home/apt	99	1	1
+6927016	Entire home/apt	100	1	1
+6927016	Entire home/apt	100	1	1
+6927016	Entire home/apt	100	1	1
+6927016	Entire home/apt	100	1	1
+6927016	Entire home/apt	100	1	1
+6927016	Entire home/apt	100	1	1
+6927016	Entire home/apt	100	1	1
+6927016	Entire home/apt	100	1	1
+6927016	Entire home/apt	100	1	1
+6927016	Entire home/apt	100	1	1
+6927016	Entire home/apt	100	1	1
+6927016	Entire home/apt	100	1	1
+6927016	Entire home/apt	100	1	1
+6937492	Entire home/apt	165	1	1
+6938542	Private room	110	1	1
+6938542	Private room	110	1	1
+6939106	Entire home/apt	144	1	1
+6939106	Entire home/apt	144	1	1
+6939106	Entire home/apt	144	1	1
+6941113	Entire home/apt	225	1	1
+6941113	Entire home/apt	225	1	1
+6951415	Entire home/apt	95	1	1
+6951415	Entire home/apt	95	1	1
+6956938	Private room	90	1	1
+6956938	Private room	90	1	1
+6956938	Private room	90	1	1
+6958603	Private room	53	1	1
+6971260	Entire home/apt	120	1	1
+6971260	Entire home/apt	120	1	1
+6971260	Entire home/apt	120	1	1
+6973790	Entire home/apt	99	1	1
+6975036	Private room	90	1	1
+6990477	Entire home/apt	183	1	1
+6990477	Entire home/apt	183	1	1
+6990477	Entire home/apt	183	1	1
+6990882	Entire home/apt	300	1	1
+6990882	Entire home/apt	300	1	1
+6992696	Entire home/apt	199	1	1
+6994406	Entire home/apt	150	1	1
+7005538	Entire home/apt	150	1	1
+7005538	Entire home/apt	150	1	1
+7007118	Entire home/apt	100	1	1
+7007118	Entire home/apt	100	1	1
+7013085	Entire home/apt	99	1	1
+7013085	Entire home/apt	99	1	1
+7013085	Entire home/apt	99	1	1
+7025898	Entire home/apt	250	1	1
+7025898	Entire home/apt	250	1	1
+7025898	Entire home/apt	250	1	1
+7025898	Entire home/apt	250	1	1
+7037291	Private room	70	1	1
+7037291	Private room	70	1	1
+7048843	Private room	40	1	1
+7048843	Private room	40	1	1
+7048843	Private room	40	1	1
+7050204	Entire home/apt	150	1	1
+7069080	Private room	50	1	1
+7073650	Entire home/apt	81	1	1
+7075913	Entire home/apt	100	1	1
+7075913	Entire home/apt	100	1	1
+7075913	Entire home/apt	100	1	1
+7095802	Private room	35	1	1
+7095802	Private room	35	1	1
+7095802	Private room	35	1	1
+7110655	Entire home/apt	99	1	1
+7110923	Entire home/apt	196	1	1
+7116795	Entire home/apt	169	1	1
+7116795	Entire home/apt	169	1	1
+7116795	Entire home/apt	169	1	1
+7128310	Entire home/apt	100	1	1
+7151107	Entire home/apt	299	1	1
+7151924	Entire home/apt	150	1	1
+7153101	Entire home/apt	92	1	1
+7153101	Entire home/apt	92	1	1
+7153101	Entire home/apt	92	1	1
+7153101	Entire home/apt	92	1	1
+7207641	Entire home/apt	348	1	1
+7208439	Entire home/apt	115	1	1
+7208439	Entire home/apt	115	1	1
+7228499	Entire home/apt	349	1	1
+7241905	Entire home/apt	115	1	1
+7243974	Entire home/apt	140	1	1
+7247720	Private room	70	1	1
+7247767	Private room	78	1	1
+7247767	Private room	78	1	1
+7266662	Private room	80	1	1
+7274556	Private room	40	1	1
+7274556	Private room	40	1	1
+7275464	Entire home/apt	140	1	1
+7275464	Entire home/apt	140	1	1
+7308567	Entire home/apt	150	1	1
+7308567	Entire home/apt	150	1	1
+7311407	Entire home/apt	99	1	1
+7311407	Entire home/apt	99	1	1
+7311407	Entire home/apt	99	1	1
+7324041	Entire home/apt	79	1	1
+7324041	Entire home/apt	79	1	1
+7326419	Private room	65	1	1
+7326419	Private room	65	1	1
+7335567	Entire home/apt	71	1	1
+7335567	Entire home/apt	71	1	1
+7335567	Entire home/apt	71	1	1
+7343707	Entire home/apt	225	1	1
+7348578	Private room	40	1	1
+7348578	Private room	40	1	1
+7350059	Private room	90	1	1
+7350992	Entire home/apt	88	1	1
+7350992	Entire home/apt	88	1	1
+7350992	Entire home/apt	88	1	1
+7350992	Entire home/apt	88	1	1
+7350992	Entire home/apt	88	1	1
+7350992	Entire home/apt	88	1	1
+7350992	Entire home/apt	88	1	1
+7363727	Private room	70	1	1
+7363727	Private room	70	1	1
+7363727	Private room	70	1	1
+7368959	Entire home/apt	104	1	1
+7389950	Private room	99	1	1
+7401671	Entire home/apt	80	1	1
+7401671	Entire home/apt	80	1	1
+7401671	Entire home/apt	80	1	1
+7401671	Entire home/apt	80	1	1
+7401671	Entire home/apt	80	1	1
+7401671	Entire home/apt	80	1	1
+7401854	Entire home/apt	95	1	1
+7401854	Entire home/apt	95	1	1
+7402190	Private room	65	1	1
+7402190	Private room	65	1	1
+7402190	Private room	65	1	1
+7402190	Private room	65	1	1
+7403174	Entire home/apt	125	1	1
+7420762	Entire home/apt	90	1	1
+7420762	Entire home/apt	90	1	1
+7420762	Entire home/apt	90	1	1
+7421950	Entire home/apt	130	1	1
+7430679	Private room	60	1	1
+7430679	Private room	60	1	1
+7439802	Entire home/apt	550	1	1
+8193241	Entire home/apt	110	1	1
+8193516	Private room	82	1	1
+8194782	Entire home/apt	100	1	1
+8221520	Entire home/apt	250	1	1
+8253955	Entire home/apt	150	1	1
+8273948	Entire home/apt	85	1	1
+8308353	Private room	65	1	1
+8310249	Private room	75	1	1
+8310398	Private room	75	1	1
+8310398	Private room	75	1	1
+8310398	Private room	75	1	1
+8311242	Entire home/apt	117	1	1
+8372038	Entire home/apt	120	1	1
+8372038	Entire home/apt	120	1	1
+8374102	Entire home/apt	91	1	1
+8409926	Private room	35	1	1
+8409962	Private room	35	1	1
+8409962	Private room	35	1	1
+8409969	Private room	41	1	1
+8409969	Private room	41	1	1
+8409969	Private room	41	1	1
+8412143	Entire home/apt	115	1	1
+8412143	Entire home/apt	115	1	1
+8424532	Entire home/apt	350	1	1
+8457402	Private room	45	1	1
+8457402	Private room	45	1	1
+8457402	Private room	45	1	1
+8524565	Private room	50	1	1
+8535897	Private room	80	1	1
+8536441	Entire home/apt	85	1	1
+8538420	Entire home/apt	100	1	1
+8538420	Entire home/apt	100	1	1
+8556103	Entire home/apt	145	1	1
+8568567	Entire home/apt	140	1	1
+8571518	Entire home/apt	106	1	1
+8597687	Private room	47	1	1
+8616488	Entire home/apt	81	1	1
+8616488	Entire home/apt	81	1	1
+8616488	Entire home/apt	81	1	1
+8627921	Entire home/apt	70	1	1
+8631419	Entire home/apt	180	1	1
+8631419	Entire home/apt	180	1	1
+8683011	Private room	85	1	1
+8683011	Private room	85	1	1
+8755762	Entire home/apt	96	1	1
+8774504	Entire home/apt	109	1	1
+8779676	Private room	65	1	1
+8783900	Entire home/apt	155	1	1
+8829472	Entire home/apt	139	1	1
+8902327	Entire home/apt	79	1	1
+8922554	Entire home/apt	130	1	1
+8924032	Entire home/apt	95	1	1
+8926188	Entire home/apt	125	1	1
+8939306	Private room	41	1	1
+8939306	Private room	41	1	1
+8939503	Private room	44	1	1
+8939503	Private room	44	1	1
+8939736	Private room	43	1	1
+8941768	Entire home/apt	130	1	1
+8942678	Entire home/apt	450	1	1
+9030929	Private room	35	1	1
+9075656	Private room	49	1	1
+9075656	Private room	49	1	1
+9075656	Private room	49	1	1
+9097503	Entire home/apt	85	1	1
+9201292	Entire home/apt	219	1	1
+9217446	Private room	35	1	1
+9233533	Entire home/apt	95	1	1
+9294832	Private room	40	1	1
+9311687	Private room	68	1	1
+9374358	Entire home/apt	95	1	1
+9374358	Entire home/apt	95	1	1
+9374358	Entire home/apt	95	1	1
+9394485	Entire home/apt	119	1	1
+9436832	Entire home/apt	100	1	1
+9448215	Private room	67	1	1
+9508837	Entire home/apt	99	1	1
+9519968	Entire home/apt	130	1	1
+9617068	Entire home/apt	125	1	1
+9736940	Private room	28	1	1
+9995551	Entire home/apt	79	1	1
+10012724	Shared room	25	1	1
+6674408	Private room	48	1	1
+6686072	Entire home/apt	130	1	1
+6686072	Entire home/apt	130	1	1
+6686072	Entire home/apt	130	1	1
+6686072	Entire home/apt	130	1	1
+6687939	Entire home/apt	100	1	1
+6687939	Entire home/apt	100	1	1
+6687939	Entire home/apt	100	1	1
+6701018	Entire home/apt	67	1	1
+6701018	Entire home/apt	67	1	1
+6701018	Entire home/apt	67	1	1
+6701018	Entire home/apt	67	1	1
+6716380	Entire home/apt	220	1	1
+6727846	Entire home/apt	115	1	1
+6727846	Entire home/apt	115	1	1
+6740521	Entire home/apt	276	1	1
+6741526	Entire home/apt	250	1	1
+6744143	Entire home/apt	195	1	1
+6747473	Entire home/apt	150	1	1
+6747473	Entire home/apt	150	1	1
+6759104	Private room	69	1	1
+6766708	Entire home/apt	350	1	1
+6773472	Entire home/apt	170	1	1
+6773472	Entire home/apt	170	1	1
+6776229	Entire home/apt	129	1	1
+6779893	Entire home/apt	250	1	1
+6779893	Entire home/apt	250	1	1
+6793490	Entire home/apt	69	1	1
+6793490	Entire home/apt	69	1	1
+6796246	Entire home/apt	90	1	1
+6807981	Entire home/apt	156	1	1
+6807981	Entire home/apt	156	1	1
+6810430	Entire home/apt	65	1	1
+6810430	Entire home/apt	65	1	1
+6812054	Entire home/apt	212	1	1
+6832592	Entire home/apt	125	1	1
+6837751	Private room	90	1	1
+6837751	Private room	90	1	1
+6855839	Entire home/apt	144	1	1
+6855839	Entire home/apt	144	1	1
+6855839	Entire home/apt	144	1	1
+6855839	Entire home/apt	144	1	1
+6855839	Entire home/apt	144	1	1
+6855839	Entire home/apt	144	1	1
+6855839	Entire home/apt	144	1	1
+6856295	Private room	65	1	1
+6856295	Private room	65	1	1
+6856295	Private room	65	1	1
+6856295	Private room	65	1	1
+6856295	Private room	65	1	1
+6856295	Private room	65	1	1
+6856295	Private room	65	1	1
+6856295	Private room	65	1	1
+6856295	Private room	65	1	1
+6856295	Private room	65	1	1
+6856295	Private room	65	1	1
+6856295	Private room	65	1	1
+6865200	Entire home/apt	120	1	1
+6881188	Entire home/apt	375	1	1
+6881188	Entire home/apt	375	1	1
+6881188	Entire home/apt	375	1	1
+6882518	Entire home/apt	75	1	1
+6883913	Entire home/apt	120	1	1
+6883913	Entire home/apt	120	1	1
+6886633	Entire home/apt	75	1	1
+6886633	Entire home/apt	75	1	1
+6886633	Entire home/apt	75	1	1
+6886633	Entire home/apt	75	1	1
+6886633	Entire home/apt	75	1	1
+6886633	Entire home/apt	75	1	1
+6888107	Private room	49	1	1
+6888107	Private room	49	1	1
+6888107	Private room	49	1	1
+6888107	Private room	49	1	1
+6913414	Entire home/apt	125	1	1
+6915487	Entire home/apt	158	1	1
+6934128	Private room	80	1	1
+6934128	Private room	80	1	1
+6934128	Private room	80	1	1
+6939472	Private room	35	1	1
+6939472	Private room	35	1	1
+6949900	Entire home/apt	145	1	1
+6949900	Entire home/apt	145	1	1
+6956301	Entire home/apt	120	1	1
+6968101	Entire home/apt	140	1	1
+6990677	Entire home/apt	110	1	1
+6992696	Entire home/apt	199	1	1
+6993019	Entire home/apt	290	1	1
+7003848	Entire home/apt	257	1	1
+7011200	Entire home/apt	89	1	1
+7021906	Entire home/apt	465	1	1
+7026898	Private room	85	1	1
+7027507	Private room	68	1	1
+7036707	Entire home/apt	80	1	1
+7037522	Entire home/apt	80	1	1
+7037522	Entire home/apt	80	1	1
+7039427	Private room	39	1	1
+7039427	Private room	39	1	1
+7039427	Private room	39	1	1
+7039427	Private room	39	1	1
+7039427	Private room	39	1	1
+7048843	Private room	40	1	1
+7054225	Entire home/apt	200	1	1
+7064681	Shared room	25	1	1
+7064681	Shared room	25	1	1
+7066118	Entire home/apt	60	1	1
+7066118	Entire home/apt	60	1	1
+7451624	Entire home/apt	168	1	1
+7451624	Entire home/apt	168	1	1
+7451624	Entire home/apt	168	1	1
+7451624	Entire home/apt	168	1	1
+7451624	Entire home/apt	168	1	1
+7452021	Entire home/apt	125	1	1
+7455068	Entire home/apt	59	1	1
+7471629	Entire home/apt	79	1	1
+7471629	Entire home/apt	79	1	1
+7499506	Entire home/apt	120	1	1
+7499506	Entire home/apt	120	1	1
+7499506	Entire home/apt	120	1	1
+7500000	Entire home/apt	120	1	1
+7510776	Entire home/apt	199	1	1
+7543458	Entire home/apt	89	1	1
+7543458	Entire home/apt	89	1	1
+7561254	Private room	41	1	1
+7561254	Private room	41	1	1
+7561333	Private room	70	1	1
+7561333	Private room	70	1	1
+7563243	Entire home/apt	100	1	1
+7563243	Entire home/apt	100	1	1
+7585688	Private room	65	1	1
+7585688	Private room	65	1	1
+7585688	Private room	65	1	1
+7604621	Entire home/apt	85	1	1
+7618526	Private room	85	1	1
+7619060	Private room	69	1	1
+7619060	Private room	69	1	1
+7619060	Private room	69	1	1
+7619060	Private room	69	1	1
+7619060	Private room	69	1	1
+7638282	Entire home/apt	130	1	1
+7638282	Entire home/apt	130	1	1
+7646637	Entire home/apt	99	1	1
+7661577	Entire home/apt	109	1	1
+7664565	Private room	60	1	1
+7664565	Private room	60	1	1
+7664565	Private room	60	1	1
+7665392	Entire home/apt	105	1	1
+7665392	Entire home/apt	105	1	1
+7665415	Entire home/apt	109	1	1
+7678814	Entire home/apt	110	1	1
+7679928	Private room	45	1	1
+7685745	Private room	60	1	1
+7692789	Private room	70	1	1
+7692789	Private room	70	1	1
+7692789	Private room	70	1	1
+7698916	Private room	75	1	1
+7698916	Private room	75	1	1
+7748905	Private room	82	1	1
+7760836	Entire home/apt	105	1	1
+7760836	Entire home/apt	105	1	1
+7763298	Private room	80	1	1
+7763298	Private room	80	1	1
+7776701	Entire home/apt	269	1	1
+7777381	Private room	80	1	1
+7777381	Private room	80	1	1
+7777381	Private room	80	1	1
+7777381	Private room	80	1	1
+7784802	Entire home/apt	100	1	1
+7789264	Entire home/apt	119	1	1
+7789264	Entire home/apt	119	1	1
+7789438	Entire home/apt	139	1	1
+7800238	Entire home/apt	85	1	1
+7807087	Entire home/apt	89	1	1
+7809494	Entire home/apt	165	1	1
+7809494	Entire home/apt	165	1	1
+7809494	Entire home/apt	165	1	1
+7828222	Entire home/apt	130	1	1
+7843995	Entire home/apt	129	1	1
+7843995	Entire home/apt	129	1	1
+7843995	Entire home/apt	129	1	1
+7843995	Entire home/apt	129	1	1
+7844444	Entire home/apt	100	1	1
+7844444	Entire home/apt	100	1	1
+7844444	Entire home/apt	100	1	1
+7871885	Entire home/apt	125	1	1
+7873789	Entire home/apt	125	1	1
+7884782	Entire home/apt	120	1	1
+7884782	Entire home/apt	120	1	1
+7884782	Entire home/apt	120	1	1
+7884782	Entire home/apt	120	1	1
+7902137	Private room	84	1	1
+7902137	Private room	84	1	1
+7902137	Private room	84	1	1
+7902330	Private room	39	1	1
+7902330	Private room	39	1	1
+7902382	Private room	35	1	1
+7902382	Private room	35	1	1
+7902569	Private room	72	1	1
+7902569	Private room	72	1	1
+7902569	Private room	72	1	1
+7902569	Private room	72	1	1
+7902569	Private room	72	1	1
+7902569	Private room	72	1	1
+7914021	Entire home/apt	110	1	1
+7920539	Entire home/apt	165	1	1
+7920539	Entire home/apt	165	1	1
+7922197	Entire home/apt	115	1	1
+7922197	Entire home/apt	115	1	1
+7922197	Entire home/apt	115	1	1
+7931111	Entire home/apt	68	1	1
+7932696	Entire home/apt	110	1	1
+7932696	Entire home/apt	110	1	1
+7932696	Entire home/apt	110	1	1
+7941079	Private room	65	1	1
+7066118	Entire home/apt	60	1	1
+7070169	Entire home/apt	115	1	1
+7077910	Entire home/apt	170	1	1
+7087957	Entire home/apt	126	1	1
+7087957	Entire home/apt	126	1	1
+7087957	Entire home/apt	126	1	1
+7093910	Private room	80	1	1
+7116795	Entire home/apt	169	1	1
+7116795	Entire home/apt	169	1	1
+7131797	Entire home/apt	89	1	1
+7131797	Entire home/apt	89	1	1
+7134759	Private room	60	1	1
+7134759	Private room	60	1	1
+7151417	Entire home/apt	200	1	1
+7151417	Entire home/apt	200	1	1
+7151417	Entire home/apt	200	1	1
+7161897	Entire home/apt	150	1	1
+7161897	Entire home/apt	150	1	1
+7162664	Entire home/apt	220	1	1
+7162664	Entire home/apt	220	1	1
+7182584	Entire home/apt	200	1	1
+7201336	Private room	39	1	1
+7201336	Private room	39	1	1
+7201336	Private room	39	1	1
+7201336	Private room	39	1	1
+7201336	Private room	39	1	1
+7202016	Private room	75	1	1
+7203408	Entire home/apt	120	1	1
+7203408	Entire home/apt	120	1	1
+7221204	Private room	85	1	1
+7229015	Private room	69	1	1
+7229015	Private room	69	1	1
+7229015	Private room	69	1	1
+7229015	Private room	69	1	1
+7229015	Private room	69	1	1
+7247518	Entire home/apt	130	1	1
+7256122	Private room	65	1	1
+7256122	Private room	65	1	1
+7256122	Private room	65	1	1
+7256122	Private room	65	1	1
+7256122	Private room	65	1	1
+7256122	Private room	65	1	1
+7256122	Private room	65	1	1
+7256122	Private room	65	1	1
+7262142	Entire home/apt	65	1	1
+7262142	Entire home/apt	65	1	1
+7262142	Entire home/apt	65	1	1
+7308331	Entire home/apt	198	1	1
+7327623	Entire home/apt	94	1	1
+7327623	Entire home/apt	94	1	1
+7347229	Entire home/apt	149	1	1
+7347229	Entire home/apt	149	1	1
+7362757	Entire home/apt	84	1	1
+7362757	Entire home/apt	84	1	1
+7362757	Entire home/apt	84	1	1
+7363462	Private room	45	1	1
+7363462	Private room	45	1	1
+7363701	Entire home/apt	149	1	1
+7363701	Entire home/apt	149	1	1
+7381005	Private room	99	1	1
+7387294	Private room	75	1	1
+7387294	Private room	75	1	1
+7388899	Private room	55	1	1
+7391003	Entire home/apt	75	1	1
+7391003	Entire home/apt	75	1	1
+7391003	Entire home/apt	75	1	1
+7391003	Entire home/apt	75	1	1
+7391003	Entire home/apt	75	1	1
+7391003	Entire home/apt	75	1	1
+7391003	Entire home/apt	75	1	1
+7391003	Entire home/apt	75	1	1
+7391003	Entire home/apt	75	1	1
+7391003	Entire home/apt	75	1	1
+7396707	Entire home/apt	100	1	1
+7396707	Entire home/apt	100	1	1
+7396707	Entire home/apt	100	1	1
+7396707	Entire home/apt	100	1	1
+7402861	Private room	45	1	1
+7404370	Entire home/apt	130	1	1
+7411863	Private room	25	1	1
+7411863	Private room	25	1	1
+7411863	Private room	25	1	1
+7411863	Private room	25	1	1
+7411863	Private room	25	1	1
+7418814	Entire home/apt	110	1	1
+7418814	Entire home/apt	110	1	1
+7418814	Entire home/apt	110	1	1
+7430926	Entire home/apt	69	1	1
+7430926	Entire home/apt	69	1	1
+7431247	Entire home/apt	150	1	1
+7441508	Private room	65	1	1
+7441508	Private room	65	1	1
+7454026	Entire home/apt	495	1	1
+7459684	Entire home/apt	95	1	1
+7459684	Entire home/apt	95	1	1
+7492006	Entire home/apt	70	1	1
+7502246	Entire home/apt	109	1	1
+7502246	Entire home/apt	109	1	1
+7502246	Entire home/apt	109	1	1
+7529124	Entire home/apt	79	1	1
+7531405	Private room	85	1	1
+7531405	Private room	85	1	1
+7534300	Private room	125	1	1
+7550234	Private room	40	1	1
+7557951	Entire home/apt	100	1	1
+7561254	Private room	41	1	1
+7561272	Private room	47	1	1
+7646637	Entire home/apt	99	1	1
+7651702	Entire home/apt	100	1	1
+7653539	Entire home/apt	95	1	1
+7665392	Entire home/apt	105	1	1
+7697170	Entire home/apt	239	1	1
+7713043	Entire home/apt	75	1	1
+7717813	Entire home/apt	130	1	1
+7717813	Entire home/apt	130	1	1
+7718139	Entire home/apt	65	1	1
+7731836	Entire home/apt	70	1	1
+7735313	Entire home/apt	129	1	1
+7735313	Entire home/apt	129	1	1
+7735313	Entire home/apt	129	1	1
+7735313	Entire home/apt	129	1	1
+7735313	Entire home/apt	129	1	1
+7735313	Entire home/apt	129	1	1
+7735313	Entire home/apt	129	1	1
+7745016	Private room	50	1	1
+7748866	Private room	80	1	1
+7748866	Private room	80	1	1
+7763613	Entire home/apt	149	1	1
+7763613	Entire home/apt	149	1	1
+7768727	Private room	75	1	1
+7771531	Entire home/apt	79	1	1
+7775663	Entire home/apt	169	1	1
+7775663	Entire home/apt	169	1	1
+7789438	Entire home/apt	139	1	1
+7789438	Entire home/apt	139	1	1
+7789438	Entire home/apt	139	1	1
+7803176	Private room	50	1	1
+7803176	Private room	50	1	1
+7807087	Entire home/apt	89	1	1
+7809455	Private room	39	1	1
+7809455	Private room	39	1	1
+7809455	Private room	39	1	1
+7809595	Private room	76	1	1
+7809595	Private room	76	1	1
+7828509	Private room	60	1	1
+7844444	Entire home/apt	100	1	1
+7853358	Entire home/apt	85	1	1
+7857241	Entire home/apt	400	1	1
+7859906	Private room	60	1	1
+7860837	Entire home/apt	99	1	1
+7871885	Entire home/apt	125	1	1
+7872980	Entire home/apt	210	1	1
+7872980	Entire home/apt	210	1	1
+7872980	Entire home/apt	210	1	1
+7872980	Entire home/apt	210	1	1
+7873789	Entire home/apt	125	1	1
+7873789	Entire home/apt	125	1	1
+7884782	Entire home/apt	120	1	1
+7884782	Entire home/apt	120	1	1
+7884782	Entire home/apt	120	1	1
+7884782	Entire home/apt	120	1	1
+7884782	Entire home/apt	120	1	1
+7902137	Private room	84	1	1
+7902137	Private room	84	1	1
+7902137	Private room	84	1	1
+7902137	Private room	84	1	1
+7902137	Private room	84	1	1
+7902137	Private room	84	1	1
+7902268	Private room	37	1	1
+7902268	Private room	37	1	1
+7902330	Private room	39	1	1
+7902330	Private room	39	1	1
+7902382	Private room	35	1	1
+7902382	Private room	35	1	1
+7902569	Private room	72	1	1
+7917718	Private room	55	1	1
+7922197	Entire home/apt	115	1	1
+7922197	Entire home/apt	115	1	1
+7952930	Entire home/apt	75	1	1
+7952930	Entire home/apt	75	1	1
+7971334	Private room	129	1	1
+7971334	Private room	129	1	1
+7974112	Private room	87	1	1
+7975026	Entire home/apt	120	1	1
+7988300	Private room	65	1	1
+7988337	Entire home/apt	115	1	1
+7988337	Entire home/apt	115	1	1
+7988436	Private room	65	1	1
+7995944	Entire home/apt	90	1	1
+7995944	Entire home/apt	90	1	1
+7995944	Entire home/apt	90	1	1
+7995944	Entire home/apt	90	1	1
+8012443	Private room	70	1	1
+8014547	Entire home/apt	114	1	1
+8015531	Entire home/apt	114	1	1
+8016610	Entire home/apt	129	1	1
+8034871	Entire home/apt	95	1	1
+8035212	Entire home/apt	100	1	1
+8035212	Entire home/apt	100	1	1
+8036985	Entire home/apt	168	1	1
+8036985	Entire home/apt	168	1	1
+8036985	Entire home/apt	168	1	1
+8047522	Entire home/apt	150	1	1
+8049470	Private room	59	1	1
+8052307	Shared room	40	1	1
+8053921	Shared room	45	1	1
+8054902	Entire home/apt	100	1	1
+8067053	Private room	60	1	1
+8098383	Entire home/apt	75	1	1
+8098383	Entire home/apt	75	1	1
+8100190	Entire home/apt	156	1	1
+8105351	Entire home/apt	89	1	1
+8131881	Entire home/apt	45	1	1
+8132007	Entire home/apt	85	1	1
+8132007	Entire home/apt	85	1	1
+8147986	Entire home/apt	175	1	1
+8147986	Entire home/apt	175	1	1
+8150045	Private room	55	1	1
+8150045	Private room	55	1	1
+8150045	Private room	55	1	1
+8174626	Entire home/apt	85	1	1
+8187537	Entire home/apt	110	1	1
+8187537	Entire home/apt	110	1	1
+8187537	Entire home/apt	110	1	1
+8195629	Entire home/apt	100	1	1
+8195629	Entire home/apt	100	1	1
+8195629	Entire home/apt	100	1	1
+8207848	Entire home/apt	259	1	1
+8212190	Entire home/apt	150	1	1
+8212190	Entire home/apt	150	1	1
+8221520	Entire home/apt	250	1	1
+8251213	Entire home/apt	129	1	1
+8253955	Entire home/apt	150	1	1
+8294379	Private room	55	1	1
+8294379	Private room	55	1	1
+8306501	Private room	65	1	1
+8308316	Entire home/apt	165	1	1
+8308316	Entire home/apt	165	1	1
+8355276	Entire home/apt	65	1	1
+8379081	Private room	55	1	1
+8385687	Entire home/apt	250	1	1
+8409750	Entire home/apt	183	1	1
+8409750	Entire home/apt	183	1	1
+8409975	Private room	34	1	1
+8418650	Entire home/apt	100	1	1
+8418650	Entire home/apt	100	1	1
+8418650	Entire home/apt	100	1	1
+8418650	Entire home/apt	100	1	1
+8446541	Private room	80	1	1
+8473625	Entire home/apt	148	1	1
+8473625	Entire home/apt	148	1	1
+8483477	Entire home/apt	178	1	1
+8501705	Entire home/apt	74	1	1
+8505940	Private room	55	1	1
+8507062	Private room	55	1	1
+8515408	Entire home/apt	110	1	1
+8517602	Private room	85	1	1
+8517602	Private room	85	1	1
+8517602	Private room	85	1	1
+8518308	Entire home/apt	97	1	1
+8518308	Entire home/apt	97	1	1
+8518308	Entire home/apt	97	1	1
+8524565	Private room	50	1	1
+8538420	Entire home/apt	100	1	1
+8538420	Entire home/apt	100	1	1
+8567933	Entire home/apt	115	1	1
+8578023	Entire home/apt	100	1	1
+8594059	Entire home/apt	125	1	1
+8597800	Private room	49	1	1
+8612922	Entire home/apt	125	1	1
+8616488	Entire home/apt	81	1	1
+8616488	Entire home/apt	81	1	1
+8627921	Entire home/apt	70	1	1
+8627921	Entire home/apt	70	1	1
+8684315	Private room	78	1	1
+8684315	Private room	78	1	1
+8691263	Entire home/apt	188	1	1
+8691263	Entire home/apt	188	1	1
+8704438	Entire home/apt	149	1	1
+8704438	Entire home/apt	149	1	1
+8704438	Entire home/apt	149	1	1
+8723086	Entire home/apt	85	1	1
+8723086	Entire home/apt	85	1	1
+8723086	Entire home/apt	85	1	1
+8723086	Entire home/apt	85	1	1
+8723086	Entire home/apt	85	1	1
+8743202	Private room	55	1	1
+8743202	Private room	55	1	1
+8774504	Entire home/apt	109	1	1
+8817033	Private room	66	1	1
+8817033	Private room	66	1	1
+8866927	Entire home/apt	65	1	1
+8869680	Entire home/apt	85	1	1
+8939433	Private room	43	1	1
+8939433	Private room	43	1	1
+8939433	Private room	43	1	1
+8939503	Private room	44	1	1
+8968494	Private room	50	1	1
+8976178	Entire home/apt	89	1	1
+9013441	Entire home/apt	85	1	1
+9013441	Entire home/apt	85	1	1
+9068419	Entire home/apt	85	1	1
+9098494	Entire home/apt	150	1	1
+9098494	Entire home/apt	150	1	1
+9098494	Entire home/apt	150	1	1
+9098494	Entire home/apt	150	1	1
+9151374	Entire home/apt	105	1	1
+9217030	Entire home/apt	150	1	1
+9217150	Entire home/apt	74	1	1
+9262389	Entire home/apt	78	1	1
+9262389	Entire home/apt	78	1	1
+9262389	Entire home/apt	78	1	1
+9294683	Entire home/apt	157	1	1
+9294683	Entire home/apt	157	1	1
+9311687	Private room	68	1	1
+9318440	Entire home/apt	200	1	1
+9327585	Entire home/apt	69	1	1
+9328278	Entire home/apt	85	1	1
+9328278	Entire home/apt	85	1	1
+9370866	Entire home/apt	125	1	1
+9374365	Private room	35	1	1
+7941079	Private room	65	1	1
+7941079	Private room	65	1	1
+7949448	Private room	85	1	1
+7949448	Private room	85	1	1
+7949448	Private room	85	1	1
+7949448	Private room	85	1	1
+7949448	Private room	85	1	1
+7949448	Private room	85	1	1
+7952930	Entire home/apt	75	1	1
+7956337	Private room	39	1	1
+7965184	Entire home/apt	135	1	1
+7967844	Entire home/apt	107	1	1
+7967844	Entire home/apt	107	1	1
+7967844	Entire home/apt	107	1	1
+7967844	Entire home/apt	107	1	1
+7967844	Entire home/apt	107	1	1
+7970663	Entire home/apt	150	1	1
+7971395	Private room	67	1	1
+7971395	Private room	67	1	1
+7988300	Private room	65	1	1
+7988300	Private room	65	1	1
+7988337	Entire home/apt	115	1	1
+7988337	Entire home/apt	115	1	1
+7988337	Entire home/apt	115	1	1
+8015531	Entire home/apt	114	1	1
+8015531	Entire home/apt	114	1	1
+8015531	Entire home/apt	114	1	1
+8028801	Private room	50	1	1
+8036620	Entire home/apt	525	1	1
+8047522	Entire home/apt	150	1	1
+8049470	Private room	59	1	1
+8049470	Private room	59	1	1
+8053921	Shared room	45	1	1
+8054518	Entire home/apt	97	1	1
+8065531	Private room	78	1	1
+8065531	Private room	78	1	1
+8065531	Private room	78	1	1
+8066883	Private room	55	1	1
+8089781	Shared room	30	1	1
+8089781	Shared room	30	1	1
+8093529	Entire home/apt	89	1	1
+8116395	Entire home/apt	119	1	1
+8116395	Entire home/apt	119	1	1
+8150045	Private room	55	1	1
+8150045	Private room	55	1	1
+8150145	Entire home/apt	275	1	1
+8174943	Private room	55	1	1
+8186781	Entire home/apt	158	1	1
+8186781	Entire home/apt	158	1	1
+8186781	Entire home/apt	158	1	1
+8187537	Entire home/apt	110	1	1
+8193516	Private room	82	1	1
+8195348	Private room	60	1	1
+8195348	Private room	60	1	1
+8240758	Entire home/apt	75	1	1
+8251213	Entire home/apt	129	1	1
+8251213	Entire home/apt	129	1	1
+8251213	Entire home/apt	129	1	1
+8255615	Entire home/apt	90	1	1
+8273948	Entire home/apt	85	1	1
+8307502	Entire home/apt	300	1	1
+8310249	Private room	75	1	1
+8310249	Private room	75	1	1
+8311242	Entire home/apt	117	1	1
+8339428	Entire home/apt	90	1	1
+8339428	Entire home/apt	90	1	1
+8339428	Entire home/apt	90	1	1
+8339428	Entire home/apt	90	1	1
+8339428	Entire home/apt	90	1	1
+8339580	Entire home/apt	150	1	1
+8340841	Entire home/apt	125	1	1
+8372562	Entire home/apt	279	1	1
+8373664	Entire home/apt	115	1	1
+8409949	Private room	36	1	1
+8409949	Private room	36	1	1
+8409949	Private room	36	1	1
+8409949	Private room	36	1	1
+8409949	Private room	36	1	1
+8409949	Private room	36	1	1
+8409949	Private room	36	1	1
+8409975	Private room	34	1	1
+8409975	Private room	34	1	1
+8411627	Private room	50	1	1
+8411627	Private room	50	1	1
+8411627	Private room	50	1	1
+8441477	Entire home/apt	175	1	1
+8507062	Private room	55	1	1
+8507873	Entire home/apt	100	1	1
+8517602	Private room	85	1	1
+8517602	Private room	85	1	1
+8533375	Entire home/apt	105	1	1
+8551871	Private room	49	1	1
+8594717	Entire home/apt	139	1	1
+8594717	Entire home/apt	139	1	1
+8594717	Entire home/apt	139	1	1
+8594717	Entire home/apt	139	1	1
+8597800	Private room	49	1	1
+8616606	Entire home/apt	105	1	1
+8616606	Entire home/apt	105	1	1
+8616606	Entire home/apt	105	1	1
+8616606	Entire home/apt	105	1	1
+8637174	Entire home/apt	120	1	1
+8637174	Entire home/apt	120	1	1
+8637174	Entire home/apt	120	1	1
+8637174	Entire home/apt	120	1	1
+8637174	Entire home/apt	120	1	1
+8637174	Entire home/apt	120	1	1
+7561272	Private room	47	1	1
+7561272	Private room	47	1	1
+7561333	Private room	70	1	1
+7561333	Private room	70	1	1
+7561333	Private room	70	1	1
+7561333	Private room	70	1	1
+7561333	Private room	70	1	1
+7561333	Private room	70	1	1
+7579854	Entire home/apt	89	1	1
+7581631	Entire home/apt	110	1	1
+7581974	Private room	105	1	1
+7581974	Private room	105	1	1
+7581974	Private room	105	1	1
+7597244	Entire home/apt	125	1	1
+7598743	Entire home/apt	180	1	1
+7603457	Entire home/apt	105	1	1
+7616008	Entire home/apt	135	1	1
+7616008	Entire home/apt	135	1	1
+7616008	Entire home/apt	135	1	1
+7616507	Entire home/apt	200	1	1
+7616507	Entire home/apt	200	1	1
+7634011	Entire home/apt	104	1	1
+7634011	Entire home/apt	104	1	1
+7634011	Entire home/apt	104	1	1
+7634011	Entire home/apt	104	1	1
+7635496	Private room	65	1	1
+7636185	Entire home/apt	90	1	1
+7649837	Entire home/apt	90	1	1
+7651148	Private room	66	1	1
+7651148	Private room	66	1	1
+7660932	Private room	125	1	1
+7660932	Private room	125	1	1
+7662775	Entire home/apt	200	1	1
+7662775	Entire home/apt	200	1	1
+7664899	Private room	118	1	1
+7676574	Entire home/apt	250	1	1
+7680289	Entire home/apt	125	1	1
+7680289	Entire home/apt	125	1	1
+7680289	Entire home/apt	125	1	1
+7680670	Entire home/apt	119	1	1
+7680670	Entire home/apt	119	1	1
+7680670	Entire home/apt	119	1	1
+7680670	Entire home/apt	119	1	1
+7680670	Entire home/apt	119	1	1
+7695195	Entire home/apt	90	1	1
+7697170	Entire home/apt	239	1	1
+7699096	Entire home/apt	110	1	1
+7699096	Entire home/apt	110	1	1
+7710713	Entire home/apt	119	1	1
+7717813	Entire home/apt	130	1	1
+7724630	Private room	50	1	1
+7745196	Entire home/apt	115	1	1
+7745196	Entire home/apt	115	1	1
+7745196	Entire home/apt	115	1	1
+7746170	Private room	65	1	1
+7748349	Private room	55	1	1
+7768727	Private room	75	1	1
+7773668	Private room	69	1	1
+7773668	Private room	69	1	1
+7773668	Private room	69	1	1
+7775167	Private room	58	1	1
+7775167	Private room	58	1	1
+7788695	Private room	68	1	1
+7791010	Private room	79	1	1
+7791010	Private room	79	1	1
+7791010	Private room	79	1	1
+7805332	Entire home/apt	88	1	1
+7808495	Private room	100	1	1
+7808495	Private room	100	1	1
+7809455	Private room	39	1	1
+7809455	Private room	39	1	1
+7809455	Private room	39	1	1
+7809718	Entire home/apt	250	1	1
+7823973	Entire home/apt	120	1	1
+7823973	Entire home/apt	120	1	1
+7833113	Private room	55	1	1
+7840228	Entire home/apt	183	1	1
+7843145	Entire home/apt	125	1	1
+7843995	Entire home/apt	129	1	1
+7853358	Entire home/apt	85	1	1
+7853358	Entire home/apt	85	1	1
+7853358	Entire home/apt	85	1	1
+7860710	Entire home/apt	110	1	1
+7873345	Shared room	29	1	1
+7873345	Shared room	29	1	1
+7886656	Entire home/apt	136	1	1
+7886656	Entire home/apt	136	1	1
+7886656	Entire home/apt	136	1	1
+7900056	Entire home/apt	199	1	1
+7901318	Entire home/apt	98	1	1
+7935437	Private room	99	1	1
+7939058	Private room	75	1	1
+7971334	Private room	129	1	1
+7987846	Entire home/apt	99	1	1
+8002965	Private room	38	1	1
+8015531	Entire home/apt	114	1	1
+8015531	Entire home/apt	114	1	1
+8015531	Entire home/apt	114	1	1
+8015531	Entire home/apt	114	1	1
+8015531	Entire home/apt	114	1	1
+8016309	Shared room	65	1	1
+8016309	Shared room	65	1	1
+8016309	Shared room	65	1	1
+8016309	Shared room	65	1	1
+8016481	Entire home/apt	148	1	1
+8016646	Private room	120	1	1
+8027776	Entire home/apt	99	1	1
+8027776	Entire home/apt	99	1	1
+8653722	Entire home/apt	85	1	1
+8687716	Entire home/apt	275	1	1
+8691263	Entire home/apt	188	1	1
+8691263	Entire home/apt	188	1	1
+8704438	Entire home/apt	149	1	1
+8754180	Entire home/apt	175	1	1
+8815061	Entire home/apt	139	1	1
+8817038	Entire home/apt	85	1	1
+8817038	Entire home/apt	85	1	1
+8817038	Entire home/apt	85	1	1
+8817038	Entire home/apt	85	1	1
+8829156	Entire home/apt	75	1	1
+8829156	Entire home/apt	75	1	1
+8847979	Entire home/apt	89	1	1
+8847979	Entire home/apt	89	1	1
+8847979	Entire home/apt	89	1	1
+8863714	Entire home/apt	95	1	1
+8869027	Entire home/apt	145	1	1
+8869680	Entire home/apt	85	1	1
+8902887	Entire home/apt	90	1	1
+8925878	Entire home/apt	150	1	1
+8934054	Private room	75	1	1
+8956631	Entire home/apt	90	1	1
+8976178	Entire home/apt	89	1	1
+9011350	Entire home/apt	69	1	1
+9011350	Entire home/apt	69	1	1
+9075656	Private room	49	1	1
+9097503	Entire home/apt	85	1	1
+9154294	Entire home/apt	99	1	1
+9294683	Entire home/apt	157	1	1
+9330174	Entire home/apt	100	1	1
+9373607	Private room	41	1	1
+9373607	Private room	41	1	1
+9411935	Shared room	29	1	1
+9489310	Private room	60	1	1
+9533648	Entire home/apt	103	1	1
+9612147	Entire home/apt	100	1	1
+9679741	Private room	50	1	1
+9727857	Shared room	25	1	1
+9863565	Entire home/apt	83	1	1
+8027776	Entire home/apt	99	1	1
+8027776	Entire home/apt	99	1	1
+8027776	Entire home/apt	99	1	1
+8028801	Private room	50	1	1
+8028801	Private room	50	1	1
+8035212	Entire home/apt	100	1	1
+8035212	Entire home/apt	100	1	1
+8035212	Entire home/apt	100	1	1
+8036985	Entire home/apt	168	1	1
+8036985	Entire home/apt	168	1	1
+8036985	Entire home/apt	168	1	1
+8036985	Entire home/apt	168	1	1
+8036985	Entire home/apt	168	1	1
+8050232	Entire home/apt	90	1	1
+8052542	Entire home/apt	168	1	1
+8053128	Private room	59	1	1
+8053396	Entire home/apt	150	1	1
+8053990	Private room	65	1	1
+8053990	Private room	65	1	1
+8054518	Entire home/apt	97	1	1
+8054902	Entire home/apt	100	1	1
+8054902	Entire home/apt	100	1	1
+8061699	Private room	40	1	1
+8066883	Private room	55	1	1
+8066883	Private room	55	1	1
+8072907	Entire home/apt	115	1	1
+8072920	Entire home/apt	80	1	1
+8082659	Entire home/apt	150	1	1
+8094338	Private room	70	1	1
+8119192	Private room	75	1	1
+8147215	Entire home/apt	180	1	1
+8152191	Private room	59	1	1
+8193054	Entire home/apt	110	1	1
+8193054	Entire home/apt	110	1	1
+8227038	Entire home/apt	117	1	1
+8242212	Entire home/apt	105	1	1
+8242212	Entire home/apt	105	1	1
+8248970	Entire home/apt	250	1	1
+8253456	Entire home/apt	170	1	1
+8310398	Private room	75	1	1
+8326413	Private room	70	1	1
+8326413	Private room	70	1	1
+8327124	Entire home/apt	350	1	1
+8338849	Private room	55	1	1
+8342429	Entire home/apt	99	1	1
+8350401	Private room	90	1	1
+8355276	Entire home/apt	65	1	1
+8355276	Entire home/apt	65	1	1
+8372038	Entire home/apt	120	1	1
+8372038	Entire home/apt	120	1	1
+8372038	Entire home/apt	120	1	1
+8385687	Entire home/apt	250	1	1
+8389809	Private room	65	1	1
+8392801	Entire home/apt	100	1	1
+8409926	Private room	35	1	1
+8409941	Private room	34	1	1
+8409962	Private room	35	1	1
+8409962	Private room	35	1	1
+8409962	Private room	35	1	1
+8409969	Private room	41	1	1
+8423118	Entire home/apt	96	1	1
+8487843	Entire home/apt	129	1	1
+8487843	Entire home/apt	129	1	1
+8501705	Entire home/apt	74	1	1
+8503720	Private room	80	1	1
+8515408	Entire home/apt	110	1	1
+8535897	Private room	80	1	1
+8535897	Private room	80	1	1
+8553556	Entire home/apt	125	1	1
+8553556	Entire home/apt	125	1	1
+8556665	Entire home/apt	94	1	1
+8556665	Entire home/apt	94	1	1
+8605841	Entire home/apt	74	1	1
+8608525	Private room	119	1	1
+8612922	Entire home/apt	125	1	1
+8617171	Entire home/apt	98	1	1
+8617171	Entire home/apt	98	1	1
+8634897	Entire home/apt	270	1	1
+8634897	Entire home/apt	270	1	1
+8634897	Entire home/apt	270	1	1
+8645226	Private room	59	1	1
+8690491	Entire home/apt	95	1	1
+8690491	Entire home/apt	95	1	1
+8690491	Entire home/apt	95	1	1
+8703208	Entire home/apt	119	1	1
+8737284	Entire home/apt	65	1	1
+8741711	Entire home/apt	105	1	1
+8755762	Entire home/apt	96	1	1
+8779676	Private room	65	1	1
+8811781	Entire home/apt	127	1	1
+8866927	Entire home/apt	65	1	1
+8919372	Entire home/apt	110	1	1
+8939687	Private room	45	1	1
+8939687	Private room	45	1	1
+8939687	Private room	45	1	1
+8943821	Private room	48	1	1
+9030929	Private room	35	1	1
+9030929	Private room	35	1	1
+9061048	Entire home/apt	103	1	1
+9074837	Entire home/apt	100	1	1
+9074837	Entire home/apt	100	1	1
+9075558	Private room	34	1	1
+9138923	Entire home/apt	85	1	1
+9153365	Entire home/apt	75	1	1
+9174327	Private room	59	1	1
+9217446	Private room	35	1	1
+9233533	Entire home/apt	95	1	1
+9389755	Entire home/apt	119	1	1
+9494946	Entire home/apt	69	1	1
+9509279	Entire home/apt	100	1	1
+9509279	Entire home/apt	100	1	1
+9533803	Private room	60	1	1
+9580021	Entire home/apt	85	1	1
+9580021	Entire home/apt	85	1	1
+9706229	Entire home/apt	179	1	1
+9736940	Private room	28	1	1
+9256702	Entire home/apt	90	1	1
+9298045	Private room	79	1	1
+9327585	Entire home/apt	69	1	1
+9429399	Entire home/apt	98	1	1
+9494415	Entire home/apt	69	1	1
+9651755	Entire home/apt	68	1	1
+9706229	Entire home/apt	179	1	1
 \.
 
 
--- Completed on 2025-05-02 16:31:51 CEST
+-- Completed on 2025-05-03 13:15:22 CEST
 
 --
 -- PostgreSQL database dump complete

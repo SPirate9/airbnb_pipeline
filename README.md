@@ -1,8 +1,47 @@
 # Kata Spark
 
-Ce projet implémente une pipeline de traitement de données Airbnb en utilisant PySpark, PostgreSQL et Hive. L'objectif est de traiter les données des annonces et des avis Airbnb, de les nettoyer, de les analyser, et de les exporter pour des usages ultérieurs.
+Ce projet implémente une pipeline de traitement de données Airbnb en utilisant PySpark, PostgreSQL et Hive. L'objectif est de traiter les données des annonces et des avis Airbnb, de les nettoyer, de les analyser et de les exporter pour des usages ultérieurs.
 
 ---
+
+## **Architecture de la pipeline**
+Voici un schéma illustrant l'architecture de la pipeline de traitement des données :
+
+![Architecture de la pipeline]( )
+
+## **Problématique et Business Value**
+
+### **Problématique**
+Comment exploiter les données des annonces et des avis Airbnb pour optimiser les revenus des hôtes, améliorer l'expérience des utilisateurs et renforcer la compétitivité de la plateforme Airbnb ?
+
+### **Business Value**
+
+#### **1. Pour les hôtes :**
+- **Optimisation des prix :**  
+  Les données permettent aux hôtes d'analyser les prix moyens par quartier et type de chambre pour ajuster leurs tarifs et rester compétitifs.  
+  Grâce à la prédiction des prix, ils peuvent maximiser leurs revenus tout en restant attractifs.
+- **Amélioration des performances :**  
+  Les données fournissent des insights sur les quartiers les mieux notés et les attentes des utilisateurs grâce aux avis et aux notes.  
+  Les prédictions des notes des avis permettent aux hôtes d'identifier les points à améliorer pour obtenir de meilleures évaluations.
+- **Gestion des réservations :**  
+  Les données permettent d'anticiper les périodes de forte demande en analysant les disponibilités et les tendances des réservations.  
+  La prédiction de la probabilité de réservation aide les hôtes à mieux gérer leur disponibilité.
+
+#### **2. Pour les utilisateurs :**
+- **Meilleure expérience utilisateur :**  
+  Les utilisateurs peuvent consulter les annonces les mieux notées et les commentaires pour choisir des logements adaptés à leurs besoins.  
+  L'analyse des sentiments des commentaires met en avant les annonces les mieux perçues par les anciens locataires.  
+- **Recommandations personnalisées :**  
+  Les utilisateurs peuvent filtrer les annonces par prix, type de chambre ou localisation.  
+  Les prédictions permettent de recommander des annonces adaptées aux besoins spécifiques des utilisateurs.  
+
+#### **3. Pour Airbnb :**
+- **Amélioration de la plateforme :**  
+  Les données permettent à Airbnb d'analyser les tendances des quartiers et des types de chambres pour améliorer ses algorithmes de recherche et de recommandation.  
+  Les insights issus des prédictions renforcent la pertinence des recommandations.
+- **Augmentation des revenus :**  
+  Les données permettent d'identifier les opportunités de croissance en analysant les prix, les disponibilités et les performances des annonces.  
+  Une meilleure adéquation entre les prix, les réservations et les attentes des utilisateurs conduit à une augmentation des transactions.
 
 ## **Ordre d'exécution des scripts**
 
@@ -14,7 +53,7 @@ python 01_load_listings_to_db.py
 ```
 
 ### **2. Ingestion des données des annonces dans Bronze**
-Le script `02_ingest_listings_from_db.py` lit les données des annonces depuis la base de données PostgreSQL et les stocke dans le répertoire `bronze/listings/` au format Parquet, partitionnées par `year`, `month`, et `day`.
+Le script `02_ingest_listings_from_db.py` lit les données des annonces depuis la base de données PostgreSQL et les stocke dans le répertoire `bronze/listings/` au format Parquet, partitionnées par `year`, `month` et `day`.
 
 ```bash
 python 02_ingest_listings_from_db.py
@@ -36,7 +75,7 @@ bash inject_reviews.sh
 [Regardez la vidéo de simulation du streaming](https://drive.google.com/file/d/1GUI3CaHCAl0RsaW7Ijx7vynJE0YydLE3/view?usp=sharing)
 
 ### **5. Traitement en streaming des avis**
-Le script `04_stream_reviews.py` lit les fichiers dans `data/reviews_stream/` en mode streaming, ajoute des colonnes de partition (`année`, `mois`, `jour`), et écrit les données dans le répertoire `bronze/reviews/`.
+Le script `04_stream_reviews.py` lit les fichiers dans `data/reviews_stream/` en mode streaming, ajoute des colonnes de partition (`year`, `month`, `day`) et écrit les données dans le répertoire `bronze/reviews/` au format Parquet.
 
 ```bash
 python 04_stream_reviews.py
@@ -138,7 +177,16 @@ Le script `07_export_to_api.py` :
 
 ![Export des données vers PostgreSQL](./assets/images/export_to_postgresql.png)
 
-Une fois les données exportées dans PostgreSQL, elles peuvent être utilisées pour des analyses avancées dans Power BI. Une connexion est établie entre Power BI et PostgreSQL pour visualiser et explorer les données exportées.
+### **Visualisation des données avec Power BI**
+
+Une fois les données exportées dans PostgreSQL, elles peuvent être utilisées pour des analyses avancées et des visualisations interactives dans Power BI. Voici quelques exemples de tableaux de bord créés avec Power BI pour explorer les données exportées :
+
+- **Analyse des prix des annonces :** Visualisation des prédictions de prix par quartier et type de logement.
+- **Tendances des réservations :** Analyse des probabilités de réservation et des périodes de forte demande.
+- **Sentiments des avis :** Exploration des sentiments des commentaires pour identifier les annonces les mieux perçues.
+- **Performance des annonces :** Suivi des notes moyennes et des performances globales des annonces.
+
+Vous pouvez télécharger le fichier Power BI (.pbix) contenant ces visualisations [ici](  ).
 
 De plus, les scripts SQL pour créer les tables nécessaires dans PostgreSQL sont disponibles dans le dossier `sql/`.
 
@@ -156,6 +204,7 @@ pip install -r requirements.txt
 ```
 
 ---
+
 ## **Structure du projet**
 
 ```plaintext
