@@ -191,7 +191,7 @@ Le script `07_export_to_api.py` :
 
 ### **Visualisation des données avec Power BI**
 
-Une fois les données exportées dans PostgreSQL, elles peuvent être utilisées pour des analyses avancées et des visualisations interactives dans Power BI. Voici quelques exemples de tableaux de bord créés avec Power BI pour explorer les données exportées :
+Une fois les données exportées depuis la zone Gold vers PostgreSQL, une connexion est établie entre la base de données et Power BI pour permettre des analyses avancées et des visualisations interactives. Voici quelques exemples de tableaux de bord créés avec Power BI pour explorer les données exportées :
 
 - **Analyse des prix des annonces :** Visualisation des prédictions de prix par quartier et type de logement.
 - **Tendances des réservations :** Analyse des probabilités de réservation et des périodes de forte demande.
