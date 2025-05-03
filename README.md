@@ -84,16 +84,28 @@ python 04_stream_reviews.py
 
 ### **6. Nettoyage et jointure des données**
 Le script `05_transform_clean.py` :
-- Nettoie les données des annonces et des avis.
-- Effectue une jointure entre les deux ensembles de données.
+- Nettoie les données des annonces et des avis (suppression des doublons, gestion des valeurs manquantes, normalisation des colonnes, conversion en double ($), suppression des colonnes inutiles).
+- Effectue une jointure interne (`inner join`) sur la colonne `listing_id` entre les deux ensembles de données.
 - Stocke les données jointes dans une table Hive `silver_joined`.
 
 ```bash
 python 05_transform_clean.py
 ```
 
+Exemple de code utilisé pour sauvegarder les données jointes dans la table Hive `silver_joined` :
+
+```python
+df_joined.write.mode("overwrite").saveAsTable("silver_joined")
+```
+
 ### **7. Modélisation Machine Learning**
-Le script `06_ml_model.py` effectue plusieurs prédictions en utilisant différents modèles de machine learning. Les données sont chargées depuis la table Hive `silver_joined`, et les résultats sont sauvegardés dans le répertoire `gold/`.
+Le script `06_ml_model.py` effectue plusieurs prédictions en utilisant différents modèles de machine learning. Les données sont chargées depuis la table Hive `silver_joined` en utilisant la commande suivante :
+
+```python
+df = spark.sql("SELECT * FROM silver_joined")
+```
+
+Les résultats des prédictions sont ensuite sauvegardés dans le répertoire `gold/`.
 
 #### **1. Prédiction du prix des annonces**
 - **Objectif :** Prédire le prix (`price`) des annonces en fonction de leurs caractéristiques.
