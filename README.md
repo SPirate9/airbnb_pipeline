@@ -57,7 +57,14 @@ python 01_load_listings_to_db.py
 ```
 
 ### **2. Ingestion des données des annonces dans Bronze**
-Le script `02_ingest_listings_from_db.py` lit les données des annonces depuis la base de données PostgreSQL et les stocke dans le répertoire `bronze/listings/` au format Parquet, partitionnées par `year`, `month` et `day`.
+Le script `02_ingest_listings_from_db.py` lit les données des annonces depuis PostgreSQL et les stocke dans `bronze/listings/` au format Parquet, partitionnées par `year`, `month` et `day`. Voici un extrait montrant le partitionnement et la répartition en 3 partitions pour optimiser la parallélisation :
+
+```python
+df_partitioned.repartition(3) \
+  .write.mode("overwrite") \
+  .partitionBy("year", "month", "day") \
+  .parquet("bronze/listings/")
+```
 
 ```bash
 python 02_ingest_listings_from_db.py
@@ -79,7 +86,7 @@ bash inject_reviews.sh
 [Regardez la vidéo de simulation du streaming](https://drive.google.com/file/d/1GUI3CaHCAl0RsaW7Ijx7vynJE0YydLE3/view?usp=sharing)
 
 ### **5. Traitement en streaming des avis**
-Le script `04_stream_reviews.py` lit les fichiers dans `data/reviews_stream/` en mode streaming, ajoute des colonnes de partition (`year`, `month`, `day`) et écrit les données dans le répertoire `bronze/reviews/` au format Parquet.
+Le script `04_stream_reviews.py` lit les fichiers dans `data/reviews_stream/` en mode streaming, ajoute des colonnes de partition (`year`, `month`, `day`) et répartitionne les données en 3 partitions avant de les écrire dans le répertoire `bronze/reviews/` au format Parquet.
 
 ```bash
 python 04_stream_reviews.py
