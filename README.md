@@ -48,6 +48,10 @@ Comment exploiter les données des annonces et des avis Airbnb pour optimiser le
 ### **1. Charger les données dans la base de données**
 Le script `01_load_listings_to_db.py` charge les données des annonces Airbnb depuis le fichier CSV `listings.csv` dans une base de données PostgreSQL.
 
+Voici une capture d'écran de la base de données PostgreSQL après le chargement des données :
+
+![Capture d'écran de la base de données PostgreSQL](./assets/images/postgresql_db_screenshot.png)
+
 ```bash
 python 01_load_listings_to_db.py
 ```
