@@ -265,3 +265,8 @@ airbnb_pipeline/
 
 ## **Notes**
 - Assurez-vous que PostgreSQL, Hive et PySpark sont correctement configurés avant d'exécuter les scripts.
+
+## **Auteurs**
+- Saad Shahzad  
+- Noam Boulze  
+- Thomas Yu
