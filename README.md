@@ -7,7 +7,7 @@ Ce projet implémente une pipeline de traitement de données Airbnb en utilisant
 ## **Architecture de la pipeline**
 Voici un schéma illustrant l'architecture de la pipeline de traitement des données :
 
-![Architecture de la pipeline]( )
+![Architecture de la pipeline](./assets/images/pipeline_architecture.png)
 
 ## **Problématique et Business Value**
 
@@ -209,7 +209,7 @@ Une fois les données exportées depuis la zone Gold vers PostgreSQL, une connex
 - **Sentiments des avis :** Exploration des sentiments des commentaires pour identifier les annonces les mieux perçues.
 - **Performance des annonces :** Suivi des notes moyennes et des performances globales des annonces.
 
-Vous pouvez télécharger le fichier Power BI (.pbix) contenant ces visualisations [ici](  ).
+Vous pouvez télécharger le fichier Power BI (.pbix) contenant ces visualisations [ici](./assets/powerbi/airbnb_pipeline_visualizations.pbix).
 
 De plus, les scripts SQL pour créer les tables nécessaires dans PostgreSQL sont disponibles dans le dossier `sql/`.
 
